@@ -1,0 +1,490 @@
+{
+  "hypothesis": "H-rocktype-01",
+  "split": "confirm",
+  "years": [
+    2011,
+    2020
+  ],
+  "manifest": {
+    "run_id": "H-rocktype-01-confirm-20261119T223941Z",
+    "started_utc": "2026-11-19T22:39:41+00:00",
+    "git_commit": "4bbbeeb952ffff17272f7af86d34356044c8b2a9",
+    "git_dirty": false,
+    "python": "3.12.16",
+    "specs": {
+      "spec": "dcf76d6c1e07a88b654800155cfe7d9cf857b8767b2c6ae322fc7f406fec5ce1",
+      "impl": "33f303d84e395236908bec30b011b3751583a40aad2afb53dc8cad2d26e0be07",
+      "filters": "8b2d4002b6f7fc9b75bc09a2f2b7179b72d7d7a42239921c5ddd2d694f6eeae9"
+    },
+    "inputs": {
+      "data/raw/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "data/raw/acs_college/acsdt5y2021-b14001.dat": "1035e1fcc6216e374c71c1c4a9fb6e22f78010d86beabd9f2a09ae0c3906a34c",
+      "data/raw/acs_housing/acsdt5y2021-b25001.dat": "ddc83069353064aee56b4fb58df7bdc04ea9c01307def64028d2aeb9424dcf75",
+      "data/raw/acs_housing/acsdt5y2021-b25004.dat": "0a6ebcf71d078820e3883ad3b480db4c15ab868e797fa677e1a1645169b91589",
+      "data/raw/airports/airports.csv": "73b5022692ba9739ba61b66e1f82ea1410597991c64a9274c5d40e3753b72664",
+      "data/raw/coastline/ne_10m_coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017",
+      "data/raw/counties/cb_2020_us_county_500k.zip": "1a45c87a5a0c322514c9d5c9ebcba5eb9df313bd38962f6db56107ba0ccacc6f",
+      "data/raw/elevation/elevation_1KMmd_GMTEDmd.tif": "95fed346b8bb25ca67c59b9d8c8e110f4856eb51401e5cc0011b73cba7e3e02b",
+      "data/raw/gazetteer_places/2020_Gaz_place_national.zip": "6e5745b3e1adf7a1e024a988301d484697e2a0f25b3cf10114eef676f09d5c18",
+      "data/raw/gcat_launches/launch.tsv": "72053523eab6c7e6f1d61604c953b9c37a05b3756e61ac1310a81574e1d9fe4e",
+      "data/raw/gcat_launches/sites.tsv": "102816bbe39defd0721255f1fec98ef10dd66c35d66c33e929d597df9f27c45b",
+      "data/raw/light_pollution/World_Atlas_2015.zip": "9c6a624427463c40717efbca7696e3c6bb0f332c26d1b039e7a91e0dbc831fbf",
+      "data/raw/light_pollution/extracted/README.txt": "7be5ecd05327c7bed42f383047e85d88af2b58dbb3e5b0d81b7d759cda8c2c02",
+      "data/raw/light_pollution/extracted/World_Atlas_2015.tif": "9725566ed4fcf1a8fa311654143bb024c4fe2a792b85356be99adce07e1e83c1",
+      "data/raw/light_pollution/extracted/World_Atlas_2015.tpk": "882830f77da39d8693dc8ade8124ad756dbf455584e5f9a6f115f78ee3af560a",
+      "data/raw/nuforc/places.csv": "6fe1aff91fc019e29e0f0c6e88d66ca9b74df01550ed38e56ff2507ca79f80bf",
+      "data/raw/nuforc/ufo_sightings.csv": "ad72ebc6cd34001144e8bea85524d34390f8e12d13b352b184ed57557a980647",
+      "data/raw/place_population/place_population_0.csv": "e3508f5201465913476d4ddf91740f191f7977c9f2614a2a7e30b5fd22027934",
+      "data/raw/population/population_0": "38dd59c70ef8067a3d476b6f5039e60f288e2d492015525ba9711faffd12c418",
+      "data/raw/primary_roads/tl_2020_us_primaryroads.zip": "30ba1c46cc5a40305a8896a057f4f14dee7aec08f7dacea3e0fb68fec1cc172f",
+      "data/raw/rail/tl_2020_us_rails.zip": "86f1fed01c866ee6e2595e8f0f43288c11e45200e487841227ede8422b874521",
+      "data/raw/rivers/ne_10m_rivers_lake_centerlines.zip": "ded71b01870855ccfe19b51f2ec14c9bb48fae23c0e9f3c11974d426433b5c38",
+      "data/raw/rivers/ne_10m_rivers_north_america.zip": "7fbe85a2acbf1f3ef4361a16bb39677ad1ea86f888be1689f7a4caeafc7529e8",
+      "data/raw/sgmc/USGS_SGMC_Geodatabase.zip": "1a824a35e8ac86b3ef231e8ff1d877e790d7ec2357545bb810eeb0c28520dd1a",
+      "data/raw/sgmc/age_grid_v1_1km_3108.npz": "99a25b7a26f27755c97c585ad8904e45b0d161b10c21a25d3711ebd37455667a",
+      "data/raw/sgmc/unit_grid_v1_1km_3108.npz": "a8087920e5f0adb82db54f3fe97d118beff049ea72db889f0d7b307691cf1de6"
+    },
+    "settings": {}
+  },
+  "data": {
+    "reports": 74795,
+    "events": 69348,
+    "events_in_counties": 69333,
+    "cleaning": {
+      "raw_rows": 96429,
+      "undated": 0,
+      "outside_window": 14061,
+      "outside_conus": 7547,
+      "duplicates": 26,
+      "kept": 74795
+    }
+  },
+  "rule_counts": {
+    "nuforc_note": 2288,
+    "meteor_fireball": 1461,
+    "sky_lantern": 56,
+    "possible_only": 4980
+  },
+  "tests": {
+    "unconsolidated": {
+      "verdict": "inconclusive",
+      "power": 0.7731409191622265,
+      "p_bh": 0.5983833834257577,
+      "checks": {
+        "shift_test": {
+          "rate_ratio": 0.9720104626658095,
+          "p_value": 0.5074626865671642,
+          "n_events": 200,
+          "holds": false
+        }
+      },
+      "tiers": {
+        "all": {
+          "terms": [
+            {
+              "term": "exposed",
+              "rate_ratio": 0.9684947538306944,
+              "ci_low": 0.9131852783103491,
+              "ci_high": 1.0271541936518176,
+              "p_value": 0.28598238959088107
+            }
+          ],
+          "n_strata": 3100,
+          "n_events": 38555,
+          "exposed_share": NaN,
+          "dispersion": NaN
+        },
+        "filtered": {
+          "terms": [
+            {
+              "term": "exposed",
+              "rate_ratio": 0.9720104626658095,
+              "ci_low": 0.9167354665095248,
+              "ci_high": 1.0306182907149306,
+              "p_value": 0.34193336195757584
+            }
+          ],
+          "n_strata": 3100,
+          "n_events": 36684,
+          "exposed_share": NaN,
+          "dispersion": NaN
+        },
+        "high_quality": {
+          "terms": [
+            {
+              "term": "exposed",
+              "rate_ratio": 0.963826563835577,
+              "ci_low": 0.907370769273405,
+              "ci_high": 1.023794987245379,
+              "p_value": 0.23155481137521194
+            }
+          ],
+          "n_strata": 3100,
+          "n_events": 17541,
+          "exposed_share": NaN,
+          "dispersion": NaN
+        }
+      }
+    },
+    "clastic": {
+      "verdict": "refuted",
+      "power": 0.9733489132920483,
+      "p_bh": 0.8177834415033741,
+      "checks": {
+        "shift_test": {
+          "rate_ratio": 0.9952228044632667,
+          "p_value": 0.835820895522388,
+          "n_events": 200,
+          "holds": false
+        }
+      },
+      "tiers": {
+        "all": {
+          "terms": [
+            {
+              "term": "exposed",
+              "rate_ratio": 0.9990594938845002,
+              "ci_low": 0.9597113300747993,
+              "ci_high": 1.0400209323807408,
+              "p_value": 0.9633923068948839
+            }
+          ],
+          "n_strata": 3100,
+          "n_events": 38555,
+          "exposed_share": NaN,
+          "dispersion": NaN
+        },
+        "filtered": {
+          "terms": [
+            {
+              "term": "exposed",
+              "rate_ratio": 0.9952228044632667,
+              "ci_low": 0.955495545754417,
+              "ci_high": 1.0366018292023533,
+              "p_value": 0.8177834415033741
+            }
+          ],
+          "n_strata": 3100,
+          "n_events": 36684,
+          "exposed_share": NaN,
+          "dispersion": NaN
+        },
+        "high_quality": {
+          "terms": [
+            {
+              "term": "exposed",
+              "rate_ratio": 0.9681399501680676,
+              "ci_low": 0.9266788677008384,
+              "ci_high": 1.0114560672317148,
+              "p_value": 0.14708996347420147
+            }
+          ],
+          "n_strata": 3100,
+          "n_events": 17541,
+          "exposed_share": NaN,
+          "dispersion": NaN
+        }
+      }
+    },
+    "carbonate": {
+      "verdict": "confirmed (more reports)",
+      "power": 0.9992495136934757,
+      "p_bh": 7.650109552433445e-05,
+      "checks": {
+        "shift_test": {
+          "rate_ratio": 1.0616932614423311,
+          "p_value": 0.01990049751243781,
+          "n_events": 200,
+          "holds": true
+        }
+      },
+      "tiers": {
+        "all": {
+          "terms": [
+            {
+              "term": "exposed",
+              "rate_ratio": 1.0578361758837334,
+              "ci_low": 1.0312102412060642,
+              "ci_high": 1.0851495944217553,
+              "p_value": 1.5402092160014723e-05
+            }
+          ],
+          "n_strata": 3100,
+          "n_events": 38555,
+          "exposed_share": NaN,
+          "dispersion": NaN
+        },
+        "filtered": {
+          "terms": [
+            {
+              "term": "exposed",
+              "rate_ratio": 1.0616932614423311,
+              "ci_low": 1.0337426334677395,
+              "ci_high": 1.0903996264629545,
+              "p_value": 1.0928727932047779e-05
+            }
+          ],
+          "n_strata": 3100,
+          "n_events": 36684,
+          "exposed_share": NaN,
+          "dispersion": NaN
+        },
+        "high_quality": {
+          "terms": [
+            {
+              "term": "exposed",
+              "rate_ratio": 1.074362880961911,
+              "ci_low": 1.0369533086825902,
+              "ci_high": 1.1131220570145202,
+              "p_value": 7.287062605592773e-05
+            }
+          ],
+          "n_strata": 3100,
+          "n_events": 17541,
+          "exposed_share": NaN,
+          "dispersion": NaN
+        }
+      }
+    },
+    "volcanic": {
+      "verdict": "inconclusive",
+      "power": 0.6223702647325888,
+      "p_bh": 0.7671763105111421,
+      "checks": {
+        "shift_test": {
+          "rate_ratio": 1.0162954073779529,
+          "p_value": 0.6268656716417911,
+          "n_events": 200,
+          "holds": false
+        }
+      },
+      "tiers": {
+        "all": {
+          "terms": [
+            {
+              "term": "exposed",
+              "rate_ratio": 1.0192141390430307,
+              "ci_low": 0.9686192613314409,
+              "ci_high": 1.0724517906006952,
+              "p_value": 0.4637896065778778
+            }
+          ],
+          "n_strata": 3100,
+          "n_events": 38555,
+          "exposed_share": NaN,
+          "dispersion": NaN
+        },
+        "filtered": {
+          "terms": [
+            {
+              "term": "exposed",
+              "rate_ratio": 1.0162954073779529,
+              "ci_low": 0.9640919902164812,
+              "ci_high": 1.0713255223970874,
+              "p_value": 0.5479830789365301
+            }
+          ],
+          "n_strata": 3100,
+          "n_events": 36684,
+          "exposed_share": NaN,
+          "dispersion": NaN
+        },
+        "high_quality": {
+          "terms": [
+            {
+              "term": "exposed",
+              "rate_ratio": 1.037163829882817,
+              "ci_low": 0.9806214771759666,
+              "ci_high": 1.0969663984058995,
+              "p_value": 0.20203084712899766
+            }
+          ],
+          "n_strata": 3100,
+          "n_events": 17541,
+          "exposed_share": NaN,
+          "dispersion": NaN
+        }
+      }
+    },
+    "plutonic": {
+      "verdict": "refuted",
+      "power": 0.9999999574355847,
+      "p_bh": 0.1329030868289911,
+      "checks": {
+        "shift_test": {
+          "rate_ratio": 0.9643245752648268,
+          "p_value": 0.04975124378109453,
+          "n_events": 200,
+          "holds": true
+        }
+      },
+      "tiers": {
+        "all": {
+          "terms": [
+            {
+              "term": "exposed",
+              "rate_ratio": 0.9664117856003138,
+              "ci_low": 0.9339751795154826,
+              "ci_high": 0.9999749027931258,
+              "p_value": 0.04983181856864593
+            }
+          ],
+          "n_strata": 3100,
+          "n_events": 38555,
+          "exposed_share": NaN,
+          "dispersion": NaN
+        },
+        "filtered": {
+          "terms": [
+            {
+              "term": "exposed",
+              "rate_ratio": 0.9643245752648268,
+              "ci_low": 0.9317989579066378,
+              "ci_high": 0.997985540302421,
+              "p_value": 0.037972310522568886
+            }
+          ],
+          "n_strata": 3100,
+          "n_events": 36684,
+          "exposed_share": NaN,
+          "dispersion": NaN
+        },
+        "high_quality": {
+          "terms": [
+            {
+              "term": "exposed",
+              "rate_ratio": 0.9608882432636985,
+              "ci_low": 0.9297778279970019,
+              "ci_high": 0.9930396146695099,
+              "p_value": 0.017505729243969793
+            }
+          ],
+          "n_strata": 3100,
+          "n_events": 17541,
+          "exposed_share": NaN,
+          "dispersion": NaN
+        }
+      }
+    },
+    "metasedimentary": {
+      "verdict": "refuted",
+      "power": 0.9544135151790067,
+      "p_bh": 0.8177834415033741,
+      "checks": {
+        "shift_test": {
+          "rate_ratio": 1.0050793923456272,
+          "p_value": 0.7960199004975125,
+          "n_events": 200,
+          "holds": false
+        }
+      },
+      "tiers": {
+        "all": {
+          "terms": [
+            {
+              "term": "exposed",
+              "rate_ratio": 1.0071116367458226,
+              "ci_low": 0.9738793911052995,
+              "ci_high": 1.0414778853854838,
+              "p_value": 0.6789231973912981
+            }
+          ],
+          "n_strata": 3100,
+          "n_events": 38555,
+          "exposed_share": NaN,
+          "dispersion": NaN
+        },
+        "filtered": {
+          "terms": [
+            {
+              "term": "exposed",
+              "rate_ratio": 1.0050793923456272,
+              "ci_low": 0.9730514631264889,
+              "ci_high": 1.0381615188903313,
+              "p_value": 0.7591235292012894
+            }
+          ],
+          "n_strata": 3100,
+          "n_events": 36684,
+          "exposed_share": NaN,
+          "dispersion": NaN
+        },
+        "high_quality": {
+          "terms": [
+            {
+              "term": "exposed",
+              "rate_ratio": 1.0238033404718958,
+              "ci_low": 0.9840646458614153,
+              "ci_high": 1.0651467709663311,
+              "p_value": 0.24415295091194056
+            }
+          ],
+          "n_strata": 3100,
+          "n_events": 17541,
+          "exposed_share": NaN,
+          "dispersion": NaN
+        }
+      }
+    },
+    "crystalline_metamorphic": {
+      "verdict": "refuted",
+      "power": 0.989203093450279,
+      "p_bh": 0.4362400646160043,
+      "checks": {
+        "shift_test": {
+          "rate_ratio": 0.9691279971279559,
+          "p_value": 0.2885572139303483,
+          "n_events": 200,
+          "holds": false
+        }
+      },
+      "tiers": {
+        "all": {
+          "terms": [
+            {
+              "term": "exposed",
+              "rate_ratio": 0.9694701855373951,
+              "ci_low": 0.9272237662664697,
+              "ci_high": 1.013641447555181,
+              "p_value": 0.1725885379343033
+            }
+          ],
+          "n_strata": 3100,
+          "n_events": 38555,
+          "exposed_share": NaN,
+          "dispersion": NaN
+        },
+        "filtered": {
+          "terms": [
+            {
+              "term": "exposed",
+              "rate_ratio": 0.9691279971279559,
+              "ci_low": 0.92502577053196,
+              "ci_high": 1.0153328747556156,
+              "p_value": 0.18696002769257325
+            }
+          ],
+          "n_strata": 3100,
+          "n_events": 36684,
+          "exposed_share": NaN,
+          "dispersion": NaN
+        },
+        "high_quality": {
+          "terms": [
+            {
+              "term": "exposed",
+              "rate_ratio": 0.9865279684058224,
+              "ci_low": 0.9418207169100565,
+              "ci_high": 1.033357426708488,
+              "p_value": 0.5664943256666239
+            }
+          ],
+          "n_strata": 3100,
+          "n_events": 17541,
+          "exposed_share": NaN,
+          "dispersion": NaN
+        }
+      }
+    }
+  }
+}
