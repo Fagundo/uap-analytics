@@ -5,6 +5,8 @@
 
 from __future__ import annotations
 
+import json
+import re
 import sys
 
 import requests
@@ -22,6 +24,12 @@ for url in sys.argv[1:]:
             lines = lines[:min(end + 1, 60)]
         for line in lines[:60 if "action=raw" in url else 12]:
             print(line[:400])
+        if "format=json" in url:  # ScienceBase item: list attached files
+            for f in resp.json().get("files", []):
+                print(f"file {f.get('name')} {f.get('size', 0):,} bytes {f.get('url')}")
+        elif "<html" in resp.text[:2000].lower():  # HTML page: list links to data files
+            for href in sorted(set(re.findall(r'href="([^"]+\.(?:zip|gz|tgz|shp|csv|gdb)[^"]*)"', resp.text))):
+                print(f"link {href}")
         if len(lines) > 12:
             print(f"... {len(lines):,} lines; last: {lines[-1][:400]}")
     except Exception as exc:  # report and continue
