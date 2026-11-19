@@ -54,6 +54,10 @@ class SgmcGeologySource(DataSource):
     def load(self) -> gpd.GeoDataFrame:
         import pyogrio
 
+        # Map rings are already oriented (outer clockwise, holes counter-clockwise); trusting that avoids
+        # GDAL's slow full polygon reassembly (30 minutes for this layer).
+        pyogrio.set_gdal_config_options({"OGR_ORGANIZE_POLYGONS": "ONLY_CCW"})
+
         path = self.downloader.fetch(self.config, FILENAME)  # mirrors tried in order
         gdb = gdb_path(path)
         log.info("SGMC layers: %s", [name for name, _ in pyogrio.list_layers(gdb)])

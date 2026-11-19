@@ -17,7 +17,7 @@ import numpy as np
 import pandas as pd
 
 from uap_geo.common.geo import COUNTY_ID, M_PER_KM
-from uap_geo.features.rock_age import ERA_NAMES, CountyAgeSummary, build_age_grid
+from uap_geo.features.rock_age import ERA_NAMES, AgeGrid, CountyAgeSummary, build_age_grid
 from uap_geo.hypotheses.base import TestOutcome
 from uap_geo.hypotheses.county_period import CountyPeriodStudy
 from uap_geo.hypotheses.designs.conditional_poisson import TestResult
@@ -25,6 +25,7 @@ from uap_geo.hypotheses.event_table import EventTable
 
 log = logging.getLogger(__name__)
 TERM = "rock_log10_age"
+GRID_VERSION = "v1"   # bump when the rasterization changes, so a cached grid is not reused
 ERA_TERMS = tuple(f"share_{n}" for n in ERA_NAMES[1:])     # Cenozoic is the reference
 
 
@@ -43,13 +44,19 @@ class RockAgeStudy(CountyPeriodStudy):
 
     # ------------------------------------------------------------------------------ inputs
     def _age_summary(self) -> CountyAgeSummary:
-        geology = self.sources.geologic_map().load()
-        geology = geology[["log10_age", "geometry"]].to_crs(self.counties.crs)
         counties = self.counties[[COUNTY_ID, "geometry"]].reset_index(drop=True)
         counties["county_index"] = np.arange(len(counties), dtype="int32")
-        grid = build_age_grid(geology, counties, float(self.p["cell_km"]) * M_PER_KM)
-        del geology
-        gc.collect()
+        cache = self.config.paths.raw / "sgmc" / f"age_grid_{GRID_VERSION}_{float(self.p['cell_km']):g}km_{len(counties)}.npz"
+        if cache.exists():
+            grid = AgeGrid.load(cache)
+            log.info("Age grid loaded from %s", cache)
+        else:
+            geology = self.sources.geologic_map().load()
+            geology = geology[["log10_age", "geometry"]].to_crs(self.counties.crs)
+            grid = build_age_grid(geology, counties, float(self.p["cell_km"]) * M_PER_KM)
+            del geology
+            gc.collect()
+            grid.save(cache)
         dated = np.isfinite(grid.log_age) & (grid.county >= 0)
         log.info("Age grid %s cells; %.1f%% of county cells dated", grid.shape, 100 * dated.sum() / max((grid.county >= 0).sum(), 1))
         cent = counties.geometry.centroid

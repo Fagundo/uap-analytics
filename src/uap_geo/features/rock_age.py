@@ -63,6 +63,16 @@ class AgeGrid:
         inside = (row >= 0) & (row < rows) & (col >= 0) & (col < cols)
         return np.clip(row, 0, rows - 1), np.clip(col, 0, cols - 1), inside
 
+    def save(self, path) -> None:
+        np.savez_compressed(path, log_age=self.log_age.astype("float32"), era=self.era, county=self.county,
+                            origin=np.array([self.x0, self.y0, self.cell]))
+
+    @classmethod
+    def load(cls, path) -> AgeGrid:
+        z = np.load(path)
+        x0, y0, cell = z["origin"]
+        return cls(z["log_age"].astype(float), z["era"], z["county"], float(x0), float(y0), float(cell))
+
     # ------------------------------------------------------------------------------ shifting
     def shifted(self, angle_deg: float, dx: float, dy: float, origin: tuple[float, float]) -> tuple[np.ndarray, np.ndarray]:
         """(log_age, era) of the map after rotating it by angle_deg about origin and translating by (dx, dy),
@@ -119,7 +129,10 @@ class CountyAgeSummary:
             for k, name in enumerate(ERA_NAMES):
                 frame.iloc[i, frame.columns.get_loc(f"share_{name}")] = float(er[cell] == k)
             frame.iloc[i, frame.columns.get_loc("rock_cells")] = 1.0
-        frame["dominant_era"] = frame[[f"share_{n}" for n in ERA_NAMES]].idxmax(axis=1).str.replace("share_", "")
+        shares = frame[[f"share_{n}" for n in ERA_NAMES]].to_numpy()
+        dated_any = np.isfinite(shares).all(axis=1)
+        top = np.argmax(np.nan_to_num(shares, nan=-1.0), axis=1)
+        frame["dominant_era"] = np.where(dated_any, np.asarray(ERA_NAMES, dtype=object)[top], None)
         return frame
 
 

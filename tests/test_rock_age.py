@@ -58,3 +58,14 @@ def test_two_sided_shift_p():
     null = np.log(np.array([0.9, 1.0, 1.05, 1.2]))
     assert two_sided_shift_p(np.log(1.15), null) == (1 + 1) / 5
     assert two_sided_shift_p(np.log(1 / 1.15), null) == (1 + 1) / 5
+
+
+def test_summary_survives_counties_with_no_dated_cells(tmp_path):
+    la = np.array([[np.nan, np.nan, 2.0]])
+    g = AgeGrid(la, era_codes(10 ** la), np.array([[0, 0, 1]]), 0.0, 1.0, 1.0)
+    out = CountyAgeSummary(g, np.array(["a", "b"]), np.array([1.0, 2.5]), np.array([0.5, 0.5])).summarize()
+    assert np.isnan(out.loc["a", "rock_log10_age"]) and out.loc["a", "dominant_era"] is None
+    assert out.loc["b", "dominant_era"] == "mesozoic"
+    g.save(tmp_path / "g.npz")
+    back = AgeGrid.load(tmp_path / "g.npz")
+    assert back.shape == g.shape and back.cell == 1.0 and (back.county == g.county).all()
