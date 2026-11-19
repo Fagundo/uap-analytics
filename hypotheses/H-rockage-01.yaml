@@ -1,0 +1,64 @@
+# Pre-registered after the explore run (2001-2010) and before any 2011+ analysis.
+# Do not edit. A changed hypothesis gets a new ID; the registry stores this file's hash.
+id: H-rockage-01
+title: Geologic age of surface rock
+status: draft
+registered: null
+claim: >
+  The geologic age of the rocks at a county's surface goes with how many UAP events the county reports,
+  beyond the observer controls, in either direction, and the real geologic map lines up with reporting
+  better than rigidly shifted copies of it.
+origin: >
+  Suggested by Michael on 2026-11-19 after H-volcano-01 (Mount Rainier, Mount Adams). Geologic age was
+  never used in v1 or v2, so 2011-2020 has not been examined for it and serves as the confirm split.
+literature:
+  - "Persinger's tectonic strain theory links luminous phenomena to crustal stress, which points to young, active terrain."
+  - "Earth-lights accounts (Devereux) tie lights to faulted, quartz-bearing (often old crystalline) rock, which points the other way."
+  - "v1 of this project: faults, earthquakes, magnetic and gamma-ray layers were regional or null once state fixed effects entered; terrain relief raises reports (1.11 per SD)."
+
+data:
+  reports: TidyTuesday 2023-06-20 NUFORC extract
+  geology: USGS State Geologic Map Compilation v1.1 (Horton et al. 2017), map units with their age range (Age table MIN_MA, MAX_MA)
+  covariates: as H-persist-01 (includes terrain relief, tourism and college-town shares), state fixed effects
+
+unit: county x period
+outcome: events per county in the period, after removing holiday and launch nights (as H-persist-01)
+outcome_tiers: [all, filtered, high_quality]
+primary_tier: filtered
+exposure: >
+  Mean over the county's 1 km grid cells of log10(midpoint age in Ma) of the mapped surface unit, standardized
+  (rate ratio per SD). Midpoint = (youngest + oldest bound) / 2. Undated cells (water, ice) are left out.
+model: >
+  negative binomial rate model, offset log(population x nights kept), H-persist-01 controls, state fixed
+  effects (which also absorb differences between the 48 state maps), standard errors clustered by state,
+  plus the exposure
+
+tests:
+  age:
+    exposure: mean log10 age of surface rock (per SD)
+    prediction: rate_ratio != 1 (two-sided; no direction predicted)
+    discriminating_checks:
+      - "layer-shift test: the real map's |log rate ratio| exceeds that of rigidly rotated (up to 20 degrees)
+        and shifted (up to 400 km) copies of the map, two-sided p < 0.05 over 200 copies"
+secondary:
+  - "era shares (Mesozoic, Paleozoic, Precambrian; Cenozoic reference) in one model, per SD; descriptive"
+  - "observed / expected events by dominant era, from the controls-only model; descriptive"
+
+splits:
+  explore: [2001, 2010]
+  confirm: [2011, 2020]
+  holdout: [2021, null]   # replication, reported separately
+
+multiple_testing: none needed (one primary test)
+smallest_effect_of_interest: 1.10   # rate ratio per SD, either direction (1.10 or 1/1.10)
+decision_rules:
+  confirmed: two-sided p < 0.05 in the filtered tier on the confirm split, and the shift test holds; the direction is reported
+  refuted: power >= 0.80 and the 95% confidence interval lies inside (1/1.10, 1.10)
+  underpowered: power < 0.50
+
+limits: >
+  The map shows the unit at the surface, which in glaciated and alluvial areas is young sediment over much
+  older bedrock; the measure is surface age, not bedrock age. State maps differ in how they split units;
+  state fixed effects absorb level differences between maps but not differences in detail. A confirmed
+  association would not identify a mechanism: rock age tracks landscape (mountains, deserts, plains) that
+  also changes who is outside looking up.

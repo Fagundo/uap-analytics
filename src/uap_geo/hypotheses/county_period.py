@@ -94,3 +94,24 @@ class CountyPeriodStudy(EventStudy):
         data = table.assign(report_count=counts, population=table["population"] * nights / (10 * NIGHTS_PER_YEAR))
         spec = ModelSpec(self.MODEL_NAME, (*self.controls, *extra), self.fixed_effects)
         return NegBinRateModel(spec, quiet=True, cluster=self.p.get("cluster")).fit(data)
+
+    def _power_from_explore(self, table, events, removed, total_events: int, term: str,
+                            two_sided: bool = False) -> float:
+        """Power for the smallest effect of interest from the explore-period standard error of `term`, scaled
+        to this split's event total: se = se_explore * sqrt(events_explore / events_split).
+        Uses explore-period data and this split's total only, never the split's exposure-outcome relation."""
+        from statistics import NormalDist
+
+        start, end = (int(y) for y in self.spec["splits"]["explore"])
+        counts, _, nights = self._period_counts(events, removed, (start, end), table.index, self.PRIMARY)
+        c = self._fit(table, counts, nights, (term,)).coefficients.loc[term]
+        se_explore = (np.log(c["ci_high"]) - np.log(c["ci_low"])) / (2 * 1.959964)
+        se = se_explore * np.sqrt(float(counts.sum()) / max(total_events, 1))
+        p = self.impl["parameters"]["power"]
+        z = NormalDist().inv_cdf(1 - p["alpha"] / 2)
+        self.power_inputs = {"se_explore": float(se_explore), "events_explore": int(counts.sum()),
+                             "events_split": int(total_events), "se_split": float(se)}
+        power = NormalDist().cdf(np.log(p["rate_ratio"]) / se - z)
+        if two_sided:  # the smallest effect of interest in either direction (rate ratio 1.10 or 1/1.10)
+            power += NormalDist().cdf(-np.log(p["rate_ratio"]) / se - z)
+        return float(power)

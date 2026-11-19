@@ -1,0 +1,49 @@
+# Implementation choices for H-rockage-01, fixed before any confirm run.
+# Registered together with the spec and filters; a confirm run refuses to start if any changes.
+hypothesis: H-rockage-01
+notes:
+  grid: >
+    SGMC_Geology polygons are reprojected to the study CRS (EPSG:5070) and rasterized at 1 km (a cell takes
+    the unit covering its centre; where state maps overlap at seams the later polygon wins). Counties are
+    rasterized on the same grid. A county with no cell (smaller than a cell) takes the cell under its centroid.
+  age: >
+    Per unit: youngest bound = min MIN_MA and oldest bound = max MAX_MA over its Age-table rows; midpoint =
+    their mean; log10 of the midpoint. Era of a unit = era of its midpoint (Cenozoic < 66 Ma, Mesozoic
+    66-251.9, Paleozoic 251.9-538.8, Precambrian > 538.8).
+  removals_and_controls: identical to H-persist-01 (holiday nights, twilight and night launch nights; same controls).
+  shift_test: >
+    Rotate the whole map about the centroid of the contiguous US by up to 20 degrees and translate it by up to
+    400 km in x and y (uniform); read the moved map on the unmoved grid (nearest cell; cells moved off the map
+    are undated); recompute county means; refit. 200 copies, seed 42. Two-sided p = (1 + copies with
+    |log rate ratio| >= observed |log rate ratio|) / (1 + copies). Counties left with no dated cell drop out
+    of that copy's fit.
+  power: >
+    Two-sided, for rate ratio 1.10 or 1/1.10, from the explore-period standard error of the age term
+    (state-clustered), scaled by sqrt(explore events / this split's events).
+  verdict: >
+    Confirmed: p < 0.05 in the filtered tier and the shift test holds (direction reported). Underpowered:
+    power < 0.50. Refuted: power >= 0.80 and the 95% CI inside (1/1.10, 1.10). Otherwise inconclusive.
+    Explore runs get no verdict.
+
+parameters:
+  dedup: {km: 50, hours: 3}
+  quality: {min_reports: 2, min_duration_s: 300}
+  rock_age:
+    cell_km: 1
+    holiday_nights: ["07-03", "07-04", "07-05", "12-31", "01-01"]
+    launch_lighting_removed: [twilight, night]
+    twilight_sun_alt: [-18, -4]
+    launch_radius_km: 1200
+    launch_min_apogee_km: 100
+    covariates: [light_pollution, airports_per_km2, places_per_km2, primary_road_length_per_km2,
+                 rail_length_per_km2, elevation_relief_m, dist_to_coast_km, river_length_per_km2,
+                 seasonal_housing_share, college_enrolled_share]
+    covariate_sources: [light_pollution, airports, gazetteer_places, primary_roads, rail, elevation, coastline, rivers,
+                        acs_housing, acs_college]
+    fixed_effects: [state_fips]
+    cluster: state_fips
+    max_shift_km: 400
+    max_rotate_deg: 20
+    shift_trials: 200
+    seed: 42
+  power: {rate_ratio: 1.10, alpha: 0.05, underpowered_below: 0.50, refute_requires: 0.80}
