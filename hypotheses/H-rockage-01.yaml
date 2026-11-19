@@ -1,9 +1,10 @@
 # Pre-registered after the explore run (2001-2010) and before any 2011+ analysis.
+# Explore run 2026-11-19 (2001-2010): 1.041 (0.976-1.111) per SD, shift p 0.31, two-sided power for 2001-2010 82%.
 # Do not edit. A changed hypothesis gets a new ID; the registry stores this file's hash.
 id: H-rockage-01
 title: Geologic age of surface rock
-status: draft
-registered: null
+status: registered
+registered: 2026-11-19
 claim: >
   The geologic age of the rocks at a county's surface goes with how many UAP events the county reports,
   beyond the observer controls, in either direction, and the real geologic map lines up with reporting
