@@ -146,7 +146,8 @@ STUDIES = {"H-geo-01": "uap_geo.hypotheses.geo_triggers:GeoTriggerStudy",
            "H-persist-01": "uap_geo.hypotheses.persistence:PersistenceStudy",
            "H-install-01": "uap_geo.hypotheses.proximity:InstallationStudy",
            "H-volcano-01": "uap_geo.hypotheses.proximity:VolcanoStudy",
-           "H-rockage-01": "uap_geo.hypotheses.rock_age:RockAgeStudy"}
+           "H-rockage-01": "uap_geo.hypotheses.rock_age:RockAgeStudy",
+           "H-rocktype-01": "uap_geo.hypotheses.rock_type:RockTypeStudy"}
 DIAGNOSTICS = {"H-geo-01": "uap_geo.hypotheses.diagnostics:DiagnosticsReport"}
 
 

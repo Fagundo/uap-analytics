@@ -1,0 +1,76 @@
+# Pre-registered after the explore run (2001-2010) and before any 2011+ analysis of rock type.
+# Do not edit. A changed hypothesis gets a new ID; the registry stores this file's hash.
+id: H-rocktype-01
+title: Rock type at the surface (screen of seven classes)
+status: draft
+registered: null
+claim: >
+  At least one rock type at a county's surface goes with how many UAP events the county reports, beyond the
+  observer controls, in either direction, and for that type the real geologic map lines up with reporting
+  better than rigidly shifted copies of it.
+origin: >
+  Michael asked on 2026-11-19 to test which rock type, if any, goes with reporting (his original intent;
+  H-rockage-01 tested age). No class is singled out: all seven are tested with correction.
+disclosure: >
+  H-rockage-01 (same data, same splits) was run on 2011-2020 before this registration. Its secondary
+  estimate showed the Paleozoic share at 1.09 per SD in 2001-2010 and 2011-2020. Paleozoic surface rock is
+  mostly sedimentary (carbonate and clastic), so those two classes were seen indirectly on the confirm split.
+  The classes were fixed from the map's term counts, not from any reporting data, and all seven are tested.
+literature:
+  - "Earth-lights accounts (Devereux; Persinger and Derr) tie lights to stressed, quartz-bearing crystalline rock and faults."
+  - "Persinger's tectonic strain theory points to young, active, often volcanic terrain."
+  - "v1 of this project: faults, magnetic and gamma-ray layers were regional or null within states; terrain relief raises reports."
+
+data:
+  reports: TidyTuesday 2023-06-20 NUFORC extract
+  geology: USGS State Geologic Map Compilation v1.1 (Horton et al. 2017), Lithology table (major lithologies) and unit polygons
+  covariates: as H-persist-01 (includes terrain relief, tourism and college-town shares), state fixed effects
+
+unit: county x period
+outcome: events per county in the period, after removing holiday and launch nights (as H-persist-01)
+outcome_tiers: [all, filtered, high_quality]
+primary_tier: filtered
+classes:
+  unconsolidated: Unconsolidated sediment (LITH1 Unconsolidated)
+  clastic: Sedimentary except carbonate (clastic, chemical, coal)
+  carbonate: Sedimentary > Carbonate
+  volcanic: Igneous > Volcanic and Hypabyssal
+  plutonic: Igneous > Plutonic
+  metasedimentary: Metamorphic > Metasedimentary
+  crystalline_metamorphic: other Metamorphic (schist, gneiss, metaigneous, amphibolite, ...) and Tectonite
+exposure: >
+  For each class, the share of the county's 1 km grid cells in that class (a map unit with several major
+  lithologies is split evenly), standardized (rate ratio per SD). Ice and unclassified units are left out.
+model: >
+  negative binomial rate model, offset log(population x nights kept), H-persist-01 controls, state fixed
+  effects (which also absorb differences between the 48 state maps), standard errors clustered by state,
+  plus one class share at a time
+
+tests:
+  per_class:
+    exposure: share of one class (per SD), seven separate tests
+    prediction: rate_ratio != 1 (two-sided; no direction predicted)
+    discriminating_checks:
+      - "layer-shift test for that class: the real map's |log rate ratio| exceeds that of the map rigidly
+        rotated (up to 20 degrees) and shifted (up to 400 km), two-sided p < 0.05 over 200 copies"
+secondary:
+  - "observed / expected events by dominant rock type, from the controls-only model; descriptive"
+
+splits:
+  explore: [2001, 2010]
+  confirm: [2011, 2020]
+  holdout: [2021, null]   # replication, reported separately
+
+multiple_testing: Benjamini-Hochberg across the seven classes (primary tier, confirm split)
+smallest_effect_of_interest: 1.10   # rate ratio per SD, either direction
+decision_rules:
+  confirmed: BH-adjusted p < 0.05 and the shift test holds for that class; the direction is reported
+  refuted: power >= 0.80 and the 95% confidence interval lies inside (1/1.10, 1.10)
+  underpowered: power < 0.50
+  power: two-sided, alpha 0.05/7, from the explore-period standard error, not scaled for more events
+
+limits: >
+  The map shows the unit at the surface (glacial and river sediment over bedrock in much of the country).
+  Classes share a county's area, so they are not independent: more of one means less of others. State maps
+  differ in detail. A confirmed class would not identify a mechanism: rock type tracks landscape and land
+  use (mountains, karst, farmland) that also changes who is outside looking up.

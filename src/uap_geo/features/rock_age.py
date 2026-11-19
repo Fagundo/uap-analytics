@@ -34,20 +34,16 @@ def era_codes(mid_ma: np.ndarray) -> np.ndarray:
     return codes
 
 
-@dataclass
-class AgeGrid:
-    """Rasters on one grid: log10 age (NaN where undated), era code, and county index (MISSING outside)."""
+class RasterGrid:
+    """A north-up grid: x0, y0 = left and top edges, cell = side in metres. Subclasses hold the rasters."""
 
-    log_age: np.ndarray
-    era: np.ndarray
-    county: np.ndarray
-    x0: float           # x of the left edge of column 0
-    y0: float           # y of the top edge of row 0
-    cell: float         # metres
+    x0: float
+    y0: float
+    cell: float
 
     @property
     def shape(self) -> tuple[int, int]:
-        return self.log_age.shape
+        return self.county.shape
 
     def centres(self) -> tuple[np.ndarray, np.ndarray]:
         rows, cols = self.shape
@@ -63,6 +59,30 @@ class AgeGrid:
         inside = (row >= 0) & (row < rows) & (col >= 0) & (col < cols)
         return np.clip(row, 0, rows - 1), np.clip(col, 0, cols - 1), inside
 
+    def source_cells(self, angle_deg: float, dx: float, dy: float, origin: tuple[float, float]):
+        """For a copy of the map rotated by angle_deg about origin and translated by (dx, dy): the (row, col,
+        inside) of the original cell each unmoved cell now shows (nearest cell; inside False = off the map)."""
+        xc, yc = self.centres()
+        ox, oy = origin
+        # Inverse motion: undo the translation, then rotate back by -angle about the origin.
+        u, v = xc - dx - ox, yc - dy - oy
+        a = np.deg2rad(-angle_deg)
+        xs = ox + u * np.cos(a) - v * np.sin(a)
+        ys = oy + u * np.sin(a) + v * np.cos(a)
+        return self.cell_of(xs, ys)
+
+
+@dataclass
+class AgeGrid(RasterGrid):
+    """Rasters on one grid: log10 age (NaN where undated), era code, and county index (MISSING outside)."""
+
+    log_age: np.ndarray
+    era: np.ndarray
+    county: np.ndarray
+    x0: float           # x of the left edge of column 0
+    y0: float           # y of the top edge of row 0
+    cell: float         # metres
+
     def save(self, path) -> None:
         np.savez_compressed(path, log_age=self.log_age.astype("float32"), era=self.era, county=self.county,
                             origin=np.array([self.x0, self.y0, self.cell]))
@@ -73,18 +93,10 @@ class AgeGrid:
         x0, y0, cell = z["origin"]
         return cls(z["log_age"].astype(float), z["era"], z["county"], float(x0), float(y0), float(cell))
 
-    # ------------------------------------------------------------------------------ shifting
     def shifted(self, angle_deg: float, dx: float, dy: float, origin: tuple[float, float]) -> tuple[np.ndarray, np.ndarray]:
         """(log_age, era) of the map after rotating it by angle_deg about origin and translating by (dx, dy),
         read on the unmoved grid. Cells whose source falls outside the map come back missing."""
-        xc, yc = self.centres()
-        ox, oy = origin
-        # Inverse motion: undo the translation, then rotate back by -angle about the origin.
-        u, v = xc - dx - ox, yc - dy - oy
-        a = np.deg2rad(-angle_deg)
-        xs = ox + u * np.cos(a) - v * np.sin(a)
-        ys = oy + u * np.sin(a) + v * np.cos(a)
-        row, col, inside = self.cell_of(xs, ys)
+        row, col, inside = self.source_cells(angle_deg, dx, dy, origin)
         log_age = np.where(inside, self.log_age[row, col], np.nan)
         era = np.where(inside, self.era[row, col], MISSING).astype(np.int8)
         return log_age, era

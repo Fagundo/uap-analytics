@@ -1,0 +1,50 @@
+# Implementation choices for H-rocktype-01, fixed before any confirm run.
+# Registered together with the spec and filters; a confirm run refuses to start if any changes.
+hypothesis: H-rocktype-01
+notes:
+  classes: >
+    Lithology table rows with LITH_RANK 'Major' or 'Indeterminate, major'. Class from LITH1 and LITH2:
+    Unconsolidated -> unconsolidated; Sedimentary/Carbonate -> carbonate; other Sedimentary -> clastic;
+    Igneous/Plutonic -> plutonic; other Igneous (Volcanic, Hypabyssal) -> volcanic; Metamorphic/Metasedimentary
+    -> metasedimentary; other Metamorphic and Tectonite -> crystalline_metamorphic; Ice and blanks -> none.
+    A unit's weight in a class = its major rows in that class / its classified major rows.
+  grid: >
+    SGMC_Geology polygons reprojected to EPSG:5070 and rasterized at 1 km as unit indices (a cell takes the
+    unit covering its centre; at state seams the later polygon wins). Counties on the same grid; a county with
+    no cell takes the cell under its centroid. County share = mean class weight over cells on classified units.
+  removals_and_controls: identical to H-persist-01 (holiday nights, twilight and night launch nights; same controls).
+  shift_test: >
+    As H-rockage-01, applied to the unit raster so all classes move together: rotate the map about the
+    centroid of the contiguous US by up to 20 degrees, translate by up to 400 km in x and y (uniform), read on
+    the unmoved grid (nearest cell), recompute shares, refit each class. 200 copies, seed 42. Two-sided
+    p = (1 + copies with |log rate ratio| >= observed) / (1 + copies), per class, no further correction.
+  power: >
+    Per class, two-sided, rate ratio 1.10 or 1/1.10, alpha 0.05/7, from the explore-period (state-clustered)
+    standard error of that share, not scaled by event counts (H-rockage-01 showed the scaled SE is optimistic).
+  verdict: >
+    Per class. Confirmed: BH-adjusted p < 0.05 (seven classes, filtered tier) and the shift test holds.
+    Underpowered: power < 0.50. Refuted: power >= 0.80 and the 95% CI inside (1/1.10, 1.10). Otherwise
+    inconclusive. Explore runs get no verdict.
+
+parameters:
+  dedup: {km: 50, hours: 3}
+  quality: {min_reports: 2, min_duration_s: 300}
+  rock_type:
+    cell_km: 1
+    holiday_nights: ["07-03", "07-04", "07-05", "12-31", "01-01"]
+    launch_lighting_removed: [twilight, night]
+    twilight_sun_alt: [-18, -4]
+    launch_radius_km: 1200
+    launch_min_apogee_km: 100
+    covariates: [light_pollution, airports_per_km2, places_per_km2, primary_road_length_per_km2,
+                 rail_length_per_km2, elevation_relief_m, dist_to_coast_km, river_length_per_km2,
+                 seasonal_housing_share, college_enrolled_share]
+    covariate_sources: [light_pollution, airports, gazetteer_places, primary_roads, rail, elevation, coastline, rivers,
+                        acs_housing, acs_college]
+    fixed_effects: [state_fips]
+    cluster: state_fips
+    max_shift_km: 400
+    max_rotate_deg: 20
+    shift_trials: 200
+    seed: 42
+  power: {rate_ratio: 1.10, alpha: 0.05, underpowered_below: 0.50, refute_requires: 0.80}
