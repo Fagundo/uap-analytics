@@ -1,9 +1,10 @@
 # Pre-registered after the explore run (2001-2010) and before any 2011+ analysis of rock type.
+# Explore run 2026-11-19 (2001-2010): per-SD rate ratios 0.95-1.04, BH p >= 0.15, no class beats the shift test.
 # Do not edit. A changed hypothesis gets a new ID; the registry stores this file's hash.
 id: H-rocktype-01
 title: Rock type at the surface (screen of seven classes)
-status: draft
-registered: null
+status: registered
+registered: 2026-11-19
 claim: >
   At least one rock type at a county's surface goes with how many UAP events the county reports, beyond the
   observer controls, in either direction, and for that type the real geologic map lines up with reporting
