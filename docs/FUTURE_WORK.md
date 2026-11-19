@@ -46,3 +46,13 @@ strange as the residual and are recognised as launches only 4% of the time; high
 everywhere because summaries average 88 characters. Options: full narratives (NUFORC request), or a revised
 prompt and score (features-v2) checked on a fresh validation sample. Meanwhile the extractor recognises
 Starlink trains (88%) and meteors (90%), so it can serve as an extra explainer for the residual set.
+
+## Geologic age (H-rockage-01, refuted 2026-11-19)
+
+- Power for county studies scales the explore SE by event counts; for H-rockage-01 the realised confirm SE
+  (0.039) was larger than projected (0.026), so the registered 96% power is optimistic (about 68% from the
+  realised SE). The confirm interval (0.920–1.073) still excludes a 10% effect either way. Base future
+  county-study power on a bootstrap or simulation instead.
+- Lead: the Paleozoic share of surface rock runs about 1.09 per SD in both 2001–2010 and 2011–2020
+  (secondary, unadjusted, not shift-tested) and 1.06 in 2021+. Test only as a new post-hoc ID on 2024+
+  reports, adding SGMC lithology to separate rock type (carbonate, shale, crystalline) from age.
