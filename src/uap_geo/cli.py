@@ -98,6 +98,9 @@ def main(argv: list[str] | None = None) -> None:
     aud.add_argument("action", choices=["dispersion"])
     aud.add_argument("--split", choices=["explore", "confirm", "holdout"], default="confirm")
     aud.add_argument("--config", type=Path, default=Path("configs/v1.yaml"))
+    geo = sub.add_parser("geology", help="Inspect the geologic map inputs")
+    geo.add_argument("action", choices=["terms"])
+    geo.add_argument("--config", type=Path, default=Path("configs/v1.yaml"))
     args = parser.parse_args(argv)
 
     configure()
@@ -112,10 +115,29 @@ def main(argv: list[str] | None = None) -> None:
         _residual(args)
     elif args.command == "llm":
         _llm(args)
+    elif args.command == "geology":
+        _geology_terms(args)
     elif args.command == "audit":
         from uap_geo.audit.dispersion import run as dispersion_run
 
         print(dispersion_run(Path.cwd(), Config.from_yaml(args.config), args.split).read_text())
+
+
+def _geology_terms(args) -> None:
+    """Counts of SGMC lithology terms, to fix the rock-type classes before any analysis."""
+    from uap_geo.common.download import Downloader
+    from uap_geo.data.scraping.registry import SourceRegistry
+
+    config = Config.from_yaml(args.config)
+    lith = SourceRegistry(config, Downloader(config.paths.raw)).geologic_map().lithology_table()
+    print(f"Lithology rows: {len(lith):,}; units: {lith['UNIT_LINK'].nunique():,}; columns: {list(lith.columns)}")
+    print(lith["LITH_RANK"].value_counts(dropna=False).to_string())
+    major = lith.loc[lith["LITH_RANK"].astype(str).str.contains("ajor", na=False)]
+    print(f"Units with a major lithology: {major['UNIT_LINK'].nunique():,}; major rows per unit (max): "
+          f"{major.groupby('UNIT_LINK').size().max()}")
+    for cols in (["LITH1"], ["LITH1", "LITH2"], ["LITH1", "LITH2", "LITH3"]):
+        print(f"\n== major rows by {' / '.join(cols)}")
+        print(major.groupby(cols, dropna=False).size().sort_values(ascending=False).head(60).to_string())
 
 
 STUDIES = {"H-geo-01": "uap_geo.hypotheses.geo_triggers:GeoTriggerStudy",

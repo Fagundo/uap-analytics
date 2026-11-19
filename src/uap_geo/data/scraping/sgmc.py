@@ -19,6 +19,7 @@ from uap_geo.common.base import DataSource
 log = logging.getLogger(__name__)
 GEOLOGY_LAYER = "SGMC_Geology"
 AGE_LAYER = "Age"
+LITH_LAYER = "Lithology"
 FILENAME = "USGS_SGMC_Geodatabase.zip"
 
 
@@ -71,3 +72,10 @@ class SgmcGeologySource(DataSource):
         log.info("SGMC: %d polygons, %d units with an age, %.1f%% of polygons dated", len(out), len(ages),
                  100 * dated.mean())
         return gpd.GeoDataFrame(out, geometry="geometry", crs=units.crs)
+
+    def lithology_table(self):
+        """The Lithology table (one row per unit and lithology term), without geometry: fast to read."""
+        import pyogrio
+
+        path = self.downloader.fetch(self.config, FILENAME)
+        return pyogrio.read_dataframe(gdb_path(path), layer=LITH_LAYER, read_geometry=False)
