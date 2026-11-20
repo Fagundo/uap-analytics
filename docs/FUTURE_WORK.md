@@ -63,3 +63,12 @@ Starlink trains (88%) and meteors (90%), so it can serve as an extra explainer f
   2001–2010. Next: leave-one-state-out and drop-Florida diagnostics, karst/sinkhole density against
   carbonate share, cropland and land-use controls, and a replication on 2024+ reports.
 - Cache the rock-type unit grid in its own Actions cache (each run rereads the 436 MB map, ~30 minutes).
+
+## Era classes (H-rockera-01, post hoc 2026-11-20)
+
+- Paleozoic share 1.106 (1.046–1.169) per SD pooled 2001–2023, beats all 200 shifted maps (p 0.005); by period
+  1.10 / 1.13 / 1.04. With carbonate in the same model Paleozoic stays 1.09 and carbonate drops to 1.03 (n.s.);
+  Paleozoic carbonate and non-carbonate rock both run ~1.07. The signal looks like Paleozoic terrain rather than
+  carbonate. Mean log age (H-rockage-01) missed it because the pattern is not monotonic (Precambrian ~0.96).
+- Confirmatory test only on 2024+ reports (new ID, Paleozoic share primary, shift test), with land-use,
+  cropland and bedrock-exposure (vs glacial or coastal-plain cover) controls.
