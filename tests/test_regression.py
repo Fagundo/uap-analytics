@@ -19,7 +19,8 @@ def test_comparer_reports_changed_values_keys_and_lengths():
     a = {"x": 1.0, "v": "refuted", "l": [1, 2], "gone": 1}
     b = {"x": 1.01, "v": "inconclusive", "l": [1], "new": 2}
     paths = {d.path for d in ResultComparer().compare(a, b)}
-    assert paths == {"x", "v", "l[len]", "gone", "new"}
+    assert paths == {"x", "v", "l[len]", "gone"}
+    assert ResultComparer().added(a, b) == ["new"]      # a new output field is an addition, not a change
 
 
 def test_comparer_does_not_treat_bools_as_numbers():
@@ -55,6 +56,6 @@ def test_targets_find_committed_results(tmp_path):
 
 def test_summary_marks_changes():
     checks = [{"hypothesis": "H-a", "split": "confirm", "ok": False, "error": None, "seconds": 60, "fingerprint": "match",
-               "differences": ["x: committed 1, now 2"], "n_differences": 1, "fingerprint_differences": []}]
+               "differences": ["x: committed 1, now 2"], "n_differences": 1, "fingerprint_differences": [], "inputs_changed": ["data/raw/airports/airports.csv"]}]
     text = summary_markdown(checks)
-    assert "CHANGED" in text and "x: committed 1, now 2" in text
+    assert "CHANGED" in text and "x: committed 1, now 2" in text and "raw input changed: data/raw/airports" in text

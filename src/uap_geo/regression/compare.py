@@ -6,7 +6,8 @@ import math
 from dataclasses import dataclass
 from typing import Any
 
-IGNORED_KEYS = frozenset({"manifest"})   # run time, commit and input hashes change on every run
+IGNORED_KEYS = frozenset({"manifest"})
+ADDED = "<added>"   # run time, commit and input hashes change on every run
 
 
 @dataclass(frozen=True)
@@ -29,9 +30,16 @@ class ResultComparer:
         self.ignored = ignored
 
     def compare(self, expected: Any, actual: Any) -> list[Difference]:
+        """Changed, removed or retyped values. Fields that exist only in `actual` are additions, not changes
+        (new outputs such as a dispersion estimate added after a result was committed): see `added`."""
         out: list[Difference] = []
         self._walk(expected, actual, "", out)
-        return out
+        return [d for d in out if d.expected != ADDED]
+
+    def added(self, expected: Any, actual: Any) -> list[str]:
+        out: list[Difference] = []
+        self._walk(expected, actual, "", out)
+        return [d.path for d in out if d.expected == ADDED]
 
     def _walk(self, a: Any, b: Any, path: str, out: list[Difference]) -> None:
         if isinstance(a, dict) and isinstance(b, dict):
@@ -39,8 +47,10 @@ class ResultComparer:
                 if key in self.ignored:
                     continue
                 sub = f"{path}.{key}" if path else str(key)
-                if key not in a or key not in b:
-                    out.append(Difference(sub, a.get(key, "<missing>"), b.get(key, "<missing>")))
+                if key not in a:
+                    out.append(Difference(sub, ADDED, b[key]))
+                elif key not in b:
+                    out.append(Difference(sub, a[key], "<missing>"))
                 else:
                     self._walk(a[key], b[key], sub, out)
         elif isinstance(a, list) and isinstance(b, list):

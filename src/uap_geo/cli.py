@@ -105,6 +105,8 @@ def main(argv: list[str] | None = None) -> None:
     reg.add_argument("--only", default=None, help="One hypothesis id")
     reg.add_argument("--split", default=None)
     reg.add_argument("--record", action="store_true", help="Write missing input fingerprints when results match")
+    reg.add_argument("--rebaseline", action="store_true",
+                     help="Write regression baselines from this run (once; differences must be explained in BASELINE.md)")
     reg.add_argument("--out", type=Path, default=None, help="JSON file for this run's checks")
     reg.add_argument("--inputs", type=Path, default=Path("results/regression/parts"), help="summarize: folder of run JSONs")
     reg.add_argument("--config", type=Path, default=Path("configs/v1.yaml"))
@@ -147,7 +149,7 @@ def _regression(args) -> None:
         targets = runner.targets(args.only, args.split)
         if not targets:
             raise SystemExit(f"No committed results for {args.only or 'any hypothesis'} {args.split or ''}")
-        checks = [runner.check(h, s, record=args.record).as_dict() for h, s in targets]
+        checks = [runner.check(h, s, record=args.record, rebaseline=args.rebaseline).as_dict() for h, s in targets]
         out = args.out or Path("results/regression/parts") / f"{args.only or 'all'}.json"
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(json.dumps(checks, indent=2) + "\n")
