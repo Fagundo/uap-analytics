@@ -129,6 +129,9 @@ sources:
   sgmc:                       # USGS State Geologic Map Compilation v1.1 (Horton et al. 2017), file geodatabase, ~436 MB
     urls:
       - https://www.sciencebase.gov/catalog/file/get/5888bf4fe4b05ccb964bab9d?f=__disk__24%2Ff6%2Fe1%2F24f6e139c181fd9fe43df2aaf7f50b1c5b3b6297
+  nlcd_2011:                  # NLCD 2011 land cover, CONUS, 480 m via MRLC WCS (scale 1/16, nearest), ~68 MB
+    urls:
+      - "https://www.mrlc.gov/geoserver/mrlc_download/NLCD_2011_Land_Cover_L48/wcs?service=WCS&version=2.0.1&request=GetCoverage&coverageid=NLCD_2011_Land_Cover_L48&format=image/geotiff&SCALEFACTOR=0.0625"
   gcat_launches:              # Jonathan McDowell's GCAT (CC-BY): every launch attempt, and launch-site coordinates
     urls:
       - https://planet4589.org/space/gcat/tsv/launch/launch.tsv

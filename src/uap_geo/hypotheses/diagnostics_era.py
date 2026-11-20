@@ -104,3 +104,108 @@ class StateEraDiagnostics:
         path = out / f"states_{'_'.join(self.states)}.md"
         path.write_text("\n".join(lines) + "\n")
         return path
+
+
+class LandUseEraDiagnostics:
+    """Post hoc: does the Paleozoic association survive land-use controls (NLCD 2011 shares) and a control for
+    young sediment cover over bedrock (unconsolidated share, all eras)? Pooled 2001-2023, filtered tier."""
+
+    def __init__(self, study) -> None:
+        self.study = study
+
+    def _land_cover(self, table: pd.DataFrame) -> pd.DataFrame:
+        from uap_geo.features.land_cover import county_land_cover
+
+        st = self.study
+        counties = st.counties[[COUNTY_ID, "geometry"]].reset_index(drop=True)
+        return county_land_cover(st.sources.land_cover().load(), counties, counties[COUNTY_ID].to_numpy()).reindex(table.index)
+
+    def run(self) -> Path:
+        from uap_geo.features.land_cover import GROUPS
+        from uap_geo.features.rock_age import ERA_NAMES
+        from uap_geo.common.geo import M_PER_KM
+        from uap_geo.hypotheses.rock_age import two_sided_shift_p
+
+        st = self.study
+        table, events, removed, summary, _ = st.prepare()
+        lc = self._land_cover(table)
+        table = table.join(lc)
+        table["share_unconsolidated_all"] = table[[f"share_{e}_unconsolidated" for e in ERA_NAMES]].sum(axis=1)
+        land = tuple(f"lc_{g}" for g in GROUPS)
+        cover = ("share_unconsolidated_all",)
+        counts, _, nights = st._period_counts(events, removed, st._split_years(), table.index, st.PRIMARY)
+
+        f = lambda r: f"{r['rate_ratio']:.3f} ({r['ci_low']:.3f}–{r['ci_high']:.3f})"  # noqa: E731
+        models = {"Paleozoic alone": (), "+ land cover": land, "+ sediment cover": cover,
+                  "+ land cover + sediment cover": land + cover}
+        fits = {name: st._fit(table, counts, nights, (PALEOZOIC, *extra)) for name, extra in models.items()}
+        full = land + cover
+
+        lines = ["# H-rockera-01 diagnostic: Paleozoic share with land-use controls (post hoc)", "",
+                 "Pooled 2001–2023, filtered tier, H-persist-01 controls, state fixed effects, state-clustered SEs. "
+                 "Land cover: NLCD 2011 shares per county (480 m cells): developed, forest, shrub/grass, pasture, "
+                 "cropland, wetland (water and barren are the reference). Sediment cover: share of the county's "
+                 "surface mapped as unconsolidated deposits, any era (SGMC). Descriptive only.", "",
+                 "| Model | Paleozoic share (per SD) | p |", "| --- | --- | --- |"]
+        for name, fit in fits.items():
+            r = fit.coefficients.loc[PALEOZOIC]
+            lines.append(f"| {name} | {f(r)} | {r['p_value']:.3g} |")
+
+        coef = fits["+ land cover + sediment cover"].coefficients
+        lines += ["", "## Control terms in the full model (per SD)", "", "| Term | Rate ratio | p |", "| --- | --- | --- |"]
+        for t in full:
+            lines.append(f"| {t} | {f(coef.loc[t])} | {coef.loc[t, 'p_value']:.3g} |")
+
+        corr = table[[PALEOZOIC, *full]].corr().loc[PALEOZOIC, list(full)]
+        lines += ["", "Correlation of Paleozoic share with the controls (all counties): " +
+                  ", ".join(f"{k} {v:+.2f}" for k, v in corr.items()) + "."]
+
+        from uap_geo.hypotheses.rock_era import PERIODS
+        lines += ["", "## Full model by period", "", "| Period | Paleozoic share (per SD) | p |", "| --- | --- | --- |"]
+        for label, yrs in PERIODS.items():
+            c, _, n = st._period_counts(events, removed, yrs, table.index, st.PRIMARY)
+            r = st._fit(table, c, n, (PALEOZOIC, *full)).coefficients.loc[PALEOZOIC]
+            lines.append(f"| {label} | {f(r)} | {r['p_value']:.3g} |")
+
+        # Leave one state out.
+        states = table["state_fips"].astype(str)
+        loo = {}
+        for s in sorted(states.unique()):
+            keep = states != s
+            r = st._fit(table.loc[keep], counts.loc[keep], nights.loc[keep], (PALEOZOIC, *full)).coefficients.loc[PALEOZOIC]
+            loo[s] = r
+        rr = pd.Series({s: r["rate_ratio"] for s, r in loo.items()})
+        ps = pd.Series({s: r["p_value"] for s, r in loo.items()})
+        lines += ["", "## Leave one state out (full model)", "",
+                  f"Rate ratio ranges {rr.min():.3f} (without {STATE_NAMES.get(rr.idxmin(), rr.idxmin())}) to "
+                  f"{rr.max():.3f} (without {STATE_NAMES.get(rr.idxmax(), rr.idxmax())}); p < 0.05 in "
+                  f"{int((ps < 0.05).sum())} of {len(ps)} fits; largest p {ps.max():.3g} "
+                  f"(without {STATE_NAMES.get(ps.idxmax(), ps.idxmax())}). FIPS codes: lowest {rr.idxmin()}, highest {rr.idxmax()}."]
+
+        # Shift test: move the geologic map (Paleozoic and sediment-cover shares together); land cover stays put.
+        p = st.p
+        rng = np.random.default_rng(p["seed"])
+        cen = st.counties.union_all().centroid
+        observed = float(np.log(coef.loc[PALEOZOIC, "rate_ratio"]))
+        null = []
+        for trial in range(p["shift_trials"]):
+            angle = rng.uniform(-p["max_rotate_deg"], p["max_rotate_deg"])
+            dx, dy = rng.uniform(-p["max_shift_km"] * M_PER_KM, p["max_shift_km"] * M_PER_KM, size=2)
+            moved = summary.summarize(summary.grid.shifted(angle, dx, dy, (cen.x, cen.y))).reindex(table.index)
+            alt = table.assign(**{PALEOZOIC: moved[PALEOZOIC],
+                                  "share_unconsolidated_all": moved[[f"share_{e}_unconsolidated" for e in ERA_NAMES]].sum(axis=1)})
+            try:
+                null.append(float(np.log(st._fit(alt, counts, nights, (PALEOZOIC, *full)).coefficients.loc[PALEOZOIC, "rate_ratio"])))
+            except Exception:  # noqa: BLE001 - a degenerate copy is skipped and counted
+                pass
+        null = np.asarray(null)
+        q = np.exp(np.quantile(null, [0.025, 0.5, 0.975])) if len(null) else [np.nan] * 3
+        lines += ["", "## Shift test (full model)", "",
+                  f"Real map {np.exp(observed):.3f}; {len(null)} shifted copies fitted, rate ratios {q[0]:.3f} (2.5%), "
+                  f"{q[1]:.3f} (median), {q[2]:.3f} (97.5%); two-sided p {two_sided_shift_p(observed, null):.3f}."]
+
+        out = st.root / "results" / st.HYPOTHESIS_ID / "diagnostics"
+        out.mkdir(parents=True, exist_ok=True)
+        path = out / "land_use.md"
+        path.write_text("\n".join(lines) + "\n")
+        return path

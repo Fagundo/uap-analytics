@@ -24,6 +24,7 @@ from uap_geo.data.scraping.other import (
     ScienceBasePointsSource,
     ScienceBaseRasterSource,
 )
+from uap_geo.data.scraping.nlcd import NlcdLandCoverSource
 from uap_geo.data.scraping.sgmc import SgmcGeologySource
 from uap_geo.data.scraping.volcanoes import HoloceneVolcanoSource
 from uap_geo.data.scraping.usgs import EarthquakeSource, QuaternaryFaultSource
@@ -150,6 +151,10 @@ class SourceRegistry:
 
     def volcanoes(self) -> HoloceneVolcanoSource:
         return HoloceneVolcanoSource(self._config.source("volcanoes"), self._dl)
+
+    def land_cover(self) -> NlcdLandCoverSource:
+        """NLCD 2011 land cover at 480 m (GeoTIFF path)."""
+        return NlcdLandCoverSource(self._config.source("nlcd_2011"), self._dl)
 
     def geologic_map(self) -> SgmcGeologySource:
         """USGS State Geologic Map Compilation: map-unit polygons with their age range."""

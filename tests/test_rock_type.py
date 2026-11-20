@@ -98,3 +98,13 @@ def test_state_slope_columns_and_rescaling():
     col = pd.Series([0.0, 2.0])                      # SD 1 -> unchanged
     r = per_national_sd(pd.Series({"rate_ratio": 1.1, "ci_low": 1.0, "ci_high": 1.2, "p_value": 0.01}), col)
     assert np.isclose(r["rate_ratio"], 1.1)
+
+
+def test_land_cover_group_shares():
+    from uap_geo.features.land_cover import group_shares
+
+    codes = np.array([82, 82, 41, 11, 21, 0, 81])
+    owner = np.array([0, 0, 0, 0, 1, 1, -1])
+    out = group_shares(codes, owner, 2)
+    assert out.loc[0, "lc_cropland"] == 0.5 and out.loc[0, "lc_forest"] == 0.25 and out.loc[0, "lc_cells"] == 4
+    assert out.loc[1, "lc_developed"] == 1.0 and out.loc[1, "lc_cells"] == 1   # code 0 (no data) skipped
