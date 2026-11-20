@@ -1,0 +1,34 @@
+# POST HOC. Every year of data (2001-2023) was seen in H-rockage-01 and H-rocktype-01 before this was written.
+# Results describe the data and confirm nothing; a confirmatory test needs reports from 2024 on.
+id: H-rockera-01
+title: Geologic era as the class, and era crossed with rock type (post hoc)
+status: post hoc
+registered: null
+claim: >
+  Descriptive: which eras of surface rock, and which era x rock-type combinations, go with how many UAP events
+  a county reports beyond the observer controls; and whether the Paleozoic association (H-rockage-01
+  secondary) is carried by carbonate rock (H-rocktype-01) or by age.
+origin: Michael asked on 2026-11-20 to run the rock classes by era (e.g. Paleozoic).
+data:
+  reports: TidyTuesday 2023-06-20 NUFORC extract
+  geology: USGS State Geologic Map Compilation v1.1, Age table (midpoint era) and Lithology table (major lithologies)
+  covariates: as H-persist-01, state fixed effects
+unit: county x period
+outcome: events per county, holiday and launch nights removed (as H-persist-01)
+outcome_tiers: [all, filtered, high_quality]
+primary_tier: filtered
+classes: >
+  Eras (Cenozoic, Mesozoic, Paleozoic, Precambrian; a unit's era is its midpoint age's) and every era x
+  rock-type cross (the seven H-rocktype-01 types) whose mean county share is at least 2%, decided from the map
+  alone. Units need both an age and a rock type.
+analysis: >
+  One class share at a time (per SD, two-sided), pooled 2001-2023, with BH across classes and a 200-copy
+  layer-shift test; the same estimate in 2001-2010, 2011-2020 and 2021-2023; three joint models
+  (Paleozoic + carbonate; Paleozoic carbonate + Paleozoic non-carbonate; Paleozoic carbonate + other carbonate).
+splits:
+  explore: [2001, 2023]   # the whole post-hoc analysis runs as one exploration
+smallest_effect_of_interest: 1.10
+decision_rules: none (post hoc; no verdicts)
+limits: >
+  Post hoc on seen data. Era and rock type are tied (most US carbonate at the surface is Paleozoic), so the
+  joint models have limited power to separate them. Same landscape and land-use caveats as H-rocktype-01.

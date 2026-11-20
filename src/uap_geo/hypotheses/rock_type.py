@@ -39,9 +39,11 @@ class RockTypeStudy(CountyPeriodStudy):
     CHECK_LABELS = {"shift_test": "Real map beats rigidly shifted copies in absolute effect (two-sided p < 0.05)"}
 
     # ------------------------------------------------------------------------------ inputs
-    def _type_summary(self) -> CountyTypeSummary:
+    def _type_summary(self, weights: pd.DataFrame | None = None) -> CountyTypeSummary:
+        """County summary for the given unit weights (default: the seven rock-type classes)."""
         source = self.sources.geologic_map()
-        weights = unit_class_weights(source.lithology_table())
+        if weights is None:
+            weights = unit_class_weights(source.lithology_table())
         counties = self.counties[[COUNTY_ID, "geometry"]].reset_index(drop=True)
         counties["county_index"] = np.arange(len(counties), dtype="int32")
         cache = self.config.paths.raw / "sgmc" / f"unit_grid_{GRID_VERSION}_{float(self.p['cell_km']):g}km_{len(counties)}.npz"

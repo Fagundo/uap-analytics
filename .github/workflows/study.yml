@@ -27,6 +27,11 @@ jobs:
           path: data/raw
           key: raw-${{ hashFiles('configs/v1.yaml') }}-v2
           restore-keys: raw-
+      - uses: actions/cache@v4      # rasterized geologic-map grids; a new key each run so new grids are kept
+        with:
+          path: data/raw/sgmc/*.npz
+          key: sgmc-grids-v1-${{ github.run_id }}
+          restore-keys: sgmc-grids-v1-
       - name: Run
         env:
           ARGS: ${{ inputs.args }}   # passed via env, never interpolated into the script

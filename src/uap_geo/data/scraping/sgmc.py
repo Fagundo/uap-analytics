@@ -79,3 +79,11 @@ class SgmcGeologySource(DataSource):
 
         path = self.downloader.fetch(self.config, FILENAME)
         return pyogrio.read_dataframe(gdb_path(path), layer=LITH_LAYER, read_geometry=False)
+
+    def age_table(self):
+        """The Age table (UNIT_LINK, MIN_MA, MAX_MA), without geometry."""
+        import pyogrio
+
+        path = self.downloader.fetch(self.config, FILENAME)
+        return pyogrio.read_dataframe(gdb_path(path), layer=AGE_LAYER, read_geometry=False,
+                                      columns=["UNIT_LINK", "MIN_MA", "MAX_MA"])

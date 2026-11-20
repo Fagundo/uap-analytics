@@ -84,11 +84,13 @@ class UnitGrid(RasterGrid):
 
 
 class CountyTypeSummary:
-    """Rock-type shares per county, over the county's cells that fall on a classified unit."""
+    """Class shares per county, over the county's cells that fall on a classified unit. The classes are the
+    columns of `weights` (one row per unit_link, rows summing to 1)."""
 
     def __init__(self, grid: UnitGrid, weights: pd.DataFrame, county_ids: np.ndarray,
                  centroid_x: np.ndarray, centroid_y: np.ndarray) -> None:
         self.grid = grid
+        self.classes = tuple(weights.columns)     # CLASSES for H-rocktype-01; any class set works
         self.ids = np.asarray(county_ids)
         self.n = len(self.ids)
         # Weight matrix by unit index; unclassified units get a zero row and are skipped.
@@ -110,12 +112,12 @@ class CountyTypeSummary:
         owner, u = self._owner[ok], cells[ok]
         n_cells = np.bincount(owner, minlength=self.n).astype(float)
         out = {}
-        for k, name in enumerate(CLASSES):
+        for k, name in enumerate(self.classes):
             total = np.bincount(owner, weights=self.w[u, k], minlength=self.n)
             out[f"share_{name}"] = np.divide(total, n_cells, out=np.full(self.n, np.nan), where=n_cells > 0)
         frame = pd.DataFrame(out, index=self.ids)
         frame["type_cells"] = n_cells
-        cols = [f"share_{c}" for c in CLASSES]
+        cols = [f"share_{c}" for c in self.classes]
         for i in np.flatnonzero(self._needs_fallback):
             cell = self._fallback[i]
             if cell < 0 or unit[cell] < 0 or not self.classified[unit[cell]]:
@@ -125,7 +127,7 @@ class CountyTypeSummary:
         shares = frame[cols].to_numpy()
         any_ = np.isfinite(shares).all(axis=1)
         top = np.argmax(np.nan_to_num(shares, nan=-1.0), axis=1)
-        frame["dominant_type"] = np.where(any_, np.asarray(CLASSES, dtype=object)[top], None)
+        frame["dominant_type"] = np.where(any_, np.asarray(self.classes, dtype=object)[top], None)
         return frame
 
 

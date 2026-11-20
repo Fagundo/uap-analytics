@@ -1,0 +1,38 @@
+# Implementation choices for H-rockera-01, fixed before the post-hoc run.
+# Registered together with the spec and filters; a confirm run refuses to start if any changes.
+hypothesis: H-rockera-01
+notes:
+  classes: >
+    Unit era = era of the Age-table midpoint (as H-rockage-01); unit type weights as H-rocktype-01. Era class
+    weight = 1 for the unit's era; cross weight = the unit's type weight inside its era. Crosses kept if the
+    mean county share >= min_cross_share. Same 1 km unit grid and county shares as H-rocktype-01.
+  shift_test: as H-rocktype-01, pooled 2001-2023, per class.
+  joint_models: each listed model has its terms together, pooled 2001-2023, primary tier.
+
+parameters:
+  dedup: {km: 50, hours: 3}
+  quality: {min_reports: 2, min_duration_s: 300}
+  rock_era:
+    cell_km: 1
+    holiday_nights: ["07-03", "07-04", "07-05", "12-31", "01-01"]
+    launch_lighting_removed: [twilight, night]
+    twilight_sun_alt: [-18, -4]
+    launch_radius_km: 1200
+    launch_min_apogee_km: 100
+    covariates: [light_pollution, airports_per_km2, places_per_km2, primary_road_length_per_km2,
+                 rail_length_per_km2, elevation_relief_m, dist_to_coast_km, river_length_per_km2,
+                 seasonal_housing_share, college_enrolled_share]
+    covariate_sources: [light_pollution, airports, gazetteer_places, primary_roads, rail, elevation, coastline, rivers,
+                        acs_housing, acs_college]
+    fixed_effects: [state_fips]
+    cluster: state_fips
+    max_shift_km: 400
+    max_rotate_deg: 20
+    shift_trials: 200
+    seed: 42
+    min_cross_share: 0.02
+    joint_models:
+      Paleozoic and carbonate: [share_paleozoic, share_carbonate]
+      Paleozoic split by carbonate: [share_paleozoic_carbonate, share_paleozoic_noncarbonate]
+      Carbonate split by era: [share_paleozoic_carbonate, share_carbonate_nonpaleozoic]
+  power: {rate_ratio: 1.10, alpha: 0.05, underpowered_below: 0.50, refute_requires: 0.80}

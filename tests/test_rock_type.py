@@ -64,3 +64,24 @@ def test_build_unit_grid():
     g = build_unit_grid(geology, counties, 1000.0)
     assert list(g.units) == ["x", "y"]
     assert (g.unit[:, :2] == 0).all() and (g.unit[:, 2:] == 1).all()
+
+
+def test_era_type_weights():
+    from uap_geo.hypotheses.rock_era import era_type_weights
+
+    types = pd.DataFrame(0.0, index=["a", "b", "c"], columns=list(CLASSES))
+    types.loc["a", ["carbonate", "clastic"]] = 0.5
+    types.loc["b", "volcanic"] = 1.0
+    types.loc["c", "plutonic"] = 1.0
+    ages = pd.DataFrame({"unit_link": ["a", "b"], "mid_ma": [400.0, 10.0]})
+    w = era_type_weights(types, ages)
+    assert list(w.index) == ["a", "b"]                      # c has no age
+    assert w.loc["a", "paleozoic"] == 1 and w.loc["a", "paleozoic_carbonate"] == 0.5
+    assert w.loc["a", "cenozoic_carbonate"] == 0 and w.loc["b", "cenozoic_volcanic"] == 1
+
+
+def test_summary_accepts_any_class_set():
+    w = pd.DataFrame({"x": [1.0, 0.0], "y": [0.0, 1.0]}, index=["u0", "u1"])
+    s = CountyTypeSummary(_grid(), w, np.array(["A", "B"]), np.array([1.0, 3.0]), np.array([1.0, 1.0]))
+    out = s.summarize()
+    assert out.loc["A", "share_x"] == 1.0 and out.loc["B", "share_y"] == 1.0
