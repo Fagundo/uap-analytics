@@ -72,3 +72,6 @@ Starlink trains (88%) and meteors (90%), so it can serve as an extra explainer f
   carbonate. Mean log age (H-rockage-01) missed it because the pattern is not monotonic (Precambrian ~0.96).
 - Confirmatory test only on 2024+ reports (new ID, Paleozoic share primary, shift test), with land-use,
   cropland and bedrock-exposure (vs glacial or coastal-plain cover) controls.
+- Land-use check (2026-11-20, results/H-rockera-01/diagnostics/land_use.md): with NLCD 2011 land cover and
+  sediment-cover controls the Paleozoic share stays 1.107 (1.039–1.180) pooled; leave-one-state-out 1.088–1.128,
+  all p < 0.05; shift p 0.015. By period 1.099 / 1.142 / 1.008: the 2021–2023 fade is the main caution.
