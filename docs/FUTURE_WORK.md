@@ -56,3 +56,10 @@ Starlink trains (88%) and meteors (90%), so it can serve as an extra explainer f
 - Lead: the Paleozoic share of surface rock runs about 1.09 per SD in both 2001–2010 and 2011–2020
   (secondary, unadjusted, not shift-tested) and 1.06 in 2021+. Test only as a new post-hoc ID on 2024+
   reports, adding SGMC lithology to separate rock type (carbonate, shale, crystalline) from age.
+
+## Rock type (H-rocktype-01, carbonate confirmed 2026-11-19)
+
+- Carbonate share: 1.062 (1.034–1.090) per SD on 2011–2020, shift p 0.020; 1.058 on 2021+ (n.s.); 1.020 on
+  2001–2010. Next: leave-one-state-out and drop-Florida diagnostics, karst/sinkhole density against
+  carbonate share, cropland and land-use controls, and a replication on 2024+ reports.
+- Cache the rock-type unit grid in its own Actions cache (each run rereads the 436 MB map, ~30 minutes).
