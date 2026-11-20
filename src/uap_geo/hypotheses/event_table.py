@@ -74,6 +74,7 @@ class EventTable:
         log.info("Events: %d total, %d in counties; filtered %d, high quality %d",
                  len(events), len(joined), int(joined["in_filtered"].sum()), int(joined["in_high_quality"].sum()))
         self.reports = tagged
+        self.events = pd.DataFrame(joined)        # what the studies analyse; fingerprinted by the regression check
         self.summary = {"reports": len(reports), "events": len(events), "events_in_counties": len(joined),
                         "cleaning": cleaning.__dict__}
         return pd.DataFrame(joined)

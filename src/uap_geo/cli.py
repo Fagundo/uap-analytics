@@ -100,6 +100,14 @@ def main(argv: list[str] | None = None) -> None:
     aud.add_argument("action", choices=["dispersion"])
     aud.add_argument("--split", choices=["explore", "confirm", "holdout"], default="confirm")
     aud.add_argument("--config", type=Path, default=Path("configs/v1.yaml"))
+    reg = sub.add_parser("regression", help="Rerun committed hypothesis results and compare")
+    reg.add_argument("action", choices=["run", "summarize"])
+    reg.add_argument("--only", default=None, help="One hypothesis id")
+    reg.add_argument("--split", default=None)
+    reg.add_argument("--record", action="store_true", help="Write missing input fingerprints when results match")
+    reg.add_argument("--out", type=Path, default=None, help="JSON file for this run's checks")
+    reg.add_argument("--inputs", type=Path, default=Path("results/regression/parts"), help="summarize: folder of run JSONs")
+    reg.add_argument("--config", type=Path, default=Path("configs/v1.yaml"))
     geo = sub.add_parser("geology", help="Inspect the geologic map inputs")
     geo.add_argument("action", choices=["terms"])
     geo.add_argument("--config", type=Path, default=Path("configs/v1.yaml"))
@@ -119,10 +127,41 @@ def main(argv: list[str] | None = None) -> None:
         _llm(args)
     elif args.command == "geology":
         _geology_terms(args)
+    elif args.command == "regression":
+        _regression(args)
     elif args.command == "audit":
         from uap_geo.audit.dispersion import run as dispersion_run
 
         print(dispersion_run(Path.cwd(), Config.from_yaml(args.config), args.split).read_text())
+
+
+def _regression(args) -> None:
+    """Rerun committed results (run) or merge per-job outputs into one report (summarize). Exits 1 on any change."""
+    import json
+    import sys
+
+    from uap_geo.regression.runner import RegressionRunner, summary_markdown
+
+    if args.action == "run":
+        runner = RegressionRunner(Path.cwd(), Config.from_yaml(args.config), STUDIES)
+        targets = runner.targets(args.only, args.split)
+        if not targets:
+            raise SystemExit(f"No committed results for {args.only or 'any hypothesis'} {args.split or ''}")
+        checks = [runner.check(h, s, record=args.record).as_dict() for h, s in targets]
+        out = args.out or Path("results/regression/parts") / f"{args.only or 'all'}.json"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(json.dumps(checks, indent=2) + "\n")
+    else:
+        checks = [c for f in sorted(args.inputs.glob("*.json")) for c in json.loads(f.read_text())]
+        if not checks:
+            raise SystemExit(f"No regression outputs in {args.inputs}")
+    text = summary_markdown(checks)
+    print(text)
+    if args.action == "summarize":
+        Path("results/regression").mkdir(parents=True, exist_ok=True)
+        Path("results/regression/report.md").write_text(text)
+    if not all(c["ok"] for c in checks):
+        sys.exit(1)
 
 
 def _geology_terms(args) -> None:

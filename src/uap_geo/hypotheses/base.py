@@ -123,10 +123,10 @@ class EventStudy(ABC):
     def analyse(self) -> tuple[object, list[TestOutcome]]:
         """Run the registered tests for this split. Returns (event table, outcomes)."""
 
-    def run(self) -> Path:
+    def evaluate(self):
+        """Run the analysis without writing anything: (event table, outcomes, manifest, report card)."""
         if self.split != "explore":
             HypothesisRegistry(self.root).check(self.HYPOTHESIS_ID)
-        out_dir = self.root / "results" / self.HYPOTHESIS_ID / self.split
         manifest = RunManifest(run_id=f"{self.HYPOTHESIS_ID}-{self.split}-{datetime.now(timezone.utc):%Y%m%dT%H%M%SZ}")
         for name, path in (("spec", self.files.spec), ("impl", self.files.impl), ("filters", self.files.filters)):
             manifest.add_spec(name, path)
@@ -134,13 +134,18 @@ class EventStudy(ABC):
         self._verdicts(outcomes)
         manifest.add_input_dir(self.root, self.config.paths.raw)
         manifest.add_inputs(self.root, self.input_files())
-        out_dir.mkdir(parents=True, exist_ok=True)
-        manifest.write(out_dir / "manifest.json")
         from uap_geo.reporting.report_card import ReportCard
 
         card = ReportCard(self.HYPOTHESIS_ID, self.split, self.spec, self.impl, manifest, table, outcomes, self.PRIMARY,
                           test_labels=self.TEST_LABELS, check_labels=self.CHECK_LABELS, extra=self.extra_report_lines(),
                           tiers=self.TIERS)
+        return table, outcomes, manifest, card
+
+    def run(self) -> Path:
+        table, _, manifest, card = self.evaluate()
+        out_dir = self.root / "results" / self.HYPOTHESIS_ID / self.split
+        out_dir.mkdir(parents=True, exist_ok=True)
+        manifest.write(out_dir / "manifest.json")
         path = card.write(out_dir)
         (out_dir / "results.json").write_text(json.dumps(card.as_dict(), indent=2, default=float))
         return path

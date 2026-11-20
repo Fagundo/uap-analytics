@@ -1,0 +1,111 @@
+name: regression
+
+# Reruns every committed hypothesis result from the current code and data and compares it value by value.
+# A gate for the PURSUE refactor: nothing registered may move. One job per hypothesis, then a summary.
+
+on:
+  workflow_dispatch:
+    inputs:
+      record:
+        description: "Write missing input fingerprints where results match"
+        type: boolean
+        default: false
+      only:
+        description: "One hypothesis id (blank = all)"
+        required: false
+        default: ""
+  schedule:
+    - cron: "17 11 * * 0"      # Sundays
+
+permissions:
+  contents: write
+
+jobs:
+  rerun:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      matrix:
+        hypothesis: [H-geo-01, H-launch-01, H-celebrate-01, H-persist-01, H-install-01, H-volcano-01,
+                     H-rockage-01, H-rocktype-01, H-rockera-01]
+    steps:
+      - name: Skip unless selected
+        id: pick
+        env:
+          ONLY: ${{ inputs.only }}
+          H: ${{ matrix.hypothesis }}
+        run: |
+          if [ -n "$ONLY" ] && [ "$ONLY" != "$H" ]; then echo "run=false" >> "$GITHUB_OUTPUT"; else echo "run=true" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/checkout@v4
+        if: steps.pick.outputs.run == 'true'
+      - uses: astral-sh/setup-uv@v6
+        if: steps.pick.outputs.run == 'true'
+        with:
+          python-version: "3.12"
+          enable-cache: true
+      - run: uv sync
+        if: steps.pick.outputs.run == 'true'
+      - uses: actions/cache/restore@v4
+        if: steps.pick.outputs.run == 'true'
+        with:
+          path: data/raw
+          key: raw-${{ hashFiles('configs/v1.yaml') }}-v2
+          restore-keys: raw-
+      - uses: actions/cache/restore@v4
+        if: steps.pick.outputs.run == 'true'
+        with:
+          path: data/raw/sgmc/*.npz
+          key: sgmc-grids-v1-none
+          restore-keys: sgmc-grids-v1-
+      - name: Rerun and compare
+        if: steps.pick.outputs.run == 'true'
+        env:
+          H: ${{ matrix.hypothesis }}
+          RECORD: ${{ inputs.record }}
+        run: |
+          flag=""; if [ "$RECORD" = "true" ]; then flag="--record"; fi
+          uv run uap-geo regression run --only "$H" $flag
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.pick.outputs.run == 'true'
+        with:
+          name: regression-${{ matrix.hypothesis }}
+          path: |
+            results/regression/parts/${{ matrix.hypothesis }}.json
+            results/${{ matrix.hypothesis }}/*/fingerprint.json
+          if-no-files-found: warn
+
+  summary:
+    needs: rerun
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+          enable-cache: true
+      - run: uv sync
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: regression-*
+          path: results
+          merge-multiple: true
+      - name: Summarize
+        id: sum
+        run: |
+          set +e
+          uv run uap-geo regression summarize
+          echo "status=$?" >> "$GITHUB_OUTPUT"
+          cat results/regression/report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Commit report and fingerprints
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add results/regression results/H-*/*/fingerprint.json
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m "Regression check: ${{ steps.sum.outputs.status == '0' && 'all results unchanged' || 'differences found' }}"
+          git pull --rebase && git push
+      - name: Fail if anything changed
+        if: steps.sum.outputs.status != '0'
+        run: exit 1
