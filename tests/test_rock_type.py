@@ -85,3 +85,16 @@ def test_summary_accepts_any_class_set():
     s = CountyTypeSummary(_grid(), w, np.array(["A", "B"]), np.array([1.0, 3.0]), np.array([1.0, 1.0]))
     out = s.summarize()
     assert out.loc["A", "share_x"] == 1.0 and out.loc["B", "share_y"] == 1.0
+
+
+def test_state_slope_columns_and_rescaling():
+    from uap_geo.hypotheses.diagnostics_era import per_national_sd, slope_columns
+
+    t = pd.DataFrame({"state_fips": ["04", "04", "35", "06"], "share_paleozoic": [0.0, 1.0, 0.5, 0.25]})
+    out, cols = slope_columns(t, "share_paleozoic", ["04", "35"])
+    assert cols == ["slope_04", "slope_35", "slope_rest"]
+    z = (t["share_paleozoic"] - t["share_paleozoic"].mean()) / t["share_paleozoic"].std(ddof=0)
+    assert np.allclose(out["slope_04"], [z[0], z[1], 0, 0]) and out.loc[3, "slope_rest"] == z[3]
+    col = pd.Series([0.0, 2.0])                      # SD 1 -> unchanged
+    r = per_national_sd(pd.Series({"rate_ratio": 1.1, "ci_low": 1.0, "ci_high": 1.2, "p_value": 0.01}), col)
+    assert np.isclose(r["rate_ratio"], 1.1)

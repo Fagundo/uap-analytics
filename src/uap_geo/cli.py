@@ -74,6 +74,7 @@ def main(argv: list[str] | None = None) -> None:
     hyp.add_argument("hypothesis_id")
     hyp.add_argument("--split", choices=["explore", "confirm", "holdout"], default="explore")
     hyp.add_argument("--config", type=Path, default=Path("configs/v1.yaml"))
+    hyp.add_argument("--states", default=None, help="Comma-separated state FIPS codes for state diagnostics")
 
     flt = sub.add_parser("filters", help="Explanation-filter validation")
     flt.add_argument("action", choices=["sample", "validate"])
@@ -149,7 +150,8 @@ STUDIES = {"H-geo-01": "uap_geo.hypotheses.geo_triggers:GeoTriggerStudy",
            "H-rockage-01": "uap_geo.hypotheses.rock_age:RockAgeStudy",
            "H-rocktype-01": "uap_geo.hypotheses.rock_type:RockTypeStudy",
            "H-rockera-01": "uap_geo.hypotheses.rock_era:RockEraStudy"}
-DIAGNOSTICS = {"H-geo-01": "uap_geo.hypotheses.diagnostics:DiagnosticsReport"}
+DIAGNOSTICS = {"H-geo-01": "uap_geo.hypotheses.diagnostics:DiagnosticsReport",
+               "H-rockera-01": "uap_geo.hypotheses.diagnostics_era:StateEraDiagnostics"}
 
 
 def _hypothesis(args: argparse.Namespace) -> None:
@@ -169,6 +171,8 @@ def _hypothesis(args: argparse.Namespace) -> None:
     if args.action == "diagnose":
         if args.hypothesis_id not in DIAGNOSTICS:
             raise SystemExit(f"No diagnostics for {args.hypothesis_id}")
+        if args.states:
+            study.diag_states = [x.strip().zfill(2) for x in args.states.split(",")]
         dmod, dcls = DIAGNOSTICS[args.hypothesis_id].split(":")
         path = getattr(importlib.import_module(dmod), dcls)(study).run()
     else:

@@ -67,7 +67,8 @@ class RockEraStudy(RockTypeStudy):
         return keep
 
     # ------------------------------------------------------------------------------ analysis
-    def analyse(self) -> tuple[EventTable, list[TestOutcome]]:
+    def prepare(self):
+        """County table with era and era x type shares, events, removed nights, the grid summary, the event table."""
         table = self._county_table()
         events_table = EventTable(self.config, self.sources, self.filters, self.impl, self._all_years(),
                                   tuple(self.spec.get("filters_disabled") or ()))
@@ -86,7 +87,11 @@ class RockEraStudy(RockTypeStudy):
         table["share_paleozoic_noncarbonate"] = table[term("paleozoic")] - table[term("paleozoic_carbonate")]
         table["share_carbonate"] = table[carb].sum(axis=1)
         table["share_carbonate_nonpaleozoic"] = table["share_carbonate"] - table[term("paleozoic_carbonate")]
+        return table, events, removed, summary, events_table
 
+    def analyse(self) -> tuple[EventTable, list[TestOutcome]]:
+        table, events, removed, summary, events_table = self.prepare()
+        classes = self.class_list
         years = self._split_years()
         outcomes = {k: TestOutcome(k) for k in classes}
         observed, self.pooled = {}, {}
