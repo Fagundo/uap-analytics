@@ -49,6 +49,8 @@ class ResultComparer:
                 return
             for i, (x, y) in enumerate(zip(a, b)):
                 self._walk(x, y, f"{path}[{i}]", out)
+        elif isinstance(a, bool) != isinstance(b, bool):    # True == 1 in Python; a flag is not a count
+            out.append(Difference(path, a, b))
         elif self._is_number(a) and self._is_number(b):
             if not self._close(float(a), float(b)):
                 out.append(Difference(path, a, b))
