@@ -1,0 +1,38 @@
+[
+  {
+    "hypothesis": "H-geo-01",
+    "split": "confirm",
+    "ok": false,
+    "error": null,
+    "seconds": 48.0,
+    "fingerprint": "missing",
+    "differences": [
+      "tests.quake.tiers.all.dispersion: committed '<missing>', now 1.0223844962612245",
+      "tests.quake.tiers.filtered.dispersion: committed '<missing>', now 1.0321359840546056",
+      "tests.quake.tiers.high_quality.dispersion: committed '<missing>', now 1.0320661837931522",
+      "tests.storm.tiers.all.dispersion: committed '<missing>', now 2.692387853273045",
+      "tests.storm.tiers.filtered.dispersion: committed '<missing>', now 2.4567603605564723",
+      "tests.storm.tiers.high_quality.dispersion: committed '<missing>', now 1.9495393970367334"
+    ],
+    "n_differences": 6,
+    "fingerprint_differences": []
+  },
+  {
+    "hypothesis": "H-geo-01",
+    "split": "explore",
+    "ok": false,
+    "error": null,
+    "seconds": 17.1,
+    "fingerprint": "missing",
+    "differences": [
+      "tests.quake.tiers.all.dispersion: committed '<missing>', now 1.0017170149664651",
+      "tests.quake.tiers.filtered.dispersion: committed '<missing>', now 1.0210186098914091",
+      "tests.quake.tiers.high_quality.dispersion: committed '<missing>', now 1.0452870978664157",
+      "tests.storm.tiers.all.dispersion: committed '<missing>', now 2.0285248141455456",
+      "tests.storm.tiers.filtered.dispersion: committed '<missing>', now 1.894753356442485",
+      "tests.storm.tiers.high_quality.dispersion: committed '<missing>', now 1.4647715846118292"
+    ],
+    "n_differences": 6,
+    "fingerprint_differences": []
+  }
+]

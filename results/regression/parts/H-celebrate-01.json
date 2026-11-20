@@ -1,0 +1,50 @@
+[
+  {
+    "hypothesis": "H-celebrate-01",
+    "split": "confirm",
+    "ok": false,
+    "error": null,
+    "seconds": 11.7,
+    "fingerprint": "missing",
+    "differences": [
+      "tests.championship.tiers.all.dispersion: committed '<missing>', now 1.0334715069944238",
+      "tests.championship.tiers.filtered.dispersion: committed '<missing>', now 1.037769972832786",
+      "tests.championship.tiers.high_quality.dispersion: committed '<missing>', now 0.9859107416800401",
+      "tests.championship.tiers.unexplained.dispersion: committed '<missing>', now 1.0316004499540314",
+      "tests.july4.tiers.all.dispersion: committed '<missing>', now 1.057999740020395",
+      "tests.july4.tiers.filtered.dispersion: committed '<missing>', now 1.0597448213367753",
+      "tests.july4.tiers.high_quality.dispersion: committed '<missing>', now 1.0779908542976708",
+      "tests.july4.tiers.unexplained.dispersion: committed '<missing>', now 1.0289177013289788",
+      "tests.new_year.tiers.all.dispersion: committed '<missing>', now 1.1894008928617008",
+      "tests.new_year.tiers.filtered.dispersion: committed '<missing>', now 1.195467790287859",
+      "tests.new_year.tiers.high_quality.dispersion: committed '<missing>', now 1.2240740459731523",
+      "tests.new_year.tiers.unexplained.dispersion: committed '<missing>', now 1.054392181153148"
+    ],
+    "n_differences": 12,
+    "fingerprint_differences": []
+  },
+  {
+    "hypothesis": "H-celebrate-01",
+    "split": "explore",
+    "ok": false,
+    "error": null,
+    "seconds": 10.8,
+    "fingerprint": "missing",
+    "differences": [
+      "tests.championship.tiers.all.dispersion: committed '<missing>', now 0.9318571107284832",
+      "tests.championship.tiers.filtered.dispersion: committed '<missing>', now 0.9445150151743832",
+      "tests.championship.tiers.high_quality.dispersion: committed '<missing>', now 0.8559896764654447",
+      "tests.championship.tiers.unexplained.dispersion: committed '<missing>', now 0.9685988964633563",
+      "tests.july4.tiers.all.dispersion: committed '<missing>', now 1.041784297822469",
+      "tests.july4.tiers.filtered.dispersion: committed '<missing>', now 1.0355107993965125",
+      "tests.july4.tiers.high_quality.dispersion: committed '<missing>', now 1.0997048943549372",
+      "tests.july4.tiers.unexplained.dispersion: committed '<missing>', now 0.9971554327818498",
+      "tests.new_year.tiers.all.dispersion: committed '<missing>', now 1.0794667029418081",
+      "tests.new_year.tiers.filtered.dispersion: committed '<missing>', now 1.0476342543741648",
+      "tests.new_year.tiers.high_quality.dispersion: committed '<missing>', now 1.0571485334373032",
+      "tests.new_year.tiers.unexplained.dispersion: committed '<missing>', now 1.0295864263077104"
+    ],
+    "n_differences": 12,
+    "fingerprint_differences": []
+  }
+]

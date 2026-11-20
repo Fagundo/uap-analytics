@@ -1,0 +1,13 @@
+[
+  {
+    "hypothesis": "H-rockera-01",
+    "split": "explore",
+    "ok": true,
+    "error": null,
+    "seconds": 1479.8,
+    "fingerprint": "recorded",
+    "differences": [],
+    "n_differences": 0,
+    "fingerprint_differences": []
+  }
+]

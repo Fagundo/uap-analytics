@@ -1,0 +1,42 @@
+[
+  {
+    "hypothesis": "H-persist-01",
+    "split": "confirm",
+    "ok": false,
+    "error": null,
+    "seconds": 65.2,
+    "fingerprint": "missing",
+    "differences": [
+      "tests.persistence.checks.local.rate_ratio: committed 1.1885296921712045, now 1.1885280944967342",
+      "tests.persistence.checks.reporting_propensity.rate_ratio: committed 1.178491732101133, now 1.1784903881520512",
+      "tests.persistence.tiers.all.dispersion: committed '<missing>', now nan",
+      "tests.persistence.tiers.all.terms[0].ci_high: committed 1.2378075733838139, now 1.2378057703662304",
+      "tests.persistence.tiers.all.terms[0].ci_low: committed 1.1539155489847723, now 1.1539140045947438",
+      "tests.persistence.tiers.all.terms[0].rate_ratio: committed 1.1951256861011281, now 1.19512401590537",
+      "tests.persistence.tiers.filtered.dispersion: committed '<missing>', now nan",
+      "tests.persistence.tiers.filtered.terms[0].ci_high: committed 1.23532778970787, now 1.2353260859213373",
+      "tests.persistence.tiers.filtered.terms[0].ci_low: committed 1.1505372767972954, now 1.150535973120448",
+      "tests.persistence.tiers.filtered.terms[0].rate_ratio: committed 1.1921789593523762, now 1.1921774617843521",
+      "tests.persistence.tiers.high_quality.dispersion: committed '<missing>', now nan"
+    ],
+    "n_differences": 11,
+    "fingerprint_differences": []
+  },
+  {
+    "hypothesis": "H-persist-01",
+    "split": "explore",
+    "ok": false,
+    "error": null,
+    "seconds": 65.4,
+    "fingerprint": "missing",
+    "differences": [
+      "tests.persistence.tiers.all.dispersion: committed '<missing>', now nan",
+      "tests.persistence.tiers.all.terms[0].ci_high: committed 1.1965935675533608, now 1.1965922642345368",
+      "tests.persistence.tiers.filtered.dispersion: committed '<missing>', now nan",
+      "tests.persistence.tiers.high_quality.dispersion: committed '<missing>', now nan",
+      "tests.persistence.tiers.high_quality.terms[0].ci_high: committed 1.1805801744196578, now 1.1805813758274035"
+    ],
+    "n_differences": 5,
+    "fingerprint_differences": []
+  }
+]

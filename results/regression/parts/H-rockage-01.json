@@ -1,0 +1,35 @@
+[
+  {
+    "hypothesis": "H-rockage-01",
+    "split": "confirm",
+    "ok": true,
+    "error": null,
+    "seconds": 287.3,
+    "fingerprint": "recorded",
+    "differences": [],
+    "n_differences": 0,
+    "fingerprint_differences": []
+  },
+  {
+    "hypothesis": "H-rockage-01",
+    "split": "explore",
+    "ok": true,
+    "error": null,
+    "seconds": 287.8,
+    "fingerprint": "recorded",
+    "differences": [],
+    "n_differences": 0,
+    "fingerprint_differences": []
+  },
+  {
+    "hypothesis": "H-rockage-01",
+    "split": "holdout",
+    "ok": true,
+    "error": null,
+    "seconds": 295.3,
+    "fingerprint": "recorded",
+    "differences": [],
+    "n_differences": 0,
+    "fingerprint_differences": []
+  }
+]

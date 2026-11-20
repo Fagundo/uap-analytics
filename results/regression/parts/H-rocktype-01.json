@@ -1,0 +1,35 @@
+[
+  {
+    "hypothesis": "H-rocktype-01",
+    "split": "confirm",
+    "ok": true,
+    "error": null,
+    "seconds": 766.7,
+    "fingerprint": "recorded",
+    "differences": [],
+    "n_differences": 0,
+    "fingerprint_differences": []
+  },
+  {
+    "hypothesis": "H-rocktype-01",
+    "split": "explore",
+    "ok": true,
+    "error": null,
+    "seconds": 777.2,
+    "fingerprint": "recorded",
+    "differences": [],
+    "n_differences": 0,
+    "fingerprint_differences": []
+  },
+  {
+    "hypothesis": "H-rocktype-01",
+    "split": "holdout",
+    "ok": true,
+    "error": null,
+    "seconds": 811.0,
+    "fingerprint": "recorded",
+    "differences": [],
+    "n_differences": 0,
+    "fingerprint_differences": []
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "reports": {
+    "count": 74795,
+    "sha256": "1522944e88be294a51fdbbbc2762a8514d945fe52130ff9aad31fa39208bf99a"
+  },
+  "events": {
+    "count": 69333,
+    "columns": [
+      "event_id",
+      "geoid",
+      "night",
+      "in_filtered",
+      "in_high_quality"
+    ],
+    "sha256": "dbc6ccb51b1906e48067c81d1386ce7d65d98a10b2f4e766ca4c30143e7060c2"
+  },
+  "county_counts": {
+    "counties": 2656,
+    "sha256": "4f017fda68620d78f3dfed2e3c5425852a15dd46523c6fb0acacd9c520b4d63d"
+  }
+}
