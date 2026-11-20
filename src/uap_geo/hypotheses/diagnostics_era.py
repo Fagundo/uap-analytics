@@ -69,16 +69,18 @@ class StateEraDiagnostics:
                  "One Paleozoic slope per chosen state and one for all other states, each per national SD of "
                  "Paleozoic share (comparable with the national estimate). Descriptive only.", "",
                  f"National (one slope): {f(national)}, p {national['p_value']:.3g}.", "",
-                 "| State | Counties | Mean Paleozoic share | Paleozoic slope (per national SD) | p |",
-                 "| --- | --- | --- | --- | --- |"]
+                 "Standard errors are clustered by state, so a slope that lives inside one state has a single "
+                 "cluster and no valid confidence interval; per-state slopes are point estimates only.", "",
+                 "| State | Counties | Mean Paleozoic share | Paleozoic slope (per national SD) |",
+                 "| --- | --- | --- | --- |"]
         state = used["state_fips"].astype(str)
         for s in self.states:
             m = state == s
             lines.append(f"| {STATE_NAMES.get(s, s)} | {int(m.sum())} | {table.loc[m.index[m], PALEOZOIC].mean():.1%} | "
-                         f"{f(slopes[f'slope_{s}'])} | {slopes[f'slope_{s}']['p_value']:.3g} |")
+                         f"{slopes[f'slope_{s}']['rate_ratio']:.3f} (no valid CI) |")
         rest = ~state.isin(self.states)
         lines.append(f"| All other states | {int(rest.sum())} | {table.loc[rest.index[rest], PALEOZOIC].mean():.1%} | "
-                     f"{f(slopes['slope_rest'])} | {slopes['slope_rest']['p_value']:.3g} |")
+                     f"{f(slopes['slope_rest'])}, p {slopes['slope_rest']['p_value']:.3g} |")
 
         for s in self.states:
             idx = state.index[state == s]
