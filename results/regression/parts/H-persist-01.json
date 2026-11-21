@@ -2,51 +2,31 @@
   {
     "hypothesis": "H-persist-01",
     "split": "confirm",
-    "ok": false,
+    "ok": true,
     "error": null,
-    "seconds": 78.8,
-    "fingerprint": "recorded",
-    "against": "registered result",
-    "added": [
-      "tests.persistence.tiers.all.dispersion",
-      "tests.persistence.tiers.filtered.dispersion",
-      "tests.persistence.tiers.high_quality.dispersion"
-    ],
-    "n_added": 3,
+    "seconds": 64.2,
+    "fingerprint": "match",
+    "against": "baseline",
+    "added": [],
+    "n_added": 0,
     "inputs_changed": [],
-    "differences": [
-      "tests.persistence.checks.local.rate_ratio: committed 1.1885296921712045, now 1.1885280944966468",
-      "tests.persistence.checks.reporting_propensity.rate_ratio: committed 1.178491732101133, now 1.1784903881520583",
-      "tests.persistence.tiers.all.terms[0].ci_high: committed 1.2378075733838139, now 1.2378057703663994",
-      "tests.persistence.tiers.all.terms[0].ci_low: committed 1.1539155489847723, now 1.1539140045948793",
-      "tests.persistence.tiers.all.terms[0].rate_ratio: committed 1.1951256861011281, now 1.1951240159055216",
-      "tests.persistence.tiers.filtered.terms[0].ci_high: committed 1.23532778970787, now 1.2353260859239168",
-      "tests.persistence.tiers.filtered.terms[0].ci_low: committed 1.1505372767972954, now 1.150535973122108",
-      "tests.persistence.tiers.filtered.terms[0].rate_ratio: committed 1.1921789593523762, now 1.1921774617864567"
-    ],
-    "n_differences": 8,
+    "differences": [],
+    "n_differences": 0,
     "fingerprint_differences": []
   },
   {
     "hypothesis": "H-persist-01",
     "split": "explore",
-    "ok": false,
+    "ok": true,
     "error": null,
-    "seconds": 79.9,
-    "fingerprint": "recorded",
-    "against": "registered result",
-    "added": [
-      "tests.persistence.tiers.all.dispersion",
-      "tests.persistence.tiers.filtered.dispersion",
-      "tests.persistence.tiers.high_quality.dispersion"
-    ],
-    "n_added": 3,
+    "seconds": 64.9,
+    "fingerprint": "match",
+    "against": "baseline",
+    "added": [],
+    "n_added": 0,
     "inputs_changed": [],
-    "differences": [
-      "tests.persistence.tiers.all.terms[0].ci_high: committed 1.1965935675533608, now 1.1965922642348747",
-      "tests.persistence.tiers.high_quality.terms[0].ci_high: committed 1.1805801744196578, now 1.1805813758280161"
-    ],
-    "n_differences": 2,
+    "differences": [],
+    "n_differences": 0,
     "fingerprint_differences": []
   }
 ]

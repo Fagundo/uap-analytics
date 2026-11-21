@@ -4,35 +4,16 @@
     "split": "confirm",
     "ok": false,
     "error": null,
-    "seconds": 142.4,
-    "fingerprint": "recorded",
-    "against": "registered result",
-    "added": [
-      "tests.proximity.tiers.all.dispersion",
-      "tests.proximity.tiers.filtered.dispersion",
-      "tests.proximity.tiers.high_quality.dispersion"
+    "seconds": 208.1,
+    "fingerprint": "match",
+    "against": "baseline",
+    "added": [],
+    "n_added": 0,
+    "inputs_changed": [
+      "data/raw/volcanoes/holocene_volcanoes.csv"
     ],
-    "n_added": 3,
-    "inputs_changed": [],
-    "differences": [
-      "tests.proximity.checks.shift_test.null_median_rate_ratio: committed 1.0423183083359198, now 1.042389120114137",
-      "tests.proximity.checks.shift_test.rate_ratio: committed 1.0721130468077398, now 1.0721545980824239",
-      "tests.proximity.p_bh: committed 0.5338676480587994, now 0.533661444456186",
-      "tests.proximity.power: committed 0.08963865632306806, now 0.08963835914090545",
-      "tests.proximity.tiers.all.terms[0].ci_high: committed 1.3217137123623097, now 1.321780200175043",
-      "tests.proximity.tiers.all.terms[0].ci_low: committed 0.8592577852998345, now 0.859279544434884",
-      "tests.proximity.tiers.all.terms[0].p_value: committed 0.5624872216108925, now 0.5622776816348545",
-      "tests.proximity.tiers.all.terms[0].rate_ratio: committed 1.0656888839078977, now 1.065729181475979",
-      "tests.proximity.tiers.filtered.terms[0].ci_high: committed 1.3350987942014036, now 1.335165883831923",
-      "tests.proximity.tiers.filtered.terms[0].ci_low: committed 0.8609298354006157, now 0.8609533063338746",
-      "tests.proximity.tiers.filtered.terms[0].p_value: committed 0.5338676480587994, now 0.533661444456186",
-      "tests.proximity.tiers.filtered.terms[0].rate_ratio: committed 1.0721130468077398, now 1.0721545980824239",
-      "tests.proximity.tiers.high_quality.terms[0].ci_high: committed 1.3559947803524697, now 1.356042756822302",
-      "tests.proximity.tiers.high_quality.terms[0].ci_low: committed 0.8834314879724375, now 0.8834594424637627",
-      "tests.proximity.tiers.high_quality.terms[0].p_value: committed 0.40875715913899713, now 0.4085873689149083",
-      "tests.proximity.tiers.high_quality.terms[0].rate_ratio: committed 1.094499194375967, now 1.0945358732811157"
-    ],
-    "n_differences": 16,
+    "differences": [],
+    "n_differences": 0,
     "fingerprint_differences": []
   },
   {
@@ -40,31 +21,16 @@
     "split": "explore",
     "ok": false,
     "error": null,
-    "seconds": 140.2,
-    "fingerprint": "recorded",
-    "against": "registered result",
-    "added": [
-      "tests.proximity.tiers.all.dispersion",
-      "tests.proximity.tiers.filtered.dispersion",
-      "tests.proximity.tiers.high_quality.dispersion"
+    "seconds": 200.3,
+    "fingerprint": "match",
+    "against": "baseline",
+    "added": [],
+    "n_added": 0,
+    "inputs_changed": [
+      "data/raw/volcanoes/holocene_volcanoes.csv"
     ],
-    "n_added": 3,
-    "inputs_changed": [],
-    "differences": [
-      "tests.proximity.checks.shift_test.rate_ratio: committed 1.0624760595403646, now 1.0624749699203617",
-      "tests.proximity.p_bh: committed 0.3542418383775666, now 0.3542514143669844",
-      "tests.proximity.power: committed 0.9999999999999982, now 0.30747836109889054",
-      "tests.proximity.tiers.all.terms[0].ci_low: committed 0.9472047718848812, now 0.947203365659186",
-      "tests.proximity.tiers.all.terms[0].p_value: committed 0.265868761305291, now 0.26587761368735363",
-      "tests.proximity.tiers.all.terms[0].rate_ratio: committed 1.0738193318931757, now 1.0738181494138157",
-      "tests.proximity.tiers.filtered.terms[0].ci_low: committed 0.9346217335784218, now 0.9346204185730544",
-      "tests.proximity.tiers.filtered.terms[0].p_value: committed 0.3542418383775666, now 0.3542514143669844",
-      "tests.proximity.tiers.filtered.terms[0].rate_ratio: committed 1.0624760595403646, now 1.0624749699203617",
-      "tests.proximity.tiers.high_quality.terms[0].ci_high: committed 1.1152030529929169, now 1.115200678029249",
-      "tests.proximity.tiers.high_quality.terms[0].p_value: committed 0.8708087385688812, now 0.8708258720750777",
-      "tests.proximity.tiers.high_quality.terms[0].rate_ratio: committed 1.0083892708306064, now 1.0083880655134239"
-    ],
-    "n_differences": 12,
+    "differences": [],
+    "n_differences": 0,
     "fingerprint_differences": []
   }
 ]
