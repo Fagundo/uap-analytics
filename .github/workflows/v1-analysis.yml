@@ -20,6 +20,8 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      PURSUE_EXPORT_TOKEN: ${{ secrets.PURSUE_EXPORT_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
@@ -36,6 +38,8 @@ jobs:
     if: github.event_name == 'workflow_dispatch'
     needs: test
     runs-on: ubuntu-latest
+    env:
+      PURSUE_EXPORT_TOKEN: ${{ secrets.PURSUE_EXPORT_TOKEN }}
     timeout-minutes: 240
     steps:
       - uses: actions/checkout@v4

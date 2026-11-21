@@ -14,6 +14,8 @@ permissions:
 jobs:
   reference:
     runs-on: ubuntu-latest
+    env:
+      UAP_GEO_DATA: legacy     # the reference is built from uap-geo's own pinned raw files
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4

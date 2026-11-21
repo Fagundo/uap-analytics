@@ -14,6 +14,8 @@ permissions:
 jobs:
   study:
     runs-on: ubuntu-latest
+    env:
+      PURSUE_EXPORT_TOKEN: ${{ secrets.PURSUE_EXPORT_TOKEN }}
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
