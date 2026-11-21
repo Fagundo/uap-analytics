@@ -9,14 +9,13 @@
    "shape",
    "country"
   ],
-  "equal": false,
+  "equal": true,
   "differing_values": {},
   "sha256": [
    "fa49450c2a010dcc",
    "fa49450c2a010dcc"
   ],
-  "identical_as_given": false,
-  "first_difference": "Attributes of DataFrame.iloc[:, 2] (column name=\"state\") are different",
+  "identical_as_given": true,
   "cleaning": [
    {
     "raw_rows": 96429,
