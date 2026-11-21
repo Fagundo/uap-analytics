@@ -1,0 +1,83 @@
+{
+ "settings": "configs/residual_v2.yaml",
+ "reports": 74795,
+ "sha256": "268e8148ecf67402f7f0775dda1aaeeb365a2395b1ad2fa8ac5cd7cfc3756f39",
+ "report_ids": "7c4236d6f3fb31d3bc9e9a026e83f737a71a8f2770333eb345ad264a0405d4bc",
+ "tiers": {
+  "explained": 4379,
+  "possible": 24908,
+  "residual": 45508
+ },
+ "tier_sha256": {
+  "explained": "d26134ba58d687f3a45ac58f1f751d8d719f194b3b5d8d91965be3f212ea6d44",
+  "possible": "c75e0f4151846fcfb59685d606a2ed06414b1381aff5626bf4ea830352a38ee0",
+  "residual": "7e605d53377deab19e19ca4da007a2f6a0098bd8bdb745d5af02fc9ca52a8d07"
+ },
+ "reasons": {
+  "bright_planet": {
+   "rows": 1201,
+   "sha256": "7cec462e041478e40096914bcad9c12a9b97eaf8d00830d0df93b33abc3760d8"
+  },
+  "holiday_night": {
+   "rows": 3149,
+   "sha256": "9c7f269544475ac9bb1065b20a4dbc41aef8c171d779acf133c48f0115859adb"
+  },
+  "lantern_wording": {
+   "rows": 20044,
+   "sha256": "e9528bf02df16c1b3a14f29593cdb6f5d5c1657df2073fecad381a98f985faee"
+  },
+  "launch_window": {
+   "rows": 690,
+   "sha256": "568704c19abf917422c85c04cf2257f32da1c6a8b78d32ee8dc0cf6176388728"
+  },
+  "llm_explainer": {
+   "rows": 6604,
+   "sha256": "ac74a7cd1396528329eab239023cf4f79a87de86c022f0df8531d87fac5e3cc8"
+  },
+  "meteor_fireball": {
+   "rows": 1461,
+   "sha256": "6be2a00d0cd8dd71097bedad4afd4098e9b1421478c894741b1ac2fe2e925f17"
+  },
+  "nuforc_note": {
+   "rows": 2288,
+   "sha256": "92c63da565c610c90fb3b5f0f88d85884110452df4129551b3dbe7322456daa2"
+  },
+  "sky_lantern": {
+   "rows": 56,
+   "sha256": "ffaab8e6c718f0cd29ce1c6ee517bfe8cd88888711d5cb8a7cdfb884a957bdb8"
+  },
+  "starlink_train": {
+   "rows": 242,
+   "sha256": "5c81847935b2389eac55fe0d4fdabc912055cf46b690a81f803a2a223399092b"
+  }
+ },
+ "summary": {
+  "years": [
+   2001,
+   2023
+  ],
+  "reports": 74795,
+  "events": 69348,
+  "report_tiers": {
+   "residual": 45508,
+   "possible": 24908,
+   "explained": 4379
+  },
+  "event_tiers": {
+   "residual": 42462,
+   "possible": 22917,
+   "explained": 3969
+  },
+  "matches": {
+   "rule:nuforc_note": 2288,
+   "rule:meteor_fireball": 1461,
+   "rule:sky_lantern": 56,
+   "launch_window": 690,
+   "holiday_night": 3149,
+   "lantern_wording": 20044,
+   "starlink_train": 242,
+   "bright_planet": 1201,
+   "llm_explainer": 6604
+  }
+ }
+}
