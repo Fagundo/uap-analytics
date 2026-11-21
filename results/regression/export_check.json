@@ -16,6 +16,7 @@
    "fa49450c2a010dcc"
   ],
   "identical_as_given": false,
+  "first_difference": "Attributes of DataFrame.iloc[:, 2] (column name=\"state\") are different",
   "cleaning": [
    {
     "raw_rows": 96429,
@@ -71,9 +72,14 @@
  "quakes": {
   "rows": [
    26612,
-   26610
+   26612
   ],
   "skipped_columns": [],
-  "equal": false
+  "equal": true,
+  "differing_values": {},
+  "sha256": [
+   "61d0f3fbad0c161a",
+   "61d0f3fbad0c161a"
+  ]
  }
 }
