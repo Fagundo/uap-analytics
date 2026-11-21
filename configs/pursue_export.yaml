@@ -2,10 +2,11 @@
 # repository; assets checked by SHA-256. Changing the pin changes uap-geo's inputs: rerun the regression
 # workflow and explain any difference in results/regression/BASELINE.md.
 #
-# use: false until the export check and the regression workflow both pass on it (Phase 4 gate).
+# use: true since the export check passed (results/regression/export_check.json); the regression workflow
+# on export input is the second half of the Phase 4 gate.
 repo: Fagundo/PURSUE
 tag: export-0df688bb2bb5c4a3
-use: false
+use: true
 sha256:
   export_public.tar.gz: 20f07895c6f42a5022791fdc09d062dd9216d4a01ed43f7e9d813663aacd1a94
   export_restricted.tar.gz: ab79da0ec8be287c00754f12ed60d3e3aff9bafebfb33432da86fd0feac8a292
