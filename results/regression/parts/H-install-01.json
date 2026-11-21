@@ -4,35 +4,16 @@
     "split": "confirm",
     "ok": false,
     "error": null,
-    "seconds": 169.6,
-    "fingerprint": "recorded",
-    "against": "registered result",
-    "added": [
-      "tests.proximity.tiers.all.dispersion",
-      "tests.proximity.tiers.filtered.dispersion",
-      "tests.proximity.tiers.high_quality.dispersion"
+    "seconds": 307.4,
+    "fingerprint": "match",
+    "against": "baseline",
+    "added": [],
+    "n_added": 0,
+    "inputs_changed": [
+      "data/raw/airports/airports.csv"
     ],
-    "n_added": 3,
-    "inputs_changed": [],
-    "differences": [
-      "tests.proximity.checks.shift_test.null_median_rate_ratio: committed 0.99872858283511, now 0.9987319234349723",
-      "tests.proximity.checks.shift_test.rate_ratio: committed 1.0197305483552357, now 1.0197236601612198",
-      "tests.proximity.p_bh: committed 0.3839458194398284, now 0.38410689438659484",
-      "tests.proximity.power: committed 0.6000632335621124, now 0.6000768104362868",
-      "tests.proximity.tiers.all.terms[0].ci_high: committed 1.0650496457949827, now 1.0650421157890504",
-      "tests.proximity.tiers.all.terms[0].ci_low: committed 0.9729195214019167, now 0.9729131253883136",
-      "tests.proximity.tiers.all.terms[0].p_value: committed 0.44100477079611233, now 0.4411775501154169",
-      "tests.proximity.tiers.all.terms[0].rate_ratio: committed 1.0179428233727745, now 1.0179358788953787",
-      "tests.proximity.tiers.filtered.terms[0].ci_high: committed 1.0655833568920374, now 1.0655758287577317",
-      "tests.proximity.tiers.filtered.terms[0].ci_low: committed 0.9758508187306693, now 0.9758445293422768",
-      "tests.proximity.tiers.filtered.terms[0].p_value: committed 0.3839458194398284, now 0.38410689438659484",
-      "tests.proximity.tiers.filtered.terms[0].rate_ratio: committed 1.0197305483552357, now 1.0197236601612198",
-      "tests.proximity.tiers.high_quality.terms[0].ci_high: committed 1.083453330739537, now 1.0834487343964279",
-      "tests.proximity.tiers.high_quality.terms[0].ci_low: committed 0.9717043830786758, now 0.9716974504249135",
-      "tests.proximity.tiers.high_quality.terms[0].p_value: committed 0.35426416921872694, now 0.35438338321166474",
-      "tests.proximity.tiers.high_quality.terms[0].rate_ratio: committed 1.026058648587301, now 1.0260528119347017"
-    ],
-    "n_differences": 16,
+    "differences": [],
+    "n_differences": 0,
     "fingerprint_differences": []
   },
   {
@@ -40,29 +21,16 @@
     "split": "explore",
     "ok": false,
     "error": null,
-    "seconds": 165.8,
-    "fingerprint": "recorded",
-    "against": "registered result",
-    "added": [
-      "tests.proximity.tiers.all.dispersion",
-      "tests.proximity.tiers.filtered.dispersion",
-      "tests.proximity.tiers.high_quality.dispersion"
+    "seconds": 242.4,
+    "fingerprint": "match",
+    "against": "baseline",
+    "added": [],
+    "n_added": 0,
+    "inputs_changed": [
+      "data/raw/airports/airports.csv"
     ],
-    "n_added": 3,
-    "inputs_changed": [],
-    "differences": [
-      "tests.proximity.checks.shift_test.rate_ratio: committed 1.0062348929135445, now 1.0062338610676937",
-      "tests.proximity.p_bh: committed 0.7332010934171647, now 0.7332393584617548",
-      "tests.proximity.power: committed 0.9999999999999982, now 0.999456703734892",
-      "tests.proximity.tiers.all.terms[0].ci_high: committed 1.041410412484336, now 1.041408632567754",
-      "tests.proximity.tiers.all.terms[0].p_value: committed 0.7575003564446698, now 0.7575443241717326",
-      "tests.proximity.tiers.all.terms[0].rate_ratio: committed 1.0055375013064776, now 1.0055363694977577",
-      "tests.proximity.tiers.filtered.terms[0].ci_high: committed 1.042846630387507, now 1.0428449692689363",
-      "tests.proximity.tiers.filtered.terms[0].p_value: committed 0.7332010934171647, now 0.7332393584617548",
-      "tests.proximity.tiers.filtered.terms[0].rate_ratio: committed 1.0062348929135445, now 1.0062338610676937",
-      "tests.proximity.tiers.high_quality.terms[0].p_value: committed 0.5589545044968873, now 0.558968742012619"
-    ],
-    "n_differences": 10,
+    "differences": [],
+    "n_differences": 0,
     "fingerprint_differences": []
   }
 ]

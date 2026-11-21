@@ -2,14 +2,16 @@
   {
     "hypothesis": "H-rockage-01",
     "split": "confirm",
-    "ok": true,
+    "ok": false,
     "error": null,
-    "seconds": 291.4,
-    "fingerprint": "recorded",
-    "against": "registered result",
+    "seconds": 2144.2,
+    "fingerprint": "match",
+    "against": "baseline",
     "added": [],
     "n_added": 0,
-    "inputs_changed": [],
+    "inputs_changed": [
+      "data/raw/airports/airports.csv"
+    ],
     "differences": [],
     "n_differences": 0,
     "fingerprint_differences": []
@@ -17,14 +19,16 @@
   {
     "hypothesis": "H-rockage-01",
     "split": "explore",
-    "ok": true,
+    "ok": false,
     "error": null,
-    "seconds": 296.3,
-    "fingerprint": "recorded",
-    "against": "registered result",
+    "seconds": 224.1,
+    "fingerprint": "match",
+    "against": "baseline",
     "added": [],
     "n_added": 0,
-    "inputs_changed": [],
+    "inputs_changed": [
+      "data/raw/airports/airports.csv"
+    ],
     "differences": [],
     "n_differences": 0,
     "fingerprint_differences": []
@@ -32,14 +36,16 @@
   {
     "hypothesis": "H-rockage-01",
     "split": "holdout",
-    "ok": true,
+    "ok": false,
     "error": null,
-    "seconds": 300.3,
-    "fingerprint": "recorded",
-    "against": "registered result",
+    "seconds": 225.0,
+    "fingerprint": "match",
+    "against": "baseline",
     "added": [],
     "n_added": 0,
-    "inputs_changed": [],
+    "inputs_changed": [
+      "data/raw/airports/airports.csv"
+    ],
     "differences": [],
     "n_differences": 0,
     "fingerprint_differences": []

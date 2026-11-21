@@ -4,21 +4,14 @@
     "split": "confirm",
     "ok": false,
     "error": null,
-    "seconds": 54.3,
-    "fingerprint": "recorded",
-    "against": "registered result",
-    "added": [
-      "tests.quake.tiers.all.dispersion",
-      "tests.quake.tiers.filtered.dispersion",
-      "tests.quake.tiers.high_quality.dispersion",
-      "tests.storm.tiers.all.dispersion",
-      "tests.storm.tiers.filtered.dispersion",
-      "tests.storm.tiers.high_quality.dispersion"
-    ],
-    "n_added": 6,
+    "seconds": 12.4,
+    "fingerprint": "match",
+    "against": "baseline",
+    "added": [],
+    "n_added": 0,
     "inputs_changed": [],
     "differences": [
-      "tests.storm.tiers.all.terms[1].p_value: committed 4.878253435809939e-07, now 4.878239931526553e-07"
+      "tests.storm.tiers.all.terms[1].p_value: committed 4.878239931526553e-07, now 4.878253435809939e-07"
     ],
     "n_differences": 1,
     "fingerprint_differences": []
@@ -28,18 +21,11 @@
     "split": "explore",
     "ok": true,
     "error": null,
-    "seconds": 19.6,
-    "fingerprint": "recorded",
-    "against": "registered result",
-    "added": [
-      "tests.quake.tiers.all.dispersion",
-      "tests.quake.tiers.filtered.dispersion",
-      "tests.quake.tiers.high_quality.dispersion",
-      "tests.storm.tiers.all.dispersion",
-      "tests.storm.tiers.filtered.dispersion",
-      "tests.storm.tiers.high_quality.dispersion"
-    ],
-    "n_added": 6,
+    "seconds": 11.8,
+    "fingerprint": "match",
+    "against": "baseline",
+    "added": [],
+    "n_added": 0,
     "inputs_changed": [],
     "differences": [],
     "n_differences": 0,
