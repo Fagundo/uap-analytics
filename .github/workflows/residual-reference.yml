@@ -1,0 +1,44 @@
+name: residual reference
+
+# Builds residual set v2 from the pinned NUFORC and GCAT files (H-launch-01's regression cache, the same GCAT
+# bytes as the pinned-layer-inputs-v1 release) and commits a hash-only fingerprint of every report's tier and
+# reasons. PURSUE's per-record enrichment (data refactor, Phase 3b) must reproduce it. Nothing record-level
+# is committed or uploaded.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  reference:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+          enable-cache: true
+      - run: uv sync
+      - uses: actions/cache/restore@v4
+        with:
+          path: data/raw
+          key: regression-raw-H-launch-01-v2-none
+          restore-keys: |
+            regression-raw-H-launch-01-v2-
+            regression-raw-H-launch-01-v1
+      - name: Fingerprint
+        run: |
+          find data/raw -maxdepth 2 -type f | sort
+          sha256sum data/raw/gcat_launches/*.tsv data/raw/nuforc/*.csv
+          uv run uap-geo regression residual-reference
+      - name: Commit the reference
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add results/regression/residual_v2_reference.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Regression: hash-only reference of residual set v2 (tiers and reasons)"
+          git pull --rebase --autostash -X theirs && git push

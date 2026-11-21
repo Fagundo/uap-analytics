@@ -101,7 +101,7 @@ def main(argv: list[str] | None = None) -> None:
     aud.add_argument("--split", choices=["explore", "confirm", "holdout"], default="confirm")
     aud.add_argument("--config", type=Path, default=Path("configs/v1.yaml"))
     reg = sub.add_parser("regression", help="Rerun committed hypothesis results and compare")
-    reg.add_argument("action", choices=["run", "summarize", "nuforc-reference", "layers-reference"])
+    reg.add_argument("action", choices=["run", "summarize", "nuforc-reference", "layers-reference", "residual-reference"])
     reg.add_argument("--raw", type=Path, default=Path("data/raw"), help="layers-reference: folder of raw files")
     reg.add_argument("--only", default=None, help="One hypothesis id")
     reg.add_argument("--split", default=None)
@@ -156,6 +156,18 @@ def _regression(args) -> None:
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(json.dumps(ref, indent=1) + "\n")
         print(json.dumps({k: v for k, v in ref.items() if k != "fields"}, indent=1))
+        return
+    if args.action == "residual-reference":
+        from uap_geo.regression.residual_reference import fingerprint as residual_fingerprint
+        from uap_geo.residual.builder import ResidualSetBuilder
+
+        root = Path.cwd()
+        result = ResidualSetBuilder(Config.from_yaml(Path("configs/v1.yaml")), root, root / "configs/residual_v2.yaml").build()
+        ref = {"settings": "configs/residual_v2.yaml", **residual_fingerprint(result.reports), "summary": result.summary}
+        out = args.out or Path("results/regression/residual_v2_reference.json")
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(json.dumps(ref, indent=1, default=str) + "\n")
+        print(json.dumps({k: v for k, v in ref.items() if k not in ("reasons", "tier_sha256")}, indent=1, default=str))
         return
     if args.action == "layers-reference":
         from uap_geo.regression.layers_reference import reference as layers_reference
