@@ -2,9 +2,9 @@
   {
     "hypothesis": "H-install-01",
     "split": "confirm",
-    "ok": false,
+    "ok": true,
     "error": null,
-    "seconds": 307.4,
+    "seconds": 272.0,
     "fingerprint": "match",
     "against": "baseline",
     "added": [],
@@ -19,9 +19,9 @@
   {
     "hypothesis": "H-install-01",
     "split": "explore",
-    "ok": false,
+    "ok": true,
     "error": null,
-    "seconds": 242.4,
+    "seconds": 188.8,
     "fingerprint": "match",
     "against": "baseline",
     "added": [],

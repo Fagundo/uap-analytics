@@ -2,7 +2,7 @@
   {
     "hypothesis": "H-geo-01",
     "split": "confirm",
-    "ok": false,
+    "ok": true,
     "error": null,
     "seconds": 12.4,
     "fingerprint": "match",
@@ -10,10 +10,8 @@
     "added": [],
     "n_added": 0,
     "inputs_changed": [],
-    "differences": [
-      "tests.storm.tiers.all.terms[1].p_value: committed 4.878239931526553e-07, now 4.878253435809939e-07"
-    ],
-    "n_differences": 1,
+    "differences": [],
+    "n_differences": 0,
     "fingerprint_differences": []
   },
   {
