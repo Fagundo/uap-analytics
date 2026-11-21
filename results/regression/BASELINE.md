@@ -17,3 +17,11 @@ difference had one of three causes, none of which changes a verdict:
 From the baseline on, each rerun also checks the SHA-256 of every raw input file the baseline used, so a
 re-downloaded file is reported as such instead of as an unexplained change. Pinning raw inputs (a lock file
 like PURSUE's `sources/lock.json`) is part of moving the data to PURSUE.
+
+## Pinned raw inputs (2026-11-21)
+
+The first comparison with the baselines (run 44841524097) reported re-downloaded files: the Smithsonian
+volcano list (H-volcano-01; results identical) and the 2024 and 2026 earthquake files (H-geo-01; one p-value
+moved by 3e-6 relative). Each hypothesis now restores its own pinned raw-data cache
+(`regression-raw-<hypothesis>-v1`), saved by the rebaseline run, so later reruns use exactly the baseline's
+files. The baselines were rewritten once more on that run; results were unchanged apart from those two items.
