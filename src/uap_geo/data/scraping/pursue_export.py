@@ -31,7 +31,7 @@ import requests
 import yaml
 
 from uap_geo.common.geo import CONUS_STATES
-from uap_geo.data.preprocessing.reports import CleaningReport
+from uap_geo.data.preprocessing.reports import CleaningReport, to_state_code
 
 log = logging.getLogger(__name__)
 
@@ -131,7 +131,9 @@ class ExportTables:
             # In this extract the reported time is the UTC time for every row; PURSUE keeps the UTC one.
             "occurred": pd.to_datetime(rows["occurred_utc"].replace("", pd.NA), utc=True, format="ISO8601"),
             "city": _na(rows["place_text"]),
-            "state": rows["state"].replace("", None).astype("str"),     # dtype as ReportCleaner's state map
+            # built as ReportCleaner builds it (a "string" column mapped through to_state_code), so the dtype
+            # follows the installed pandas exactly as the legacy path's does
+            "state": rows["state"].replace("", pd.NA).astype("string").map(to_state_code),
             "country": _na(rows["country"]),
             "summary": _na(rows["text"]),
             "shape": pd.Series(pd.NA, index=rows.index, dtype="string"),
