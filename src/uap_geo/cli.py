@@ -101,7 +101,7 @@ def main(argv: list[str] | None = None) -> None:
     aud.add_argument("--split", choices=["explore", "confirm", "holdout"], default="confirm")
     aud.add_argument("--config", type=Path, default=Path("configs/v1.yaml"))
     reg = sub.add_parser("regression", help="Rerun committed hypothesis results and compare")
-    reg.add_argument("action", choices=["run", "summarize"])
+    reg.add_argument("action", choices=["run", "summarize", "nuforc-reference"])
     reg.add_argument("--only", default=None, help="One hypothesis id")
     reg.add_argument("--split", default=None)
     reg.add_argument("--record", action="store_true", help="Write missing input fingerprints when results match")
@@ -144,6 +144,18 @@ def _regression(args) -> None:
 
     from uap_geo.regression.runner import RegressionRunner, summary_markdown
 
+    if args.action == "nuforc-reference":
+        from uap_geo.common.download import Downloader
+        from uap_geo.data.scraping.registry import SourceRegistry
+        from uap_geo.regression.nuforc_reference import reference
+
+        config = Config.from_yaml(args.config)
+        ref = reference(SourceRegistry(config, Downloader(config.paths.raw)).nuforc().load())
+        out = args.out or Path("results/regression/nuforc_reference.json")
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(json.dumps(ref, indent=1) + "\n")
+        print(json.dumps({k: v for k, v in ref.items() if k != "fields"}, indent=1))
+        return
     if args.action == "run":
         runner = RegressionRunner(Path.cwd(), Config.from_yaml(args.config), STUDIES)
         targets = runner.targets(args.only, args.split)

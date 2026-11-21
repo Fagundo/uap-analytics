@@ -59,3 +59,18 @@ def test_summary_marks_changes():
                "differences": ["x: committed 1, now 2"], "n_differences": 1, "fingerprint_differences": [], "inputs_changed": ["data/raw/airports/airports.csv"]}]
     text = summary_markdown(checks)
     assert "CHANGED" in text and "x: committed 1, now 2" in text and "raw input changed: data/raw/airports" in text
+
+
+def test_nuforc_reference_canonical_form():
+    from uap_geo.regression.nuforc_reference import canonical_rows, fingerprint
+
+    reports = pd.DataFrame({"occurred_utc": pd.to_datetime(["2011-07-04 03:15:00"]),
+                            "local_time": pd.to_datetime(["2011-07-03 23:15:00"]),
+                            "lat": [47.60621], "lon": [-122.33207], "duration_s": [300.0],
+                            "state": ["WA"], "city": ["Seattle"], "summary": ["Bright orange light"]})
+    rows = canonical_rows(reports)
+    assert rows[0]["occurred_utc"] == "2011-07-04 03:15:00" and rows[0]["lat"] == "47.60621"
+    assert rows[0]["duration_s"] == "300.000" and len(rows[0]["report_id"]) == 10
+    fp = fingerprint(rows)
+    assert fp["rows"] == 1 and fp["rows_by_utc_year"] == {"2011": 1} and set(fp["fields"]) == {
+        "occurred_utc", "local_time", "lat", "lon", "duration_s", "state", "city"}
