@@ -67,4 +67,4 @@ jobs:
           git add results/regression/layers_reference.json
           git diff --cached --quiet && exit 0
           git commit -m "Regression: hash-only reference of the pinned event-layer inputs"
-          git pull --rebase -X theirs && git push
+          git pull --rebase --autostash -X theirs && git push
