@@ -13,8 +13,6 @@ from uap_geo.classify.tiers import TIERS
 from uap_geo.common.config import Config
 from uap_geo.common.geo import COUNTY_ID, WGS84
 from uap_geo.data.preprocessing.mainshocks import MainshockFilter
-from uap_geo.data.scraping.kp import KpSource
-from uap_geo.data.scraping.usgs import EarthquakeSource
 from uap_geo.events.moon import nightly_illumination
 from uap_geo.features.county_table import prepare_counties
 from uap_geo.hypotheses.base import PRIMARY_TIER, EventStudy, TestOutcome
@@ -139,7 +137,7 @@ class GeoTriggerStudy(EventStudy):
     # ------------------------------------------------------------------------------ run
     def load_inputs(self) -> tuple[pd.Series, pd.DataFrame, EventTable, pd.DataFrame]:
         """Daily Kp, county centroids, the event table and the events in counties."""
-        kp = KpSource(self.config.source("kp"), self.sources.downloader).load()
+        kp = self.sources.kp().load()
         counties = prepare_counties(self.sources.counties().load(), self.config.study.crs)
         cent = counties.geometry.centroid.to_crs(WGS84)
         centroids = pd.DataFrame({COUNTY_ID: counties[COUNTY_ID].to_numpy(), "lat": cent.y.to_numpy(), "lon": cent.x.to_numpy()})
@@ -152,7 +150,7 @@ class GeoTriggerStudy(EventStudy):
         """All catalogue quakes (>= catalog_min_mag) and declustered mainshocks."""
         years = self._all_years()
         q = self.impl["parameters"]["quake"]
-        source = EarthquakeSource(self.config.source("earthquakes"), self.sources.downloader, years[0], years[1], q["catalog_min_mag"])
+        source = self.sources.quakes(years[0], years[1], q["catalog_min_mag"])
         quakes = pd.DataFrame(source.load().drop(columns="geometry"))
         return quakes, MainshockFilter(**q["decluster"]).apply(quakes)
 

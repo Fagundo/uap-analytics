@@ -13,7 +13,6 @@ from uap_geo.common.config import Config
 from uap_geo.common.download import Downloader
 from uap_geo.data.io.store import TableStore
 from uap_geo.data.preprocessing.geocode import GazetteerGeocoder
-from uap_geo.data.preprocessing.reports import ReportCleaner
 from uap_geo.data.scraping.registry import SourceRegistry
 from uap_geo.evaluation.permutation import PermutationResult, ShiftLayer, ShiftPermutation
 from uap_geo.evaluation.report import ReportWriter
@@ -53,8 +52,7 @@ class V1Pipeline:
     # --- stage 1 ---------------------------------------------------------------------------
     def ingest(self) -> None:
         study = self.config.study
-        raw = self.sources.nuforc().load()
-        reports, cleaning = ReportCleaner(study.start_year, study.end_year).clean(raw)
+        reports, cleaning = self.sources.cleaned_reports((study.start_year, study.end_year))
         gazetteer = pd.concat([g.load() for g in self.sources.gazetteers()], ignore_index=True)
         geocoded = GazetteerGeocoder(gazetteer).geocode(reports)
         self.interim.save("reports", geocoded)

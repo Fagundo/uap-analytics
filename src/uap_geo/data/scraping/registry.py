@@ -2,6 +2,10 @@
 
 from __future__ import annotations
 
+import os
+from pathlib import Path
+from typing import Callable
+
 from uap_geo.common.base import DataSource
 from uap_geo.common.config import Config
 from uap_geo.common.download import Downloader
@@ -30,12 +34,69 @@ from uap_geo.data.scraping.volcanoes import HoloceneVolcanoSource
 from uap_geo.data.scraping.usgs import EarthquakeSource, QuaternaryFaultSource
 
 RASTER_SOURCES = ("light_pollution", "cloud_cover", "tree_canopy", "magnetic_anomaly")
+EXPORT_PIN = Path("configs/pursue_export.yaml")
+
+
+class _FromExport:
+    """A DataSource-shaped wrapper: ``load()`` returns a table built from the PURSUE export."""
+
+    def __init__(self, build: Callable[[], object]) -> None:
+        self._build = build
+
+    def load(self):
+        return self._build()
 
 
 class SourceRegistry:
+    """Sightings, launches, Kp and quakes come from PURSUE's export when configs/pursue_export.yaml says
+    ``use: true`` (or UAP_GEO_DATA=export); UAP_GEO_DATA=legacy forces uap-geo's own loaders."""
+
     def __init__(self, config: Config, downloader: Downloader) -> None:
         self._config = config
         self._dl = downloader
+        self._export = None
+
+    def export_tables(self):
+        """The pinned PURSUE export as uap-geo's tables, or None when uap-geo's own loaders are in use."""
+        mode = os.environ.get("UAP_GEO_DATA", "").lower()
+        if mode == "legacy" or not EXPORT_PIN.exists():
+            return None
+        import yaml
+        settings = yaml.safe_load(EXPORT_PIN.read_text())
+        if mode != "export" and not settings.get("use", False):
+            return None
+        if self._export is None:
+            from uap_geo.data.scraping.pursue_export import ExportPin, ExportTables, PursueExport
+            self._export = ExportTables(PursueExport(ExportPin.load(EXPORT_PIN), self._config.paths.raw))
+        return self._export
+
+    def cleaned_reports(self, years: tuple[int, int]):
+        """NUFORC reports for the years, cleaned (frame, CleaningReport)."""
+        tables = self.export_tables()
+        if tables is not None:
+            return tables.reports(years)
+        from uap_geo.data.preprocessing.reports import ReportCleaner
+        return ReportCleaner(*years).clean(self.nuforc().load())
+
+    def kp(self):
+        """Daily maximum Kp (``load()`` -> Series indexed by UTC date)."""
+        tables = self.export_tables()
+        if tables is not None:
+            return _FromExport(tables.kp_daily)
+        from uap_geo.data.scraping.kp import KpSource
+        return KpSource(self._config.source("kp"), self._dl)
+
+    def quakes(self, first_year: int, last_year: int, min_magnitude: float):
+        """ComCat events (``load()`` -> GeoDataFrame time, latitude, longitude, mag, geometry). The export holds
+        M3.0+ from 2001; other requests use uap-geo's own loader."""
+        tables = self.export_tables()
+        if tables is not None and min_magnitude >= 3.0 and first_year >= 2001:
+            def build():
+                import geopandas as gpd
+                q = tables.quakes(first_year, last_year, min_magnitude)
+                return gpd.GeoDataFrame(q, geometry=gpd.points_from_xy(q["longitude"], q["latitude"]), crs="EPSG:4326")
+            return _FromExport(build)
+        return EarthquakeSource(self._config.source("earthquakes"), self._dl, first_year, last_year, min_magnitude)
 
     @property
     def downloader(self) -> Downloader:
@@ -160,7 +221,10 @@ class SourceRegistry:
         """USGS State Geologic Map Compilation: map-unit polygons with their age range."""
         return SgmcGeologySource(self._config.source("sgmc"), self._dl)
 
-    def launches(self, min_apogee_km: float = 100.0) -> GcatLaunchSource:
+    def launches(self, min_apogee_km: float = 100.0):
+        tables = self.export_tables()
+        if tables is not None:
+            return _FromExport(lambda: tables.launches(min_apogee_km))
         return GcatLaunchSource(self._config.source("gcat_launches"), self._dl, min_apogee_km)
 
     def raster(self, name: str) -> RasterSource:

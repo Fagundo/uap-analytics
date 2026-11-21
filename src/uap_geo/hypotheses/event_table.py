@@ -12,7 +12,6 @@ from uap_geo.classify.tiers import OutcomeTiers, QualitySettings
 from uap_geo.common.config import Config
 from uap_geo.common.geo import COUNTY_ID, WGS84
 from uap_geo.data.preprocessing.geocode import GazetteerGeocoder
-from uap_geo.data.preprocessing.reports import ReportCleaner
 from uap_geo.data.scraping.registry import SourceRegistry
 from uap_geo.events.dedup import DedupSettings, ReportDeduplicator
 from uap_geo.events.timeutil import local_times, observing_night
@@ -36,8 +35,7 @@ class EventTable:
     def labelled_reports(self, kp_daily: pd.Series | None = None):
         """Cleaned reports merged into events and labelled by every rule.
         Returns (tagged reports, rule labels, events table, cleaning report)."""
-        raw = self.sources.nuforc().load()
-        reports, cleaning = ReportCleaner(*self.years).clean(raw)
+        reports, cleaning = self.sources.cleaned_reports(self.years)
         if reports["lat"].isna().any():
             gazetteer = pd.concat([g.load() for g in self.sources.gazetteers()], ignore_index=True)
             reports = GazetteerGeocoder(gazetteer).geocode(reports)

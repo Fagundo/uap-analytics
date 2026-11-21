@@ -27,6 +27,8 @@ permissions:
 jobs:
   rerun:
     runs-on: ubuntu-latest
+    env:
+      PURSUE_EXPORT_TOKEN: ${{ secrets.PURSUE_EXPORT_TOKEN }}   # when configs/pursue_export.yaml has use: true
     timeout-minutes: 150
     strategy:
       fail-fast: false
