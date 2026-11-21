@@ -91,7 +91,7 @@ def test_explanations(tables):
     assert set(e["report_id"]) == {"a", "b", "c", "d", "e", "f"} and set(e["tier"]) == {"possible"}
 
 
-def test_registry_uses_export_only_when_asked(monkeypatch, tmp_path):
+def test_registry_reads_the_pinned_export(monkeypatch, tmp_path):
     pytest.importorskip("geopandas")
     from uap_geo.common.config import Config
     from uap_geo.common.download import Downloader
@@ -99,14 +99,11 @@ def test_registry_uses_export_only_when_asked(monkeypatch, tmp_path):
 
     config = Config.from_yaml(ROOT / "configs" / "v1.yaml")
     pin = tmp_path / "pin.yaml"
-    pin.write_text("repo: Fagundo/PURSUE\ntag: export-test\nuse: false\nsha256: {}\n")
+    pin.write_text("repo: Fagundo/PURSUE\ntag: export-test\nsha256: {}\n")
     monkeypatch.setattr(reg, "EXPORT_PIN", pin)
-    sources = reg.SourceRegistry(config, Downloader(tmp_path))
-    assert sources.export_tables() is None
-    monkeypatch.setenv("UAP_GEO_DATA", "export")
-    assert sources.export_tables() is not None
-    monkeypatch.setenv("UAP_GEO_DATA", "legacy")
-    assert reg.SourceRegistry(config, Downloader(tmp_path)).export_tables() is None
+    tables = reg.SourceRegistry(config, Downloader(tmp_path)).export_tables()
+    assert isinstance(tables, ExportTables) and tables.export.pin.tag == "export-test"
+    assert ExportPin.load(ROOT / "configs" / "pursue_export.yaml").tag.startswith("export-")
 
 
 def test_import_boundary():

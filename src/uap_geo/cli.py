@@ -101,9 +101,7 @@ def main(argv: list[str] | None = None) -> None:
     aud.add_argument("--split", choices=["explore", "confirm", "holdout"], default="confirm")
     aud.add_argument("--config", type=Path, default=Path("configs/v1.yaml"))
     reg = sub.add_parser("regression", help="Rerun committed hypothesis results and compare")
-    reg.add_argument("action", choices=["run", "summarize", "nuforc-reference", "layers-reference", "residual-reference",
-                                        "export-check"])
-    reg.add_argument("--raw", type=Path, default=Path("data/raw"), help="layers-reference: folder of raw files")
+    reg.add_argument("action", choices=["run", "summarize"])
     reg.add_argument("--only", default=None, help="One hypothesis id")
     reg.add_argument("--split", default=None)
     reg.add_argument("--record", action="store_true", help="Write missing input fingerprints when results match")
@@ -146,54 +144,6 @@ def _regression(args) -> None:
 
     from uap_geo.regression.runner import RegressionRunner, summary_markdown
 
-    if args.action == "nuforc-reference":
-        from uap_geo.common.download import Downloader
-        from uap_geo.data.scraping.registry import SourceRegistry
-        from uap_geo.regression.nuforc_reference import reference
-
-        config = Config.from_yaml(args.config)
-        ref = reference(SourceRegistry(config, Downloader(config.paths.raw)).nuforc().load())
-        out = args.out or Path("results/regression/nuforc_reference.json")
-        out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(json.dumps(ref, indent=1) + "\n")
-        print(json.dumps({k: v for k, v in ref.items() if k != "fields"}, indent=1))
-        return
-    if args.action == "export-check":
-        from uap_geo.data.scraping.pursue_export import ExportPin, ExportTables, PursueExport
-        from uap_geo.regression.export_check import check as export_check
-
-        config = Config.from_yaml(args.config)
-        pin = ExportPin.load(Path("configs/pursue_export.yaml"))
-        result = {"export": pin.tag, **export_check(config, Path.cwd(), ExportTables(PursueExport(pin, config.paths.raw)))}
-        out = args.out or Path("results/regression/export_check.json")
-        out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(json.dumps(result, indent=1, default=str) + "\n")
-        print(json.dumps(result, indent=1, default=str))
-        failed = [k for k, v in result.items() if isinstance(v, dict) and not v.get("equal")]
-        if failed:
-            raise SystemExit(f"export differs from uap-geo's own loaders: {failed}")
-        return
-    if args.action == "residual-reference":
-        from uap_geo.regression.residual_reference import fingerprint as residual_fingerprint
-        from uap_geo.residual.builder import ResidualSetBuilder
-
-        root = Path.cwd()
-        result = ResidualSetBuilder(Config.from_yaml(Path("configs/v1.yaml")), root, root / "configs/residual_v2.yaml").build()
-        ref = {"settings": "configs/residual_v2.yaml", **residual_fingerprint(result.reports), "summary": result.summary}
-        out = args.out or Path("results/regression/residual_v2_reference.json")
-        out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(json.dumps(ref, indent=1, default=str) + "\n")
-        print(json.dumps({k: v for k, v in ref.items() if k not in ("reasons", "tier_sha256")}, indent=1, default=str))
-        return
-    if args.action == "layers-reference":
-        from uap_geo.regression.layers_reference import reference as layers_reference
-
-        ref = layers_reference(args.raw)
-        out = args.out or Path("results/regression/layers_reference.json")
-        out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(json.dumps(ref, indent=1) + "\n")
-        print(json.dumps({k: (v if k != "quakes" else f"{len(v)} files") for k, v in ref.items()}, indent=1)[:4000])
-        return
     if args.action == "run":
         runner = RegressionRunner(Path.cwd(), Config.from_yaml(args.config), STUDIES)
         targets = runner.targets(args.only, args.split)

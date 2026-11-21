@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import os
 from pathlib import Path
 from typing import Callable
 
@@ -16,8 +15,6 @@ from uap_geo.data.scraping.census import (
     PopulationSource,
 )
 from uap_geo.data.scraping.acs import AcsShareSource
-from uap_geo.data.scraping.gcat import GcatLaunchSource
-from uap_geo.data.scraping.nuforc import JsonNuforcSource, TidyTuesdayNuforcSource
 from uap_geo.data.scraping.other import (
     AirportSource,
     ConfiguredSitesSource,
@@ -48,8 +45,8 @@ class _FromExport:
 
 
 class SourceRegistry:
-    """Sightings, launches, Kp and quakes come from PURSUE's export when configs/pursue_export.yaml says
-    ``use: true`` (or UAP_GEO_DATA=export); UAP_GEO_DATA=legacy forces uap-geo's own loaders."""
+    """Sightings, launches, Kp and quakes come from PURSUE's export (configs/pursue_export.yaml); uap-geo no
+    longer fetches or cleans them itself (data refactor, Phase 4)."""
 
     def __init__(self, config: Config, downloader: Downloader) -> None:
         self._config = config
@@ -57,14 +54,7 @@ class SourceRegistry:
         self._export = None
 
     def export_tables(self):
-        """The pinned PURSUE export as uap-geo's tables, or None when uap-geo's own loaders are in use."""
-        mode = os.environ.get("UAP_GEO_DATA", "").lower()
-        if mode == "legacy" or not EXPORT_PIN.exists():
-            return None
-        import yaml
-        settings = yaml.safe_load(EXPORT_PIN.read_text())
-        if mode != "export" and not settings.get("use", False):
-            return None
+        """The pinned PURSUE export as uap-geo's tables."""
         if self._export is None:
             from uap_geo.data.scraping.pursue_export import ExportPin, ExportTables, PursueExport
             self._export = ExportTables(PursueExport(ExportPin.load(EXPORT_PIN), self._config.paths.raw))
@@ -72,25 +62,17 @@ class SourceRegistry:
 
     def cleaned_reports(self, years: tuple[int, int]):
         """NUFORC reports for the years, cleaned (frame, CleaningReport)."""
-        tables = self.export_tables()
-        if tables is not None:
-            return tables.reports(years)
-        from uap_geo.data.preprocessing.reports import ReportCleaner
-        return ReportCleaner(*years).clean(self.nuforc().load())
+        return self.export_tables().reports(years)
 
     def kp(self):
         """Daily maximum Kp (``load()`` -> Series indexed by UTC date)."""
-        tables = self.export_tables()
-        if tables is not None:
-            return _FromExport(tables.kp_daily)
-        from uap_geo.data.scraping.kp import KpSource
-        return KpSource(self._config.source("kp"), self._dl)
+        return _FromExport(self.export_tables().kp_daily)
 
     def quakes(self, first_year: int, last_year: int, min_magnitude: float):
         """ComCat events (``load()`` -> GeoDataFrame time, latitude, longitude, mag, geometry). The export holds
-        M3.0+ from 2001; other requests use uap-geo's own loader."""
-        tables = self.export_tables()
-        if tables is not None and min_magnitude >= 3.0 and first_year >= 2001:
+        M3.0+ from 2001; other requests (the v1 county pipeline's M2.5) use uap-geo's own loader."""
+        if min_magnitude >= 3.0 and first_year >= 2001:
+            tables = self.export_tables()
             def build():
                 import geopandas as gpd
                 q = tables.quakes(first_year, last_year, min_magnitude)
@@ -104,14 +86,6 @@ class SourceRegistry:
 
     def is_active(self, name: str) -> bool:
         return name in self._config.sources and self._config.source(name).is_active
-
-    def nuforc(self) -> DataSource:
-        config = self._config.source("nuforc")
-        formats = {"tidytuesday": TidyTuesdayNuforcSource, "json": JsonNuforcSource}
-        fmt = config.options.get("format", "tidytuesday")
-        if fmt not in formats:
-            raise ValueError(f"Unknown nuforc format '{fmt}'; expected one of {sorted(formats)}")
-        return formats[fmt](config, self._dl)
 
     def counties(self) -> CountySource:
         return CountySource(self._config.source("counties"), self._dl)
@@ -222,10 +196,9 @@ class SourceRegistry:
         return SgmcGeologySource(self._config.source("sgmc"), self._dl)
 
     def launches(self, min_apogee_km: float = 100.0):
+        """GCAT launches from contiguous-U.S. sites, timed, orbital or reaching min_apogee_km."""
         tables = self.export_tables()
-        if tables is not None:
-            return _FromExport(lambda: tables.launches(min_apogee_km))
-        return GcatLaunchSource(self._config.source("gcat_launches"), self._dl, min_apogee_km)
+        return _FromExport(lambda: tables.launches(min_apogee_km))
 
     def raster(self, name: str) -> RasterSource:
         return RasterSource(self._config.source(name), self._dl)

@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 
-from uap_geo.data.scraping.gcat import parse_launches, parse_sites, us_space_launches
 from uap_geo.events.sun import lighting_class, solar_altitude
 from uap_geo.hypotheses.designs.conditional_poisson import ConditionalPoissonTest
 from uap_geo.hypotheses.designs.launch_exposure import LaunchExposure, LaunchSettings
@@ -24,16 +23,6 @@ SITES_TSV = (
     "WI\t-\tWI\tLS\tUS\t-\t-\tWallops\tWallops\t-\t  -75.5\t  37.8\t0.01\t-\t-\t-\t-\t-\n"
     "GIK-5\t-\tGIK-5\tLS\tSU\t-\t-\tBaikonur\tBaikonur\t-\t   63.3\t  45.9\t0.01\t-\t-\t-\t-\t-\n"
 )
-
-
-def test_gcat_parsing_keeps_timed_us_space_launches():
-    launches, sites = parse_launches(LAUNCH_TSV), parse_sites(SITES_TSV)
-    assert launches["orbital"].tolist() == [True, False, False, True]
-    assert launches["timed"].tolist() == [True, False, True, True]
-    assert abs(launches.loc[0, "time_utc"] - pd.Timestamp("2017-12-23 01:27")) < pd.Timedelta(minutes=1)
-    kept = us_space_launches(launches, sites)
-    # Black Brant has no clock time; the Terrier stays below 100 km; Baikonur is outside the US
-    assert kept["tag"].tolist() == ["2017-087"]
 
 
 def test_solar_altitude_and_lighting():
