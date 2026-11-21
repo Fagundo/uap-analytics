@@ -29,13 +29,17 @@ def _compare(name: str, legacy: pd.DataFrame, export: pd.DataFrame, key: list[st
         try:
             pd.testing.assert_frame_equal(legacy[cols].reset_index(drop=True), export[cols].reset_index(drop=True))
             identical = True
-        except AssertionError:
+        except AssertionError as e:
             identical = False
+            first = str(e).strip().splitlines()[0] if str(e).strip() else "differs"
+            out_note = first[:200]          # names the column and what differs; values follow on later lines
     a = legacy[cols].sort_values(key, kind="stable").reset_index(drop=True)
     b = export[cols].sort_values(key, kind="stable").reset_index(drop=True)
     out = {"rows": [len(a), len(b)], "skipped_columns": SKIPPED.get(name, [])}
     if len(a) != len(b):
         out["equal"] = False
+        if name == "quakes":
+            out["mag_below_3_or_missing"] = [int((~(legacy["mag"] >= 3)).sum()), int((~(export["mag"] >= 3)).sum())]
         return out
     diffs = {}
     for c in cols:
@@ -49,6 +53,8 @@ def _compare(name: str, legacy: pd.DataFrame, export: pd.DataFrame, key: list[st
     out.update(equal=not diffs, differing_values=diffs, sha256=[_hash(a), _hash(b)])
     if ordered:
         out["identical_as_given"] = identical
+        if not identical:
+            out["first_difference"] = out_note
         out["equal"] = out["equal"] and identical
     return out
 

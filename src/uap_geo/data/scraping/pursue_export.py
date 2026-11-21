@@ -37,6 +37,7 @@ log = logging.getLogger(__name__)
 
 ASSETS = ("export_public.tar.gz", "export_restricted.tar.gz")
 API = "https://api.github.com"
+LAYER_QUAKE_MIN_MAG = 3.0        # PURSUE's quakes layer: ComCat queried at M3.0+
 
 
 @dataclass(frozen=True)
@@ -184,8 +185,10 @@ class ExportTables:
         out = pd.DataFrame({"time": _utc(rows["start_utc"]), "latitude": _num(rows["lat"]).astype(float),
                             "longitude": _num(rows["lon"]).astype(float),
                             "mag": pd.to_numeric(attrs.map(lambda a: a["mag"] or None), errors="coerce")})
-        years = out["time"].dt.year.between(first_year, last_year)
-        return out.loc[years & (out["mag"] >= min_magnitude)].sort_values("time", kind="stable").reset_index(drop=True)
+        keep = out["time"].dt.year.between(first_year, last_year)
+        if min_magnitude > LAYER_QUAKE_MIN_MAG:     # the layer's files were queried at M3.0: keep all they hold,
+            keep &= out["mag"] >= min_magnitude     # as uap-geo's loader does (ComCat returns a few below it)
+        return out.loc[keep].sort_values("time", kind="stable").reset_index(drop=True)
 
     def explanations(self) -> pd.DataFrame:
         rows = self.export.nuforc_rows()

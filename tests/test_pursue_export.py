@@ -82,7 +82,8 @@ def test_layers(tables):
     assert kp.name == "kp_max" and kp.iloc[0] == 9.0
     assert tables.launches(100.0)["tag"].tolist() == ["2020-001"]
     assert tables.launches(0.0)["tag"].tolist() == ["2020-001", "2020-S01"]
-    assert tables.quakes(2001, 2026, 3.0)["mag"].tolist() == [5.8]
+    assert tables.quakes(2001, 2026, 3.0)["mag"].tolist() == [5.8, 2.9]      # all the M3 query returned
+    assert tables.quakes(2001, 2026, 4.0)["mag"].tolist() == [5.8]
 
 
 def test_explanations(tables):
