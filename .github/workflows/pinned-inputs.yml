@@ -1,0 +1,70 @@
+name: pinned layer inputs
+
+# Publishes the raw event-layer files the regression baselines are pinned to (GCAT launches, GFZ Kp, USGS
+# ComCat quakes: all public data) as a release asset, with a hash-only reference of how uap-geo parses them.
+# PURSUE's context layers (data refactor, Phase 3) parse the same bytes and must reproduce the reference.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+          enable-cache: true
+      - run: uv sync
+      # Launches and Kp from H-launch-01's pinned cache; M3.0 quakes from H-geo-01's; M2.5 quakes from H-install-01's
+      - uses: actions/cache/restore@v4
+        with:
+          path: data/raw
+          key: regression-raw-H-launch-01-v2-none
+          restore-keys: |
+            regression-raw-H-launch-01-v2-
+            regression-raw-H-launch-01-v1
+      - run: mkdir -p staged && cp -r data/raw/gcat_launches data/raw/kp staged/ && rm -rf data/raw
+      - uses: actions/cache/restore@v4
+        with:
+          path: data/raw
+          key: regression-raw-H-geo-01-v2-none
+          restore-keys: |
+            regression-raw-H-geo-01-v2-
+            regression-raw-H-geo-01-v1
+      - run: mkdir -p staged/earthquakes && cp data/raw/earthquakes/quakes_*.csv staged/earthquakes/ && rm -rf data/raw
+      - uses: actions/cache/restore@v4
+        with:
+          path: data/raw
+          key: regression-raw-H-install-01-v2-none
+          restore-keys: |
+            regression-raw-H-install-01-v2-
+            regression-raw-H-install-01-v1
+      - run: cp -n data/raw/earthquakes/quakes_*.csv staged/earthquakes/ || true
+      - name: Reference
+        run: |
+          find staged -type f | sort
+          uv run uap-geo regression layers-reference --raw staged --out results/regression/layers_reference.json
+      - name: Release asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tar -C staged -czf pinned_layer_inputs.tar.gz gcat_launches kp earthquakes
+          sha256sum pinned_layer_inputs.tar.gz
+          gh release view pinned-layer-inputs-v1 >/dev/null 2>&1 || \
+            gh release create pinned-layer-inputs-v1 --title "Pinned event-layer inputs v1" \
+              --notes "Raw GCAT (CC-BY, J. McDowell), GFZ Kp (CC BY 4.0) and USGS ComCat (public domain) files that the regression baselines use. Hashes: results/regression/layers_reference.json."
+          gh release upload pinned-layer-inputs-v1 pinned_layer_inputs.tar.gz --clobber
+      - name: Commit the reference
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add results/regression/layers_reference.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Regression: hash-only reference of the pinned event-layer inputs"
+          git pull --rebase -X theirs && git push

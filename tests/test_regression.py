@@ -88,3 +88,12 @@ def test_tolerance_absorbs_refit_noise():
     from uap_geo.regression.compare import ResultComparer
     assert ResultComparer().compare({"p": 4.878239931526553e-07}, {"p": 4.878253435809939e-07}) == []
     assert ResultComparer().compare({"p": 1.0}, {"p": 1.0001})
+
+
+def test_layers_reference_on_synthetic_files(tmp_path):
+    from uap_geo.regression.layers_reference import reference
+    (tmp_path / "kp").mkdir()
+    (tmp_path / "kp" / "Kp_ap_since_1932.txt").write_text("# x\n2003 10 29 00.0 01.5 1 1 9.000 400 1\n2003 10 29 03.0 01.5 1 1 -1 -1 0\n")
+    ref = reference(tmp_path)
+    assert ref["kp"]["rows"] == 1 and ref["kp"]["rows_by_year"] == {"2003": 1}
+    assert list(ref["raw_files"]) == ["kp/Kp_ap_since_1932.txt"] and "launches" not in ref
