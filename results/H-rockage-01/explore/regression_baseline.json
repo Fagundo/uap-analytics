@@ -7,10 +7,10 @@
    2010
   ],
   "manifest": {
-   "run_id": "H-rockage-01-explore-20261120T233842Z",
-   "started_utc": "2026-11-20T23:38:42+00:00",
-   "git_commit": "58d43d2663702c83b33f858e30722e9441697b09",
-   "git_dirty": false,
+   "run_id": "H-rockage-01-explore-20261121T013330Z",
+   "started_utc": "2026-11-21T01:33:30+00:00",
+   "git_commit": "68856e02f585990847ad460a3ce35752a5700980",
+   "git_dirty": true,
    "python": "3.12.16",
    "specs": {
     "spec": "2e9a834e98d4564049ad82cf56b3398de4c52d1a844ce759a28a36842269cf7a",

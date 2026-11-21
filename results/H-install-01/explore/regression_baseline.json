@@ -7,10 +7,10 @@
    2010
   ],
   "manifest": {
-   "run_id": "H-install-01-explore-20261120T233803Z",
-   "started_utc": "2026-11-20T23:38:03+00:00",
-   "git_commit": "58d43d2663702c83b33f858e30722e9441697b09",
-   "git_dirty": false,
+   "run_id": "H-install-01-explore-20261121T013132Z",
+   "started_utc": "2026-11-21T01:31:32+00:00",
+   "git_commit": "68856e02f585990847ad460a3ce35752a5700980",
+   "git_dirty": true,
    "python": "3.12.16",
    "specs": {
     "spec": "d74fb83d1d960514bab884456225415d382d965ed9ae1338cb257a2204bc0742",
@@ -71,14 +71,14 @@
   "tests": {
    "proximity": {
     "verdict": "exploration (no verdict)",
-    "power": 0.9994567037348859,
-    "p_bh": 0.7332393584866561,
+    "power": 0.999456703734892,
+    "p_bh": 0.7332393584617548,
     "checks": {
      "shift_test": {
-      "rate_ratio": 1.006233861067091,
+      "rate_ratio": 1.0062338610676937,
       "p_value": 0.3283582089552239,
       "n_events": 200,
-      "null_median_rate_ratio": 0.9949479714726448,
+      "null_median_rate_ratio": 0.9949479714735192,
       "holds": false
      }
     },
@@ -87,10 +87,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.0055363694977129,
-        "ci_low": 0.970899759002053,
-        "ci_high": 1.0414086325677037,
-        "p_value": 0.7575443241735997
+        "rate_ratio": 1.0055363694977577,
+        "ci_low": 0.9708997590020925,
+        "ci_high": 1.041408632567754,
+        "p_value": 0.7575443241717326
        }
       ],
       "n_strata": 3100,
@@ -102,10 +102,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.006233861067091,
-        "ci_low": 0.9709080572813861,
-        "ci_high": 1.0428449692683344,
-        "p_value": 0.7332393584866561
+        "rate_ratio": 1.0062338610676937,
+        "ci_low": 0.9709080572819894,
+        "ci_high": 1.0428449692689363,
+        "p_value": 0.7332393584617548
        }
       ],
       "n_strata": 3100,
@@ -117,10 +117,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9871948554134624,
-        "ci_low": 0.945432236125135,
-        "ci_high": 1.0308022567000958,
-        "p_value": 0.558968742010284
+        "rate_ratio": 0.987194855413538,
+        "ci_low": 0.9454322361252074,
+        "ci_high": 1.0308022567001747,
+        "p_value": 0.558968742012619
        }
       ],
       "n_strata": 3100,

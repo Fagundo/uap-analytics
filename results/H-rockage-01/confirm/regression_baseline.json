@@ -7,9 +7,9 @@
    2020
   ],
   "manifest": {
-   "run_id": "H-rockage-01-confirm-20261120T233353Z",
-   "started_utc": "2026-11-20T23:33:53+00:00",
-   "git_commit": "58d43d2663702c83b33f858e30722e9441697b09",
+   "run_id": "H-rockage-01-confirm-20261121T012839Z",
+   "started_utc": "2026-11-21T01:28:39+00:00",
+   "git_commit": "68856e02f585990847ad460a3ce35752a5700980",
    "git_dirty": false,
    "python": "3.12.16",
    "specs": {

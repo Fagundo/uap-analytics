@@ -4,15 +4,19 @@
     "split": "confirm",
     "ok": false,
     "error": null,
-    "seconds": 52.2,
-    "fingerprint": "match",
-    "against": "baseline",
-    "added": [],
-    "n_added": 0,
-    "inputs_changed": [
-      "data/raw/earthquakes/quakes_2024_m3.csv",
-      "data/raw/earthquakes/quakes_2026_m3.csv"
+    "seconds": 54.3,
+    "fingerprint": "recorded",
+    "against": "registered result",
+    "added": [
+      "tests.quake.tiers.all.dispersion",
+      "tests.quake.tiers.filtered.dispersion",
+      "tests.quake.tiers.high_quality.dispersion",
+      "tests.storm.tiers.all.dispersion",
+      "tests.storm.tiers.filtered.dispersion",
+      "tests.storm.tiers.high_quality.dispersion"
     ],
+    "n_added": 6,
+    "inputs_changed": [],
     "differences": [
       "tests.storm.tiers.all.terms[1].p_value: committed 4.878253435809939e-07, now 4.878239931526553e-07"
     ],
@@ -22,17 +26,21 @@
   {
     "hypothesis": "H-geo-01",
     "split": "explore",
-    "ok": false,
+    "ok": true,
     "error": null,
-    "seconds": 23.5,
-    "fingerprint": "match",
-    "against": "baseline",
-    "added": [],
-    "n_added": 0,
-    "inputs_changed": [
-      "data/raw/earthquakes/quakes_2024_m3.csv",
-      "data/raw/earthquakes/quakes_2026_m3.csv"
+    "seconds": 19.6,
+    "fingerprint": "recorded",
+    "against": "registered result",
+    "added": [
+      "tests.quake.tiers.all.dispersion",
+      "tests.quake.tiers.filtered.dispersion",
+      "tests.quake.tiers.high_quality.dispersion",
+      "tests.storm.tiers.all.dispersion",
+      "tests.storm.tiers.filtered.dispersion",
+      "tests.storm.tiers.high_quality.dispersion"
     ],
+    "n_added": 6,
+    "inputs_changed": [],
     "differences": [],
     "n_differences": 0,
     "fingerprint_differences": []

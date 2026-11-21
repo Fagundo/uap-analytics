@@ -7,9 +7,9 @@
    2020
   ],
   "manifest": {
-   "run_id": "H-geo-01-confirm-20261120T233409Z",
-   "started_utc": "2026-11-20T23:34:09+00:00",
-   "git_commit": "58d43d2663702c83b33f858e30722e9441697b09",
+   "run_id": "H-geo-01-confirm-20261121T012810Z",
+   "started_utc": "2026-11-21T01:28:10+00:00",
+   "git_commit": "68856e02f585990847ad460a3ce35752a5700980",
    "git_dirty": false,
    "python": "3.12.16",
    "specs": {
@@ -19,11 +19,6 @@
    },
    "inputs": {
     "data/raw/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "data/raw/acs_college/acsdt5y2021-b14001.dat": "1035e1fcc6216e374c71c1c4a9fb6e22f78010d86beabd9f2a09ae0c3906a34c",
-    "data/raw/acs_housing/acsdt5y2021-b25001.dat": "ddc83069353064aee56b4fb58df7bdc04ea9c01307def64028d2aeb9424dcf75",
-    "data/raw/acs_housing/acsdt5y2021-b25004.dat": "0a6ebcf71d078820e3883ad3b480db4c15ab868e797fa677e1a1645169b91589",
-    "data/raw/airports/airports.csv": "73b5022692ba9739ba61b66e1f82ea1410597991c64a9274c5d40e3753b72664",
-    "data/raw/coastline/ne_10m_coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017",
     "data/raw/counties/cb_2020_us_county_500k.zip": "1a45c87a5a0c322514c9d5c9ebcba5eb9df313bd38962f6db56107ba0ccacc6f",
     "data/raw/earthquakes/quakes_2001_m3.csv": "591a30d3e83c3ffd6b9f2b429310ea975137a579410889658b893ff4ae429ce7",
     "data/raw/earthquakes/quakes_2002_m3.csv": "d5865a33b67939155cb9408fdfd35d70aa28fc2e838a993fa27e186a01a5884a",
@@ -48,30 +43,12 @@
     "data/raw/earthquakes/quakes_2021_m3.csv": "060af5486bdd563e665bb56f840483dcb7ef6b905d5fc3ea37109d05ae7f8ebe",
     "data/raw/earthquakes/quakes_2022_m3.csv": "62ab34303ee86b5c3c41fd374cf5e9263b9d3e4e6aae2067e325756924b7eb3a",
     "data/raw/earthquakes/quakes_2023_m3.csv": "6d0022b749feb06764d72987f34249e60abeba63ab22fdecf207e589b61c80e3",
-    "data/raw/earthquakes/quakes_2024_m3.csv": "679dfa4e8e4c0a4a6deeeffcf3fed5e2e10124578bac81c8b1fce5df58c77c86",
+    "data/raw/earthquakes/quakes_2024_m3.csv": "a0e729464ac7fe330426f338381ea3377d82c3f9536fd8110890c5be741b4214",
     "data/raw/earthquakes/quakes_2025_m3.csv": "49f2e6011f4fd63d62dbf5c664ecae49f07ad5aeb94f07dc91f2f76a4b1997d6",
-    "data/raw/earthquakes/quakes_2026_m3.csv": "7ab47370b7a2133456aca75e9774311d6f2bc5488cbda2fd0c956c384abf7b7d",
-    "data/raw/elevation/elevation_1KMmd_GMTEDmd.tif": "95fed346b8bb25ca67c59b9d8c8e110f4856eb51401e5cc0011b73cba7e3e02b",
-    "data/raw/gazetteer_places/2020_Gaz_place_national.zip": "6e5745b3e1adf7a1e024a988301d484697e2a0f25b3cf10114eef676f09d5c18",
-    "data/raw/gcat_launches/launch.tsv": "72053523eab6c7e6f1d61604c953b9c37a05b3756e61ac1310a81574e1d9fe4e",
-    "data/raw/gcat_launches/sites.tsv": "102816bbe39defd0721255f1fec98ef10dd66c35d66c33e929d597df9f27c45b",
-    "data/raw/kp/Kp_ap_since_1932.txt": "26d52cbd57b84868a3fe9e9e562f1f0124bcb40cdd9743d2d704038a7ae67b00",
-    "data/raw/light_pollution/World_Atlas_2015.zip": "9c6a624427463c40717efbca7696e3c6bb0f332c26d1b039e7a91e0dbc831fbf",
-    "data/raw/light_pollution/extracted/README.txt": "7be5ecd05327c7bed42f383047e85d88af2b58dbb3e5b0d81b7d759cda8c2c02",
-    "data/raw/light_pollution/extracted/World_Atlas_2015.tif": "9725566ed4fcf1a8fa311654143bb024c4fe2a792b85356be99adce07e1e83c1",
-    "data/raw/light_pollution/extracted/World_Atlas_2015.tpk": "882830f77da39d8693dc8ade8124ad756dbf455584e5f9a6f115f78ee3af560a",
-    "data/raw/nlcd_2011/nlcd_2011_land_cover_l48_480m.tif": "8ef07de917b0ab5c01d4556f8cebeada5f5756bdf232b7cb9736c8ad04f5ad06",
+    "data/raw/earthquakes/quakes_2026_m3.csv": "f002e4403382ff9681e8bed06b4094492f86e8d7d50688abad2f1660afbd3c1a",
+    "data/raw/kp/Kp_ap_since_1932.txt": "991ab38e20a5c8f1e06e41269cf5efcb00f953850cd6566443754453e7eddd24",
     "data/raw/nuforc/places.csv": "6fe1aff91fc019e29e0f0c6e88d66ca9b74df01550ed38e56ff2507ca79f80bf",
-    "data/raw/nuforc/ufo_sightings.csv": "ad72ebc6cd34001144e8bea85524d34390f8e12d13b352b184ed57557a980647",
-    "data/raw/place_population/place_population_0.csv": "e3508f5201465913476d4ddf91740f191f7977c9f2614a2a7e30b5fd22027934",
-    "data/raw/population/population_0": "38dd59c70ef8067a3d476b6f5039e60f288e2d492015525ba9711faffd12c418",
-    "data/raw/primary_roads/tl_2020_us_primaryroads.zip": "30ba1c46cc5a40305a8896a057f4f14dee7aec08f7dacea3e0fb68fec1cc172f",
-    "data/raw/rail/tl_2020_us_rails.zip": "86f1fed01c866ee6e2595e8f0f43288c11e45200e487841227ede8422b874521",
-    "data/raw/rivers/ne_10m_rivers_lake_centerlines.zip": "ded71b01870855ccfe19b51f2ec14c9bb48fae23c0e9f3c11974d426433b5c38",
-    "data/raw/rivers/ne_10m_rivers_north_america.zip": "7fbe85a2acbf1f3ef4361a16bb39677ad1ea86f888be1689f7a4caeafc7529e8",
-    "data/raw/sgmc/USGS_SGMC_Geodatabase.zip": "1a824a35e8ac86b3ef231e8ff1d877e790d7ec2357545bb810eeb0c28520dd1a",
-    "data/raw/sgmc/age_grid_v1_1km_3108.npz": "99a25b7a26f27755c97c585ad8904e45b0d161b10c21a25d3711ebd37455667a",
-    "data/raw/sgmc/unit_grid_v1_1km_3108.npz": "a8087920e5f0adb82db54f3fe97d118beff049ea72db889f0d7b307691cf1de6"
+    "data/raw/nuforc/ufo_sightings.csv": "ad72ebc6cd34001144e8bea85524d34390f8e12d13b352b184ed57557a980647"
    },
    "settings": {}
   },
@@ -98,19 +75,19 @@
    "storm": {
     "verdict": "refuted",
     "power": 0.9203864099602661,
-    "p_bh": 0.9151256887834961,
+    "p_bh": 0.9151256887495111,
     "checks": {
      "south_of_37N": {
       "rate_ratio": 0.964664551314005,
-      "p_value": 0.4508897791044112,
+      "p_value": 0.4508897789484284,
       "n_events": 4319,
       "holds": false
      },
      "kp8_vs_kp6_7": {
-      "strong_rate_ratio": 1.276025408663241,
-      "strong_p": 0.03361884224535639,
+      "strong_rate_ratio": 1.2760254086632412,
+      "strong_p": 0.033618845530632664,
       "weak_rate_ratio": 0.9821846603759802,
-      "weak_p": 0.5380233907248524,
+      "weak_p": 0.538023384939606,
       "holds": true
      }
     },
@@ -120,16 +97,16 @@
        {
         "term": "exposed",
         "rate_ratio": 1.0363236464332104,
-        "ci_low": 0.9827279059347459,
-        "ci_high": 1.0928423764817137,
-        "p_value": 0.18787306964287565
+        "ci_low": 0.9827279072722493,
+        "ci_high": 1.0928423749943432,
+        "p_value": 0.18787305832778778
        },
        {
         "term": "moon",
-        "rate_ratio": 0.8797042729148349,
-        "ci_low": 0.8368578830846558,
-        "ci_high": 0.9247443603352343,
-        "p_value": 4.878253435809939e-07
+        "rate_ratio": 0.8797042729148348,
+        "ci_low": 0.8368578874921772,
+        "ci_high": 0.9247443554648366,
+        "p_value": 4.878239931526553e-07
        }
       ],
       "n_strata": 57,
@@ -142,38 +119,38 @@
        {
         "term": "exposed",
         "rate_ratio": 0.9969942991667227,
-        "ci_low": 0.943301424686624,
-        "ci_high": 1.053743381020719,
-        "p_value": 0.9151256887834961
+        "ci_low": 0.943301424707613,
+        "ci_high": 1.0537433809972727,
+        "p_value": 0.9151256887495111
        },
        {
         "term": "moon",
         "rate_ratio": 0.8742047023928543,
-        "ci_low": 0.8304739101602803,
-        "ci_high": 0.9202382547313049,
-        "p_value": 2.8270613789386184e-07
+        "ci_low": 0.8304739116110801,
+        "ci_high": 0.9202382531236911,
+        "p_value": 2.82705875165189e-07
        }
       ],
       "n_strata": 57,
       "n_events": 11984,
       "exposed_share": 0.11813186813186813,
-      "dispersion": 2.4567603605564723
+      "dispersion": 2.456760360556472
      },
      "high_quality": {
       "terms": [
        {
         "term": "exposed",
         "rate_ratio": 0.9302081027050145,
-        "ci_low": 0.8560260873327785,
-        "ci_high": 1.0108186270749528,
-        "p_value": 0.08797209409876124
+        "ci_low": 0.856026086515354,
+        "ci_high": 1.0108186280401898,
+        "p_value": 0.08797209774758184
        },
        {
         "term": "moon",
         "rate_ratio": 0.8656895967489692,
-        "ci_low": 0.8031542085044417,
-        "ci_high": 0.9330941305965258,
-        "p_value": 0.0001631602268386299
+        "ci_low": 0.8031542083323495,
+        "ci_high": 0.9330941307964602,
+        "p_value": 0.00016316023388239235
        }
       ],
       "n_strata": 57,
@@ -186,13 +163,13 @@
    "quake": {
     "verdict": "underpowered",
     "power": 0.24989133041558126,
-    "p_bh": 0.1822351802465426,
+    "p_bh": 0.18223518197411212,
     "checks": {
      "m5_vs_m4_5": {
-      "strong_rate_ratio": 1.2143055790451378,
-      "strong_p": 0.4724659647979863,
-      "weak_rate_ratio": 1.1337632690629564,
-      "weak_p": 0.1216053708803949,
+      "strong_rate_ratio": 1.2143055790467125,
+      "strong_p": 0.4724659728334726,
+      "weak_rate_ratio": 1.1337632690633914,
+      "weak_p": 0.1216053620881881,
       "holds": false
      }
     },
@@ -201,17 +178,17 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.1685508522942831,
-        "ci_low": 1.007379868251551,
-        "ci_high": 1.3555076266986867,
-        "p_value": 0.0396798146920447
+        "rate_ratio": 1.1685508522942758,
+        "ci_low": 1.0073798673013798,
+        "ci_high": 1.3555076279771983,
+        "p_value": 0.03967981594942119
        },
        {
         "term": "moon",
-        "rate_ratio": 1.2276214507783145,
-        "ci_low": 0.5530376693071601,
-        "ci_high": 2.725048419032786,
-        "p_value": 0.614214638032841
+        "rate_ratio": 1.2276214507782983,
+        "ci_low": 0.5530376294795074,
+        "ci_high": 2.7250486152802686,
+        "p_value": 0.6142146700221065
        }
       ],
       "n_strata": 411,
@@ -224,16 +201,16 @@
        {
         "term": "exposed",
         "rate_ratio": 1.140232285663846,
-        "ci_low": 0.9792136264247132,
-        "ci_high": 1.327728322181553,
-        "p_value": 0.0911175901232713
+        "ci_low": 0.9792136260266531,
+        "ci_high": 1.3277283227212882,
+        "p_value": 0.09111759098705606
        },
        {
         "term": "moon",
-        "rate_ratio": 1.2482204891856223,
-        "ci_low": 0.5532014326649339,
-        "ci_high": 2.8164323113141414,
-        "p_value": 0.5933266241628649
+        "rate_ratio": 1.248220489185625,
+        "ci_low": 0.5532014839918876,
+        "ci_high": 2.81643205000088,
+        "p_value": 0.5933265820375487
        }
       ],
       "n_strata": 397,
@@ -245,23 +222,23 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.1920050654930017,
-        "ci_low": 0.9597363417431108,
-        "ci_high": 1.480485852583559,
-        "p_value": 0.11221431619781233
+        "rate_ratio": 1.1920050654930021,
+        "ci_low": 0.9597363429549897,
+        "ci_high": 1.48048585071412,
+        "p_value": 0.112214314106353
        },
        {
         "term": "moon",
-        "rate_ratio": 0.8615031450090948,
-        "ci_low": 0.27248767341216884,
-        "ci_high": 2.7237476821122746,
-        "p_value": 0.7996237250600565
+        "rate_ratio": 0.861503145009107,
+        "ci_low": 0.27248759530376204,
+        "ci_high": 2.7237484628730018,
+        "p_value": 0.7996237738963169
        }
       ],
       "n_strata": 242,
       "n_events": 438,
       "exposed_share": 0.2766934557979334,
-      "dispersion": 1.0320661837931522
+      "dispersion": 1.0320661837931524
      }
     }
    }
@@ -290,11 +267,6 @@
  },
  "inputs": {
   "data/raw/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "data/raw/acs_college/acsdt5y2021-b14001.dat": "1035e1fcc6216e374c71c1c4a9fb6e22f78010d86beabd9f2a09ae0c3906a34c",
-  "data/raw/acs_housing/acsdt5y2021-b25001.dat": "ddc83069353064aee56b4fb58df7bdc04ea9c01307def64028d2aeb9424dcf75",
-  "data/raw/acs_housing/acsdt5y2021-b25004.dat": "0a6ebcf71d078820e3883ad3b480db4c15ab868e797fa677e1a1645169b91589",
-  "data/raw/airports/airports.csv": "73b5022692ba9739ba61b66e1f82ea1410597991c64a9274c5d40e3753b72664",
-  "data/raw/coastline/ne_10m_coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017",
   "data/raw/counties/cb_2020_us_county_500k.zip": "1a45c87a5a0c322514c9d5c9ebcba5eb9df313bd38962f6db56107ba0ccacc6f",
   "data/raw/earthquakes/quakes_2001_m3.csv": "591a30d3e83c3ffd6b9f2b429310ea975137a579410889658b893ff4ae429ce7",
   "data/raw/earthquakes/quakes_2002_m3.csv": "d5865a33b67939155cb9408fdfd35d70aa28fc2e838a993fa27e186a01a5884a",
@@ -319,29 +291,11 @@
   "data/raw/earthquakes/quakes_2021_m3.csv": "060af5486bdd563e665bb56f840483dcb7ef6b905d5fc3ea37109d05ae7f8ebe",
   "data/raw/earthquakes/quakes_2022_m3.csv": "62ab34303ee86b5c3c41fd374cf5e9263b9d3e4e6aae2067e325756924b7eb3a",
   "data/raw/earthquakes/quakes_2023_m3.csv": "6d0022b749feb06764d72987f34249e60abeba63ab22fdecf207e589b61c80e3",
-  "data/raw/earthquakes/quakes_2024_m3.csv": "679dfa4e8e4c0a4a6deeeffcf3fed5e2e10124578bac81c8b1fce5df58c77c86",
+  "data/raw/earthquakes/quakes_2024_m3.csv": "a0e729464ac7fe330426f338381ea3377d82c3f9536fd8110890c5be741b4214",
   "data/raw/earthquakes/quakes_2025_m3.csv": "49f2e6011f4fd63d62dbf5c664ecae49f07ad5aeb94f07dc91f2f76a4b1997d6",
-  "data/raw/earthquakes/quakes_2026_m3.csv": "7ab47370b7a2133456aca75e9774311d6f2bc5488cbda2fd0c956c384abf7b7d",
-  "data/raw/elevation/elevation_1KMmd_GMTEDmd.tif": "95fed346b8bb25ca67c59b9d8c8e110f4856eb51401e5cc0011b73cba7e3e02b",
-  "data/raw/gazetteer_places/2020_Gaz_place_national.zip": "6e5745b3e1adf7a1e024a988301d484697e2a0f25b3cf10114eef676f09d5c18",
-  "data/raw/gcat_launches/launch.tsv": "72053523eab6c7e6f1d61604c953b9c37a05b3756e61ac1310a81574e1d9fe4e",
-  "data/raw/gcat_launches/sites.tsv": "102816bbe39defd0721255f1fec98ef10dd66c35d66c33e929d597df9f27c45b",
-  "data/raw/kp/Kp_ap_since_1932.txt": "26d52cbd57b84868a3fe9e9e562f1f0124bcb40cdd9743d2d704038a7ae67b00",
-  "data/raw/light_pollution/World_Atlas_2015.zip": "9c6a624427463c40717efbca7696e3c6bb0f332c26d1b039e7a91e0dbc831fbf",
-  "data/raw/light_pollution/extracted/README.txt": "7be5ecd05327c7bed42f383047e85d88af2b58dbb3e5b0d81b7d759cda8c2c02",
-  "data/raw/light_pollution/extracted/World_Atlas_2015.tif": "9725566ed4fcf1a8fa311654143bb024c4fe2a792b85356be99adce07e1e83c1",
-  "data/raw/light_pollution/extracted/World_Atlas_2015.tpk": "882830f77da39d8693dc8ade8124ad756dbf455584e5f9a6f115f78ee3af560a",
-  "data/raw/nlcd_2011/nlcd_2011_land_cover_l48_480m.tif": "8ef07de917b0ab5c01d4556f8cebeada5f5756bdf232b7cb9736c8ad04f5ad06",
+  "data/raw/earthquakes/quakes_2026_m3.csv": "f002e4403382ff9681e8bed06b4094492f86e8d7d50688abad2f1660afbd3c1a",
+  "data/raw/kp/Kp_ap_since_1932.txt": "991ab38e20a5c8f1e06e41269cf5efcb00f953850cd6566443754453e7eddd24",
   "data/raw/nuforc/places.csv": "6fe1aff91fc019e29e0f0c6e88d66ca9b74df01550ed38e56ff2507ca79f80bf",
-  "data/raw/nuforc/ufo_sightings.csv": "ad72ebc6cd34001144e8bea85524d34390f8e12d13b352b184ed57557a980647",
-  "data/raw/place_population/place_population_0.csv": "e3508f5201465913476d4ddf91740f191f7977c9f2614a2a7e30b5fd22027934",
-  "data/raw/population/population_0": "38dd59c70ef8067a3d476b6f5039e60f288e2d492015525ba9711faffd12c418",
-  "data/raw/primary_roads/tl_2020_us_primaryroads.zip": "30ba1c46cc5a40305a8896a057f4f14dee7aec08f7dacea3e0fb68fec1cc172f",
-  "data/raw/rail/tl_2020_us_rails.zip": "86f1fed01c866ee6e2595e8f0f43288c11e45200e487841227ede8422b874521",
-  "data/raw/rivers/ne_10m_rivers_lake_centerlines.zip": "ded71b01870855ccfe19b51f2ec14c9bb48fae23c0e9f3c11974d426433b5c38",
-  "data/raw/rivers/ne_10m_rivers_north_america.zip": "7fbe85a2acbf1f3ef4361a16bb39677ad1ea86f888be1689f7a4caeafc7529e8",
-  "data/raw/sgmc/USGS_SGMC_Geodatabase.zip": "1a824a35e8ac86b3ef231e8ff1d877e790d7ec2357545bb810eeb0c28520dd1a",
-  "data/raw/sgmc/age_grid_v1_1km_3108.npz": "99a25b7a26f27755c97c585ad8904e45b0d161b10c21a25d3711ebd37455667a",
-  "data/raw/sgmc/unit_grid_v1_1km_3108.npz": "a8087920e5f0adb82db54f3fe97d118beff049ea72db889f0d7b307691cf1de6"
+  "data/raw/nuforc/ufo_sightings.csv": "ad72ebc6cd34001144e8bea85524d34390f8e12d13b352b184ed57557a980647"
  }
 }

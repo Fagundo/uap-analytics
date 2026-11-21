@@ -7,9 +7,9 @@
    2020
   ],
   "manifest": {
-   "run_id": "H-persist-01-confirm-20261120T233343Z",
-   "started_utc": "2026-11-20T23:33:43+00:00",
-   "git_commit": "58d43d2663702c83b33f858e30722e9441697b09",
+   "run_id": "H-persist-01-confirm-20261121T012806Z",
+   "started_utc": "2026-11-21T01:28:06+00:00",
+   "git_commit": "68856e02f585990847ad460a3ce35752a5700980",
    "git_dirty": false,
    "python": "3.12.16",
    "specs": {
@@ -22,7 +22,7 @@
     "data/raw/acs_college/acsdt5y2021-b14001.dat": "1035e1fcc6216e374c71c1c4a9fb6e22f78010d86beabd9f2a09ae0c3906a34c",
     "data/raw/acs_housing/acsdt5y2021-b25001.dat": "ddc83069353064aee56b4fb58df7bdc04ea9c01307def64028d2aeb9424dcf75",
     "data/raw/acs_housing/acsdt5y2021-b25004.dat": "0a6ebcf71d078820e3883ad3b480db4c15ab868e797fa677e1a1645169b91589",
-    "data/raw/airports/airports.csv": "73b5022692ba9739ba61b66e1f82ea1410597991c64a9274c5d40e3753b72664",
+    "data/raw/airports/airports.csv": "85b63e21319fcd648d4741872205bbb1c89000d39bb1ded2cf41d8d11c7fe518",
     "data/raw/coastline/ne_10m_coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017",
     "data/raw/counties/cb_2020_us_county_500k.zip": "1a45c87a5a0c322514c9d5c9ebcba5eb9df313bd38962f6db56107ba0ccacc6f",
     "data/raw/elevation/elevation_1KMmd_GMTEDmd.tif": "95fed346b8bb25ca67c59b9d8c8e110f4856eb51401e5cc0011b73cba7e3e02b",
@@ -33,7 +33,6 @@
     "data/raw/light_pollution/extracted/README.txt": "7be5ecd05327c7bed42f383047e85d88af2b58dbb3e5b0d81b7d759cda8c2c02",
     "data/raw/light_pollution/extracted/World_Atlas_2015.tif": "9725566ed4fcf1a8fa311654143bb024c4fe2a792b85356be99adce07e1e83c1",
     "data/raw/light_pollution/extracted/World_Atlas_2015.tpk": "882830f77da39d8693dc8ade8124ad756dbf455584e5f9a6f115f78ee3af560a",
-    "data/raw/nlcd_2011/nlcd_2011_land_cover_l48_480m.tif": "8ef07de917b0ab5c01d4556f8cebeada5f5756bdf232b7cb9736c8ad04f5ad06",
     "data/raw/nuforc/places.csv": "6fe1aff91fc019e29e0f0c6e88d66ca9b74df01550ed38e56ff2507ca79f80bf",
     "data/raw/nuforc/ufo_sightings.csv": "ad72ebc6cd34001144e8bea85524d34390f8e12d13b352b184ed57557a980647",
     "data/raw/place_population/place_population_0.csv": "e3508f5201465913476d4ddf91740f191f7977c9f2614a2a7e30b5fd22027934",
@@ -41,10 +40,7 @@
     "data/raw/primary_roads/tl_2020_us_primaryroads.zip": "30ba1c46cc5a40305a8896a057f4f14dee7aec08f7dacea3e0fb68fec1cc172f",
     "data/raw/rail/tl_2020_us_rails.zip": "86f1fed01c866ee6e2595e8f0f43288c11e45200e487841227ede8422b874521",
     "data/raw/rivers/ne_10m_rivers_lake_centerlines.zip": "ded71b01870855ccfe19b51f2ec14c9bb48fae23c0e9f3c11974d426433b5c38",
-    "data/raw/rivers/ne_10m_rivers_north_america.zip": "7fbe85a2acbf1f3ef4361a16bb39677ad1ea86f888be1689f7a4caeafc7529e8",
-    "data/raw/sgmc/USGS_SGMC_Geodatabase.zip": "1a824a35e8ac86b3ef231e8ff1d877e790d7ec2357545bb810eeb0c28520dd1a",
-    "data/raw/sgmc/age_grid_v1_1km_3108.npz": "99a25b7a26f27755c97c585ad8904e45b0d161b10c21a25d3711ebd37455667a",
-    "data/raw/sgmc/unit_grid_v1_1km_3108.npz": "a8087920e5f0adb82db54f3fe97d118beff049ea72db889f0d7b307691cf1de6"
+    "data/raw/rivers/ne_10m_rivers_north_america.zip": "7fbe85a2acbf1f3ef4361a16bb39677ad1ea86f888be1689f7a4caeafc7529e8"
    },
    "settings": {}
   },
@@ -71,17 +67,17 @@
    "persistence": {
     "verdict": "confirmed",
     "power": 0.9999999999999981,
-    "p_bh": 3.3147692480536273e-22,
+    "p_bh": 3.3147692483577723e-22,
     "checks": {
      "reporting_propensity": {
-      "rate_ratio": 1.1784903881520583,
-      "p_value": 3.371421490095516e-20,
+      "rate_ratio": 1.1784903881520512,
+      "p_value": 3.371421489775997e-20,
       "n_events": 3100,
       "holds": true
      },
      "local": {
-      "rate_ratio": 1.1885280944966468,
-      "p_value": 4.629265009534278e-22,
+      "rate_ratio": 1.1885280944967342,
+      "p_value": 4.629265009314472e-22,
       "n_events": 3100,
       "holds": true
      }
@@ -91,10 +87,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.1951240159055216,
-        "ci_low": 1.1539140045948793,
-        "ci_high": 1.2378057703663994,
-        "p_value": 2.3712853128733496e-23
+        "rate_ratio": 1.19512401590537,
+        "ci_low": 1.1539140045947438,
+        "ci_high": 1.2378057703662304,
+        "p_value": 2.3712853129779277e-23
        }
       ],
       "n_strata": 3100,
@@ -106,10 +102,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.1921774617864567,
-        "ci_low": 1.150535973122108,
-        "ci_high": 1.2353260859239168,
-        "p_value": 3.3147692480536273e-22
+        "rate_ratio": 1.1921774617843521,
+        "ci_low": 1.150535973120448,
+        "ci_high": 1.2353260859213373,
+        "p_value": 3.3147692483577723e-22
        }
       ],
       "n_strata": 3100,
@@ -121,10 +117,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.125136603378338,
-        "ci_low": 1.0898891490728522,
-        "ci_high": 1.1615239745607597,
-        "p_value": 3.8584621120671634e-13
+        "rate_ratio": 1.1251366033787609,
+        "ci_low": 1.0898891490735085,
+        "ci_high": 1.161523974560933,
+        "p_value": 3.8584621099326487e-13
        }
       ],
       "n_strata": 3100,
@@ -162,7 +158,7 @@
   "data/raw/acs_college/acsdt5y2021-b14001.dat": "1035e1fcc6216e374c71c1c4a9fb6e22f78010d86beabd9f2a09ae0c3906a34c",
   "data/raw/acs_housing/acsdt5y2021-b25001.dat": "ddc83069353064aee56b4fb58df7bdc04ea9c01307def64028d2aeb9424dcf75",
   "data/raw/acs_housing/acsdt5y2021-b25004.dat": "0a6ebcf71d078820e3883ad3b480db4c15ab868e797fa677e1a1645169b91589",
-  "data/raw/airports/airports.csv": "73b5022692ba9739ba61b66e1f82ea1410597991c64a9274c5d40e3753b72664",
+  "data/raw/airports/airports.csv": "85b63e21319fcd648d4741872205bbb1c89000d39bb1ded2cf41d8d11c7fe518",
   "data/raw/coastline/ne_10m_coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017",
   "data/raw/counties/cb_2020_us_county_500k.zip": "1a45c87a5a0c322514c9d5c9ebcba5eb9df313bd38962f6db56107ba0ccacc6f",
   "data/raw/elevation/elevation_1KMmd_GMTEDmd.tif": "95fed346b8bb25ca67c59b9d8c8e110f4856eb51401e5cc0011b73cba7e3e02b",
@@ -173,7 +169,6 @@
   "data/raw/light_pollution/extracted/README.txt": "7be5ecd05327c7bed42f383047e85d88af2b58dbb3e5b0d81b7d759cda8c2c02",
   "data/raw/light_pollution/extracted/World_Atlas_2015.tif": "9725566ed4fcf1a8fa311654143bb024c4fe2a792b85356be99adce07e1e83c1",
   "data/raw/light_pollution/extracted/World_Atlas_2015.tpk": "882830f77da39d8693dc8ade8124ad756dbf455584e5f9a6f115f78ee3af560a",
-  "data/raw/nlcd_2011/nlcd_2011_land_cover_l48_480m.tif": "8ef07de917b0ab5c01d4556f8cebeada5f5756bdf232b7cb9736c8ad04f5ad06",
   "data/raw/nuforc/places.csv": "6fe1aff91fc019e29e0f0c6e88d66ca9b74df01550ed38e56ff2507ca79f80bf",
   "data/raw/nuforc/ufo_sightings.csv": "ad72ebc6cd34001144e8bea85524d34390f8e12d13b352b184ed57557a980647",
   "data/raw/place_population/place_population_0.csv": "e3508f5201465913476d4ddf91740f191f7977c9f2614a2a7e30b5fd22027934",
@@ -181,9 +176,6 @@
   "data/raw/primary_roads/tl_2020_us_primaryroads.zip": "30ba1c46cc5a40305a8896a057f4f14dee7aec08f7dacea3e0fb68fec1cc172f",
   "data/raw/rail/tl_2020_us_rails.zip": "86f1fed01c866ee6e2595e8f0f43288c11e45200e487841227ede8422b874521",
   "data/raw/rivers/ne_10m_rivers_lake_centerlines.zip": "ded71b01870855ccfe19b51f2ec14c9bb48fae23c0e9f3c11974d426433b5c38",
-  "data/raw/rivers/ne_10m_rivers_north_america.zip": "7fbe85a2acbf1f3ef4361a16bb39677ad1ea86f888be1689f7a4caeafc7529e8",
-  "data/raw/sgmc/USGS_SGMC_Geodatabase.zip": "1a824a35e8ac86b3ef231e8ff1d877e790d7ec2357545bb810eeb0c28520dd1a",
-  "data/raw/sgmc/age_grid_v1_1km_3108.npz": "99a25b7a26f27755c97c585ad8904e45b0d161b10c21a25d3711ebd37455667a",
-  "data/raw/sgmc/unit_grid_v1_1km_3108.npz": "a8087920e5f0adb82db54f3fe97d118beff049ea72db889f0d7b307691cf1de6"
+  "data/raw/rivers/ne_10m_rivers_north_america.zip": "7fbe85a2acbf1f3ef4361a16bb39677ad1ea86f888be1689f7a4caeafc7529e8"
  }
 }

@@ -7,10 +7,10 @@
    2010
   ],
   "manifest": {
-   "run_id": "H-volcano-01-explore-20261120T233621Z",
-   "started_utc": "2026-11-20T23:36:21+00:00",
-   "git_commit": "58d43d2663702c83b33f858e30722e9441697b09",
-   "git_dirty": false,
+   "run_id": "H-volcano-01-explore-20261121T013127Z",
+   "started_utc": "2026-11-21T01:31:27+00:00",
+   "git_commit": "68856e02f585990847ad460a3ce35752a5700980",
+   "git_dirty": true,
    "python": "3.12.16",
    "specs": {
     "spec": "62a188b1befb57ceef478d21162b1c06680811b617ac929bb0129a5420bcfa52",
@@ -45,7 +45,7 @@
     "data/raw/sgmc/USGS_SGMC_Geodatabase.zip": "1a824a35e8ac86b3ef231e8ff1d877e790d7ec2357545bb810eeb0c28520dd1a",
     "data/raw/sgmc/age_grid_v1_1km_3108.npz": "99a25b7a26f27755c97c585ad8904e45b0d161b10c21a25d3711ebd37455667a",
     "data/raw/sgmc/unit_grid_v1_1km_3108.npz": "a8087920e5f0adb82db54f3fe97d118beff049ea72db889f0d7b307691cf1de6",
-    "data/raw/volcanoes/holocene_volcanoes.csv": "a1110b3c03da4e9b746b6c26aa5addfa485510e73856d513c07f8b09f03640e8"
+    "data/raw/volcanoes/holocene_volcanoes.csv": "d11640ed897ed1a17c45e5551d859f41cd99acd55eec959b837a7c5b150be3cc"
    },
    "settings": {}
   },
@@ -181,6 +181,6 @@
   "data/raw/sgmc/USGS_SGMC_Geodatabase.zip": "1a824a35e8ac86b3ef231e8ff1d877e790d7ec2357545bb810eeb0c28520dd1a",
   "data/raw/sgmc/age_grid_v1_1km_3108.npz": "99a25b7a26f27755c97c585ad8904e45b0d161b10c21a25d3711ebd37455667a",
   "data/raw/sgmc/unit_grid_v1_1km_3108.npz": "a8087920e5f0adb82db54f3fe97d118beff049ea72db889f0d7b307691cf1de6",
-  "data/raw/volcanoes/holocene_volcanoes.csv": "a1110b3c03da4e9b746b6c26aa5addfa485510e73856d513c07f8b09f03640e8"
+  "data/raw/volcanoes/holocene_volcanoes.csv": "d11640ed897ed1a17c45e5551d859f41cd99acd55eec959b837a7c5b150be3cc"
  }
 }
