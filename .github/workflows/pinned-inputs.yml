@@ -21,7 +21,7 @@ jobs:
           python-version: "3.12"
           enable-cache: true
       - run: uv sync
-      # Launches and Kp from H-launch-01's pinned cache; M3.0 quakes from H-geo-01's; M2.5 quakes from H-install-01's
+      # Launches from H-launch-01's pinned cache; Kp and M3.0 quakes from H-geo-01's; M2.5 quakes from H-install-01's
       - uses: actions/cache/restore@v4
         with:
           path: data/raw
@@ -29,7 +29,7 @@ jobs:
           restore-keys: |
             regression-raw-H-launch-01-v2-
             regression-raw-H-launch-01-v1
-      - run: mkdir -p staged && cp -r data/raw/gcat_launches data/raw/kp staged/ && rm -rf data/raw
+      - run: ls data/raw && mkdir -p staged && cp -r data/raw/gcat_launches staged/ && rm -rf data/raw
       - uses: actions/cache/restore@v4
         with:
           path: data/raw
@@ -37,7 +37,7 @@ jobs:
           restore-keys: |
             regression-raw-H-geo-01-v2-
             regression-raw-H-geo-01-v1
-      - run: mkdir -p staged/earthquakes && cp data/raw/earthquakes/quakes_*.csv staged/earthquakes/ && rm -rf data/raw
+      - run: ls data/raw && mkdir -p staged/earthquakes && cp -r data/raw/kp staged/ && cp data/raw/earthquakes/quakes_*.csv staged/earthquakes/ && rm -rf data/raw
       - uses: actions/cache/restore@v4
         with:
           path: data/raw
@@ -45,7 +45,7 @@ jobs:
           restore-keys: |
             regression-raw-H-install-01-v2-
             regression-raw-H-install-01-v1
-      - run: cp -n data/raw/earthquakes/quakes_*.csv staged/earthquakes/ || true
+      - run: ls data/raw && (cp -n data/raw/earthquakes/quakes_*.csv staged/earthquakes/ || true)
       - name: Reference
         run: |
           find staged -type f | sort
