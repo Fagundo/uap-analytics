@@ -45,7 +45,7 @@ jobs:
           restore-keys: |
             regression-raw-H-install-01-v2-
             regression-raw-H-install-01-v1
-      - run: ls data/raw && (cp -n data/raw/earthquakes/quakes_*.csv staged/earthquakes/ || true)
+      - run: (ls data/raw && cp -n data/raw/earthquakes/quakes_*.csv staged/earthquakes/) || echo "no M2.5 quake files in this cache"
       - name: Reference
         run: |
           find staged -type f | sort
