@@ -10,3 +10,8 @@ data/interim/*
 data/processed/*
 outputs/*
 !**/.gitkeep
+
+# Restricted tier: record-level NUFORC rows or narrative text are never committed (licence). The LLM sample
+# tables carry report text, so they stay in the Actions cache / local disk only.
+results/llm/*_reports.parquet
+results/residual/

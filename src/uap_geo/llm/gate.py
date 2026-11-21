@@ -68,7 +68,7 @@ class KnownCauseGate:
 
 
 def describe_twilight_launch_reports(root: Path, settings: Path, launches: pd.DataFrame, n: int = 60, seed: int = 3) -> str:
-    """Descriptive look at twilight launch-window reports: what the model named, strangeness, and a random sample of texts."""
+    """Descriptive look at twilight launch-window reports: what the model named and strangeness (aggregates only)."""
     gate = KnownCauseGate(root, settings)
     s = gate.s
     reports = pd.read_parquet(root / s["residual"])
@@ -81,10 +81,7 @@ def describe_twilight_launch_reports(root: Path, settings: Path, launches: pd.Da
     lines = [f"Twilight launch-window reports: {len(g):,}", "",
              "Most likely cause named: " + ", ".join(f"{k} {v:.0%}" for k, v in g["top_conventional"].value_counts(normalize=True).head(8).items()),
              f"High strangeness: {g['high_strangeness'].mean():.1%}; mean p(rocket_launch) {g['p_rocket_launch'].mean():.2f}", "",
-             "Random sample (text | named cause | strangeness):"]
-    for r in g.sample(min(n, len(g)), random_state=seed).itertuples():
-        lines.append(f"- {r.text[:150]} | {r.top_conventional} | {r.strangeness}")
+             "Report texts are not reproduced here: NUFORC text is restricted (licence) and stays in the cache."]
     hs = g.loc[g["high_strangeness"]]
-    lines += ["", f"All high-strangeness twilight launch-window reports ({len(hs)}):"]
-    lines += [f"- {r.text[:200]}" for r in hs.itertuples()]
+    lines += ["", f"High-strangeness twilight launch-window reports: {len(hs)}"]
     return "\n".join(lines)
