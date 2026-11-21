@@ -1,0 +1,79 @@
+{
+ "export": "export-0df688bb2bb5c4a3",
+ "reports": {
+  "rows": [
+   74795,
+   74795
+  ],
+  "skipped_columns": [
+   "shape",
+   "country"
+  ],
+  "equal": false,
+  "differing_values": {},
+  "sha256": [
+   "fa49450c2a010dcc",
+   "fa49450c2a010dcc"
+  ],
+  "identical_as_given": false,
+  "cleaning": [
+   {
+    "raw_rows": 96429,
+    "undated": 0,
+    "outside_window": 14061,
+    "outside_conus": 7547,
+    "duplicates": 26,
+    "kept": 74795
+   },
+   {
+    "raw_rows": 96429,
+    "undated": 0,
+    "outside_window": 14061,
+    "outside_conus": 7547,
+    "duplicates": 26,
+    "kept": 74795
+   }
+  ]
+ },
+ "launches": {
+  "rows": [
+   7825,
+   7825
+  ],
+  "skipped_columns": [],
+  "equal": true,
+  "differing_values": {},
+  "sha256": [
+   "0a537e105008bb35",
+   "0a537e105008bb35"
+  ]
+ },
+ "launches_any_apogee": {
+  "rows": [
+   20639,
+   20639
+  ],
+  "skipped_columns": [],
+  "equal": true,
+  "differing_values": {},
+  "sha256": [
+   "9bee7e50069ccc2a",
+   "9bee7e50069ccc2a"
+  ]
+ },
+ "kp_daily": {
+  "rows": [
+   34658,
+   34658
+  ],
+  "equal": true
+ },
+ "quakes": {
+  "rows": [
+   26612,
+   26610
+  ],
+  "skipped_columns": [],
+  "equal": false
+ }
+}
