@@ -3,13 +3,15 @@
 PURSUE publishes its combined export as a release of its private repository (``export-<version>``):
 ``export_public.tar.gz`` and ``export_restricted.tar.gz``. uap-geo pins one release in
 configs/pursue_export.yaml (tag and SHA-256 of each asset), downloads it with a read-only token
-(``PURSUE_EXPORT_TOKEN``), and turns it into the tables its code has always used:
+(``PURSUE_EXPORT_TOKEN``), and turns it into the tables its code has always used. Each was checked against the
+uap-geo loader it replaced, on the same raw files, before that loader was deleted
+(results/regression/export_check.json; the regression workflow then reproduced every registered result):
 
-* ``reports(years)``  NUFORC reports exactly as ``ReportCleaner(*years).clean`` returns them, with its
-  cleaning counts, in the source file's order;
-* ``launches(min_apogee_km)``  what ``GcatLaunchSource.load`` returns;
-* ``kp_daily()``  what ``KpSource.load`` returns;
-* ``quakes(first, last, min_mag)``  what ``EarthquakeSource.load`` returns (without geometry);
+* ``reports(years)``  NUFORC reports as uap-geo's former ReportCleaner returned them (identical order, values
+  and dtypes), with its cleaning counts;
+* ``launches(min_apogee_km)``  GCAT launches as the former GcatLaunchSource returned them;
+* ``kp_daily()``  daily maximum Kp as the former KpSource returned it;
+* ``quakes(first, last, min_mag)``  ComCat events as EarthquakeSource returns them (without geometry);
 * ``explanations()``  PURSUE's residual-set flags per NUFORC report.
 
 uap-geo never imports PURSUE's code: this module reads files that follow PURSUE's published JSON Schema.

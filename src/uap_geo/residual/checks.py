@@ -1,5 +1,9 @@
-"""Report-level explanation checks for the residual set. Each check returns a boolean Series (matched)
-aligned on the reports' index; its configured confidence ('high' or 'possible') decides its tier."""
+"""What uap-geo still computes itself about single reports: removing NUFORC's notes from the text (the input
+to blinded LLM extraction) and the launch-window match, which the LLM gate uses with its own settings
+(twilight launches only) to form a comparison group.
+
+The residual set's explanation flags (rules and checks) come from PURSUE's export since the data refactor
+(Phase 3b-4): PURSUE reproduces residual set v2 report for report (its scripts/residual_parity.py)."""
 
 from __future__ import annotations
 
@@ -9,10 +13,7 @@ from abc import ABC, abstractmethod
 import numpy as np
 import pandas as pd
 
-from uap_geo.classify.rules import contains_any
-from uap_geo.classify.wording import lantern_like
 from uap_geo.data.preprocessing.mainshocks import haversine_km
-from uap_geo.events import planets
 from uap_geo.events.sun import lighting_class, solar_altitude
 
 NOTE = re.compile(r"\(\(.*?\)\)", re.DOTALL)   # non-greedy: notes can hold their own parentheses, e.g. "(EDT)"
@@ -59,90 +60,3 @@ class LaunchWindowCheck(Check):
                 near = haversine_km(row.lat, row.lon, lat[lo:hi], lon[lo:hi]) <= self.params["radius_km"]
                 out[order[lo:hi][near]] = True
         return pd.Series(out, index=reports.index)
-
-
-class HolidayNightCheck(Check):
-    name = "holiday_night"
-
-    def match(self, reports: pd.DataFrame) -> pd.Series:
-        night = (reports["local_time"] - pd.Timedelta(hours=6)).dt.normalize()
-        codes = night.dt.month * 100 + night.dt.day
-        wanted = [int(md[:2]) * 100 + int(md[3:]) for md in self.params["nights"]]
-        return codes.isin(wanted)
-
-
-class LanternWordingCheck(Check):
-    name = "lantern_wording"
-
-    def __init__(self, params: dict, filters: dict) -> None:
-        super().__init__(params)
-        self.filters = filters
-
-    def match(self, reports: pd.DataFrame) -> pd.Series:
-        return lantern_like(reports["text"], self.filters, tuple(self.params["colour_words"]))
-
-
-class StarlinkTrainCheck(Check):
-    """Train-of-lights wording in twilight hours within N days after a Starlink launch."""
-
-    name = "starlink_train"
-
-    def __init__(self, params: dict, launch_dates: pd.DatetimeIndex) -> None:
-        super().__init__(params)
-        self.launch_dates = pd.DatetimeIndex(launch_dates).normalize().unique().sort_values()
-
-    def match(self, reports: pd.DataFrame) -> pd.Series:
-        p = self.params
-        text = contains_any(reports["text"], p["text_any"])
-        after = reports["local_time"] >= pd.Timestamp(str(p["from"]))
-        hour = reports["local_time"].dt.hour
-        hours = np.zeros(len(reports), bool)
-        for lo, hi in p["local_hours"]:
-            hours |= hour.between(lo, hi).to_numpy()
-        day = reports["occurred_utc"].dt.normalize().to_numpy()
-        launches = self.launch_dates.to_numpy()
-        idx = np.searchsorted(launches, day, side="right") - 1          # latest launch on or before the day
-        recent = np.zeros(len(reports), bool)
-        valid = idx >= 0
-        gap = (day[valid] - launches[idx[valid]]) / np.timedelta64(1, "D")
-        recent[valid] = gap <= p["days_after_launch"]
-        return pd.Series(text.to_numpy() & after.to_numpy() & hours & recent, index=reports.index)
-
-
-class BrightPlanetCheck(Check):
-    """Venus or Jupiter above the horizon in a dark sky, a long sighting described as a stationary bright light."""
-
-    name = "bright_planet"
-
-    def match(self, reports: pd.DataFrame) -> pd.Series:
-        p = self.params
-        text = contains_any(reports["text"], p["text_any"]).to_numpy()
-        long_enough = (reports["duration_s"].fillna(0) >= p["min_duration_s"]).to_numpy()
-        candidates = text & long_enough
-        out = np.zeros(len(reports), bool)
-        if candidates.any():
-            sub = reports.loc[candidates]
-            t, lat, lon = sub["occurred_utc"], sub["lat"].to_numpy(), sub["lon"].to_numpy()
-            dark = planets.altitude("sun", t, lat, lon) <= p["sun_max_altitude_deg"]
-            up = np.zeros(len(sub), bool)
-            for body in p["bodies"]:
-                up |= planets.altitude(body, t, lat, lon) >= p["min_altitude_deg"]
-            out[np.flatnonzero(candidates)] = dark & up
-        return pd.Series(out, index=reports.index)
-
-
-class LlmExplainerCheck(Check):
-    """An ordinary cause the LLM rates at or above min_probability, from the report text alone."""
-
-    name = "llm_explainer"
-
-    def __init__(self, params: dict, features: pd.DataFrame) -> None:
-        super().__init__(params)
-        causes = [f"p_{c}" for c in params["causes"]]
-        present = [c for c in causes if c in features]
-        top = features[present].max(axis=1) if present else pd.Series(0.0, index=features.index)
-        self.top = pd.Series(top.to_numpy(), index=features["report_id"].to_numpy())
-
-    def match(self, reports: pd.DataFrame) -> pd.Series:
-        p = reports["report_id"].map(self.top).fillna(0.0)
-        return p >= self.params["min_probability"]

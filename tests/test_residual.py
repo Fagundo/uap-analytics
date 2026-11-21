@@ -1,12 +1,6 @@
 import pandas as pd
 
-from uap_geo.residual.checks import (
-    BrightPlanetCheck,
-    HolidayNightCheck,
-    LaunchWindowCheck,
-    StarlinkTrainCheck,
-    strip_notes,
-)
+from uap_geo.residual.checks import LaunchWindowCheck, strip_notes
 
 
 def _reports(rows):
@@ -32,34 +26,23 @@ def test_launch_window_uses_time_and_distance():
     assert check.match(r).tolist() == [True, False, False]
 
 
-def test_holiday_night_rolls_over_at_six():
-    r = _reports([["2015-07-05 06:30", "2015-07-05 01:30", 40, -100, 60, ""],                # night of July 4
-                  ["2015-07-10 03:00", "2015-07-09 22:00", 40, -100, 60, ""]])
-    assert HolidayNightCheck({"nights": ["07-04"]}).match(r).tolist() == [True, False]
 
 
-def test_starlink_train_needs_recent_launch_wording_and_twilight():
-    check = StarlinkTrainCheck({"from": "2019-05-24", "days_after_launch": 14, "text_any": ["line of lights"],
-                                "local_hours": [[17, 23], [3, 7]]}, pd.DatetimeIndex(["2020-04-22"]))
-    r = _reports([["2020-04-25 03:00", "2020-04-24 21:00", 40, -100, 300, "a line of lights moving north"],
-                  ["2020-05-25 03:00", "2020-05-24 21:00", 40, -100, 300, "a line of lights moving north"],
-                  ["2020-04-25 18:00", "2020-04-25 12:00", 40, -100, 300, "a line of lights moving north"]])
-    assert check.match(r).tolist() == [True, False, False]
+def test_reasons_from_pursue_labels():
+    import pytest
+    pytest.importorskip("geopandas")
+    from uap_geo.residual.builder import ResidualSetBuilder
+    labels = ["rule:aircraft_helicopter:medium", "rule:meteor_fireball:high", "rule:nuforc_note:high",
+              "check:holiday_night:possible", "check:starlink_train:high"]
+    assert ResidualSetBuilder.reasons(labels) == ["meteor_fireball", "holiday_night", "starlink_train"]
+    assert ResidualSetBuilder.reasons(["rule:drone:medium"]) == []
 
 
-def test_bright_planet_venus_evening():
-    check = BrightPlanetCheck({"bodies": ["venus", "jupiter"], "min_altitude_deg": 5, "sun_max_altitude_deg": -4,
-                               "min_duration_s": 600, "text_any": ["stationary", "bright star"]})
-    r = _reports([["2020-03-25 03:30", "2020-03-24 20:30", 47.6, -122.3, 1800, "stationary bright light in the west"],
-                  ["2020-03-25 03:30", "2020-03-24 20:30", 47.6, -122.3, 60, "stationary bright light in the west"],
-                  ["2020-03-25 11:00", "2020-03-25 04:00", 47.6, -122.3, 1800, "stationary bright light"]])
-    assert check.match(r).tolist() == [True, False, False]
-
-
-def test_llm_explainer_uses_top_probability():
-    from uap_geo.residual.checks import LlmExplainerCheck
-
-    features = pd.DataFrame({"report_id": ["a", "b"], "p_aircraft": [0.9, 0.2], "p_meteor": [0.1, 0.5]})
-    check = LlmExplainerCheck({"causes": ["aircraft", "meteor"], "min_probability": 0.7}, features)
-    reports = pd.DataFrame({"report_id": ["a", "b", "c"]})
-    assert check.match(reports).tolist() == [True, False, False]
+def test_reasons_from_pursue_labels():
+    import pytest
+    pytest.importorskip("geopandas")
+    from uap_geo.residual.builder import ResidualSetBuilder
+    labels = ["rule:aircraft_helicopter:medium", "rule:meteor_fireball:high", "rule:nuforc_note:high",
+              "check:holiday_night:possible", "check:starlink_train:high"]
+    assert ResidualSetBuilder.reasons(labels) == ["meteor_fireball", "holiday_night", "starlink_train"]
+    assert ResidualSetBuilder.reasons(["rule:drone:medium"]) == []

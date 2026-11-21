@@ -1,5 +1,8 @@
 """Builds the residual set: every report and event labelled explained / possible / residual, with the
-reason, and the report text with NUFORC notes stripped (the input to blinded LLM extraction)."""
+reason, and the report text with NUFORC notes stripped (the input to blinded LLM extraction).
+
+The labels are PURSUE's explanation flags (its export, rules and checks as in configs/residual_v2.yaml);
+uap-geo keeps uap-geo's reason format: the first high-confidence rule, then every matching check."""
 
 from __future__ import annotations
 
@@ -15,16 +18,7 @@ from uap_geo.common.config import Config
 from uap_geo.common.download import Downloader
 from uap_geo.data.scraping.registry import SourceRegistry
 from uap_geo.hypotheses.event_table import EventTable
-from uap_geo.residual.checks import (
-    BrightPlanetCheck,
-    Check,
-    HolidayNightCheck,
-    LanternWordingCheck,
-    LaunchWindowCheck,
-    LlmExplainerCheck,
-    StarlinkTrainCheck,
-    strip_notes,
-)
+from uap_geo.residual.checks import strip_notes
 
 log = logging.getLogger(__name__)
 EVENT_PARAMS = {"dedup": {"km": 50, "hours": 3}, "quality": {"min_reports": 2, "min_duration_s": 300}}
@@ -45,18 +39,11 @@ class ResidualSetBuilder:
         self.filters = yaml.safe_load((root / self.settings["rule_filters"]).read_text())
         self.sources = SourceRegistry(config, Downloader(config.paths.raw))
 
-    def checks(self) -> list[Check]:
-        c = self.settings["checks"]
-        launches = self.sources.launches(c["launch_window"]["min_apogee_km"]).load()
-        all_launches = self.sources.launches(0.0).load()
-        starlink = all_launches.loc[all_launches["mission"].str.contains("starlink", case=False, na=False), "time_utc"]
-        log.info("Starlink launches in GCAT: %d (first %s)", len(starlink), starlink.min() if len(starlink) else "-")
-        checks = [LaunchWindowCheck(c["launch_window"], launches), HolidayNightCheck(c["holiday_night"]),
-                  LanternWordingCheck(c["lantern_wording"], self.filters), StarlinkTrainCheck(c["starlink_train"], starlink),
-                  BrightPlanetCheck(c["bright_planet"])]
-        if "llm_explainer" in c:
-            checks.append(LlmExplainerCheck(c["llm_explainer"], self._llm_features(c["llm_explainer"])))
-        return checks
+    @staticmethod
+    def reasons(explanations: list[str]) -> list[str]:
+        """uap-geo's reasons from PURSUE's labels: the first high rule (config order), then the checks."""
+        rules = [e.split(":")[1] for e in explanations if e.startswith("rule:") and e.endswith(":high")]
+        return rules[:1] + [e.split(":")[1] for e in explanations if e.startswith("check:")]
 
     def _llm_features(self, params: dict) -> pd.DataFrame:
         from uap_geo.llm.strangeness import feature_table
@@ -74,31 +61,27 @@ class ResidualSetBuilder:
         reports = tagged.copy()
         reports["report_id"] = report_ids(reports)
         reports["text"] = strip_notes(reports["summary"]).str.lower()
-        reports["rule"] = labels["explained_by"]
-        reports["rule_possible"] = labels["possible"] & labels["explained_by"].isna()
-
-        high = reports["rule"].notna().copy()
-        possible = reports["rule_possible"].copy()
-        reasons = reports["rule"].fillna("").astype(str).map(lambda r: [r] if r else [])
-        counts = {f"rule:{k}": int(v) for k, v in reports["rule"].value_counts().items()}
-        for check in self.checks():
-            matched = check.match(reports)
-            counts[check.name] = int(matched.sum())
-            if check.confidence == "high":
-                high |= matched
-            else:
-                possible |= matched
-            for i in reports.index[matched]:
-                reasons.at[i] = reasons.at[i] + [check.name]
+        flags = self.sources.export_tables().explanations().set_index("report_id")
+        missing = ~reports["report_id"].isin(flags.index)
+        if missing.any():
+            raise ValueError(f"{int(missing.sum())} reports have no explanation flags in the PURSUE export")
+        labels_ = reports["report_id"].map(flags["explanations"])
+        reasons = labels_.map(self.reasons)
+        reports["tier"] = reports["report_id"].map(flags["tier"]).astype(str)
+        counts: dict[str, int] = {}
+        for explanations in labels_:
+            high_rules = [e.split(":")[1] for e in explanations if e.startswith("rule:") and e.endswith(":high")]
+            keys = [f"rule:{r}" for r in high_rules[:1]] + [e.split(":")[1] for e in explanations if e.startswith("check:")]
+            for key in keys:
+                counts[key] = counts.get(key, 0) + 1
+        if "llm_explainer" in self.settings["checks"]:
+            self._llm_features(self.settings["checks"]["llm_explainer"])
         llm = getattr(self, "llm_table", None)
         if llm is not None and len(llm):
             flags = llm.set_index("report_id")
             reports["strangeness"] = reports["report_id"].map(flags["strangeness"])
             reports["high_strangeness"] = reports["report_id"].map(flags["high_strangeness"])
             reports["llm_top_cause"] = reports["report_id"].map(flags["top_conventional"])
-        reports["tier"] = "residual"
-        reports.loc[possible, "tier"] = "possible"
-        reports.loc[high, "tier"] = "explained"
         reports["reasons"] = reasons.map(lambda r: ",".join(r))
 
         rank = {"explained": 2, "possible": 1, "residual": 0}
