@@ -1,0 +1,463 @@
+{
+ "result": {
+  "hypothesis": "H-celebrate-01",
+  "split": "confirm",
+  "years": [
+   2011,
+   2020
+  ],
+  "manifest": {
+   "run_id": "H-celebrate-01-confirm-20261120T233420Z",
+   "started_utc": "2026-11-20T23:34:20+00:00",
+   "git_commit": "58d43d2663702c83b33f858e30722e9441697b09",
+   "git_dirty": false,
+   "python": "3.12.16",
+   "specs": {
+    "spec": "b770deec65f8d9b0950ca34669a547126f717880d60f711de0e606ae33c98101",
+    "impl": "99e4e849525f02e0424772535cc3d51d5cf16a7068f304516a64677d063c3692",
+    "filters": "8b2d4002b6f7fc9b75bc09a2f2b7179b72d7d7a42239921c5ddd2d694f6eeae9"
+   },
+   "inputs": {
+    "data/raw/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data/raw/acs_college/acsdt5y2021-b14001.dat": "1035e1fcc6216e374c71c1c4a9fb6e22f78010d86beabd9f2a09ae0c3906a34c",
+    "data/raw/acs_housing/acsdt5y2021-b25001.dat": "ddc83069353064aee56b4fb58df7bdc04ea9c01307def64028d2aeb9424dcf75",
+    "data/raw/acs_housing/acsdt5y2021-b25004.dat": "0a6ebcf71d078820e3883ad3b480db4c15ab868e797fa677e1a1645169b91589",
+    "data/raw/airports/airports.csv": "73b5022692ba9739ba61b66e1f82ea1410597991c64a9274c5d40e3753b72664",
+    "data/raw/coastline/ne_10m_coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017",
+    "data/raw/counties/cb_2020_us_county_500k.zip": "1a45c87a5a0c322514c9d5c9ebcba5eb9df313bd38962f6db56107ba0ccacc6f",
+    "data/raw/elevation/elevation_1KMmd_GMTEDmd.tif": "95fed346b8bb25ca67c59b9d8c8e110f4856eb51401e5cc0011b73cba7e3e02b",
+    "data/raw/gazetteer_places/2020_Gaz_place_national.zip": "6e5745b3e1adf7a1e024a988301d484697e2a0f25b3cf10114eef676f09d5c18",
+    "data/raw/gcat_launches/launch.tsv": "72053523eab6c7e6f1d61604c953b9c37a05b3756e61ac1310a81574e1d9fe4e",
+    "data/raw/gcat_launches/sites.tsv": "102816bbe39defd0721255f1fec98ef10dd66c35d66c33e929d597df9f27c45b",
+    "data/raw/light_pollution/World_Atlas_2015.zip": "9c6a624427463c40717efbca7696e3c6bb0f332c26d1b039e7a91e0dbc831fbf",
+    "data/raw/light_pollution/extracted/README.txt": "7be5ecd05327c7bed42f383047e85d88af2b58dbb3e5b0d81b7d759cda8c2c02",
+    "data/raw/light_pollution/extracted/World_Atlas_2015.tif": "9725566ed4fcf1a8fa311654143bb024c4fe2a792b85356be99adce07e1e83c1",
+    "data/raw/light_pollution/extracted/World_Atlas_2015.tpk": "882830f77da39d8693dc8ade8124ad756dbf455584e5f9a6f115f78ee3af560a",
+    "data/raw/nlcd_2011/nlcd_2011_land_cover_l48_480m.tif": "8ef07de917b0ab5c01d4556f8cebeada5f5756bdf232b7cb9736c8ad04f5ad06",
+    "data/raw/nuforc/places.csv": "6fe1aff91fc019e29e0f0c6e88d66ca9b74df01550ed38e56ff2507ca79f80bf",
+    "data/raw/nuforc/ufo_sightings.csv": "ad72ebc6cd34001144e8bea85524d34390f8e12d13b352b184ed57557a980647",
+    "data/raw/place_population/place_population_0.csv": "e3508f5201465913476d4ddf91740f191f7977c9f2614a2a7e30b5fd22027934",
+    "data/raw/population/population_0": "38dd59c70ef8067a3d476b6f5039e60f288e2d492015525ba9711faffd12c418",
+    "data/raw/primary_roads/tl_2020_us_primaryroads.zip": "30ba1c46cc5a40305a8896a057f4f14dee7aec08f7dacea3e0fb68fec1cc172f",
+    "data/raw/rail/tl_2020_us_rails.zip": "86f1fed01c866ee6e2595e8f0f43288c11e45200e487841227ede8422b874521",
+    "data/raw/rivers/ne_10m_rivers_lake_centerlines.zip": "ded71b01870855ccfe19b51f2ec14c9bb48fae23c0e9f3c11974d426433b5c38",
+    "data/raw/rivers/ne_10m_rivers_north_america.zip": "7fbe85a2acbf1f3ef4361a16bb39677ad1ea86f888be1689f7a4caeafc7529e8",
+    "data/raw/sgmc/USGS_SGMC_Geodatabase.zip": "1a824a35e8ac86b3ef231e8ff1d877e790d7ec2357545bb810eeb0c28520dd1a",
+    "data/raw/sgmc/age_grid_v1_1km_3108.npz": "99a25b7a26f27755c97c585ad8904e45b0d161b10c21a25d3711ebd37455667a",
+    "data/raw/sgmc/unit_grid_v1_1km_3108.npz": "a8087920e5f0adb82db54f3fe97d118beff049ea72db889f0d7b307691cf1de6",
+    "configs/celebrations/championships.yaml": "45bb290fad29ac3f78c8bc9aaa09d10a192000d3afb379eb0584d0e3c7780cee",
+    "configs/celebrations/teams.yaml": "af6158d987ee32d939dba2dd3128a666d4de266389044cffb568221c0454a0f3"
+   },
+   "settings": {}
+  },
+  "data": {
+   "reports": 74795,
+   "events": 69348,
+   "events_in_counties": 69333,
+   "cleaning": {
+    "raw_rows": 96429,
+    "undated": 0,
+    "outside_window": 14061,
+    "outside_conus": 7547,
+    "duplicates": 26,
+    "kept": 74795
+   }
+  },
+  "rule_counts": {
+   "nuforc_note": 2288,
+   "meteor_fireball": 1461,
+   "possible_only": 4381
+  },
+  "tests": {
+   "july4": {
+    "verdict": "confirmed",
+    "power": 0.1377133804445796,
+    "p_bh": 8.086438640855646e-28,
+    "checks": {
+     "window": {
+      "strong_rate_ratio": 3.214881741240327,
+      "strong_p": 1.601360662284622e-31,
+      "weak_rate_ratio": 2.479140482600822,
+      "weak_p": 2.695479546951882e-28,
+      "difference_p": 0.022382401596445556,
+      "labels": [
+       "21:00-02:00",
+       "whole night"
+      ],
+      "holds": true
+     }
+    },
+    "tiers": {
+     "all": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 5.975115950695827,
+        "ci_low": 5.419515324917937,
+        "ci_high": 6.587675923732221,
+        "p_value": 3.1669077006470613e-282
+       },
+       {
+        "term": "moon",
+        "rate_ratio": 0.8904934309788296,
+        "ci_low": 0.7690618762299375,
+        "ci_high": 1.0310985047181815,
+        "p_value": 0.1210120894681501
+       }
+      ],
+      "n_strata": 404,
+      "n_events": 1661,
+      "exposed_share": 0.11112162139931235,
+      "dispersion": 1.057999740020395
+     },
+     "filtered": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 6.101469384751076,
+        "ci_low": 5.52969551990222,
+        "ci_high": 6.732365013419937,
+        "p_value": 3.5171243195561484e-284
+       },
+       {
+        "term": "moon",
+        "rate_ratio": 0.8857937114173138,
+        "ci_low": 0.7636352848639134,
+        "ci_high": 1.0274937718812815,
+        "p_value": 0.10921477827040611
+       }
+      ],
+      "n_strata": 403,
+      "n_events": 1630,
+      "exposed_share": 0.11112165848786387,
+      "dispersion": 1.0597448213367753
+     },
+     "unexplained": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 2.479140482600822,
+        "ci_low": 2.109819471764216,
+        "ci_high": 2.913110630897193,
+        "p_value": 2.695479546951882e-28
+       },
+       {
+        "term": "moon",
+        "rate_ratio": 0.9633771918524633,
+        "ci_low": 0.7925297224077857,
+        "ci_high": 1.1710546463316092,
+        "p_value": 0.7079609348505016
+       }
+      ],
+      "n_strata": 342,
+      "n_events": 821,
+      "exposed_share": 0.11111953129070301,
+      "dispersion": 1.0289177013289788
+     },
+     "high_quality": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 8.346342728637998,
+        "ci_low": 7.318743811100535,
+        "ci_high": 9.518223173522076,
+        "p_value": 6.935299575918802e-220
+       },
+       {
+        "term": "moon",
+        "rate_ratio": 0.8007213996240454,
+        "ci_low": 0.6495664331140424,
+        "ci_high": 0.9870503263879782,
+        "p_value": 0.037335590118249745
+       }
+      ],
+      "n_strata": 324,
+      "n_events": 902,
+      "exposed_share": 0.11111971803710446,
+      "dispersion": 1.0779908542976708
+     }
+    }
+   },
+   "new_year": {
+    "verdict": "confirmed",
+    "power": 0.11132504335329213,
+    "p_bh": 8.6129695534487e-08,
+    "checks": {
+     "window": {
+      "strong_rate_ratio": 4.123306742615932,
+      "strong_p": 2.3670228463201213e-18,
+      "weak_rate_ratio": 1.8008472473991375,
+      "weak_p": 5.741979702299133e-08,
+      "difference_p": 1.0799181921483658e-05,
+      "labels": [
+       "21:00-02:00",
+       "whole night"
+      ],
+      "holds": true
+     }
+    },
+    "tiers": {
+     "all": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 4.691153596065174,
+        "ci_low": 4.140388426267314,
+        "ci_high": 5.315182972268891,
+        "p_value": 5.5307533616880025e-130
+       },
+       {
+        "term": "moon",
+        "rate_ratio": 1.0736901064118403,
+        "ci_low": 0.8894343457210419,
+        "ci_high": 1.2961164026919998,
+        "p_value": 0.4591850409406951
+       }
+      ],
+      "n_strata": 334,
+      "n_events": 1028,
+      "exposed_share": 0.125,
+      "dispersion": 1.1894008928617008
+     },
+     "filtered": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 4.855150333372195,
+        "ci_low": 4.274907113836802,
+        "ci_high": 5.5141513328666045,
+        "p_value": 9.163782676933308e-131
+       },
+       {
+        "term": "moon",
+        "rate_ratio": 1.0332512131202678,
+        "ci_low": 0.8516709840045444,
+        "ci_high": 1.2535451946415124,
+        "p_value": 0.7400963014393749
+       }
+      ],
+      "n_strata": 330,
+      "n_events": 982,
+      "exposed_share": 0.125,
+      "dispersion": 1.195467790287859
+     },
+     "unexplained": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 1.8008472473991375,
+        "ci_low": 1.4561476286309292,
+        "ci_high": 2.227144243275779,
+        "p_value": 5.741979702299133e-08
+       },
+       {
+        "term": "moon",
+        "rate_ratio": 1.0647834240844674,
+        "ci_low": 0.8275331798184532,
+        "ci_high": 1.3700523046746858,
+        "p_value": 0.6255051484061497
+       }
+      ],
+      "n_strata": 250,
+      "n_events": 523,
+      "exposed_share": 0.125,
+      "dispersion": 1.054392181153148
+     },
+     "high_quality": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 6.394336742867506,
+        "ci_low": 5.38564415888762,
+        "ci_high": 7.5919502245076975,
+        "p_value": 1.381480305022055e-99
+       },
+       {
+        "term": "moon",
+        "rate_ratio": 1.0423650223833059,
+        "ci_low": 0.7933580544273866,
+        "ci_high": 1.3695264500369368,
+        "p_value": 0.7657666423800709
+       }
+      ],
+      "n_strata": 238,
+      "n_events": 524,
+      "exposed_share": 0.125,
+      "dispersion": 1.2240740459731523
+     }
+    }
+   },
+   "championship": {
+    "verdict": "underpowered",
+    "power": 0.05262298058825482,
+    "p_bh": 0.5692974612278555,
+    "checks": {
+     "window": {
+      "strong_rate_ratio": 0.8908715340701089,
+      "strong_p": 0.9127778763017474,
+      "weak_rate_ratio": 0.6562260805804252,
+      "weak_p": 0.5692974612278555,
+      "difference_p": 0.40624936655631294,
+      "labels": [
+       "21:00-02:00",
+       "whole night"
+      ],
+      "holds": false
+     },
+     "winner_vs_loser": {
+      "strong_rate_ratio": 0.6562260805804252,
+      "strong_p": 0.5692974612278555,
+      "weak_rate_ratio": 0.8874650913766046,
+      "weak_p": 0.8729962286158637,
+      "difference_p": 0.6129715246928841,
+      "labels": [
+       "winner's city",
+       "loser's city"
+      ],
+      "holds": false
+     }
+    },
+    "tiers": {
+     "all": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 1.151508677245305,
+        "ci_low": 0.44785190212177034,
+        "ci_high": 2.960738198250862,
+        "p_value": 0.7696849934602685
+       },
+       {
+        "term": "moon",
+        "rate_ratio": 1.7124686881566098,
+        "ci_low": 0.6892469702223465,
+        "ci_high": 4.254714397904135,
+        "p_value": 0.2466627208321892
+       }
+      ],
+      "n_strata": 22,
+      "n_events": 38,
+      "exposed_share": 0.11330049261083744,
+      "dispersion": 1.0334715069944238
+     },
+     "filtered": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 1.2027131174258576,
+        "ci_low": 0.46737315301210886,
+        "ci_high": 3.0949977197144394,
+        "p_value": 0.7019114466420338
+       },
+       {
+        "term": "moon",
+        "rate_ratio": 1.6031924128462205,
+        "ci_low": 0.6384218509592012,
+        "ci_high": 4.025905298739435,
+        "p_value": 0.3150327072634689
+       }
+      ],
+      "n_strata": 22,
+      "n_events": 37,
+      "exposed_share": 0.11330049261083744,
+      "dispersion": 1.037769972832786
+     },
+     "unexplained": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 0.6562260805804252,
+        "ci_low": 0.15380696050843815,
+        "ci_high": 2.799825621743051,
+        "p_value": 0.5692974612278555
+       },
+       {
+        "term": "moon",
+        "rate_ratio": 1.4157087505948154,
+        "ci_low": 0.4614718787033576,
+        "ci_high": 4.343127629233263,
+        "p_value": 0.5433079075622649
+       }
+      ],
+      "n_strata": 16,
+      "n_events": 25,
+      "exposed_share": 0.11356466876971609,
+      "dispersion": 1.0316004499540314
+     },
+     "high_quality": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 2.102807844433944,
+        "ci_low": 0.6949391528297799,
+        "ci_high": 6.3628604210993664,
+        "p_value": 0.188262514889468
+       },
+       {
+        "term": "moon",
+        "rate_ratio": 1.3114970042449938,
+        "ci_low": 0.3628060834954735,
+        "ci_high": 4.740891816289109,
+        "p_value": 0.6791768983136701
+       }
+      ],
+      "n_strata": 16,
+      "n_events": 19,
+      "exposed_share": 0.11304347826086956,
+      "dispersion": 0.9859107416800401
+     }
+    }
+   }
+  }
+ },
+ "fingerprint": {
+  "reports": {
+   "count": 74795,
+   "sha256": "1522944e88be294a51fdbbbc2762a8514d945fe52130ff9aad31fa39208bf99a"
+  },
+  "events": {
+   "count": 69333,
+   "columns": [
+    "event_id",
+    "geoid",
+    "night",
+    "in_filtered",
+    "in_high_quality"
+   ],
+   "sha256": "1672994a20263dab505c8c8aac0b634dc93d1bb03a1a58bcfdccfe804cdf373c"
+  },
+  "county_counts": {
+   "counties": 2656,
+   "sha256": "4f017fda68620d78f3dfed2e3c5425852a15dd46523c6fb0acacd9c520b4d63d"
+  }
+ },
+ "inputs": {
+  "data/raw/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "data/raw/acs_college/acsdt5y2021-b14001.dat": "1035e1fcc6216e374c71c1c4a9fb6e22f78010d86beabd9f2a09ae0c3906a34c",
+  "data/raw/acs_housing/acsdt5y2021-b25001.dat": "ddc83069353064aee56b4fb58df7bdc04ea9c01307def64028d2aeb9424dcf75",
+  "data/raw/acs_housing/acsdt5y2021-b25004.dat": "0a6ebcf71d078820e3883ad3b480db4c15ab868e797fa677e1a1645169b91589",
+  "data/raw/airports/airports.csv": "73b5022692ba9739ba61b66e1f82ea1410597991c64a9274c5d40e3753b72664",
+  "data/raw/coastline/ne_10m_coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017",
+  "data/raw/counties/cb_2020_us_county_500k.zip": "1a45c87a5a0c322514c9d5c9ebcba5eb9df313bd38962f6db56107ba0ccacc6f",
+  "data/raw/elevation/elevation_1KMmd_GMTEDmd.tif": "95fed346b8bb25ca67c59b9d8c8e110f4856eb51401e5cc0011b73cba7e3e02b",
+  "data/raw/gazetteer_places/2020_Gaz_place_national.zip": "6e5745b3e1adf7a1e024a988301d484697e2a0f25b3cf10114eef676f09d5c18",
+  "data/raw/gcat_launches/launch.tsv": "72053523eab6c7e6f1d61604c953b9c37a05b3756e61ac1310a81574e1d9fe4e",
+  "data/raw/gcat_launches/sites.tsv": "102816bbe39defd0721255f1fec98ef10dd66c35d66c33e929d597df9f27c45b",
+  "data/raw/light_pollution/World_Atlas_2015.zip": "9c6a624427463c40717efbca7696e3c6bb0f332c26d1b039e7a91e0dbc831fbf",
+  "data/raw/light_pollution/extracted/README.txt": "7be5ecd05327c7bed42f383047e85d88af2b58dbb3e5b0d81b7d759cda8c2c02",
+  "data/raw/light_pollution/extracted/World_Atlas_2015.tif": "9725566ed4fcf1a8fa311654143bb024c4fe2a792b85356be99adce07e1e83c1",
+  "data/raw/light_pollution/extracted/World_Atlas_2015.tpk": "882830f77da39d8693dc8ade8124ad756dbf455584e5f9a6f115f78ee3af560a",
+  "data/raw/nlcd_2011/nlcd_2011_land_cover_l48_480m.tif": "8ef07de917b0ab5c01d4556f8cebeada5f5756bdf232b7cb9736c8ad04f5ad06",
+  "data/raw/nuforc/places.csv": "6fe1aff91fc019e29e0f0c6e88d66ca9b74df01550ed38e56ff2507ca79f80bf",
+  "data/raw/nuforc/ufo_sightings.csv": "ad72ebc6cd34001144e8bea85524d34390f8e12d13b352b184ed57557a980647",
+  "data/raw/place_population/place_population_0.csv": "e3508f5201465913476d4ddf91740f191f7977c9f2614a2a7e30b5fd22027934",
+  "data/raw/population/population_0": "38dd59c70ef8067a3d476b6f5039e60f288e2d492015525ba9711faffd12c418",
+  "data/raw/primary_roads/tl_2020_us_primaryroads.zip": "30ba1c46cc5a40305a8896a057f4f14dee7aec08f7dacea3e0fb68fec1cc172f",
+  "data/raw/rail/tl_2020_us_rails.zip": "86f1fed01c866ee6e2595e8f0f43288c11e45200e487841227ede8422b874521",
+  "data/raw/rivers/ne_10m_rivers_lake_centerlines.zip": "ded71b01870855ccfe19b51f2ec14c9bb48fae23c0e9f3c11974d426433b5c38",
+  "data/raw/rivers/ne_10m_rivers_north_america.zip": "7fbe85a2acbf1f3ef4361a16bb39677ad1ea86f888be1689f7a4caeafc7529e8",
+  "data/raw/sgmc/USGS_SGMC_Geodatabase.zip": "1a824a35e8ac86b3ef231e8ff1d877e790d7ec2357545bb810eeb0c28520dd1a",
+  "data/raw/sgmc/age_grid_v1_1km_3108.npz": "99a25b7a26f27755c97c585ad8904e45b0d161b10c21a25d3711ebd37455667a",
+  "data/raw/sgmc/unit_grid_v1_1km_3108.npz": "a8087920e5f0adb82db54f3fe97d118beff049ea72db889f0d7b307691cf1de6"
+ }
+}

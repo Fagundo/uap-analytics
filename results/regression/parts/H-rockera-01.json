@@ -4,8 +4,12 @@
     "split": "explore",
     "ok": true,
     "error": null,
-    "seconds": 1479.8,
+    "seconds": 1401.1,
     "fingerprint": "recorded",
+    "against": "registered result",
+    "added": [],
+    "n_added": 0,
+    "inputs_changed": [],
     "differences": [],
     "n_differences": 0,
     "fingerprint_differences": []

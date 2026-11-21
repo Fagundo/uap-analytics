@@ -4,30 +4,35 @@
     "split": "confirm",
     "ok": false,
     "error": null,
-    "seconds": 247.9,
-    "fingerprint": "missing",
+    "seconds": 254.6,
+    "fingerprint": "recorded",
+    "against": "registered result",
+    "added": [
+      "tests.proximity.tiers.all.dispersion",
+      "tests.proximity.tiers.filtered.dispersion",
+      "tests.proximity.tiers.high_quality.dispersion"
+    ],
+    "n_added": 3,
+    "inputs_changed": [],
     "differences": [
       "tests.proximity.checks.shift_test.null_median_rate_ratio: committed 0.99872858283511, now 0.9987319234316444",
       "tests.proximity.checks.shift_test.rate_ratio: committed 1.0197305483552357, now 1.0197236601605084",
       "tests.proximity.p_bh: committed 0.3839458194398284, now 0.38410689440420454",
       "tests.proximity.power: committed 0.6000632335621124, now 0.6000768104357586",
-      "tests.proximity.tiers.all.dispersion: committed '<missing>', now nan",
       "tests.proximity.tiers.all.terms[0].ci_high: committed 1.0650496457949827, now 1.0650421157905459",
       "tests.proximity.tiers.all.terms[0].ci_low: committed 0.9729195214019167, now 0.9729131253899759",
       "tests.proximity.tiers.all.terms[0].p_value: committed 0.44100477079611233, now 0.4411775500738888",
       "tests.proximity.tiers.all.terms[0].rate_ratio: committed 1.0179428233727745, now 1.017935878896963",
-      "tests.proximity.tiers.filtered.dispersion: committed '<missing>', now nan",
       "tests.proximity.tiers.filtered.terms[0].ci_high: committed 1.0655833568920374, now 1.0655758287570494",
       "tests.proximity.tiers.filtered.terms[0].ci_low: committed 0.9758508187306693, now 0.9758445293415398",
       "tests.proximity.tiers.filtered.terms[0].p_value: committed 0.3839458194398284, now 0.38410689440420454",
       "tests.proximity.tiers.filtered.terms[0].rate_ratio: committed 1.0197305483552357, now 1.0197236601605084",
-      "tests.proximity.tiers.high_quality.dispersion: committed '<missing>', now nan",
       "tests.proximity.tiers.high_quality.terms[0].ci_high: committed 1.083453330739537, now 1.0834487343966466",
       "tests.proximity.tiers.high_quality.terms[0].ci_low: committed 0.9717043830786758, now 0.9716974504251656",
       "tests.proximity.tiers.high_quality.terms[0].p_value: committed 0.35426416921872694, now 0.3543833832070943",
       "tests.proximity.tiers.high_quality.terms[0].rate_ratio: committed 1.026058648587301, now 1.0260528119349384"
     ],
-    "n_differences": 19,
+    "n_differences": 16,
     "fingerprint_differences": []
   },
   {
@@ -35,24 +40,29 @@
     "split": "explore",
     "ok": false,
     "error": null,
-    "seconds": 242.2,
-    "fingerprint": "missing",
+    "seconds": 248.1,
+    "fingerprint": "recorded",
+    "against": "registered result",
+    "added": [
+      "tests.proximity.tiers.all.dispersion",
+      "tests.proximity.tiers.filtered.dispersion",
+      "tests.proximity.tiers.high_quality.dispersion"
+    ],
+    "n_added": 3,
+    "inputs_changed": [],
     "differences": [
       "tests.proximity.checks.shift_test.rate_ratio: committed 1.0062348929135445, now 1.006233861067091",
       "tests.proximity.p_bh: committed 0.7332010934171647, now 0.7332393584866561",
       "tests.proximity.power: committed 0.9999999999999982, now 0.9994567037348859",
-      "tests.proximity.tiers.all.dispersion: committed '<missing>', now nan",
       "tests.proximity.tiers.all.terms[0].ci_high: committed 1.041410412484336, now 1.0414086325677037",
       "tests.proximity.tiers.all.terms[0].p_value: committed 0.7575003564446698, now 0.7575443241735997",
       "tests.proximity.tiers.all.terms[0].rate_ratio: committed 1.0055375013064776, now 1.0055363694977129",
-      "tests.proximity.tiers.filtered.dispersion: committed '<missing>', now nan",
       "tests.proximity.tiers.filtered.terms[0].ci_high: committed 1.042846630387507, now 1.0428449692683344",
       "tests.proximity.tiers.filtered.terms[0].p_value: committed 0.7332010934171647, now 0.7332393584866561",
       "tests.proximity.tiers.filtered.terms[0].rate_ratio: committed 1.0062348929135445, now 1.006233861067091",
-      "tests.proximity.tiers.high_quality.dispersion: committed '<missing>', now nan",
       "tests.proximity.tiers.high_quality.terms[0].p_value: committed 0.5589545044968873, now 0.558968742010284"
     ],
-    "n_differences": 13,
+    "n_differences": 10,
     "fingerprint_differences": []
   }
 ]

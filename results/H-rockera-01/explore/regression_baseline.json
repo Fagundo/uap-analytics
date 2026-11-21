@@ -1,0 +1,843 @@
+{
+ "result": {
+  "hypothesis": "H-rockera-01",
+  "split": "explore",
+  "years": [
+   2001,
+   2023
+  ],
+  "manifest": {
+   "run_id": "H-rockera-01-explore-20261120T233416Z",
+   "started_utc": "2026-11-20T23:34:16+00:00",
+   "git_commit": "58d43d2663702c83b33f858e30722e9441697b09",
+   "git_dirty": false,
+   "python": "3.12.16",
+   "specs": {
+    "spec": "040f67e80971236da3370ff4df3500764f863e5852f4cd55ef536a3aa649427e",
+    "impl": "fdb539705e193990a68b39a251c35560824e1b1c4b51dddd5be3c452bf1a3c2a",
+    "filters": "8b2d4002b6f7fc9b75bc09a2f2b7179b72d7d7a42239921c5ddd2d694f6eeae9"
+   },
+   "inputs": {
+    "data/raw/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data/raw/acs_college/acsdt5y2021-b14001.dat": "1035e1fcc6216e374c71c1c4a9fb6e22f78010d86beabd9f2a09ae0c3906a34c",
+    "data/raw/acs_housing/acsdt5y2021-b25001.dat": "ddc83069353064aee56b4fb58df7bdc04ea9c01307def64028d2aeb9424dcf75",
+    "data/raw/acs_housing/acsdt5y2021-b25004.dat": "0a6ebcf71d078820e3883ad3b480db4c15ab868e797fa677e1a1645169b91589",
+    "data/raw/airports/airports.csv": "73b5022692ba9739ba61b66e1f82ea1410597991c64a9274c5d40e3753b72664",
+    "data/raw/coastline/ne_10m_coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017",
+    "data/raw/counties/cb_2020_us_county_500k.zip": "1a45c87a5a0c322514c9d5c9ebcba5eb9df313bd38962f6db56107ba0ccacc6f",
+    "data/raw/elevation/elevation_1KMmd_GMTEDmd.tif": "95fed346b8bb25ca67c59b9d8c8e110f4856eb51401e5cc0011b73cba7e3e02b",
+    "data/raw/gazetteer_places/2020_Gaz_place_national.zip": "6e5745b3e1adf7a1e024a988301d484697e2a0f25b3cf10114eef676f09d5c18",
+    "data/raw/gcat_launches/launch.tsv": "72053523eab6c7e6f1d61604c953b9c37a05b3756e61ac1310a81574e1d9fe4e",
+    "data/raw/gcat_launches/sites.tsv": "102816bbe39defd0721255f1fec98ef10dd66c35d66c33e929d597df9f27c45b",
+    "data/raw/light_pollution/World_Atlas_2015.zip": "9c6a624427463c40717efbca7696e3c6bb0f332c26d1b039e7a91e0dbc831fbf",
+    "data/raw/light_pollution/extracted/README.txt": "7be5ecd05327c7bed42f383047e85d88af2b58dbb3e5b0d81b7d759cda8c2c02",
+    "data/raw/light_pollution/extracted/World_Atlas_2015.tif": "9725566ed4fcf1a8fa311654143bb024c4fe2a792b85356be99adce07e1e83c1",
+    "data/raw/light_pollution/extracted/World_Atlas_2015.tpk": "882830f77da39d8693dc8ade8124ad756dbf455584e5f9a6f115f78ee3af560a",
+    "data/raw/nlcd_2011/nlcd_2011_land_cover_l48_480m.tif": "8ef07de917b0ab5c01d4556f8cebeada5f5756bdf232b7cb9736c8ad04f5ad06",
+    "data/raw/nuforc/places.csv": "6fe1aff91fc019e29e0f0c6e88d66ca9b74df01550ed38e56ff2507ca79f80bf",
+    "data/raw/nuforc/ufo_sightings.csv": "ad72ebc6cd34001144e8bea85524d34390f8e12d13b352b184ed57557a980647",
+    "data/raw/place_population/place_population_0.csv": "e3508f5201465913476d4ddf91740f191f7977c9f2614a2a7e30b5fd22027934",
+    "data/raw/population/population_0": "38dd59c70ef8067a3d476b6f5039e60f288e2d492015525ba9711faffd12c418",
+    "data/raw/primary_roads/tl_2020_us_primaryroads.zip": "30ba1c46cc5a40305a8896a057f4f14dee7aec08f7dacea3e0fb68fec1cc172f",
+    "data/raw/rail/tl_2020_us_rails.zip": "86f1fed01c866ee6e2595e8f0f43288c11e45200e487841227ede8422b874521",
+    "data/raw/rivers/ne_10m_rivers_lake_centerlines.zip": "ded71b01870855ccfe19b51f2ec14c9bb48fae23c0e9f3c11974d426433b5c38",
+    "data/raw/rivers/ne_10m_rivers_north_america.zip": "7fbe85a2acbf1f3ef4361a16bb39677ad1ea86f888be1689f7a4caeafc7529e8",
+    "data/raw/sgmc/USGS_SGMC_Geodatabase.zip": "1a824a35e8ac86b3ef231e8ff1d877e790d7ec2357545bb810eeb0c28520dd1a",
+    "data/raw/sgmc/age_grid_v1_1km_3108.npz": "99a25b7a26f27755c97c585ad8904e45b0d161b10c21a25d3711ebd37455667a",
+    "data/raw/sgmc/unit_grid_v1_1km_3108.npz": "a8087920e5f0adb82db54f3fe97d118beff049ea72db889f0d7b307691cf1de6"
+   },
+   "settings": {}
+  },
+  "data": {
+   "reports": 74795,
+   "events": 69348,
+   "events_in_counties": 69333,
+   "cleaning": {
+    "raw_rows": 96429,
+    "undated": 0,
+    "outside_window": 14061,
+    "outside_conus": 7547,
+    "duplicates": 26,
+    "kept": 74795
+   }
+  },
+  "rule_counts": {
+   "nuforc_note": 2288,
+   "meteor_fireball": 1461,
+   "sky_lantern": 56,
+   "possible_only": 4980
+  },
+  "tests": {
+   "cenozoic": {
+    "verdict": "post hoc (no verdict)",
+    "power": NaN,
+    "p_bh": 0.8714234277905731,
+    "checks": {
+     "shift_test": {
+      "rate_ratio": 0.9941378517689947,
+      "p_value": 0.9154228855721394,
+      "n_events": 200,
+      "holds": false
+     }
+    },
+    "tiers": {
+     "all": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 0.9898482775873036,
+        "ci_low": 0.9204518939075307,
+        "ci_high": 1.0644767196719822,
+        "p_value": 0.7832128095710947
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 65589,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "filtered": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 0.9941378517689947,
+        "ci_low": 0.9258184091298207,
+        "ci_high": 1.0674988297638055,
+        "p_value": 0.871423427790573
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 62391,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "high_quality": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 0.9883607849756418,
+        "ci_low": 0.9269976037091123,
+        "ci_high": 1.0537859400812435,
+        "p_value": 0.7203482140697703
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 28944,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     }
+    }
+   },
+   "mesozoic": {
+    "verdict": "post hoc (no verdict)",
+    "power": NaN,
+    "p_bh": 0.45622531498256774,
+    "checks": {
+     "shift_test": {
+      "rate_ratio": 0.9671816032276661,
+      "p_value": 0.2537313432835821,
+      "n_events": 200,
+      "holds": false
+     }
+    },
+    "tiers": {
+     "all": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 0.9688228506080329,
+        "ci_low": 0.9007490306447182,
+        "ci_high": 1.0420413277474767,
+        "p_value": 0.3941655598088646
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 65589,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "filtered": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 0.9671816032276661,
+        "ci_low": 0.8996690381181691,
+        "ci_high": 1.0397604163178626,
+        "p_value": 0.3660744358797109
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 62391,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "high_quality": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 0.9600537897112271,
+        "ci_low": 0.9016947929349488,
+        "ci_high": 1.0221898655295705,
+        "p_value": 0.2026454255844744
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 28944,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     }
+    }
+   },
+   "paleozoic": {
+    "verdict": "post hoc (no verdict)",
+    "power": NaN,
+    "p_bh": 0.005058306088520028,
+    "checks": {
+     "shift_test": {
+      "rate_ratio": 1.1056349697513623,
+      "p_value": 0.004975124378109453,
+      "n_events": 200,
+      "holds": true
+     }
+    },
+    "tiers": {
+     "all": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 1.107174618332407,
+        "ci_low": 1.0435668430210032,
+        "ci_high": 1.1746594323856256,
+        "p_value": 0.0007446010643513864
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 65589,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "filtered": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 1.1056349697513623,
+        "ci_low": 1.04561371322029,
+        "ci_high": 1.169101620303209,
+        "p_value": 0.000421525507376669
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 62391,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "high_quality": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 1.1172423175114248,
+        "ci_low": 1.0582280778479851,
+        "ci_high": 1.1795476061991317,
+        "p_value": 6.227515382461794e-05
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 28944,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     }
+    }
+   },
+   "precambrian": {
+    "verdict": "post hoc (no verdict)",
+    "power": NaN,
+    "p_bh": 0.2324908178421674,
+    "checks": {
+     "shift_test": {
+      "rate_ratio": 0.9619848358670202,
+      "p_value": 0.0845771144278607,
+      "n_events": 200,
+      "holds": false
+     }
+    },
+    "tiers": {
+     "all": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 0.9634431520552601,
+        "ci_low": 0.9241960903867242,
+        "ci_high": 1.004356885835522,
+        "p_value": 0.0792449106272123
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 65589,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "filtered": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 0.9619848358670202,
+        "ci_low": 0.9214704356891622,
+        "ci_high": 1.0042805374933008,
+        "p_value": 0.07749693928072247
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 62391,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "high_quality": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 0.9697110298064524,
+        "ci_low": 0.9243259442873744,
+        "ci_high": 1.0173245564942592,
+        "p_value": 0.2085218464713775
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 28944,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     }
+    }
+   },
+   "cenozoic_unconsolidated": {
+    "verdict": "post hoc (no verdict)",
+    "power": NaN,
+    "p_bh": 0.45622531498256774,
+    "checks": {
+     "shift_test": {
+      "rate_ratio": 0.9750710393108716,
+      "p_value": 0.5472636815920398,
+      "n_events": 200,
+      "holds": false
+     }
+    },
+    "tiers": {
+     "all": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 0.9705069624217728,
+        "ci_low": 0.9155936864802003,
+        "ci_high": 1.0287136947503455,
+        "p_value": 0.3137594587970146
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 65589,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "filtered": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 0.9750710393108716,
+        "ci_low": 0.9216144995258111,
+        "ci_high": 1.0316282265437122,
+        "p_value": 0.38018776248547315
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 62391,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "high_quality": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 0.9668470469950082,
+        "ci_low": 0.911809550866997,
+        "ci_high": 1.0252066469298513,
+        "p_value": 0.2595434852924551
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 28944,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     }
+    }
+   },
+   "cenozoic_clastic": {
+    "verdict": "post hoc (no verdict)",
+    "power": NaN,
+    "p_bh": 0.8714234277905731,
+    "checks": {
+     "shift_test": {
+      "rate_ratio": 1.0059679848462102,
+      "p_value": 0.845771144278607,
+      "n_events": 200,
+      "holds": false
+     }
+    },
+    "tiers": {
+     "all": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 1.0053632604186955,
+        "ci_low": 0.9541302722084702,
+        "ci_high": 1.0593472556532275,
+        "p_value": 0.8411380242404073
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 65589,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "filtered": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 1.0059679848462102,
+        "ci_low": 0.953318085039408,
+        "ci_high": 1.0615256360039709,
+        "p_value": 0.8282515287868084
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 62391,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "high_quality": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 1.0107051959986129,
+        "ci_low": 0.9688228375152855,
+        "ci_high": 1.0543981352034109,
+        "p_value": 0.6219185656426581
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 28944,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     }
+    }
+   },
+   "cenozoic_volcanic": {
+    "verdict": "post hoc (no verdict)",
+    "power": NaN,
+    "p_bh": 0.45622531498256774,
+    "checks": {
+     "shift_test": {
+      "rate_ratio": 1.026876783612498,
+      "p_value": 0.4129353233830846,
+      "n_events": 200,
+      "holds": false
+     }
+    },
+    "tiers": {
+     "all": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 1.0294271878898995,
+        "ci_low": 0.9778371033446964,
+        "ci_high": 1.0837391335858788,
+        "p_value": 0.26890139524954026
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 65589,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "filtered": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 1.026876783612498,
+        "ci_low": 0.9739309430158323,
+        "ci_high": 1.082700920721447,
+        "p_value": 0.32611754676438454
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 62391,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "high_quality": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 1.0380391508198454,
+        "ci_low": 0.9798759474601932,
+        "ci_high": 1.099654789392164,
+        "p_value": 0.20445205007151335
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 28944,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     }
+    }
+   },
+   "mesozoic_unconsolidated": {
+    "verdict": "post hoc (no verdict)",
+    "power": NaN,
+    "p_bh": 0.008548525853495262,
+    "checks": {
+     "shift_test": {
+      "rate_ratio": 0.9690482483428083,
+      "p_value": 0.05970149253731343,
+      "n_events": 200,
+      "holds": false
+     }
+    },
+    "tiers": {
+     "all": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 0.9681354819154447,
+        "ci_low": 0.9495031473675652,
+        "ci_high": 0.9871334433616307,
+        "p_value": 0.001090549218081004
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 65589,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "filtered": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 0.9690482483428083,
+        "ci_low": 0.9497938144944142,
+        "ci_high": 0.9886930124051548,
+        "p_value": 0.0021371314633738155
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 62391,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "high_quality": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 0.9694632013221468,
+        "ci_low": 0.950432695928853,
+        "ci_high": 0.9888747543551897,
+        "p_value": 0.0021694579096643426
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 28944,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     }
+    }
+   },
+   "mesozoic_clastic": {
+    "verdict": "post hoc (no verdict)",
+    "power": NaN,
+    "p_bh": 0.2935214186050476,
+    "checks": {
+     "shift_test": {
+      "rate_ratio": 0.9611634287900764,
+      "p_value": 0.25870646766169153,
+      "n_events": 200,
+      "holds": false
+     }
+    },
+    "tiers": {
+     "all": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 0.9631834668888275,
+        "ci_low": 0.9113238016991376,
+        "ci_high": 1.0179942509547855,
+        "p_value": 0.18404728410264948
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 65589,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "filtered": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 0.9611634287900764,
+        "ci_low": 0.9081460763056611,
+        "ci_high": 1.017275921734594,
+        "p_value": 0.1712208275196111
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 62391,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "high_quality": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 0.9701988198076427,
+        "ci_low": 0.910592002603458,
+        "ci_high": 1.0337074642264907,
+        "p_value": 0.34968609924826777
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 28944,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     }
+    }
+   },
+   "paleozoic_clastic": {
+    "verdict": "post hoc (no verdict)",
+    "power": NaN,
+    "p_bh": 0.2935214186050476,
+    "checks": {
+     "shift_test": {
+      "rate_ratio": 1.0334140531129143,
+      "p_value": 0.21890547263681592,
+      "n_events": 200,
+      "holds": false
+     }
+    },
+    "tiers": {
+     "all": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 1.0361499943107386,
+        "ci_low": 0.9912673497851235,
+        "ci_high": 1.0830648370925045,
+        "p_value": 0.11600645697028374
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 65589,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "filtered": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 1.0334140531129143,
+        "ci_low": 0.9904386418019954,
+        "ci_high": 1.0782541796110179,
+        "p_value": 0.12935619969426132
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 62391,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "high_quality": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 1.0194738001315953,
+        "ci_low": 0.9785099008495939,
+        "ci_high": 1.0621525937063665,
+        "p_value": 0.35666931468294805
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 28944,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     }
+    }
+   },
+   "paleozoic_carbonate": {
+    "verdict": "post hoc (no verdict)",
+    "power": NaN,
+    "p_bh": 0.005223810921704147,
+    "checks": {
+     "shift_test": {
+      "rate_ratio": 1.0358656766178873,
+      "p_value": 0.12437810945273632,
+      "n_events": 200,
+      "holds": false
+     }
+    },
+    "tiers": {
+     "all": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 1.033890434012849,
+        "ci_low": 1.0124807286186794,
+        "ci_high": 1.055752864552405,
+        "p_value": 0.00179789999149219
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 65589,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "filtered": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 1.0358656766178873,
+        "ci_low": 1.0145986774939664,
+        "ci_high": 1.0575784532317354,
+        "p_value": 0.0008706351536173578
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 62391,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "high_quality": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 1.0495885702085919,
+        "ci_low": 1.013892133416392,
+        "ci_high": 1.086541783296477,
+        "p_value": 0.006116909658757548
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 28944,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     }
+    }
+   },
+   "precambrian_crystalline_metamorphic": {
+    "verdict": "post hoc (no verdict)",
+    "power": NaN,
+    "p_bh": 0.2935214186050476,
+    "checks": {
+     "shift_test": {
+      "rate_ratio": 0.9621083680999042,
+      "p_value": 0.13930348258706468,
+      "n_events": 200,
+      "holds": false
+     }
+    },
+    "tiers": {
+     "all": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 0.9632729170402026,
+        "ci_low": 0.9150860839018283,
+        "ci_high": 1.0139971845563405,
+        "p_value": 0.15297850314418573
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 65589,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "filtered": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 0.9621083680999042,
+        "ci_low": 0.912908719453199,
+        "ci_high": 1.0139595473710612,
+        "p_value": 0.14920808579484035
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 62391,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     },
+     "high_quality": {
+      "terms": [
+       {
+        "term": "exposed",
+        "rate_ratio": 0.9671311073709241,
+        "ci_low": 0.9120455193114367,
+        "ci_high": 1.025543746490484,
+        "p_value": 0.26400281832933026
+       }
+      ],
+      "n_strata": 3100,
+      "n_events": 28944,
+      "exposed_share": NaN,
+      "dispersion": NaN
+     }
+    }
+   }
+  }
+ },
+ "fingerprint": {
+  "reports": {
+   "count": 74795,
+   "sha256": "1522944e88be294a51fdbbbc2762a8514d945fe52130ff9aad31fa39208bf99a"
+  },
+  "events": {
+   "count": 69333,
+   "columns": [
+    "event_id",
+    "geoid",
+    "night",
+    "in_filtered",
+    "in_high_quality"
+   ],
+   "sha256": "dbc6ccb51b1906e48067c81d1386ce7d65d98a10b2f4e766ca4c30143e7060c2"
+  },
+  "county_counts": {
+   "counties": 2656,
+   "sha256": "4f017fda68620d78f3dfed2e3c5425852a15dd46523c6fb0acacd9c520b4d63d"
+  }
+ },
+ "inputs": {
+  "data/raw/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "data/raw/acs_college/acsdt5y2021-b14001.dat": "1035e1fcc6216e374c71c1c4a9fb6e22f78010d86beabd9f2a09ae0c3906a34c",
+  "data/raw/acs_housing/acsdt5y2021-b25001.dat": "ddc83069353064aee56b4fb58df7bdc04ea9c01307def64028d2aeb9424dcf75",
+  "data/raw/acs_housing/acsdt5y2021-b25004.dat": "0a6ebcf71d078820e3883ad3b480db4c15ab868e797fa677e1a1645169b91589",
+  "data/raw/airports/airports.csv": "73b5022692ba9739ba61b66e1f82ea1410597991c64a9274c5d40e3753b72664",
+  "data/raw/coastline/ne_10m_coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017",
+  "data/raw/counties/cb_2020_us_county_500k.zip": "1a45c87a5a0c322514c9d5c9ebcba5eb9df313bd38962f6db56107ba0ccacc6f",
+  "data/raw/elevation/elevation_1KMmd_GMTEDmd.tif": "95fed346b8bb25ca67c59b9d8c8e110f4856eb51401e5cc0011b73cba7e3e02b",
+  "data/raw/gazetteer_places/2020_Gaz_place_national.zip": "6e5745b3e1adf7a1e024a988301d484697e2a0f25b3cf10114eef676f09d5c18",
+  "data/raw/gcat_launches/launch.tsv": "72053523eab6c7e6f1d61604c953b9c37a05b3756e61ac1310a81574e1d9fe4e",
+  "data/raw/gcat_launches/sites.tsv": "102816bbe39defd0721255f1fec98ef10dd66c35d66c33e929d597df9f27c45b",
+  "data/raw/light_pollution/World_Atlas_2015.zip": "9c6a624427463c40717efbca7696e3c6bb0f332c26d1b039e7a91e0dbc831fbf",
+  "data/raw/light_pollution/extracted/README.txt": "7be5ecd05327c7bed42f383047e85d88af2b58dbb3e5b0d81b7d759cda8c2c02",
+  "data/raw/light_pollution/extracted/World_Atlas_2015.tif": "9725566ed4fcf1a8fa311654143bb024c4fe2a792b85356be99adce07e1e83c1",
+  "data/raw/light_pollution/extracted/World_Atlas_2015.tpk": "882830f77da39d8693dc8ade8124ad756dbf455584e5f9a6f115f78ee3af560a",
+  "data/raw/nlcd_2011/nlcd_2011_land_cover_l48_480m.tif": "8ef07de917b0ab5c01d4556f8cebeada5f5756bdf232b7cb9736c8ad04f5ad06",
+  "data/raw/nuforc/places.csv": "6fe1aff91fc019e29e0f0c6e88d66ca9b74df01550ed38e56ff2507ca79f80bf",
+  "data/raw/nuforc/ufo_sightings.csv": "ad72ebc6cd34001144e8bea85524d34390f8e12d13b352b184ed57557a980647",
+  "data/raw/place_population/place_population_0.csv": "e3508f5201465913476d4ddf91740f191f7977c9f2614a2a7e30b5fd22027934",
+  "data/raw/population/population_0": "38dd59c70ef8067a3d476b6f5039e60f288e2d492015525ba9711faffd12c418",
+  "data/raw/primary_roads/tl_2020_us_primaryroads.zip": "30ba1c46cc5a40305a8896a057f4f14dee7aec08f7dacea3e0fb68fec1cc172f",
+  "data/raw/rail/tl_2020_us_rails.zip": "86f1fed01c866ee6e2595e8f0f43288c11e45200e487841227ede8422b874521",
+  "data/raw/rivers/ne_10m_rivers_lake_centerlines.zip": "ded71b01870855ccfe19b51f2ec14c9bb48fae23c0e9f3c11974d426433b5c38",
+  "data/raw/rivers/ne_10m_rivers_north_america.zip": "7fbe85a2acbf1f3ef4361a16bb39677ad1ea86f888be1689f7a4caeafc7529e8",
+  "data/raw/sgmc/USGS_SGMC_Geodatabase.zip": "1a824a35e8ac86b3ef231e8ff1d877e790d7ec2357545bb810eeb0c28520dd1a",
+  "data/raw/sgmc/age_grid_v1_1km_3108.npz": "99a25b7a26f27755c97c585ad8904e45b0d161b10c21a25d3711ebd37455667a",
+  "data/raw/sgmc/unit_grid_v1_1km_3108.npz": "a8087920e5f0adb82db54f3fe97d118beff049ea72db889f0d7b307691cf1de6"
+ }
+}

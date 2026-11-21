@@ -2,31 +2,39 @@
   {
     "hypothesis": "H-launch-01",
     "split": "confirm",
-    "ok": false,
+    "ok": true,
     "error": null,
-    "seconds": 22.9,
-    "fingerprint": "missing",
-    "differences": [
-      "tests.twilight.tiers.all.dispersion: committed '<missing>', now 1.33077254505626",
-      "tests.twilight.tiers.filtered.dispersion: committed '<missing>', now 1.3253510703500386",
-      "tests.twilight.tiers.high_quality.dispersion: committed '<missing>', now 1.264613397204841"
+    "seconds": 30.7,
+    "fingerprint": "recorded",
+    "against": "registered result",
+    "added": [
+      "tests.twilight.tiers.all.dispersion",
+      "tests.twilight.tiers.filtered.dispersion",
+      "tests.twilight.tiers.high_quality.dispersion"
     ],
-    "n_differences": 3,
+    "n_added": 3,
+    "inputs_changed": [],
+    "differences": [],
+    "n_differences": 0,
     "fingerprint_differences": []
   },
   {
     "hypothesis": "H-launch-01",
     "split": "explore",
-    "ok": false,
+    "ok": true,
     "error": null,
-    "seconds": 21.1,
-    "fingerprint": "missing",
-    "differences": [
-      "tests.twilight.tiers.all.dispersion: committed '<missing>', now 1.2596880184333354",
-      "tests.twilight.tiers.filtered.dispersion: committed '<missing>', now 1.2549874929928118",
-      "tests.twilight.tiers.high_quality.dispersion: committed '<missing>', now 1.1694438595585321"
+    "seconds": 28.2,
+    "fingerprint": "recorded",
+    "against": "registered result",
+    "added": [
+      "tests.twilight.tiers.all.dispersion",
+      "tests.twilight.tiers.filtered.dispersion",
+      "tests.twilight.tiers.high_quality.dispersion"
     ],
-    "n_differences": 3,
+    "n_added": 3,
+    "inputs_changed": [],
+    "differences": [],
+    "n_differences": 0,
     "fingerprint_differences": []
   }
 ]
