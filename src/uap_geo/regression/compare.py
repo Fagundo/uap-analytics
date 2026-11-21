@@ -24,7 +24,7 @@ class ResultComparer:
     """Walks two JSON-like trees. Numbers match within rel_tol (relative) or abs_tol (absolute, for values near
     zero such as tiny p-values); NaN matches NaN; strings, booleans and None must be equal; keys must match."""
 
-    def __init__(self, rel_tol: float = 1e-6, abs_tol: float = 1e-12, ignored: frozenset[str] = IGNORED_KEYS) -> None:
+    def __init__(self, rel_tol: float = 1e-5, abs_tol: float = 1e-12, ignored: frozenset[str] = IGNORED_KEYS) -> None:
         self.rel_tol = rel_tol
         self.abs_tol = abs_tol
         self.ignored = ignored

@@ -50,14 +50,17 @@ jobs:
           enable-cache: true
       - run: uv sync
         if: steps.pick.outputs.run == 'true'
-      # Raw inputs are pinned per hypothesis: the rebaseline run saves exactly the files it used, and later
-      # runs restore that cache and never re-download them (live sources change: airports, quakes, volcanoes).
+      # Raw inputs are pinned per hypothesis: each rebaseline run saves exactly the files it used under a new
+      # key, and later runs restore the newest such cache and never re-download them (live sources change: airports, quakes, volcanoes).
       - uses: actions/cache/restore@v4
         if: steps.pick.outputs.run == 'true'
         with:
           path: data/raw
-          key: regression-raw-${{ matrix.hypothesis }}-v1
-          restore-keys: raw-
+          key: regression-raw-${{ matrix.hypothesis }}-v2-none
+          restore-keys: |
+            regression-raw-${{ matrix.hypothesis }}-v2-
+            regression-raw-${{ matrix.hypothesis }}-v1
+            raw-
       - uses: actions/cache/restore@v4
         if: steps.pick.outputs.run == 'true'
         with:
@@ -79,7 +82,7 @@ jobs:
         if: always() && steps.pick.outputs.run == 'true' && inputs.rebaseline
         with:
           path: data/raw
-          key: regression-raw-${{ matrix.hypothesis }}-v1
+          key: regression-raw-${{ matrix.hypothesis }}-v2-${{ github.run_id }}   # caches can't be overwritten; newest wins on restore
       - uses: actions/upload-artifact@v4
         if: always() && steps.pick.outputs.run == 'true'
         with:

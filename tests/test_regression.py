@@ -74,3 +74,17 @@ def test_nuforc_reference_canonical_form():
     fp = fingerprint(rows)
     assert fp["rows"] == 1 and fp["rows_by_utc_year"] == {"2011": 1} and set(fp["fields"]) == {
         "occurred_utc", "local_time", "lat", "lon", "duration_s", "state", "city"}
+
+
+def test_changed_raw_file_alone_is_a_warning():
+    from uap_geo.regression.runner import RunCheck, summary_markdown
+    check = RunCheck("H-x", "confirm", fingerprint="match", inputs_changed=["data/raw/a.csv"])
+    assert check.ok
+    md = summary_markdown([check.as_dict()])
+    assert "same, raw differs" in md and "raw input changed: data/raw/a.csv" in md
+
+
+def test_tolerance_absorbs_refit_noise():
+    from uap_geo.regression.compare import ResultComparer
+    assert ResultComparer().compare({"p": 4.878239931526553e-07}, {"p": 4.878253435809939e-07}) == []
+    assert ResultComparer().compare({"p": 1.0}, {"p": 1.0001})

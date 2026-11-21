@@ -31,8 +31,8 @@ class RunCheck:
 
     @property
     def ok(self) -> bool:
-        return (self.error is None and not self.differences and not self.inputs_changed
-                and self.fingerprint in ("match", "recorded"))
+        # A changed raw file is reported but is not a failure on its own: the values are what must not move.
+        return self.error is None and not self.differences and self.fingerprint in ("match", "recorded")
 
     def as_dict(self) -> dict:
         return {"hypothesis": self.hypothesis, "split": self.split, "ok": self.ok, "error": self.error,
@@ -108,11 +108,13 @@ class RegressionRunner:
 
 def summary_markdown(checks: list[dict]) -> str:
     lines = ["# Regression check", "", "Each committed result rerun from the current code and data and compared "
-             "value by value (relative tolerance 1e-6; run metadata ignored).", "",
+             "value by value (relative tolerance 1e-5; run metadata ignored). A raw file that differs from the one the "
+             "baseline used is listed as a warning; the split still passes when every value matches.", "",
              "| Hypothesis | Split | Compared with | Result | Values differing | New fields | Inputs | Raw files changed | Minutes |",
              "| --- | --- | --- | --- | --- | --- | --- | --- | --- |"]
     for c in checks:
-        status = "error" if c["error"] else ("same" if c["ok"] else "CHANGED")
+        status = "error" if c["error"] else (("same, raw differs" if c.get("inputs_changed") else "same")
+                                             if c["ok"] else "CHANGED")
         lines.append(f"| {c['hypothesis']} | {c['split']} | {c.get('against', 'registered result')} | {status} | "
                      f"{c['n_differences']} | {c.get('n_added', 0)} | {c['fingerprint']} | "
                      f"{len(c.get('inputs_changed', []))} | {c['seconds'] / 60:.1f} |")

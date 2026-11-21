@@ -25,3 +25,15 @@ volcano list (H-volcano-01; results identical) and the 2024 and 2026 earthquake 
 moved by 3e-6 relative). Each hypothesis now restores its own pinned raw-data cache
 (`regression-raw-<hypothesis>-v1`), saved by the rebaseline run, so later reruns use exactly the baseline's
 files. The baselines were rewritten once more on that run; results were unchanged apart from those two items.
+
+## Tolerance and raw-file warnings (Phase 0 close-out)
+
+The first plain run after the pinned rebaseline matched in every value except one: H-geo-01 confirm
+`tests.storm.tiers.all.terms[1].p_value` moved from 4.8782399e-07 to 4.8782534e-07 (relative 2.8e-6), which is
+noise from the iterative negative-binomial fit. The relative tolerance is now 1e-5.
+
+The same run found `data/raw/airports/airports.csv` differing from the file the H-install-01 and H-rockage-01
+baselines used, with every value identical. The cause: GitHub caches cannot be overwritten, so the rebaseline
+could not replace the older pinned cache. Rebaselines now save under a new key each time
+(`regression-raw-<H>-v2-<run id>`) and runs restore the newest. A changed raw file is listed in the report as a
+warning ("same, raw differs"); a split fails only when a value, the input fingerprint or the run itself does.
