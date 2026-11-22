@@ -1,0 +1,61 @@
+import pandas as pd
+import pytest
+
+from uap_geo.data.scraping.census_history import mean_population, parse_cencounts, to_current_counties
+
+
+def test_cencounts_parser_carries_1990_counties_to_today():
+    raw = pd.DataFrame({
+        "fips": ["1000", "12025", "51083", "51780", "08013", "30113"],
+        "name": ["Alabama", "Dade", "Halifax", "South Boston", "Boulder", "Yellowstone NP"],
+        "pop1990": ["4040587", "1937094", "29033", "6997", "225339", "52"],
+        "pop1980": ["3893888", "1625781", "30599", "7093", "189625", "275"],
+        "pop1950": ["3061743", "495084", "41442", "", "48296", "0"]})
+    long = to_current_counties(parse_cencounts(raw))
+    assert "01000" not in set(long["geoid"])                              # state row dropped
+    assert "12086" in set(long["geoid"]) and "12025" not in set(long["geoid"])
+    assert "30113" not in set(long["geoid"])
+    halifax = long.loc[(long["geoid"] == "51083") & (long["year"] == 1990), "population"].item()
+    assert halifax == 29033 + 6997                                         # South Boston merged in
+    m = mean_population(long, (1950, 1980, 1990)).set_index("geoid")
+    assert m.loc["08013", "censuses"] == 3 and m.loc["08013", "population_hist"] == pytest.approx((48296 + 189625 + 225339) / 3)
+
+
+def _rows():
+    base = {"date_precision": "day", "lat": 40.0, "lon": -80.0, "coord_precision": "town", "country": "USA",
+            "state": "PA", "flags": (), "strangeness": 6.0, "credibility": 7.0, "dedup_group": None,
+            "explanation_tier": "residual"}
+    rows = [
+        {**base, "sighting_id": "hatch:1", "date": "1965-08-02"},
+        {**base, "sighting_id": "hatch:2", "date": "1965-08-02", "dedup_group": "grp:a"},
+        {**base, "sighting_id": "hatch:3", "date": "1965-08-02", "dedup_group": "grp:a"},       # same case
+        {**base, "sighting_id": "hatch:4", "date": "1966-01-01", "flags": ("HOX",)},           # hoax
+        {**base, "sighting_id": "hatch:5", "date": "1949-12-31"},                               # before
+        {**base, "sighting_id": "hatch:6", "date": "1970-01-01", "state": "AK"},                # not CONUS
+        {**base, "sighting_id": "hatch:7", "date": "1970-01-01", "country": "France", "state": None},
+        {**base, "sighting_id": "hatch:8", "date": "1970-01-01", "lat": None},
+        {**base, "sighting_id": "hatch:9", "date": "1971-01-01", "explanation_tier": "explained", "strangeness": 9.0},
+    ]
+    frame = pd.DataFrame(rows)
+    frame["date"] = pd.to_datetime(frame["date"])
+    return frame
+
+
+def test_record_selection_and_tiers():
+    pytest.importorskip("geopandas")
+    from uap_geo.hypotheses.hatch_paleozoic import select_records
+
+    records, steps = select_records(_rows(), (1950, 1999), 8)
+    assert records["sighting_id"].tolist() == ["hatch:1", "hatch:2", "hatch:9"]
+    assert steps["one per duplicate group"] == 3 and steps["not flagged as a hoax"] == 4
+    assert records.set_index("sighting_id")["in_filtered"].to_dict() == {"hatch:1": True, "hatch:2": True, "hatch:9": False}
+    assert records["in_high_strangeness"].tolist() == [False, False, True]
+
+
+def test_spec_is_a_draft_until_registered():
+    import yaml
+    from pathlib import Path
+    root = Path(__file__).resolve().parents[1]
+    spec = yaml.safe_load((root / "hypotheses" / "H-hatchpal-01.yaml").read_text())
+    assert spec["splits"] == {"explore": [1950, 1959], "confirm": [1960, 1999]}
+    assert spec["primary_tier"] == "filtered"

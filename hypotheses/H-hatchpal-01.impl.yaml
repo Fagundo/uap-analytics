@@ -1,0 +1,48 @@
+# Implementation choices for H-hatchpal-01, fixed before any confirm run.
+# Registered together with the spec and filters; a confirm run refuses to start if any changes.
+hypothesis: H-hatchpal-01
+notes:
+  records: >
+    uap-data export pinned in configs/pursue_export.yaml, public sightings table, source "hatch". The record's
+    year is the year of date_start. County: the county polygon containing the record's point (EPSG:5070);
+    points in no county are left out and counted.
+  grid: as H-rockera-01 (SGMC rasterized at 1 km; era by unit midpoint age; units need an age and a rock type).
+  population: >
+    Mean of the 1950, 1960, 1970, 1980 and 1990 census counts per county, over the censuses the county has;
+    1990 counties carried onto today's (Dade -> Miami-Dade, Shannon -> Oglala Lakota; South Boston, Clifton
+    Forge and Bedford city added to the counties that absorbed them). Counties with no history (Broomfield,
+    CO) are left out.
+  removals_and_controls: >
+    No nights are removed (Hatch dates are often approximate). Controls: the H-persist-01 set, today's values.
+  shift_test: as H-rockera-01 (rotate up to 20 degrees, shift up to 400 km, 200 copies, seed 42, two-sided).
+  power: >
+    Two-sided, for rate ratio 1.10 or 1/1.10 at alpha 0.05, from the explore-period standard error of the
+    Paleozoic term (state-clustered), not scaled for the confirm split's record count.
+  verdict: >
+    Confirmed: p < 0.05 in the filtered tier and the shift test holds (replicates if above 1, opposite if
+    below). Underpowered: power < 0.50. Refuted: power >= 0.80 and the 95% CI inside (1/1.10, 1.10).
+    Otherwise inconclusive. Explore runs get no verdict.
+
+parameters:
+  dedup: {km: 50, hours: 3}
+  quality: {min_reports: 2, min_duration_s: 300}
+  hatch_paleozoic:
+    cell_km: 1
+    high_strangeness_min: 8
+    population_censuses: [1950, 1960, 1970, 1980, 1990]
+    holiday_nights: []
+    covariates: [light_pollution, airports_per_km2, places_per_km2, primary_road_length_per_km2,
+                 rail_length_per_km2, elevation_relief_m, dist_to_coast_km, river_length_per_km2,
+                 seasonal_housing_share, college_enrolled_share]
+    covariate_sources: [light_pollution, airports, gazetteer_places, primary_roads, rail, elevation, coastline, rivers,
+                        acs_housing, acs_college]
+    fixed_effects: [state_fips]
+    cluster: state_fips
+    max_shift_km: 400
+    max_rotate_deg: 20
+    shift_trials: 200
+    seed: 42
+    min_cross_share: 0.02
+    joint_models:
+      Paleozoic split by carbonate: [share_paleozoic_carbonate, share_paleozoic_noncarbonate]
+  power: {rate_ratio: 1.10, alpha: 0.05, underpowered_below: 0.50, refute_requires: 0.80}

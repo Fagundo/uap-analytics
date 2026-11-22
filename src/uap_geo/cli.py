@@ -191,7 +191,8 @@ STUDIES = {"H-geo-01": "uap_geo.hypotheses.geo_triggers:GeoTriggerStudy",
            "H-volcano-01": "uap_geo.hypotheses.proximity:VolcanoStudy",
            "H-rockage-01": "uap_geo.hypotheses.rock_age:RockAgeStudy",
            "H-rocktype-01": "uap_geo.hypotheses.rock_type:RockTypeStudy",
-           "H-rockera-01": "uap_geo.hypotheses.rock_era:RockEraStudy"}
+           "H-rockera-01": "uap_geo.hypotheses.rock_era:RockEraStudy",
+           "H-hatchpal-01": "uap_geo.hypotheses.hatch_paleozoic:HatchPaleozoicStudy"}
 DIAGNOSTICS = {"H-geo-01": "uap_geo.hypotheses.diagnostics:DiagnosticsReport",
                "H-rockera-01": "uap_geo.hypotheses.diagnostics_era:StateEraDiagnostics",
                "H-rockera-01/land_use": "uap_geo.hypotheses.diagnostics_era:LandUseEraDiagnostics"}

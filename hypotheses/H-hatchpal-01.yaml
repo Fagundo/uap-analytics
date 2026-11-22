@@ -1,0 +1,84 @@
+# DRAFT, not registered. Registration (hypothesis register) records this file's hash after Michael reviews it and
+# after the explore run (1950-1959); the confirm split (1960-1999) is not run before then.
+#
+# Seen before writing: only counts of Hatch records by decade, coordinate precision, date precision, flags and
+# the Strangeness/Credibility scales (to size the study and pick the tiers). No Hatch record was placed on a map,
+# assigned to a county or compared with geology.
+id: H-hatchpal-01
+title: Paleozoic surface rock in an independent catalog (Hatch UFO database, 1950-1999)
+status: draft
+registered: null
+claim: >
+  Counties with more Paleozoic surface rock have more Hatch UFO records, per person, beyond the observer
+  controls, as NUFORC reports showed for 2001-2023 (H-rockera-01, post hoc: 1.106 per SD, layer-shift p 0.005).
+  Tested two-sided; a confirmed effect in the opposite direction counts against the NUFORC finding.
+origin: >
+  Planned in the data refactor (Phase 5): the Paleozoic association was found post hoc in NUFORC; Hatch is an
+  older catalog compiled independently of NUFORC, never used for geology here.
+prior_use_of_the_data: >
+  PURSUE (now uap-data) used Hatch records in its secret-programs shuffle test (whether reports cluster near
+  program sites in time); that test never touched geology, counties or population. Disclosed so a reader can
+  weigh it.
+literature:
+  - "H-rockage-01 (registered, NUFORC): surface age refuted as a monotone trend; Paleozoic share was a secondary lead."
+  - "H-rocktype-01 (registered, NUFORC): carbonate share confirmed, 1.062 per SD."
+  - "H-rockera-01 (post hoc, NUFORC): Paleozoic share 1.106 per SD; survived land-use controls at 1.107; 2021-2023 alone 1.008."
+
+data:
+  records: >
+    Larry Hatch's *U* UFO database (richgel999/ufo_data conversion) as published in uap-data's combined export,
+    public tier (facts only: date, coordinates, flags, ratings)
+  geology: USGS State Geologic Map Compilation v1.1 (as H-rockera-01)
+  population: county population by decennial census 1900-1990 (Census Bureau, R. L. Forstall; NBER CSV)
+  covariates: as H-persist-01 (today's values), state fixed effects
+
+unit: county x period
+outcome: Hatch records per county in the period
+record_selection: >
+  U.S. records in the contiguous states with coordinates, dated (by the record's start date) within the
+  split, not flagged as a hoax (HOX), counted once per cross-source duplicate group (the export links copies
+  of one case across catalogs; the record with the lowest id is kept).
+outcome_tiers:
+  all: every selected record
+  filtered: records not explained at high confidence by uap-data's explanation flags (primary)
+  high_strangeness: records with Hatch Strangeness 8 or more (secondary)
+primary_tier: filtered
+exposure: >
+  The county's share of 1 km cells on a surface unit whose midpoint age is Paleozoic (251.9-538.8 Ma), among
+  its cells with both an age and a rock type, as H-rockera-01 computes it; standardized (rate ratio per SD).
+model: >
+  negative binomial rate model, offset log(mean population over the 1950-1990 censuses x days in the period),
+  H-persist-01 controls, state fixed effects, standard errors clustered by state, plus the exposure
+
+tests:
+  paleozoic:
+    exposure: Paleozoic share of surface rock (per SD)
+    prediction: rate_ratio != 1 (two-sided; the NUFORC direction was > 1)
+    discriminating_checks:
+      - "layer-shift test: the real map's |log rate ratio| exceeds that of rigidly rotated (up to 20 degrees)
+        and shifted (up to 400 km) copies of the map, two-sided p < 0.05 over 200 copies"
+secondary:
+  - "the same test in the high-strangeness tier; descriptive"
+  - "Paleozoic carbonate against other Paleozoic rock (joint model); descriptive"
+  - "the estimate by decade within the split; descriptive"
+
+splits:
+  explore: [1950, 1959]   # pipeline check and power only
+  confirm: [1960, 1999]
+
+multiple_testing: none needed (one primary test)
+smallest_effect_of_interest: 1.10   # rate ratio per SD, either direction
+decision_rules:
+  confirmed: >
+    two-sided p < 0.05 in the filtered tier on the confirm split and the shift test holds; "replicates" if the
+    rate ratio is above 1, "opposite direction" if below
+  refuted: power >= 0.80 and the 95% confidence interval lies inside (1/1.10, 1.10)
+  underpowered: power < 0.50
+
+limits: >
+  Hatch is one compiler's collection from press, NICAP, Blue Book and other files, so where records come from
+  follows what was reported, published and collected, not only what was seen. Coordinates are those the
+  catalog gives (many at town level). The controls are today's (light pollution, roads, airports, census
+  shares), an approximation for 1950-1999; the offset uses the period's population. A replication of the
+  NUFORC association in independent data strengthens it as a pattern in reporting; it would not identify a
+  mechanism (Paleozoic rock tracks landscape and settlement history).

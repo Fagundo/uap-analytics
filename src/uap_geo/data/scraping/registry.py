@@ -90,6 +90,11 @@ class SourceRegistry:
     def counties(self) -> CountySource:
         return CountySource(self._config.source("counties"), self._dl)
 
+    def historical_population(self, years: tuple[int, ...]):
+        """Mean county population over the given censuses (1900-1990), on today's county ids."""
+        from uap_geo.data.scraping.census_history import HistoricalPopulationSource
+        return HistoricalPopulationSource(self._config.source("hist_population"), self._dl, years)
+
     def population(self) -> PopulationSource:
         return PopulationSource(self._config.source("population"), self._dl)
 

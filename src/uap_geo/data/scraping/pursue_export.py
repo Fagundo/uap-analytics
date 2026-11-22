@@ -194,6 +194,22 @@ class ExportTables:
             keep &= out["mag"] >= min_magnitude     # as uap-geo's loader does (ComCat returns a few below it)
         return out.loc[keep].sort_values("time", kind="stable").reset_index(drop=True)
 
+    def catalog(self, source: str) -> pd.DataFrame:
+        """Public-tier rows of one outside catalog (e.g. 'hatch'): facts only, no narrative text."""
+        rows = self.export.table("sightings.csv")
+        rows = rows.loc[rows["source"] == source]
+        ratings = rows["ratings"].map(lambda r: json.loads(r or "{}"))
+        return pd.DataFrame({
+            "sighting_id": rows["sighting_id"], "date": pd.to_datetime(rows["date_start"], errors="coerce"),
+            "date_precision": rows["date_precision"], "lat": _num(rows["lat"]).astype(float),
+            "lon": _num(rows["lon"]).astype(float), "coord_precision": rows["coord_precision"],
+            "country": _na(rows["country"]), "state": _na(rows["state"]),
+            "flags": rows["flags"].map(lambda f: tuple(json.loads(f or "[]"))),
+            "strangeness": pd.to_numeric(ratings.map(lambda r: r.get("Strangeness")), errors="coerce"),
+            "credibility": pd.to_numeric(ratings.map(lambda r: r.get("Credibility")), errors="coerce"),
+            "dedup_group": _na(rows["dedup_group"]), "explanation_tier": _na(rows["explanation_tier"]),
+        }).reset_index(drop=True)
+
     def explanations(self) -> pd.DataFrame:
         rows = self.export.nuforc_rows()
         return pd.DataFrame({"report_id": rows["sighting_id"].str.split(":").str[1],
