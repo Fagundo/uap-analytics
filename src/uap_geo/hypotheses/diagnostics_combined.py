@@ -91,6 +91,7 @@ class CombinedPanelDiagnostics:
             rows.append(part)
         panel = pd.concat(rows)
         panel["state_decade"] = panel["state_fips"].astype(str) + "_" + panel["decade"].astype(str)
+        panel.index = pd.Index(panel.index.astype(str) + "_" + panel["decade"].astype(str), name="county_decade")
         return panel
 
     def _fit(self, data: pd.DataFrame, exposure: str, fixed: tuple[str, ...]):
@@ -133,7 +134,7 @@ class CombinedPanelDiagnostics:
                     continue
                 panel = self._panel(table, pop, recs)
                 cells = []
-                cross = panel.groupby(level=0).agg({"report_count": "sum", "population": "sum"})
+                cross = panel.groupby(panel.index.str[:5]).agg({"report_count": "sum", "population": "sum"})
                 cross = table.drop(columns=["population"]).join(cross)
                 for data, fixed in ((cross, ("state_fips",)), (panel, ("state_fips", "decade")), (panel, ("state_decade",))):
                     try:

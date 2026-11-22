@@ -78,4 +78,4 @@ def test_combined_selection_and_panel():
     recs = combined.assign(geoid="42001")
     panel = CombinedPanelDiagnostics(None)._panel(table, pop, recs)
     assert len(panel) == 16 and panel.loc[panel["decade"] == 1960, "report_count"].tolist() == [2, 0]
-    assert panel["state_decade"].iloc[0] == "42_1950"
+    assert panel["state_decade"].iloc[0] == "42_1950" and panel.index.is_unique and panel.index[0] == "42001_1950"
