@@ -78,12 +78,9 @@ sources:
   hist_population:            # county population by decennial census 1900-1990 (Census Bureau, R. Forstall; NBER CSV)
     urls:
       - https://data.nber.org/census/population/cencounts/cencounts.csv
-  pop2000:                    # 2000 census county totals (SF1 P001001)
+  pop2000:                    # county 2000 census base and 2010 census (Census Bureau 2000-2010 intercensal file)
     urls:
-      - "https://api.census.gov/data/2000/dec/sf1?get=P001001&for=county:*&in=state:*"
-  pop2010:                    # 2010 census county totals (SF1 P001001)
-    urls:
-      - "https://api.census.gov/data/2010/dec/sf1?get=P001001&for=county:*&in=state:*"
+      - https://www2.census.gov/programs-surveys/popest/datasets/2000-2010/intercensal/county/co-est00int-tot.csv
   population:                 # tried in order; format detected from content
     urls:
       - https://www2.census.gov/programs-surveys/popest/datasets/2020-2023/counties/totals/co-est2023-alldata.csv

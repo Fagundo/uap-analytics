@@ -87,20 +87,21 @@ class HistoricalPopulationSource(DataSource):
 
 
 class DecennialApiPopulation(DataSource):
-    """One decennial census's county totals from the Census API (2000 and 2010 SF1, P001001), on today's ids."""
+    """County population at the 2000 and 2010 censuses from the Census Bureau's 2000-2010 intercensal county
+    file (co-est00int-tot.csv): ESTIMATESBASE2000 (the April 2000 census base) and CENSUS2010POP; on today's
+    county ids."""
+
+    COLUMNS = {2000: "ESTIMATESBASE2000", 2010: "CENSUS2010POP"}
 
     def __init__(self, config: SourceConfig, downloader: Downloader, year: int) -> None:
         super().__init__(config, downloader)
         self.year = year
 
     def load(self) -> pd.Series:
-        import json
-        path = self.downloader.fetch_url(self.name, self.config.urls[0], f"county_pop_{self.year}.json")
-        rows = json.loads(path.read_text())
-        head, body = rows[0], rows[1:]
-        frame = pd.DataFrame(body, columns=head)
-        value = next(c for c in head if c.startswith("P"))
-        long = pd.DataFrame({COUNTY_ID: (frame["state"] + frame["county"]).str.zfill(5), "year": self.year,
-                             "population": pd.to_numeric(frame[value], errors="coerce")})
+        path = self.downloader.fetch_url(self.name, self.config.urls[0], "co-est00int-tot.csv")
+        frame = pd.read_csv(path, dtype=str, encoding="latin-1")
+        frame = frame.loc[frame["COUNTY"].astype(int) != 0]
+        long = pd.DataFrame({COUNTY_ID: frame["STATE"].str.zfill(2) + frame["COUNTY"].str.zfill(3), "year": self.year,
+                             "population": pd.to_numeric(frame[self.COLUMNS[self.year]], errors="coerce")})
         out = to_current_counties(long)
         return out.set_index(COUNTY_ID)["population"].rename(self.year)

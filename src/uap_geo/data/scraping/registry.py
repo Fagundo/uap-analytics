@@ -98,7 +98,7 @@ class SourceRegistry:
     def census_population(self, year: int):
         """County totals of the 2000 or 2010 census (``load()`` -> Series by today's county id)."""
         from uap_geo.data.scraping.census_history import DecennialApiPopulation
-        return DecennialApiPopulation(self._config.source(f"pop{year}"), self._dl, year)
+        return DecennialApiPopulation(self._config.source("pop2000"), self._dl, year)
 
     def population(self) -> PopulationSource:
         return PopulationSource(self._config.source("population"), self._dl)
