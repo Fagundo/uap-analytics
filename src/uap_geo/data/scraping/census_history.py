@@ -71,6 +71,12 @@ class HistoricalPopulationSource(DataSource):
         super().__init__(config, downloader)
         self.years = tuple(years)
 
+    def by_census(self) -> pd.DataFrame:
+        """Today's county ids x census year (1900-1990) -> population."""
+        frame = pd.read_csv(self.downloader.fetch_url(self.name, self.config.urls[0], "cencounts.csv"), dtype=str)
+        long = to_current_counties(parse_cencounts(frame))
+        return long.pivot_table(index=COUNTY_ID, columns="year", values="population", aggfunc="sum")
+
     def load(self) -> pd.DataFrame:
         path = self.downloader.fetch_url(self.name, self.config.urls[0], "cencounts.csv")
         frame = pd.read_csv(path, dtype=str)
@@ -78,3 +84,23 @@ class HistoricalPopulationSource(DataSource):
         out = mean_population(to_current_counties(parse_cencounts(frame)), self.years)
         log.info("Historical population (%s): %d counties", "/".join(map(str, self.years)), len(out))
         return out
+
+
+class DecennialApiPopulation(DataSource):
+    """One decennial census's county totals from the Census API (2000 and 2010 SF1, P001001), on today's ids."""
+
+    def __init__(self, config: SourceConfig, downloader: Downloader, year: int) -> None:
+        super().__init__(config, downloader)
+        self.year = year
+
+    def load(self) -> pd.Series:
+        import json
+        path = self.downloader.fetch_url(self.name, self.config.urls[0], f"county_pop_{self.year}.json")
+        rows = json.loads(path.read_text())
+        head, body = rows[0], rows[1:]
+        frame = pd.DataFrame(body, columns=head)
+        value = next(c for c in head if c.startswith("P"))
+        long = pd.DataFrame({COUNTY_ID: (frame["state"] + frame["county"]).str.zfill(5), "year": self.year,
+                             "population": pd.to_numeric(frame[value], errors="coerce")})
+        out = to_current_counties(long)
+        return out.set_index(COUNTY_ID)["population"].rename(self.year)

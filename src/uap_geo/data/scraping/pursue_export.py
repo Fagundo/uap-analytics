@@ -194,13 +194,25 @@ class ExportTables:
             keep &= out["mag"] >= min_magnitude     # as uap-geo's loader does (ComCat returns a few below it)
         return out.loc[keep].sort_values("time", kind="stable").reset_index(drop=True)
 
+    def all_sightings(self) -> pd.DataFrame:
+        """Every source's rows as facts (no text): the public table plus the restricted-only sources (NUFORC,
+        Magonia). Same columns as catalog()."""
+        public = self.export.table("sightings.csv")
+        restricted = self.export.table("sightings_restricted.csv", restricted=True)
+        restricted = restricted.loc[~restricted["source"].isin(set(public["source"]))]
+        return self._facts(pd.concat([public, restricted[public.columns.intersection(restricted.columns)]],
+                                     ignore_index=True))
+
     def catalog(self, source: str) -> pd.DataFrame:
         """Public-tier rows of one outside catalog (e.g. 'hatch'): facts only, no narrative text."""
         rows = self.export.table("sightings.csv")
-        rows = rows.loc[rows["source"] == source]
+        return self._facts(rows.loc[rows["source"] == source])
+
+    @staticmethod
+    def _facts(rows: pd.DataFrame) -> pd.DataFrame:
         ratings = rows["ratings"].map(lambda r: json.loads(r or "{}"))
         return pd.DataFrame({
-            "sighting_id": rows["sighting_id"], "date": pd.to_datetime(rows["date_start"], errors="coerce"),
+            "sighting_id": rows["sighting_id"], "source": rows["source"], "date": pd.to_datetime(rows["date_start"], errors="coerce"),
             "date_precision": rows["date_precision"], "lat": _num(rows["lat"]).astype(float),
             "lon": _num(rows["lon"]).astype(float), "coord_precision": rows["coord_precision"],
             "country": _na(rows["country"]), "state": _na(rows["state"]),

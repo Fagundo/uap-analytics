@@ -59,3 +59,23 @@ def test_spec_is_a_draft_until_registered():
     spec = yaml.safe_load((root / "hypotheses" / "H-hatchpal-01.yaml").read_text())
     assert spec["splits"] == {"explore": [1950, 1959], "confirm": [1960, 1999]}
     assert spec["primary_tier"] == "filtered"
+
+
+def test_combined_selection_and_panel():
+    pytest.importorskip("geopandas")
+    from uap_geo.hypotheses.diagnostics_combined import CombinedPanelDiagnostics, one_per_group, select
+
+    rows = _rows().assign(source="hatch")
+    extra = rows.iloc[[0]].assign(sighting_id="nuforc:x", source="nuforc", flags=[("DUPLICATE",)], date=pd.Timestamp("2015-01-01"))
+    keep = rows.iloc[[0]].assign(sighting_id="nicap:1", source="nicap", dedup_group="grp:a")
+    r, steps = select(pd.concat([rows, extra, keep], ignore_index=True))
+    assert "nuforc:x" not in set(r["sighting_id"]) and "hatch:9" not in set(r["sighting_id"])   # repeat; explained
+    combined = one_per_group(r)
+    assert sorted(combined["sighting_id"]) == ["hatch:1", "hatch:2"]                         # grp:a kept once
+
+    table = pd.DataFrame({"state_fips": ["42", "42"], "x": [1.0, 2.0]}, index=pd.Index(["42001", "42003"], name="geoid"))
+    pop = pd.DataFrame({d: [100.0, 200.0] for d in range(1950, 2030, 10)}, index=table.index)
+    recs = combined.assign(geoid="42001")
+    panel = CombinedPanelDiagnostics(None)._panel(table, pop, recs)
+    assert len(panel) == 16 and panel.loc[panel["decade"] == 1960, "report_count"].tolist() == [2, 0]
+    assert panel["state_decade"].iloc[0] == "42_1950"

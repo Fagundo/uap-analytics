@@ -195,7 +195,8 @@ STUDIES = {"H-geo-01": "uap_geo.hypotheses.geo_triggers:GeoTriggerStudy",
            "H-hatchpal-01": "uap_geo.hypotheses.hatch_paleozoic:HatchPaleozoicStudy"}
 DIAGNOSTICS = {"H-geo-01": "uap_geo.hypotheses.diagnostics:DiagnosticsReport",
                "H-rockera-01": "uap_geo.hypotheses.diagnostics_era:StateEraDiagnostics",
-               "H-rockera-01/land_use": "uap_geo.hypotheses.diagnostics_era:LandUseEraDiagnostics"}
+               "H-rockera-01/land_use": "uap_geo.hypotheses.diagnostics_era:LandUseEraDiagnostics",
+               "H-hatchpal-01/combined": "uap_geo.hypotheses.diagnostics_combined:CombinedPanelDiagnostics"}
 
 
 def _hypothesis(args: argparse.Namespace) -> None:
