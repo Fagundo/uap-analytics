@@ -214,7 +214,7 @@ def _hypothesis(args: argparse.Namespace) -> None:
     module, cls = STUDIES[args.hypothesis_id].split(":")
     study = getattr(importlib.import_module(module), cls)(Config.from_yaml(args.config), root, args.split)
     if args.action == "diagnose":
-        if args.hypothesis_id not in DIAGNOSTICS:
+        if not any(k == args.hypothesis_id or k.startswith(f"{args.hypothesis_id}/") for k in DIAGNOSTICS):
             raise SystemExit(f"No diagnostics for {args.hypothesis_id}")
         if args.states:
             study.diag_states = [x.strip().zfill(2) for x in args.states.split(",")]
