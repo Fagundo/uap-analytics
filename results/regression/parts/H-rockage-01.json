@@ -2,9 +2,9 @@
   {
     "hypothesis": "H-rockage-01",
     "split": "confirm",
-    "ok": true,
+    "ok": false,
     "error": null,
-    "seconds": 2573.0,
+    "seconds": 3124.8,
     "fingerprint": "match",
     "against": "baseline",
     "added": [],
@@ -12,16 +12,32 @@
     "inputs_changed": [
       "data/raw/airports/airports.csv"
     ],
-    "differences": [],
-    "n_differences": 0,
+    "differences": [
+      "tests.age.checks.shift_test.rate_ratio: committed 0.9934692635352242, now 0.9934371292353107",
+      "tests.age.p_bh: committed 0.8676065423997005, now 0.866985948767748",
+      "tests.age.power: committed 0.9628240828998799, now 0.9628014273418073",
+      "tests.age.tiers.all.terms[0].ci_high: committed 1.0782668570863492, now 1.0782479447276934",
+      "tests.age.tiers.all.terms[0].ci_low: committed 0.9256689902338728, now 0.9256226934121662",
+      "tests.age.tiers.all.terms[0].p_value: committed 0.9806983846474026, now 0.9800105193787977",
+      "tests.age.tiers.all.terms[0].rate_ratio: committed 0.9990586533341136, now 0.9990249079802664",
+      "tests.age.tiers.filtered.terms[0].ci_high: committed 1.073028067729952, now 1.0730102452386057",
+      "tests.age.tiers.filtered.terms[0].ci_low: committed 0.919809282973587, now 0.9197650573446614",
+      "tests.age.tiers.filtered.terms[0].p_value: committed 0.8676065423997005, now 0.866985948767748",
+      "tests.age.tiers.filtered.terms[0].rate_ratio: committed 0.9934692635352242, now 0.9934371292353107",
+      "tests.age.tiers.high_quality.terms[0].ci_high: committed 1.0807349265623614, now 1.0807130999189403",
+      "tests.age.tiers.high_quality.terms[0].ci_low: committed 0.9166228917105559, now 0.9165875836988324",
+      "tests.age.tiers.high_quality.terms[0].p_value: committed 0.9107648185064938, now 0.91022076357688",
+      "tests.age.tiers.high_quality.terms[0].rate_ratio: committed 0.9953021518906643, now 0.9952729318766669"
+    ],
+    "n_differences": 15,
     "fingerprint_differences": []
   },
   {
     "hypothesis": "H-rockage-01",
     "split": "explore",
-    "ok": true,
+    "ok": false,
     "error": null,
-    "seconds": 321.5,
+    "seconds": 329.9,
     "fingerprint": "match",
     "against": "baseline",
     "added": [],
@@ -29,16 +45,30 @@
     "inputs_changed": [
       "data/raw/airports/airports.csv"
     ],
-    "differences": [],
-    "n_differences": 0,
+    "differences": [
+      "tests.age.checks.shift_test.rate_ratio: committed 1.0414863791454378, now 1.0414731088594127",
+      "tests.age.p_bh: committed 0.21831817772172102, now 0.21849684257222723",
+      "tests.age.power: committed 0.8228847225404421, now 0.8228288551965965",
+      "tests.age.tiers.all.terms[0].ci_low: committed 0.9766261276008886, now 0.9766074172792809",
+      "tests.age.tiers.all.terms[0].p_value: committed 0.19900678332749333, now 0.19918027628518675",
+      "tests.age.tiers.all.terms[0].rate_ratio: committed 1.0459914946044504, now 1.0459769021624135",
+      "tests.age.tiers.filtered.terms[0].ci_low: committed 0.97621689181268, now 0.976199745261608",
+      "tests.age.tiers.filtered.terms[0].p_value: committed 0.21831817772172102, now 0.21849684257222723",
+      "tests.age.tiers.filtered.terms[0].rate_ratio: committed 1.0414863791454378, now 1.0414731088594127",
+      "tests.age.tiers.high_quality.terms[0].ci_high: committed 1.1139571603241205, now 1.1139457250791103",
+      "tests.age.tiers.high_quality.terms[0].ci_low: committed 0.9693642732363686, now 0.9693526342946904",
+      "tests.age.tiers.high_quality.terms[0].p_value: committed 0.27893757522721374, now 0.27908302625082815",
+      "tests.age.tiers.high_quality.terms[0].rate_ratio: committed 1.039148821456311, now 1.0391372493885227"
+    ],
+    "n_differences": 13,
     "fingerprint_differences": []
   },
   {
     "hypothesis": "H-rockage-01",
     "split": "holdout",
-    "ok": true,
+    "ok": false,
     "error": null,
-    "seconds": 326.3,
+    "seconds": 330.7,
     "fingerprint": "match",
     "against": "baseline",
     "added": [],
@@ -46,8 +76,23 @@
     "inputs_changed": [
       "data/raw/airports/airports.csv"
     ],
-    "differences": [],
-    "n_differences": 0,
+    "differences": [
+      "tests.age.checks.shift_test.rate_ratio: committed 1.0567443055487065, now 1.0567213792596477",
+      "tests.age.p_bh: committed 0.2698293737933348, now 0.27003964920726686",
+      "tests.age.power: committed 0.2310896604927572, now 0.2310622123633604",
+      "tests.age.tiers.all.terms[0].ci_high: committed 1.1648311327696756, now 1.1648112507581094",
+      "tests.age.tiers.all.terms[0].ci_low: committed 0.9521945469802895, now 0.9521689869924179",
+      "tests.age.tiers.all.terms[0].p_value: committed 0.3137914479775701, now 0.31402009337126824",
+      "tests.age.tiers.all.terms[0].rate_ratio: committed 1.0531599369403295, now 1.053136813843159",
+      "tests.age.tiers.filtered.terms[0].ci_high: committed 1.165588934928541, now 1.1655688861475606",
+      "tests.age.tiers.filtered.terms[0].ci_low: committed 0.9580637683199009, now 0.9580386767831442",
+      "tests.age.tiers.filtered.terms[0].p_value: committed 0.2698293737933348, now 0.27003964920726686",
+      "tests.age.tiers.filtered.terms[0].rate_ratio: committed 1.0567443055487065, now 1.0567213792596477",
+      "tests.age.tiers.high_quality.terms[0].ci_low: committed 1.014552533589033, now 1.0145160221581095",
+      "tests.age.tiers.high_quality.terms[0].p_value: committed 0.030969477137782794, now 0.031009204462976846",
+      "tests.age.tiers.high_quality.terms[0].rate_ratio: committed 1.1709599192193527, now 1.170933235569965"
+    ],
+    "n_differences": 14,
     "fingerprint_differences": []
   }
 ]

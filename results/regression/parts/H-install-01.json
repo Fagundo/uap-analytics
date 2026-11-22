@@ -2,9 +2,9 @@
   {
     "hypothesis": "H-install-01",
     "split": "confirm",
-    "ok": true,
+    "ok": false,
     "error": null,
-    "seconds": 292.7,
+    "seconds": 204.8,
     "fingerprint": "match",
     "against": "baseline",
     "added": [],
@@ -12,16 +12,25 @@
     "inputs_changed": [
       "data/raw/airports/airports.csv"
     ],
-    "differences": [],
-    "n_differences": 0,
+    "differences": [
+      "tests.proximity.p_bh: committed 0.38410689438659484, now 0.38415441288078644",
+      "tests.proximity.power: committed 0.6000768104362868, now 0.6000674882087184",
+      "tests.proximity.tiers.all.terms[0].p_value: committed 0.4411775501154169, now 0.44122506147647356",
+      "tests.proximity.tiers.filtered.terms[0].p_value: committed 0.38410689438659484, now 0.38415441288078644",
+      "tests.proximity.tiers.high_quality.terms[0].ci_high: committed 1.0834487343964279, now 1.0834613620600069",
+      "tests.proximity.tiers.high_quality.terms[0].ci_low: committed 0.9716974504249135, now 0.9717100654302769",
+      "tests.proximity.tiers.high_quality.terms[0].p_value: committed 0.35438338321166474, now 0.35414706441971955",
+      "tests.proximity.tiers.high_quality.terms[0].rate_ratio: committed 1.0260528119347017, now 1.0260654516250445"
+    ],
+    "n_differences": 8,
     "fingerprint_differences": []
   },
   {
     "hypothesis": "H-install-01",
     "split": "explore",
-    "ok": true,
+    "ok": false,
     "error": null,
-    "seconds": 245.5,
+    "seconds": 197.6,
     "fingerprint": "match",
     "against": "baseline",
     "added": [],
@@ -29,8 +38,13 @@
     "inputs_changed": [
       "data/raw/airports/airports.csv"
     ],
-    "differences": [],
-    "n_differences": 0,
+    "differences": [
+      "tests.proximity.p_bh: committed 0.7332393584617548, now 0.7331937269075945",
+      "tests.proximity.tiers.all.terms[0].p_value: committed 0.7575443241717326, now 0.7575292332981933",
+      "tests.proximity.tiers.filtered.terms[0].p_value: committed 0.7332393584617548, now 0.7331937269075945",
+      "tests.proximity.tiers.high_quality.terms[0].p_value: committed 0.558968742012619, now 0.5587895480310372"
+    ],
+    "n_differences": 4,
     "fingerprint_differences": []
   }
 ]
