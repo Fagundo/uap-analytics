@@ -6,23 +6,23 @@ Each committed result rerun from the current code and data and compared value by
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | H-celebrate-01 | confirm | baseline | same | 0 | 0 | match | 0 | 0.2 |
 | H-celebrate-01 | explore | baseline | same | 0 | 0 | match | 0 | 0.1 |
-| H-geo-01 | confirm | baseline | same | 0 | 0 | match | 0 | 0.4 |
-| H-geo-01 | explore | baseline | same | 0 | 0 | match | 0 | 0.3 |
+| H-geo-01 | confirm | baseline | same | 0 | 0 | match | 0 | 0.2 |
+| H-geo-01 | explore | baseline | same | 0 | 0 | match | 0 | 0.2 |
 | H-install-01 | confirm | baseline | same, raw differs | 0 | 0 | match | 1 | 4.9 |
-| H-install-01 | explore | baseline | same, raw differs | 0 | 0 | match | 1 | 4.0 |
-| H-launch-01 | confirm | baseline | same | 0 | 0 | match | 0 | 0.5 |
-| H-launch-01 | explore | baseline | same | 0 | 0 | match | 0 | 0.4 |
-| H-persist-01 | confirm | baseline | same | 0 | 0 | match | 0 | 1.1 |
-| H-persist-01 | explore | baseline | same | 0 | 0 | match | 0 | 1.1 |
-| H-rockage-01 | confirm | baseline | same, raw differs | 0 | 0 | match | 1 | 43.7 |
-| H-rockage-01 | explore | baseline | same, raw differs | 0 | 0 | match | 1 | 4.4 |
-| H-rockage-01 | holdout | baseline | same, raw differs | 0 | 0 | match | 1 | 4.4 |
-| H-rockera-01 | explore | baseline | same | 0 | 0 | match | 0 | 22.7 |
-| H-rocktype-01 | confirm | baseline | same | 0 | 0 | match | 0 | 17.2 |
-| H-rocktype-01 | explore | baseline | same | 0 | 0 | match | 0 | 17.4 |
-| H-rocktype-01 | holdout | baseline | same | 0 | 0 | match | 0 | 17.9 |
-| H-volcano-01 | confirm | baseline | same | 0 | 0 | match | 0 | 3.8 |
-| H-volcano-01 | explore | baseline | same | 0 | 0 | match | 0 | 3.6 |
+| H-install-01 | explore | baseline | same, raw differs | 0 | 0 | match | 1 | 4.1 |
+| H-launch-01 | confirm | baseline | same | 0 | 0 | match | 0 | 0.7 |
+| H-launch-01 | explore | baseline | same | 0 | 0 | match | 0 | 0.6 |
+| H-persist-01 | confirm | baseline | same | 0 | 0 | match | 0 | 1.4 |
+| H-persist-01 | explore | baseline | same | 0 | 0 | match | 0 | 1.4 |
+| H-rockage-01 | confirm | baseline | same, raw differs | 0 | 0 | match | 1 | 42.9 |
+| H-rockage-01 | explore | baseline | same, raw differs | 0 | 0 | match | 1 | 5.4 |
+| H-rockage-01 | holdout | baseline | same, raw differs | 0 | 0 | match | 1 | 5.4 |
+| H-rockera-01 | explore | baseline | same | 0 | 0 | match | 0 | 22.9 |
+| H-rocktype-01 | confirm | baseline | same | 0 | 0 | match | 0 | 16.8 |
+| H-rocktype-01 | explore | baseline | same | 0 | 0 | match | 0 | 17.1 |
+| H-rocktype-01 | holdout | baseline | same | 0 | 0 | match | 0 | 17.6 |
+| H-volcano-01 | confirm | baseline | same | 0 | 0 | match | 0 | 3.5 |
+| H-volcano-01 | explore | baseline | same | 0 | 0 | match | 0 | 3.3 |
 
 ## H-install-01 confirm
 
