@@ -16,7 +16,7 @@ from urllib.parse import urljoin, urlparse
 
 import requests
 
-USER_AGENT = "uap-geo-research/0.1 (+https://github.com/Fagundo/uap-geo)"
+USER_AGENT = "uap-geo-research/0.1 (+https://github.com/Fagundo/uap-analytics)"
 DELAY_S = 3.0
 
 SITES = {

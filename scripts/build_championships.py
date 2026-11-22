@@ -21,7 +21,7 @@ import yaml
 
 RAW = "https://en.wikipedia.org/w/index.php?action=raw&redirect=yes&title={}"
 PAGE = "https://en.wikipedia.org/wiki/{}"
-HEADERS = {"User-Agent": "uap-geo-research/0.1 (+https://github.com/Fagundo/uap-geo)"}
+HEADERS = {"User-Agent": "uap-geo-research/0.1 (+https://github.com/Fagundo/uap-analytics)"}
 YEARS = range(2001, 2024)
 OUT = Path("configs/celebrations/championships.yaml")
 TEAMS = Path("configs/celebrations/teams.yaml")

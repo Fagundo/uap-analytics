@@ -12,7 +12,7 @@ from uap_geo.common.config import SourceConfig
 
 log = logging.getLogger(__name__)
 
-USER_AGENT = "uap-geo/0.1 (research; github.com/Fagundo/uap-geo)"
+USER_AGENT = "uap-geo/0.1 (research; github.com/Fagundo/uap-analytics)"
 
 
 class DownloadError(RuntimeError):

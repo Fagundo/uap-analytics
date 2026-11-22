@@ -64,7 +64,7 @@ def tables(tmp_path):
         def fetch(self):
             return root
 
-    return ExportTables(Local(ExportPin("Fagundo/PURSUE", "export-test", {}), tmp_path))
+    return ExportTables(Local(ExportPin("Fagundo/uap-data", "export-test", {}), tmp_path))
 
 
 def test_reports_like_report_cleaner(tables):
@@ -99,7 +99,7 @@ def test_registry_reads_the_pinned_export(monkeypatch, tmp_path):
 
     config = Config.from_yaml(ROOT / "configs" / "v1.yaml")
     pin = tmp_path / "pin.yaml"
-    pin.write_text("repo: Fagundo/PURSUE\ntag: export-test\nsha256: {}\n")
+    pin.write_text("repo: Fagundo/uap-data\ntag: export-test\nsha256: {}\n")
     monkeypatch.setattr(reg, "EXPORT_PIN", pin)
     tables = reg.SourceRegistry(config, Downloader(tmp_path)).export_tables()
     assert isinstance(tables, ExportTables) and tables.export.pin.tag == "export-test"
