@@ -134,11 +134,11 @@ def compare(name: str, reference: dict, output: dict, tol: float = 1e-9) -> Pari
         ref = {"nuclear": {**ref["nuclear"], "results": keyed(ref["nuclear"]["results"], k)}}
         new = {"nuclear": {**new["nuclear"], "results": keyed(new["nuclear"]["results"], k)}}
     elif name == "topics":
-        # a topic's typical pages are ranked by share; pages with equal shares may come in either order across
-        # numeric libraries, so both sides are compared in (share, doc, page) order
+        # a topic's typical pages are the top shares; when several pages of one document tie (share 1.0), which
+        # of them is listed can differ across numeric libraries, so typical pages compare as (document, share)
         def ties(t):
-            return {**t, "topics": [{**x, "typical": sorted(x["typical"], key=lambda r: (-r[2], r[0], r[1]))}
-                                    for x in t["topics"]]}
+            return {**t, "topics": [{**x, "typical": sorted(([r[0], r[2]] for r in x["typical"]),
+                                                            key=lambda r: (-r[1], r[0]))} for x in t["topics"]]}
         ref, new = {"topics": ties(ref["topics"])}, {"topics": ties(new["topics"])}
     elif name == "bluebook":
         k = ("program", "label")
