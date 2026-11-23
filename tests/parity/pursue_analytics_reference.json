@@ -880,6 +880,1049 @@
    }
   ]
  },
+ "claims": {
+  "cases": [
+   {
+    "claims": [
+     "roswell-mogul-flight4"
+    ],
+    "id": "roswell-1947",
+    "pursue_incidents": [
+     364,
+     763,
+     2149,
+     2452,
+     3073
+    ]
+   },
+   {
+    "claims": [
+     "mantell-venus",
+     "mantell-skyhook-clinton",
+     "mantell-skyhook-ripley"
+    ],
+    "id": "mantell-1948",
+    "pursue_incidents": [
+     21,
+     442,
+     705,
+     2586,
+     2697,
+     2950
+    ]
+   },
+   {
+    "claims": [
+     "kecksburg-cosmos96",
+     "kecksburg-bolide"
+    ],
+    "id": "kecksburg-1965",
+    "pursue_incidents": []
+   },
+   {
+    "claims": [
+     "rendlesham-orfordness"
+    ],
+    "id": "rendlesham-1980",
+    "pursue_incidents": [
+     756
+    ]
+   },
+   {
+    "claims": [
+     "phoenix-flares"
+    ],
+    "id": "phoenix-1997",
+    "pursue_incidents": [
+     767,
+     1037
+    ]
+   },
+   {
+    "claims": [
+     "portage-venus"
+    ],
+    "id": "portage-1966",
+    "pursue_incidents": [
+     335
+    ]
+   },
+   {
+    "claims": [
+     "minot-sirius"
+    ],
+    "id": "minot-1968",
+    "pursue_incidents": [
+     757,
+     1133
+    ]
+   },
+   {
+    "claims": [
+     "tehran-jupiter"
+    ],
+    "id": "tehran-1976",
+    "pursue_incidents": [
+     2422
+    ]
+   },
+   {
+    "claims": [
+     "jal1628-jupiter",
+     "jal1628-mars"
+    ],
+    "id": "jal1628-1986",
+    "pursue_incidents": [
+     2470
+    ]
+   }
+  ],
+  "checks": [
+   {
+    "case": "roswell-1947",
+    "claim": "roswell-mogul-flight4",
+    "findings": [
+     "Needs a mean drift of 1 km/h over 249.0 h, within what winds aloft allow.",
+     "With this much time between launch and find, timing and distance don't constrain the explanation; what is disputed is listed separately."
+    ],
+    "kind": "balloon",
+    "metrics": {
+     "bearing_deg": 20.0,
+     "distance_km": 136.5,
+     "hours_after_launch": 249.0,
+     "mean_speed_kmh_needed": 0.5
+    },
+    "verdict": "possible"
+   },
+   {
+    "case": "mantell-1948",
+    "claim": "mantell-venus",
+    "findings": [
+     "Venus was at azimuth 176\u00b0, altitude 35\u00b0 to azimuth 201\u00b0, altitude 32\u00b0.",
+     "Closest to the reported direction (215\u00b0): 14\u00b0 off (tolerance 30\u00b0).",
+     "Part of the window was daytime (Sun up), 31\u00b0 from the Sun: whether it was bright enough to see is not tested here."
+    ],
+    "kind": "planet",
+    "metrics": {
+     "azimuth_margin_deg": 16.2,
+     "azimuth_off_report_deg": 13.8,
+     "elongation_from_sun_deg": 30.97,
+     "positions": [
+      {
+       "altitude": 34.69,
+       "azimuth": 175.59,
+       "sun_altitude": 23.89,
+       "time": "1948-01-07T13:45:00-06:00"
+      },
+      {
+       "altitude": 32.1,
+       "azimuth": 201.17,
+       "sun_altitude": 12.84,
+       "time": "1948-01-07T15:15:00-06:00"
+      }
+     ],
+     "sampled_every_min": 5
+    },
+    "verdict": "possible"
+   },
+   {
+    "case": "mantell-1948",
+    "claim": "mantell-skyhook-clinton",
+    "findings": [
+     "Needs a mean drift of 92 km/h over 2.8 h, within what winds aloft allow."
+    ],
+    "kind": "balloon",
+    "metrics": {
+     "bearing_deg": 228.9,
+     "distance_km": 253.8,
+     "hours_after_launch": 2.75,
+     "mean_speed_kmh_needed": 92.3
+    },
+    "verdict": "possible"
+   },
+   {
+    "case": "mantell-1948",
+    "claim": "mantell-skyhook-ripley",
+    "findings": [
+     "Needs a mean drift of 38 km/h over 29.8 h, within what winds aloft allow.",
+     "The sighting lies along the trajectory the sources describe (5\u00b0 off)."
+    ],
+    "kind": "balloon",
+    "metrics": {
+     "bearing_deg": 139.9,
+     "bearing_off_stated_deg": 4.9,
+     "distance_km": 1142.2,
+     "hours_after_launch": 29.75,
+     "mean_speed_kmh_needed": 38.4
+    },
+    "verdict": "possible"
+   },
+   {
+    "case": "kecksburg-1965",
+    "claim": "kecksburg-cosmos96",
+    "findings": [
+     "Kecksburg, Pennsylvania passed under the satellite's orbital plane only at 05:07 UTC, 11:31 UTC; the sighting was 10.2 h from the nearest, so the satellite couldn't have been coming down overhead then."
+    ],
+    "kind": "reentry",
+    "metrics": {
+     "minutes_from_nearest_plane_crossing": 612.0
+    },
+    "verdict": "inconsistent"
+   },
+   {
+    "case": "kecksburg-1965",
+    "claim": "kecksburg-bolide",
+    "findings": [
+     "From Kecksburg, Pennsylvania the fireball's end, 369 km away, was above the horizon (visible to about 615 km).",
+     "An object landing at Kecksburg, Pennsylvania is not what this trajectory describes: its flight ended 369 km away."
+    ],
+    "kind": "bolide",
+    "metrics": {
+     "end_point_distance_km": 368.6,
+     "max_visible_distance_km": 615.0,
+     "minutes_apart": 0.0
+    },
+    "verdict": "possible"
+   },
+   {
+    "case": "rendlesham-1980",
+    "claim": "rendlesham-orfordness",
+    "findings": [
+     "The light, 8.8 km away at 93\u00b0, is in the reported direction (3\u00b0 off).",
+     "Reported flash period (5s) matches the light's (5s)."
+    ],
+    "kind": "beacon",
+    "metrics": {
+     "bearing_deg": 92.9,
+     "bearing_off_report_deg": 2.9,
+     "distance_km": 8.8,
+     "flash_period_ratio": 1.0
+    },
+    "verdict": "possible"
+   },
+   {
+    "case": "phoenix-1997",
+    "claim": "phoenix-flares",
+    "findings": [
+     "Sierra Estrella lies 29 km away at 207\u00b0, 21\u00b0 from the line to the flares 82 km away.",
+     "The ridge point used is off the line of sight; where the ridge crosses that line its height may differ, so the altitudes below are indicative.",
+     "Flares there are visible above the ridge only while higher than about 3,023\u20133,560 m (9,918\u201311,680 ft); below that they would vanish behind it.",
+     "The drop altitude isn't stated in the sources, so whether they cleared the ridge isn't tested."
+    ],
+    "kind": "flare",
+    "metrics": {
+     "bearing_deg": 227.2,
+     "distance_km": 81.7,
+     "min_flare_altitude_to_be_seen_m": [
+      3023,
+      3560
+     ],
+     "minutes_apart": 0.0,
+     "obstacle": {
+      "bearing_deg": 206.7,
+      "bearing_off_flares_deg": 20.5,
+      "distance_km": 29.1,
+      "name": "Sierra Estrella"
+     }
+    },
+    "verdict": "possible"
+   },
+   {
+    "case": "portage-1966",
+    "claim": "portage-venus",
+    "findings": [
+     "Venus was at azimuth 116\u00b0, altitude 17\u00b0 to azimuth 125\u00b0, altitude 24\u00b0.",
+     "The record puts the object to the left of the moon; Venus was 5\u00b0\u20136\u00b0 to its right throughout.",
+     "Part of the window was daytime (Sun up), 46\u00b0 from the Sun: whether it was bright enough to see is not tested here."
+    ],
+    "kind": "planet",
+    "metrics": {
+     "elongation_from_sun_deg": 46.03,
+     "positions": [
+      {
+       "altitude": 16.91,
+       "azimuth": 116.13,
+       "sun_altitude": -2.63,
+       "time": "1966-04-17T05:30:00-05:00"
+      },
+      {
+       "altitude": 24.26,
+       "azimuth": 125.1,
+       "sun_altitude": 5.71,
+       "time": "1966-04-17T06:15:00-05:00"
+      }
+     ],
+     "relative": [
+      {
+       "azimuth_gap_deg": 5.4,
+       "moon": {
+        "altitude": 8.75,
+        "azimuth": 110.77
+       },
+       "side": "right",
+       "time": "1966-04-17T05:30:00-05:00"
+      },
+      {
+       "azimuth_gap_deg": 6.5,
+       "moon": {
+        "altitude": 16.43,
+        "azimuth": 118.62
+       },
+       "side": "right",
+       "time": "1966-04-17T06:15:00-05:00"
+      }
+     ],
+     "sampled_every_min": 5
+    },
+    "verdict": "inconsistent"
+   },
+   {
+    "case": "minot-1968",
+    "claim": "minot-sirius",
+    "findings": [
+     "Sirius was at azimuth 132\u00b0, altitude 11\u00b0 to azimuth 145\u00b0, altitude 18\u00b0.",
+     "Closest to the reported direction (135\u00b0): 0\u00b0 off (tolerance 30\u00b0).",
+     "Closest to the reported elevation (35\u00b0): 17\u00b0 off (tolerance 30\u00b0)."
+    ],
+    "kind": "star",
+    "metrics": {
+     "altitude_off_report_deg": 17.1,
+     "azimuth_margin_deg": 29.9,
+     "azimuth_off_report_deg": 0.1,
+     "positions": [
+      {
+       "altitude": 11.15,
+       "azimuth": 131.77,
+       "sun_altitude": -48.81,
+       "time": "1968-10-24T03:00:00-05:00"
+      },
+      {
+       "altitude": 17.94,
+       "azimuth": 145.47,
+       "sun_altitude": -41.7,
+       "time": "1968-10-24T04:02:00-05:00"
+      }
+     ],
+     "sampled_every_min": 5
+    },
+    "verdict": "possible"
+   },
+   {
+    "case": "tehran-1976",
+    "claim": "tehran-jupiter",
+    "findings": [
+     "Jupiter was at azimuth 94\u00b0, altitude 39\u00b0 to azimuth 106\u00b0, altitude 53\u00b0.",
+     "Closest to the reported direction (51\u00b0): 43\u00b0 off (tolerance 30\u00b0)."
+    ],
+    "kind": "planet",
+    "metrics": {
+     "azimuth_margin_deg": -12.5,
+     "azimuth_off_report_deg": 42.5,
+     "elongation_from_sun_deg": 114.96,
+     "positions": [
+      {
+       "altitude": 39.25,
+       "azimuth": 93.52,
+       "sun_altitude": -52.03,
+       "time": "1976-09-19T00:30:00+03:30"
+      },
+      {
+       "altitude": 53.27,
+       "azimuth": 106.39,
+       "sun_altitude": -45.89,
+       "time": "1976-09-19T01:40:00+03:30"
+      }
+     ],
+     "sampled_every_min": 5
+    },
+    "verdict": "inconsistent"
+   },
+   {
+    "case": "jal1628-1986",
+    "claim": "jal1628-jupiter",
+    "findings": [
+     "Jupiter was at azimuth 139\u00b0, altitude 10\u00b0 to azimuth 164\u00b0, altitude 15\u00b0.",
+     "Closest to the reported direction (150\u00b0): 0\u00b0 off (tolerance 35\u00b0)."
+    ],
+    "kind": "planet",
+    "metrics": {
+     "azimuth_margin_deg": 34.7,
+     "azimuth_off_report_deg": 0.3,
+     "elongation_from_sun_deg": 107.73,
+     "positions": [
+      {
+       "altitude": 9.97,
+       "azimuth": 139.02,
+       "sun_altitude": -10.35,
+       "time": "1986-11-17T17:11:00-09:00"
+      },
+      {
+       "altitude": 14.76,
+       "azimuth": 164.49,
+       "sun_altitude": -20.17,
+       "time": "1986-11-17T18:53:00-09:00"
+      }
+     ],
+     "sampled_every_min": 5
+    },
+    "verdict": "possible"
+   },
+   {
+    "case": "jal1628-1986",
+    "claim": "jal1628-mars",
+    "findings": [
+     "Mars was at azimuth 157\u00b0, altitude 7\u00b0 to azimuth 182\u00b0, altitude 9\u00b0.",
+     "Closest to the reported direction (150\u00b0): 7\u00b0 off (tolerance 35\u00b0)."
+    ],
+    "kind": "planet",
+    "metrics": {
+     "azimuth_margin_deg": 27.5,
+     "azimuth_off_report_deg": 7.5,
+     "elongation_from_sun_deg": 89.19,
+     "positions": [
+      {
+       "altitude": 6.77,
+       "azimuth": 157.49,
+       "sun_altitude": -10.35,
+       "time": "1986-11-17T17:11:00-09:00"
+      },
+      {
+       "altitude": 8.56,
+       "azimuth": 182.31,
+       "sun_altitude": -20.17,
+       "time": "1986-11-17T18:53:00-09:00"
+      }
+     ],
+     "sampled_every_min": 5
+    },
+    "verdict": "possible"
+   }
+  ],
+  "screen": [
+   {
+    "case": "roswell-1947",
+    "claim": "roswell-1947-screen-moon",
+    "findings": [
+     "Moon was at azimuth 256\u00b0, altitude 32\u00b0.",
+     "The record states no direction, elevation or position relative to another body, so the position can't be compared."
+    ],
+    "kind": "planet",
+    "metrics": {
+     "elongation_from_sun_deg": 55.63,
+     "positions": [
+      {
+       "altitude": 32.11,
+       "azimuth": 255.82,
+       "sun_altitude": 79.24,
+       "time": "1947-06-14T12:00:00-07:00"
+      }
+     ],
+     "sampled_every_min": null
+    },
+    "verdict": "not testable here"
+   },
+   {
+    "case": "roswell-1947",
+    "claim": "roswell-1947-screen-venus",
+    "findings": [
+     "Venus was at azimuth 239\u00b0, altitude 65\u00b0.",
+     "The record states no direction, elevation or position relative to another body, so the position can't be compared."
+    ],
+    "kind": "planet",
+    "metrics": {
+     "elongation_from_sun_deg": 21.81,
+     "positions": [
+      {
+       "altitude": 65.22,
+       "azimuth": 239.23,
+       "sun_altitude": 79.24,
+       "time": "1947-06-14T12:00:00-07:00"
+      }
+     ],
+     "sampled_every_min": null
+    },
+    "verdict": "not testable here"
+   },
+   {
+    "case": "kecksburg-1965",
+    "claim": "kecksburg-1965-screen-venus",
+    "findings": [
+     "Venus was at azimuth 200\u00b0, altitude 25\u00b0.",
+     "The record states no direction, elevation or position relative to another body, so the position can't be compared."
+    ],
+    "kind": "planet",
+    "metrics": {
+     "elongation_from_sun_deg": 44.53,
+     "positions": [
+      {
+       "altitude": 25.22,
+       "azimuth": 200.31,
+       "sun_altitude": 0.64,
+       "time": "1965-12-09T16:43:00-05:00"
+      }
+     ],
+     "sampled_every_min": null
+    },
+    "verdict": "not testable here"
+   },
+   {
+    "case": "rendlesham-1980",
+    "claim": "rendlesham-1980-screen-moon",
+    "findings": [
+     "Moon was at azimuth 123\u00b0, altitude 29\u00b0.",
+     "Closest to the reported direction (90\u00b0): 33\u00b0 off (tolerance 20\u00b0)."
+    ],
+    "kind": "planet",
+    "metrics": {
+     "azimuth_margin_deg": -12.9,
+     "azimuth_off_report_deg": 32.9,
+     "elongation_from_sun_deg": 103.09,
+     "positions": [
+      {
+       "altitude": 28.92,
+       "azimuth": 122.86,
+       "sun_altitude": -52.68,
+       "time": "1980-12-28T02:00:00+00:00"
+      }
+     ],
+     "sampled_every_min": null
+    },
+    "verdict": "inconsistent"
+   },
+   {
+    "case": "rendlesham-1980",
+    "claim": "rendlesham-1980-screen-jupiter",
+    "findings": [
+     "Jupiter was at azimuth 115\u00b0, altitude 16\u00b0.",
+     "Closest to the reported direction (90\u00b0): 25\u00b0 off (tolerance 20\u00b0)."
+    ],
+    "kind": "planet",
+    "metrics": {
+     "azimuth_margin_deg": -5.3,
+     "azimuth_off_report_deg": 25.3,
+     "elongation_from_sun_deg": 87.44,
+     "positions": [
+      {
+       "altitude": 15.51,
+       "azimuth": 115.3,
+       "sun_altitude": -52.68,
+       "time": "1980-12-28T02:00:00+00:00"
+      }
+     ],
+     "sampled_every_min": null
+    },
+    "verdict": "inconsistent"
+   },
+   {
+    "case": "rendlesham-1980",
+    "claim": "rendlesham-1980-screen-sirius",
+    "findings": [
+     "Sirius was at azimuth 207\u00b0, altitude 17\u00b0.",
+     "Closest to the reported direction (90\u00b0): 117\u00b0 off (tolerance 20\u00b0)."
+    ],
+    "kind": "star",
+    "metrics": {
+     "azimuth_margin_deg": -97.2,
+     "azimuth_off_report_deg": 117.2,
+     "positions": [
+      {
+       "altitude": 17.3,
+       "azimuth": 207.17,
+       "sun_altitude": -52.68,
+       "time": "1980-12-28T02:00:00+00:00"
+      }
+     ],
+     "sampled_every_min": null
+    },
+    "verdict": "inconsistent"
+   },
+   {
+    "case": "rendlesham-1980",
+    "claim": "rendlesham-1980-screen-arcturus",
+    "findings": [
+     "Arcturus was at azimuth 81\u00b0, altitude 18\u00b0.",
+     "Closest to the reported direction (90\u00b0): 9\u00b0 off (tolerance 20\u00b0)."
+    ],
+    "kind": "star",
+    "metrics": {
+     "azimuth_margin_deg": 11.2,
+     "azimuth_off_report_deg": 8.8,
+     "positions": [
+      {
+       "altitude": 17.79,
+       "azimuth": 81.25,
+       "sun_altitude": -52.68,
+       "time": "1980-12-28T02:00:00+00:00"
+      }
+     ],
+     "sampled_every_min": null
+    },
+    "verdict": "possible"
+   },
+   {
+    "case": "rendlesham-1980",
+    "claim": "rendlesham-1980-screen-vega",
+    "findings": [
+     "Vega was at azimuth 22\u00b0, altitude 4\u00b0.",
+     "Closest to the reported direction (90\u00b0): 68\u00b0 off (tolerance 20\u00b0)."
+    ],
+    "kind": "star",
+    "metrics": {
+     "azimuth_margin_deg": -47.7,
+     "azimuth_off_report_deg": 67.7,
+     "positions": [
+      {
+       "altitude": 4.32,
+       "azimuth": 22.33,
+       "sun_altitude": -52.68,
+       "time": "1980-12-28T02:00:00+00:00"
+      }
+     ],
+     "sampled_every_min": null
+    },
+    "verdict": "inconsistent"
+   },
+   {
+    "case": "rendlesham-1980",
+    "claim": "rendlesham-1980-screen-capella",
+    "findings": [
+     "Capella was at azimuth 279\u00b0, altitude 58\u00b0.",
+     "Closest to the reported direction (90\u00b0): 171\u00b0 off (tolerance 20\u00b0)."
+    ],
+    "kind": "star",
+    "metrics": {
+     "azimuth_margin_deg": -150.9,
+     "azimuth_off_report_deg": 170.9,
+     "positions": [
+      {
+       "altitude": 57.74,
+       "azimuth": 279.11,
+       "sun_altitude": -52.68,
+       "time": "1980-12-28T02:00:00+00:00"
+      }
+     ],
+     "sampled_every_min": null
+    },
+    "verdict": "inconsistent"
+   },
+   {
+    "case": "phoenix-1997",
+    "claim": "phoenix-1997-screen-moon",
+    "findings": [
+     "Moon was at azimuth 275\u00b0, altitude 21\u00b0.",
+     "Closest to the reported direction (225\u00b0): 50\u00b0 off (tolerance 35\u00b0)."
+    ],
+    "kind": "planet",
+    "metrics": {
+     "azimuth_margin_deg": -14.9,
+     "azimuth_off_report_deg": 49.9,
+     "elongation_from_sun_deg": 68.73,
+     "positions": [
+      {
+       "altitude": 21.36,
+       "azimuth": 274.95,
+       "sun_altitude": -41.94,
+       "time": "1997-03-13T22:00:00-07:00"
+      }
+     ],
+     "sampled_every_min": null
+    },
+    "verdict": "inconsistent"
+   },
+   {
+    "case": "phoenix-1997",
+    "claim": "phoenix-1997-screen-sirius",
+    "findings": [
+     "Sirius was at azimuth 218\u00b0, altitude 31\u00b0.",
+     "Closest to the reported direction (225\u00b0): 7\u00b0 off (tolerance 35\u00b0)."
+    ],
+    "kind": "star",
+    "metrics": {
+     "azimuth_margin_deg": 27.9,
+     "azimuth_off_report_deg": 7.1,
+     "positions": [
+      {
+       "altitude": 30.51,
+       "azimuth": 217.88,
+       "sun_altitude": -41.94,
+       "time": "1997-03-13T22:00:00-07:00"
+      }
+     ],
+     "sampled_every_min": null
+    },
+    "verdict": "possible"
+   },
+   {
+    "case": "phoenix-1997",
+    "claim": "phoenix-1997-screen-mars",
+    "findings": [
+     "Mars was at azimuth 115\u00b0, altitude 39\u00b0.",
+     "Closest to the reported direction (225\u00b0): 110\u00b0 off (tolerance 35\u00b0)."
+    ],
+    "kind": "planet",
+    "metrics": {
+     "azimuth_margin_deg": -75.0,
+     "azimuth_off_report_deg": 110.0,
+     "elongation_from_sun_deg": 174.29,
+     "positions": [
+      {
+       "altitude": 39.1,
+       "azimuth": 115.01,
+       "sun_altitude": -41.94,
+       "time": "1997-03-13T22:00:00-07:00"
+      }
+     ],
+     "sampled_every_min": null
+    },
+    "verdict": "inconsistent"
+   },
+   {
+    "case": "phoenix-1997",
+    "claim": "phoenix-1997-screen-arcturus",
+    "findings": [
+     "Arcturus was at azimuth 79\u00b0, altitude 19\u00b0.",
+     "Closest to the reported direction (225\u00b0): 146\u00b0 off (tolerance 35\u00b0)."
+    ],
+    "kind": "star",
+    "metrics": {
+     "azimuth_margin_deg": -110.7,
+     "azimuth_off_report_deg": 145.7,
+     "positions": [
+      {
+       "altitude": 19.29,
+       "azimuth": 79.26,
+       "sun_altitude": -41.94,
+       "time": "1997-03-13T22:00:00-07:00"
+      }
+     ],
+     "sampled_every_min": null
+    },
+    "verdict": "inconsistent"
+   },
+   {
+    "case": "phoenix-1997",
+    "claim": "phoenix-1997-screen-capella",
+    "findings": [
+     "Capella was at azimuth 304\u00b0, altitude 46\u00b0.",
+     "Closest to the reported direction (225\u00b0): 79\u00b0 off (tolerance 35\u00b0)."
+    ],
+    "kind": "star",
+    "metrics": {
+     "azimuth_margin_deg": -43.8,
+     "azimuth_off_report_deg": 78.8,
+     "positions": [
+      {
+       "altitude": 46.34,
+       "azimuth": 303.81,
+       "sun_altitude": -41.94,
+       "time": "1997-03-13T22:00:00-07:00"
+      }
+     ],
+     "sampled_every_min": null
+    },
+    "verdict": "inconsistent"
+   },
+   {
+    "case": "minot-1968",
+    "claim": "minot-1968-screen-vega",
+    "findings": [
+     "Vega was at azimuth 324\u00b0, altitude 7\u00b0 to azimuth 335\u00b0, altitude 2\u00b0.",
+     "Closest to the reported direction (135\u00b0): 160\u00b0 off (tolerance 30\u00b0).",
+     "Closest to the reported elevation (35\u00b0): 28\u00b0 off (tolerance 30\u00b0)."
+    ],
+    "kind": "star",
+    "metrics": {
+     "altitude_off_report_deg": 27.9,
+     "azimuth_margin_deg": -129.6,
+     "azimuth_off_report_deg": 159.6,
+     "positions": [
+      {
+       "altitude": 7.1,
+       "azimuth": 324.37,
+       "sun_altitude": -48.81,
+       "time": "1968-10-24T03:00:00-05:00"
+      },
+      {
+       "altitude": 1.94,
+       "azimuth": 335.36,
+       "sun_altitude": -41.7,
+       "time": "1968-10-24T04:02:00-05:00"
+      }
+     ],
+     "sampled_every_min": 5
+    },
+    "verdict": "inconsistent"
+   },
+   {
+    "case": "minot-1968",
+    "claim": "minot-1968-screen-capella",
+    "findings": [
+     "Capella was at azimuth 88\u00b0, altitude 71\u00b0 to azimuth 104\u00b0, altitude 82\u00b0.",
+     "Closest to the reported direction (135\u00b0): 31\u00b0 off (tolerance 30\u00b0).",
+     "Closest to the reported elevation (35\u00b0): 36\u00b0 off (tolerance 30\u00b0)."
+    ],
+    "kind": "star",
+    "metrics": {
+     "altitude_off_report_deg": 36.3,
+     "azimuth_margin_deg": -1.3,
+     "azimuth_off_report_deg": 31.3,
+     "positions": [
+      {
+       "altitude": 71.29,
+       "azimuth": 87.74,
+       "sun_altitude": -48.81,
+       "time": "1968-10-24T03:00:00-05:00"
+      },
+      {
+       "altitude": 81.5,
+       "azimuth": 103.66,
+       "sun_altitude": -41.7,
+       "time": "1968-10-24T04:02:00-05:00"
+      }
+     ],
+     "sampled_every_min": 5
+    },
+    "verdict": "inconsistent"
+   },
+   {
+    "case": "minot-1968",
+    "claim": "minot-1968-screen-saturn",
+    "findings": [
+     "Saturn was at azimuth 221\u00b0, altitude 40\u00b0 to azimuth 237\u00b0, altitude 32\u00b0.",
+     "Closest to the reported direction (135\u00b0): 86\u00b0 off (tolerance 30\u00b0).",
+     "Closest to the reported elevation (35\u00b0): 0\u00b0 off (tolerance 30\u00b0)."
+    ],
+    "kind": "planet",
+    "metrics": {
+     "altitude_off_report_deg": 0.2,
+     "azimuth_margin_deg": -55.8,
+     "azimuth_off_report_deg": 85.8,
+     "elongation_from_sun_deg": 170.22,
+     "positions": [
+      {
+       "altitude": 40.18,
+       "azimuth": 220.81,
+       "sun_altitude": -48.81,
+       "time": "1968-10-24T03:00:00-05:00"
+      },
+      {
+       "altitude": 32.41,
+       "azimuth": 237.45,
+       "sun_altitude": -41.7,
+       "time": "1968-10-24T04:02:00-05:00"
+      }
+     ],
+     "sampled_every_min": 5
+    },
+    "verdict": "inconsistent"
+   },
+   {
+    "case": "tehran-1976",
+    "claim": "tehran-1976-screen-vega",
+    "findings": [
+     "Vega was at azimuth 301\u00b0, altitude 25\u00b0 to azimuth 309\u00b0, altitude 13\u00b0.",
+     "Closest to the reported direction (51\u00b0): 102\u00b0 off (tolerance 30\u00b0)."
+    ],
+    "kind": "star",
+    "metrics": {
+     "azimuth_margin_deg": -72.3,
+     "azimuth_off_report_deg": 102.3,
+     "positions": [
+      {
+       "altitude": 24.74,
+       "azimuth": 301.19,
+       "sun_altitude": -52.03,
+       "time": "1976-09-19T00:30:00+03:30"
+      },
+      {
+       "altitude": 13.05,
+       "azimuth": 308.67,
+       "sun_altitude": -45.89,
+       "time": "1976-09-19T01:40:00+03:30"
+      }
+     ],
+     "sampled_every_min": 5
+    },
+    "verdict": "inconsistent"
+   },
+   {
+    "case": "tehran-1976",
+    "claim": "tehran-1976-screen-capella",
+    "findings": [
+     "Capella was at azimuth 55\u00b0, altitude 35\u00b0 to azimuth 58\u00b0, altitude 47\u00b0.",
+     "Closest to the reported direction (51\u00b0): 4\u00b0 off (tolerance 30\u00b0)."
+    ],
+    "kind": "star",
+    "metrics": {
+     "azimuth_margin_deg": 26.4,
+     "azimuth_off_report_deg": 3.6,
+     "positions": [
+      {
+       "altitude": 34.76,
+       "azimuth": 54.61,
+       "sun_altitude": -52.03,
+       "time": "1976-09-19T00:30:00+03:30"
+      },
+      {
+       "altitude": 46.64,
+       "azimuth": 58.08,
+       "sun_altitude": -45.89,
+       "time": "1976-09-19T01:40:00+03:30"
+      }
+     ],
+     "sampled_every_min": 5
+    },
+    "verdict": "possible"
+   },
+   {
+    "case": "tehran-1976",
+    "claim": "tehran-1976-screen-moon",
+    "findings": [
+     "Moon was at azimuth 66\u00b0, altitude -5\u00b0 to azimuth 76\u00b0, altitude 8\u00b0.",
+     "Closest to the reported direction (51\u00b0): 19\u00b0 off (tolerance 30\u00b0)."
+    ],
+    "kind": "planet",
+    "metrics": {
+     "azimuth_margin_deg": 10.7,
+     "azimuth_off_report_deg": 19.3,
+     "elongation_from_sun_deg": 65.06,
+     "positions": [
+      {
+       "altitude": -4.89,
+       "azimuth": 66.02,
+       "sun_altitude": -52.03,
+       "time": "1976-09-19T00:30:00+03:30"
+      },
+      {
+       "altitude": 8.02,
+       "azimuth": 75.82,
+       "sun_altitude": -45.89,
+       "time": "1976-09-19T01:40:00+03:30"
+      }
+     ],
+     "sampled_every_min": 5
+    },
+    "verdict": "possible"
+   },
+   {
+    "case": "jal1628-1986",
+    "claim": "jal1628-1986-screen-moon",
+    "findings": [
+     "Moon was at azimuth 47\u00b0, altitude 10\u00b0 to azimuth 68\u00b0, altitude 19\u00b0.",
+     "Closest to the reported direction (150\u00b0): 82\u00b0 off (tolerance 35\u00b0)."
+    ],
+    "kind": "planet",
+    "metrics": {
+     "azimuth_margin_deg": -46.6,
+     "azimuth_off_report_deg": 81.6,
+     "elongation_from_sun_deg": 162.14,
+     "positions": [
+      {
+       "altitude": 10.45,
+       "azimuth": 47.25,
+       "sun_altitude": -10.35,
+       "time": "1986-11-17T17:11:00-09:00"
+      },
+      {
+       "altitude": 18.87,
+       "azimuth": 68.41,
+       "sun_altitude": -20.17,
+       "time": "1986-11-17T18:53:00-09:00"
+      }
+     ],
+     "sampled_every_min": 5
+    },
+    "verdict": "inconsistent"
+   },
+   {
+    "case": "jal1628-1986",
+    "claim": "jal1628-1986-screen-arcturus",
+    "findings": [
+     "Arcturus was at azimuth 278\u00b0, altitude 17\u00b0 to azimuth 301\u00b0, altitude 8\u00b0.",
+     "Closest to the reported direction (150\u00b0): 128\u00b0 off (tolerance 35\u00b0)."
+    ],
+    "kind": "star",
+    "metrics": {
+     "azimuth_margin_deg": -93.4,
+     "azimuth_off_report_deg": 128.4,
+     "positions": [
+      {
+       "altitude": 17.38,
+       "azimuth": 278.42,
+       "sun_altitude": -10.35,
+       "time": "1986-11-17T17:11:00-09:00"
+      },
+      {
+       "altitude": 7.87,
+       "azimuth": 301.17,
+       "sun_altitude": -20.17,
+       "time": "1986-11-17T18:53:00-09:00"
+      }
+     ],
+     "sampled_every_min": 5
+    },
+    "verdict": "inconsistent"
+   },
+   {
+    "case": "jal1628-1986",
+    "claim": "jal1628-1986-screen-vega",
+    "findings": [
+     "Vega was at azimuth 220\u00b0, altitude 59\u00b0 to azimuth 251\u00b0, altitude 50\u00b0.",
+     "Closest to the reported direction (150\u00b0): 70\u00b0 off (tolerance 35\u00b0)."
+    ],
+    "kind": "star",
+    "metrics": {
+     "azimuth_margin_deg": -34.8,
+     "azimuth_off_report_deg": 69.8,
+     "positions": [
+      {
+       "altitude": 58.77,
+       "azimuth": 219.83,
+       "sun_altitude": -10.35,
+       "time": "1986-11-17T17:11:00-09:00"
+      },
+      {
+       "altitude": 50.41,
+       "azimuth": 251.4,
+       "sun_altitude": -20.17,
+       "time": "1986-11-17T18:53:00-09:00"
+      }
+     ],
+     "sampled_every_min": 5
+    },
+    "verdict": "inconsistent"
+   },
+   {
+    "case": "jal1628-1986",
+    "claim": "jal1628-1986-screen-capella",
+    "findings": [
+     "Capella was at azimuth 34\u00b0, altitude 28\u00b0 to azimuth 53\u00b0, altitude 35\u00b0.",
+     "Closest to the reported direction (150\u00b0): 97\u00b0 off (tolerance 35\u00b0)."
+    ],
+    "kind": "star",
+    "metrics": {
+     "azimuth_margin_deg": -61.9,
+     "azimuth_off_report_deg": 96.9,
+     "positions": [
+      {
+       "altitude": 27.76,
+       "azimuth": 34.0,
+       "sun_altitude": -10.35,
+       "time": "1986-11-17T17:11:00-09:00"
+      },
+      {
+       "altitude": 34.73,
+       "azimuth": 53.07,
+       "sun_altitude": -20.17,
+       "time": "1986-11-17T18:53:00-09:00"
+      }
+     ],
+     "sampled_every_min": 5
+    },
+    "verdict": "inconsistent"
+   }
+  ]
+ },
  "local_share_by_year": {
   "hatch": {
    "Groom Lake": [
@@ -4664,7 +5707,4361 @@
    ]
   }
  },
- "note": "Aggregates from PURSUE's programs, nuclear and Blue Book commands (Phase 6a parity reference)",
+ "networks": {
+  "communities": [
+   {
+    "agencies": [
+     "CIA",
+     "CONGRESS",
+     "DOW",
+     "FBI",
+     "NARA",
+     "NASA",
+     "NAVY",
+     "ODNI",
+     "OSD",
+     "USAF"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-449",
+     "CONGRESS-HASC-1966",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9",
+     "DOW-UAP-D092",
+     "DOW-UAP-D180",
+     "R01-18-100754-General-1946-7-Vol-2",
+     "DOW-UAP-D100",
+     "DOW-UAP-D172",
+     "NARA-493468580-05-AARO-Historical-Record-Report",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "DOW-UAP-D212",
+     "DOW-UAP-D096",
+     "NARA-311003081-311003081",
+     "R01-38-143685-box7-Incident-Summaries-1-100",
+     "DOW-UAP-D154",
+     "R01-255-413270-UFO-s-and-Defense-What-Should-we-Prepare-For",
+     "DOW-UAP-D105",
+     "NARA-595507",
+     "DOW-UAP-D102",
+     "DOW-UAP-D191",
+     "DOW-UAP-D192",
+     "DOW-UAP-D193",
+     "DOW-UAP-D194",
+     "DOW-UAP-D195",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "CIA-UAP-D027",
+     "DOW-UAP-D204",
+     "NARA-493468579-576UAP0021",
+     "NARA-493468579-576UAP0026",
+     "NARA-493468580-01-2023-Annual-Report",
+     "NARA-493468580-07-2024-Annual-Report"
+    ],
+    "eras": [
+     "1940s",
+     "1950s",
+     "1960s-70s",
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 363,
+    "members": [
+     "org:13",
+     "person:2876",
+     "org:88",
+     "person:6333",
+     "person:170",
+     "person:6267",
+     "person:44",
+     "org:3848",
+     "person:6270",
+     "person:126",
+     "org:749",
+     "org:4791",
+     "person:122",
+     "person:6271",
+     "org:1202",
+     "org:2566",
+     "person:82",
+     "person:78",
+     "org:2684",
+     "org:4692",
+     "org:4113",
+     "person:6277",
+     "org:45",
+     "org:4921",
+     "org:81",
+     "org:60",
+     "person:6627",
+     "person:6269",
+     "org:4920",
+     "person:3609",
+     "org:4776",
+     "person:6491",
+     "org:4919",
+     "person:4237",
+     "org:49",
+     "person:104",
+     "person:106",
+     "person:4734",
+     "org:4774",
+     "person:154",
+     "org:4769",
+     "person:4705",
+     "org:4917",
+     "person:6268",
+     "org:85",
+     "person:211",
+     "org:2768",
+     "person:4239",
+     "org:33",
+     "person:3870",
+     "org:4752",
+     "org:80",
+     "person:91",
+     "org:4757",
+     "org:4006",
+     "person:4701",
+     "org:4024",
+     "person:349",
+     "person:4730",
+     "person:4732",
+     "person:4733",
+     "person:4962",
+     "person:3606",
+     "person:3063",
+     "person:6629",
+     "person:4236",
+     "person:4536",
+     "org:4025",
+     "person:4731",
+     "org:77",
+     "org:3917",
+     "org:673",
+     "org:3818",
+     "org:4753",
+     "org:4754",
+     "person:6494",
+     "org:4792",
+     "org:1466",
+     "org:2272",
+     "person:4725",
+     "org:696",
+     "person:860",
+     "person:157",
+     "person:6290",
+     "person:4975",
+     "person:4976",
+     "person:4981",
+     "person:447",
+     "org:4761",
+     "person:71",
+     "org:4755",
+     "org:402",
+     "person:4974",
+     "person:4960",
+     "person:6863",
+     "org:4751",
+     "person:177",
+     "person:185",
+     "org:2384",
+     "org:82",
+     "person:6337",
+     "org:109",
+     "org:695",
+     "person:6282",
+     "org:2561",
+     "org:3604",
+     "org:3838",
+     "org:3540",
+     "person:79",
+     "org:4759",
+     "person:50",
+     "person:6329",
+     "org:4775",
+     "person:4982",
+     "person:4987",
+     "person:4988",
+     "org:103",
+     "person:89",
+     "org:69",
+     "person:4538",
+     "org:121",
+     "person:155",
+     "person:6330",
+     "org:3268",
+     "person:6396",
+     "org:151",
+     "org:442",
+     "person:72",
+     "org:391",
+     "person:5497",
+     "person:3868",
+     "org:2103",
+     "person:146",
+     "person:92",
+     "person:48",
+     "person:160",
+     "person:6336",
+     "person:153",
+     "org:79",
+     "person:138",
+     "person:195",
+     "person:6346",
+     "org:118",
+     "person:4980"
+    ],
+    "size": 144,
+    "stability": 0.791
+   },
+   {
+    "agencies": [
+     "DOW",
+     "FBI",
+     "NAVY",
+     "ODNI",
+     "OSD",
+     "USAF"
+    ],
+    "docs": [
+     "DOW-UAP-D104",
+     "DOW-UAP-D105",
+     "DOW-UAP-D102",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "DOW-UAP-D100",
+     "R01-38-143685-box7-Incident-Summaries-101-172",
+     "DOW-UAP-D017",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "DOW-UAP-D49",
+     "NARA-493468579-576UAP0007",
+     "NARA-493468579-576UAP0026",
+     "NARA-493468580-01-2023-Annual-Report",
+     "R01-342-HS1-416511228-box186-319-1-Flying-Discs-1949",
+     "R01-38-143685-box7-Incident-Summaries-1-100",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "DOW-UAP-D094",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-130",
+     "DOW-UAP-D171"
+    ],
+    "eras": [
+     "1940s",
+     "1950s",
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 148,
+    "members": [
+     "person:1014",
+     "org:4",
+     "org:887",
+     "org:884",
+     "org:638",
+     "org:820",
+     "org:915",
+     "org:969",
+     "org:882",
+     "person:1010",
+     "person:1042",
+     "person:1133",
+     "org:888",
+     "org:894",
+     "org:1027",
+     "person:1012",
+     "org:977",
+     "org:921",
+     "person:1015",
+     "org:920",
+     "org:952",
+     "person:1013",
+     "person:1087",
+     "org:831",
+     "org:821",
+     "org:968",
+     "org:2833",
+     "org:927",
+     "org:582",
+     "person:1122",
+     "person:862",
+     "person:1056",
+     "person:1144",
+     "org:4970",
+     "person:1092",
+     "org:858",
+     "person:1101",
+     "person:1083",
+     "person:1019",
+     "org:708",
+     "person:1097",
+     "org:886",
+     "person:1017",
+     "person:1142",
+     "person:1108",
+     "person:1121",
+     "person:1123",
+     "person:1124",
+     "org:883",
+     "org:819",
+     "person:1102",
+     "org:1180",
+     "person:1048",
+     "person:1125",
+     "person:1126",
+     "org:946",
+     "org:912",
+     "org:889",
+     "org:1030",
+     "person:1146",
+     "org:932",
+     "org:891",
+     "org:892",
+     "org:3987",
+     "person:1055",
+     "person:1267",
+     "person:1230",
+     "person:1104",
+     "person:1084",
+     "person:1071",
+     "person:1081",
+     "person:1052",
+     "org:914",
+     "org:919",
+     "org:993",
+     "person:1269",
+     "person:6689",
+     "person:1038",
+     "org:1080",
+     "person:1177",
+     "person:1240",
+     "person:988",
+     "person:387",
+     "person:389",
+     "org:3835",
+     "person:2613",
+     "person:863",
+     "org:918",
+     "person:4202",
+     "person:4252",
+     "org:1028",
+     "person:1208",
+     "org:813",
+     "org:944"
+    ],
+    "size": 94,
+    "stability": 0.999
+   },
+   {
+    "agencies": [
+     "CIA",
+     "CONGRESS",
+     "DOE",
+     "DOW",
+     "FBI",
+     "NASA",
+     "OSD",
+     "USAF"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10",
+     "DOW-UAP-D105",
+     "CONGRESS-HASC-1966",
+     "DOW-UAP-D100",
+     "NARA-493468580-05-AARO-Historical-Record-Report",
+     "DOW-UAP-D092",
+     "DOW-UAP-D172",
+     "R01-18-6369445-General-1948-Vol-1",
+     "DOW-UAP-D102",
+     "DOW-UAP-D180",
+     "DOW-UAP-D175",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "NARA-596293",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-342-HS1-416511228-box186-319-1-Flying-Discs-1949",
+     "DOW-UAP-D096",
+     "NARA-595507",
+     "DOW-UAP-D168",
+     "DOW-UAP-D154",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-164",
+     "DOW-UAP-D208",
+     "DOW-UAP-D095",
+     "DOE-UAP-D004",
+     "DOW-UAP-D017",
+     "DOW-UAP-D203",
+     "DOW-UAP-D210",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-130",
+     "CIA-UAP-D026",
+     "CIA-UAP-D027",
+     "CIA-UAP-D028",
+     "R01-255-413270-UFO-s-and-Defense-What-Should-we-Prepare-For",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9",
+     "DOW-UAP-D191",
+     "DOW-UAP-D193",
+     "DOW-UAP-D197",
+     "DOW-UAP-D204",
+     "DOW-UAP-D169",
+     "DOW-UAP-D213",
+     "DOW-UAP-D097",
+     "DOW-UAP-D093",
+     "DOW-UAP-D094"
+    ],
+    "eras": [
+     "1940s",
+     "1950s",
+     "1960s-70s",
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 144,
+    "members": [
+     "org:2803",
+     "org:20",
+     "org:23",
+     "person:964",
+     "org:512",
+     "org:409",
+     "person:831",
+     "org:292",
+     "org:455",
+     "org:1146",
+     "person:940",
+     "person:951",
+     "org:65",
+     "org:274",
+     "person:45",
+     "org:561",
+     "person:5243",
+     "org:34",
+     "org:66",
+     "person:196",
+     "org:3739",
+     "person:3007",
+     "org:747",
+     "org:862",
+     "person:663",
+     "person:3633",
+     "person:140",
+     "org:2752",
+     "org:128",
+     "org:129",
+     "person:5035",
+     "org:4923",
+     "org:1385",
+     "person:826",
+     "org:1171",
+     "person:5046",
+     "person:3142",
+     "org:53",
+     "org:1198",
+     "org:1906",
+     "person:568",
+     "org:1907",
+     "org:2630",
+     "org:748",
+     "person:890",
+     "org:124",
+     "person:5048",
+     "person:952",
+     "org:3384",
+     "org:408",
+     "org:1938",
+     "org:618",
+     "person:5036",
+     "person:121",
+     "person:1437",
+     "person:6120",
+     "org:2254",
+     "org:2255",
+     "org:1777",
+     "person:5055",
+     "person:1486",
+     "org:52",
+     "person:5037",
+     "person:3009",
+     "person:3011",
+     "person:5102",
+     "org:2122",
+     "org:130",
+     "org:1227",
+     "person:5083",
+     "org:446",
+     "org:4158",
+     "org:62",
+     "org:1817",
+     "person:880",
+     "org:2682",
+     "org:87",
+     "person:5987",
+     "org:736",
+     "org:737",
+     "person:899",
+     "person:5038",
+     "person:965",
+     "org:133",
+     "org:3412",
+     "person:5060",
+     "org:354",
+     "org:3933",
+     "person:1317",
+     "person:5985",
+     "person:5990",
+     "org:86",
+     "org:91",
+     "person:5057"
+    ],
+    "size": 94,
+    "stability": 0.648
+   },
+   {
+    "agencies": [
+     "CIA",
+     "DOW",
+     "FBI",
+     "NAVY"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-130",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "DOW-UAP-D092",
+     "R01-38-143685-box7-Incident-Summaries-1-100",
+     "DOW-UAP-D102",
+     "DOW-UAP-D105",
+     "CIA-UAP-D027",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7"
+    ],
+    "eras": [
+     "1950s",
+     "1960s-70s",
+     "undated"
+    ],
+    "internal_ties": 302,
+    "members": [
+     "person:21",
+     "person:4879",
+     "person:4880",
+     "org:223",
+     "person:5371",
+     "person:5203",
+     "org:115",
+     "person:5340",
+     "person:881",
+     "person:716",
+     "org:4298",
+     "org:4259",
+     "person:5282",
+     "org:4257",
+     "person:5377",
+     "person:4742",
+     "org:4299",
+     "person:5208",
+     "org:4011",
+     "person:4849",
+     "person:5283",
+     "person:5286",
+     "org:627",
+     "person:5207",
+     "org:4297",
+     "org:4084",
+     "org:4092",
+     "org:4344",
+     "person:5303",
+     "org:4028",
+     "org:4612",
+     "person:541",
+     "person:5376",
+     "person:4882",
+     "org:4307",
+     "person:476",
+     "org:4310",
+     "person:5380",
+     "org:4296",
+     "org:2877",
+     "person:474",
+     "org:4094",
+     "org:4614",
+     "person:5878",
+     "person:5879",
+     "person:4886",
+     "person:475",
+     "org:4074",
+     "person:5389",
+     "person:5473",
+     "org:430",
+     "person:5450",
+     "org:860",
+     "org:4007",
+     "org:4096",
+     "org:4258",
+     "person:5370",
+     "person:5210",
+     "person:4877",
+     "org:369",
+     "org:32",
+     "org:3796",
+     "org:3963",
+     "org:4377",
+     "person:5449",
+     "person:4704",
+     "org:432",
+     "org:4309",
+     "org:4384",
+     "person:5310",
+     "org:827",
+     "org:861",
+     "person:5374",
+     "person:4707",
+     "person:5357",
+     "person:5379",
+     "org:4082",
+     "person:5527",
+     "person:5528",
+     "org:4357",
+     "person:5205",
+     "person:5269",
+     "org:4260",
+     "person:4745",
+     "person:5400",
+     "person:4757",
+     "person:5372",
+     "person:4708",
+     "person:5333",
+     "org:463",
+     "org:3798",
+     "person:5367"
+    ],
+    "size": 92,
+    "stability": 0.754
+   },
+   {
+    "agencies": [
+     "DOW",
+     "FBI",
+     "NAVY",
+     "USAF",
+     "USG"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-164",
+     "DOW-UAP-D105",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "DOW-UAP-D100",
+     "R01-18-6369445-General-1948-Vol-1",
+     "DOW-UAP-D017",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "FBI-UAP-D014",
+     "R01-18-100754-General-1946-7-Vol-2",
+     "DOW-UAP-D180",
+     "R01-38-143685-box7-Incident-Summaries-1-100",
+     "DOW-UAP-D102",
+     "USG-UAP-D002"
+    ],
+    "eras": [
+     "1940s",
+     "1950s",
+     "1960s-70s",
+     "undated"
+    ],
+    "internal_ties": 142,
+    "members": [
+     "org:296",
+     "person:1539",
+     "org:1264",
+     "org:323",
+     "org:2925",
+     "org:4762",
+     "person:3605",
+     "org:762",
+     "person:4768",
+     "person:6636",
+     "person:6596",
+     "person:4860",
+     "person:6103",
+     "org:4263",
+     "org:5017",
+     "org:4820",
+     "org:1245",
+     "person:5154",
+     "org:4807",
+     "person:6595",
+     "person:5642",
+     "person:5979",
+     "person:6619",
+     "person:6620",
+     "person:5754",
+     "person:6546",
+     "person:5757",
+     "person:3856",
+     "person:4127",
+     "org:4885",
+     "person:5755",
+     "org:570",
+     "person:5747",
+     "org:2493",
+     "person:351",
+     "person:4863",
+     "org:4436",
+     "org:4907",
+     "person:5033",
+     "org:812",
+     "person:6597",
+     "person:4765",
+     "person:1537",
+     "org:4217",
+     "person:898",
+     "org:4889",
+     "org:4926",
+     "org:4634",
+     "person:5918",
+     "org:4273",
+     "org:309",
+     "person:5217",
+     "org:3523",
+     "org:3524",
+     "person:5758",
+     "org:4289",
+     "person:6592",
+     "org:692",
+     "person:854",
+     "person:857",
+     "org:3913",
+     "org:4924",
+     "org:4927",
+     "org:4930",
+     "person:711",
+     "person:1565",
+     "person:6660",
+     "org:4249",
+     "org:4101",
+     "person:6551",
+     "org:782",
+     "person:4758",
+     "org:4425",
+     "person:3424",
+     "org:324",
+     "person:4888",
+     "org:294"
+    ],
+    "size": 77,
+    "stability": 0.966
+   },
+   {
+    "agencies": [
+     "DOS",
+     "DOW",
+     "EOP",
+     "FBI",
+     "NASA",
+     "NAVY",
+     "NRC",
+     "ODNI",
+     "OSD",
+     "UNK",
+     "USAF",
+     "USG"
+    ],
+    "docs": [
+     "DOW-UAP-D49",
+     "NARA-493468580-07-2024-Annual-Report",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "NARA-493468579-576UAP0021",
+     "NARA-493468580-01-2023-Annual-Report",
+     "NARA-493468579-576UAP0007",
+     "NARA-493468580-029-2023-UAP-Mission-Slides",
+     "NARA-493468580-05-AARO-Historical-Record-Report",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "USG-UAP-D002",
+     "DOW-UAP-D172",
+     "NARA-493468579-576UAP0026",
+     "DOW-UAP-D100",
+     "NARA-493468580-23-AARO-Brief-ATB",
+     "R01-255-413270-UFO-s-and-Defense-What-Should-we-Prepare-For",
+     "EOP-UAP-D002",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "NARA-493468580-022-SASC-Transcript-2023",
+     "NARA-493468580-25-Sky-View-Final-Draft",
+     "NARA-493468580-11-AARO-Presentation-for-NASA",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "DOS-UAP-D001",
+     "DOS-UAP-D002",
+     "NARA-493468580-04-AARO-Trifold-2024",
+     "R01-18-6369445-General-1948-Vol-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "DOW-UAP-D017",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "DOW-UAP-D124",
+     "DOW-UAP-D48",
+     "NARA-493468580-015-2023-UAP-Mission-Backgrounder-Paper",
+     "NARA-493468580-08-Go-Fast",
+     "DOW-UAP-D203",
+     "NARA-493468580-026-DGI-Briefing",
+     "NARA-493468580-06-SAPCO-CAPCO-MFR",
+     "DOW-UAP-D180",
+     "DOW-UAP-D142",
+     "DOW-UAP-D143",
+     "NARA-493468580-030-SASC-Brief-2023",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "DOW-UAP-D170",
+     "DOW-UAP-D171",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-130",
+     "NARA-493468580-28-Open-Hearing-Brief",
+     "NARA-488808322-UAP-BLUF-attachment-release-in-full",
+     "NARA-493468580-018-Eglin",
+     "NARA-493468580-09-Open-Hearing-Slides",
+     "NARA-493468580-021-AARO-Trifold-Jan2025",
+     "NARA-493468580-027-Satellite-Flaring-Paper",
+     "NARA-493468580-03-2024-DGI-Mission-Brief",
+     "NARA-493468580-014-Phillips-Timothy-Bio-DEC-2023",
+     "NARA-493468580-02-Physical-Constraints-Paper",
+     "NARA-493468580-12-ORNL-Analysis-Metallic-Specimen",
+     "NARA-493468580-24-UAP-Reporting-Trends",
+     "DOW-UAP-D105",
+     "DOW-UAP-D123",
+     "DOW-UAP-D148",
+     "DOW-UAP-D175",
+     "R01-18-100754-General-1946-7-Vol-2",
+     "R01-38-143685-box7-Incident-Summaries-1-100",
+     "DOW-UAP-D210",
+     "DOW-UAP-D211",
+     "DOW-UAP-D135",
+     "DOW-UAP-D139",
+     "R01-059UAP00011",
+     "NARA-493468580-017-Atmospheric-Wakes",
+     "NARA-493468580-019-Southeast-Asia-Triangles",
+     "NARA-493468580-020-Western-US",
+     "NARA-493468580-10-Puerto-Rico-UAP-CR",
+     "DOW-UAP-D137"
+    ],
+    "eras": [
+     "1940s",
+     "1950s",
+     "1960s-70s",
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 108,
+    "members": [
+     "org:1994",
+     "org:56",
+     "org:807",
+     "org:201",
+     "org:2440",
+     "org:3314",
+     "org:28",
+     "org:2762",
+     "org:21",
+     "org:1673",
+     "org:63",
+     "org:2835",
+     "org:3282",
+     "org:1357",
+     "org:2919",
+     "person:2208",
+     "org:2882",
+     "org:2767",
+     "org:279",
+     "person:3599",
+     "org:2884",
+     "org:3311",
+     "person:5811",
+     "org:276",
+     "org:1342",
+     "org:2037",
+     "org:2507",
+     "org:1215",
+     "org:622",
+     "person:5607",
+     "org:1403",
+     "org:3576",
+     "org:3269",
+     "org:1752",
+     "org:2870",
+     "org:3267",
+     "org:2869",
+     "org:3280",
+     "org:1063",
+     "person:4605",
+     "org:2234",
+     "org:1411",
+     "person:4116",
+     "person:5812",
+     "org:2231",
+     "person:5646",
+     "org:105",
+     "org:295",
+     "person:5608",
+     "org:2235",
+     "org:3359",
+     "org:1346",
+     "org:753",
+     "person:4937",
+     "org:1695",
+     "person:828",
+     "org:1646",
+     "person:5645",
+     "org:755",
+     "org:764",
+     "org:629",
+     "person:3913",
+     "org:2287",
+     "org:4565",
+     "org:4399",
+     "person:5824",
+     "person:1289",
+     "org:1577",
+     "person:5318",
+     "org:4662",
+     "org:1435",
+     "org:1971",
+     "org:4457",
+     "person:2128",
+     "org:3529",
+     "org:691"
+    ],
+    "size": 76,
+    "stability": 0.959
+   },
+   {
+    "agencies": [
+     "DOW",
+     "FBI",
+     "NAVY",
+     "OSD",
+     "USAF"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "DOW-UAP-D100",
+     "R01-18-6369445-General-1948-Vol-1",
+     "R01-38-143685-box7-Incident-Summaries-101-172",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "DOW-UAP-D105",
+     "R01-18-100754-General-1946-7-Vol-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-130",
+     "NARA-493468580-05-AARO-Historical-Record-Report"
+    ],
+    "eras": [
+     "1940s",
+     "1950s",
+     "undated"
+    ],
+    "internal_ties": 240,
+    "members": [
+     "person:885",
+     "person:5810",
+     "person:1915",
+     "person:5263",
+     "person:4855",
+     "person:5974",
+     "org:774",
+     "person:4571",
+     "person:4179",
+     "person:6319",
+     "person:6317",
+     "person:6313",
+     "org:4236",
+     "person:2901",
+     "person:6321",
+     "org:739",
+     "person:6029",
+     "org:4234",
+     "person:5265",
+     "person:4540",
+     "person:5565",
+     "person:4874",
+     "person:4647",
+     "person:6043",
+     "org:1154",
+     "person:4622",
+     "org:742",
+     "org:744",
+     "person:886",
+     "person:5266",
+     "person:6028",
+     "person:6032",
+     "person:4570",
+     "person:6405",
+     "person:4623",
+     "person:574",
+     "org:743",
+     "person:5264",
+     "person:9",
+     "org:4278",
+     "org:745",
+     "person:887",
+     "person:6526",
+     "org:2715",
+     "org:3548",
+     "person:6323",
+     "person:4654",
+     "person:1364",
+     "person:4542",
+     "person:4539",
+     "person:4621",
+     "person:4620",
+     "person:6073",
+     "org:4099",
+     "person:1293",
+     "person:4665",
+     "person:1499",
+     "org:40",
+     "person:5406",
+     "person:4323",
+     "org:328",
+     "person:5304",
+     "org:4089",
+     "person:6573",
+     "org:780",
+     "person:4918",
+     "org:4110",
+     "org:4324",
+     "org:4306",
+     "person:5759"
+    ],
+    "size": 70,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DIA",
+     "DOW",
+     "NASA",
+     "OSD"
+    ],
+    "docs": [
+     "DOW-UAP-D172",
+     "DOW-UAP-D171",
+     "DOW-UAP-D170",
+     "DOW-UAP-D169",
+     "DOW-UAP-D168",
+     "DOW-UAP-D140",
+     "DOW-UAP-D167",
+     "DOW-UAP-D173",
+     "R01-255-413270-UFO-s-and-Defense-What-Should-we-Prepare-For",
+     "DOW-UAP-D142",
+     "DOW-UAP-D175",
+     "DOW-UAP-D188",
+     "DOW-UAP-D135",
+     "DOW-UAP-D166",
+     "DOW-UAP-D123",
+     "DOW-UAP-D125",
+     "NARA-493468580-05-AARO-Historical-Record-Report",
+     "DIA-AAWSAP-DELIVERABLES-REVIEW-2009",
+     "DIA-AAWSAP-DEPSECDEF-PACKET",
+     "DIA-AAWSAP-DI-BRIEF-2008",
+     "DIA-AAWSAP-DI-BRIEF-2009",
+     "DIA-AAWSAP-REID-BRIEF-2009-05",
+     "DIA-AAWSAP-STATUS-BRIEFING-2009",
+     "DOW-UAP-D153"
+    ],
+    "eras": [
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 87,
+    "members": [
+     "org:171",
+     "person:2703",
+     "org:165",
+     "org:1514",
+     "org:1510",
+     "org:1995",
+     "org:1651",
+     "org:2172",
+     "org:2023",
+     "org:1903",
+     "person:2421",
+     "person:2057",
+     "org:1367",
+     "org:1950",
+     "org:1900",
+     "person:2496",
+     "org:1996",
+     "org:2185",
+     "person:1981",
+     "org:1899",
+     "org:1894",
+     "org:1892",
+     "org:1895",
+     "person:2123",
+     "org:2116",
+     "person:2595",
+     "org:3560",
+     "person:1868",
+     "person:1907",
+     "org:2333",
+     "org:2026",
+     "org:2126",
+     "person:2067",
+     "org:2114",
+     "org:2177",
+     "org:1937",
+     "org:2308",
+     "person:2632",
+     "org:2115",
+     "org:2192",
+     "org:2193",
+     "org:2160",
+     "org:1948",
+     "person:2108",
+     "org:2111",
+     "org:2301",
+     "org:2161",
+     "org:2307",
+     "person:2734",
+     "org:2208",
+     "org:2163",
+     "org:2210",
+     "org:2179",
+     "org:2183",
+     "org:1613",
+     "org:2200",
+     "org:2322",
+     "org:2176",
+     "org:2304",
+     "org:1463",
+     "org:2309",
+     "org:2130",
+     "org:1893",
+     "org:3306",
+     "person:1758"
+    ],
+    "size": 65,
+    "stability": 0.961
+   },
+   {
+    "agencies": [
+     "CONGRESS",
+     "DOE",
+     "DOW",
+     "FBI",
+     "NAVY",
+     "USAF"
+    ],
+    "docs": [
+     "DOW-UAP-D017",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "DOW-UAP-D092",
+     "CONGRESS-HASC-1966",
+     "DOE-UAP-D004",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-38-143685-box7-Incident-Summaries-101-172",
+     "DOW-UAP-D154",
+     "R01-38-143685-box7-Incident-Summaries-1-100",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "DOW-UAP-D193",
+     "DOW-UAP-D195",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10",
+     "DOW-UAP-D095",
+     "R01-18-100754-General-1946-7-Vol-2"
+    ],
+    "eras": [
+     "1940s",
+     "1950s",
+     "1960s-70s",
+     "undated"
+    ],
+    "internal_ties": 99,
+    "members": [
+     "person:264",
+     "org:58",
+     "person:274",
+     "person:299",
+     "org:215",
+     "person:333",
+     "person:59",
+     "person:4232",
+     "org:283",
+     "person:355",
+     "org:218",
+     "person:51",
+     "person:359",
+     "org:4364",
+     "person:53",
+     "org:280",
+     "person:315",
+     "org:74",
+     "person:4867",
+     "person:997",
+     "person:300",
+     "org:303",
+     "person:356",
+     "org:306",
+     "person:54",
+     "org:3816",
+     "person:270",
+     "org:298",
+     "org:304",
+     "org:305",
+     "person:454",
+     "person:295",
+     "person:56",
+     "person:4286",
+     "org:350",
+     "org:293",
+     "person:52",
+     "person:4285",
+     "org:67",
+     "person:5416",
+     "person:623",
+     "org:383",
+     "person:412",
+     "person:55",
+     "person:4868",
+     "org:297",
+     "org:348",
+     "person:5907",
+     "person:413",
+     "person:4289",
+     "person:334",
+     "person:3032",
+     "org:377",
+     "org:361",
+     "org:48",
+     "org:3840",
+     "org:219",
+     "org:368",
+     "org:351",
+     "org:349"
+    ],
+    "size": 60,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW",
+     "FBI",
+     "OSD"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-438",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-65-HS1-101634279-100-DE-26505",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "DOW-UAP-D171",
+     "DOW-UAP-D172",
+     "DOW-UAP-D105",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "NARA-493468580-022-SASC-Transcript-2023"
+    ],
+    "eras": [
+     "1950s",
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 100,
+    "members": [
+     "org:216",
+     "person:4531",
+     "person:5014",
+     "org:4933",
+     "person:6650",
+     "person:6235",
+     "org:4142",
+     "person:6236",
+     "org:2029",
+     "person:6298",
+     "org:4938",
+     "org:4936",
+     "person:6301",
+     "person:6305",
+     "person:6656",
+     "org:221",
+     "org:195",
+     "org:4939",
+     "org:670",
+     "org:4742",
+     "org:4935",
+     "org:1720",
+     "person:5235",
+     "org:4143",
+     "person:6295",
+     "person:5013",
+     "person:6653",
+     "person:6643",
+     "person:6239",
+     "org:4739",
+     "person:6249",
+     "person:6454",
+     "person:6615",
+     "person:6451",
+     "person:5884",
+     "person:6648",
+     "person:5651",
+     "org:4066",
+     "org:2028",
+     "person:6246",
+     "person:6247",
+     "person:5896",
+     "person:5484",
+     "org:4267",
+     "person:5313",
+     "person:4520",
+     "person:6642",
+     "person:6675",
+     "org:301",
+     "org:4617",
+     "org:4886",
+     "person:4562",
+     "org:4812",
+     "person:4852",
+     "person:5780",
+     "person:6453",
+     "org:4941"
+    ],
+    "size": 57,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "CONGRESS",
+     "FBI",
+     "ODNI",
+     "OSD"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "NARA-493468580-07-2024-Annual-Report",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "NARA-493468579-576UAP0007",
+     "NARA-493468579-576UAP0026",
+     "NARA-493468580-01-2023-Annual-Report",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-403",
+     "CONGRESS-HASC-1966"
+    ],
+    "eras": [
+     "1960s-70s",
+     "undated"
+    ],
+    "internal_ties": 88,
+    "members": [
+     "person:6156",
+     "org:4713",
+     "person:6567",
+     "org:112",
+     "org:3941",
+     "org:3943",
+     "org:3926",
+     "org:4876",
+     "person:6579",
+     "org:3485",
+     "org:4714",
+     "person:6165",
+     "org:3942",
+     "org:191",
+     "org:3947",
+     "person:4670",
+     "org:4875",
+     "person:6576",
+     "person:6577",
+     "person:6580",
+     "person:6443",
+     "org:3948",
+     "person:6571",
+     "person:6155",
+     "org:3940",
+     "org:4874",
+     "person:6442",
+     "person:6557",
+     "person:6157",
+     "person:6168",
+     "person:6169",
+     "org:4023",
+     "person:6565",
+     "person:6582",
+     "org:3258",
+     "org:3271",
+     "org:2439",
+     "org:4035",
+     "person:4830",
+     "person:165"
+    ],
+    "size": 40,
+    "stability": 0.766
+   },
+   {
+    "agencies": [
+     "DOW",
+     "FBI"
+    ],
+    "docs": [
+     "DOW-UAP-D171",
+     "DOW-UAP-D169",
+     "DOW-UAP-D170",
+     "DOW-UAP-D188",
+     "DOW-UAP-D168",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "DOW-UAP-D175",
+     "DOW-UAP-D144"
+    ],
+    "eras": [
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 271,
+    "members": [
+     "org:1931",
+     "org:1929",
+     "org:1382",
+     "org:1713",
+     "person:2533",
+     "org:1935",
+     "org:1479",
+     "org:1936",
+     "person:2525",
+     "person:2545",
+     "person:2546",
+     "person:2547",
+     "person:2548",
+     "person:2549",
+     "org:1550",
+     "org:433",
+     "org:1930",
+     "org:390",
+     "person:2513",
+     "person:2514",
+     "person:2534",
+     "person:2535",
+     "person:2536",
+     "person:2537",
+     "person:2541",
+     "person:2542",
+     "person:2538",
+     "person:2539",
+     "person:2540",
+     "org:1952",
+     "person:2550",
+     "org:1542",
+     "person:1639",
+     "person:1828",
+     "person:6125",
+     "person:1627",
+     "org:1712",
+     "person:1649"
+    ],
+    "size": 38,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW",
+     "OSD"
+    ],
+    "docs": [
+     "DOW-UAP-D171",
+     "DOW-UAP-D170",
+     "DOW-UAP-D169",
+     "DOW-UAP-D173",
+     "NARA-493468580-05-AARO-Historical-Record-Report",
+     "DOW-UAP-D174",
+     "DOW-UAP-D168",
+     "DOW-UAP-D183"
+    ],
+    "eras": [
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 454,
+    "members": [
+     "person:2500",
+     "person:2509",
+     "person:2559",
+     "person:2510",
+     "person:2575",
+     "person:1799",
+     "person:2574",
+     "person:2556",
+     "person:1626",
+     "person:2563",
+     "person:2531",
+     "person:2577",
+     "person:2557",
+     "person:2558",
+     "person:2530",
+     "person:2588",
+     "person:2630",
+     "person:2561",
+     "person:2562",
+     "person:2564",
+     "person:2565",
+     "person:2566",
+     "person:2568",
+     "person:2572",
+     "person:2573",
+     "person:2587",
+     "person:2555",
+     "person:2567",
+     "person:2569",
+     "person:2570",
+     "person:2571",
+     "person:2585",
+     "person:2586",
+     "person:2576",
+     "person:2849",
+     "org:2024",
+     "person:2560",
+     "person:3169"
+    ],
+    "size": 38,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DIA",
+     "DOW",
+     "NASA",
+     "OSD"
+    ],
+    "docs": [
+     "DOW-UAP-D188",
+     "DOW-UAP-D138",
+     "DOW-UAP-D135",
+     "DOW-UAP-D139",
+     "DOW-UAP-D142",
+     "DOW-UAP-D143",
+     "DOW-UAP-D153",
+     "DOW-UAP-D145",
+     "DOW-UAP-D148",
+     "DOW-UAP-D146",
+     "DOW-UAP-D147",
+     "DOW-UAP-D150",
+     "DOW-UAP-D151",
+     "DOW-UAP-D187",
+     "DIA-AAWSAP-DEPSECDEF-PACKET",
+     "DOW-UAP-D130",
+     "DOW-UAP-D136",
+     "DOW-UAP-D117",
+     "DOW-UAP-D118",
+     "DOW-UAP-D119",
+     "DOW-UAP-D120",
+     "DOW-UAP-D121",
+     "DOW-UAP-D123",
+     "DOW-UAP-D124",
+     "DOW-UAP-D125",
+     "DOW-UAP-D126",
+     "DOW-UAP-D128",
+     "DOW-UAP-D129",
+     "DOW-UAP-D131",
+     "DOW-UAP-D132",
+     "DOW-UAP-D133",
+     "DOW-UAP-D134",
+     "DOW-UAP-D140",
+     "DOW-UAP-D141",
+     "DOW-UAP-D144",
+     "DOW-UAP-D185",
+     "NARA-493468580-05-AARO-Historical-Record-Report",
+     "DOW-UAP-D122",
+     "DOW-UAP-D184",
+     "DIA-AAWSAP-REID-MTG-2009-01",
+     "DIA-AAWSAP-REID-MTG-2009-05",
+     "DIA-AAWSAP-DELIVERABLES-REVIEW-2009",
+     "DIA-AAWSAP-REID-SAP-LETTER-2009",
+     "DOW-UAP-D186",
+     "DOW-UAP-D152",
+     "DIA-AAWSAP-DI-BRIEF-2008",
+     "DIA-AAWSAP-DI-BRIEF-2009",
+     "DIA-AAWSAP-REID-MTG-2009-11",
+     "DIA-AAWSAP-SAP-REVIEW-2009",
+     "DOW-UAP-D183",
+     "DOW-UAP-D170",
+     "DIA-AAWSAP-FOIA-00349-2018",
+     "DIA-AAWSAP-OUSDI-IM-AATIP",
+     "DOW-UAP-D112",
+     "DOW-UAP-D172",
+     "DOW-UAP-D175",
+     "DOW-UAP-D127",
+     "DOW-UAP-D137",
+     "DIA-AAWSAP-STATUS-2009-08",
+     "DOW-UAP-D182",
+     "DIA-AAWSAP-AATIP-IM-2010-DRAFT",
+     "DOW-UAP-D149",
+     "DOW-UAP-D113",
+     "DOW-UAP-D114",
+     "DOW-UAP-D110",
+     "DIA-AAWSAP-ORDER-2008",
+     "DOW-UAP-D111",
+     "DOW-UAP-D115",
+     "DOW-UAP-D116",
+     "DIA-AAWSAP-SOW-2008",
+     "DIA-AAWSAP-AATIP-IM-2010",
+     "DIA-AAWSAP-REID-BRIEF-2009-05",
+     "DIA-AAWSAP-CONTRACT-FY10",
+     "DIA-AAWSAP-STATUS-BRIEFING-2009",
+     "R01-255-413270-UFO-s-and-Defense-What-Should-we-Prepare-For"
+    ],
+    "eras": [
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 62,
+    "members": [
+     "org:172",
+     "person:1624",
+     "org:2659",
+     "org:169",
+     "person:227",
+     "org:1318",
+     "org:1302",
+     "org:162",
+     "org:1664",
+     "org:182",
+     "org:166",
+     "person:1947",
+     "org:1316",
+     "person:233",
+     "org:170",
+     "org:1333",
+     "person:240",
+     "org:188",
+     "person:1835",
+     "person:2274",
+     "org:2433",
+     "org:1816",
+     "org:2155",
+     "person:2303",
+     "person:234",
+     "person:1635",
+     "person:1847",
+     "org:3607",
+     "org:1366"
+    ],
+    "size": 29,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-449",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 60,
+    "members": [
+     "person:4945",
+     "org:4118",
+     "org:4901",
+     "person:4944",
+     "person:4947",
+     "person:4942",
+     "person:4949",
+     "person:4943",
+     "person:4946",
+     "org:772",
+     "person:4954",
+     "person:4948",
+     "person:4952",
+     "person:6622",
+     "org:4120",
+     "person:4955",
+     "org:4123",
+     "person:4969",
+     "person:4973",
+     "person:4950",
+     "person:4951",
+     "person:4953",
+     "person:4997",
+     "person:4972",
+     "person:6847",
+     "org:4127"
+    ],
+    "size": 26,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D104",
+     "DOW-UAP-D102",
+     "DOW-UAP-D105",
+     "DOW-UAP-D098"
+    ],
+    "eras": [
+     "1950s"
+    ],
+    "internal_ties": 37,
+    "members": [
+     "org:895",
+     "org:871",
+     "org:899",
+     "person:1027",
+     "org:893",
+     "org:902",
+     "org:901",
+     "person:991",
+     "org:835",
+     "org:900",
+     "org:903",
+     "org:643",
+     "person:1025",
+     "org:640",
+     "org:845",
+     "org:867",
+     "org:1078",
+     "org:911",
+     "person:1221",
+     "person:1077",
+     "person:1598",
+     "org:906",
+     "person:1284"
+    ],
+    "size": 23,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW",
+     "NASA"
+    ],
+    "docs": [
+     "R01-255-413270-UFO-s-and-Defense-What-Should-we-Prepare-For",
+     "DOW-UAP-D168",
+     "DOW-UAP-D172"
+    ],
+    "eras": [
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 54,
+    "members": [
+     "org:1915",
+     "org:3558",
+     "org:1911",
+     "org:1912",
+     "org:1913",
+     "org:3557",
+     "person:3991",
+     "person:3998",
+     "person:4000",
+     "person:4001",
+     "org:2393",
+     "person:3997",
+     "person:3999",
+     "person:4004",
+     "org:3559",
+     "person:3954",
+     "org:3652",
+     "person:3992",
+     "person:3892",
+     "person:3897",
+     "org:3640",
+     "person:3898"
+    ],
+    "size": 22,
+    "stability": 0.988
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 40,
+    "members": [
+     "person:5589",
+     "person:5587",
+     "person:5592",
+     "person:5588",
+     "org:4430",
+     "person:5591",
+     "org:4067",
+     "person:5748",
+     "person:4839",
+     "person:5600",
+     "org:4469",
+     "org:4470",
+     "person:5655",
+     "person:5596",
+     "org:757",
+     "org:4429",
+     "person:5621",
+     "org:4445",
+     "org:4062",
+     "org:4036",
+     "person:5612",
+     "org:4444"
+    ],
+    "size": 22,
+    "stability": 0.975
+   },
+   {
+    "agencies": [
+     "FBI",
+     "USG"
+    ],
+    "docs": [
+     "USG-UAP-D002",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6"
+    ],
+    "eras": [
+     "1960s-70s",
+     "undated"
+    ],
+    "internal_ties": 45,
+    "members": [
+     "org:5061",
+     "person:6914",
+     "org:17",
+     "person:6891",
+     "org:563",
+     "org:4046",
+     "person:6942",
+     "person:6512",
+     "person:6940",
+     "person:6944",
+     "org:5063",
+     "person:6937",
+     "person:6941",
+     "person:4515",
+     "person:6938",
+     "person:6939",
+     "org:5064",
+     "person:4911",
+     "person:6061",
+     "person:6917"
+    ],
+    "size": 20,
+    "stability": 0.937
+   },
+   {
+    "agencies": [
+     "DOW",
+     "FBI"
+    ],
+    "docs": [
+     "DOW-UAP-D102",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-130",
+     "DOW-UAP-D096",
+     "DOW-UAP-D104",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "DOW-UAP-D105"
+    ],
+    "eras": [
+     "1950s",
+     "undated"
+    ],
+    "internal_ties": 34,
+    "members": [
+     "org:545",
+     "org:38",
+     "org:345",
+     "person:671",
+     "person:942",
+     "person:945",
+     "org:983",
+     "person:943",
+     "person:944",
+     "org:1372",
+     "person:6769",
+     "person:6768",
+     "org:870",
+     "person:669",
+     "org:78",
+     "org:1020",
+     "person:22",
+     "org:908",
+     "person:4268"
+    ],
+    "size": 19,
+    "stability": 0.775
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D16",
+     "DOW-UAP-D18",
+     "DOW-UAP-D65",
+     "DOW-UAP-D19",
+     "DOW-UAP-D20",
+     "DOW-UAP-D28",
+     "DOW-UAP-D32",
+     "DOW-UAP-D63",
+     "DOW-UAP-D75",
+     "DOW-UAP-D23",
+     "DOW-UAP-D61",
+     "DOW-UAP-D64",
+     "DOW-UAP-D109",
+     "DOW-UAP-D62",
+     "DOW-UAP-D10",
+     "DOW-UAP-D108",
+     "DOW-UAP-D12",
+     "DOW-UAP-D14",
+     "DOW-UAP-D25",
+     "DOW-UAP-D27",
+     "DOW-UAP-D33",
+     "DOW-UAP-D35",
+     "DOW-UAP-D38",
+     "DOW-UAP-D58",
+     "DOW-UAP-PR20",
+     "DOW-UAP-D106",
+     "DOW-UAP-D74",
+     "DOW-UAP-D101",
+     "DOW-UAP-D107",
+     "DOW-UAP-D44",
+     "DOW-UAP-D55",
+     "DOW-UAP-D60"
+    ],
+    "eras": [
+     "2016+",
+     "undated"
+    ],
+    "internal_ties": 13,
+    "members": [
+     "org:344",
+     "person:3363",
+     "org:653",
+     "person:3418",
+     "org:1286",
+     "org:2811",
+     "org:655",
+     "org:2898",
+     "org:1287",
+     "org:1300"
+    ],
+    "size": 10,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D171",
+     "DOW-UAP-D170",
+     "DOW-UAP-D173"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 15,
+    "members": [
+     "person:2594",
+     "person:2592",
+     "org:1881",
+     "org:1962",
+     "person:2593",
+     "org:1997",
+     "org:1969",
+     "person:2602",
+     "org:1970"
+    ],
+    "size": 9,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW",
+     "FBI",
+     "NAVY"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-38-143685-box7-Incident-Summaries-101-172",
+     "DOW-UAP-D093",
+     "DOW-UAP-D094",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2"
+    ],
+    "eras": [
+     "1940s",
+     "undated"
+    ],
+    "internal_ties": 11,
+    "members": [
+     "org:3880",
+     "person:4395",
+     "person:4394",
+     "org:4504",
+     "org:466",
+     "org:3994",
+     "person:5700",
+     "person:544",
+     "person:545"
+    ],
+    "size": 9,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D27",
+     "DOW-UAP-D25",
+     "DOW-UAP-D35",
+     "DOW-UAP-D32",
+     "DOW-UAP-D28",
+     "DOW-UAP-D64",
+     "DOW-UAP-D75",
+     "DOW-UAP-D14",
+     "DOW-UAP-D33",
+     "DOW-UAP-D10",
+     "DOW-UAP-D106",
+     "DOW-UAP-D19",
+     "DOW-UAP-D60",
+     "DOW-UAP-D62",
+     "DOW-UAP-D63",
+     "DOW-UAP-D107"
+    ],
+    "eras": [
+     "2016+"
+    ],
+    "internal_ties": 10,
+    "members": [
+     "org:657",
+     "org:2816",
+     "org:658",
+     "org:1294",
+     "org:2815",
+     "org:2817",
+     "org:1296",
+     "org:2814"
+    ],
+    "size": 8,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW",
+     "FBI"
+    ],
+    "docs": [
+     "DOW-UAP-D095",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A"
+    ],
+    "eras": [
+     "1950s",
+     "undated"
+    ],
+    "internal_ties": 13,
+    "members": [
+     "person:592",
+     "person:603",
+     "org:502",
+     "org:503",
+     "person:589",
+     "person:591",
+     "person:4582"
+    ],
+    "size": 7,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI",
+     "NAVY"
+    ],
+    "docs": [
+     "R01-38-143685-box7-Incident-Summaries-1-100",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 17,
+    "members": [
+     "person:4225",
+     "org:3812",
+     "person:4228",
+     "person:4229",
+     "person:4230",
+     "person:5225",
+     "org:3813"
+    ],
+    "size": 7,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 11,
+    "members": [
+     "person:5041",
+     "org:4195",
+     "person:5081",
+     "person:5082",
+     "person:5079",
+     "person:69",
+     "org:4164"
+    ],
+    "size": 7,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI",
+     "NAVY"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-130",
+     "R01-38-143685-box7-Incident-Summaries-1-100"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 13,
+    "members": [
+     "person:4248",
+     "person:5455",
+     "person:5457",
+     "person:5362",
+     "person:5456",
+     "org:4381",
+     "person:4250"
+    ],
+    "size": 7,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 17,
+    "members": [
+     "org:4557",
+     "person:5796",
+     "org:4558",
+     "org:4553",
+     "org:4555",
+     "org:4556",
+     "org:4552"
+    ],
+    "size": 7,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D105",
+     "DOW-UAP-D102",
+     "DOW-UAP-D095"
+    ],
+    "eras": [
+     "1950s"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "org:506",
+     "person:1562",
+     "person:1567",
+     "org:521",
+     "person:1579",
+     "org:487",
+     "person:1580"
+    ],
+    "size": 7,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D104"
+    ],
+    "eras": [
+     "1950s"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "org:1038",
+     "org:1043",
+     "org:1103",
+     "person:1265",
+     "org:1039",
+     "person:1245"
+    ],
+    "size": 6,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D105"
+    ],
+    "eras": [
+     "1950s"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "org:1226",
+     "person:1500",
+     "person:1494",
+     "person:1495",
+     "person:1503",
+     "org:1225"
+    ],
+    "size": 6,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW",
+     "NAVY"
+    ],
+    "docs": [
+     "DOW-UAP-D172",
+     "NAVY-RF-2023-01",
+     "DOW-UAP-D175"
+    ],
+    "eras": [
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "org:2094",
+     "org:2087",
+     "org:2084",
+     "org:2090",
+     "org:2095",
+     "org:2091"
+    ],
+    "size": 6,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW",
+     "FBI",
+     "USAF"
+    ],
+    "docs": [
+     "R01-18-100754-General-1946-7-Vol-2",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "DOW-UAP-D097",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "DOW-UAP-D154",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7"
+    ],
+    "eras": [
+     "1940s",
+     "1950s",
+     "undated"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "org:3528",
+     "org:358",
+     "person:805",
+     "org:3527",
+     "person:6132",
+     "person:4576"
+    ],
+    "size": 6,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "USAF"
+    ],
+    "docs": [
+     "R01-342-HS1-416511228-box186-319-1-Flying-Discs-1949"
+    ],
+    "eras": [
+     "1940s"
+    ],
+    "internal_ties": 9,
+    "members": [
+     "org:3729",
+     "org:3730",
+     "person:4061",
+     "person:4062",
+     "org:987",
+     "person:4060"
+    ],
+    "size": 6,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D170",
+     "DOW-UAP-D171"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 15,
+    "members": [
+     "person:2578",
+     "person:2580",
+     "person:2581",
+     "person:2582",
+     "person:2583",
+     "person:2584"
+    ],
+    "size": 6,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D104"
+    ],
+    "eras": [
+     "1950s"
+    ],
+    "internal_ties": 7,
+    "members": [
+     "org:1046",
+     "org:1058",
+     "org:1059",
+     "org:1060",
+     "org:1045"
+    ],
+    "size": 5,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW",
+     "FBI"
+    ],
+    "docs": [
+     "DOW-UAP-D180",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5"
+    ],
+    "eras": [
+     "1950s",
+     "undated"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "person:2881",
+     "person:3939",
+     "person:2880",
+     "org:2473",
+     "org:3976"
+    ],
+    "size": 5,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "org:4830",
+     "person:6474",
+     "person:6563",
+     "org:4872",
+     "person:6587"
+    ],
+    "size": 5,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 9,
+    "members": [
+     "org:4857",
+     "person:6529",
+     "person:6530",
+     "org:4859",
+     "org:4856"
+    ],
+    "size": 5,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D100"
+    ],
+    "eras": [
+     "1940s"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "org:488",
+     "org:712",
+     "org:760",
+     "org:668",
+     "org:500"
+    ],
+    "size": 5,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D105"
+    ],
+    "eras": [
+     "1950s"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "person:1298",
+     "person:1299",
+     "org:1158",
+     "org:1159",
+     "org:1162"
+    ],
+    "size": 5,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW",
+     "USG"
+    ],
+    "docs": [
+     "DOW-UAP-D125",
+     "DOW-UAP-D146",
+     "USG-UAP-D002"
+    ],
+    "eras": [
+     "1960s-70s",
+     "2000s-10s"
+    ],
+    "internal_ties": 5,
+    "members": [
+     "person:1712",
+     "person:6928",
+     "person:2279",
+     "person:1715",
+     "person:6926"
+    ],
+    "size": 5,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D171",
+     "DOW-UAP-D173"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "person:2664",
+     "person:2687",
+     "person:2665",
+     "person:2805",
+     "person:2686"
+    ],
+    "size": 5,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 10,
+    "members": [
+     "person:4792",
+     "person:4794",
+     "person:4795",
+     "person:4796",
+     "person:4813"
+    ],
+    "size": 5,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D125"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "org:1442",
+     "org:1445",
+     "org:110",
+     "org:1443"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "org:1244",
+     "org:4302",
+     "org:4303",
+     "person:5216"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D172"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 5,
+    "members": [
+     "org:2195",
+     "org:2196",
+     "org:2217",
+     "org:2197"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D144",
+     "DOW-UAP-D153",
+     "DOW-UAP-D145",
+     "DOW-UAP-D48"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "org:1386",
+     "person:2272",
+     "org:1705",
+     "org:1738"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DIA",
+     "DOW"
+    ],
+    "docs": [
+     "DIA-AAWSAP-AATIP-IM-2010",
+     "DIA-AAWSAP-FOIA-00349-2018",
+     "DIA-AAWSAP-ORDER-2008",
+     "DOW-UAP-D180"
+    ],
+    "eras": [
+     "1950s",
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "org:5066",
+     "org:158",
+     "person:225",
+     "person:2872"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D170",
+     "DOW-UAP-D171"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "org:1974",
+     "org:1976",
+     "org:1979",
+     "org:1980"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D170",
+     "DOW-UAP-D171"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "org:1981",
+     "org:1982",
+     "org:1983",
+     "org:1984"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D172",
+     "DOW-UAP-D171"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "org:2031",
+     "org:2034",
+     "org:2036",
+     "org:2065"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D180"
+    ],
+    "eras": [
+     "1950s"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "person:3097",
+     "person:3098",
+     "org:2585",
+     "person:3100"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "org:3440",
+     "person:4588",
+     "person:4589",
+     "person:4590"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "NAVY",
+     "USAF"
+    ],
+    "docs": [
+     "R01-38-143685-box7-Incident-Summaries-101-172",
+     "R01-342-HS1-416511228-box186-319-1-Flying-Discs-1949"
+    ],
+    "eras": [
+     "1940s",
+     "undated"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "org:481",
+     "person:4365",
+     "org:3718",
+     "person:4043"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "USAF"
+    ],
+    "docs": [
+     "R01-342-HS1-416511228-box186-319-1-Flying-Discs-1949"
+    ],
+    "eras": [
+     "1940s"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "org:3753",
+     "org:3754",
+     "person:4078",
+     "org:3755"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI",
+     "NAVY"
+    ],
+    "docs": [
+     "R01-38-143685-box7-Incident-Summaries-1-100",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "person:4213",
+     "person:4214",
+     "org:3810",
+     "person:5551"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI",
+     "NAVY"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-38-143685-box7-Incident-Summaries-1-100"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 5,
+    "members": [
+     "person:4224",
+     "org:3811",
+     "org:4362",
+     "org:4483"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "org:4152",
+     "org:4154",
+     "org:4153",
+     "person:5023"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "person:5188",
+     "person:5189",
+     "org:4241",
+     "org:4242"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "person:6003",
+     "org:4668",
+     "person:5986",
+     "person:5997"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "person:6251",
+     "person:6263",
+     "org:4744",
+     "person:6252"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "org:4796",
+     "person:4689",
+     "person:6108",
+     "person:6109"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D095"
+    ],
+    "eras": [
+     "1950s"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "person:634",
+     "person:639",
+     "org:523",
+     "org:528"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "person:1674",
+     "person:5583",
+     "person:5584",
+     "person:5585"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D131",
+     "DOW-UAP-D135",
+     "DOW-UAP-D143"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "person:1889",
+     "person:2198",
+     "person:1888",
+     "person:1880"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D142"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 5,
+    "members": [
+     "person:2013",
+     "person:2155",
+     "person:2153",
+     "person:2154"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D140"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "person:256",
+     "person:2041",
+     "person:2044",
+     "person:2045"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "NASA"
+    ],
+    "docs": [
+     "NASA-UAP-D2"
+    ],
+    "eras": [
+     "1960s-70s"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "person:3720",
+     "person:3729",
+     "person:3719",
+     "org:3452"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "person:4899",
+     "person:4898",
+     "person:5174",
+     "person:5175"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-130"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "person:5466",
+     "person:5468",
+     "person:5469",
+     "person:5472"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "person:5927",
+     "person:5928",
+     "person:5929",
+     "person:5931"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D104"
+    ],
+    "eras": [
+     "1950s"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "org:1100",
+     "org:1122",
+     "org:934"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "OSD"
+    ],
+    "docs": [
+     "NARA-493468580-05-AARO-Historical-Record-Report"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "org:1916",
+     "person:3647",
+     "person:3648"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D172"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:2735",
+     "org:2338",
+     "person:2778"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "USAF"
+    ],
+    "docs": [
+     "R01-342-HS1-416511228-box186-319-1-Flying-Discs-1949"
+    ],
+    "eras": [
+     "1940s"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:4080",
+     "org:3758",
+     "org:3759"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "USAF"
+    ],
+    "docs": [
+     "R01-342-HS1-416511228-box186-319-1-Flying-Discs-1949"
+    ],
+    "eras": [
+     "1940s"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "org:3779",
+     "org:3780",
+     "person:4102"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "NAVY"
+    ],
+    "docs": [
+     "R01-38-143685-box7-Incident-Summaries-101-172"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "org:3833",
+     "person:4292",
+     "person:4300"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "org:3921",
+     "org:592",
+     "person:3211"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "person:5144",
+     "person:5145",
+     "org:4222"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "org:4250",
+     "person:5197",
+     "person:5198"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "org:4375",
+     "person:5444",
+     "person:5445"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "org:4639",
+     "person:5934",
+     "person:5935"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D095"
+    ],
+    "eras": [
+     "1950s"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:611",
+     "org:491",
+     "org:661"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "USG"
+    ],
+    "docs": [
+     "USG-UAP-D002"
+    ],
+    "eras": [
+     "1960s-70s"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "org:5067",
+     "person:6945",
+     "person:6946"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D105"
+    ],
+    "eras": [
+     "1950s"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:1611",
+     "person:1610",
+     "person:1614"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D131"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "person:1860",
+     "person:1861",
+     "person:1862"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D142"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:2137",
+     "person:2140",
+     "person:2139"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "CONGRESS"
+    ],
+    "docs": [
+     "CONGRESS-HASC-1966"
+    ],
+    "eras": [
+     "1960s-70s"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:216",
+     "person:75",
+     "person:74"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D017"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:331",
+     "person:332",
+     "person:343"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "OSD"
+    ],
+    "docs": [
+     "NARA-493468580-022-SASC-Transcript-2023"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:3563",
+     "person:3573",
+     "person:3581"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D017"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:367",
+     "person:364",
+     "person:365"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "NASA"
+    ],
+    "docs": [
+     "NASA-UAP-D7"
+    ],
+    "eras": [
+     "1960s-70s"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:3750",
+     "person:3749",
+     "person:3751"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "USAF"
+    ],
+    "docs": [
+     "R01-342-HS1-416511228-box186-319-1-Flying-Discs-1949"
+    ],
+    "eras": [
+     "1940s"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "person:4071",
+     "person:4072",
+     "person:4073"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI",
+     "NAVY"
+    ],
+    "docs": [
+     "R01-38-143685-box7-Incident-Summaries-1-100",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:4109",
+     "person:4111",
+     "person:4110"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "NAVY"
+    ],
+    "docs": [
+     "R01-38-143685-box7-Incident-Summaries-1-100"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "person:4159",
+     "person:4163",
+     "person:4154"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW",
+     "NAVY"
+    ],
+    "docs": [
+     "DOW-UAP-D100",
+     "R01-38-143685-box7-Incident-Summaries-1-100"
+    ],
+    "eras": [
+     "1940s",
+     "undated"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:867",
+     "person:4194",
+     "person:4959"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "person:5514",
+     "person:5515",
+     "person:5516"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:5733",
+     "person:5734",
+     "org:3794"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "person:5818",
+     "person:5819",
+     "person:5827"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-130"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "person:6771",
+     "person:6772",
+     "person:6773"
+    ],
+    "size": 3,
+    "stability": 1.0
+   }
+  ],
+  "letters_sha256": "59a92283ad0b19262ad98a9aca8dc294e882357ee1fe0ee545ca8f6581715fcd",
+  "letters_total": 1137,
+  "method": {
+   "alpha": 0.01,
+   "modularity": 0.847,
+   "nodes_with_ties": 1678,
+   "null_runs": 500,
+   "significant_ties": 3756,
+   "tested_pairs": 9390
+  },
+  "org_flows": [
+   [
+    "org:296",
+    "org:216",
+    33
+   ],
+   [
+    "org:296",
+    "org:1264",
+    15
+   ],
+   [
+    "org:216",
+    "org:296",
+    13
+   ],
+   [
+    "org:215",
+    "org:13",
+    10
+   ],
+   [
+    "org:181",
+    "org:201",
+    6
+   ],
+   [
+    "org:5061",
+    "org:17",
+    6
+   ],
+   [
+    "org:17",
+    "org:216",
+    5
+   ],
+   [
+    "org:744",
+    "org:216",
+    5
+   ],
+   [
+    "org:13",
+    "org:1146",
+    4
+   ],
+   [
+    "org:13",
+    "org:20",
+    4
+   ],
+   [
+    "org:13",
+    "org:2803",
+    4
+   ],
+   [
+    "org:5061",
+    "org:807",
+    4
+   ],
+   [
+    "org:1027",
+    "org:4",
+    3
+   ],
+   [
+    "org:13",
+    "org:1159",
+    3
+   ],
+   [
+    "org:13",
+    "org:23",
+    3
+   ],
+   [
+    "org:2803",
+    "org:13",
+    3
+   ],
+   [
+    "org:2803",
+    "org:2762",
+    3
+   ],
+   [
+    "org:4",
+    "org:13",
+    3
+   ],
+   [
+    "org:4",
+    "org:858",
+    3
+   ],
+   [
+    "org:4285",
+    "org:216",
+    3
+   ],
+   [
+    "org:5061",
+    "org:3321",
+    3
+   ],
+   [
+    "org:582",
+    "org:13",
+    3
+   ],
+   [
+    "org:88",
+    "org:13",
+    3
+   ],
+   [
+    "org:1038",
+    "org:4",
+    2
+   ],
+   [
+    "org:1226",
+    "org:13",
+    2
+   ]
+  ],
+  "receivers": [
+   [
+    "person:4531",
+    66,
+    44,
+    [
+     "R01-65-HS1-101634279-100-DE-26505",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9"
+    ]
+   ],
+   [
+    "person:1539",
+    34,
+    33,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9"
+    ]
+   ],
+   [
+    "person:1624",
+    29,
+    22,
+    [
+     "DOW-UAP-D118",
+     "DOW-UAP-D119",
+     "DOW-UAP-D120",
+     "DOW-UAP-D121",
+     "DOW-UAP-D122",
+     "DOW-UAP-D124",
+     "DOW-UAP-D125",
+     "DOW-UAP-D126",
+     "DOW-UAP-D127",
+     "DOW-UAP-D128",
+     "DOW-UAP-D129",
+     "DOW-UAP-D130",
+     "DOW-UAP-D132",
+     "DOW-UAP-D133",
+     "DOW-UAP-D134",
+     "DOW-UAP-D135",
+     "DOW-UAP-D136",
+     "DOW-UAP-D137",
+     "DOW-UAP-D138",
+     "DOW-UAP-D140",
+     "DOW-UAP-D141",
+     "DOW-UAP-D142",
+     "DOW-UAP-D143",
+     "DOW-UAP-D144",
+     "DOW-UAP-D145",
+     "DOW-UAP-D148",
+     "DOW-UAP-D150",
+     "DOW-UAP-D153"
+    ]
+   ],
+   [
+    "person:4768",
+    29,
+    14,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6"
+    ]
+   ],
+   [
+    "person:5810",
+    28,
+    15,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9"
+    ]
+   ],
+   [
+    "person:1014",
+    25,
+    16,
+    [
+     "DOW-UAP-D102",
+     "DOW-UAP-D104"
+    ]
+   ],
+   [
+    "person:574",
+    13,
+    12,
+    [
+     "DOW-UAP-D095",
+     "DOW-UAP-D096",
+     "DOW-UAP-D105"
+    ]
+   ],
+   [
+    "person:333",
+    12,
+    4,
+    [
+     "DOW-UAP-D017",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6"
+    ]
+   ],
+   [
+    "person:240",
+    10,
+    6,
+    [
+     "DIA-AAWSAP-DEPSECDEF-PACKET",
+     "DIA-AAWSAP-REID-MTG-2009-11",
+     "DOW-UAP-D183",
+     "NARA-493468580-05-AARO-Historical-Record-Report"
+    ]
+   ],
+   [
+    "person:6103",
+    10,
+    2,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9"
+    ]
+   ],
+   [
+    "person:1317",
+    8,
+    6,
+    [
+     "DOW-UAP-D105"
+    ]
+   ],
+   [
+    "person:1522",
+    8,
+    8,
+    [
+     "DOW-UAP-D105"
+    ]
+   ],
+   [
+    "person:2876",
+    8,
+    7,
+    [
+     "DOW-UAP-D180"
+    ]
+   ],
+   [
+    "person:3479",
+    8,
+    3,
+    [
+     "NARA-488808322-Klukan-Oct-2015-Emails-re-Pilgrim-Drone-Spotting"
+    ]
+   ],
+   [
+    "person:3480",
+    8,
+    3,
+    [
+     "NARA-488808322-Klukan-Oct-2015-Emails-re-Pilgrim-Drone-Spotting"
+    ]
+   ],
+   [
+    "person:41",
+    8,
+    6,
+    [
+     "CONGRESS-HASC-1966"
+    ]
+   ],
+   [
+    "person:5974",
+    8,
+    6,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8"
+    ]
+   ],
+   [
+    "person:1523",
+    7,
+    7,
+    [
+     "DOW-UAP-D105"
+    ]
+   ],
+   [
+    "person:3293",
+    7,
+    6,
+    [
+     "DOW-UAP-D206",
+     "USG-UAP-D002"
+    ]
+   ],
+   [
+    "person:6891",
+    7,
+    3,
+    [
+     "USG-UAP-D002"
+    ]
+   ],
+   [
+    "person:898",
+    7,
+    4,
+    [
+     "DOW-UAP-D100",
+     "R01-18-100754-General-1946-7-Vol-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3"
+    ]
+   ],
+   [
+    "person:4959",
+    6,
+    6,
+    [
+     "DOW-UAP-D100"
+    ]
+   ],
+   [
+    "person:5243",
+    6,
+    5,
+    [
+     "DOW-UAP-D100",
+     "R01-18-6369445-General-1948-Vol-1"
+    ]
+   ],
+   [
+    "person:59",
+    6,
+    5,
+    [
+     "DOW-UAP-D092"
+    ]
+   ],
+   [
+    "person:6319",
+    6,
+    4,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8"
+    ]
+   ]
+  ],
+  "senders": [
+   [
+    "person:1539",
+    133,
+    101,
+    [
+     "DOW-UAP-D105",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9"
+    ]
+   ],
+   [
+    "person:964",
+    62,
+    59,
+    [
+     "DOW-UAP-D102",
+     "DOW-UAP-D105"
+    ]
+   ],
+   [
+    "person:940",
+    58,
+    56,
+    [
+     "DOW-UAP-D105"
+    ]
+   ],
+   [
+    "person:6914",
+    31,
+    19,
+    [
+     "USG-UAP-D002"
+    ]
+   ],
+   [
+    "person:4768",
+    15,
+    9,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6"
+    ]
+   ],
+   [
+    "person:623",
+    15,
+    15,
+    [
+     "DOW-UAP-D096"
+    ]
+   ],
+   [
+    "person:264",
+    13,
+    4,
+    [
+     "DOW-UAP-D017",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6"
+    ]
+   ],
+   [
+    "person:6073",
+    12,
+    12,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8"
+    ]
+   ],
+   [
+    "person:59",
+    10,
+    9,
+    [
+     "DOW-UAP-D092"
+    ]
+   ],
+   [
+    "person:3478",
+    9,
+    4,
+    [
+     "NARA-488808322-Klukan-Oct-2015-Emails-re-Pilgrim-Drone-Spotting"
+    ]
+   ],
+   [
+    "person:6896",
+    9,
+    9,
+    [
+     "USG-UAP-D002"
+    ]
+   ],
+   [
+    "person:3477",
+    8,
+    4,
+    [
+     "NARA-488808322-Klukan-Oct-2015-Emails-re-Pilgrim-Drone-Spotting"
+    ]
+   ],
+   [
+    "person:5651",
+    8,
+    6,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4"
+    ]
+   ],
+   [
+    "person:227",
+    7,
+    3,
+    [
+     "DIA-AAWSAP-DEPSECDEF-PACKET",
+     "DIA-AAWSAP-REID-MTG-2009-11",
+     "DIA-AAWSAP-REID-SAP-LETTER-2009",
+     "DOW-UAP-D183",
+     "DOW-UAP-D185",
+     "NARA-493468580-05-AARO-Historical-Record-Report"
+    ]
+   ],
+   [
+    "person:2876",
+    7,
+    3,
+    [
+     "DOW-UAP-D100",
+     "R01-18-100754-General-1946-7-Vol-2"
+    ]
+   ],
+   [
+    "person:78",
+    7,
+    7,
+    [
+     "CONGRESS-HASC-1966",
+     "DOW-UAP-D212"
+    ]
+   ],
+   [
+    "person:1042",
+    6,
+    1,
+    [
+     "DOW-UAP-D104"
+    ]
+   ],
+   [
+    "person:170",
+    6,
+    6,
+    [
+     "DOW-UAP-D092",
+     "DOW-UAP-D096",
+     "DOW-UAP-D102",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A"
+    ]
+   ],
+   [
+    "person:45",
+    6,
+    6,
+    [
+     "CONGRESS-HASC-1966",
+     "DOW-UAP-D208",
+     "NARA-493468580-05-AARO-Historical-Record-Report"
+    ]
+   ],
+   [
+    "person:4839",
+    6,
+    2,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4"
+    ]
+   ],
+   [
+    "person:4863",
+    6,
+    3,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3"
+    ]
+   ],
+   [
+    "person:5128",
+    6,
+    6,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10"
+    ]
+   ],
+   [
+    "person:5608",
+    6,
+    4,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4"
+    ]
+   ],
+   [
+    "person:6417",
+    6,
+    6,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8"
+    ]
+   ],
+   [
+    "person:6512",
+    6,
+    2,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4"
+    ]
+   ]
+  ],
+  "ties": 3756,
+  "ties_sha256": "26656400c74ebbfec111504220803f10557930eb754c0396fd19f582bb7f0bd3"
+ },
+ "note": "Reference from PURSUE's analysis commands (refactor Phase 6 parity)",
  "nuclear": {
   "results": [
    {
@@ -8232,5 +13629,4388 @@
    "radius_km": null,
    "sightings": 256
   }
- ]
+ ],
+ "topics": {
+  "method": {
+   "fdr": 0.1,
+   "fit_pages": 2219,
+   "k": 16,
+   "pages": 7640,
+   "permutations": 2000,
+   "stability": {
+    "10": 0.851,
+    "12": 0.875,
+    "14": 0.866,
+    "16": 0.887,
+    "18": 0.852,
+    "8": 0.875
+   }
+  },
+  "theme_prevalence": {
+   "by_agency": {
+    "CIA": {
+     "docs": 9,
+     "values": [
+      0.0133,
+      0.0055,
+      0.0075,
+      0.0067,
+      0.0002,
+      0.0002,
+      0.0063,
+      0.0023
+     ]
+    },
+    "CONGRESS": {
+     "docs": 1,
+     "values": [
+      0.0013,
+      0.0079,
+      0.0028,
+      0.0059,
+      0.0023,
+      0.0004,
+      0.0018,
+      0.0001
+     ]
+    },
+    "DIA": {
+     "docs": 19,
+     "values": [
+      0.0179,
+      0.0019,
+      0.0028,
+      0.0018,
+      0.0009,
+      0.0,
+      0.0179,
+      0.0318
+     ]
+    },
+    "DOE": {
+     "docs": 4,
+     "values": [
+      0.0038,
+      0.002,
+      0.0004,
+      0.002,
+      0.0001,
+      0.0005,
+      0.0046,
+      0.0002
+     ]
+    },
+    "DOS": {
+     "docs": 6,
+     "values": [
+      0.0018,
+      0.0155,
+      0.0003,
+      0.0073,
+      0.0002,
+      0.0002,
+      0.009,
+      0.0002
+     ]
+    },
+    "DOW": {
+     "docs": 163,
+     "values": [
+      0.0032,
+      0.0016,
+      0.0026,
+      0.0082,
+      0.0015,
+      0.0003,
+      0.0051,
+      0.0043
+     ]
+    },
+    "EOP": {
+     "docs": 2,
+     "values": [
+      0.006,
+      0.012,
+      0.0,
+      0.0,
+      0.0,
+      0.006,
+      0.0,
+      0.0
+     ]
+    },
+    "FAA": {
+     "docs": 231,
+     "values": [
+      0.0003,
+      0.0005,
+      0.0024,
+      0.0046,
+      0.0006,
+      0.0003,
+      0.0002,
+      0.0001
+     ]
+    },
+    "FBI": {
+     "docs": 30,
+     "values": [
+      0.0013,
+      0.0033,
+      0.0016,
+      0.005,
+      0.0007,
+      0.0006,
+      0.0014,
+      0.0002
+     ]
+    },
+    "LLE": {
+     "docs": 4,
+     "values": [
+      0.0182,
+      0.01,
+      0.0,
+      0.0216,
+      0.0,
+      0.0,
+      0.0091,
+      0.0
+     ]
+    },
+    "NARA": {
+     "docs": 2,
+     "values": [
+      0.0039,
+      0.0,
+      0.0,
+      0.004,
+      0.0,
+      0.0,
+      0.0078,
+      0.0
+     ]
+    },
+    "NASA": {
+     "docs": 8,
+     "values": [
+      0.0005,
+      0.0042,
+      0.0021,
+      0.0059,
+      0.0034,
+      0.0031,
+      0.0012,
+      0.0002
+     ]
+    },
+    "NAVY": {
+     "docs": 8,
+     "values": [
+      0.0024,
+      0.0036,
+      0.0008,
+      0.0067,
+      0.0005,
+      0.0001,
+      0.0008,
+      0.0001
+     ]
+    },
+    "NRC": {
+     "docs": 3,
+     "values": [
+      0.0175,
+      0.0013,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0315,
+      0.004
+     ]
+    },
+    "ODNI": {
+     "docs": 5,
+     "values": [
+      0.0067,
+      0.0022,
+      0.0046,
+      0.0122,
+      0.0038,
+      0.0032,
+      0.0149,
+      0.0008
+     ]
+    },
+    "OSD": {
+     "docs": 29,
+     "values": [
+      0.0082,
+      0.0076,
+      0.0034,
+      0.0143,
+      0.0007,
+      0.0023,
+      0.0095,
+      0.0011
+     ]
+    },
+    "UNK": {
+     "docs": 8,
+     "values": [
+      0.0012,
+      0.0024,
+      0.0017,
+      0.0017,
+      0.0,
+      0.0002,
+      0.0029,
+      0.004
+     ]
+    },
+    "USAF": {
+     "docs": 11,
+     "values": [
+      0.0024,
+      0.0267,
+      0.0022,
+      0.005,
+      0.0,
+      0.0003,
+      0.0014,
+      0.003
+     ]
+    },
+    "USG": {
+     "docs": 2,
+     "values": [
+      0.0039,
+      0.003,
+      0.0099,
+      0.0,
+      0.0007,
+      0.002,
+      0.0051,
+      0.0009
+     ]
+    }
+   },
+   "by_era": {
+    "1940s": {
+     "docs": 13,
+     "values": [
+      0.0012,
+      0.0022,
+      0.0097,
+      0.0031,
+      0.0001,
+      0.0006,
+      0.0018,
+      0.0013
+     ]
+    },
+    "1950s": {
+     "docs": 49,
+     "values": [
+      0.0034,
+      0.0025,
+      0.0026,
+      0.0061,
+      0.0008,
+      0.0001,
+      0.0042,
+      0.0006
+     ]
+    },
+    "1960s-70s": {
+     "docs": 19,
+     "values": [
+      0.0048,
+      0.0081,
+      0.0039,
+      0.0044,
+      0.0016,
+      0.0018,
+      0.0048,
+      0.0003
+     ]
+    },
+    "2000s-10s": {
+     "docs": 86,
+     "values": [
+      0.007,
+      0.0018,
+      0.0024,
+      0.0055,
+      0.0026,
+      0.0003,
+      0.0098,
+      0.0148
+     ]
+    },
+    "2016+": {
+     "docs": 60,
+     "values": [
+      0.004,
+      0.0017,
+      0.0008,
+      0.0122,
+      0.0002,
+      0.0003,
+      0.0031,
+      0.0
+     ]
+    },
+    "undated": {
+     "docs": 318,
+     "values": [
+      0.0015,
+      0.0025,
+      0.0024,
+      0.0057,
+      0.0007,
+      0.0005,
+      0.0019,
+      0.0005
+     ]
+    }
+   },
+   "differences": [
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DOW-UAP-D114",
+      "DOW-UAP-D115",
+      "DIA-AAWSAP-STATUS-2009-08"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0148,
+     "lift": 2.54,
+     "lift_without_top": 2.34,
+     "measure": 8,
+     "p": 0.0005,
+     "q": 0.004,
+     "rest_value": 0.0004,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D165",
+      "LLE-UAP-D004",
+      "LLE-UAP-D003"
+     ],
+     "group": "2016+",
+     "group_value": 0.0122,
+     "lift": 1.7,
+     "lift_without_top": 1.64,
+     "measure": 4,
+     "p": 0.0005,
+     "q": 0.004,
+     "rest_value": 0.0054,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 19,
+     "drivers": [
+      "DOS-UAP-D002",
+      "EOP-UAP-D002",
+      "DOS-UAP-D001"
+     ],
+     "group": "1960s-70s",
+     "group_value": 0.0081,
+     "lift": 3.29,
+     "lift_without_top": 2.32,
+     "measure": 2,
+     "p": 0.0005,
+     "q": 0.004,
+     "rest_value": 0.0019,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-AATIP-IM-2010-DRAFT",
+      "DOW-UAP-D186",
+      "DIA-AAWSAP-REID-MTG-2009-01"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0098,
+     "lift": 1.65,
+     "lift_without_top": 1.54,
+     "measure": 7,
+     "p": 0.0005,
+     "q": 0.004,
+     "rest_value": 0.0036,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DOW-UAP-D128",
+      "DOW-UAP-D119",
+      "DOW-UAP-D136"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0026,
+     "lift": 1.92,
+     "lift_without_top": 1.64,
+     "measure": 5,
+     "p": 0.0005,
+     "q": 0.004,
+     "rest_value": 0.0006,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 19,
+     "drivers": [
+      "EOP-UAP-D002",
+      "NASA-UAP-D6",
+      "NASA-UAP-D2"
+     ],
+     "group": "1960s-70s",
+     "group_value": 0.0018,
+     "lift": 4.41,
+     "lift_without_top": 3.05,
+     "measure": 6,
+     "p": 0.001,
+     "q": 0.0067,
+     "rest_value": 0.0003,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D042",
+      "DOW-UAP-D089",
+      "DOW-UAP-D090"
+     ],
+     "group": "2016+",
+     "group_value": 0.0,
+     "lift": 0.0,
+     "lift_without_top": 0.0,
+     "measure": 8,
+     "p": 0.002,
+     "q": 0.0114,
+     "rest_value": 0.0079,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 13,
+     "drivers": [
+      "DOW-UAP-D099",
+      "DOW-UAP-D093",
+      "DOW-UAP-D094"
+     ],
+     "group": "1940s",
+     "group_value": 0.0097,
+     "lift": 3.73,
+     "lift_without_top": 1.97,
+     "measure": 3,
+     "p": 0.005,
+     "q": 0.02,
+     "rest_value": 0.0022,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D042",
+      "DOW-UAP-D089",
+      "DOW-UAP-D090"
+     ],
+     "group": "2016+",
+     "group_value": 0.0031,
+     "lift": 0.52,
+     "lift_without_top": 0.53,
+     "measure": 7,
+     "p": 0.0045,
+     "q": 0.02,
+     "rest_value": 0.0069,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D042",
+      "DOW-UAP-D089",
+      "DOW-UAP-D090"
+     ],
+     "group": "2016+",
+     "group_value": 0.0002,
+     "lift": 0.12,
+     "lift_without_top": 0.12,
+     "measure": 5,
+     "p": 0.0045,
+     "q": 0.02,
+     "rest_value": 0.0017,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-OUSDI-IM-AATIP",
+      "DIA-AAWSAP-SOW-2008",
+      "DIA-AAWSAP-SAP-REVIEW-2009"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.007,
+     "lift": 1.42,
+     "lift_without_top": 1.3,
+     "measure": 1,
+     "p": 0.0065,
+     "q": 0.0236,
+     "rest_value": 0.0037,
+     "robust": false
+    },
+    {
+     "axis": "era",
+     "docs": 49,
+     "drivers": [
+      "CIA-UAP-D026",
+      "CIA-UAP-D027",
+      "CIA-UAP-D029"
+     ],
+     "group": "1950s",
+     "group_value": 0.0006,
+     "lift": 0.1,
+     "lift_without_top": 0.1,
+     "measure": 8,
+     "p": 0.009,
+     "q": 0.03,
+     "rest_value": 0.0073,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-CONTRACT-FY10",
+      "DIA-AAWSAP-DELIVERABLES-REVIEW-2009",
+      "DIA-AAWSAP-ORDER-2008"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0055,
+     "lift": 0.77,
+     "lift_without_top": 0.78,
+     "measure": 4,
+     "p": 0.0125,
+     "q": 0.0384,
+     "rest_value": 0.0082,
+     "robust": false
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D042",
+      "DOW-UAP-D089",
+      "DOW-UAP-D090"
+     ],
+     "group": "2016+",
+     "group_value": 0.0008,
+     "lift": 0.32,
+     "lift_without_top": 0.33,
+     "measure": 3,
+     "p": 0.014,
+     "q": 0.04,
+     "rest_value": 0.0032,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 49,
+     "drivers": [
+      "CIA-UAP-D024",
+      "CIA-UAP-D025",
+      "CIA-UAP-D026"
+     ],
+     "group": "1950s",
+     "group_value": 0.0001,
+     "lift": 0.22,
+     "lift_without_top": 0.23,
+     "measure": 6,
+     "p": 0.036,
+     "q": 0.096,
+     "rest_value": 0.0005,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 19,
+     "drivers": [
+      "DIA-AAWSAP-STATUS-2009-08",
+      "DIA-AAWSAP-DI-BRIEF-2009",
+      "DIA-AAWSAP-REID-BRIEF-2009-05"
+     ],
+     "group": "DIA",
+     "group_value": 0.0318,
+     "lift": 11.72,
+     "lift_without_top": 10.81,
+     "measure": 8,
+     "p": 0.0005,
+     "q": 0.006,
+     "rest_value": 0.0017,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 11,
+     "drivers": [
+      "NARA-595542",
+      "NARA-37294296-37294296",
+      "NARA-68875395-68875395"
+     ],
+     "group": "USAF",
+     "group_value": 0.0267,
+     "lift": 10.75,
+     "lift_without_top": 3.78,
+     "measure": 2,
+     "p": 0.0005,
+     "q": 0.006,
+     "rest_value": 0.002,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 19,
+     "drivers": [
+      "DIA-AAWSAP-OUSDI-IM-AATIP",
+      "DIA-AAWSAP-SOW-2008",
+      "DIA-AAWSAP-SAP-REVIEW-2009"
+     ],
+     "group": "DIA",
+     "group_value": 0.0179,
+     "lift": 6.12,
+     "lift_without_top": 5.38,
+     "measure": 1,
+     "p": 0.0005,
+     "q": 0.006,
+     "rest_value": 0.0024,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 19,
+     "drivers": [
+      "DIA-AAWSAP-AATIP-IM-2010-DRAFT",
+      "DIA-AAWSAP-REID-MTG-2009-01",
+      "DIA-AAWSAP-REID-MTG-2009-05"
+     ],
+     "group": "DIA",
+     "group_value": 0.0179,
+     "lift": 4.99,
+     "lift_without_top": 4.31,
+     "measure": 7,
+     "p": 0.0005,
+     "q": 0.006,
+     "rest_value": 0.0031,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 29,
+     "drivers": [
+      "NARA-493468580-030-SASC-Brief-2023",
+      "NARA-493468580-017-Atmospheric-Wakes",
+      "NARA-493468580-11-AARO-Presentation-for-NASA"
+     ],
+     "group": "OSD",
+     "group_value": 0.0143,
+     "lift": 2.27,
+     "lift_without_top": 2.04,
+     "measure": 4,
+     "p": 0.0005,
+     "q": 0.006,
+     "rest_value": 0.0059,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 29,
+     "drivers": [
+      "NARA-493468580-24-UAP-Reporting-Trends",
+      "NARA-493468580-11-AARO-Presentation-for-NASA",
+      "NARA-493468580-07-2024-Annual-Report"
+     ],
+     "group": "OSD",
+     "group_value": 0.0095,
+     "lift": 2.63,
+     "lift_without_top": 2.1,
+     "measure": 7,
+     "p": 0.0005,
+     "q": 0.006,
+     "rest_value": 0.0033,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00010"
+     ],
+     "group": "FAA",
+     "group_value": 0.0002,
+     "lift": 0.06,
+     "lift_without_top": 0.06,
+     "measure": 7,
+     "p": 0.0005,
+     "q": 0.006,
+     "rest_value": 0.0061,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00010"
+     ],
+     "group": "FAA",
+     "group_value": 0.0003,
+     "lift": 0.1,
+     "lift_without_top": 0.1,
+     "measure": 1,
+     "p": 0.0005,
+     "q": 0.006,
+     "rest_value": 0.0049,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00010"
+     ],
+     "group": "FAA",
+     "group_value": 0.0001,
+     "lift": 0.05,
+     "lift_without_top": 0.05,
+     "measure": 8,
+     "p": 0.0005,
+     "q": 0.006,
+     "rest_value": 0.0046,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00010"
+     ],
+     "group": "FAA",
+     "group_value": 0.0005,
+     "lift": 0.2,
+     "lift_without_top": 0.2,
+     "measure": 2,
+     "p": 0.0005,
+     "q": 0.006,
+     "rest_value": 0.0039,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 3,
+     "drivers": [
+      "NARA-488808322-ML24234A061",
+      "NARA-488808322-UAP-BLUF-attachment-release-in-full",
+      "NARA-488808322-Klukan-Oct-2015-Emails-re-Pilgrim-Drone-Spotting"
+     ],
+     "group": "NRC",
+     "group_value": 0.0315,
+     "lift": 8.75,
+     "lift_without_top": 3.58,
+     "measure": 7,
+     "p": 0.0015,
+     "q": 0.015,
+     "rest_value": 0.0034,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 29,
+     "drivers": [
+      "NARA-493468580-24-UAP-Reporting-Trends",
+      "NARA-493468580-28-Open-Hearing-Brief",
+      "NARA-493468580-014-Phillips-Timothy-Bio-DEC-2023"
+     ],
+     "group": "OSD",
+     "group_value": 0.0082,
+     "lift": 2.82,
+     "lift_without_top": 2.15,
+     "measure": 1,
+     "p": 0.0015,
+     "q": 0.015,
+     "rest_value": 0.0026,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 9,
+     "drivers": [
+      "CIA-UAP-D022",
+      "CIA-UAP-D028",
+      "CIA-UAP-D001"
+     ],
+     "group": "CIA",
+     "group_value": 0.0133,
+     "lift": 4.56,
+     "lift_without_top": 3.51,
+     "measure": 1,
+     "p": 0.002,
+     "q": 0.0171,
+     "rest_value": 0.0027,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00012",
+      "NARA-493468575-237UAP00013"
+     ],
+     "group": "FAA",
+     "group_value": 0.0046,
+     "lift": 0.73,
+     "lift_without_top": 0.73,
+     "measure": 4,
+     "p": 0.002,
+     "q": 0.0171,
+     "rest_value": 0.0076,
+     "robust": false
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D186",
+      "DOW-UAP-D187",
+      "DOW-UAP-D185"
+     ],
+     "group": "DOW",
+     "group_value": 0.0051,
+     "lift": 1.43,
+     "lift_without_top": 1.33,
+     "measure": 7,
+     "p": 0.005,
+     "q": 0.04,
+     "rest_value": 0.0029,
+     "robust": false
+    },
+    {
+     "axis": "agency",
+     "docs": 4,
+     "drivers": [
+      "LLE-UAP-D003",
+      "LLE-UAP-D001",
+      "LLE-UAP-D004"
+     ],
+     "group": "LLE",
+     "group_value": 0.0182,
+     "lift": 6.24,
+     "lift_without_top": 5.53,
+     "measure": 1,
+     "p": 0.006,
+     "q": 0.045,
+     "rest_value": 0.0028,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 29,
+     "drivers": [
+      "NARA-493468580-017-Atmospheric-Wakes",
+      "NARA-493468580-030-SASC-Brief-2023",
+      "NARA-493468580-05-AARO-Historical-Record-Report"
+     ],
+     "group": "OSD",
+     "group_value": 0.0023,
+     "lift": 4.61,
+     "lift_without_top": 3.3,
+     "measure": 6,
+     "p": 0.0065,
+     "q": 0.0459,
+     "rest_value": 0.0004,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D165",
+      "DOW-UAP-D205",
+      "DOW-UAP-D102"
+     ],
+     "group": "DOW",
+     "group_value": 0.0082,
+     "lift": 1.3,
+     "lift_without_top": 1.27,
+     "measure": 4,
+     "p": 0.0105,
+     "q": 0.07,
+     "rest_value": 0.0055,
+     "robust": false
+    },
+    {
+     "axis": "agency",
+     "docs": 6,
+     "drivers": [
+      "DOS-UAP-D002",
+      "R01-59-64634-711-5612-7-2852",
+      "DOS-UAP-D001"
+     ],
+     "group": "DOS",
+     "group_value": 0.0155,
+     "lift": 6.26,
+     "lift_without_top": 3.4,
+     "measure": 2,
+     "p": 0.013,
+     "q": 0.0821,
+     "rest_value": 0.0023,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 4,
+     "drivers": [
+      "LLE-UAP-D004",
+      "LLE-UAP-D003",
+      "LLE-UAP-D001"
+     ],
+     "group": "LLE",
+     "group_value": 0.0216,
+     "lift": 3.43,
+     "lift_without_top": 3.24,
+     "measure": 4,
+     "p": 0.014,
+     "q": 0.084,
+     "rest_value": 0.0062,
+     "robust": true
+    }
+   ]
+  },
+  "themes": [
+   {
+    "id": 1,
+    "name": "secrecy and security",
+    "words": [
+     "security",
+     "access",
+     "cover",
+     "sensitive",
+     "secure",
+     "disseminated",
+     "clearance",
+     "dissemination",
+     "sensitivity",
+     "secrecy",
+     "secured",
+     "declassification"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "public relations and the press",
+    "words": [
+     "public",
+     "press",
+     "newspaper",
+     "media",
+     "magazine",
+     "publication",
+     "reporter",
+     "publicity",
+     "newspapers",
+     "education",
+     "publicly",
+     "publications"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "Soviet and foreign technology",
+    "words": [
+     "missile",
+     "rocket",
+     "foreign",
+     "satellite",
+     "missiles",
+     "satellites",
+     "rockets",
+     "soviet",
+     "russian",
+     "german",
+     "russia",
+     "germany"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "instruments and physical evidence",
+    "words": [
+     "radar",
+     "photographs",
+     "film",
+     "sensor",
+     "camera",
+     "thermal",
+     "measured",
+     "sensors",
+     "sample",
+     "infrared",
+     "measure",
+     "samples"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "human effects and medicine",
+    "words": [
+     "radiation",
+     "blood",
+     "medical",
+     "physiological",
+     "biological",
+     "health",
+     "burn",
+     "burned",
+     "burning",
+     "doctor",
+     "injuries",
+     "burns"
+    ]
+   },
+   {
+    "id": 6,
+    "name": "fragments and recovery",
+    "words": [
+     "fragments",
+     "recovered",
+     "hardware",
+     "debris",
+     "crashed",
+     "recovery",
+     "crash",
+     "artifacts",
+     "fragment",
+     "recover",
+     "artifact",
+     "wreckage"
+    ]
+   },
+   {
+    "id": 7,
+    "name": "threat and defense",
+    "words": [
+     "defense",
+     "nuclear",
+     "weapons",
+     "atomic",
+     "threat",
+     "weapon",
+     "intercept",
+     "threats",
+     "attack",
+     "hostile",
+     "interception",
+     "interceptor"
+    ]
+   },
+   {
+    "id": 8,
+    "name": "contracts and funding",
+    "words": [
+     "cost",
+     "contract",
+     "costs",
+     "proposal",
+     "funding",
+     "fundamental",
+     "contractor",
+     "purchase",
+     "funds",
+     "contracts",
+     "budget",
+     "contractors"
+    ]
+   }
+  ],
+  "topic_prevalence": {
+   "by_agency": {
+    "CIA": {
+     "docs": 9,
+     "values": [
+      0.0264,
+      0.0691,
+      0.0614,
+      0.0095,
+      0.2956,
+      0.0339,
+      0.1081,
+      0.0752,
+      0.008,
+      0.1202,
+      0.0189,
+      0.0358,
+      0.0238,
+      0.034,
+      0.0602,
+      0.0201
+     ]
+    },
+    "CONGRESS": {
+     "docs": 1,
+     "values": [
+      0.0037,
+      0.0342,
+      0.3534,
+      0.0043,
+      0.1343,
+      0.0236,
+      0.0634,
+      0.0299,
+      0.0098,
+      0.0427,
+      0.0054,
+      0.2028,
+      0.0226,
+      0.0123,
+      0.0425,
+      0.0151
+     ]
+    },
+    "DIA": {
+     "docs": 19,
+     "values": [
+      0.0053,
+      0.0176,
+      0.0069,
+      0.0077,
+      0.026,
+      0.0148,
+      0.0389,
+      0.6075,
+      0.0179,
+      0.0015,
+      0.0339,
+      0.0356,
+      0.021,
+      0.1136,
+      0.0439,
+      0.0078
+     ]
+    },
+    "DOE": {
+     "docs": 4,
+     "values": [
+      0.0586,
+      0.0546,
+      0.2838,
+      0.0495,
+      0.1489,
+      0.0212,
+      0.0102,
+      0.0461,
+      0.0135,
+      0.0761,
+      0.0121,
+      0.0344,
+      0.0066,
+      0.0812,
+      0.044,
+      0.0592
+     ]
+    },
+    "DOS": {
+     "docs": 6,
+     "values": [
+      0.0281,
+      0.0741,
+      0.1195,
+      0.0331,
+      0.2794,
+      0.0158,
+      0.1024,
+      0.0212,
+      0.0055,
+      0.1767,
+      0.0137,
+      0.0137,
+      0.0032,
+      0.0248,
+      0.0494,
+      0.0394
+     ]
+    },
+    "DOW": {
+     "docs": 163,
+     "values": [
+      0.0146,
+      0.1384,
+      0.053,
+      0.0323,
+      0.1181,
+      0.0639,
+      0.0353,
+      0.0769,
+      0.0159,
+      0.1183,
+      0.0735,
+      0.0484,
+      0.0634,
+      0.0397,
+      0.0346,
+      0.0737
+     ]
+    },
+    "EOP": {
+     "docs": 2,
+     "values": [
+      0.0411,
+      0.0511,
+      0.243,
+      0.0046,
+      0.0487,
+      0.0,
+      0.0118,
+      0.0499,
+      0.0,
+      0.0103,
+      0.035,
+      0.2099,
+      0.0122,
+      0.1247,
+      0.1577,
+      0.0
+     ]
+    },
+    "FAA": {
+     "docs": 231,
+     "values": [
+      0.7305,
+      0.0043,
+      0.0264,
+      0.0211,
+      0.0121,
+      0.0127,
+      0.0149,
+      0.0017,
+      0.0053,
+      0.1073,
+      0.0058,
+      0.0155,
+      0.0127,
+      0.0048,
+      0.0095,
+      0.0153
+     ]
+    },
+    "FBI": {
+     "docs": 30,
+     "values": [
+      0.0159,
+      0.0246,
+      0.2618,
+      0.0165,
+      0.2402,
+      0.0212,
+      0.0137,
+      0.0192,
+      0.0165,
+      0.1689,
+      0.0212,
+      0.0707,
+      0.0126,
+      0.0167,
+      0.0498,
+      0.0305
+     ]
+    },
+    "LLE": {
+     "docs": 4,
+     "values": [
+      0.0896,
+      0.0027,
+      0.191,
+      0.0012,
+      0.1421,
+      0.0,
+      0.1302,
+      0.0969,
+      0.0223,
+      0.0854,
+      0.0,
+      0.0206,
+      0.009,
+      0.0,
+      0.0862,
+      0.1228
+     ]
+    },
+    "NARA": {
+     "docs": 2,
+     "values": [
+      0.0099,
+      0.0,
+      0.2012,
+      0.0058,
+      0.2124,
+      0.0607,
+      0.0126,
+      0.0006,
+      0.0056,
+      0.2997,
+      0.0236,
+      0.0664,
+      0.0218,
+      0.0059,
+      0.0057,
+      0.0682
+     ]
+    },
+    "NASA": {
+     "docs": 8,
+     "values": [
+      0.0184,
+      0.0873,
+      0.3863,
+      0.0182,
+      0.0462,
+      0.0183,
+      0.0309,
+      0.0226,
+      0.027,
+      0.1054,
+      0.0109,
+      0.1184,
+      0.0081,
+      0.0304,
+      0.0579,
+      0.0136
+     ]
+    },
+    "NAVY": {
+     "docs": 8,
+     "values": [
+      0.0116,
+      0.0068,
+      0.0849,
+      0.2558,
+      0.0532,
+      0.0122,
+      0.0269,
+      0.0134,
+      0.1098,
+      0.2193,
+      0.033,
+      0.0634,
+      0.0082,
+      0.0101,
+      0.0236,
+      0.068
+     ]
+    },
+    "NRC": {
+     "docs": 3,
+     "values": [
+      0.0629,
+      0.0114,
+      0.1471,
+      0.0171,
+      0.0991,
+      0.0233,
+      0.2818,
+      0.0868,
+      0.0165,
+      0.0355,
+      0.0034,
+      0.0076,
+      0.0146,
+      0.0309,
+      0.0931,
+      0.0688
+     ]
+    },
+    "ODNI": {
+     "docs": 5,
+     "values": [
+      0.0233,
+      0.0329,
+      0.0617,
+      0.0188,
+      0.0418,
+      0.0269,
+      0.4622,
+      0.0614,
+      0.0115,
+      0.0821,
+      0.0141,
+      0.0033,
+      0.0135,
+      0.0174,
+      0.079,
+      0.0501
+     ]
+    },
+    "OSD": {
+     "docs": 29,
+     "values": [
+      0.0077,
+      0.099,
+      0.028,
+      0.0182,
+      0.042,
+      0.0185,
+      0.5021,
+      0.0277,
+      0.0096,
+      0.0905,
+      0.0213,
+      0.0318,
+      0.0126,
+      0.0256,
+      0.0294,
+      0.0359
+     ]
+    },
+    "UNK": {
+     "docs": 8,
+     "values": [
+      0.0304,
+      0.0368,
+      0.2906,
+      0.0219,
+      0.0864,
+      0.0197,
+      0.0506,
+      0.0501,
+      0.0143,
+      0.1578,
+      0.0213,
+      0.0393,
+      0.0251,
+      0.0082,
+      0.1249,
+      0.0228
+     ]
+    },
+    "USAF": {
+     "docs": 11,
+     "values": [
+      0.024,
+      0.0341,
+      0.0864,
+      0.0133,
+      0.3852,
+      0.0217,
+      0.0488,
+      0.0362,
+      0.0071,
+      0.0981,
+      0.0361,
+      0.0583,
+      0.0216,
+      0.0102,
+      0.0721,
+      0.0469
+     ]
+    },
+    "USG": {
+     "docs": 2,
+     "values": [
+      0.0057,
+      0.033,
+      0.1602,
+      0.0042,
+      0.1714,
+      0.0081,
+      0.0178,
+      0.0233,
+      0.01,
+      0.1203,
+      0.0371,
+      0.0131,
+      0.0149,
+      0.0092,
+      0.3485,
+      0.0235
+     ]
+    }
+   },
+   "by_era": {
+    "1940s": {
+     "docs": 13,
+     "values": [
+      0.0038,
+      0.0513,
+      0.0902,
+      0.0129,
+      0.3208,
+      0.0128,
+      0.0451,
+      0.0128,
+      0.0118,
+      0.2175,
+      0.0413,
+      0.0366,
+      0.0326,
+      0.0137,
+      0.0271,
+      0.0699
+     ]
+    },
+    "1950s": {
+     "docs": 49,
+     "values": [
+      0.0102,
+      0.0323,
+      0.0855,
+      0.0143,
+      0.3045,
+      0.0296,
+      0.0337,
+      0.028,
+      0.0079,
+      0.2567,
+      0.026,
+      0.0467,
+      0.0322,
+      0.009,
+      0.0528,
+      0.0305
+     ]
+    },
+    "1960s-70s": {
+     "docs": 19,
+     "values": [
+      0.0172,
+      0.0601,
+      0.2331,
+      0.0148,
+      0.1458,
+      0.0199,
+      0.0439,
+      0.0321,
+      0.0132,
+      0.0658,
+      0.0186,
+      0.158,
+      0.0156,
+      0.0367,
+      0.1041,
+      0.0211
+     ]
+    },
+    "2000s-10s": {
+     "docs": 86,
+     "values": [
+      0.0107,
+      0.2411,
+      0.0628,
+      0.0151,
+      0.0444,
+      0.0187,
+      0.0457,
+      0.2593,
+      0.0169,
+      0.0349,
+      0.0262,
+      0.0349,
+      0.0225,
+      0.0957,
+      0.0409,
+      0.0303
+     ]
+    },
+    "2016+": {
+     "docs": 60,
+     "values": [
+      0.026,
+      0.0135,
+      0.0556,
+      0.0847,
+      0.041,
+      0.1321,
+      0.033,
+      0.0206,
+      0.0229,
+      0.096,
+      0.1525,
+      0.0402,
+      0.1159,
+      0.0022,
+      0.0297,
+      0.134
+     ]
+    },
+    "undated": {
+     "docs": 318,
+     "values": [
+      0.5369,
+      0.0179,
+      0.0551,
+      0.0219,
+      0.0489,
+      0.015,
+      0.0717,
+      0.0106,
+      0.0094,
+      0.1117,
+      0.0099,
+      0.0248,
+      0.0135,
+      0.0097,
+      0.0199,
+      0.0231
+     ]
+    }
+   },
+   "differences": [
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DOW-UAP-D187",
+      "DIA-AAWSAP-AATIP-IM-2010-DRAFT",
+      "DIA-AAWSAP-SAP-REVIEW-2009"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.2593,
+     "lift": 2.29,
+     "lift_without_top": 2.22,
+     "measure": 8,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.024,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 49,
+     "drivers": [
+      "DOW-UAP-D105",
+      "DOW-UAP-D159",
+      "DOW-UAP-D096"
+     ],
+     "group": "1950s",
+     "group_value": 0.3045,
+     "lift": 2.46,
+     "lift_without_top": 2.39,
+     "measure": 5,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0743,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DOW-UAP-D126",
+      "DOW-UAP-D153",
+      "DOW-UAP-D121"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.2411,
+     "lift": 2.19,
+     "lift_without_top": 2.15,
+     "measure": 2,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0298,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 13,
+     "drivers": [
+      "R01-18-6369445-General-1948-Vol-1",
+      "DOW-UAP-D100",
+      "R01-18-100754-General-1946-7-Vol-2"
+     ],
+     "group": "1940s",
+     "group_value": 0.3208,
+     "lift": 2.59,
+     "lift_without_top": 2.3,
+     "measure": 5,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.112,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 49,
+     "drivers": [
+      "DOW-UAP-D210",
+      "DOW-UAP-D207",
+      "DOW-UAP-D209"
+     ],
+     "group": "1950s",
+     "group_value": 0.2567,
+     "lift": 2.29,
+     "lift_without_top": 2.19,
+     "measure": 10,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0721,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 19,
+     "drivers": [
+      "NASA-UAP-D1",
+      "NASA-UAP-D2",
+      "NASA-UAP-D5"
+     ],
+     "group": "1960s-70s",
+     "group_value": 0.2331,
+     "lift": 2.86,
+     "lift_without_top": 2.63,
+     "measure": 3,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0678,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D10",
+      "DOW-UAP-D106",
+      "DOW-UAP-D12"
+     ],
+     "group": "2016+",
+     "group_value": 0.0135,
+     "lift": 0.12,
+     "lift_without_top": 0.12,
+     "measure": 2,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.1445,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-REID-MTG-2009-01",
+      "DIA-AAWSAP-REID-MTG-2009-05",
+      "DIA-AAWSAP-REID-MTG-2009-11"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0444,
+     "lift": 0.36,
+     "lift_without_top": 0.36,
+     "measure": 5,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.1725,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D3",
+      "DOW-UAP-D20",
+      "DOW-UAP-D12"
+     ],
+     "group": "2016+",
+     "group_value": 0.1525,
+     "lift": 2.55,
+     "lift_without_top": 2.48,
+     "measure": 11,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0265,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D042",
+      "DOW-UAP-D089",
+      "DOW-UAP-D090"
+     ],
+     "group": "2016+",
+     "group_value": 0.0206,
+     "lift": 0.18,
+     "lift_without_top": 0.19,
+     "measure": 8,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.1464,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-AATIP-IM-2010-DRAFT",
+      "DIA-AAWSAP-DI-BRIEF-2008",
+      "DIA-AAWSAP-ORDER-2008"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0349,
+     "lift": 0.31,
+     "lift_without_top": 0.32,
+     "measure": 10,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.159,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 19,
+     "drivers": [
+      "DOW-UAP-D212",
+      "DOW-UAP-D208",
+      "EOP-UAP-D001"
+     ],
+     "group": "1960s-70s",
+     "group_value": 0.158,
+     "lift": 3.21,
+     "lift_without_top": 2.6,
+     "measure": 12,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0393,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D109",
+      "DOW-UAP-D165",
+      "DOW-UAP-D20"
+     ],
+     "group": "2016+",
+     "group_value": 0.041,
+     "lift": 0.33,
+     "lift_without_top": 0.34,
+     "measure": 5,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.1538,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D32",
+      "DOW-UAP-D74",
+      "DOW-UAP-D65"
+     ],
+     "group": "2016+",
+     "group_value": 0.1321,
+     "lift": 2.6,
+     "lift_without_top": 2.52,
+     "measure": 6,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0216,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D7",
+      "DOW-UAP-D8",
+      "DOW-UAP-D50"
+     ],
+     "group": "2016+",
+     "group_value": 0.134,
+     "lift": 2.26,
+     "lift_without_top": 2.18,
+     "measure": 16,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0324,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D19",
+      "DOW-UAP-D20",
+      "DOW-UAP-D63"
+     ],
+     "group": "2016+",
+     "group_value": 0.1159,
+     "lift": 2.35,
+     "lift_without_top": 2.26,
+     "measure": 13,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0254,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DOW-UAP-D188",
+      "DIA-AAWSAP-DELIVERABLES-REVIEW-2009",
+      "DIA-AAWSAP-STATUS-BRIEFING-2009"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0957,
+     "lift": 2.24,
+     "lift_without_top": 2.1,
+     "measure": 14,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0103,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "NAVY-RF-2019",
+      "NAVY-RF-2020",
+      "DOW-UAP-D091"
+     ],
+     "group": "2016+",
+     "group_value": 0.0847,
+     "lift": 2.55,
+     "lift_without_top": 2.2,
+     "measure": 4,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0147,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D042",
+      "DOW-UAP-D089",
+      "DOW-UAP-D090"
+     ],
+     "group": "2016+",
+     "group_value": 0.0022,
+     "lift": 0.05,
+     "lift_without_top": 0.05,
+     "measure": 14,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0572,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-AATIP-IM-2010-DRAFT",
+      "DIA-AAWSAP-DI-BRIEF-2008",
+      "DIA-AAWSAP-OUSDI-IM-AATIP"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0262,
+     "lift": 0.44,
+     "lift_without_top": 0.44,
+     "measure": 11,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0803,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-AATIP-IM-2010",
+      "DIA-AAWSAP-DI-BRIEF-2008",
+      "DIA-AAWSAP-DI-BRIEF-2009"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0187,
+     "lift": 0.37,
+     "lift_without_top": 0.37,
+     "measure": 6,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0703,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-OUSDI-IM-AATIP",
+      "DIA-AAWSAP-REID-MTG-2009-01",
+      "DIA-AAWSAP-SAP-REVIEW-2009"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0303,
+     "lift": 0.51,
+     "lift_without_top": 0.52,
+     "measure": 16,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0769,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-AATIP-IM-2010-DRAFT",
+      "DIA-AAWSAP-OUSDI-IM-AATIP",
+      "DIA-AAWSAP-REID-MTG-2009-01"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0225,
+     "lift": 0.46,
+     "lift_without_top": 0.46,
+     "measure": 13,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0656,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D7",
+      "DOW-UAP-D8",
+      "LLE-UAP-D001"
+     ],
+     "group": "2016+",
+     "group_value": 0.026,
+     "lift": 1.76,
+     "lift_without_top": 1.59,
+     "measure": 1,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0108,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 49,
+     "drivers": [
+      "DOW-UAP-D155",
+      "DOW-UAP-D159",
+      "DOW-UAP-D160"
+     ],
+     "group": "1950s",
+     "group_value": 0.0323,
+     "lift": 0.29,
+     "lift_without_top": 0.3,
+     "measure": 2,
+     "p": 0.001,
+     "q": 0.0031,
+     "rest_value": 0.1312,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 19,
+     "drivers": [
+      "USG-UAP-D002",
+      "EOP-UAP-D002",
+      "CIA-UAP-D022"
+     ],
+     "group": "1960s-70s",
+     "group_value": 0.1041,
+     "lift": 2.31,
+     "lift_without_top": 1.59,
+     "measure": 15,
+     "p": 0.001,
+     "q": 0.0031,
+     "rest_value": 0.0396,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 49,
+     "drivers": [
+      "DOW-UAP-D103",
+      "DOW-UAP-D159",
+      "DOW-UAP-D164"
+     ],
+     "group": "1950s",
+     "group_value": 0.028,
+     "lift": 0.25,
+     "lift_without_top": 0.25,
+     "measure": 8,
+     "p": 0.0025,
+     "q": 0.0074,
+     "rest_value": 0.1366,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 49,
+     "drivers": [
+      "CIA-UAP-D026",
+      "DOW-UAP-D159",
+      "DOW-UAP-D199"
+     ],
+     "group": "1950s",
+     "group_value": 0.0305,
+     "lift": 0.52,
+     "lift_without_top": 0.53,
+     "measure": 16,
+     "p": 0.003,
+     "q": 0.0086,
+     "rest_value": 0.0672,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 49,
+     "drivers": [
+      "CIA-UAP-D025",
+      "CIA-UAP-D026",
+      "DOW-UAP-D103"
+     ],
+     "group": "1950s",
+     "group_value": 0.009,
+     "lift": 0.21,
+     "lift_without_top": 0.21,
+     "measure": 14,
+     "p": 0.0035,
+     "q": 0.0097,
+     "rest_value": 0.0519,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 49,
+     "drivers": [
+      "CIA-UAP-D024",
+      "CIA-UAP-D028",
+      "CIA-UAP-D029"
+     ],
+     "group": "1950s",
+     "group_value": 0.026,
+     "lift": 0.44,
+     "lift_without_top": 0.44,
+     "measure": 11,
+     "p": 0.004,
+     "q": 0.0107,
+     "rest_value": 0.0691,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 49,
+     "drivers": [
+      "CIA-UAP-D028",
+      "DOW-UAP-D103",
+      "DOW-UAP-D156"
+     ],
+     "group": "1950s",
+     "group_value": 0.0079,
+     "lift": 0.5,
+     "lift_without_top": 0.51,
+     "measure": 9,
+     "p": 0.008,
+     "q": 0.02,
+     "rest_value": 0.0181,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D44",
+      "DOW-UAP-D38",
+      "DOW-UAP-D57"
+     ],
+     "group": "2016+",
+     "group_value": 0.0229,
+     "lift": 1.43,
+     "lift_without_top": 1.29,
+     "measure": 9,
+     "p": 0.008,
+     "q": 0.02,
+     "rest_value": 0.0135,
+     "robust": false
+    },
+    {
+     "axis": "era",
+     "docs": 19,
+     "drivers": [
+      "EOP-UAP-D001",
+      "EOP-UAP-D002",
+      "NASA-UAP-D1"
+     ],
+     "group": "1960s-70s",
+     "group_value": 0.0211,
+     "lift": 0.36,
+     "lift_without_top": 0.38,
+     "measure": 16,
+     "p": 0.013,
+     "q": 0.0315,
+     "rest_value": 0.0627,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-AATIP-IM-2010",
+      "DIA-AAWSAP-REID-MTG-2009-01",
+      "DIA-AAWSAP-REID-MTG-2009-11"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0151,
+     "lift": 0.45,
+     "lift_without_top": 0.46,
+     "measure": 4,
+     "p": 0.014,
+     "q": 0.0329,
+     "rest_value": 0.0442,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 13,
+     "drivers": [
+      "DOW-UAP-D097",
+      "R01-342-HS1-416511228-box186-319-1-Flying-Discs-1949",
+      "DOW-UAP-D093"
+     ],
+     "group": "1940s",
+     "group_value": 0.2175,
+     "lift": 1.94,
+     "lift_without_top": 1.76,
+     "measure": 10,
+     "p": 0.0155,
+     "q": 0.0354,
+     "rest_value": 0.1056,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D106",
+      "DOW-UAP-D109",
+      "DOW-UAP-D12"
+     ],
+     "group": "2016+",
+     "group_value": 0.0297,
+     "lift": 0.66,
+     "lift_without_top": 0.67,
+     "measure": 15,
+     "p": 0.0285,
+     "q": 0.0633,
+     "rest_value": 0.0505,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-AATIP-IM-2010-DRAFT",
+      "DIA-AAWSAP-DI-BRIEF-2009",
+      "DIA-AAWSAP-REID-BRIEF-2009-05"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0349,
+     "lift": 0.71,
+     "lift_without_top": 0.72,
+     "measure": 12,
+     "p": 0.0335,
+     "q": 0.0724,
+     "rest_value": 0.058,
+     "robust": false
+    },
+    {
+     "axis": "era",
+     "docs": 19,
+     "drivers": [
+      "DOS-UAP-D002",
+      "EOP-UAP-D002",
+      "NASA-UAP-D5"
+     ],
+     "group": "1960s-70s",
+     "group_value": 0.0186,
+     "lift": 0.31,
+     "lift_without_top": 0.33,
+     "measure": 11,
+     "p": 0.042,
+     "q": 0.0839,
+     "rest_value": 0.0635,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 19,
+     "drivers": [
+      "EOP-UAP-D001",
+      "NASA-UAP-D5",
+      "DOS-UAP-D002"
+     ],
+     "group": "1960s-70s",
+     "group_value": 0.0156,
+     "lift": 0.32,
+     "lift_without_top": 0.33,
+     "measure": 13,
+     "p": 0.043,
+     "q": 0.0839,
+     "rest_value": 0.0524,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 49,
+     "drivers": [
+      "DOW-UAP-D103",
+      "DOW-UAP-D177",
+      "DOW-UAP-D178"
+     ],
+     "group": "1950s",
+     "group_value": 0.0296,
+     "lift": 0.58,
+     "lift_without_top": 0.6,
+     "measure": 6,
+     "p": 0.041,
+     "q": 0.0839,
+     "rest_value": 0.0566,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-DI-BRIEF-2008",
+      "DIA-AAWSAP-DI-BRIEF-2009",
+      "DIA-AAWSAP-OUSDI-IM-AATIP"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0107,
+     "lift": 0.72,
+     "lift_without_top": 0.73,
+     "measure": 1,
+     "p": 0.0415,
+     "q": 0.0839,
+     "rest_value": 0.0173,
+     "robust": false
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00537",
+      "NARA-493468575-237UAP00624",
+      "NARA-493468575-237UAP00565"
+     ],
+     "group": "FAA",
+     "group_value": 0.7305,
+     "lift": 2.29,
+     "lift_without_top": 2.28,
+     "measure": 1,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.017,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 19,
+     "drivers": [
+      "DIA-AAWSAP-AATIP-IM-2010-DRAFT",
+      "DIA-AAWSAP-SAP-REVIEW-2009",
+      "DIA-AAWSAP-REID-MTG-2009-01"
+     ],
+     "group": "DIA",
+     "group_value": 0.6075,
+     "lift": 11.39,
+     "lift_without_top": 11.03,
+     "measure": 8,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0333,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 29,
+     "drivers": [
+      "NARA-493468580-24-UAP-Reporting-Trends",
+      "NARA-493468580-04-AARO-Trifold-2024",
+      "NARA-493468580-029-2023-UAP-Mission-Slides"
+     ],
+     "group": "OSD",
+     "group_value": 0.5021,
+     "lift": 8.61,
+     "lift_without_top": 8.35,
+     "measure": 7,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0334,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D042",
+      "DOW-UAP-D089",
+      "DOW-UAP-D090"
+     ],
+     "group": "DOW",
+     "group_value": 0.0146,
+     "lift": 0.05,
+     "lift_without_top": 0.05,
+     "measure": 1,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.4495,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 5,
+     "drivers": [
+      "NARA-493468579-576UAP0021",
+      "NARA-493468579-576UAP0026",
+      "NARA-493468579-576UAP0007"
+     ],
+     "group": "ODNI",
+     "group_value": 0.4622,
+     "lift": 7.93,
+     "lift_without_top": 6.89,
+     "measure": 7,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0546,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 29,
+     "drivers": [
+      "NARA-493468580-017-Atmospheric-Wakes",
+      "NARA-493468580-020-Western-US",
+      "NARA-493468580-021-AARO-Trifold-Jan2025"
+     ],
+     "group": "OSD",
+     "group_value": 0.0077,
+     "lift": 0.02,
+     "lift_without_top": 0.03,
+     "measure": 1,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.3369,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 8,
+     "drivers": [
+      "NASA-UAP-D1",
+      "NASA-UAP-D2",
+      "NASA-UAP-D5"
+     ],
+     "group": "NASA",
+     "group_value": 0.3863,
+     "lift": 5.84,
+     "lift_without_top": 5.45,
+     "measure": 3,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0614,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 30,
+     "drivers": [
+      "FBI-UAP-D014",
+      "FBI-UAP-D032",
+      "FBI-UAP-D033"
+     ],
+     "group": "FBI",
+     "group_value": 0.0159,
+     "lift": 0.05,
+     "lift_without_top": 0.05,
+     "measure": 1,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.3371,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 11,
+     "drivers": [
+      "R01-18-6369445-General-1948-Vol-1",
+      "R01-18-100754-General-1946-7-Vol-2",
+      "R01-341-110677-Numerical-File-5-2500"
+     ],
+     "group": "USAF",
+     "group_value": 0.3852,
+     "lift": 4.81,
+     "lift_without_top": 4.36,
+     "measure": 5,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0739,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 8,
+     "drivers": [
+      "NAVY-RF-2019",
+      "NAVY-RF-2020",
+      "NAVY-RF-2023-01"
+     ],
+     "group": "NAVY",
+     "group_value": 0.2558,
+     "lift": 9.62,
+     "lift_without_top": 6.84,
+     "measure": 4,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0232,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 8,
+     "drivers": [
+      "R01-Western-US-Event-Slides-5-08-2026",
+      "R01-Serial-5-Redacted-Redacted",
+      "R01-Serial-4-Redacted-Redacted"
+     ],
+     "group": "UNK",
+     "group_value": 0.2906,
+     "lift": 4.39,
+     "lift_without_top": 4.08,
+     "measure": 3,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0628,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 30,
+     "drivers": [
+      "R01-65-HS1-834228961-62-HQ-83894-Serial-153",
+      "R01-65-HS1-834228961-62-HQ-83894-Serial-438",
+      "FBI-UAP-D024"
+     ],
+     "group": "FBI",
+     "group_value": 0.2618,
+     "lift": 3.96,
+     "lift_without_top": 3.76,
+     "measure": 3,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0548,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 30,
+     "drivers": [
+      "R01-65-HS1-101634279-100-DE-18221-Serial-844",
+      "R01-65-HS1-834228961-62-HQ-83894-Section-9",
+      "FBI-UAP-D014"
+     ],
+     "group": "FBI",
+     "group_value": 0.2402,
+     "lift": 3.0,
+     "lift_without_top": 2.86,
+     "measure": 5,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0708,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00013"
+     ],
+     "group": "FAA",
+     "group_value": 0.0121,
+     "lift": 0.15,
+     "lift_without_top": 0.15,
+     "measure": 5,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.1302,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D126",
+      "DOW-UAP-D153",
+      "DOW-UAP-D121"
+     ],
+     "group": "DOW",
+     "group_value": 0.1384,
+     "lift": 2.46,
+     "lift_without_top": 2.4,
+     "measure": 2,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0211,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 19,
+     "drivers": [
+      "DIA-AAWSAP-DELIVERABLES-REVIEW-2009",
+      "DIA-AAWSAP-STATUS-BRIEFING-2009",
+      "DIA-AAWSAP-STATUS-2009-08"
+     ],
+     "group": "DIA",
+     "group_value": 0.1136,
+     "lift": 4.85,
+     "lift_without_top": 3.63,
+     "measure": 14,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0201,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00013"
+     ],
+     "group": "FAA",
+     "group_value": 0.0043,
+     "lift": 0.08,
+     "lift_without_top": 0.08,
+     "measure": 2,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0944,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00010",
+      "NARA-493468575-237UAP00012"
+     ],
+     "group": "FAA",
+     "group_value": 0.0017,
+     "lift": 0.03,
+     "lift_without_top": 0.03,
+     "measure": 8,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0913,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00013"
+     ],
+     "group": "FAA",
+     "group_value": 0.0149,
+     "lift": 0.26,
+     "lift_without_top": 0.26,
+     "measure": 7,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0902,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00031",
+      "NARA-493468575-237UAP00086"
+     ],
+     "group": "FAA",
+     "group_value": 0.0264,
+     "lift": 0.4,
+     "lift_without_top": 0.4,
+     "measure": 3,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0954,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D3",
+      "DOW-UAP-D20",
+      "DOW-UAP-D12"
+     ],
+     "group": "DOW",
+     "group_value": 0.0735,
+     "lift": 2.4,
+     "lift_without_top": 2.33,
+     "measure": 11,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0124,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D100",
+      "DOW-UAP-D105",
+      "DOW-UAP-D159"
+     ],
+     "group": "DOW",
+     "group_value": 0.1181,
+     "lift": 1.47,
+     "lift_without_top": 1.43,
+     "measure": 5,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.064,
+     "robust": false
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D54",
+      "DOW-UAP-D7",
+      "DOW-UAP-D8"
+     ],
+     "group": "DOW",
+     "group_value": 0.0737,
+     "lift": 1.93,
+     "lift_without_top": 1.86,
+     "measure": 16,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.023,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D19",
+      "DOW-UAP-D20",
+      "DOW-UAP-D63"
+     ],
+     "group": "DOW",
+     "group_value": 0.0634,
+     "lift": 2.23,
+     "lift_without_top": 2.16,
+     "measure": 13,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0135,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D32",
+      "DOW-UAP-D74",
+      "DOW-UAP-D65"
+     ],
+     "group": "DOW",
+     "group_value": 0.0639,
+     "lift": 2.14,
+     "lift_without_top": 2.07,
+     "measure": 6,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0154,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00010"
+     ],
+     "group": "FAA",
+     "group_value": 0.0058,
+     "lift": 0.19,
+     "lift_without_top": 0.19,
+     "measure": 11,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.049,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00012"
+     ],
+     "group": "FAA",
+     "group_value": 0.0153,
+     "lift": 0.4,
+     "lift_without_top": 0.4,
+     "measure": 16,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.055,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00013",
+      "NARA-493468575-237UAP00015",
+      "NARA-493468575-237UAP00017"
+     ],
+     "group": "FAA",
+     "group_value": 0.0095,
+     "lift": 0.31,
+     "lift_without_top": 0.31,
+     "measure": 15,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0457,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00010",
+      "NARA-493468575-237UAP00013"
+     ],
+     "group": "FAA",
+     "group_value": 0.0155,
+     "lift": 0.44,
+     "lift_without_top": 0.45,
+     "measure": 12,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0493,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00010"
+     ],
+     "group": "FAA",
+     "group_value": 0.0048,
+     "lift": 0.21,
+     "lift_without_top": 0.21,
+     "measure": 14,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0371,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00010"
+     ],
+     "group": "FAA",
+     "group_value": 0.0127,
+     "lift": 0.43,
+     "lift_without_top": 0.43,
+     "measure": 6,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0426,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00012",
+      "NARA-493468575-237UAP00013"
+     ],
+     "group": "FAA",
+     "group_value": 0.0127,
+     "lift": 0.45,
+     "lift_without_top": 0.45,
+     "measure": 13,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.04,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D188",
+      "DOW-UAP-D135",
+      "DOW-UAP-D129"
+     ],
+     "group": "DOW",
+     "group_value": 0.0397,
+     "lift": 1.7,
+     "lift_without_top": 1.54,
+     "measure": 14,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0164,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00012"
+     ],
+     "group": "FAA",
+     "group_value": 0.0053,
+     "lift": 0.43,
+     "lift_without_top": 0.44,
+     "measure": 9,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0171,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 9,
+     "drivers": [
+      "CIA-UAP-D026",
+      "CIA-UAP-D028",
+      "CIA-UAP-D029"
+     ],
+     "group": "CIA",
+     "group_value": 0.2956,
+     "lift": 3.69,
+     "lift_without_top": 3.28,
+     "measure": 5,
+     "p": 0.001,
+     "q": 0.0065,
+     "rest_value": 0.0765,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 8,
+     "drivers": [
+      "NAVY-RF-2023-12",
+      "NAVY-RF-FOIA-LETTER",
+      "NAVY-RF-2023-01"
+     ],
+     "group": "NAVY",
+     "group_value": 0.1098,
+     "lift": 9.07,
+     "lift_without_top": 2.34,
+     "measure": 9,
+     "p": 0.001,
+     "q": 0.0065,
+     "rest_value": 0.0107,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D212",
+      "DOW-UAP-D208",
+      "DOW-UAP-D103"
+     ],
+     "group": "DOW",
+     "group_value": 0.0484,
+     "lift": 1.39,
+     "lift_without_top": 1.27,
+     "measure": 12,
+     "p": 0.001,
+     "q": 0.0065,
+     "rest_value": 0.0292,
+     "robust": false
+    },
+    {
+     "axis": "agency",
+     "docs": 19,
+     "drivers": [
+      "DIA-AAWSAP-DI-BRIEF-2008",
+      "DIA-AAWSAP-DI-BRIEF-2009",
+      "DIA-AAWSAP-OUSDI-IM-AATIP"
+     ],
+     "group": "DIA",
+     "group_value": 0.0053,
+     "lift": 0.02,
+     "lift_without_top": 0.02,
+     "measure": 1,
+     "p": 0.0015,
+     "q": 0.0095,
+     "rest_value": 0.3308,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 6,
+     "drivers": [
+      "R01-59-64634-711-5612-7-2852",
+      "DOS-UAP-D002",
+      "DOS-UAP-D2"
+     ],
+     "group": "DOS",
+     "group_value": 0.2794,
+     "lift": 3.49,
+     "lift_without_top": 3.13,
+     "measure": 5,
+     "p": 0.002,
+     "q": 0.012,
+     "rest_value": 0.0779,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 8,
+     "drivers": [
+      "R01-Serial-4-Redacted-Redacted",
+      "R01-Serial-5-Redacted-Redacted",
+      "R01-Serial-3-Redacted"
+     ],
+     "group": "UNK",
+     "group_value": 0.1249,
+     "lift": 4.12,
+     "lift_without_top": 3.62,
+     "measure": 15,
+     "p": 0.002,
+     "q": 0.012,
+     "rest_value": 0.0289,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 19,
+     "drivers": [
+      "DIA-AAWSAP-AATIP-IM-2010-DRAFT",
+      "DIA-AAWSAP-DI-BRIEF-2008",
+      "DIA-AAWSAP-ORDER-2008"
+     ],
+     "group": "DIA",
+     "group_value": 0.0015,
+     "lift": 0.01,
+     "lift_without_top": 0.01,
+     "measure": 10,
+     "p": 0.0025,
+     "q": 0.0146,
+     "rest_value": 0.1158,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 4,
+     "drivers": [
+      "DOE-UAP-D003",
+      "DOE-UAP-D004",
+      "DOE-UAP-D002"
+     ],
+     "group": "DOE",
+     "group_value": 0.2838,
+     "lift": 4.29,
+     "lift_without_top": 3.2,
+     "measure": 3,
+     "p": 0.005,
+     "q": 0.0286,
+     "rest_value": 0.0646,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 30,
+     "drivers": [
+      "R01-65-HS1-834228961-62-HQ-83894-Serial-403",
+      "R01-65-HS1-834228961-62-HQ-83894-Serial-153",
+      "FBI-UAP-D032"
+     ],
+     "group": "FBI",
+     "group_value": 0.0707,
+     "lift": 2.02,
+     "lift_without_top": 1.91,
+     "measure": 12,
+     "p": 0.006,
+     "q": 0.0335,
+     "rest_value": 0.0329,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 8,
+     "drivers": [
+      "NASA-UAP-D2",
+      "NASA-UAP-D1",
+      "NASA-UAP-D5"
+     ],
+     "group": "NASA",
+     "group_value": 0.1184,
+     "lift": 3.39,
+     "lift_without_top": 2.93,
+     "measure": 12,
+     "p": 0.01,
+     "q": 0.0545,
+     "rest_value": 0.0337,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D187",
+      "DOW-UAP-D186",
+      "DOW-UAP-D184"
+     ],
+     "group": "DOW",
+     "group_value": 0.0769,
+     "lift": 1.44,
+     "lift_without_top": 1.34,
+     "measure": 8,
+     "p": 0.011,
+     "q": 0.0586,
+     "rest_value": 0.0433,
+     "robust": false
+    },
+    {
+     "axis": "agency",
+     "docs": 11,
+     "drivers": [
+      "R01-341-110448-Records-Relating-to-the-Collection-and-Dissemination-of-Intellige",
+      "NARA-596293",
+      "R01-18-100754-General-1946-7-Vol-2"
+     ],
+     "group": "USAF",
+     "group_value": 0.024,
+     "lift": 0.08,
+     "lift_without_top": 0.08,
+     "measure": 1,
+     "p": 0.0135,
+     "q": 0.0689,
+     "rest_value": 0.3255,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D091",
+      "DOW-UAP-D114",
+      "DOW-UAP-D115"
+     ],
+     "group": "DOW",
+     "group_value": 0.0353,
+     "lift": 0.61,
+     "lift_without_top": 0.61,
+     "measure": 7,
+     "p": 0.0135,
+     "q": 0.0689,
+     "rest_value": 0.0681,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 4,
+     "drivers": [
+      "LLE-UAP-D001",
+      "LLE-UAP-D003",
+      "LLE-UAP-D004"
+     ],
+     "group": "LLE",
+     "group_value": 0.1228,
+     "lift": 3.22,
+     "lift_without_top": 2.88,
+     "measure": 16,
+     "p": 0.0195,
+     "q": 0.0975,
+     "rest_value": 0.0376,
+     "robust": true
+    }
+   ]
+  },
+  "topics": [
+   {
+    "id": 1,
+    "label": "FAA UAP reports",
+    "typical": [
+     [
+      "NARA-493468575-237UAP00537",
+      1,
+      1.0
+     ],
+     [
+      "NARA-493468575-237UAP00624",
+      1,
+      1.0
+     ],
+     [
+      "NARA-493468575-237UAP00565",
+      1,
+      1.0
+     ],
+     [
+      "NARA-493468575-237UAP00479",
+      1,
+      1.0
+     ],
+     [
+      "NARA-493468575-237UAP00586",
+      1,
+      1.0
+     ],
+     [
+      "NARA-493468575-237UAP00561",
+      1,
+      1.0
+     ]
+    ],
+    "weights": [
+     1.1809,
+     1.1777,
+     1.0755,
+     1.0041,
+     0.7257,
+     0.6931,
+     0.6867,
+     0.6804,
+     0.6577,
+     0.6541,
+     0.6346,
+     0.6305,
+     0.6113,
+     0.5887,
+     0.4534
+    ],
+    "words": [
+     "latitude",
+     "uap",
+     "ufo",
+     "activity",
+     "prelim",
+     "faa",
+     "info",
+     "title",
+     "advised",
+     "washington",
+     "operations",
+     "description",
+     "center",
+     "evasive",
+     "notification"
+    ]
+   },
+   {
+    "id": 2,
+    "label": null,
+    "typical": [
+     [
+      "DOW-UAP-D153",
+      40,
+      1.0
+     ],
+     [
+      "DOW-UAP-D146",
+      9,
+      1.0
+     ],
+     [
+      "DOW-UAP-D153",
+      4,
+      1.0
+     ],
+     [
+      "DOW-UAP-D142",
+      25,
+      1.0
+     ],
+     [
+      "DOW-UAP-D126",
+      4,
+      0.995
+     ],
+     [
+      "DOW-UAP-D145",
+      27,
+      0.993
+     ]
+    ],
+    "weights": [
+     0.2989,
+     0.297,
+     0.2942,
+     0.2908,
+     0.2802,
+     0.2779,
+     0.2717,
+     0.2639,
+     0.2599,
+     0.2597,
+     0.2556,
+     0.2507,
+     0.2449,
+     0.2423,
+     0.2384
+    ],
+    "words": [
+     "system",
+     "used",
+     "using",
+     "density",
+     "shown",
+     "well",
+     "large",
+     "design",
+     "many",
+     "systems",
+     "figure",
+     "based",
+     "fields",
+     "mass",
+     "small"
+    ]
+   },
+   {
+    "id": 3,
+    "label": "Witness narratives",
+    "typical": [
+     [
+      "CONGRESS-HASC-1966",
+      76,
+      0.948
+     ],
+     [
+      "DOW-UAP-D174",
+      43,
+      0.942
+     ],
+     [
+      "DOW-UAP-D173",
+      68,
+      0.904
+     ],
+     [
+      "DOW-UAP-D170",
+      22,
+      0.903
+     ],
+     [
+      "DOW-UAP-D171",
+      73,
+      0.889
+     ],
+     [
+      "DOW-UAP-D171",
+      79,
+      0.884
+     ]
+    ],
+    "weights": [
+     0.4129,
+     0.3702,
+     0.3452,
+     0.2926,
+     0.2804,
+     0.2786,
+     0.2752,
+     0.2752,
+     0.2356,
+     0.2207,
+     0.1996,
+     0.1993,
+     0.1977,
+     0.1954,
+     0.1915
+    ],
+    "words": [
+     "saw",
+     "like",
+     "lights",
+     "back",
+     "night",
+     "people",
+     "light",
+     "seen",
+     "car",
+     "time",
+     "around",
+     "witness",
+     "look",
+     "anything",
+     "away"
+    ]
+   },
+   {
+    "id": 4,
+    "label": "Navy range-fouler debriefs",
+    "typical": [
+     [
+      "NAVY-RF-2019",
+      12,
+      1.0
+     ],
+     [
+      "NAVY-RF-2020",
+      10,
+      0.975
+     ],
+     [
+      "NAVY-RF-2020",
+      20,
+      0.969
+     ],
+     [
+      "NAVY-RF-2019",
+      4,
+      0.966
+     ],
+     [
+      "NAVY-RF-2023-01",
+      7,
+      0.661
+     ],
+     [
+      "NAVY-RF-2023-01",
+      19,
+      0.653
+     ]
+    ],
+    "weights": [
+     0.5897,
+     0.5111,
+     0.5062,
+     0.4849,
+     0.4445,
+     0.4334,
+     0.4207,
+     0.4104,
+     0.4095,
+     0.3999,
+     0.3973,
+     0.3452,
+     0.3297,
+     0.3259,
+     0.3235
+    ],
+    "words": [
+     "troubleshooting",
+     "reflective",
+     "ddmmss",
+     "working",
+     "parts",
+     "reference",
+     "debrief",
+     "bullseye",
+     "metallic",
+     "crew",
+     "sipr",
+     "attitude",
+     "initial",
+     "side",
+     "latitute"
+    ]
+   },
+   {
+    "id": 5,
+    "label": "Air Force intelligence correspondence",
+    "typical": [
+     [
+      "DOW-UAP-D100",
+      226,
+      1.0
+     ],
+     [
+      "DOW-UAP-D105",
+      185,
+      1.0
+     ],
+     [
+      "DOW-UAP-D105",
+      109,
+      1.0
+     ],
+     [
+      "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+      74,
+      1.0
+     ],
+     [
+      "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+      8,
+      1.0
+     ],
+     [
+      "DOW-UAP-D180",
+      92,
+      0.999
+     ]
+    ],
+    "weights": [
+     0.7058,
+     0.4992,
+     0.407,
+     0.4054,
+     0.3291,
+     0.2978,
+     0.2698,
+     0.2566,
+     0.2413,
+     0.217,
+     0.2046,
+     0.2005,
+     0.2004,
+     0.1994,
+     0.1994
+    ],
+    "words": [
+     "air",
+     "force",
+     "usaf",
+     "flying",
+     "information",
+     "intelligence",
+     "chief",
+     "colonel",
+     "general",
+     "director",
+     "headquarters",
+     "united",
+     "unidentified",
+     "project",
+     "base"
+    ]
+   },
+   {
+    "id": 6,
+    "label": null,
+    "typical": [
+     [
+      "DOW-UAP-D64",
+      5,
+      0.998
+     ],
+     [
+      "DOW-UAP-D106",
+      5,
+      0.996
+     ],
+     [
+      "DOW-UAP-D60",
+      6,
+      0.994
+     ],
+     [
+      "DOW-UAP-D108",
+      5,
+      0.989
+     ],
+     [
+      "DOW-UAP-D12",
+      5,
+      0.989
+     ],
+     [
+      "DOW-UAP-D35",
+      5,
+      0.984
+     ]
+    ],
+    "weights": [
+     0.5355,
+     0.5238,
+     0.5172,
+     0.4767,
+     0.4174,
+     0.3868,
+     0.3826,
+     0.3651,
+     0.3645,
+     0.3635,
+     0.2977,
+     0.2893,
+     0.2774,
+     0.2726,
+     0.2721
+    ],
+    "words": [
+     "station",
+     "tasking",
+     "precoord",
+     "supported",
+     "eeis",
+     "weather",
+     "ntisr",
+     "effectiveness",
+     "operation",
+     "gentext",
+     "time",
+     "observed",
+     "satisfactory",
+     "jtar",
+     "utilization"
+    ]
+   },
+   {
+    "id": 7,
+    "label": null,
+    "typical": [
+     [
+      "NARA-493468580-04-AARO-Trifold-2024",
+      2,
+      1.0
+     ],
+     [
+      "NARA-493468580-03-2024-DGI-Mission-Brief",
+      3,
+      1.0
+     ],
+     [
+      "NARA-493468580-029-2023-UAP-Mission-Slides",
+      2,
+      0.986
+     ],
+     [
+      "NARA-493468580-029-2023-UAP-Mission-Slides",
+      4,
+      0.98
+     ],
+     [
+      "NARA-493468580-026-DGI-Briefing",
+      2,
+      0.971
+     ],
+     [
+      "NARA-493468580-03-2024-DGI-Mission-Brief",
+      2,
+      0.956
+     ]
+    ],
+    "weights": [
+     0.3375,
+     0.3007,
+     0.2552,
+     0.2485,
+     0.2443,
+     0.2375,
+     0.2352,
+     0.2272,
+     0.2229,
+     0.2028,
+     0.1968,
+     0.1954,
+     0.195,
+     0.1874,
+     0.1845
+    ],
+    "words": [
+     "anomalous",
+     "domain",
+     "cases",
+     "phenomena",
+     "resolution",
+     "objects",
+     "security",
+     "reporting",
+     "intelligence",
+     "case",
+     "scientific",
+     "department",
+     "anomaly",
+     "unidentified",
+     "analytic"
+    ]
+   },
+   {
+    "id": 8,
+    "label": "AAWSAP/BAASS program and contracting",
+    "typical": [
+     [
+      "DIA-AAWSAP-DEPSECDEF-PACKET",
+      10,
+      0.999
+     ],
+     [
+      "DOW-UAP-D188",
+      2,
+      0.999
+     ],
+     [
+      "DIA-AAWSAP-REID-BRIEF-2009-05",
+      3,
+      0.994
+     ],
+     [
+      "DIA-AAWSAP-REID-SAP-LETTER-2009",
+      5,
+      0.992
+     ],
+     [
+      "DIA-AAWSAP-DEPSECDEF-PACKET",
+      3,
+      0.974
+     ],
+     [
+      "DIA-AAWSAP-DELIVERABLES-REVIEW-2009",
+      3,
+      0.971
+     ]
+    ],
+    "weights": [
+     0.4964,
+     0.4143,
+     0.4061,
+     0.3937,
+     0.3839,
+     0.37,
+     0.3415,
+     0.3095,
+     0.2947,
+     0.2703,
+     0.2612,
+     0.2328,
+     0.231,
+     0.2173,
+     0.2027
+    ],
+    "words": [
+     "aerospace",
+     "advanced",
+     "program",
+     "contract",
+     "baass",
+     "dia",
+     "reid",
+     "senator",
+     "defense",
+     "studies",
+     "weapon",
+     "agency",
+     "threat",
+     "technical",
+     "areas"
+    ]
+   },
+   {
+    "id": 9,
+    "label": "Reporting-form instructions and personnel orders (mixed)",
+    "typical": [
+     [
+      "NAVY-RF-2023-12",
+      92,
+      0.992
+     ],
+     [
+      "NAVY-RF-2023-12",
+      107,
+      0.99
+     ],
+     [
+      "R01-65-HS1-834228961-62-HQ-83894-Section-10",
+      69,
+      0.513
+     ],
+     [
+      "DOW-UAP-D150",
+      39,
+      0.38
+     ],
+     [
+      "R01-65-HS1-834228961-62-HQ-83894-Section-10",
+      66,
+      0.373
+     ],
+     [
+      "DOW-UAP-D180",
+      122,
+      0.364
+     ]
+    ],
+    "weights": [
+     0.6446,
+     0.5272,
+     0.5167,
+     0.5164,
+     0.4898,
+     0.4833,
+     0.461,
+     0.4276,
+     0.4097,
+     0.388,
+     0.374,
+     0.3651,
+     0.363,
+     0.3556,
+     0.3527
+    ],
+    "words": [
+     "tile",
+     "treat",
+     "inputs",
+     "uaptf",
+     "tapes",
+     "happened",
+     "internal",
+     "recognize",
+     "signed",
+     "bullseye",
+     "located",
+     "sipr",
+     "confidentiality",
+     "addressees",
+     "government"
+    ]
+   },
+   {
+    "id": 10,
+    "label": null,
+    "typical": [
+     [
+      "DOW-UAP-D097",
+      27,
+      0.999
+     ],
+     [
+      "DOW-UAP-D097",
+      26,
+      0.995
+     ],
+     [
+      "DOW-UAP-D210",
+      16,
+      0.977
+     ],
+     [
+      "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+      53,
+      0.874
+     ],
+     [
+      "DOW-UAP-D178",
+      4,
+      0.873
+     ],
+     [
+      "DOW-UAP-D017",
+      55,
+      0.861
+     ]
+    ],
+    "weights": [
+     0.9358,
+     0.4827,
+     0.4484,
+     0.4099,
+     0.402,
+     0.3559,
+     0.3455,
+     0.3432,
+     0.3403,
+     0.3353,
+     0.325,
+     0.3158,
+     0.2898,
+     0.2721,
+     0.2716
+    ],
+    "words": [
+     "object",
+     "appeared",
+     "feet",
+     "miles",
+     "approximately",
+     "observed",
+     "speed",
+     "aircraft",
+     "altitude",
+     "unknown",
+     "light",
+     "sighting",
+     "observation",
+     "objects",
+     "north"
+    ]
+   },
+   {
+    "id": 11,
+    "label": null,
+    "typical": [
+     [
+      "DOW-UAP-D35",
+      2,
+      1.0
+     ],
+     [
+      "DOW-UAP-D109",
+      2,
+      1.0
+     ],
+     [
+      "DOW-UAP-D16",
+      2,
+      1.0
+     ],
+     [
+      "DOW-UAP-D25",
+      2,
+      1.0
+     ],
+     [
+      "DOW-UAP-D33",
+      2,
+      0.999
+     ],
+     [
+      "DOW-UAP-D20",
+      2,
+      0.997
+     ]
+    ],
+    "weights": [
+     0.5501,
+     0.5446,
+     0.5175,
+     0.4652,
+     0.4561,
+     0.4478,
+     0.3862,
+     0.3551,
+     0.3357,
+     0.315,
+     0.3052,
+     0.27,
+     0.2641,
+     0.2387,
+     0.2326
+    ],
+    "words": [
+     "wing",
+     "email",
+     "service",
+     "rank",
+     "phone",
+     "unit",
+     "full",
+     "tasked",
+     "operations",
+     "center",
+     "force",
+     "misrep",
+     "caoc",
+     "unavailable",
+     "msnid"
+    ]
+   },
+   {
+    "id": 12,
+    "label": null,
+    "typical": [
+     [
+      "DOW-UAP-D212",
+      4,
+      1.0
+     ],
+     [
+      "DOW-UAP-D208",
+      9,
+      0.999
+     ],
+     [
+      "CONGRESS-HASC-1966",
+      45,
+      0.994
+     ],
+     [
+      "CONGRESS-HASC-1966",
+      37,
+      0.992
+     ],
+     [
+      "DOW-UAP-D212",
+      32,
+      0.982
+     ],
+     [
+      "DOW-UAP-D208",
+      11,
+      0.969
+     ]
+    ],
+    "weights": [
+     0.6513,
+     0.3075,
+     0.299,
+     0.2968,
+     0.2841,
+     0.2565,
+     0.243,
+     0.2374,
+     0.2219,
+     0.2181,
+     0.2136,
+     0.2124,
+     0.2077,
+     0.1944,
+     0.1793
+    ],
+    "words": [
+     "circle",
+     "show",
+     "answered",
+     "give",
+     "know",
+     "please",
+     "place",
+     "picture",
+     "remember",
+     "saw",
+     "name",
+     "sketch",
+     "city",
+     "direction",
+     "tell"
+    ]
+   },
+   {
+    "id": 13,
+    "label": null,
+    "typical": [
+     [
+      "DOW-UAP-D32",
+      4,
+      1.0
+     ],
+     [
+      "DOW-UAP-D10",
+      4,
+      0.996
+     ],
+     [
+      "DOW-UAP-D107",
+      4,
+      0.992
+     ],
+     [
+      "DOW-UAP-D25",
+      4,
+      0.992
+     ],
+     [
+      "DOW-UAP-D35",
+      4,
+      0.992
+     ],
+     [
+      "DOW-UAP-D108",
+      4,
+      0.975
+     ]
+    ],
+    "weights": [
+     0.6045,
+     0.5314,
+     0.4843,
+     0.4779,
+     0.443,
+     0.4428,
+     0.439,
+     0.4023,
+     0.3945,
+     0.3592,
+     0.3437,
+     0.3264,
+     0.3163,
+     0.304,
+     0.3006
+    ],
+    "words": [
+     "takeoff",
+     "designator",
+     "additional",
+     "station",
+     "details",
+     "icao",
+     "guided",
+     "callsign",
+     "code",
+     "location",
+     "gun",
+     "time",
+     "gentext",
+     "land",
+     "last"
+    ]
+   },
+   {
+    "id": 14,
+    "label": null,
+    "typical": [
+     [
+      "DIA-AAWSAP-STATUS-BRIEFING-2009",
+      6,
+      0.998
+     ],
+     [
+      "DIA-AAWSAP-DELIVERABLES-REVIEW-2009",
+      4,
+      0.995
+     ],
+     [
+      "DIA-AAWSAP-DEPSECDEF-PACKET",
+      11,
+      0.994
+     ],
+     [
+      "DIA-AAWSAP-STATUS-2009-08",
+      4,
+      0.991
+     ],
+     [
+      "DOW-UAP-D188",
+      3,
+      0.988
+     ],
+     [
+      "DIA-AAWSAP-STATUS-BRIEFING-2009",
+      7,
+      0.986
+     ]
+    ],
+    "weights": [
+     0.3667,
+     0.3268,
+     0.2992,
+     0.2963,
+     0.2701,
+     0.2537,
+     0.2532,
+     0.2502,
+     0.2486,
+     0.2409,
+     0.2336,
+     0.227,
+     0.2217,
+     0.216,
+     0.2071
+    ],
+    "words": [
+     "energy",
+     "gravity",
+     "invisibility",
+     "space",
+     "cloaking",
+     "metallic",
+     "applications",
+     "biosensors",
+     "review",
+     "biomems",
+     "propulsion",
+     "metamaterials",
+     "glasses",
+     "quantum",
+     "interfaces"
+    ]
+   },
+   {
+    "id": 15,
+    "label": "Space-vehicle fragments policy",
+    "typical": [
+     [
+      "USG-UAP-D002",
+      37,
+      1.0
+     ],
+     [
+      "USG-UAP-D002",
+      49,
+      1.0
+     ],
+     [
+      "DOW-UAP-D48",
+      121,
+      0.647
+     ],
+     [
+      "DOW-UAP-D48",
+      120,
+      0.64
+     ],
+     [
+      "DOW-UAP-D124",
+      49,
+      0.606
+     ],
+     [
+      "DOW-UAP-D49",
+      100,
+      0.534
+     ]
+    ],
+    "weights": [
+     0.4235,
+     0.3715,
+     0.3054,
+     0.2868,
+     0.2706,
+     0.2628,
+     0.2627,
+     0.2371,
+     0.2369,
+     0.2301,
+     0.2213,
+     0.2196,
+     0.2186,
+     0.2156,
+     0.2116
+    ],
+    "words": [
+     "vehicles",
+     "dod",
+     "launched",
+     "foreign",
+     "suspected",
+     "disposition",
+     "countries",
+     "responsible",
+     "responsibility",
+     "retained",
+     "government",
+     "agencies",
+     "administration",
+     "arrangements",
+     "designated"
+    ]
+   },
+   {
+    "id": 16,
+    "label": null,
+    "typical": [
+     [
+      "DOW-UAP-D23",
+      8,
+      0.996
+     ],
+     [
+      "DOW-UAP-D74",
+      9,
+      0.97
+     ],
+     [
+      "DOW-UAP-D107",
+      7,
+      0.965
+     ],
+     [
+      "DOW-UAP-D25",
+      6,
+      0.958
+     ],
+     [
+      "DOW-UAP-D35",
+      6,
+      0.958
+     ],
+     [
+      "DOW-UAP-D23",
+      9,
+      0.951
+     ]
+    ],
+    "weights": [
+     0.5285,
+     0.4324,
+     0.3301,
+     0.3221,
+     0.3025,
+     0.2985,
+     0.2876,
+     0.2821,
+     0.2577,
+     0.2541,
+     0.2457,
+     0.2406,
+     0.2405,
+     0.2303,
+     0.2184
+    ],
+    "words": [
+     "uap",
+     "friendly",
+     "depth",
+     "describe",
+     "observer",
+     "altitude",
+     "none",
+     "trajectory",
+     "kinetic",
+     "event",
+     "effects",
+     "accuracy",
+     "location",
+     "range",
+     "observation"
+    ]
+   }
+  ]
+ }
 }
