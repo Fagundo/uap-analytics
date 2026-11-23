@@ -159,3 +159,23 @@ def test_partial_dates_as_the_original():
     d = PartialDate.parse("1949-03-06/07")
     assert (d.start, d.end, d.precision) == (date(1949, 3, 6), date(1949, 3, 7), P.DAY)
     assert PartialDate.parse("1947-11").gap_days(PartialDate.parse("1947-12-03")) == 3
+
+
+def test_share_shift_regional_vs_national():
+    from uap_geo.replications.bluebook.index import IndexRow
+    from uap_geo.replications.bluebook.shift import PREDICATES, ShareShiftTest
+
+    def row(y, m, state, cat):
+        return IndexRow(y, m, state, "USA" if state else None, cat, None)
+
+    rows = []
+    for y in range(1950, 1961):
+        for m in range(1, 13):
+            after = (y, m) >= (1955, 8)
+            rows += [row(y, m, "Nevada", "aircraft" if after else "astro"), row(y, m, "Nevada", "astro")]
+            rows += [row(y, m, "Ohio", "astro"), row(y, m, "Ohio", "astro")]
+            rows += [row(y, m, "Ohio", "unidentified" if not after else "astro")]
+    t = ShareShiftTest(rows, {"Nevada"}, window=24)
+    r = t.run("aircraft", PREDICATES["aircraft"], 1955, 8)
+    assert abs(r.did - 0.5) < 1e-9 and r.did_p < 0.05
+    assert t.run("unidentified", PREDICATES["unidentified"], 1955, 8).national_change < 0
