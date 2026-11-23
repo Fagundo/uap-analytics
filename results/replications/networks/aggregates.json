@@ -1,0 +1,4356 @@
+{
+ "networks": {
+  "communities": [
+   {
+    "agencies": [
+     "CIA",
+     "CONGRESS",
+     "DOW",
+     "FBI",
+     "NARA",
+     "NASA",
+     "NAVY",
+     "ODNI",
+     "OSD",
+     "USAF"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-449",
+     "CONGRESS-HASC-1966",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9",
+     "DOW-UAP-D092",
+     "DOW-UAP-D180",
+     "R01-18-100754-General-1946-7-Vol-2",
+     "DOW-UAP-D100",
+     "DOW-UAP-D172",
+     "NARA-493468580-05-AARO-Historical-Record-Report",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "DOW-UAP-D212",
+     "DOW-UAP-D096",
+     "NARA-311003081-311003081",
+     "R01-38-143685-box7-Incident-Summaries-1-100",
+     "DOW-UAP-D154",
+     "R01-255-413270-UFO-s-and-Defense-What-Should-we-Prepare-For",
+     "DOW-UAP-D105",
+     "NARA-595507",
+     "DOW-UAP-D102",
+     "DOW-UAP-D191",
+     "DOW-UAP-D192",
+     "DOW-UAP-D193",
+     "DOW-UAP-D194",
+     "DOW-UAP-D195",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "CIA-UAP-D027",
+     "DOW-UAP-D204",
+     "NARA-493468579-576UAP0021",
+     "NARA-493468579-576UAP0026",
+     "NARA-493468580-01-2023-Annual-Report",
+     "NARA-493468580-07-2024-Annual-Report"
+    ],
+    "eras": [
+     "1940s",
+     "1950s",
+     "1960s-70s",
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 363,
+    "members": [
+     "org:13",
+     "person:2876",
+     "org:88",
+     "person:6333",
+     "person:170",
+     "person:6267",
+     "person:44",
+     "org:3848",
+     "person:6270",
+     "person:126",
+     "org:749",
+     "org:4791",
+     "person:122",
+     "person:6271",
+     "org:1202",
+     "org:2566",
+     "person:82",
+     "person:78",
+     "org:2684",
+     "org:4692",
+     "org:4113",
+     "person:6277",
+     "org:45",
+     "org:4921",
+     "org:81",
+     "org:60",
+     "person:6627",
+     "person:6269",
+     "org:4920",
+     "person:3609",
+     "org:4776",
+     "person:6491",
+     "org:4919",
+     "person:4237",
+     "org:49",
+     "person:104",
+     "person:106",
+     "person:4734",
+     "org:4774",
+     "person:154",
+     "org:4769",
+     "person:4705",
+     "org:4917",
+     "person:6268",
+     "org:85",
+     "person:211",
+     "org:2768",
+     "person:4239",
+     "org:33",
+     "person:3870",
+     "org:4752",
+     "org:80",
+     "person:91",
+     "org:4757",
+     "org:4006",
+     "person:4701",
+     "org:4024",
+     "person:349",
+     "person:4730",
+     "person:4732",
+     "person:4733",
+     "person:4962",
+     "person:3606",
+     "person:3063",
+     "person:6629",
+     "person:4236",
+     "person:4536",
+     "org:4025",
+     "person:4731",
+     "org:77",
+     "org:3917",
+     "org:673",
+     "org:3818",
+     "org:4753",
+     "org:4754",
+     "person:6494",
+     "org:4792",
+     "org:1466",
+     "org:2272",
+     "person:4725",
+     "org:696",
+     "person:860",
+     "person:157",
+     "person:6290",
+     "person:4975",
+     "person:4976",
+     "person:4981",
+     "person:447",
+     "org:4761",
+     "person:71",
+     "org:4755",
+     "org:402",
+     "person:4974",
+     "person:4960",
+     "person:6863",
+     "org:4751",
+     "person:177",
+     "person:185",
+     "org:2384",
+     "org:82",
+     "person:6337",
+     "org:109",
+     "org:695",
+     "person:6282",
+     "org:2561",
+     "org:3604",
+     "org:3838",
+     "org:3540",
+     "person:79",
+     "org:4759",
+     "person:50",
+     "person:6329",
+     "org:4775",
+     "person:4982",
+     "person:4987",
+     "person:4988",
+     "org:103",
+     "person:89",
+     "org:69",
+     "person:4538",
+     "org:121",
+     "person:155",
+     "person:6330",
+     "org:3268",
+     "person:6396",
+     "org:151",
+     "org:442",
+     "person:72",
+     "org:391",
+     "person:5497",
+     "person:3868",
+     "org:2103",
+     "person:146",
+     "person:92",
+     "person:48",
+     "person:160",
+     "person:6336",
+     "person:153",
+     "org:79",
+     "person:138",
+     "person:195",
+     "person:6346",
+     "org:118",
+     "person:4980"
+    ],
+    "size": 144,
+    "stability": 0.791
+   },
+   {
+    "agencies": [
+     "DOW",
+     "FBI",
+     "NAVY",
+     "ODNI",
+     "OSD",
+     "USAF"
+    ],
+    "docs": [
+     "DOW-UAP-D104",
+     "DOW-UAP-D105",
+     "DOW-UAP-D102",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "DOW-UAP-D100",
+     "R01-38-143685-box7-Incident-Summaries-101-172",
+     "DOW-UAP-D017",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "DOW-UAP-D49",
+     "NARA-493468579-576UAP0007",
+     "NARA-493468579-576UAP0026",
+     "NARA-493468580-01-2023-Annual-Report",
+     "R01-342-HS1-416511228-box186-319-1-Flying-Discs-1949",
+     "R01-38-143685-box7-Incident-Summaries-1-100",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "DOW-UAP-D094",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-130",
+     "DOW-UAP-D171"
+    ],
+    "eras": [
+     "1940s",
+     "1950s",
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 148,
+    "members": [
+     "person:1014",
+     "org:4",
+     "org:887",
+     "org:884",
+     "org:638",
+     "org:820",
+     "org:915",
+     "org:969",
+     "org:882",
+     "person:1010",
+     "person:1042",
+     "person:1133",
+     "org:888",
+     "org:894",
+     "org:1027",
+     "person:1012",
+     "org:977",
+     "org:921",
+     "person:1015",
+     "org:920",
+     "org:952",
+     "person:1013",
+     "person:1087",
+     "org:831",
+     "org:821",
+     "org:968",
+     "org:2833",
+     "org:927",
+     "org:582",
+     "person:1122",
+     "person:862",
+     "person:1056",
+     "person:1144",
+     "org:4970",
+     "person:1092",
+     "org:858",
+     "person:1101",
+     "person:1083",
+     "person:1019",
+     "org:708",
+     "person:1097",
+     "org:886",
+     "person:1017",
+     "person:1142",
+     "person:1108",
+     "person:1121",
+     "person:1123",
+     "person:1124",
+     "org:883",
+     "org:819",
+     "person:1102",
+     "org:1180",
+     "person:1048",
+     "person:1125",
+     "person:1126",
+     "org:946",
+     "org:912",
+     "org:889",
+     "org:1030",
+     "person:1146",
+     "org:932",
+     "org:891",
+     "org:892",
+     "org:3987",
+     "person:1055",
+     "person:1267",
+     "person:1230",
+     "person:1104",
+     "person:1084",
+     "person:1071",
+     "person:1081",
+     "person:1052",
+     "org:914",
+     "org:919",
+     "org:993",
+     "person:1269",
+     "person:6689",
+     "person:1038",
+     "org:1080",
+     "person:1177",
+     "person:1240",
+     "person:988",
+     "person:387",
+     "person:389",
+     "org:3835",
+     "person:2613",
+     "person:863",
+     "org:918",
+     "person:4202",
+     "person:4252",
+     "org:1028",
+     "person:1208",
+     "org:813",
+     "org:944"
+    ],
+    "size": 94,
+    "stability": 0.999
+   },
+   {
+    "agencies": [
+     "CIA",
+     "CONGRESS",
+     "DOE",
+     "DOW",
+     "FBI",
+     "NASA",
+     "OSD",
+     "USAF"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10",
+     "DOW-UAP-D105",
+     "CONGRESS-HASC-1966",
+     "DOW-UAP-D100",
+     "NARA-493468580-05-AARO-Historical-Record-Report",
+     "DOW-UAP-D092",
+     "DOW-UAP-D172",
+     "R01-18-6369445-General-1948-Vol-1",
+     "DOW-UAP-D102",
+     "DOW-UAP-D180",
+     "DOW-UAP-D175",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "NARA-596293",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-342-HS1-416511228-box186-319-1-Flying-Discs-1949",
+     "DOW-UAP-D096",
+     "NARA-595507",
+     "DOW-UAP-D168",
+     "DOW-UAP-D154",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-164",
+     "DOW-UAP-D208",
+     "DOW-UAP-D095",
+     "DOE-UAP-D004",
+     "DOW-UAP-D017",
+     "DOW-UAP-D203",
+     "DOW-UAP-D210",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-130",
+     "CIA-UAP-D026",
+     "CIA-UAP-D027",
+     "CIA-UAP-D028",
+     "R01-255-413270-UFO-s-and-Defense-What-Should-we-Prepare-For",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9",
+     "DOW-UAP-D191",
+     "DOW-UAP-D193",
+     "DOW-UAP-D197",
+     "DOW-UAP-D204",
+     "DOW-UAP-D169",
+     "DOW-UAP-D213",
+     "DOW-UAP-D097",
+     "DOW-UAP-D093",
+     "DOW-UAP-D094"
+    ],
+    "eras": [
+     "1940s",
+     "1950s",
+     "1960s-70s",
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 144,
+    "members": [
+     "org:2803",
+     "org:20",
+     "org:23",
+     "person:964",
+     "org:512",
+     "org:409",
+     "person:831",
+     "org:292",
+     "org:455",
+     "org:1146",
+     "person:940",
+     "person:951",
+     "org:65",
+     "org:274",
+     "person:45",
+     "org:561",
+     "person:5243",
+     "org:34",
+     "org:66",
+     "person:196",
+     "org:3739",
+     "person:3007",
+     "org:747",
+     "org:862",
+     "person:663",
+     "person:3633",
+     "person:140",
+     "org:2752",
+     "org:128",
+     "org:129",
+     "person:5035",
+     "org:4923",
+     "org:1385",
+     "person:826",
+     "org:1171",
+     "person:5046",
+     "person:3142",
+     "org:53",
+     "org:1198",
+     "org:1906",
+     "person:568",
+     "org:1907",
+     "org:2630",
+     "org:748",
+     "person:890",
+     "org:124",
+     "person:5048",
+     "person:952",
+     "org:3384",
+     "org:408",
+     "org:1938",
+     "org:618",
+     "person:5036",
+     "person:121",
+     "person:1437",
+     "person:6120",
+     "org:2254",
+     "org:2255",
+     "org:1777",
+     "person:5055",
+     "person:1486",
+     "org:52",
+     "person:5037",
+     "person:3009",
+     "person:3011",
+     "person:5102",
+     "org:2122",
+     "org:130",
+     "org:1227",
+     "person:5083",
+     "org:446",
+     "org:4158",
+     "org:62",
+     "org:1817",
+     "person:880",
+     "org:2682",
+     "org:87",
+     "person:5987",
+     "org:736",
+     "org:737",
+     "person:899",
+     "person:5038",
+     "person:965",
+     "org:133",
+     "org:3412",
+     "person:5060",
+     "org:354",
+     "org:3933",
+     "person:1317",
+     "person:5985",
+     "person:5990",
+     "org:86",
+     "org:91",
+     "person:5057"
+    ],
+    "size": 94,
+    "stability": 0.648
+   },
+   {
+    "agencies": [
+     "CIA",
+     "DOW",
+     "FBI",
+     "NAVY"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-130",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "DOW-UAP-D092",
+     "R01-38-143685-box7-Incident-Summaries-1-100",
+     "DOW-UAP-D102",
+     "DOW-UAP-D105",
+     "CIA-UAP-D027",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7"
+    ],
+    "eras": [
+     "1950s",
+     "1960s-70s",
+     "undated"
+    ],
+    "internal_ties": 302,
+    "members": [
+     "person:21",
+     "person:4879",
+     "person:4880",
+     "org:223",
+     "person:5371",
+     "person:5203",
+     "org:115",
+     "person:5340",
+     "person:881",
+     "person:716",
+     "org:4298",
+     "org:4259",
+     "person:5282",
+     "org:4257",
+     "person:5377",
+     "person:4742",
+     "org:4299",
+     "person:5208",
+     "org:4011",
+     "person:4849",
+     "person:5283",
+     "person:5286",
+     "org:627",
+     "person:5207",
+     "org:4297",
+     "org:4084",
+     "org:4092",
+     "org:4344",
+     "person:5303",
+     "org:4028",
+     "org:4612",
+     "person:541",
+     "person:5376",
+     "person:4882",
+     "org:4307",
+     "person:476",
+     "org:4310",
+     "person:5380",
+     "org:4296",
+     "org:2877",
+     "person:474",
+     "org:4094",
+     "org:4614",
+     "person:5878",
+     "person:5879",
+     "person:4886",
+     "person:475",
+     "org:4074",
+     "person:5389",
+     "person:5473",
+     "org:430",
+     "person:5450",
+     "org:860",
+     "org:4007",
+     "org:4096",
+     "org:4258",
+     "person:5370",
+     "person:5210",
+     "person:4877",
+     "org:369",
+     "org:32",
+     "org:3796",
+     "org:3963",
+     "org:4377",
+     "person:5449",
+     "person:4704",
+     "org:432",
+     "org:4309",
+     "org:4384",
+     "person:5310",
+     "org:827",
+     "org:861",
+     "person:5374",
+     "person:4707",
+     "person:5357",
+     "person:5379",
+     "org:4082",
+     "person:5527",
+     "person:5528",
+     "org:4357",
+     "person:5205",
+     "person:5269",
+     "org:4260",
+     "person:4745",
+     "person:5400",
+     "person:4757",
+     "person:5372",
+     "person:4708",
+     "person:5333",
+     "org:463",
+     "org:3798",
+     "person:5367"
+    ],
+    "size": 92,
+    "stability": 0.754
+   },
+   {
+    "agencies": [
+     "DOW",
+     "FBI",
+     "NAVY",
+     "USAF",
+     "USG"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-164",
+     "DOW-UAP-D105",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "DOW-UAP-D100",
+     "R01-18-6369445-General-1948-Vol-1",
+     "DOW-UAP-D017",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "FBI-UAP-D014",
+     "R01-18-100754-General-1946-7-Vol-2",
+     "DOW-UAP-D180",
+     "R01-38-143685-box7-Incident-Summaries-1-100",
+     "DOW-UAP-D102",
+     "USG-UAP-D002"
+    ],
+    "eras": [
+     "1940s",
+     "1950s",
+     "1960s-70s",
+     "undated"
+    ],
+    "internal_ties": 142,
+    "members": [
+     "org:296",
+     "person:1539",
+     "org:1264",
+     "org:323",
+     "org:2925",
+     "org:4762",
+     "person:3605",
+     "org:762",
+     "person:4768",
+     "person:6636",
+     "person:6596",
+     "person:4860",
+     "person:6103",
+     "org:4263",
+     "org:5017",
+     "org:4820",
+     "org:1245",
+     "person:5154",
+     "org:4807",
+     "person:6595",
+     "person:5642",
+     "person:5979",
+     "person:6619",
+     "person:6620",
+     "person:5754",
+     "person:6546",
+     "person:5757",
+     "person:3856",
+     "person:4127",
+     "org:4885",
+     "person:5755",
+     "org:570",
+     "person:5747",
+     "org:2493",
+     "person:351",
+     "person:4863",
+     "org:4436",
+     "org:4907",
+     "person:5033",
+     "org:812",
+     "person:6597",
+     "person:4765",
+     "person:1537",
+     "org:4217",
+     "person:898",
+     "org:4889",
+     "org:4926",
+     "org:4634",
+     "person:5918",
+     "org:4273",
+     "org:309",
+     "person:5217",
+     "org:3523",
+     "org:3524",
+     "person:5758",
+     "org:4289",
+     "person:6592",
+     "org:692",
+     "person:854",
+     "person:857",
+     "org:3913",
+     "org:4924",
+     "org:4927",
+     "org:4930",
+     "person:711",
+     "person:1565",
+     "person:6660",
+     "org:4249",
+     "org:4101",
+     "person:6551",
+     "org:782",
+     "person:4758",
+     "org:4425",
+     "person:3424",
+     "org:324",
+     "person:4888",
+     "org:294"
+    ],
+    "size": 77,
+    "stability": 0.966
+   },
+   {
+    "agencies": [
+     "DOS",
+     "DOW",
+     "EOP",
+     "FBI",
+     "NASA",
+     "NAVY",
+     "NRC",
+     "ODNI",
+     "OSD",
+     "UNK",
+     "USAF",
+     "USG"
+    ],
+    "docs": [
+     "DOW-UAP-D49",
+     "NARA-493468580-07-2024-Annual-Report",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "NARA-493468579-576UAP0021",
+     "NARA-493468580-01-2023-Annual-Report",
+     "NARA-493468579-576UAP0007",
+     "NARA-493468580-029-2023-UAP-Mission-Slides",
+     "NARA-493468580-05-AARO-Historical-Record-Report",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "USG-UAP-D002",
+     "DOW-UAP-D172",
+     "NARA-493468579-576UAP0026",
+     "DOW-UAP-D100",
+     "NARA-493468580-23-AARO-Brief-ATB",
+     "R01-255-413270-UFO-s-and-Defense-What-Should-we-Prepare-For",
+     "EOP-UAP-D002",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "NARA-493468580-022-SASC-Transcript-2023",
+     "NARA-493468580-25-Sky-View-Final-Draft",
+     "NARA-493468580-11-AARO-Presentation-for-NASA",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "DOS-UAP-D001",
+     "DOS-UAP-D002",
+     "NARA-493468580-04-AARO-Trifold-2024",
+     "R01-18-6369445-General-1948-Vol-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "DOW-UAP-D017",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "DOW-UAP-D124",
+     "DOW-UAP-D48",
+     "NARA-493468580-015-2023-UAP-Mission-Backgrounder-Paper",
+     "NARA-493468580-08-Go-Fast",
+     "DOW-UAP-D203",
+     "NARA-493468580-026-DGI-Briefing",
+     "NARA-493468580-06-SAPCO-CAPCO-MFR",
+     "DOW-UAP-D180",
+     "DOW-UAP-D142",
+     "DOW-UAP-D143",
+     "NARA-493468580-030-SASC-Brief-2023",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "DOW-UAP-D170",
+     "DOW-UAP-D171",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-130",
+     "NARA-493468580-28-Open-Hearing-Brief",
+     "NARA-488808322-UAP-BLUF-attachment-release-in-full",
+     "NARA-493468580-018-Eglin",
+     "NARA-493468580-09-Open-Hearing-Slides",
+     "NARA-493468580-021-AARO-Trifold-Jan2025",
+     "NARA-493468580-027-Satellite-Flaring-Paper",
+     "NARA-493468580-03-2024-DGI-Mission-Brief",
+     "NARA-493468580-014-Phillips-Timothy-Bio-DEC-2023",
+     "NARA-493468580-02-Physical-Constraints-Paper",
+     "NARA-493468580-12-ORNL-Analysis-Metallic-Specimen",
+     "NARA-493468580-24-UAP-Reporting-Trends",
+     "DOW-UAP-D105",
+     "DOW-UAP-D123",
+     "DOW-UAP-D148",
+     "DOW-UAP-D175",
+     "R01-18-100754-General-1946-7-Vol-2",
+     "R01-38-143685-box7-Incident-Summaries-1-100",
+     "DOW-UAP-D210",
+     "DOW-UAP-D211",
+     "DOW-UAP-D135",
+     "DOW-UAP-D139",
+     "R01-059UAP00011",
+     "NARA-493468580-017-Atmospheric-Wakes",
+     "NARA-493468580-019-Southeast-Asia-Triangles",
+     "NARA-493468580-020-Western-US",
+     "NARA-493468580-10-Puerto-Rico-UAP-CR",
+     "DOW-UAP-D137"
+    ],
+    "eras": [
+     "1940s",
+     "1950s",
+     "1960s-70s",
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 108,
+    "members": [
+     "org:1994",
+     "org:56",
+     "org:807",
+     "org:201",
+     "org:2440",
+     "org:3314",
+     "org:28",
+     "org:2762",
+     "org:21",
+     "org:1673",
+     "org:63",
+     "org:2835",
+     "org:3282",
+     "org:1357",
+     "org:2919",
+     "person:2208",
+     "org:2882",
+     "org:2767",
+     "org:279",
+     "person:3599",
+     "org:2884",
+     "org:3311",
+     "person:5811",
+     "org:276",
+     "org:1342",
+     "org:2037",
+     "org:2507",
+     "org:1215",
+     "org:622",
+     "person:5607",
+     "org:1403",
+     "org:3576",
+     "org:3269",
+     "org:1752",
+     "org:2870",
+     "org:3267",
+     "org:2869",
+     "org:3280",
+     "org:1063",
+     "person:4605",
+     "org:2234",
+     "org:1411",
+     "person:4116",
+     "person:5812",
+     "org:2231",
+     "person:5646",
+     "org:105",
+     "org:295",
+     "person:5608",
+     "org:2235",
+     "org:3359",
+     "org:1346",
+     "org:753",
+     "person:4937",
+     "org:1695",
+     "person:828",
+     "org:1646",
+     "person:5645",
+     "org:755",
+     "org:764",
+     "org:629",
+     "person:3913",
+     "org:2287",
+     "org:4565",
+     "org:4399",
+     "person:5824",
+     "person:1289",
+     "org:1577",
+     "person:5318",
+     "org:4662",
+     "org:1435",
+     "org:1971",
+     "org:4457",
+     "person:2128",
+     "org:3529",
+     "org:691"
+    ],
+    "size": 76,
+    "stability": 0.959
+   },
+   {
+    "agencies": [
+     "DOW",
+     "FBI",
+     "NAVY",
+     "OSD",
+     "USAF"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "DOW-UAP-D100",
+     "R01-18-6369445-General-1948-Vol-1",
+     "R01-38-143685-box7-Incident-Summaries-101-172",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "DOW-UAP-D105",
+     "R01-18-100754-General-1946-7-Vol-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-130",
+     "NARA-493468580-05-AARO-Historical-Record-Report"
+    ],
+    "eras": [
+     "1940s",
+     "1950s",
+     "undated"
+    ],
+    "internal_ties": 240,
+    "members": [
+     "person:885",
+     "person:5810",
+     "person:1915",
+     "person:5263",
+     "person:4855",
+     "person:5974",
+     "org:774",
+     "person:4571",
+     "person:4179",
+     "person:6319",
+     "person:6317",
+     "person:6313",
+     "org:4236",
+     "person:2901",
+     "person:6321",
+     "org:739",
+     "person:6029",
+     "org:4234",
+     "person:5265",
+     "person:4540",
+     "person:5565",
+     "person:4874",
+     "person:4647",
+     "person:6043",
+     "org:1154",
+     "person:4622",
+     "org:742",
+     "org:744",
+     "person:886",
+     "person:5266",
+     "person:6028",
+     "person:6032",
+     "person:4570",
+     "person:6405",
+     "person:4623",
+     "person:574",
+     "org:743",
+     "person:5264",
+     "person:9",
+     "org:4278",
+     "org:745",
+     "person:887",
+     "person:6526",
+     "org:2715",
+     "org:3548",
+     "person:6323",
+     "person:4654",
+     "person:1364",
+     "person:4542",
+     "person:4539",
+     "person:4621",
+     "person:4620",
+     "person:6073",
+     "org:4099",
+     "person:1293",
+     "person:4665",
+     "person:1499",
+     "org:40",
+     "person:5406",
+     "person:4323",
+     "org:328",
+     "person:5304",
+     "org:4089",
+     "person:6573",
+     "org:780",
+     "person:4918",
+     "org:4110",
+     "org:4324",
+     "org:4306",
+     "person:5759"
+    ],
+    "size": 70,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DIA",
+     "DOW",
+     "NASA",
+     "OSD"
+    ],
+    "docs": [
+     "DOW-UAP-D172",
+     "DOW-UAP-D171",
+     "DOW-UAP-D170",
+     "DOW-UAP-D169",
+     "DOW-UAP-D168",
+     "DOW-UAP-D140",
+     "DOW-UAP-D167",
+     "DOW-UAP-D173",
+     "R01-255-413270-UFO-s-and-Defense-What-Should-we-Prepare-For",
+     "DOW-UAP-D142",
+     "DOW-UAP-D175",
+     "DOW-UAP-D188",
+     "DOW-UAP-D135",
+     "DOW-UAP-D166",
+     "DOW-UAP-D123",
+     "DOW-UAP-D125",
+     "NARA-493468580-05-AARO-Historical-Record-Report",
+     "DIA-AAWSAP-DELIVERABLES-REVIEW-2009",
+     "DIA-AAWSAP-DEPSECDEF-PACKET",
+     "DIA-AAWSAP-DI-BRIEF-2008",
+     "DIA-AAWSAP-DI-BRIEF-2009",
+     "DIA-AAWSAP-REID-BRIEF-2009-05",
+     "DIA-AAWSAP-STATUS-BRIEFING-2009",
+     "DOW-UAP-D153"
+    ],
+    "eras": [
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 87,
+    "members": [
+     "org:171",
+     "person:2703",
+     "org:165",
+     "org:1514",
+     "org:1510",
+     "org:1995",
+     "org:1651",
+     "org:2172",
+     "org:2023",
+     "org:1903",
+     "person:2421",
+     "person:2057",
+     "org:1367",
+     "org:1950",
+     "org:1900",
+     "person:2496",
+     "org:1996",
+     "org:2185",
+     "person:1981",
+     "org:1899",
+     "org:1894",
+     "org:1892",
+     "org:1895",
+     "person:2123",
+     "org:2116",
+     "person:2595",
+     "org:3560",
+     "person:1868",
+     "person:1907",
+     "org:2333",
+     "org:2026",
+     "org:2126",
+     "person:2067",
+     "org:2114",
+     "org:2177",
+     "org:1937",
+     "org:2308",
+     "person:2632",
+     "org:2115",
+     "org:2192",
+     "org:2193",
+     "org:2160",
+     "org:1948",
+     "person:2108",
+     "org:2111",
+     "org:2301",
+     "org:2161",
+     "org:2307",
+     "person:2734",
+     "org:2208",
+     "org:2163",
+     "org:2210",
+     "org:2179",
+     "org:2183",
+     "org:1613",
+     "org:2200",
+     "org:2322",
+     "org:2176",
+     "org:2304",
+     "org:1463",
+     "org:2309",
+     "org:2130",
+     "org:1893",
+     "org:3306",
+     "person:1758"
+    ],
+    "size": 65,
+    "stability": 0.961
+   },
+   {
+    "agencies": [
+     "CONGRESS",
+     "DOE",
+     "DOW",
+     "FBI",
+     "NAVY",
+     "USAF"
+    ],
+    "docs": [
+     "DOW-UAP-D017",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "DOW-UAP-D092",
+     "CONGRESS-HASC-1966",
+     "DOE-UAP-D004",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-38-143685-box7-Incident-Summaries-101-172",
+     "DOW-UAP-D154",
+     "R01-38-143685-box7-Incident-Summaries-1-100",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "DOW-UAP-D193",
+     "DOW-UAP-D195",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10",
+     "DOW-UAP-D095",
+     "R01-18-100754-General-1946-7-Vol-2"
+    ],
+    "eras": [
+     "1940s",
+     "1950s",
+     "1960s-70s",
+     "undated"
+    ],
+    "internal_ties": 99,
+    "members": [
+     "person:264",
+     "org:58",
+     "person:274",
+     "person:299",
+     "org:215",
+     "person:333",
+     "person:59",
+     "person:4232",
+     "org:283",
+     "person:355",
+     "org:218",
+     "person:51",
+     "person:359",
+     "org:4364",
+     "person:53",
+     "org:280",
+     "person:315",
+     "org:74",
+     "person:4867",
+     "person:997",
+     "person:300",
+     "org:303",
+     "person:356",
+     "org:306",
+     "person:54",
+     "org:3816",
+     "person:270",
+     "org:298",
+     "org:304",
+     "org:305",
+     "person:454",
+     "person:295",
+     "person:56",
+     "person:4286",
+     "org:350",
+     "org:293",
+     "person:52",
+     "person:4285",
+     "org:67",
+     "person:5416",
+     "person:623",
+     "org:383",
+     "person:412",
+     "person:55",
+     "person:4868",
+     "org:297",
+     "org:348",
+     "person:5907",
+     "person:413",
+     "person:4289",
+     "person:334",
+     "person:3032",
+     "org:377",
+     "org:361",
+     "org:48",
+     "org:3840",
+     "org:219",
+     "org:368",
+     "org:351",
+     "org:349"
+    ],
+    "size": 60,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW",
+     "FBI",
+     "OSD"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-438",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-65-HS1-101634279-100-DE-26505",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "DOW-UAP-D171",
+     "DOW-UAP-D172",
+     "DOW-UAP-D105",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "NARA-493468580-022-SASC-Transcript-2023"
+    ],
+    "eras": [
+     "1950s",
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 100,
+    "members": [
+     "org:216",
+     "person:4531",
+     "person:5014",
+     "org:4933",
+     "person:6650",
+     "person:6235",
+     "org:4142",
+     "person:6236",
+     "org:2029",
+     "person:6298",
+     "org:4938",
+     "org:4936",
+     "person:6301",
+     "person:6305",
+     "person:6656",
+     "org:221",
+     "org:195",
+     "org:4939",
+     "org:670",
+     "org:4742",
+     "org:4935",
+     "org:1720",
+     "person:5235",
+     "org:4143",
+     "person:6295",
+     "person:5013",
+     "person:6653",
+     "person:6643",
+     "person:6239",
+     "org:4739",
+     "person:6249",
+     "person:6454",
+     "person:6615",
+     "person:6451",
+     "person:5884",
+     "person:6648",
+     "person:5651",
+     "org:4066",
+     "org:2028",
+     "person:6246",
+     "person:6247",
+     "person:5896",
+     "person:5484",
+     "org:4267",
+     "person:5313",
+     "person:4520",
+     "person:6642",
+     "person:6675",
+     "org:301",
+     "org:4617",
+     "org:4886",
+     "person:4562",
+     "org:4812",
+     "person:4852",
+     "person:5780",
+     "person:6453",
+     "org:4941"
+    ],
+    "size": 57,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "CONGRESS",
+     "FBI",
+     "ODNI",
+     "OSD"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "NARA-493468580-07-2024-Annual-Report",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "NARA-493468579-576UAP0007",
+     "NARA-493468579-576UAP0026",
+     "NARA-493468580-01-2023-Annual-Report",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-403",
+     "CONGRESS-HASC-1966"
+    ],
+    "eras": [
+     "1960s-70s",
+     "undated"
+    ],
+    "internal_ties": 88,
+    "members": [
+     "person:6156",
+     "org:4713",
+     "person:6567",
+     "org:112",
+     "org:3941",
+     "org:3943",
+     "org:3926",
+     "org:4876",
+     "person:6579",
+     "org:3485",
+     "org:4714",
+     "person:6165",
+     "org:3942",
+     "org:191",
+     "org:3947",
+     "person:4670",
+     "org:4875",
+     "person:6576",
+     "person:6577",
+     "person:6580",
+     "person:6443",
+     "org:3948",
+     "person:6571",
+     "person:6155",
+     "org:3940",
+     "org:4874",
+     "person:6442",
+     "person:6557",
+     "person:6157",
+     "person:6168",
+     "person:6169",
+     "org:4023",
+     "person:6565",
+     "person:6582",
+     "org:3258",
+     "org:3271",
+     "org:2439",
+     "org:4035",
+     "person:4830",
+     "person:165"
+    ],
+    "size": 40,
+    "stability": 0.766
+   },
+   {
+    "agencies": [
+     "DOW",
+     "FBI"
+    ],
+    "docs": [
+     "DOW-UAP-D171",
+     "DOW-UAP-D169",
+     "DOW-UAP-D170",
+     "DOW-UAP-D188",
+     "DOW-UAP-D168",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "DOW-UAP-D175",
+     "DOW-UAP-D144"
+    ],
+    "eras": [
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 271,
+    "members": [
+     "org:1931",
+     "org:1929",
+     "org:1382",
+     "org:1713",
+     "person:2533",
+     "org:1935",
+     "org:1479",
+     "org:1936",
+     "person:2525",
+     "person:2545",
+     "person:2546",
+     "person:2547",
+     "person:2548",
+     "person:2549",
+     "org:1550",
+     "org:433",
+     "org:1930",
+     "org:390",
+     "person:2513",
+     "person:2514",
+     "person:2534",
+     "person:2535",
+     "person:2536",
+     "person:2537",
+     "person:2541",
+     "person:2542",
+     "person:2538",
+     "person:2539",
+     "person:2540",
+     "org:1952",
+     "person:2550",
+     "org:1542",
+     "person:1639",
+     "person:1828",
+     "person:6125",
+     "person:1627",
+     "org:1712",
+     "person:1649"
+    ],
+    "size": 38,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW",
+     "OSD"
+    ],
+    "docs": [
+     "DOW-UAP-D171",
+     "DOW-UAP-D170",
+     "DOW-UAP-D169",
+     "DOW-UAP-D173",
+     "NARA-493468580-05-AARO-Historical-Record-Report",
+     "DOW-UAP-D174",
+     "DOW-UAP-D168",
+     "DOW-UAP-D183"
+    ],
+    "eras": [
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 454,
+    "members": [
+     "person:2500",
+     "person:2509",
+     "person:2559",
+     "person:2510",
+     "person:2575",
+     "person:1799",
+     "person:2574",
+     "person:2556",
+     "person:1626",
+     "person:2563",
+     "person:2531",
+     "person:2577",
+     "person:2557",
+     "person:2558",
+     "person:2530",
+     "person:2588",
+     "person:2630",
+     "person:2561",
+     "person:2562",
+     "person:2564",
+     "person:2565",
+     "person:2566",
+     "person:2568",
+     "person:2572",
+     "person:2573",
+     "person:2587",
+     "person:2555",
+     "person:2567",
+     "person:2569",
+     "person:2570",
+     "person:2571",
+     "person:2585",
+     "person:2586",
+     "person:2576",
+     "person:2849",
+     "org:2024",
+     "person:2560",
+     "person:3169"
+    ],
+    "size": 38,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DIA",
+     "DOW",
+     "NASA",
+     "OSD"
+    ],
+    "docs": [
+     "DOW-UAP-D188",
+     "DOW-UAP-D138",
+     "DOW-UAP-D135",
+     "DOW-UAP-D139",
+     "DOW-UAP-D142",
+     "DOW-UAP-D143",
+     "DOW-UAP-D153",
+     "DOW-UAP-D145",
+     "DOW-UAP-D148",
+     "DOW-UAP-D146",
+     "DOW-UAP-D147",
+     "DOW-UAP-D150",
+     "DOW-UAP-D151",
+     "DOW-UAP-D187",
+     "DIA-AAWSAP-DEPSECDEF-PACKET",
+     "DOW-UAP-D130",
+     "DOW-UAP-D136",
+     "DOW-UAP-D117",
+     "DOW-UAP-D118",
+     "DOW-UAP-D119",
+     "DOW-UAP-D120",
+     "DOW-UAP-D121",
+     "DOW-UAP-D123",
+     "DOW-UAP-D124",
+     "DOW-UAP-D125",
+     "DOW-UAP-D126",
+     "DOW-UAP-D128",
+     "DOW-UAP-D129",
+     "DOW-UAP-D131",
+     "DOW-UAP-D132",
+     "DOW-UAP-D133",
+     "DOW-UAP-D134",
+     "DOW-UAP-D140",
+     "DOW-UAP-D141",
+     "DOW-UAP-D144",
+     "DOW-UAP-D185",
+     "NARA-493468580-05-AARO-Historical-Record-Report",
+     "DOW-UAP-D122",
+     "DOW-UAP-D184",
+     "DIA-AAWSAP-REID-MTG-2009-01",
+     "DIA-AAWSAP-REID-MTG-2009-05",
+     "DIA-AAWSAP-DELIVERABLES-REVIEW-2009",
+     "DIA-AAWSAP-REID-SAP-LETTER-2009",
+     "DOW-UAP-D186",
+     "DOW-UAP-D152",
+     "DIA-AAWSAP-DI-BRIEF-2008",
+     "DIA-AAWSAP-DI-BRIEF-2009",
+     "DIA-AAWSAP-REID-MTG-2009-11",
+     "DIA-AAWSAP-SAP-REVIEW-2009",
+     "DOW-UAP-D183",
+     "DOW-UAP-D170",
+     "DIA-AAWSAP-FOIA-00349-2018",
+     "DIA-AAWSAP-OUSDI-IM-AATIP",
+     "DOW-UAP-D112",
+     "DOW-UAP-D172",
+     "DOW-UAP-D175",
+     "DOW-UAP-D127",
+     "DOW-UAP-D137",
+     "DIA-AAWSAP-STATUS-2009-08",
+     "DOW-UAP-D182",
+     "DIA-AAWSAP-AATIP-IM-2010-DRAFT",
+     "DOW-UAP-D149",
+     "DOW-UAP-D113",
+     "DOW-UAP-D114",
+     "DOW-UAP-D110",
+     "DIA-AAWSAP-ORDER-2008",
+     "DOW-UAP-D111",
+     "DOW-UAP-D115",
+     "DOW-UAP-D116",
+     "DIA-AAWSAP-SOW-2008",
+     "DIA-AAWSAP-AATIP-IM-2010",
+     "DIA-AAWSAP-REID-BRIEF-2009-05",
+     "DIA-AAWSAP-CONTRACT-FY10",
+     "DIA-AAWSAP-STATUS-BRIEFING-2009",
+     "R01-255-413270-UFO-s-and-Defense-What-Should-we-Prepare-For"
+    ],
+    "eras": [
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 62,
+    "members": [
+     "org:172",
+     "person:1624",
+     "org:2659",
+     "org:169",
+     "person:227",
+     "org:1318",
+     "org:1302",
+     "org:162",
+     "org:1664",
+     "org:182",
+     "org:166",
+     "person:1947",
+     "org:1316",
+     "person:233",
+     "org:170",
+     "org:1333",
+     "person:240",
+     "org:188",
+     "person:1835",
+     "person:2274",
+     "org:2433",
+     "org:1816",
+     "org:2155",
+     "person:2303",
+     "person:234",
+     "person:1635",
+     "person:1847",
+     "org:3607",
+     "org:1366"
+    ],
+    "size": 29,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-449",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 60,
+    "members": [
+     "person:4945",
+     "org:4118",
+     "org:4901",
+     "person:4944",
+     "person:4947",
+     "person:4942",
+     "person:4949",
+     "person:4943",
+     "person:4946",
+     "org:772",
+     "person:4954",
+     "person:4948",
+     "person:4952",
+     "person:6622",
+     "org:4120",
+     "person:4955",
+     "org:4123",
+     "person:4969",
+     "person:4973",
+     "person:4950",
+     "person:4951",
+     "person:4953",
+     "person:4997",
+     "person:4972",
+     "person:6847",
+     "org:4127"
+    ],
+    "size": 26,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D104",
+     "DOW-UAP-D102",
+     "DOW-UAP-D105",
+     "DOW-UAP-D098"
+    ],
+    "eras": [
+     "1950s"
+    ],
+    "internal_ties": 37,
+    "members": [
+     "org:895",
+     "org:871",
+     "org:899",
+     "person:1027",
+     "org:893",
+     "org:902",
+     "org:901",
+     "person:991",
+     "org:835",
+     "org:900",
+     "org:903",
+     "org:643",
+     "person:1025",
+     "org:640",
+     "org:845",
+     "org:867",
+     "org:1078",
+     "org:911",
+     "person:1221",
+     "person:1077",
+     "person:1598",
+     "org:906",
+     "person:1284"
+    ],
+    "size": 23,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW",
+     "NASA"
+    ],
+    "docs": [
+     "R01-255-413270-UFO-s-and-Defense-What-Should-we-Prepare-For",
+     "DOW-UAP-D168",
+     "DOW-UAP-D172"
+    ],
+    "eras": [
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 54,
+    "members": [
+     "org:1915",
+     "org:3558",
+     "org:1911",
+     "org:1912",
+     "org:1913",
+     "org:3557",
+     "person:3991",
+     "person:3998",
+     "person:4000",
+     "person:4001",
+     "org:2393",
+     "person:3997",
+     "person:3999",
+     "person:4004",
+     "org:3559",
+     "person:3954",
+     "org:3652",
+     "person:3992",
+     "person:3892",
+     "person:3897",
+     "org:3640",
+     "person:3898"
+    ],
+    "size": 22,
+    "stability": 0.988
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 40,
+    "members": [
+     "person:5589",
+     "person:5587",
+     "person:5592",
+     "person:5588",
+     "org:4430",
+     "person:5591",
+     "org:4067",
+     "person:5748",
+     "person:4839",
+     "person:5600",
+     "org:4469",
+     "org:4470",
+     "person:5655",
+     "person:5596",
+     "org:757",
+     "org:4429",
+     "person:5621",
+     "org:4445",
+     "org:4062",
+     "org:4036",
+     "person:5612",
+     "org:4444"
+    ],
+    "size": 22,
+    "stability": 0.975
+   },
+   {
+    "agencies": [
+     "FBI",
+     "USG"
+    ],
+    "docs": [
+     "USG-UAP-D002",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6"
+    ],
+    "eras": [
+     "1960s-70s",
+     "undated"
+    ],
+    "internal_ties": 45,
+    "members": [
+     "org:5061",
+     "person:6914",
+     "org:17",
+     "person:6891",
+     "org:563",
+     "org:4046",
+     "person:6942",
+     "person:6512",
+     "person:6940",
+     "person:6944",
+     "org:5063",
+     "person:6937",
+     "person:6941",
+     "person:4515",
+     "person:6938",
+     "person:6939",
+     "org:5064",
+     "person:4911",
+     "person:6061",
+     "person:6917"
+    ],
+    "size": 20,
+    "stability": 0.937
+   },
+   {
+    "agencies": [
+     "DOW",
+     "FBI"
+    ],
+    "docs": [
+     "DOW-UAP-D102",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-130",
+     "DOW-UAP-D096",
+     "DOW-UAP-D104",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "DOW-UAP-D105"
+    ],
+    "eras": [
+     "1950s",
+     "undated"
+    ],
+    "internal_ties": 34,
+    "members": [
+     "org:545",
+     "org:38",
+     "org:345",
+     "person:671",
+     "person:942",
+     "person:945",
+     "org:983",
+     "person:943",
+     "person:944",
+     "org:1372",
+     "person:6769",
+     "person:6768",
+     "org:870",
+     "person:669",
+     "org:78",
+     "org:1020",
+     "person:22",
+     "org:908",
+     "person:4268"
+    ],
+    "size": 19,
+    "stability": 0.775
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D16",
+     "DOW-UAP-D18",
+     "DOW-UAP-D65",
+     "DOW-UAP-D19",
+     "DOW-UAP-D20",
+     "DOW-UAP-D28",
+     "DOW-UAP-D32",
+     "DOW-UAP-D63",
+     "DOW-UAP-D75",
+     "DOW-UAP-D23",
+     "DOW-UAP-D61",
+     "DOW-UAP-D64",
+     "DOW-UAP-D109",
+     "DOW-UAP-D62",
+     "DOW-UAP-D10",
+     "DOW-UAP-D108",
+     "DOW-UAP-D12",
+     "DOW-UAP-D14",
+     "DOW-UAP-D25",
+     "DOW-UAP-D27",
+     "DOW-UAP-D33",
+     "DOW-UAP-D35",
+     "DOW-UAP-D38",
+     "DOW-UAP-D58",
+     "DOW-UAP-PR20",
+     "DOW-UAP-D106",
+     "DOW-UAP-D74",
+     "DOW-UAP-D101",
+     "DOW-UAP-D107",
+     "DOW-UAP-D44",
+     "DOW-UAP-D55",
+     "DOW-UAP-D60"
+    ],
+    "eras": [
+     "2016+",
+     "undated"
+    ],
+    "internal_ties": 13,
+    "members": [
+     "org:344",
+     "person:3363",
+     "org:653",
+     "person:3418",
+     "org:1286",
+     "org:2811",
+     "org:655",
+     "org:2898",
+     "org:1287",
+     "org:1300"
+    ],
+    "size": 10,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D171",
+     "DOW-UAP-D170",
+     "DOW-UAP-D173"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 15,
+    "members": [
+     "person:2594",
+     "person:2592",
+     "org:1881",
+     "org:1962",
+     "person:2593",
+     "org:1997",
+     "org:1969",
+     "person:2602",
+     "org:1970"
+    ],
+    "size": 9,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW",
+     "FBI",
+     "NAVY"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-38-143685-box7-Incident-Summaries-101-172",
+     "DOW-UAP-D093",
+     "DOW-UAP-D094",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2"
+    ],
+    "eras": [
+     "1940s",
+     "undated"
+    ],
+    "internal_ties": 11,
+    "members": [
+     "org:3880",
+     "person:4395",
+     "person:4394",
+     "org:4504",
+     "org:466",
+     "org:3994",
+     "person:5700",
+     "person:544",
+     "person:545"
+    ],
+    "size": 9,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D27",
+     "DOW-UAP-D25",
+     "DOW-UAP-D35",
+     "DOW-UAP-D32",
+     "DOW-UAP-D28",
+     "DOW-UAP-D64",
+     "DOW-UAP-D75",
+     "DOW-UAP-D14",
+     "DOW-UAP-D33",
+     "DOW-UAP-D10",
+     "DOW-UAP-D106",
+     "DOW-UAP-D19",
+     "DOW-UAP-D60",
+     "DOW-UAP-D62",
+     "DOW-UAP-D63",
+     "DOW-UAP-D107"
+    ],
+    "eras": [
+     "2016+"
+    ],
+    "internal_ties": 10,
+    "members": [
+     "org:657",
+     "org:2816",
+     "org:658",
+     "org:1294",
+     "org:2815",
+     "org:2817",
+     "org:1296",
+     "org:2814"
+    ],
+    "size": 8,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW",
+     "FBI"
+    ],
+    "docs": [
+     "DOW-UAP-D095",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A"
+    ],
+    "eras": [
+     "1950s",
+     "undated"
+    ],
+    "internal_ties": 13,
+    "members": [
+     "person:592",
+     "person:603",
+     "org:502",
+     "org:503",
+     "person:589",
+     "person:591",
+     "person:4582"
+    ],
+    "size": 7,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI",
+     "NAVY"
+    ],
+    "docs": [
+     "R01-38-143685-box7-Incident-Summaries-1-100",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 17,
+    "members": [
+     "person:4225",
+     "org:3812",
+     "person:4228",
+     "person:4229",
+     "person:4230",
+     "person:5225",
+     "org:3813"
+    ],
+    "size": 7,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 11,
+    "members": [
+     "person:5041",
+     "org:4195",
+     "person:5081",
+     "person:5082",
+     "person:5079",
+     "person:69",
+     "org:4164"
+    ],
+    "size": 7,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI",
+     "NAVY"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-130",
+     "R01-38-143685-box7-Incident-Summaries-1-100"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 13,
+    "members": [
+     "person:4248",
+     "person:5455",
+     "person:5457",
+     "person:5362",
+     "person:5456",
+     "org:4381",
+     "person:4250"
+    ],
+    "size": 7,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 17,
+    "members": [
+     "org:4557",
+     "person:5796",
+     "org:4558",
+     "org:4553",
+     "org:4555",
+     "org:4556",
+     "org:4552"
+    ],
+    "size": 7,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D105",
+     "DOW-UAP-D102",
+     "DOW-UAP-D095"
+    ],
+    "eras": [
+     "1950s"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "org:506",
+     "person:1562",
+     "person:1567",
+     "org:521",
+     "person:1579",
+     "org:487",
+     "person:1580"
+    ],
+    "size": 7,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D104"
+    ],
+    "eras": [
+     "1950s"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "org:1038",
+     "org:1043",
+     "org:1103",
+     "person:1265",
+     "org:1039",
+     "person:1245"
+    ],
+    "size": 6,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D105"
+    ],
+    "eras": [
+     "1950s"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "org:1226",
+     "person:1500",
+     "person:1494",
+     "person:1495",
+     "person:1503",
+     "org:1225"
+    ],
+    "size": 6,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW",
+     "NAVY"
+    ],
+    "docs": [
+     "DOW-UAP-D172",
+     "NAVY-RF-2023-01",
+     "DOW-UAP-D175"
+    ],
+    "eras": [
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "org:2094",
+     "org:2087",
+     "org:2084",
+     "org:2090",
+     "org:2095",
+     "org:2091"
+    ],
+    "size": 6,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW",
+     "FBI",
+     "USAF"
+    ],
+    "docs": [
+     "R01-18-100754-General-1946-7-Vol-2",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "DOW-UAP-D097",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "DOW-UAP-D154",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7"
+    ],
+    "eras": [
+     "1940s",
+     "1950s",
+     "undated"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "org:3528",
+     "org:358",
+     "person:805",
+     "org:3527",
+     "person:6132",
+     "person:4576"
+    ],
+    "size": 6,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "USAF"
+    ],
+    "docs": [
+     "R01-342-HS1-416511228-box186-319-1-Flying-Discs-1949"
+    ],
+    "eras": [
+     "1940s"
+    ],
+    "internal_ties": 9,
+    "members": [
+     "org:3729",
+     "org:3730",
+     "person:4061",
+     "person:4062",
+     "org:987",
+     "person:4060"
+    ],
+    "size": 6,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D170",
+     "DOW-UAP-D171"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 15,
+    "members": [
+     "person:2578",
+     "person:2580",
+     "person:2581",
+     "person:2582",
+     "person:2583",
+     "person:2584"
+    ],
+    "size": 6,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D104"
+    ],
+    "eras": [
+     "1950s"
+    ],
+    "internal_ties": 7,
+    "members": [
+     "org:1046",
+     "org:1058",
+     "org:1059",
+     "org:1060",
+     "org:1045"
+    ],
+    "size": 5,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW",
+     "FBI"
+    ],
+    "docs": [
+     "DOW-UAP-D180",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5"
+    ],
+    "eras": [
+     "1950s",
+     "undated"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "person:2881",
+     "person:3939",
+     "person:2880",
+     "org:2473",
+     "org:3976"
+    ],
+    "size": 5,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "org:4830",
+     "person:6474",
+     "person:6563",
+     "org:4872",
+     "person:6587"
+    ],
+    "size": 5,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 9,
+    "members": [
+     "org:4857",
+     "person:6529",
+     "person:6530",
+     "org:4859",
+     "org:4856"
+    ],
+    "size": 5,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D100"
+    ],
+    "eras": [
+     "1940s"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "org:488",
+     "org:712",
+     "org:760",
+     "org:668",
+     "org:500"
+    ],
+    "size": 5,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D105"
+    ],
+    "eras": [
+     "1950s"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "person:1298",
+     "person:1299",
+     "org:1158",
+     "org:1159",
+     "org:1162"
+    ],
+    "size": 5,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW",
+     "USG"
+    ],
+    "docs": [
+     "DOW-UAP-D125",
+     "DOW-UAP-D146",
+     "USG-UAP-D002"
+    ],
+    "eras": [
+     "1960s-70s",
+     "2000s-10s"
+    ],
+    "internal_ties": 5,
+    "members": [
+     "person:1712",
+     "person:6928",
+     "person:2279",
+     "person:1715",
+     "person:6926"
+    ],
+    "size": 5,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D171",
+     "DOW-UAP-D173"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "person:2664",
+     "person:2687",
+     "person:2665",
+     "person:2805",
+     "person:2686"
+    ],
+    "size": 5,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 10,
+    "members": [
+     "person:4792",
+     "person:4794",
+     "person:4795",
+     "person:4796",
+     "person:4813"
+    ],
+    "size": 5,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D125"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "org:1442",
+     "org:1445",
+     "org:110",
+     "org:1443"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "org:1244",
+     "org:4302",
+     "org:4303",
+     "person:5216"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D172"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 5,
+    "members": [
+     "org:2195",
+     "org:2196",
+     "org:2217",
+     "org:2197"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D144",
+     "DOW-UAP-D153",
+     "DOW-UAP-D145",
+     "DOW-UAP-D48"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "org:1386",
+     "person:2272",
+     "org:1705",
+     "org:1738"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DIA",
+     "DOW"
+    ],
+    "docs": [
+     "DIA-AAWSAP-AATIP-IM-2010",
+     "DIA-AAWSAP-FOIA-00349-2018",
+     "DIA-AAWSAP-ORDER-2008",
+     "DOW-UAP-D180"
+    ],
+    "eras": [
+     "1950s",
+     "2000s-10s",
+     "undated"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "org:5066",
+     "org:158",
+     "person:225",
+     "person:2872"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D170",
+     "DOW-UAP-D171"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "org:1974",
+     "org:1976",
+     "org:1979",
+     "org:1980"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D170",
+     "DOW-UAP-D171"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "org:1981",
+     "org:1982",
+     "org:1983",
+     "org:1984"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D172",
+     "DOW-UAP-D171"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "org:2031",
+     "org:2034",
+     "org:2036",
+     "org:2065"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D180"
+    ],
+    "eras": [
+     "1950s"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "person:3097",
+     "person:3098",
+     "org:2585",
+     "person:3100"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "org:3440",
+     "person:4588",
+     "person:4589",
+     "person:4590"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "NAVY",
+     "USAF"
+    ],
+    "docs": [
+     "R01-38-143685-box7-Incident-Summaries-101-172",
+     "R01-342-HS1-416511228-box186-319-1-Flying-Discs-1949"
+    ],
+    "eras": [
+     "1940s",
+     "undated"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "org:481",
+     "person:4365",
+     "org:3718",
+     "person:4043"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "USAF"
+    ],
+    "docs": [
+     "R01-342-HS1-416511228-box186-319-1-Flying-Discs-1949"
+    ],
+    "eras": [
+     "1940s"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "org:3753",
+     "org:3754",
+     "person:4078",
+     "org:3755"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI",
+     "NAVY"
+    ],
+    "docs": [
+     "R01-38-143685-box7-Incident-Summaries-1-100",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "person:4213",
+     "person:4214",
+     "org:3810",
+     "person:5551"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI",
+     "NAVY"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-38-143685-box7-Incident-Summaries-1-100"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 5,
+    "members": [
+     "person:4224",
+     "org:3811",
+     "org:4362",
+     "org:4483"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "org:4152",
+     "org:4154",
+     "org:4153",
+     "person:5023"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "person:5188",
+     "person:5189",
+     "org:4241",
+     "org:4242"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "person:6003",
+     "org:4668",
+     "person:5986",
+     "person:5997"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "person:6251",
+     "person:6263",
+     "org:4744",
+     "person:6252"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "org:4796",
+     "person:4689",
+     "person:6108",
+     "person:6109"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D095"
+    ],
+    "eras": [
+     "1950s"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "person:634",
+     "person:639",
+     "org:523",
+     "org:528"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "person:1674",
+     "person:5583",
+     "person:5584",
+     "person:5585"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D131",
+     "DOW-UAP-D135",
+     "DOW-UAP-D143"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "person:1889",
+     "person:2198",
+     "person:1888",
+     "person:1880"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D142"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 5,
+    "members": [
+     "person:2013",
+     "person:2155",
+     "person:2153",
+     "person:2154"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D140"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "person:256",
+     "person:2041",
+     "person:2044",
+     "person:2045"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "NASA"
+    ],
+    "docs": [
+     "NASA-UAP-D2"
+    ],
+    "eras": [
+     "1960s-70s"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "person:3720",
+     "person:3729",
+     "person:3719",
+     "org:3452"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 4,
+    "members": [
+     "person:4899",
+     "person:4898",
+     "person:5174",
+     "person:5175"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-130"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "person:5466",
+     "person:5468",
+     "person:5469",
+     "person:5472"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 6,
+    "members": [
+     "person:5927",
+     "person:5928",
+     "person:5929",
+     "person:5931"
+    ],
+    "size": 4,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D104"
+    ],
+    "eras": [
+     "1950s"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "org:1100",
+     "org:1122",
+     "org:934"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "OSD"
+    ],
+    "docs": [
+     "NARA-493468580-05-AARO-Historical-Record-Report"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "org:1916",
+     "person:3647",
+     "person:3648"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D172"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:2735",
+     "org:2338",
+     "person:2778"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "USAF"
+    ],
+    "docs": [
+     "R01-342-HS1-416511228-box186-319-1-Flying-Discs-1949"
+    ],
+    "eras": [
+     "1940s"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:4080",
+     "org:3758",
+     "org:3759"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "USAF"
+    ],
+    "docs": [
+     "R01-342-HS1-416511228-box186-319-1-Flying-Discs-1949"
+    ],
+    "eras": [
+     "1940s"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "org:3779",
+     "org:3780",
+     "person:4102"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "NAVY"
+    ],
+    "docs": [
+     "R01-38-143685-box7-Incident-Summaries-101-172"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "org:3833",
+     "person:4292",
+     "person:4300"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "org:3921",
+     "org:592",
+     "person:3211"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "person:5144",
+     "person:5145",
+     "org:4222"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "org:4250",
+     "person:5197",
+     "person:5198"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "org:4375",
+     "person:5444",
+     "person:5445"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "org:4639",
+     "person:5934",
+     "person:5935"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D095"
+    ],
+    "eras": [
+     "1950s"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:611",
+     "org:491",
+     "org:661"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "USG"
+    ],
+    "docs": [
+     "USG-UAP-D002"
+    ],
+    "eras": [
+     "1960s-70s"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "org:5067",
+     "person:6945",
+     "person:6946"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D105"
+    ],
+    "eras": [
+     "1950s"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:1611",
+     "person:1610",
+     "person:1614"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D131"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "person:1860",
+     "person:1861",
+     "person:1862"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D142"
+    ],
+    "eras": [
+     "2000s-10s"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:2137",
+     "person:2140",
+     "person:2139"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "CONGRESS"
+    ],
+    "docs": [
+     "CONGRESS-HASC-1966"
+    ],
+    "eras": [
+     "1960s-70s"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:216",
+     "person:75",
+     "person:74"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D017"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:331",
+     "person:332",
+     "person:343"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "OSD"
+    ],
+    "docs": [
+     "NARA-493468580-022-SASC-Transcript-2023"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:3563",
+     "person:3573",
+     "person:3581"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW"
+    ],
+    "docs": [
+     "DOW-UAP-D017"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:367",
+     "person:364",
+     "person:365"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "NASA"
+    ],
+    "docs": [
+     "NASA-UAP-D7"
+    ],
+    "eras": [
+     "1960s-70s"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:3750",
+     "person:3749",
+     "person:3751"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "USAF"
+    ],
+    "docs": [
+     "R01-342-HS1-416511228-box186-319-1-Flying-Discs-1949"
+    ],
+    "eras": [
+     "1940s"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "person:4071",
+     "person:4072",
+     "person:4073"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI",
+     "NAVY"
+    ],
+    "docs": [
+     "R01-38-143685-box7-Incident-Summaries-1-100",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:4109",
+     "person:4111",
+     "person:4110"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "NAVY"
+    ],
+    "docs": [
+     "R01-38-143685-box7-Incident-Summaries-1-100"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "person:4159",
+     "person:4163",
+     "person:4154"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "DOW",
+     "NAVY"
+    ],
+    "docs": [
+     "DOW-UAP-D100",
+     "R01-38-143685-box7-Incident-Summaries-1-100"
+    ],
+    "eras": [
+     "1940s",
+     "undated"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:867",
+     "person:4194",
+     "person:4959"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "person:5514",
+     "person:5515",
+     "person:5516"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 2,
+    "members": [
+     "person:5733",
+     "person:5734",
+     "org:3794"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "person:5818",
+     "person:5819",
+     "person:5827"
+    ],
+    "size": 3,
+    "stability": 1.0
+   },
+   {
+    "agencies": [
+     "FBI"
+    ],
+    "docs": [
+     "R01-65-HS1-834228961-62-HQ-83894-Serial-130"
+    ],
+    "eras": [
+     "undated"
+    ],
+    "internal_ties": 3,
+    "members": [
+     "person:6771",
+     "person:6772",
+     "person:6773"
+    ],
+    "size": 3,
+    "stability": 1.0
+   }
+  ],
+  "letters_sha256": "59a92283ad0b19262ad98a9aca8dc294e882357ee1fe0ee545ca8f6581715fcd",
+  "letters_total": 1137,
+  "method": {
+   "alpha": 0.01,
+   "modularity": 0.847,
+   "nodes_with_ties": 1678,
+   "null_runs": 500,
+   "significant_ties": 3756,
+   "tested_pairs": 9390
+  },
+  "org_flows": [
+   [
+    "org:296",
+    "org:216",
+    33
+   ],
+   [
+    "org:296",
+    "org:1264",
+    15
+   ],
+   [
+    "org:216",
+    "org:296",
+    13
+   ],
+   [
+    "org:215",
+    "org:13",
+    10
+   ],
+   [
+    "org:181",
+    "org:201",
+    6
+   ],
+   [
+    "org:5061",
+    "org:17",
+    6
+   ],
+   [
+    "org:17",
+    "org:216",
+    5
+   ],
+   [
+    "org:744",
+    "org:216",
+    5
+   ],
+   [
+    "org:13",
+    "org:1146",
+    4
+   ],
+   [
+    "org:13",
+    "org:20",
+    4
+   ],
+   [
+    "org:13",
+    "org:2803",
+    4
+   ],
+   [
+    "org:5061",
+    "org:807",
+    4
+   ],
+   [
+    "org:1027",
+    "org:4",
+    3
+   ],
+   [
+    "org:13",
+    "org:1159",
+    3
+   ],
+   [
+    "org:13",
+    "org:23",
+    3
+   ],
+   [
+    "org:2803",
+    "org:13",
+    3
+   ],
+   [
+    "org:2803",
+    "org:2762",
+    3
+   ],
+   [
+    "org:4",
+    "org:13",
+    3
+   ],
+   [
+    "org:4",
+    "org:858",
+    3
+   ],
+   [
+    "org:4285",
+    "org:216",
+    3
+   ],
+   [
+    "org:5061",
+    "org:3321",
+    3
+   ],
+   [
+    "org:582",
+    "org:13",
+    3
+   ],
+   [
+    "org:88",
+    "org:13",
+    3
+   ],
+   [
+    "org:1038",
+    "org:4",
+    2
+   ],
+   [
+    "org:1226",
+    "org:13",
+    2
+   ]
+  ],
+  "receivers": [
+   [
+    "person:4531",
+    66,
+    44,
+    [
+     "R01-65-HS1-101634279-100-DE-26505",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9"
+    ]
+   ],
+   [
+    "person:1539",
+    34,
+    33,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9"
+    ]
+   ],
+   [
+    "person:1624",
+    29,
+    22,
+    [
+     "DOW-UAP-D118",
+     "DOW-UAP-D119",
+     "DOW-UAP-D120",
+     "DOW-UAP-D121",
+     "DOW-UAP-D122",
+     "DOW-UAP-D124",
+     "DOW-UAP-D125",
+     "DOW-UAP-D126",
+     "DOW-UAP-D127",
+     "DOW-UAP-D128",
+     "DOW-UAP-D129",
+     "DOW-UAP-D130",
+     "DOW-UAP-D132",
+     "DOW-UAP-D133",
+     "DOW-UAP-D134",
+     "DOW-UAP-D135",
+     "DOW-UAP-D136",
+     "DOW-UAP-D137",
+     "DOW-UAP-D138",
+     "DOW-UAP-D140",
+     "DOW-UAP-D141",
+     "DOW-UAP-D142",
+     "DOW-UAP-D143",
+     "DOW-UAP-D144",
+     "DOW-UAP-D145",
+     "DOW-UAP-D148",
+     "DOW-UAP-D150",
+     "DOW-UAP-D153"
+    ]
+   ],
+   [
+    "person:4768",
+    29,
+    14,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6"
+    ]
+   ],
+   [
+    "person:5810",
+    28,
+    15,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9"
+    ]
+   ],
+   [
+    "person:1014",
+    25,
+    16,
+    [
+     "DOW-UAP-D102",
+     "DOW-UAP-D104"
+    ]
+   ],
+   [
+    "person:574",
+    13,
+    12,
+    [
+     "DOW-UAP-D095",
+     "DOW-UAP-D096",
+     "DOW-UAP-D105"
+    ]
+   ],
+   [
+    "person:333",
+    12,
+    4,
+    [
+     "DOW-UAP-D017",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6"
+    ]
+   ],
+   [
+    "person:240",
+    10,
+    6,
+    [
+     "DIA-AAWSAP-DEPSECDEF-PACKET",
+     "DIA-AAWSAP-REID-MTG-2009-11",
+     "DOW-UAP-D183",
+     "NARA-493468580-05-AARO-Historical-Record-Report"
+    ]
+   ],
+   [
+    "person:6103",
+    10,
+    2,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9"
+    ]
+   ],
+   [
+    "person:1317",
+    8,
+    6,
+    [
+     "DOW-UAP-D105"
+    ]
+   ],
+   [
+    "person:1522",
+    8,
+    8,
+    [
+     "DOW-UAP-D105"
+    ]
+   ],
+   [
+    "person:2876",
+    8,
+    7,
+    [
+     "DOW-UAP-D180"
+    ]
+   ],
+   [
+    "person:3479",
+    8,
+    3,
+    [
+     "NARA-488808322-Klukan-Oct-2015-Emails-re-Pilgrim-Drone-Spotting"
+    ]
+   ],
+   [
+    "person:3480",
+    8,
+    3,
+    [
+     "NARA-488808322-Klukan-Oct-2015-Emails-re-Pilgrim-Drone-Spotting"
+    ]
+   ],
+   [
+    "person:41",
+    8,
+    6,
+    [
+     "CONGRESS-HASC-1966"
+    ]
+   ],
+   [
+    "person:5974",
+    8,
+    6,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8"
+    ]
+   ],
+   [
+    "person:1523",
+    7,
+    7,
+    [
+     "DOW-UAP-D105"
+    ]
+   ],
+   [
+    "person:3293",
+    7,
+    6,
+    [
+     "DOW-UAP-D206",
+     "USG-UAP-D002"
+    ]
+   ],
+   [
+    "person:6891",
+    7,
+    3,
+    [
+     "USG-UAP-D002"
+    ]
+   ],
+   [
+    "person:898",
+    7,
+    4,
+    [
+     "DOW-UAP-D100",
+     "R01-18-100754-General-1946-7-Vol-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3"
+    ]
+   ],
+   [
+    "person:4959",
+    6,
+    6,
+    [
+     "DOW-UAP-D100"
+    ]
+   ],
+   [
+    "person:5243",
+    6,
+    5,
+    [
+     "DOW-UAP-D100",
+     "R01-18-6369445-General-1948-Vol-1"
+    ]
+   ],
+   [
+    "person:59",
+    6,
+    5,
+    [
+     "DOW-UAP-D092"
+    ]
+   ],
+   [
+    "person:6319",
+    6,
+    4,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8"
+    ]
+   ]
+  ],
+  "senders": [
+   [
+    "person:1539",
+    133,
+    101,
+    [
+     "DOW-UAP-D105",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-7",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-9"
+    ]
+   ],
+   [
+    "person:964",
+    62,
+    59,
+    [
+     "DOW-UAP-D102",
+     "DOW-UAP-D105"
+    ]
+   ],
+   [
+    "person:940",
+    58,
+    56,
+    [
+     "DOW-UAP-D105"
+    ]
+   ],
+   [
+    "person:6914",
+    31,
+    19,
+    [
+     "USG-UAP-D002"
+    ]
+   ],
+   [
+    "person:4768",
+    15,
+    9,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-5",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6"
+    ]
+   ],
+   [
+    "person:623",
+    15,
+    15,
+    [
+     "DOW-UAP-D096"
+    ]
+   ],
+   [
+    "person:264",
+    13,
+    4,
+    [
+     "DOW-UAP-D017",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6"
+    ]
+   ],
+   [
+    "person:6073",
+    12,
+    12,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8"
+    ]
+   ],
+   [
+    "person:59",
+    10,
+    9,
+    [
+     "DOW-UAP-D092"
+    ]
+   ],
+   [
+    "person:3478",
+    9,
+    4,
+    [
+     "NARA-488808322-Klukan-Oct-2015-Emails-re-Pilgrim-Drone-Spotting"
+    ]
+   ],
+   [
+    "person:6896",
+    9,
+    9,
+    [
+     "USG-UAP-D002"
+    ]
+   ],
+   [
+    "person:3477",
+    8,
+    4,
+    [
+     "NARA-488808322-Klukan-Oct-2015-Emails-re-Pilgrim-Drone-Spotting"
+    ]
+   ],
+   [
+    "person:5651",
+    8,
+    6,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4"
+    ]
+   ],
+   [
+    "person:227",
+    7,
+    3,
+    [
+     "DIA-AAWSAP-DEPSECDEF-PACKET",
+     "DIA-AAWSAP-REID-MTG-2009-11",
+     "DIA-AAWSAP-REID-SAP-LETTER-2009",
+     "DOW-UAP-D183",
+     "DOW-UAP-D185",
+     "NARA-493468580-05-AARO-Historical-Record-Report"
+    ]
+   ],
+   [
+    "person:2876",
+    7,
+    3,
+    [
+     "DOW-UAP-D100",
+     "R01-18-100754-General-1946-7-Vol-2"
+    ]
+   ],
+   [
+    "person:78",
+    7,
+    7,
+    [
+     "CONGRESS-HASC-1966",
+     "DOW-UAP-D212"
+    ]
+   ],
+   [
+    "person:1042",
+    6,
+    1,
+    [
+     "DOW-UAP-D104"
+    ]
+   ],
+   [
+    "person:170",
+    6,
+    6,
+    [
+     "DOW-UAP-D092",
+     "DOW-UAP-D096",
+     "DOW-UAP-D102",
+     "R01-65-HS1-834228961-62-HQ-83894-SUB-A"
+    ]
+   ],
+   [
+    "person:45",
+    6,
+    6,
+    [
+     "CONGRESS-HASC-1966",
+     "DOW-UAP-D208",
+     "NARA-493468580-05-AARO-Historical-Record-Report"
+    ]
+   ],
+   [
+    "person:4839",
+    6,
+    2,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4"
+    ]
+   ],
+   [
+    "person:4863",
+    6,
+    3,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-3"
+    ]
+   ],
+   [
+    "person:5128",
+    6,
+    6,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-10"
+    ]
+   ],
+   [
+    "person:5608",
+    6,
+    4,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4"
+    ]
+   ],
+   [
+    "person:6417",
+    6,
+    6,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-8"
+    ]
+   ],
+   [
+    "person:6512",
+    6,
+    2,
+    [
+     "R01-65-HS1-834228961-62-HQ-83894-Section-1",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-2",
+     "R01-65-HS1-834228961-62-HQ-83894-Section-4"
+    ]
+   ]
+  ],
+  "ties": 3756,
+  "ties_sha256": "26656400c74ebbfec111504220803f10557930eb754c0396fd19f582bb7f0bd3"
+ }
+}

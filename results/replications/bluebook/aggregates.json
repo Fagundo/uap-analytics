@@ -1,0 +1,883 @@
+{
+ "bluebook": {
+  "by_year": {
+   "1947": {
+    "aircraft": 3,
+    "astro": 22,
+    "balloon": 8,
+    "insufficient": 14,
+    "other": 15,
+    "unidentified": 7
+   },
+   "1948": {
+    "aircraft": 14,
+    "astro": 60,
+    "balloon": 23,
+    "insufficient": 12,
+    "other": 28,
+    "unidentified": 6
+   },
+   "1949": {
+    "aircraft": 26,
+    "astro": 48,
+    "balloon": 11,
+    "insufficient": 9,
+    "other": 28,
+    "unidentified": 7
+   },
+   "1950": {
+    "aircraft": 39,
+    "astro": 79,
+    "balloon": 32,
+    "insufficient": 38,
+    "other": 35,
+    "unidentified": 30
+   },
+   "1951": {
+    "aircraft": 20,
+    "astro": 44,
+    "balloon": 25,
+    "insufficient": 32,
+    "other": 33,
+    "unidentified": 21
+   },
+   "1952": {
+    "aircraft": 100,
+    "astro": 141,
+    "balloon": 161,
+    "insufficient": 139,
+    "other": 65,
+    "unidentified": 131
+   },
+   "1953": {
+    "aircraft": 70,
+    "astro": 187,
+    "balloon": 76,
+    "insufficient": 78,
+    "other": 68,
+    "unidentified": 44
+   },
+   "1954": {
+    "aircraft": 51,
+    "astro": 116,
+    "balloon": 36,
+    "insufficient": 67,
+    "other": 47,
+    "unidentified": 75
+   },
+   "1955": {
+    "aircraft": 101,
+    "astro": 110,
+    "balloon": 72,
+    "insufficient": 78,
+    "other": 60,
+    "unidentified": 22
+   },
+   "1956": {
+    "aircraft": 103,
+    "astro": 191,
+    "balloon": 67,
+    "insufficient": 86,
+    "other": 50,
+    "unidentified": 12
+   },
+   "1957": {
+    "aircraft": 101,
+    "astro": 211,
+    "balloon": 56,
+    "insufficient": 113,
+    "other": 76,
+    "satellite": 2,
+    "unidentified": 6
+   },
+   "1958": {
+    "aircraft": 43,
+    "astro": 107,
+    "balloon": 21,
+    "insufficient": 56,
+    "other": 45,
+    "satellite": 5,
+    "unidentified": 6
+   },
+   "1959": {
+    "aircraft": 39,
+    "astro": 89,
+    "balloon": 13,
+    "insufficient": 34,
+    "other": 45,
+    "unidentified": 9
+   },
+   "1960": {
+    "aircraft": 20,
+    "astro": 69,
+    "balloon": 6,
+    "insufficient": 15,
+    "other": 29,
+    "satellite": 3,
+    "unidentified": 3
+   },
+   "1961": {
+    "aircraft": 15,
+    "astro": 85,
+    "balloon": 8,
+    "insufficient": 34,
+    "other": 27,
+    "satellite": 22,
+    "unidentified": 6
+   },
+   "1962": {
+    "aircraft": 20,
+    "astro": 62,
+    "balloon": 10,
+    "insufficient": 37,
+    "other": 35,
+    "satellite": 24,
+    "unidentified": 7
+   },
+   "1963": {
+    "aircraft": 30,
+    "astro": 26,
+    "balloon": 13,
+    "insufficient": 20,
+    "other": 17,
+    "satellite": 18,
+    "unidentified": 4
+   },
+   "1964": {
+    "aircraft": 40,
+    "astro": 71,
+    "balloon": 8,
+    "insufficient": 49,
+    "other": 49,
+    "satellite": 52,
+    "unidentified": 7
+   },
+   "1965": {
+    "aircraft": 70,
+    "astro": 91,
+    "balloon": 13,
+    "insufficient": 20,
+    "other": 44,
+    "satellite": 42,
+    "unidentified": 6
+   },
+   "1966": {
+    "aircraft": 190,
+    "astro": 197,
+    "balloon": 22,
+    "insufficient": 188,
+    "other": 81,
+    "satellite": 75,
+    "unidentified": 20
+   },
+   "1967": {
+    "aircraft": 132,
+    "astro": 107,
+    "balloon": 52,
+    "insufficient": 200,
+    "other": 90,
+    "satellite": 59,
+    "unidentified": 10
+   },
+   "1968": {
+    "aircraft": 19,
+    "astro": 22,
+    "balloon": 21,
+    "insufficient": 63,
+    "other": 31,
+    "satellite": 8,
+    "unidentified": 2
+   },
+   "1969": {
+    "aircraft": 18,
+    "astro": 19,
+    "balloon": 12,
+    "insufficient": 7,
+    "other": 12,
+    "satellite": 5
+   }
+  },
+  "coverage": [
+   {
+    "official": 122,
+    "recovered": 69,
+    "share": 0.57,
+    "unidentified_official": 12,
+    "unidentified_recovered": 7,
+    "with_place": 22,
+    "year": 1947
+   },
+   {
+    "official": 156,
+    "recovered": 143,
+    "share": 0.92,
+    "unidentified_official": 7,
+    "unidentified_recovered": 6,
+    "with_place": 82,
+    "year": 1948
+   },
+   {
+    "official": 186,
+    "recovered": 129,
+    "share": 0.69,
+    "unidentified_official": 22,
+    "unidentified_recovered": 7,
+    "with_place": 48,
+    "year": 1949
+   },
+   {
+    "official": 210,
+    "recovered": 253,
+    "share": 1.2,
+    "unidentified_official": 27,
+    "unidentified_recovered": 30,
+    "with_place": 65,
+    "year": 1950
+   },
+   {
+    "official": 169,
+    "recovered": 175,
+    "share": 1.04,
+    "unidentified_official": 22,
+    "unidentified_recovered": 21,
+    "with_place": 106,
+    "year": 1951
+   },
+   {
+    "official": 1501,
+    "recovered": 737,
+    "share": 0.49,
+    "unidentified_official": 303,
+    "unidentified_recovered": 131,
+    "with_place": 271,
+    "year": 1952
+   },
+   {
+    "official": 509,
+    "recovered": 523,
+    "share": 1.03,
+    "unidentified_official": 42,
+    "unidentified_recovered": 44,
+    "with_place": 143,
+    "year": 1953
+   },
+   {
+    "official": 487,
+    "recovered": 392,
+    "share": 0.8,
+    "unidentified_official": 46,
+    "unidentified_recovered": 75,
+    "with_place": 107,
+    "year": 1954
+   },
+   {
+    "official": 545,
+    "recovered": 443,
+    "share": 0.81,
+    "unidentified_official": 24,
+    "unidentified_recovered": 22,
+    "with_place": 89,
+    "year": 1955
+   },
+   {
+    "official": 670,
+    "recovered": 509,
+    "share": 0.76,
+    "unidentified_official": 14,
+    "unidentified_recovered": 12,
+    "with_place": 296,
+    "year": 1956
+   },
+   {
+    "official": 1006,
+    "recovered": 565,
+    "share": 0.56,
+    "unidentified_official": 14,
+    "unidentified_recovered": 6,
+    "with_place": 342,
+    "year": 1957
+   },
+   {
+    "official": 627,
+    "recovered": 283,
+    "share": 0.45,
+    "unidentified_official": 10,
+    "unidentified_recovered": 6,
+    "with_place": 154,
+    "year": 1958
+   },
+   {
+    "official": 390,
+    "recovered": 229,
+    "share": 0.59,
+    "unidentified_official": 12,
+    "unidentified_recovered": 9,
+    "with_place": 72,
+    "year": 1959
+   },
+   {
+    "official": 557,
+    "recovered": 145,
+    "share": 0.26,
+    "unidentified_official": 14,
+    "unidentified_recovered": 3,
+    "with_place": 69,
+    "year": 1960
+   },
+   {
+    "official": 591,
+    "recovered": 197,
+    "share": 0.33,
+    "unidentified_official": 13,
+    "unidentified_recovered": 6,
+    "with_place": 134,
+    "year": 1961
+   },
+   {
+    "official": 474,
+    "recovered": 195,
+    "share": 0.41,
+    "unidentified_official": 15,
+    "unidentified_recovered": 7,
+    "with_place": 71,
+    "year": 1962
+   },
+   {
+    "official": 399,
+    "recovered": 128,
+    "share": 0.32,
+    "unidentified_official": 14,
+    "unidentified_recovered": 4,
+    "with_place": 101,
+    "year": 1963
+   },
+   {
+    "official": 562,
+    "recovered": 276,
+    "share": 0.49,
+    "unidentified_official": 19,
+    "unidentified_recovered": 7,
+    "with_place": 82,
+    "year": 1964
+   },
+   {
+    "official": 887,
+    "recovered": 286,
+    "share": 0.32,
+    "unidentified_official": 16,
+    "unidentified_recovered": 6,
+    "with_place": 41,
+    "year": 1965
+   },
+   {
+    "official": 1112,
+    "recovered": 773,
+    "share": 0.7,
+    "unidentified_official": 32,
+    "unidentified_recovered": 20,
+    "with_place": 157,
+    "year": 1966
+   },
+   {
+    "official": 937,
+    "recovered": 650,
+    "share": 0.69,
+    "unidentified_official": 19,
+    "unidentified_recovered": 10,
+    "with_place": 139,
+    "year": 1967
+   },
+   {
+    "official": 375,
+    "recovered": 166,
+    "share": 0.44,
+    "unidentified_official": 3,
+    "unidentified_recovered": 2,
+    "with_place": 77,
+    "year": 1968
+   },
+   {
+    "official": 146,
+    "recovered": 73,
+    "share": 0.5,
+    "unidentified_official": 1,
+    "unidentified_recovered": 0,
+    "with_place": 12,
+    "year": 1969
+   }
+  ],
+  "families": {
+   "birds or insects": 62,
+   "hoax or unreliable": 211,
+   "lights and searchlights": 59,
+   "missiles and rockets": 47,
+   "photographic": 21,
+   "radar effects": 30,
+   "weather or optical": 166
+  },
+  "tests": [
+   {
+    "breakpoint": "1955-08",
+    "counts": {
+     "national_after": 840,
+     "national_before": 797,
+     "region_after": 69,
+     "region_before": 39,
+     "rest_after": 300,
+     "rest_before": 158
+    },
+    "did": 0.1292,
+    "did_p": 0.0977,
+    "label": "aircraft",
+    "national_after": 0.206,
+    "national_before": 0.1631,
+    "national_change": 0.0428,
+    "national_p": 0.3116,
+    "program": "u2",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.2899,
+    "region_before": 0.1795,
+    "rest_after": 0.19,
+    "rest_before": 0.2089,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1955-08",
+    "counts": {
+     "national_after": 840,
+     "national_before": 797,
+     "region_after": 69,
+     "region_before": 39,
+     "rest_after": 300,
+     "rest_before": 158
+    },
+    "did": -0.0137,
+    "did_p": 0.6558,
+    "label": "weather or optical",
+    "national_after": 0.0167,
+    "national_before": 0.0226,
+    "national_change": -0.0059,
+    "national_p": 0.6186,
+    "program": "u2",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.0,
+    "region_before": 0.0256,
+    "rest_after": 0.0133,
+    "rest_before": 0.0253,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1955-08",
+    "counts": {
+     "national_after": 840,
+     "national_before": 797,
+     "region_after": 69,
+     "region_before": 39,
+     "rest_after": 300,
+     "rest_before": 158
+    },
+    "did": 0.1156,
+    "did_p": 0.1163,
+    "label": "aircraft or weather/optical",
+    "national_after": 0.2226,
+    "national_before": 0.1857,
+    "national_change": 0.0369,
+    "national_p": 0.3023,
+    "program": "u2",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.2899,
+    "region_before": 0.2051,
+    "rest_after": 0.2033,
+    "rest_before": 0.2342,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1955-08",
+    "counts": {
+     "national_after": 840,
+     "national_before": 797,
+     "region_after": 69,
+     "region_before": 39,
+     "rest_after": 300,
+     "rest_before": 158
+    },
+    "did": -0.0327,
+    "did_p": 0.6326,
+    "label": "balloon",
+    "national_after": 0.1488,
+    "national_before": 0.123,
+    "national_change": 0.0258,
+    "national_p": 0.2093,
+    "program": "u2",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.1449,
+    "region_before": 0.1538,
+    "rest_after": 0.1567,
+    "rest_before": 0.1329,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1955-08",
+    "counts": {
+     "national_after": 840,
+     "national_before": 797,
+     "region_after": 69,
+     "region_before": 39,
+     "rest_after": 300,
+     "rest_before": 158
+    },
+    "did": 0.0166,
+    "did_p": 0.5116,
+    "label": "astro",
+    "national_after": 0.3274,
+    "national_before": 0.2861,
+    "national_change": 0.0413,
+    "national_p": 0.2791,
+    "program": "u2",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.2899,
+    "region_before": 0.2308,
+    "rest_after": 0.34,
+    "rest_before": 0.2975,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1955-08",
+    "counts": {
+     "national_after": 840,
+     "national_before": 797,
+     "region_after": 69,
+     "region_before": 39,
+     "rest_after": 300,
+     "rest_before": 158
+    },
+    "did": 0.0077,
+    "did_p": 0.414,
+    "label": "unidentified",
+    "national_after": 0.0333,
+    "national_before": 0.1242,
+    "national_change": -0.0909,
+    "national_p": 0.9395,
+    "program": "u2",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.029,
+    "region_before": 0.1026,
+    "rest_after": 0.02,
+    "rest_before": 0.1013,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1955-08",
+    "counts": {
+     "national_after": 840,
+     "national_before": 797,
+     "region_after": 69,
+     "region_before": 39,
+     "rest_after": 300,
+     "rest_before": 158
+    },
+    "did": -0.2002,
+    "did_p": 0.907,
+    "label": "insufficient data",
+    "national_after": 0.1833,
+    "national_before": 0.1631,
+    "national_change": 0.0202,
+    "national_p": 0.4465,
+    "program": "u2",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.1449,
+    "region_before": 0.2564,
+    "rest_after": 0.19,
+    "rest_before": 0.1013,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1962-04",
+    "counts": {
+     "national_after": 357,
+     "national_before": 312,
+     "region_after": 15,
+     "region_before": 17,
+     "rest_after": 134,
+     "rest_before": 134
+    },
+    "did": -0.0593,
+    "did_p": 0.6651,
+    "label": "aircraft",
+    "national_after": 0.1485,
+    "national_before": 0.1026,
+    "national_change": 0.0459,
+    "national_p": 0.293,
+    "program": "oxcart",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.0667,
+    "region_before": 0.0588,
+    "rest_after": 0.194,
+    "rest_before": 0.1269,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1962-04",
+    "counts": {
+     "national_after": 357,
+     "national_before": 312,
+     "region_after": 15,
+     "region_before": 17,
+     "rest_after": 134,
+     "rest_before": 134
+    },
+    "did": 0.0004,
+    "did_p": 0.5581,
+    "label": "weather or optical",
+    "national_after": 0.0252,
+    "national_before": 0.0385,
+    "national_change": -0.0133,
+    "national_p": 0.814,
+    "program": "oxcart",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.0667,
+    "region_before": 0.0588,
+    "rest_after": 0.0373,
+    "rest_before": 0.0299,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1962-04",
+    "counts": {
+     "national_after": 357,
+     "national_before": 312,
+     "region_after": 15,
+     "region_before": 17,
+     "rest_after": 134,
+     "rest_before": 134
+    },
+    "did": -0.0589,
+    "did_p": 0.6698,
+    "label": "aircraft or weather/optical",
+    "national_after": 0.1737,
+    "national_before": 0.141,
+    "national_change": 0.0326,
+    "national_p": 0.3721,
+    "program": "oxcart",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.1333,
+    "region_before": 0.1176,
+    "rest_after": 0.2313,
+    "rest_before": 0.1567,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1962-04",
+    "counts": {
+     "national_after": 357,
+     "national_before": 312,
+     "region_after": 15,
+     "region_before": 17,
+     "rest_after": 134,
+     "rest_before": 134
+    },
+    "did": 0.0745,
+    "did_p": 0.3023,
+    "label": "balloon",
+    "national_after": 0.0644,
+    "national_before": 0.0417,
+    "national_change": 0.0228,
+    "national_p": 0.2512,
+    "program": "oxcart",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.1333,
+    "region_before": 0.0588,
+    "rest_after": 0.0672,
+    "rest_before": 0.0672,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1962-04",
+    "counts": {
+     "national_after": 357,
+     "national_before": 312,
+     "region_after": 15,
+     "region_before": 17,
+     "rest_after": 134,
+     "rest_before": 134
+    },
+    "did": 0.3438,
+    "did_p": 0.0465,
+    "label": "astro",
+    "national_after": 0.2773,
+    "national_before": 0.4519,
+    "national_change": -0.1746,
+    "national_p": 0.9674,
+    "program": "oxcart",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.4,
+    "region_before": 0.2353,
+    "rest_after": 0.2985,
+    "rest_before": 0.4776,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1962-04",
+    "counts": {
+     "national_after": 357,
+     "national_before": 312,
+     "region_after": 15,
+     "region_before": 17,
+     "rest_after": 134,
+     "rest_before": 134
+    },
+    "did": 0.0443,
+    "did_p": 0.2326,
+    "label": "unidentified",
+    "national_after": 0.0308,
+    "national_before": 0.0256,
+    "national_change": 0.0052,
+    "national_p": 0.3163,
+    "program": "oxcart",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.0667,
+    "region_before": 0.0,
+    "rest_after": 0.0597,
+    "rest_before": 0.0373,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1962-04",
+    "counts": {
+     "national_after": 357,
+     "national_before": 312,
+     "region_after": 15,
+     "region_before": 17,
+     "rest_after": 134,
+     "rest_before": 134
+    },
+    "did": -0.242,
+    "did_p": 0.9302,
+    "label": "insufficient data",
+    "national_after": 0.1821,
+    "national_before": 0.1474,
+    "national_change": 0.0346,
+    "national_p": 0.3116,
+    "program": "oxcart",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.1333,
+    "region_before": 0.3529,
+    "rest_after": 0.1343,
+    "rest_before": 0.1119,
+    "site": "Groom Lake",
+    "window": 24
+   }
+  ]
+ }
+}
