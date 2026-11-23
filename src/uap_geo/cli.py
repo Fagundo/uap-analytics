@@ -110,6 +110,11 @@ def main(argv: list[str] | None = None) -> None:
     reg.add_argument("--out", type=Path, default=None, help="JSON file for this run's checks")
     reg.add_argument("--inputs", type=Path, default=Path("results/regression/parts"), help="summarize: folder of run JSONs")
     reg.add_argument("--config", type=Path, default=Path("configs/v1.yaml"))
+    rep = sub.add_parser("replicate", help="Replications of the data repository's population tests")
+    rep.add_argument("names", nargs="+", choices=["programs", "nuclear", "bluebook"])
+    rep.add_argument("--config", type=Path, default=Path("configs/v1.yaml"))
+    rep.add_argument("--check", action="store_true", help="Exit 1 unless every replication matches its reference")
+
     geo = sub.add_parser("geology", help="Inspect the geologic map inputs")
     geo.add_argument("action", choices=["terms"])
     geo.add_argument("--config", type=Path, default=Path("configs/v1.yaml"))
@@ -131,6 +136,8 @@ def main(argv: list[str] | None = None) -> None:
         _geology_terms(args)
     elif args.command == "regression":
         _regression(args)
+    elif args.command == "replicate":
+        _replicate(args)
     elif args.command == "audit":
         from uap_geo.audit.dispersion import run as dispersion_run
 
@@ -163,6 +170,30 @@ def _regression(args) -> None:
         Path("results/regression").mkdir(parents=True, exist_ok=True)
         Path("results/regression/report.md").write_text(text)
     if not all(c["ok"] for c in checks):
+        sys.exit(1)
+
+
+def _replicate(args) -> None:
+    """Run replications on the pinned export; with --check, fail on any difference from the reference."""
+    import sys
+
+    from uap_geo.common.download import Downloader
+    from uap_geo.data.scraping.registry import EXPORT_PIN, SourceRegistry
+    from uap_geo.data.scraping.pursue_export import ExportPin
+    from uap_geo.replications.runner import ReplicationRunner
+
+    config = Config.from_yaml(args.config)
+    tables = SourceRegistry(config, Downloader(config.paths.raw)).export_tables()
+    runner = ReplicationRunner(Path.cwd(), tables, ExportPin.load(EXPORT_PIN).tag)
+    failed = []
+    for name in args.names:
+        out, parity = runner.run(name)
+        state = "no reference" if parity is None else ("matches" if parity.ok else f"{len(parity.differences)} differences")
+        print(f"{name}: {out} ({state})")
+        if parity is not None and not parity.ok:
+            failed.append(name)
+            print("\n".join(parity.differences[:20]))
+    if args.check and failed:
         sys.exit(1)
 
 

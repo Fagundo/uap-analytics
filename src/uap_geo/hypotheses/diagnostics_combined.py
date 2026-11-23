@@ -43,7 +43,7 @@ def select(rows: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
     us = rows["country"].isna() | (rows["country"] == "USA")
     r = rows.loc[us & rows["state"].isin(CONUS_STATES)]
     n["contiguous states"] = len(r)
-    r = r.loc[r["coord_precision"].isin(["site", "town"]) & r["lat"].notna()]
+    r = r.loc[r["coord_precision"].isin(["catalog", "site", "town"]) & r["lat"].notna()]
     n["placed at site or town level"] = len(r)
     r = r.loc[r["date"].dt.year.between(DECADES[0], LAST_YEAR)]
     n[f"dated {DECADES[0]}-{LAST_YEAR}"] = len(r)

@@ -203,6 +203,25 @@ class ExportTables:
         return self._facts(pd.concat([public, restricted[public.columns.intersection(restricted.columns)]],
                                      ignore_index=True))
 
+    def rows(self, sources: tuple[str, ...]) -> pd.DataFrame:
+        """Export rows (all columns, as strings) of these sources, public tier first and restricted-only sources
+        after it, each source in its own file order (``source_order``; rows without one keep the export's order)."""
+        public = self.export.table("sightings.csv")
+        frames = [public.loc[public["source"].isin(sources)]]
+        missing = set(sources) - set(public["source"])
+        if missing:
+            restricted = self.export.table("sightings_restricted.csv", restricted=True)
+            frames.append(restricted.loc[restricted["source"].isin(missing)])
+        out = pd.concat(frames, ignore_index=True)
+        out["_order"] = _num(out["source_order"]) if "source_order" in out else pd.NA
+        out["_pos"] = range(len(out))
+        out = out.sort_values(["source", "_order", "_pos"], kind="stable", na_position="last")
+        return out.drop(columns=["_order", "_pos"]).reset_index(drop=True)
+
+    def layer(self, name: str) -> pd.DataFrame:
+        """A context layer's rows (as strings), e.g. 'flight_programs', 'nuclear_tests'."""
+        return self.export.table(f"layers/{name}.csv")
+
     def catalog(self, source: str) -> pd.DataFrame:
         """Public-tier rows of one outside catalog (e.g. 'hatch'): facts only, no narrative text."""
         rows = self.export.table("sightings.csv")
