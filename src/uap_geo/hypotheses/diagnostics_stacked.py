@@ -203,3 +203,87 @@ class StackedCatalogDiagnostics(CombinedPanelDiagnostics):
         path = out / "stacked_catalogs.md"
         path.write_text("\n".join(lines) + "\n")
         return path
+
+
+def stack_by_filing(table: pd.DataFrame, pop: pd.DataFrame, nuforc: pd.DataFrame, columns: list[str]) -> pd.DataFrame:
+    """NUFORC rows by event decade x filing decade (posted date), strata of MIN_STRATUM+ records; exposure is the
+    county's population in the event decade x the event decade's years. Adds ``event_dec`` and ``filed_dec``
+    (decades from 1990 and 2010) for the two-slope model."""
+    rec = nuforc.dropna(subset=["filed"]).assign(
+        decade=lambda d: (d["date"].dt.year // 10) * 10, filed_decade=lambda d: (d["filed"].dt.year // 10) * 10)
+    rec = rec.loc[rec["filed"] >= rec["date"] - pd.Timedelta(days=1)]          # a filing before the event is an error
+    z = (table[columns] - table[columns].mean()) / table[columns].std(ddof=0)
+    parts = []
+    for (decade, filed), group in rec.groupby(["decade", "filed_decade"]):
+        if len(group) < MIN_STRATUM:
+            continue
+        years = min(decade + 9, LAST_YEAR) - decade + 1
+        part = z.copy()
+        part["count"] = group.groupby(COUNTY_ID).size().reindex(table.index, fill_value=0).to_numpy()
+        part["exposure"] = pop[decade].to_numpy() * years / 1e5
+        part["state_fips"] = table["state_fips"].astype(str).to_numpy()
+        part["decade"], part["filed_decade"] = decade, filed
+        parts.append(part.reset_index())
+    out = pd.concat(parts, ignore_index=True)
+    out["rate"] = out["count"] / out["exposure"]
+    out["w_exposure"] = out["exposure"]
+    out["stratum"] = out["decade"].astype(str) + "s events, filed " + out["filed_decade"].astype(str) + "s"
+    out["cell"] = out["stratum"] + "_" + out["state_fips"]
+    out["event_dec"] = (out["decade"] - 1990) / 10
+    out["filed_dec"] = (out["filed_decade"] - 2010) / 10
+    return out.dropna(subset=columns)
+
+
+class FilingDateDiagnostics(CombinedPanelDiagnostics):
+    """Post hoc: does NUFORC's Paleozoic association follow when the event happened or when it was reported?
+
+    NUFORC's posted date is when the report entered the catalog. Reports are grouped by event decade x filing
+    decade; within each group counties are compared within states. The two-slope model asks how the rate ratio
+    changes per decade later event (filing decade held fixed) and per decade later filing (event decade held
+    fixed). A geological effect on what people see would track the event; a reporting-culture effect would track
+    the filing. Same model, exposure, controls and clustering as the stacked catalog diagnostic."""
+
+    def run(self) -> Path:
+        st = self.study
+        table, pop, rows, steps = self.inputs()
+        nuforc = rows.loc[rows["source"] == "nuforc"]
+        controls = list(st.controls)
+        data = stack_by_filing(table, pop, nuforc, [*EXPOSURES, *controls])
+        f = lambda r: f"{r['rate_ratio']:.3f} ({r['ci_low']:.3f}–{r['ci_high']:.3f})"
+        stars = lambda p: "**" if p < 0.01 else ("*" if p < 0.05 else "")
+        cell = lambda r: f"{f(r)}{stars(r['p_value'])}"
+        lag = (nuforc["filed"] - nuforc["date"]).dt.days / 365.25
+        strata = data.groupby("stratum").agg(records=("count", "sum"), decade=("decade", "first"),
+                                             filed=("filed_decade", "first")).sort_values(["decade", "filed"])
+        lines = ["# Post hoc: NUFORC by event decade and filing decade", "",
+                 FilingDateDiagnostics.__doc__.split("\n\n", 1)[1].strip(), "", "## Records", "",
+                 f"NUFORC records selected and placed in a county: {len(nuforc):,}; with a posted date: "
+                 f"{int(nuforc['filed'].notna().sum()):,}; in strata of {MIN_STRATUM}+: {int(data['count'].sum()):,}.",
+                 f"Filing lag (years): median {lag.median():.1f}; share filed within a year {float((lag < 1).mean()):.0%}; "
+                 f"10+ years later {float((lag >= 10).mean()):.0%}.", "",
+                 "Rate ratio per SD (95% CI); * p < 0.05, ** p < 0.01.", ""]
+        for x, label in EXPOSURES.items():
+            data[f"{x}_event"] = data[x] * data["event_dec"]
+            data[f"{x}_filed"] = data[x] * data["filed_dec"]
+            two = PpmlFit(data, [x, f"{x}_event", f"{x}_filed"], controls, "cell", "w_exposure")
+            lines += [f"## {label}", "", "| Model | Estimate |", "| --- | --- |",
+                      f"| All strata, one slope | {cell(PpmlFit(data, [x], controls, 'cell', 'w_exposure').row(x))} |",
+                      f"| Two slopes: at 1990s events filed in the 2010s | {cell(two.row(x))} |",
+                      f"| Change per decade later event (ratio) | {cell(two.row(f'{x}_event'))} |",
+                      f"| Change per decade later filing (ratio) | {cell(two.row(f'{x}_filed'))} |", "",
+                      "| Stratum | Records | Rate ratio per SD (state FE) |", "| --- | --- | --- |"]
+            for s in strata.index:
+                try:
+                    r = cell(PpmlFit(data.loc[data["stratum"] == s], [x], controls, "state_fips", "w_exposure").row(x))
+                except Exception as exc:  # noqa: BLE001 - a stratum too thin to fit
+                    r = f"not fitted ({type(exc).__name__})"
+                lines.append(f"| {s} | {int(strata.loc[s, 'records']):,} | {r} |")
+            lines.append("")
+        lines.append("Descriptive and post hoc. NUFORC's online catalog starts in the mid-1990s, so earlier events "
+                     "are all filed late; the event and filing slopes are separated only by events reported at "
+                     "different times.")
+        out = st.root / "results" / "H-hatchpal-01" / "diagnostics"
+        out.mkdir(parents=True, exist_ok=True)
+        path = out / "nuforc_filing_date.md"
+        path.write_text("\n".join(lines) + "\n")
+        return path

@@ -117,3 +117,18 @@ def test_stacked_dedup_stack_and_meta():
 
     m = ds.meta(pd.DataFrame({"log_rr": [0.1, 0.1, 0.1], "se": [0.05, 0.05, 0.05]}))
     assert m["I2"] == 0 and abs(m["random effects"]["rate_ratio"] - np.exp(0.1)) < 1e-12
+
+
+def test_stack_by_filing():
+    pytest.importorskip("geopandas")
+    from uap_geo.hypotheses import diagnostics_stacked as ds
+
+    table = pd.DataFrame({"state_fips": ["42", "36"], "x": [0.1, 0.9]}, index=pd.Index(["42001", "36001"], name="geoid"))
+    pop = pd.DataFrame({d: [1e5, 2e5] for d in range(1950, 2030, 10)}, index=table.index)
+    n = 120
+    rec = pd.DataFrame({"date": pd.to_datetime(["1975-01-01"] * n + ["2005-01-01"] * n + ["2005-01-01"] * 3),
+                        "filed": pd.to_datetime(["2012-01-01"] * n + ["2005-02-01"] * n + ["2004-01-01"] * 3),
+                        "geoid": ["42001"] * (2 * n + 3)})
+    data = ds.stack_by_filing(table, pop, rec, ["x"])
+    assert set(data["stratum"]) == {"1970s events, filed 2010s", "2000s events, filed 2000s"}   # pre-event filings dropped
+    assert set(data["event_dec"]) == {-2.0, 1.0} and set(data["filed_dec"]) == {0.0, -1.0}

@@ -220,6 +220,9 @@ class ExportTables:
             "strangeness": pd.to_numeric(ratings.map(lambda r: r.get("Strangeness")), errors="coerce"),
             "credibility": pd.to_numeric(ratings.map(lambda r: r.get("Credibility")), errors="coerce"),
             "dedup_group": _na(rows["dedup_group"]), "explanation_tier": _na(rows["explanation_tier"]),
+            # when the report reached the catalog (NUFORC's posted date); missing for other sources
+            "filed": pd.to_datetime(rows["links"].map(lambda r: json.loads(r or "{}").get("posted")), errors="coerce")
+            if "links" in rows else pd.NaT,
         }).reset_index(drop=True)
 
     def explanations(self) -> pd.DataFrame:

@@ -197,7 +197,8 @@ DIAGNOSTICS = {"H-geo-01": "uap_geo.hypotheses.diagnostics:DiagnosticsReport",
                "H-rockera-01": "uap_geo.hypotheses.diagnostics_era:StateEraDiagnostics",
                "H-rockera-01/land_use": "uap_geo.hypotheses.diagnostics_era:LandUseEraDiagnostics",
                "H-hatchpal-01/combined": "uap_geo.hypotheses.diagnostics_combined:CombinedPanelDiagnostics",
-               "H-hatchpal-01/stacked": "uap_geo.hypotheses.diagnostics_stacked:StackedCatalogDiagnostics"}
+               "H-hatchpal-01/stacked": "uap_geo.hypotheses.diagnostics_stacked:StackedCatalogDiagnostics",
+               "H-hatchpal-01/filing": "uap_geo.hypotheses.diagnostics_stacked:FilingDateDiagnostics"}
 
 
 def _hypothesis(args: argparse.Namespace) -> None:
