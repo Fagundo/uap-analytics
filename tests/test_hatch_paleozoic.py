@@ -1,7 +1,12 @@
+import numpy as np
 import pandas as pd
 import pytest
 
-from uap_geo.data.scraping.census_history import mean_population, parse_cencounts, to_current_counties
+from uap_geo.data.scraping.census_history import (
+    mean_population,
+    parse_cencounts,
+    to_current_counties,
+)
 
 
 def test_cencounts_parser_carries_1990_counties_to_today():
@@ -52,23 +57,28 @@ def test_record_selection_and_tiers():
     assert records["in_high_strangeness"].tolist() == [False, False, True]
 
 
-def test_spec_is_a_draft_until_registered():
-    import yaml
+def test_spec_is_marked_post_hoc():
     from pathlib import Path
+
+    import yaml
     root = Path(__file__).resolve().parents[1]
     spec = yaml.safe_load((root / "hypotheses" / "H-hatchpal-01.yaml").read_text())
     assert spec["splits"] == {"explore": [1950, 1959], "confirm": [1960, 1999]}
-    assert spec["primary_tier"] == "filtered"
+    assert spec["primary_tier"] == "filtered" and spec["status"].startswith("post hoc") and spec["registered"] is None
 
 
 def test_combined_selection_and_panel():
     pytest.importorskip("geopandas")
-    from uap_geo.hypotheses.diagnostics_combined import CombinedPanelDiagnostics, one_per_group, select
+    from uap_geo.hypotheses.diagnostics_combined import (
+        CombinedPanelDiagnostics,
+        one_per_group,
+        select,
+    )
 
     rows = _rows().assign(source="hatch")
     extra = rows.iloc[[0]].assign(sighting_id="nuforc:x", source="nuforc", flags=[("DUPLICATE",)], date=pd.Timestamp("2015-01-01"))
     keep = rows.iloc[[0]].assign(sighting_id="nicap:1", source="nicap", dedup_group="grp:a")
-    r, steps = select(pd.concat([rows, extra, keep], ignore_index=True))
+    r, _steps = select(pd.concat([rows, extra, keep], ignore_index=True))
     assert "nuforc:x" not in set(r["sighting_id"]) and "hatch:9" not in set(r["sighting_id"])   # repeat; explained
     combined = one_per_group(r)
     assert sorted(combined["sighting_id"]) == ["hatch:1", "hatch:2"]                         # grp:a kept once
@@ -79,3 +89,31 @@ def test_combined_selection_and_panel():
     panel = CombinedPanelDiagnostics(None)._panel(table, pop, recs)
     assert len(panel) == 16 and panel.loc[panel["decade"] == 1960, "report_count"].tolist() == [2, 0]
     assert panel["state_decade"].iloc[0] == "42_1950" and panel.index.is_unique and panel.index[0] == "42001_1950"
+
+
+def test_stacked_dedup_stack_and_meta():
+    pytest.importorskip("geopandas")
+    from uap_geo.hypotheses import diagnostics_stacked as ds
+
+    rows = pd.DataFrame({"sighting_id": ["hatch:1", "nicap:1", "nuforc:1", "nuforc:2"],
+                         "source": ["hatch", "nicap", "nuforc", "nuforc"],
+                         "dedup_group": ["g", "g", "h", None]})
+    kept = ds.one_per_case(rows)
+    assert sorted(kept["sighting_id"]) == ["nicap:1", "nuforc:1", "nuforc:2"]   # NICAP before Hatch
+
+    table = pd.DataFrame({"state_fips": ["42", "42", "36"], "x": [0.1, 0.5, 0.9]},
+                         index=pd.Index(["42001", "42003", "36001"], name="geoid"))
+    pop = pd.DataFrame({d: [1e5, 2e5, 4e5] for d in range(1950, 2030, 10)}, index=table.index)
+    rec = pd.DataFrame({"source": ["hatch"] * 150 + ["nuforc"] * 120 + ["nicap"] * 5,
+                        "date": pd.to_datetime(["1955-06-01"] * 150 + ["2005-06-01"] * 120 + ["1955-06-01"] * 5),
+                        "geoid": ["42001"] * 100 + ["36001"] * 50 + ["42003"] * 120 + ["42001"] * 5})
+    ds.MIN_STRATUM = 100
+    data = ds.stack(table, pop, rec, ["x"])
+    assert set(data["stratum"]) == {"Hatch 1950s", "NUFORC 2000s"}               # NICAP 1950s too small
+    assert data.groupby("stratum")["count"].sum().to_dict() == {"Hatch 1950s": 150, "NUFORC 2000s": 120}
+    tot = (data["w_balanced"] / data["exposure"]).groupby(data["stratum"]).first() * data.groupby("stratum")["count"].sum()
+    assert tot.round(6).nunique() == 1                                            # equal total vote per stratum
+    assert data["cell"].iloc[0].startswith("Hatch_42_1950")
+
+    m = ds.meta(pd.DataFrame({"log_rr": [0.1, 0.1, 0.1], "se": [0.05, 0.05, 0.05]}))
+    assert m["I2"] == 0 and abs(m["random effects"]["rate_ratio"] - np.exp(0.1)) < 1e-12

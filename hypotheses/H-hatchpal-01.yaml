@@ -1,12 +1,14 @@
-# DRAFT, not registered. Registration (hypothesis register) records this file's hash after Michael reviews it and
-# after the explore run (1950-1959); the confirm split (1960-1999) is not run before then.
+# POST HOC, never registered. Drafted for pre-registration and run on its explore split (1950-1959) on
+# 2026-11-21; on 2026-11-22 Michael chose to run every catalog over 1950-2023 before registering
+# (results/H-hatchpal-01/diagnostics/combined_time_fe.md), which used the confirm years (1960-1999). The spec is
+# kept as written so the analysis it describes stays reproducible; its results are descriptive, not a test.
 #
 # Seen before writing: only counts of Hatch records by decade, coordinate precision, date precision, flags and
 # the Strangeness/Credibility scales (to size the study and pick the tiers). No Hatch record was placed on a map,
 # assigned to a county or compared with geology.
 id: H-hatchpal-01
 title: Paleozoic surface rock in an independent catalog (Hatch UFO database, 1950-1999)
-status: draft
+status: post hoc (not registered; confirm years used by an exploratory run)
 registered: null
 claim: >
   Counties with more Paleozoic surface rock have more Hatch UFO records, per person, beyond the observer

@@ -99,7 +99,9 @@ class CombinedPanelDiagnostics:
         spec = ModelSpec("combined_panel", (*st.controls, exposure), fixed)
         return NegBinRateModel(spec, quiet=True, cluster="state_fips").fit(data).coefficients.loc[exposure]
 
-    def run(self) -> Path:
+    def inputs(self) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, dict]:
+        """(county table with Paleozoic and carbonate shares, population by decade, selected records placed in a
+        county, selection counts), shared by the combined and stacked diagnostics."""
         st = self.study
         table, _, _ = st.prepare()             # county table: controls, historical population, era shares
         shares = st._type_summary(st._weights()).summarize()
@@ -107,11 +109,15 @@ class CombinedPanelDiagnostics:
         pop = self._population(table)
         table = table.loc[pop.notna().all(axis=1) & (pop > 0).all(axis=1)]
         pop = pop.loc[table.index]
-
         rows, steps = select(st.sources.export_tables().all_sightings())
         rows[COUNTY_ID] = assign_counties(rows, st.counties)
         rows = rows.loc[rows[COUNTY_ID].isin(table.index)]
         steps["in a county with populations for every decade"] = len(rows)
+        return table, pop, rows, steps
+
+    def run(self) -> Path:
+        st = self.study
+        table, pop, rows, steps = self.inputs()
 
         f = lambda r: f"{r['rate_ratio']:.3f} ({r['ci_low']:.3f}–{r['ci_high']:.3f})"  # noqa: E731
         stars = lambda p: "**" if p < 0.01 else ("*" if p < 0.05 else "")  # noqa: E731

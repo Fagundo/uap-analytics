@@ -14,3 +14,10 @@ Rules:
 | ID | Title | Status |
 | --- | --- | --- |
 | H-geo-01 | Geophysical triggers (Persinger) | registered 2026-11-10 |
+
+Post-hoc analyses (not registered; descriptive):
+
+| ID | Title | Status |
+| --- | --- | --- |
+| H-rockera-01 | Surface rock era as a class (NUFORC) | post hoc 2026-11-19 |
+| H-hatchpal-01 | Paleozoic surface rock in the Hatch catalog, 1950-1999 | post hoc 2026-11-22 (drafted for registration; confirm years used by the all-catalog run) |
