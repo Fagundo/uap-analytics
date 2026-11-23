@@ -11,6 +11,7 @@ from datetime import date
 import pandas as pd
 
 from uap_geo.replications.bluebook.index import IndexRow
+from uap_geo.replications.networks.corpus import DocumentInfo, EntityCorpus, MentionRow, NodeInfo, PageText
 from uap_geo.replications.common.dates import Precision, Span
 from uap_geo.replications.common.places import StatePlacer
 from uap_geo.replications.nuclear.sites import NuclearTest
@@ -33,6 +34,7 @@ class ReplicationInputs:
     def __init__(self, tables, placer: StatePlacer | None = None):
         self.tables = tables                      # ExportTables
         self.placer = placer or StatePlacer()
+        self.entities = EntityInputs(tables)
 
     # ------------------------------------------------------------------ layers
     def programs(self) -> list[Program]:
@@ -117,6 +119,48 @@ class ReplicationInputs:
             start = date.fromisoformat(r.date_start)
             out.append(IndexRow(start.year, start.month, self.placer.name(r.state), r.country or None, category, family))
         return out
+
+
+class EntityInputs:
+    """The released documents' entity graph, page text, incidents and the project's datasets, from the export."""
+
+    def __init__(self, tables):
+        self.tables = tables
+
+    def documents(self) -> list[DocumentInfo]:
+        return [DocumentInfo(r.doc_id, r.agency, r.doc_date or None, r.release)
+                for r in self.tables.entity("documents").itertuples(index=False)]
+
+    def corpus(self) -> EntityCorpus:
+        """People and organizations as nodes (people lifted to the organization their affiliation names), and who
+        appears on which page, from the mentions in id order."""
+        nodes = [NodeInfo(f"org:{r.org_id}", "org", int(r.org_id), r.canonical_name)
+                 for r in self.tables.entity("organizations").itertuples(index=False)]
+        nodes += [NodeInfo(f"person:{r.person_id}", "person", int(r.person_id), r.canonical_name,
+                           r.is_placeholder in ("1", "True", "true"),
+                           f"org:{r.affiliation_org_id}" if r.affiliation_org_id else None)
+                  for r in self.tables.entity("people").itertuples(index=False)]
+        mentions = [MentionRow(r.doc_id, int(r.page), r.entity_type.lower(), int(r.entity_id) if r.entity_id else None,
+                               r.role or None, r.raw_text)
+                    for r in self.tables.entity("mentions").itertuples(index=False)]
+        return EntityCorpus.build(self.documents(), nodes, mentions)
+
+    def pages(self) -> list[PageText]:
+        return [PageText(r.doc_id, int(r.page), r.text) for r in self.tables.entity("page_text").itertuples(index=False)]
+
+    def incidents(self) -> list:
+        """Incidents with the fields the claims report reads (lists decoded from their JSON text)."""
+        from types import SimpleNamespace
+        out = []
+        for r in self.tables.entity("incidents").itertuples(index=False):
+            out.append(SimpleNamespace(incident_id=int(r.incident_id), date=r.date or None,
+                                       location_text=r.location_text or None, summary=r.summary or None,
+                                       doc_ids=json.loads(r.doc_ids or "[]"), status=r.status or None,
+                                       verdicts=json.loads(r.verdicts or "[]")))
+        return out
+
+    def dataset(self, name: str) -> dict:
+        return self.tables.dataset(name)
 
 
 def frame_of(sightings: list[Sighting]) -> pd.DataFrame:

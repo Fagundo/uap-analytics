@@ -128,4 +128,46 @@ class BlueBookReplication(Replication):
         return report
 
 
-REPLICATIONS = {r.name: r for r in (ProgramsReplication, NuclearReplication, BlueBookReplication)}
+class NetworksReplication(Replication):
+    """Who writes to whom, and tested communities (originally ``pursue networks``)."""
+    name = "networks"
+    title = "Who writes to whom in the released documents, and which names cluster beyond chance?"
+
+    def __init__(self, null_runs: int = 500, alpha: float = 0.01):
+        self.null_runs, self.alpha = null_runs, alpha
+
+    def run(self, inputs: ReplicationInputs) -> dict:
+        from uap_geo.replications.networks.communities import CommunityAnalyzer
+        from uap_geo.replications.networks.report import NetworkReport
+        from uap_geo.replications.networks.routing import RoutingAnalyzer
+        corpus = inputs.entities.corpus()
+        return NetworkReport().build(corpus, RoutingAnalyzer().analyze(corpus),
+                                     CommunityAnalyzer(null_runs=self.null_runs, alpha=self.alpha).analyze(corpus))
+
+
+class TopicsReplication(Replication):
+    """Topics, lexicon themes and their tested differences by era and agency (originally ``pursue topics``)."""
+    name = "topics"
+    title = "What do the released documents talk about, and how does it differ by era and agency?"
+
+    def run(self, inputs: ReplicationInputs) -> dict:
+        from uap_geo.replications.topics.report import TopicLabeler, TopicReport
+        labels = inputs.entities.dataset("topic_labels.json").get("labels", [])
+        return TopicReport(labeler=TopicLabeler(labels)).build(inputs.entities.documents(), inputs.entities.pages())
+
+
+class ClaimsReplication(Replication):
+    """Explanations offered for famous cases, checked against physics (originally ``pursue claims --screen``)."""
+    name = "claims"
+    title = "Do the explanations offered for famous cases fit their own stated facts?"
+
+    def run(self, inputs: ReplicationInputs) -> dict:
+        from uap_geo.replications.claims.catalog import parse_catalog
+        from uap_geo.replications.claims.report import ClaimReport
+        from uap_geo.replications.claims.screen import SkyScreen
+        cases, claims = parse_catalog(inputs.entities.dataset("case_claims.json"))
+        return ClaimReport().build(cases, claims, inputs.entities.incidents(), SkyScreen())
+
+
+REPLICATIONS = {r.name: r for r in (ProgramsReplication, NuclearReplication, BlueBookReplication,
+                                    NetworksReplication, TopicsReplication, ClaimsReplication)}

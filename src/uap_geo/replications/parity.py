@@ -8,6 +8,7 @@ output into the same shape; ``compare`` lists every difference.
 from __future__ import annotations
 
 import hashlib
+import json
 import math
 from dataclasses import dataclass, field
 
@@ -32,7 +33,54 @@ def reduce(name: str, output: dict) -> object:
         return {"nuclear": {"sites": output["sites"], "results": [{k: r[k] for k in keep} for r in output["results"]]}}
     if name == "bluebook":
         return {"bluebook": {k: output[k] for k in ("coverage", "by_year", "families", "tests")}}
+    if name == "networks":
+        return {"networks": _networks(output)}
+    if name == "topics":
+        return {"topics": _topics(output)}
+    if name == "claims":
+        return {"claims": _claims(output)}
     raise KeyError(name)
+
+
+def digest(value) -> str:
+    return hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+
+
+def _networks(report: dict) -> dict:
+    r, c = report["routing"], report["communities"]
+    people = lambda rows: [[x["id"], x["letters"], x["correspondents"], x["docs"]] for x in rows]  # noqa: E731
+    letters = sorted(f"{x['doc']}|{x['page']}|{x['author']['id']}|{x['addressee']['id']}" for x in r["letters"])
+    ties = sorted(f"{t['a']['id']}|{t['b']['id']}|{t['pages']}|{t['p']}|{t['null_mean']}" for t in c["ties"])
+    return {"letters_total": r["letters_total"], "letters_sha256": digest(letters),
+            "receivers": people(r["receivers"]), "senders": people(r["senders"]),
+            "org_flows": [[f["from"]["id"], f["to"]["id"], f["letters"]] for f in r["org_flows"]],
+            "method": c["method"], "ties": len(ties), "ties_sha256": digest(ties),
+            "communities": [{"size": k["size"], "internal_ties": k["internal_ties"], "stability": k["stability"],
+                             "agencies": k["agencies"], "eras": k["eras"],
+                             "members": [m["id"] for m in k["members"]], "docs": [d["doc"] for d in k["docs"]]}
+                            for k in c["communities"]]}
+
+
+def _topics(report: dict) -> dict:
+    def measure(m: dict) -> dict:
+        return {"by_era": m["by_era"], "by_agency": m["by_agency"],
+                "differences": [{k: d[k] for k in ("measure", "axis", "group", "docs", "group_value", "rest_value",
+                                                   "lift", "p", "q", "lift_without_top", "robust")}
+                                | {"drivers": [x["doc"] for x in d["drivers"]]} for d in m["differences"]]}
+    return {"method": report["method"],
+            "topics": [{"id": t["id"], "label": t["label"], "words": t["words"], "weights": t["weights"],
+                        "typical": [[x["doc"], x["page"], x["share"]] for x in t["typical"]]} for t in report["topics"]],
+            "topic_prevalence": measure(report["topic_prevalence"]),
+            "themes": report["themes"], "theme_prevalence": measure(report["theme_prevalence"])}
+
+
+def _claims(report: dict) -> dict:
+    keep = ("claim", "case", "kind", "verdict", "metrics", "findings")
+    return {"checks": [{k: x[k] for k in keep} for x in report["checks"]],
+            "screen": [{k: x[k] for k in keep} for x in report["screen"]],
+            "cases": [{"id": c["id"], "claims": c["claims"],
+                       "pursue_incidents": sorted(i["incident"] for i in c.get("pursue_incidents", []))}
+                      for c in report["cases"]]}
 
 
 @dataclass

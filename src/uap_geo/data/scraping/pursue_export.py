@@ -102,6 +102,10 @@ class PursueExport:
         path = self.fetch() / ("restricted" if restricted else "public") / relative
         return pd.read_csv(path, dtype=str, keep_default_na=False)
 
+    def path(self, relative: str) -> Path:
+        """A public-tier file (e.g. 'datasets/case_claims.json')."""
+        return self.fetch() / "public" / relative
+
     def nuforc_rows(self) -> pd.DataFrame:
         rows = self.table("sightings_restricted.csv", restricted=True)
         rows = rows.loc[rows["source"] == "nuforc"].copy()
@@ -124,6 +128,9 @@ class LocalExport:
         if root is None:
             raise FileNotFoundError(f"no restricted folder given for {relative}")
         return pd.read_csv(root / relative, dtype=str, keep_default_na=False)
+
+    def path(self, relative: str) -> Path:
+        return self.public / relative
 
     def nuforc_rows(self) -> pd.DataFrame:
         return PursueExport.nuforc_rows(self)
@@ -237,6 +244,14 @@ class ExportTables:
         out["_pos"] = range(len(out))
         out = out.sort_values(["source", "_order", "_pos"], kind="stable", na_position="last")
         return out.drop(columns=["_order", "_pos"]).reset_index(drop=True)
+
+    def entity(self, name: str) -> pd.DataFrame:
+        """An entity-graph table (as strings), e.g. 'documents', 'people', 'mentions', 'page_text'."""
+        return self.export.table(f"entities/{name}.csv")
+
+    def dataset(self, name: str) -> dict:
+        """One of the data repository's own small datasets, e.g. 'case_claims.json'."""
+        return json.loads(self.export.path(f"datasets/{name}").read_text())
 
     def layer(self, name: str) -> pd.DataFrame:
         """A context layer's rows (as strings), e.g. 'flight_programs', 'nuclear_tests'."""

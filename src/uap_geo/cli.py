@@ -111,7 +111,7 @@ def main(argv: list[str] | None = None) -> None:
     reg.add_argument("--inputs", type=Path, default=Path("results/regression/parts"), help="summarize: folder of run JSONs")
     reg.add_argument("--config", type=Path, default=Path("configs/v1.yaml"))
     rep = sub.add_parser("replicate", help="Replications of the data repository's population tests")
-    rep.add_argument("names", nargs="+", choices=["programs", "nuclear", "bluebook"])
+    rep.add_argument("names", nargs="+", choices=["programs", "nuclear", "bluebook", "networks", "topics", "claims"])
     rep.add_argument("--config", type=Path, default=Path("configs/v1.yaml"))
     rep.add_argument("--check", action="store_true", help="Exit 1 unless every replication matches its reference")
 

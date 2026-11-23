@@ -120,3 +120,42 @@ def test_parity_finds_differences():
     out["tests"][0]["matches"].pop()
     diffs = compare("programs", ref, out).differences
     assert any("observed" in d for d in diffs) and any("matches_sha256" in d for d in diffs)
+
+
+def test_network_corpus_routing_and_claims_from_export():
+    from uap_geo.replications.inputs import EntityInputs
+    from uap_geo.replications.networks.routing import RoutingAnalyzer
+
+    ent = {
+        "documents": pd.DataFrame([{"doc_id": "D1", "agency": "FBI", "doc_date": "1952-07-29", "release": "r1"}]),
+        "organizations": pd.DataFrame([{"org_id": "4", "canonical_name": "FBI"}, {"org_id": "5", "canonical_name": "USAF"}]),
+        "people": pd.DataFrame([
+            {"person_id": "1", "canonical_name": "J. Edgar Hoover", "is_placeholder": "0", "affiliation_org_id": "4"},
+            {"person_id": "2", "canonical_name": "D. M. Ladd", "is_placeholder": "0", "affiliation_org_id": "5"}]),
+        "mentions": pd.DataFrame([
+            {"doc_id": "D1", "page": "1", "entity_type": "person", "entity_id": "2", "role": "addressee", "raw_text": "Mr.  Ladd"},
+            {"doc_id": "D1", "page": "2", "entity_type": "person", "entity_id": "1", "role": "author", "raw_text": "Hoover"},
+            {"doc_id": "D1", "page": "2", "entity_type": "location", "entity_id": "9", "role": "", "raw_text": "DC"}]),
+        "incidents": pd.DataFrame([{"incident_id": "3", "date": "1952-07-19", "location_text": "Washington, D.C.",
+                                    "summary": "radar", "doc_ids": '["D1"]', "status": "unresolved", "verdicts": "[]"}]),
+    }
+
+    class T:
+        def entity(self, name):
+            return ent[name]
+
+    e = EntityInputs(T())
+    corpus = e.corpus()
+    assert corpus.nodes["person:1"].affiliation_org == "org:4" and corpus.quotes[(("D1", 1), "person:2")] == "Mr. Ladd"
+    r = RoutingAnalyzer().analyze(corpus)
+    assert [(x.author, x.addressee, x.page) for x in r.letters] == [("person:1", "person:2", 1)]   # signature next page
+    assert r.org_edges == {("org:4", "org:5"): 1} and corpus.era("D1") == "1950s"
+    (inc,) = e.incidents()
+    assert inc.doc_ids == ["D1"] and inc.incident_id == 3
+
+
+def test_partial_dates_as_the_original():
+    from uap_geo.replications.common.partial_dates import PartialDate, Precision as P
+    d = PartialDate.parse("1949-03-06/07")
+    assert (d.start, d.end, d.precision) == (date(1949, 3, 6), date(1949, 3, 7), P.DAY)
+    assert PartialDate.parse("1947-11").gap_days(PartialDate.parse("1947-12-03")) == 3

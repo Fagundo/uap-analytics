@@ -32,6 +32,9 @@ def main() -> None:
     reference = json.loads(a.reference.read_text())
     failed = False
     for name in a.names:
+        if name not in reference:                 # a reference from before this replication existed
+            print(f"{name}: not in the reference, skipped")
+            continue
         report = compare(name, reference, REPLICATIONS[name]().run(inputs))
         print(f"{name}: {report.checked:,} values checked, {len(report.differences):,} differences")
         for d in report.differences[:40]:
