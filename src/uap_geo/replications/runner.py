@@ -1,7 +1,9 @@
 """Run a replication on the pinned export, write its aggregates and summary, and check parity.
 
 Outputs (committed; aggregates only, no record rows): results/replications/<name>/aggregates.json, report.md and,
-with a reference, parity.md.
+with a reference, parity.md. The full outputs of the analyses of the released documents (networks, topics, claims:
+government documents only, no sighting records) also go to outputs/replications/<name>.json, which the
+replications workflow publishes as release assets for the data repository's explorer and dossier to read.
 """
 from __future__ import annotations
 
@@ -13,6 +15,7 @@ from uap_geo.replications.parity import ParityReport, compare, reduce
 from uap_geo.replications.studies import REPLICATIONS
 
 REFERENCE = Path("tests/parity/pursue_analytics_reference.json")
+PUBLISHABLE = ("networks", "topics", "claims")     # full outputs hold no sighting records
 
 
 class ReplicationRunner:
@@ -26,6 +29,10 @@ class ReplicationRunner:
         out.mkdir(parents=True, exist_ok=True)
         (out / "aggregates.json").write_text(json.dumps(reduce(name, output), indent=1, sort_keys=True) + "\n")
         (out / "report.md").write_text(Summary(name, study.title, self.tag).render(output) + "\n")
+        if name in PUBLISHABLE:
+            full = self.root / "outputs" / "replications"
+            full.mkdir(parents=True, exist_ok=True)
+            (full / f"{name}.json").write_text(json.dumps(output, ensure_ascii=False, indent=1) + "\n")
         parity = None
         ref_path = self.root / REFERENCE
         if ref_path.exists():
@@ -70,6 +77,31 @@ class Summary:
             lines.append(f"| {r['dataset']} | {near} | {r['events']} | 0-{r['window_days']} | {r['observed']} | "
                          f"{r['null_mean']} | {r['p_value']} | {r['q_value']} |")
         return lines
+
+    @staticmethod
+    def _networks(output: dict) -> list[str]:
+        r, c = output["routing"], output["communities"]
+        m = c["method"]
+        lines = [f"Letters: {r['letters_total']:,}. Ties tested: {m['tested_pairs']:,}; significant (p <= {m['alpha']}): "
+                 f"{m['significant_ties']:,}; communities: {len(c['communities'])}; modularity {m['modularity']}.", "",
+                 "| Most written to | Letters | Correspondents |", "| --- | --- | --- |"]
+        lines += [f"| {x['name']} | {x['letters']} | {x['correspondents']} |" for x in r["receivers"][:15]]
+        return lines
+
+    @staticmethod
+    def _topics(output: dict) -> list[str]:
+        m = output["method"]
+        lines = [f"{m['k']} topics over {m['pages']:,} pages (fit on {m['fit_pages']:,}).", "",
+                 "| Topic | Label | Top words |", "| --- | --- | --- |"]
+        lines += [f"| {t['id']} | {t['label'] or ''} | {', '.join(t['words'][:8])} |" for t in output["topics"]]
+        n = len(output["topic_prevalence"]["differences"]) + len(output["theme_prevalence"]["differences"])
+        return [*lines, "", f"Significant differences by era or agency (q <= {m['fdr']}): {n}."]
+
+    @staticmethod
+    def _claims(output: dict) -> list[str]:
+        lines = ["| Case | Explanation | Verdict |", "| --- | --- | --- |"]
+        lines += [f"| {c['case_name']} | {c['explanation']} | {c['verdict']} |" for c in output["checks"]]
+        return [*lines, "", f"Sky screen: {len(output['screen'])} bright bodies checked across the cases."]
 
     @staticmethod
     def _bluebook(output: dict) -> list[str]:

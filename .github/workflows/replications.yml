@@ -1,0 +1,65 @@
+name: replications
+
+# Runs the replications of the data repository's analyses on the pinned export, checks them against the parity
+# reference, commits their aggregates and publishes the full outputs of the document analyses (networks, topics,
+# claims) as release replications-<export tag>, which the data repository's explorer and dossier read.
+
+on:
+  workflow_dispatch:
+    inputs:
+      names:
+        description: "Replications to run"
+        default: "programs nuclear bluebook networks topics claims"
+      publish:
+        description: "Publish networks/topics/claims outputs as release replications-<export tag>"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  replicate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      PURSUE_EXPORT_TOKEN: ${{ secrets.PURSUE_EXPORT_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+          enable-cache: true
+      - run: uv sync
+      - name: Replicate and check parity
+        env:
+          NAMES: ${{ inputs.names }}
+        run: |
+          read -r -a names <<< "$NAMES"
+          uv run uap-geo replicate "${names[@]}" --check
+      - name: Commit results
+        if: always()
+        run: |
+          if [ -z "$(git status --porcelain -- results/replications)" ]; then echo "nothing to commit"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add results/replications
+          git commit -m "Replication results"
+          git pull --rebase -q
+          git push
+      - name: Publish document-analysis outputs
+        if: ${{ success() && inputs.publish }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="replications-$(python3 -c "import yaml; print(yaml.safe_load(open('configs/pursue_export.yaml'))['tag'])")"
+          cd outputs/replications
+          files=$(ls networks.json topics.json claims.json 2>/dev/null || true)
+          [ -n "$files" ] || { echo "no document-analysis outputs to publish"; exit 0; }
+          sha256sum $files | tee sha256.txt
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" $files sha256.txt --clobber
+          else
+            gh release create "$tag" $files sha256.txt --title "Replication outputs ($tag)" --target "$GITHUB_SHA" \
+              --notes "Full outputs of the networks, topics and claims replications on the pinned export. Government documents only; no sighting records."
+          fi
