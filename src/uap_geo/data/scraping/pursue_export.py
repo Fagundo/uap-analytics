@@ -109,6 +109,26 @@ class PursueExport:
         return rows.sort_values("source_order").reset_index(drop=True)
 
 
+class LocalExport:
+    """An unpacked export on disk (public and restricted folders), read like ``PursueExport``: for local work and
+    for the data repository's CI, which checks a fresh export before it is published."""
+
+    def __init__(self, public: Path, restricted: Path | None = None):
+        self.public, self.restricted = Path(public), Path(restricted) if restricted else None
+
+    def manifest(self) -> dict:
+        return json.loads((self.public / "manifest.json").read_text())
+
+    def table(self, relative: str, restricted: bool = False) -> pd.DataFrame:
+        root = self.restricted if restricted else self.public
+        if root is None:
+            raise FileNotFoundError(f"no restricted folder given for {relative}")
+        return pd.read_csv(root / relative, dtype=str, keep_default_na=False)
+
+    def nuforc_rows(self) -> pd.DataFrame:
+        return PursueExport.nuforc_rows(self)
+
+
 def _num(series: pd.Series) -> pd.Series:
     return pd.to_numeric(series.replace("", pd.NA), errors="coerce")
 

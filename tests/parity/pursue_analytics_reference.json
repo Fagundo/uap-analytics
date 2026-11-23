@@ -1,0 +1,8236 @@
+{
+ "bluebook": {
+  "by_year": {
+   "1947": {
+    "aircraft": 3,
+    "astro": 22,
+    "balloon": 8,
+    "insufficient": 14,
+    "other": 15,
+    "unidentified": 7
+   },
+   "1948": {
+    "aircraft": 14,
+    "astro": 60,
+    "balloon": 23,
+    "insufficient": 12,
+    "other": 28,
+    "unidentified": 6
+   },
+   "1949": {
+    "aircraft": 26,
+    "astro": 48,
+    "balloon": 11,
+    "insufficient": 9,
+    "other": 28,
+    "unidentified": 7
+   },
+   "1950": {
+    "aircraft": 39,
+    "astro": 79,
+    "balloon": 32,
+    "insufficient": 38,
+    "other": 35,
+    "unidentified": 30
+   },
+   "1951": {
+    "aircraft": 20,
+    "astro": 44,
+    "balloon": 25,
+    "insufficient": 32,
+    "other": 33,
+    "unidentified": 21
+   },
+   "1952": {
+    "aircraft": 100,
+    "astro": 141,
+    "balloon": 161,
+    "insufficient": 139,
+    "other": 65,
+    "unidentified": 131
+   },
+   "1953": {
+    "aircraft": 70,
+    "astro": 187,
+    "balloon": 76,
+    "insufficient": 78,
+    "other": 68,
+    "unidentified": 44
+   },
+   "1954": {
+    "aircraft": 51,
+    "astro": 116,
+    "balloon": 36,
+    "insufficient": 67,
+    "other": 47,
+    "unidentified": 75
+   },
+   "1955": {
+    "aircraft": 101,
+    "astro": 110,
+    "balloon": 72,
+    "insufficient": 78,
+    "other": 60,
+    "unidentified": 22
+   },
+   "1956": {
+    "aircraft": 103,
+    "astro": 191,
+    "balloon": 67,
+    "insufficient": 86,
+    "other": 50,
+    "unidentified": 12
+   },
+   "1957": {
+    "aircraft": 101,
+    "astro": 211,
+    "balloon": 56,
+    "insufficient": 113,
+    "other": 76,
+    "satellite": 2,
+    "unidentified": 6
+   },
+   "1958": {
+    "aircraft": 43,
+    "astro": 107,
+    "balloon": 21,
+    "insufficient": 56,
+    "other": 45,
+    "satellite": 5,
+    "unidentified": 6
+   },
+   "1959": {
+    "aircraft": 39,
+    "astro": 89,
+    "balloon": 13,
+    "insufficient": 34,
+    "other": 45,
+    "unidentified": 9
+   },
+   "1960": {
+    "aircraft": 20,
+    "astro": 69,
+    "balloon": 6,
+    "insufficient": 15,
+    "other": 29,
+    "satellite": 3,
+    "unidentified": 3
+   },
+   "1961": {
+    "aircraft": 15,
+    "astro": 85,
+    "balloon": 8,
+    "insufficient": 34,
+    "other": 27,
+    "satellite": 22,
+    "unidentified": 6
+   },
+   "1962": {
+    "aircraft": 20,
+    "astro": 62,
+    "balloon": 10,
+    "insufficient": 37,
+    "other": 35,
+    "satellite": 24,
+    "unidentified": 7
+   },
+   "1963": {
+    "aircraft": 30,
+    "astro": 26,
+    "balloon": 13,
+    "insufficient": 20,
+    "other": 17,
+    "satellite": 18,
+    "unidentified": 4
+   },
+   "1964": {
+    "aircraft": 40,
+    "astro": 71,
+    "balloon": 8,
+    "insufficient": 49,
+    "other": 49,
+    "satellite": 52,
+    "unidentified": 7
+   },
+   "1965": {
+    "aircraft": 70,
+    "astro": 91,
+    "balloon": 13,
+    "insufficient": 20,
+    "other": 44,
+    "satellite": 42,
+    "unidentified": 6
+   },
+   "1966": {
+    "aircraft": 190,
+    "astro": 197,
+    "balloon": 22,
+    "insufficient": 188,
+    "other": 81,
+    "satellite": 75,
+    "unidentified": 20
+   },
+   "1967": {
+    "aircraft": 132,
+    "astro": 107,
+    "balloon": 52,
+    "insufficient": 200,
+    "other": 90,
+    "satellite": 59,
+    "unidentified": 10
+   },
+   "1968": {
+    "aircraft": 19,
+    "astro": 22,
+    "balloon": 21,
+    "insufficient": 63,
+    "other": 31,
+    "satellite": 8,
+    "unidentified": 2
+   },
+   "1969": {
+    "aircraft": 18,
+    "astro": 19,
+    "balloon": 12,
+    "insufficient": 7,
+    "other": 12,
+    "satellite": 5
+   }
+  },
+  "coverage": [
+   {
+    "official": 122,
+    "recovered": 69,
+    "share": 0.57,
+    "unidentified_official": 12,
+    "unidentified_recovered": 7,
+    "with_place": 22,
+    "year": 1947
+   },
+   {
+    "official": 156,
+    "recovered": 143,
+    "share": 0.92,
+    "unidentified_official": 7,
+    "unidentified_recovered": 6,
+    "with_place": 82,
+    "year": 1948
+   },
+   {
+    "official": 186,
+    "recovered": 129,
+    "share": 0.69,
+    "unidentified_official": 22,
+    "unidentified_recovered": 7,
+    "with_place": 48,
+    "year": 1949
+   },
+   {
+    "official": 210,
+    "recovered": 253,
+    "share": 1.2,
+    "unidentified_official": 27,
+    "unidentified_recovered": 30,
+    "with_place": 65,
+    "year": 1950
+   },
+   {
+    "official": 169,
+    "recovered": 175,
+    "share": 1.04,
+    "unidentified_official": 22,
+    "unidentified_recovered": 21,
+    "with_place": 106,
+    "year": 1951
+   },
+   {
+    "official": 1501,
+    "recovered": 737,
+    "share": 0.49,
+    "unidentified_official": 303,
+    "unidentified_recovered": 131,
+    "with_place": 271,
+    "year": 1952
+   },
+   {
+    "official": 509,
+    "recovered": 523,
+    "share": 1.03,
+    "unidentified_official": 42,
+    "unidentified_recovered": 44,
+    "with_place": 143,
+    "year": 1953
+   },
+   {
+    "official": 487,
+    "recovered": 392,
+    "share": 0.8,
+    "unidentified_official": 46,
+    "unidentified_recovered": 75,
+    "with_place": 107,
+    "year": 1954
+   },
+   {
+    "official": 545,
+    "recovered": 443,
+    "share": 0.81,
+    "unidentified_official": 24,
+    "unidentified_recovered": 22,
+    "with_place": 89,
+    "year": 1955
+   },
+   {
+    "official": 670,
+    "recovered": 509,
+    "share": 0.76,
+    "unidentified_official": 14,
+    "unidentified_recovered": 12,
+    "with_place": 296,
+    "year": 1956
+   },
+   {
+    "official": 1006,
+    "recovered": 565,
+    "share": 0.56,
+    "unidentified_official": 14,
+    "unidentified_recovered": 6,
+    "with_place": 342,
+    "year": 1957
+   },
+   {
+    "official": 627,
+    "recovered": 283,
+    "share": 0.45,
+    "unidentified_official": 10,
+    "unidentified_recovered": 6,
+    "with_place": 154,
+    "year": 1958
+   },
+   {
+    "official": 390,
+    "recovered": 229,
+    "share": 0.59,
+    "unidentified_official": 12,
+    "unidentified_recovered": 9,
+    "with_place": 72,
+    "year": 1959
+   },
+   {
+    "official": 557,
+    "recovered": 145,
+    "share": 0.26,
+    "unidentified_official": 14,
+    "unidentified_recovered": 3,
+    "with_place": 69,
+    "year": 1960
+   },
+   {
+    "official": 591,
+    "recovered": 197,
+    "share": 0.33,
+    "unidentified_official": 13,
+    "unidentified_recovered": 6,
+    "with_place": 134,
+    "year": 1961
+   },
+   {
+    "official": 474,
+    "recovered": 195,
+    "share": 0.41,
+    "unidentified_official": 15,
+    "unidentified_recovered": 7,
+    "with_place": 71,
+    "year": 1962
+   },
+   {
+    "official": 399,
+    "recovered": 128,
+    "share": 0.32,
+    "unidentified_official": 14,
+    "unidentified_recovered": 4,
+    "with_place": 101,
+    "year": 1963
+   },
+   {
+    "official": 562,
+    "recovered": 276,
+    "share": 0.49,
+    "unidentified_official": 19,
+    "unidentified_recovered": 7,
+    "with_place": 82,
+    "year": 1964
+   },
+   {
+    "official": 887,
+    "recovered": 286,
+    "share": 0.32,
+    "unidentified_official": 16,
+    "unidentified_recovered": 6,
+    "with_place": 41,
+    "year": 1965
+   },
+   {
+    "official": 1112,
+    "recovered": 773,
+    "share": 0.7,
+    "unidentified_official": 32,
+    "unidentified_recovered": 20,
+    "with_place": 157,
+    "year": 1966
+   },
+   {
+    "official": 937,
+    "recovered": 650,
+    "share": 0.69,
+    "unidentified_official": 19,
+    "unidentified_recovered": 10,
+    "with_place": 139,
+    "year": 1967
+   },
+   {
+    "official": 375,
+    "recovered": 166,
+    "share": 0.44,
+    "unidentified_official": 3,
+    "unidentified_recovered": 2,
+    "with_place": 77,
+    "year": 1968
+   },
+   {
+    "official": 146,
+    "recovered": 73,
+    "share": 0.5,
+    "unidentified_official": 1,
+    "unidentified_recovered": 0,
+    "with_place": 12,
+    "year": 1969
+   }
+  ],
+  "families": {
+   "birds or insects": 62,
+   "hoax or unreliable": 211,
+   "lights and searchlights": 59,
+   "missiles and rockets": 47,
+   "photographic": 21,
+   "radar effects": 30,
+   "weather or optical": 166
+  },
+  "tests": [
+   {
+    "breakpoint": "1955-08",
+    "counts": {
+     "national_after": 840,
+     "national_before": 797,
+     "region_after": 69,
+     "region_before": 39,
+     "rest_after": 300,
+     "rest_before": 158
+    },
+    "did": 0.1292,
+    "did_p": 0.0977,
+    "label": "aircraft",
+    "national_after": 0.206,
+    "national_before": 0.1631,
+    "national_change": 0.0428,
+    "national_p": 0.3116,
+    "program": "u2",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.2899,
+    "region_before": 0.1795,
+    "rest_after": 0.19,
+    "rest_before": 0.2089,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1955-08",
+    "counts": {
+     "national_after": 840,
+     "national_before": 797,
+     "region_after": 69,
+     "region_before": 39,
+     "rest_after": 300,
+     "rest_before": 158
+    },
+    "did": -0.0137,
+    "did_p": 0.6558,
+    "label": "weather or optical",
+    "national_after": 0.0167,
+    "national_before": 0.0226,
+    "national_change": -0.0059,
+    "national_p": 0.6186,
+    "program": "u2",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.0,
+    "region_before": 0.0256,
+    "rest_after": 0.0133,
+    "rest_before": 0.0253,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1955-08",
+    "counts": {
+     "national_after": 840,
+     "national_before": 797,
+     "region_after": 69,
+     "region_before": 39,
+     "rest_after": 300,
+     "rest_before": 158
+    },
+    "did": 0.1156,
+    "did_p": 0.1163,
+    "label": "aircraft or weather/optical",
+    "national_after": 0.2226,
+    "national_before": 0.1857,
+    "national_change": 0.0369,
+    "national_p": 0.3023,
+    "program": "u2",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.2899,
+    "region_before": 0.2051,
+    "rest_after": 0.2033,
+    "rest_before": 0.2342,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1955-08",
+    "counts": {
+     "national_after": 840,
+     "national_before": 797,
+     "region_after": 69,
+     "region_before": 39,
+     "rest_after": 300,
+     "rest_before": 158
+    },
+    "did": -0.0327,
+    "did_p": 0.6326,
+    "label": "balloon",
+    "national_after": 0.1488,
+    "national_before": 0.123,
+    "national_change": 0.0258,
+    "national_p": 0.2093,
+    "program": "u2",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.1449,
+    "region_before": 0.1538,
+    "rest_after": 0.1567,
+    "rest_before": 0.1329,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1955-08",
+    "counts": {
+     "national_after": 840,
+     "national_before": 797,
+     "region_after": 69,
+     "region_before": 39,
+     "rest_after": 300,
+     "rest_before": 158
+    },
+    "did": 0.0166,
+    "did_p": 0.5116,
+    "label": "astro",
+    "national_after": 0.3274,
+    "national_before": 0.2861,
+    "national_change": 0.0413,
+    "national_p": 0.2791,
+    "program": "u2",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.2899,
+    "region_before": 0.2308,
+    "rest_after": 0.34,
+    "rest_before": 0.2975,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1955-08",
+    "counts": {
+     "national_after": 840,
+     "national_before": 797,
+     "region_after": 69,
+     "region_before": 39,
+     "rest_after": 300,
+     "rest_before": 158
+    },
+    "did": 0.0077,
+    "did_p": 0.414,
+    "label": "unidentified",
+    "national_after": 0.0333,
+    "national_before": 0.1242,
+    "national_change": -0.0909,
+    "national_p": 0.9395,
+    "program": "u2",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.029,
+    "region_before": 0.1026,
+    "rest_after": 0.02,
+    "rest_before": 0.1013,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1955-08",
+    "counts": {
+     "national_after": 840,
+     "national_before": 797,
+     "region_after": 69,
+     "region_before": 39,
+     "rest_after": 300,
+     "rest_before": 158
+    },
+    "did": -0.2002,
+    "did_p": 0.907,
+    "label": "insufficient data",
+    "national_after": 0.1833,
+    "national_before": 0.1631,
+    "national_change": 0.0202,
+    "national_p": 0.4465,
+    "program": "u2",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.1449,
+    "region_before": 0.2564,
+    "rest_after": 0.19,
+    "rest_before": 0.1013,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1962-04",
+    "counts": {
+     "national_after": 357,
+     "national_before": 312,
+     "region_after": 15,
+     "region_before": 17,
+     "rest_after": 134,
+     "rest_before": 134
+    },
+    "did": -0.0593,
+    "did_p": 0.6651,
+    "label": "aircraft",
+    "national_after": 0.1485,
+    "national_before": 0.1026,
+    "national_change": 0.0459,
+    "national_p": 0.293,
+    "program": "oxcart",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.0667,
+    "region_before": 0.0588,
+    "rest_after": 0.194,
+    "rest_before": 0.1269,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1962-04",
+    "counts": {
+     "national_after": 357,
+     "national_before": 312,
+     "region_after": 15,
+     "region_before": 17,
+     "rest_after": 134,
+     "rest_before": 134
+    },
+    "did": 0.0004,
+    "did_p": 0.5581,
+    "label": "weather or optical",
+    "national_after": 0.0252,
+    "national_before": 0.0385,
+    "national_change": -0.0133,
+    "national_p": 0.814,
+    "program": "oxcart",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.0667,
+    "region_before": 0.0588,
+    "rest_after": 0.0373,
+    "rest_before": 0.0299,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1962-04",
+    "counts": {
+     "national_after": 357,
+     "national_before": 312,
+     "region_after": 15,
+     "region_before": 17,
+     "rest_after": 134,
+     "rest_before": 134
+    },
+    "did": -0.0589,
+    "did_p": 0.6698,
+    "label": "aircraft or weather/optical",
+    "national_after": 0.1737,
+    "national_before": 0.141,
+    "national_change": 0.0326,
+    "national_p": 0.3721,
+    "program": "oxcart",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.1333,
+    "region_before": 0.1176,
+    "rest_after": 0.2313,
+    "rest_before": 0.1567,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1962-04",
+    "counts": {
+     "national_after": 357,
+     "national_before": 312,
+     "region_after": 15,
+     "region_before": 17,
+     "rest_after": 134,
+     "rest_before": 134
+    },
+    "did": 0.0745,
+    "did_p": 0.3023,
+    "label": "balloon",
+    "national_after": 0.0644,
+    "national_before": 0.0417,
+    "national_change": 0.0228,
+    "national_p": 0.2512,
+    "program": "oxcart",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.1333,
+    "region_before": 0.0588,
+    "rest_after": 0.0672,
+    "rest_before": 0.0672,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1962-04",
+    "counts": {
+     "national_after": 357,
+     "national_before": 312,
+     "region_after": 15,
+     "region_before": 17,
+     "rest_after": 134,
+     "rest_before": 134
+    },
+    "did": 0.3438,
+    "did_p": 0.0465,
+    "label": "astro",
+    "national_after": 0.2773,
+    "national_before": 0.4519,
+    "national_change": -0.1746,
+    "national_p": 0.9674,
+    "program": "oxcart",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.4,
+    "region_before": 0.2353,
+    "rest_after": 0.2985,
+    "rest_before": 0.4776,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1962-04",
+    "counts": {
+     "national_after": 357,
+     "national_before": 312,
+     "region_after": 15,
+     "region_before": 17,
+     "rest_after": 134,
+     "rest_before": 134
+    },
+    "did": 0.0443,
+    "did_p": 0.2326,
+    "label": "unidentified",
+    "national_after": 0.0308,
+    "national_before": 0.0256,
+    "national_change": 0.0052,
+    "national_p": 0.3163,
+    "program": "oxcart",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.0667,
+    "region_before": 0.0,
+    "rest_after": 0.0597,
+    "rest_before": 0.0373,
+    "site": "Groom Lake",
+    "window": 24
+   },
+   {
+    "breakpoint": "1962-04",
+    "counts": {
+     "national_after": 357,
+     "national_before": 312,
+     "region_after": 15,
+     "region_before": 17,
+     "rest_after": 134,
+     "rest_before": 134
+    },
+    "did": -0.242,
+    "did_p": 0.9302,
+    "label": "insufficient data",
+    "national_after": 0.1821,
+    "national_before": 0.1474,
+    "national_change": 0.0346,
+    "national_p": 0.3116,
+    "program": "oxcart",
+    "region": [
+     "Arizona",
+     "California",
+     "Idaho",
+     "Nevada",
+     "Oregon",
+     "Utah"
+    ],
+    "region_after": 0.1333,
+    "region_before": 0.3529,
+    "rest_after": 0.1343,
+    "rest_before": 0.1119,
+    "site": "Groom Lake",
+    "window": 24
+   }
+  ]
+ },
+ "local_share_by_year": {
+  "hatch": {
+   "Groom Lake": [
+    [
+     1823,
+     1,
+     0
+    ],
+    [
+     1828,
+     1,
+     0
+    ],
+    [
+     1860,
+     1,
+     0
+    ],
+    [
+     1868,
+     1,
+     0
+    ],
+    [
+     1878,
+     2,
+     0
+    ],
+    [
+     1880,
+     2,
+     0
+    ],
+    [
+     1883,
+     1,
+     0
+    ],
+    [
+     1884,
+     1,
+     0
+    ],
+    [
+     1891,
+     1,
+     0
+    ],
+    [
+     1893,
+     1,
+     0
+    ],
+    [
+     1896,
+     22,
+     0
+    ],
+    [
+     1897,
+     24,
+     0
+    ],
+    [
+     1901,
+     1,
+     0
+    ],
+    [
+     1905,
+     1,
+     0
+    ],
+    [
+     1906,
+     1,
+     0
+    ],
+    [
+     1907,
+     1,
+     0
+    ],
+    [
+     1908,
+     1,
+     0
+    ],
+    [
+     1909,
+     2,
+     0
+    ],
+    [
+     1910,
+     5,
+     0
+    ],
+    [
+     1915,
+     1,
+     0
+    ],
+    [
+     1916,
+     2,
+     0
+    ],
+    [
+     1917,
+     2,
+     0
+    ],
+    [
+     1919,
+     1,
+     0
+    ],
+    [
+     1920,
+     2,
+     0
+    ],
+    [
+     1923,
+     1,
+     0
+    ],
+    [
+     1924,
+     1,
+     0
+    ],
+    [
+     1925,
+     1,
+     0
+    ],
+    [
+     1926,
+     3,
+     0
+    ],
+    [
+     1927,
+     3,
+     0
+    ],
+    [
+     1928,
+     2,
+     0
+    ],
+    [
+     1930,
+     1,
+     0
+    ],
+    [
+     1931,
+     2,
+     0
+    ],
+    [
+     1932,
+     2,
+     0
+    ],
+    [
+     1933,
+     3,
+     0
+    ],
+    [
+     1934,
+     2,
+     0
+    ],
+    [
+     1935,
+     1,
+     0
+    ],
+    [
+     1936,
+     2,
+     0
+    ],
+    [
+     1937,
+     1,
+     0
+    ],
+    [
+     1938,
+     1,
+     0
+    ],
+    [
+     1940,
+     3,
+     0
+    ],
+    [
+     1941,
+     1,
+     1
+    ],
+    [
+     1942,
+     2,
+     0
+    ],
+    [
+     1943,
+     2,
+     0
+    ],
+    [
+     1944,
+     5,
+     0
+    ],
+    [
+     1945,
+     5,
+     0
+    ],
+    [
+     1946,
+     8,
+     0
+    ],
+    [
+     1947,
+     530,
+     6
+    ],
+    [
+     1948,
+     47,
+     0
+    ],
+    [
+     1949,
+     101,
+     0
+    ],
+    [
+     1950,
+     281,
+     3
+    ],
+    [
+     1951,
+     85,
+     3
+    ],
+    [
+     1952,
+     747,
+     7
+    ],
+    [
+     1953,
+     198,
+     4
+    ],
+    [
+     1954,
+     211,
+     3
+    ],
+    [
+     1955,
+     176,
+     4
+    ],
+    [
+     1956,
+     253,
+     5
+    ],
+    [
+     1957,
+     332,
+     3
+    ],
+    [
+     1958,
+     115,
+     1
+    ],
+    [
+     1959,
+     111,
+     4
+    ],
+    [
+     1960,
+     72,
+     1
+    ],
+    [
+     1961,
+     54,
+     2
+    ],
+    [
+     1962,
+     47,
+     3
+    ],
+    [
+     1963,
+     57,
+     0
+    ],
+    [
+     1964,
+     108,
+     2
+    ],
+    [
+     1965,
+     176,
+     0
+    ],
+    [
+     1966,
+     305,
+     1
+    ],
+    [
+     1967,
+     348,
+     4
+    ],
+    [
+     1968,
+     116,
+     3
+    ],
+    [
+     1969,
+     51,
+     0
+    ],
+    [
+     1970,
+     43,
+     1
+    ],
+    [
+     1971,
+     46,
+     0
+    ],
+    [
+     1972,
+     80,
+     0
+    ],
+    [
+     1973,
+     356,
+     0
+    ],
+    [
+     1974,
+     96,
+     2
+    ],
+    [
+     1975,
+     197,
+     0
+    ],
+    [
+     1976,
+     130,
+     2
+    ],
+    [
+     1977,
+     124,
+     0
+    ],
+    [
+     1978,
+     159,
+     1
+    ],
+    [
+     1979,
+     115,
+     0
+    ],
+    [
+     1980,
+     64,
+     0
+    ],
+    [
+     1981,
+     63,
+     1
+    ],
+    [
+     1982,
+     78,
+     1
+    ],
+    [
+     1983,
+     54,
+     0
+    ],
+    [
+     1984,
+     88,
+     2
+    ],
+    [
+     1985,
+     34,
+     0
+    ],
+    [
+     1986,
+     119,
+     1
+    ],
+    [
+     1987,
+     52,
+     0
+    ],
+    [
+     1988,
+     61,
+     1
+    ],
+    [
+     1989,
+     121,
+     1
+    ],
+    [
+     1990,
+     81,
+     1
+    ],
+    [
+     1991,
+     45,
+     0
+    ],
+    [
+     1992,
+     105,
+     1
+    ],
+    [
+     1993,
+     116,
+     2
+    ],
+    [
+     1994,
+     106,
+     3
+    ],
+    [
+     1995,
+     315,
+     5
+    ],
+    [
+     1996,
+     112,
+     3
+    ],
+    [
+     1997,
+     50,
+     2
+    ],
+    [
+     1998,
+     27,
+     0
+    ],
+    [
+     1999,
+     28,
+     0
+    ],
+    [
+     2000,
+     14,
+     1
+    ],
+    [
+     2001,
+     10,
+     1
+    ],
+    [
+     2002,
+     4,
+     0
+    ]
+   ],
+   "Holloman AFB (Alamogordo AAF)": [
+    [
+     1823,
+     1,
+     0
+    ],
+    [
+     1828,
+     1,
+     0
+    ],
+    [
+     1860,
+     1,
+     0
+    ],
+    [
+     1868,
+     1,
+     0
+    ],
+    [
+     1878,
+     2,
+     0
+    ],
+    [
+     1880,
+     2,
+     1
+    ],
+    [
+     1883,
+     1,
+     0
+    ],
+    [
+     1884,
+     1,
+     0
+    ],
+    [
+     1891,
+     1,
+     0
+    ],
+    [
+     1893,
+     1,
+     0
+    ],
+    [
+     1896,
+     22,
+     0
+    ],
+    [
+     1897,
+     24,
+     0
+    ],
+    [
+     1901,
+     1,
+     1
+    ],
+    [
+     1905,
+     1,
+     0
+    ],
+    [
+     1906,
+     1,
+     0
+    ],
+    [
+     1907,
+     1,
+     0
+    ],
+    [
+     1908,
+     1,
+     0
+    ],
+    [
+     1909,
+     2,
+     0
+    ],
+    [
+     1910,
+     5,
+     0
+    ],
+    [
+     1915,
+     1,
+     0
+    ],
+    [
+     1916,
+     2,
+     0
+    ],
+    [
+     1917,
+     2,
+     0
+    ],
+    [
+     1919,
+     1,
+     0
+    ],
+    [
+     1920,
+     2,
+     0
+    ],
+    [
+     1923,
+     1,
+     0
+    ],
+    [
+     1924,
+     1,
+     0
+    ],
+    [
+     1925,
+     1,
+     0
+    ],
+    [
+     1926,
+     3,
+     0
+    ],
+    [
+     1927,
+     3,
+     0
+    ],
+    [
+     1928,
+     2,
+     0
+    ],
+    [
+     1930,
+     1,
+     0
+    ],
+    [
+     1931,
+     2,
+     0
+    ],
+    [
+     1932,
+     2,
+     1
+    ],
+    [
+     1933,
+     3,
+     0
+    ],
+    [
+     1934,
+     2,
+     0
+    ],
+    [
+     1935,
+     1,
+     0
+    ],
+    [
+     1936,
+     2,
+     0
+    ],
+    [
+     1937,
+     1,
+     0
+    ],
+    [
+     1938,
+     1,
+     0
+    ],
+    [
+     1940,
+     3,
+     0
+    ],
+    [
+     1941,
+     1,
+     0
+    ],
+    [
+     1942,
+     2,
+     0
+    ],
+    [
+     1943,
+     2,
+     0
+    ],
+    [
+     1944,
+     5,
+     1
+    ],
+    [
+     1945,
+     5,
+     1
+    ],
+    [
+     1946,
+     8,
+     1
+    ],
+    [
+     1947,
+     530,
+     20
+    ],
+    [
+     1948,
+     47,
+     4
+    ],
+    [
+     1949,
+     101,
+     8
+    ],
+    [
+     1950,
+     281,
+     15
+    ],
+    [
+     1951,
+     85,
+     8
+    ],
+    [
+     1952,
+     747,
+     38
+    ],
+    [
+     1953,
+     198,
+     4
+    ],
+    [
+     1954,
+     211,
+     3
+    ],
+    [
+     1955,
+     176,
+     1
+    ],
+    [
+     1956,
+     253,
+     3
+    ],
+    [
+     1957,
+     332,
+     20
+    ],
+    [
+     1958,
+     115,
+     8
+    ],
+    [
+     1959,
+     111,
+     4
+    ],
+    [
+     1960,
+     72,
+     1
+    ],
+    [
+     1961,
+     54,
+     2
+    ],
+    [
+     1962,
+     47,
+     1
+    ],
+    [
+     1963,
+     57,
+     1
+    ],
+    [
+     1964,
+     108,
+     12
+    ],
+    [
+     1965,
+     176,
+     2
+    ],
+    [
+     1966,
+     305,
+     3
+    ],
+    [
+     1967,
+     348,
+     7
+    ],
+    [
+     1968,
+     116,
+     1
+    ],
+    [
+     1969,
+     51,
+     0
+    ],
+    [
+     1970,
+     43,
+     0
+    ],
+    [
+     1971,
+     46,
+     0
+    ],
+    [
+     1972,
+     80,
+     3
+    ],
+    [
+     1973,
+     356,
+     2
+    ],
+    [
+     1974,
+     96,
+     6
+    ],
+    [
+     1975,
+     197,
+     2
+    ],
+    [
+     1976,
+     130,
+     2
+    ],
+    [
+     1977,
+     124,
+     3
+    ],
+    [
+     1978,
+     159,
+     0
+    ],
+    [
+     1979,
+     115,
+     0
+    ],
+    [
+     1980,
+     64,
+     5
+    ],
+    [
+     1981,
+     63,
+     1
+    ],
+    [
+     1982,
+     78,
+     0
+    ],
+    [
+     1983,
+     54,
+     0
+    ],
+    [
+     1984,
+     88,
+     0
+    ],
+    [
+     1985,
+     34,
+     0
+    ],
+    [
+     1986,
+     119,
+     0
+    ],
+    [
+     1987,
+     52,
+     0
+    ],
+    [
+     1988,
+     61,
+     1
+    ],
+    [
+     1989,
+     121,
+     0
+    ],
+    [
+     1990,
+     81,
+     1
+    ],
+    [
+     1991,
+     45,
+     0
+    ],
+    [
+     1992,
+     105,
+     0
+    ],
+    [
+     1993,
+     116,
+     0
+    ],
+    [
+     1994,
+     106,
+     1
+    ],
+    [
+     1995,
+     315,
+     0
+    ],
+    [
+     1996,
+     112,
+     1
+    ],
+    [
+     1997,
+     50,
+     0
+    ],
+    [
+     1998,
+     27,
+     2
+    ],
+    [
+     1999,
+     28,
+     0
+    ],
+    [
+     2000,
+     14,
+     0
+    ],
+    [
+     2001,
+     10,
+     0
+    ],
+    [
+     2002,
+     4,
+     0
+    ]
+   ],
+   "Tonopah Test Range Airport": [
+    [
+     1823,
+     1,
+     0
+    ],
+    [
+     1828,
+     1,
+     0
+    ],
+    [
+     1860,
+     1,
+     0
+    ],
+    [
+     1868,
+     1,
+     0
+    ],
+    [
+     1878,
+     2,
+     0
+    ],
+    [
+     1880,
+     2,
+     0
+    ],
+    [
+     1883,
+     1,
+     0
+    ],
+    [
+     1884,
+     1,
+     0
+    ],
+    [
+     1891,
+     1,
+     0
+    ],
+    [
+     1893,
+     1,
+     0
+    ],
+    [
+     1896,
+     22,
+     3
+    ],
+    [
+     1897,
+     24,
+     0
+    ],
+    [
+     1901,
+     1,
+     0
+    ],
+    [
+     1905,
+     1,
+     0
+    ],
+    [
+     1906,
+     1,
+     0
+    ],
+    [
+     1907,
+     1,
+     0
+    ],
+    [
+     1908,
+     1,
+     0
+    ],
+    [
+     1909,
+     2,
+     0
+    ],
+    [
+     1910,
+     5,
+     0
+    ],
+    [
+     1915,
+     1,
+     0
+    ],
+    [
+     1916,
+     2,
+     0
+    ],
+    [
+     1917,
+     2,
+     0
+    ],
+    [
+     1919,
+     1,
+     0
+    ],
+    [
+     1920,
+     2,
+     0
+    ],
+    [
+     1923,
+     1,
+     0
+    ],
+    [
+     1924,
+     1,
+     0
+    ],
+    [
+     1925,
+     1,
+     0
+    ],
+    [
+     1926,
+     3,
+     1
+    ],
+    [
+     1927,
+     3,
+     0
+    ],
+    [
+     1928,
+     2,
+     0
+    ],
+    [
+     1930,
+     1,
+     0
+    ],
+    [
+     1931,
+     2,
+     0
+    ],
+    [
+     1932,
+     2,
+     0
+    ],
+    [
+     1933,
+     3,
+     0
+    ],
+    [
+     1934,
+     2,
+     0
+    ],
+    [
+     1935,
+     1,
+     0
+    ],
+    [
+     1936,
+     2,
+     0
+    ],
+    [
+     1937,
+     1,
+     0
+    ],
+    [
+     1938,
+     1,
+     0
+    ],
+    [
+     1940,
+     3,
+     0
+    ],
+    [
+     1941,
+     1,
+     1
+    ],
+    [
+     1942,
+     2,
+     0
+    ],
+    [
+     1943,
+     2,
+     0
+    ],
+    [
+     1944,
+     5,
+     0
+    ],
+    [
+     1945,
+     5,
+     0
+    ],
+    [
+     1946,
+     8,
+     0
+    ],
+    [
+     1947,
+     530,
+     5
+    ],
+    [
+     1948,
+     47,
+     0
+    ],
+    [
+     1949,
+     101,
+     0
+    ],
+    [
+     1950,
+     281,
+     3
+    ],
+    [
+     1951,
+     85,
+     3
+    ],
+    [
+     1952,
+     747,
+     9
+    ],
+    [
+     1953,
+     198,
+     4
+    ],
+    [
+     1954,
+     211,
+     1
+    ],
+    [
+     1955,
+     176,
+     4
+    ],
+    [
+     1956,
+     253,
+     7
+    ],
+    [
+     1957,
+     332,
+     2
+    ],
+    [
+     1958,
+     115,
+     2
+    ],
+    [
+     1959,
+     111,
+     2
+    ],
+    [
+     1960,
+     72,
+     1
+    ],
+    [
+     1961,
+     54,
+     2
+    ],
+    [
+     1962,
+     47,
+     3
+    ],
+    [
+     1963,
+     57,
+     2
+    ],
+    [
+     1964,
+     108,
+     3
+    ],
+    [
+     1965,
+     176,
+     0
+    ],
+    [
+     1966,
+     305,
+     1
+    ],
+    [
+     1967,
+     348,
+     4
+    ],
+    [
+     1968,
+     116,
+     3
+    ],
+    [
+     1969,
+     51,
+     0
+    ],
+    [
+     1970,
+     43,
+     1
+    ],
+    [
+     1971,
+     46,
+     1
+    ],
+    [
+     1972,
+     80,
+     0
+    ],
+    [
+     1973,
+     356,
+     2
+    ],
+    [
+     1974,
+     96,
+     1
+    ],
+    [
+     1975,
+     197,
+     0
+    ],
+    [
+     1976,
+     130,
+     3
+    ],
+    [
+     1977,
+     124,
+     0
+    ],
+    [
+     1978,
+     159,
+     0
+    ],
+    [
+     1979,
+     115,
+     1
+    ],
+    [
+     1980,
+     64,
+     1
+    ],
+    [
+     1981,
+     63,
+     1
+    ],
+    [
+     1982,
+     78,
+     1
+    ],
+    [
+     1983,
+     54,
+     0
+    ],
+    [
+     1984,
+     88,
+     1
+    ],
+    [
+     1985,
+     34,
+     0
+    ],
+    [
+     1986,
+     119,
+     0
+    ],
+    [
+     1987,
+     52,
+     0
+    ],
+    [
+     1988,
+     61,
+     2
+    ],
+    [
+     1989,
+     121,
+     1
+    ],
+    [
+     1990,
+     81,
+     1
+    ],
+    [
+     1991,
+     45,
+     1
+    ],
+    [
+     1992,
+     105,
+     1
+    ],
+    [
+     1993,
+     116,
+     2
+    ],
+    [
+     1994,
+     106,
+     4
+    ],
+    [
+     1995,
+     315,
+     6
+    ],
+    [
+     1996,
+     112,
+     3
+    ],
+    [
+     1997,
+     50,
+     2
+    ],
+    [
+     1998,
+     27,
+     0
+    ],
+    [
+     1999,
+     28,
+     0
+    ],
+    [
+     2000,
+     14,
+     1
+    ],
+    [
+     2001,
+     10,
+     1
+    ],
+    [
+     2002,
+     4,
+     0
+    ]
+   ]
+  },
+  "hatch, one per state+month": {
+   "Groom Lake": [
+    [
+     1823,
+     1,
+     0
+    ],
+    [
+     1828,
+     1,
+     0
+    ],
+    [
+     1860,
+     1,
+     0
+    ],
+    [
+     1868,
+     1,
+     0
+    ],
+    [
+     1878,
+     2,
+     0
+    ],
+    [
+     1880,
+     2,
+     0
+    ],
+    [
+     1883,
+     1,
+     0
+    ],
+    [
+     1884,
+     1,
+     0
+    ],
+    [
+     1891,
+     1,
+     0
+    ],
+    [
+     1893,
+     1,
+     0
+    ],
+    [
+     1896,
+     4,
+     0
+    ],
+    [
+     1897,
+     15,
+     0
+    ],
+    [
+     1901,
+     1,
+     0
+    ],
+    [
+     1905,
+     1,
+     0
+    ],
+    [
+     1906,
+     1,
+     0
+    ],
+    [
+     1907,
+     1,
+     0
+    ],
+    [
+     1908,
+     1,
+     0
+    ],
+    [
+     1909,
+     2,
+     0
+    ],
+    [
+     1910,
+     5,
+     0
+    ],
+    [
+     1915,
+     1,
+     0
+    ],
+    [
+     1916,
+     2,
+     0
+    ],
+    [
+     1917,
+     2,
+     0
+    ],
+    [
+     1919,
+     1,
+     0
+    ],
+    [
+     1920,
+     2,
+     0
+    ],
+    [
+     1923,
+     1,
+     0
+    ],
+    [
+     1924,
+     1,
+     0
+    ],
+    [
+     1925,
+     1,
+     0
+    ],
+    [
+     1926,
+     3,
+     0
+    ],
+    [
+     1927,
+     3,
+     0
+    ],
+    [
+     1928,
+     2,
+     0
+    ],
+    [
+     1930,
+     1,
+     0
+    ],
+    [
+     1931,
+     2,
+     0
+    ],
+    [
+     1932,
+     2,
+     0
+    ],
+    [
+     1933,
+     3,
+     0
+    ],
+    [
+     1934,
+     2,
+     0
+    ],
+    [
+     1935,
+     1,
+     0
+    ],
+    [
+     1936,
+     2,
+     0
+    ],
+    [
+     1937,
+     1,
+     0
+    ],
+    [
+     1938,
+     1,
+     0
+    ],
+    [
+     1940,
+     3,
+     0
+    ],
+    [
+     1941,
+     1,
+     1
+    ],
+    [
+     1942,
+     2,
+     0
+    ],
+    [
+     1943,
+     2,
+     0
+    ],
+    [
+     1944,
+     5,
+     0
+    ],
+    [
+     1945,
+     5,
+     0
+    ],
+    [
+     1946,
+     8,
+     0
+    ],
+    [
+     1947,
+     114,
+     4
+    ],
+    [
+     1948,
+     37,
+     0
+    ],
+    [
+     1949,
+     78,
+     0
+    ],
+    [
+     1950,
+     158,
+     2
+    ],
+    [
+     1951,
+     70,
+     3
+    ],
+    [
+     1952,
+     257,
+     2
+    ],
+    [
+     1953,
+     129,
+     3
+    ],
+    [
+     1954,
+     150,
+     2
+    ],
+    [
+     1955,
+     117,
+     2
+    ],
+    [
+     1956,
+     151,
+     2
+    ],
+    [
+     1957,
+     163,
+     2
+    ],
+    [
+     1958,
+     90,
+     1
+    ],
+    [
+     1959,
+     93,
+     4
+    ],
+    [
+     1960,
+     50,
+     0
+    ],
+    [
+     1961,
+     45,
+     2
+    ],
+    [
+     1962,
+     39,
+     2
+    ],
+    [
+     1963,
+     46,
+     0
+    ],
+    [
+     1964,
+     73,
+     2
+    ],
+    [
+     1965,
+     107,
+     0
+    ],
+    [
+     1966,
+     171,
+     1
+    ],
+    [
+     1967,
+     206,
+     3
+    ],
+    [
+     1968,
+     87,
+     3
+    ],
+    [
+     1969,
+     44,
+     0
+    ],
+    [
+     1970,
+     38,
+     1
+    ],
+    [
+     1971,
+     40,
+     0
+    ],
+    [
+     1972,
+     67,
+     0
+    ],
+    [
+     1973,
+     135,
+     0
+    ],
+    [
+     1974,
+     78,
+     1
+    ],
+    [
+     1975,
+     100,
+     0
+    ],
+    [
+     1976,
+     85,
+     1
+    ],
+    [
+     1977,
+     92,
+     0
+    ],
+    [
+     1978,
+     109,
+     1
+    ],
+    [
+     1979,
+     77,
+     0
+    ],
+    [
+     1980,
+     47,
+     0
+    ],
+    [
+     1981,
+     46,
+     1
+    ],
+    [
+     1982,
+     60,
+     1
+    ],
+    [
+     1983,
+     37,
+     0
+    ],
+    [
+     1984,
+     63,
+     0
+    ],
+    [
+     1985,
+     28,
+     0
+    ],
+    [
+     1986,
+     81,
+     1
+    ],
+    [
+     1987,
+     37,
+     0
+    ],
+    [
+     1988,
+     41,
+     1
+    ],
+    [
+     1989,
+     89,
+     1
+    ],
+    [
+     1990,
+     63,
+     1
+    ],
+    [
+     1991,
+     36,
+     0
+    ],
+    [
+     1992,
+     81,
+     1
+    ],
+    [
+     1993,
+     79,
+     2
+    ],
+    [
+     1994,
+     83,
+     3
+    ],
+    [
+     1995,
+     178,
+     4
+    ],
+    [
+     1996,
+     75,
+     1
+    ],
+    [
+     1997,
+     45,
+     2
+    ],
+    [
+     1998,
+     25,
+     0
+    ],
+    [
+     1999,
+     25,
+     0
+    ],
+    [
+     2000,
+     13,
+     1
+    ],
+    [
+     2001,
+     10,
+     1
+    ],
+    [
+     2002,
+     4,
+     0
+    ]
+   ],
+   "Holloman AFB (Alamogordo AAF)": [
+    [
+     1823,
+     1,
+     0
+    ],
+    [
+     1828,
+     1,
+     0
+    ],
+    [
+     1860,
+     1,
+     0
+    ],
+    [
+     1868,
+     1,
+     0
+    ],
+    [
+     1878,
+     2,
+     0
+    ],
+    [
+     1880,
+     2,
+     1
+    ],
+    [
+     1883,
+     1,
+     0
+    ],
+    [
+     1884,
+     1,
+     0
+    ],
+    [
+     1891,
+     1,
+     0
+    ],
+    [
+     1893,
+     1,
+     0
+    ],
+    [
+     1896,
+     4,
+     0
+    ],
+    [
+     1897,
+     15,
+     0
+    ],
+    [
+     1901,
+     1,
+     1
+    ],
+    [
+     1905,
+     1,
+     0
+    ],
+    [
+     1906,
+     1,
+     0
+    ],
+    [
+     1907,
+     1,
+     0
+    ],
+    [
+     1908,
+     1,
+     0
+    ],
+    [
+     1909,
+     2,
+     0
+    ],
+    [
+     1910,
+     5,
+     0
+    ],
+    [
+     1915,
+     1,
+     0
+    ],
+    [
+     1916,
+     2,
+     0
+    ],
+    [
+     1917,
+     2,
+     0
+    ],
+    [
+     1919,
+     1,
+     0
+    ],
+    [
+     1920,
+     2,
+     0
+    ],
+    [
+     1923,
+     1,
+     0
+    ],
+    [
+     1924,
+     1,
+     0
+    ],
+    [
+     1925,
+     1,
+     0
+    ],
+    [
+     1926,
+     3,
+     0
+    ],
+    [
+     1927,
+     3,
+     0
+    ],
+    [
+     1928,
+     2,
+     0
+    ],
+    [
+     1930,
+     1,
+     0
+    ],
+    [
+     1931,
+     2,
+     0
+    ],
+    [
+     1932,
+     2,
+     1
+    ],
+    [
+     1933,
+     3,
+     0
+    ],
+    [
+     1934,
+     2,
+     0
+    ],
+    [
+     1935,
+     1,
+     0
+    ],
+    [
+     1936,
+     2,
+     0
+    ],
+    [
+     1937,
+     1,
+     0
+    ],
+    [
+     1938,
+     1,
+     0
+    ],
+    [
+     1940,
+     3,
+     0
+    ],
+    [
+     1941,
+     1,
+     0
+    ],
+    [
+     1942,
+     2,
+     0
+    ],
+    [
+     1943,
+     2,
+     0
+    ],
+    [
+     1944,
+     5,
+     1
+    ],
+    [
+     1945,
+     5,
+     1
+    ],
+    [
+     1946,
+     8,
+     1
+    ],
+    [
+     1947,
+     114,
+     4
+    ],
+    [
+     1948,
+     37,
+     3
+    ],
+    [
+     1949,
+     78,
+     5
+    ],
+    [
+     1950,
+     158,
+     8
+    ],
+    [
+     1951,
+     70,
+     5
+    ],
+    [
+     1952,
+     257,
+     7
+    ],
+    [
+     1953,
+     129,
+     4
+    ],
+    [
+     1954,
+     150,
+     3
+    ],
+    [
+     1955,
+     117,
+     1
+    ],
+    [
+     1956,
+     151,
+     3
+    ],
+    [
+     1957,
+     163,
+     5
+    ],
+    [
+     1958,
+     90,
+     6
+    ],
+    [
+     1959,
+     93,
+     4
+    ],
+    [
+     1960,
+     50,
+     1
+    ],
+    [
+     1961,
+     45,
+     2
+    ],
+    [
+     1962,
+     39,
+     1
+    ],
+    [
+     1963,
+     46,
+     1
+    ],
+    [
+     1964,
+     73,
+     6
+    ],
+    [
+     1965,
+     107,
+     2
+    ],
+    [
+     1966,
+     171,
+     3
+    ],
+    [
+     1967,
+     206,
+     3
+    ],
+    [
+     1968,
+     87,
+     1
+    ],
+    [
+     1969,
+     44,
+     0
+    ],
+    [
+     1970,
+     38,
+     0
+    ],
+    [
+     1971,
+     40,
+     0
+    ],
+    [
+     1972,
+     67,
+     3
+    ],
+    [
+     1973,
+     135,
+     1
+    ],
+    [
+     1974,
+     78,
+     6
+    ],
+    [
+     1975,
+     100,
+     2
+    ],
+    [
+     1976,
+     85,
+     2
+    ],
+    [
+     1977,
+     92,
+     1
+    ],
+    [
+     1978,
+     109,
+     0
+    ],
+    [
+     1979,
+     77,
+     0
+    ],
+    [
+     1980,
+     47,
+     2
+    ],
+    [
+     1981,
+     46,
+     1
+    ],
+    [
+     1982,
+     60,
+     0
+    ],
+    [
+     1983,
+     37,
+     0
+    ],
+    [
+     1984,
+     63,
+     0
+    ],
+    [
+     1985,
+     28,
+     0
+    ],
+    [
+     1986,
+     81,
+     0
+    ],
+    [
+     1987,
+     37,
+     0
+    ],
+    [
+     1988,
+     41,
+     1
+    ],
+    [
+     1989,
+     89,
+     0
+    ],
+    [
+     1990,
+     63,
+     1
+    ],
+    [
+     1991,
+     36,
+     0
+    ],
+    [
+     1992,
+     81,
+     0
+    ],
+    [
+     1993,
+     79,
+     0
+    ],
+    [
+     1994,
+     83,
+     1
+    ],
+    [
+     1995,
+     178,
+     0
+    ],
+    [
+     1996,
+     75,
+     1
+    ],
+    [
+     1997,
+     45,
+     0
+    ],
+    [
+     1998,
+     25,
+     2
+    ],
+    [
+     1999,
+     25,
+     0
+    ],
+    [
+     2000,
+     13,
+     0
+    ],
+    [
+     2001,
+     10,
+     0
+    ],
+    [
+     2002,
+     4,
+     0
+    ]
+   ],
+   "Tonopah Test Range Airport": [
+    [
+     1823,
+     1,
+     0
+    ],
+    [
+     1828,
+     1,
+     0
+    ],
+    [
+     1860,
+     1,
+     0
+    ],
+    [
+     1868,
+     1,
+     0
+    ],
+    [
+     1878,
+     2,
+     0
+    ],
+    [
+     1880,
+     2,
+     0
+    ],
+    [
+     1883,
+     1,
+     0
+    ],
+    [
+     1884,
+     1,
+     0
+    ],
+    [
+     1891,
+     1,
+     0
+    ],
+    [
+     1893,
+     1,
+     0
+    ],
+    [
+     1896,
+     4,
+     0
+    ],
+    [
+     1897,
+     15,
+     0
+    ],
+    [
+     1901,
+     1,
+     0
+    ],
+    [
+     1905,
+     1,
+     0
+    ],
+    [
+     1906,
+     1,
+     0
+    ],
+    [
+     1907,
+     1,
+     0
+    ],
+    [
+     1908,
+     1,
+     0
+    ],
+    [
+     1909,
+     2,
+     0
+    ],
+    [
+     1910,
+     5,
+     0
+    ],
+    [
+     1915,
+     1,
+     0
+    ],
+    [
+     1916,
+     2,
+     0
+    ],
+    [
+     1917,
+     2,
+     0
+    ],
+    [
+     1919,
+     1,
+     0
+    ],
+    [
+     1920,
+     2,
+     0
+    ],
+    [
+     1923,
+     1,
+     0
+    ],
+    [
+     1924,
+     1,
+     0
+    ],
+    [
+     1925,
+     1,
+     0
+    ],
+    [
+     1926,
+     3,
+     1
+    ],
+    [
+     1927,
+     3,
+     0
+    ],
+    [
+     1928,
+     2,
+     0
+    ],
+    [
+     1930,
+     1,
+     0
+    ],
+    [
+     1931,
+     2,
+     0
+    ],
+    [
+     1932,
+     2,
+     0
+    ],
+    [
+     1933,
+     3,
+     0
+    ],
+    [
+     1934,
+     2,
+     0
+    ],
+    [
+     1935,
+     1,
+     0
+    ],
+    [
+     1936,
+     2,
+     0
+    ],
+    [
+     1937,
+     1,
+     0
+    ],
+    [
+     1938,
+     1,
+     0
+    ],
+    [
+     1940,
+     3,
+     0
+    ],
+    [
+     1941,
+     1,
+     1
+    ],
+    [
+     1942,
+     2,
+     0
+    ],
+    [
+     1943,
+     2,
+     0
+    ],
+    [
+     1944,
+     5,
+     0
+    ],
+    [
+     1945,
+     5,
+     0
+    ],
+    [
+     1946,
+     8,
+     0
+    ],
+    [
+     1947,
+     114,
+     4
+    ],
+    [
+     1948,
+     37,
+     0
+    ],
+    [
+     1949,
+     78,
+     0
+    ],
+    [
+     1950,
+     158,
+     2
+    ],
+    [
+     1951,
+     70,
+     3
+    ],
+    [
+     1952,
+     257,
+     3
+    ],
+    [
+     1953,
+     129,
+     3
+    ],
+    [
+     1954,
+     150,
+     1
+    ],
+    [
+     1955,
+     117,
+     2
+    ],
+    [
+     1956,
+     151,
+     3
+    ],
+    [
+     1957,
+     163,
+     1
+    ],
+    [
+     1958,
+     90,
+     2
+    ],
+    [
+     1959,
+     93,
+     2
+    ],
+    [
+     1960,
+     50,
+     0
+    ],
+    [
+     1961,
+     45,
+     2
+    ],
+    [
+     1962,
+     39,
+     2
+    ],
+    [
+     1963,
+     46,
+     2
+    ],
+    [
+     1964,
+     73,
+     3
+    ],
+    [
+     1965,
+     107,
+     0
+    ],
+    [
+     1966,
+     171,
+     1
+    ],
+    [
+     1967,
+     206,
+     3
+    ],
+    [
+     1968,
+     87,
+     3
+    ],
+    [
+     1969,
+     44,
+     0
+    ],
+    [
+     1970,
+     38,
+     1
+    ],
+    [
+     1971,
+     40,
+     0
+    ],
+    [
+     1972,
+     67,
+     0
+    ],
+    [
+     1973,
+     135,
+     1
+    ],
+    [
+     1974,
+     78,
+     0
+    ],
+    [
+     1975,
+     100,
+     0
+    ],
+    [
+     1976,
+     85,
+     2
+    ],
+    [
+     1977,
+     92,
+     0
+    ],
+    [
+     1978,
+     109,
+     0
+    ],
+    [
+     1979,
+     77,
+     0
+    ],
+    [
+     1980,
+     47,
+     0
+    ],
+    [
+     1981,
+     46,
+     1
+    ],
+    [
+     1982,
+     60,
+     1
+    ],
+    [
+     1983,
+     37,
+     0
+    ],
+    [
+     1984,
+     63,
+     0
+    ],
+    [
+     1985,
+     28,
+     0
+    ],
+    [
+     1986,
+     81,
+     0
+    ],
+    [
+     1987,
+     37,
+     0
+    ],
+    [
+     1988,
+     41,
+     2
+    ],
+    [
+     1989,
+     89,
+     1
+    ],
+    [
+     1990,
+     63,
+     1
+    ],
+    [
+     1991,
+     36,
+     1
+    ],
+    [
+     1992,
+     81,
+     1
+    ],
+    [
+     1993,
+     79,
+     2
+    ],
+    [
+     1994,
+     83,
+     4
+    ],
+    [
+     1995,
+     178,
+     3
+    ],
+    [
+     1996,
+     75,
+     1
+    ],
+    [
+     1997,
+     45,
+     2
+    ],
+    [
+     1998,
+     25,
+     0
+    ],
+    [
+     1999,
+     25,
+     0
+    ],
+    [
+     2000,
+     13,
+     1
+    ],
+    [
+     2001,
+     10,
+     1
+    ],
+    [
+     2002,
+     4,
+     0
+    ]
+   ]
+  },
+  "hatch:BBK": {
+   "Groom Lake": [
+    [
+     1947,
+     52,
+     1
+    ],
+    [
+     1948,
+     28,
+     0
+    ],
+    [
+     1949,
+     58,
+     0
+    ],
+    [
+     1950,
+     96,
+     1
+    ],
+    [
+     1951,
+     41,
+     0
+    ],
+    [
+     1952,
+     402,
+     2
+    ],
+    [
+     1953,
+     102,
+     0
+    ],
+    [
+     1954,
+     90,
+     2
+    ],
+    [
+     1955,
+     72,
+     2
+    ],
+    [
+     1956,
+     77,
+     2
+    ],
+    [
+     1957,
+     60,
+     1
+    ],
+    [
+     1958,
+     17,
+     1
+    ],
+    [
+     1959,
+     25,
+     1
+    ],
+    [
+     1960,
+     18,
+     1
+    ],
+    [
+     1961,
+     23,
+     2
+    ],
+    [
+     1962,
+     20,
+     3
+    ],
+    [
+     1963,
+     8,
+     0
+    ],
+    [
+     1964,
+     27,
+     0
+    ],
+    [
+     1965,
+     42,
+     0
+    ],
+    [
+     1966,
+     70,
+     0
+    ],
+    [
+     1967,
+     54,
+     1
+    ],
+    [
+     1968,
+     8,
+     0
+    ],
+    [
+     1969,
+     4,
+     0
+    ]
+   ],
+   "Holloman AFB (Alamogordo AAF)": [
+    [
+     1947,
+     52,
+     1
+    ],
+    [
+     1948,
+     28,
+     1
+    ],
+    [
+     1949,
+     58,
+     6
+    ],
+    [
+     1950,
+     96,
+     11
+    ],
+    [
+     1951,
+     41,
+     6
+    ],
+    [
+     1952,
+     402,
+     28
+    ],
+    [
+     1953,
+     102,
+     2
+    ],
+    [
+     1954,
+     90,
+     1
+    ],
+    [
+     1955,
+     72,
+     0
+    ],
+    [
+     1956,
+     77,
+     0
+    ],
+    [
+     1957,
+     60,
+     3
+    ],
+    [
+     1958,
+     17,
+     1
+    ],
+    [
+     1959,
+     25,
+     0
+    ],
+    [
+     1960,
+     18,
+     0
+    ],
+    [
+     1961,
+     23,
+     0
+    ],
+    [
+     1962,
+     20,
+     0
+    ],
+    [
+     1963,
+     8,
+     0
+    ],
+    [
+     1964,
+     27,
+     1
+    ],
+    [
+     1965,
+     42,
+     2
+    ],
+    [
+     1966,
+     70,
+     0
+    ],
+    [
+     1967,
+     54,
+     0
+    ],
+    [
+     1968,
+     8,
+     0
+    ],
+    [
+     1969,
+     4,
+     0
+    ]
+   ],
+   "Tonopah Test Range Airport": [
+    [
+     1947,
+     52,
+     1
+    ],
+    [
+     1948,
+     28,
+     0
+    ],
+    [
+     1949,
+     58,
+     0
+    ],
+    [
+     1950,
+     96,
+     1
+    ],
+    [
+     1951,
+     41,
+     0
+    ],
+    [
+     1952,
+     402,
+     3
+    ],
+    [
+     1953,
+     102,
+     1
+    ],
+    [
+     1954,
+     90,
+     1
+    ],
+    [
+     1955,
+     72,
+     3
+    ],
+    [
+     1956,
+     77,
+     3
+    ],
+    [
+     1957,
+     60,
+     1
+    ],
+    [
+     1958,
+     17,
+     1
+    ],
+    [
+     1959,
+     25,
+     1
+    ],
+    [
+     1960,
+     18,
+     1
+    ],
+    [
+     1961,
+     23,
+     2
+    ],
+    [
+     1962,
+     20,
+     3
+    ],
+    [
+     1963,
+     8,
+     0
+    ],
+    [
+     1964,
+     27,
+     1
+    ],
+    [
+     1965,
+     42,
+     0
+    ],
+    [
+     1966,
+     70,
+     0
+    ],
+    [
+     1967,
+     54,
+     1
+    ],
+    [
+     1968,
+     8,
+     0
+    ],
+    [
+     1969,
+     4,
+     0
+    ]
+   ]
+  },
+  "hatch:BBK, one per state+month": {
+   "Groom Lake": [
+    [
+     1947,
+     38,
+     1
+    ],
+    [
+     1948,
+     24,
+     0
+    ],
+    [
+     1949,
+     51,
+     0
+    ],
+    [
+     1950,
+     77,
+     1
+    ],
+    [
+     1951,
+     35,
+     0
+    ],
+    [
+     1952,
+     174,
+     2
+    ],
+    [
+     1953,
+     76,
+     0
+    ],
+    [
+     1954,
+     69,
+     1
+    ],
+    [
+     1955,
+     60,
+     1
+    ],
+    [
+     1956,
+     61,
+     1
+    ],
+    [
+     1957,
+     43,
+     1
+    ],
+    [
+     1958,
+     16,
+     1
+    ],
+    [
+     1959,
+     25,
+     1
+    ],
+    [
+     1960,
+     14,
+     1
+    ],
+    [
+     1961,
+     20,
+     2
+    ],
+    [
+     1962,
+     18,
+     3
+    ],
+    [
+     1963,
+     8,
+     0
+    ],
+    [
+     1964,
+     26,
+     0
+    ],
+    [
+     1965,
+     34,
+     0
+    ],
+    [
+     1966,
+     62,
+     0
+    ],
+    [
+     1967,
+     43,
+     1
+    ],
+    [
+     1968,
+     7,
+     0
+    ],
+    [
+     1969,
+     4,
+     0
+    ]
+   ],
+   "Holloman AFB (Alamogordo AAF)": [
+    [
+     1947,
+     38,
+     1
+    ],
+    [
+     1948,
+     24,
+     1
+    ],
+    [
+     1949,
+     51,
+     5
+    ],
+    [
+     1950,
+     77,
+     7
+    ],
+    [
+     1951,
+     35,
+     4
+    ],
+    [
+     1952,
+     174,
+     6
+    ],
+    [
+     1953,
+     76,
+     2
+    ],
+    [
+     1954,
+     69,
+     1
+    ],
+    [
+     1955,
+     60,
+     0
+    ],
+    [
+     1956,
+     61,
+     0
+    ],
+    [
+     1957,
+     43,
+     2
+    ],
+    [
+     1958,
+     16,
+     1
+    ],
+    [
+     1959,
+     25,
+     0
+    ],
+    [
+     1960,
+     14,
+     0
+    ],
+    [
+     1961,
+     20,
+     0
+    ],
+    [
+     1962,
+     18,
+     0
+    ],
+    [
+     1963,
+     8,
+     0
+    ],
+    [
+     1964,
+     26,
+     0
+    ],
+    [
+     1965,
+     34,
+     2
+    ],
+    [
+     1966,
+     62,
+     0
+    ],
+    [
+     1967,
+     43,
+     0
+    ],
+    [
+     1968,
+     7,
+     0
+    ],
+    [
+     1969,
+     4,
+     0
+    ]
+   ],
+   "Tonopah Test Range Airport": [
+    [
+     1947,
+     38,
+     1
+    ],
+    [
+     1948,
+     24,
+     0
+    ],
+    [
+     1949,
+     51,
+     0
+    ],
+    [
+     1950,
+     77,
+     1
+    ],
+    [
+     1951,
+     35,
+     0
+    ],
+    [
+     1952,
+     174,
+     2
+    ],
+    [
+     1953,
+     76,
+     1
+    ],
+    [
+     1954,
+     69,
+     1
+    ],
+    [
+     1955,
+     60,
+     2
+    ],
+    [
+     1956,
+     61,
+     2
+    ],
+    [
+     1957,
+     43,
+     1
+    ],
+    [
+     1958,
+     16,
+     1
+    ],
+    [
+     1959,
+     25,
+     1
+    ],
+    [
+     1960,
+     14,
+     1
+    ],
+    [
+     1961,
+     20,
+     2
+    ],
+    [
+     1962,
+     18,
+     3
+    ],
+    [
+     1963,
+     8,
+     0
+    ],
+    [
+     1964,
+     26,
+     1
+    ],
+    [
+     1965,
+     34,
+     0
+    ],
+    [
+     1966,
+     62,
+     0
+    ],
+    [
+     1967,
+     43,
+     1
+    ],
+    [
+     1968,
+     7,
+     0
+    ],
+    [
+     1969,
+     4,
+     0
+    ]
+   ]
+  }
+ },
+ "note": "Aggregates from PURSUE's programs, nuclear and Blue Book commands (Phase 6a parity reference)",
+ "nuclear": {
+  "results": [
+   {
+    "country": "USA",
+    "covered_days": 94,
+    "covered_days_null": 92.3,
+    "dataset": "hatch",
+    "events": "USA site near 37.1\u00b0N 116.1\u00b0W, air (105 tests, 1951-1963)",
+    "kind": "air",
+    "null_mean": 87.28,
+    "observed": 86,
+    "p_value": 0.5042,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USA site near 37.1\u00b0N 116.1\u00b0W",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 253,
+    "covered_days_null": 239.4,
+    "dataset": "hatch",
+    "events": "USA site near 37.1\u00b0N 116.1\u00b0W, air (105 tests, 1951-1963)",
+    "kind": "air",
+    "null_mean": 237.18,
+    "observed": 239,
+    "p_value": 0.4128,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USA site near 37.1\u00b0N 116.1\u00b0W",
+    "window_days": 2
+   },
+   {
+    "country": "USA",
+    "covered_days": 94,
+    "covered_days_null": 92.3,
+    "dataset": "hatch",
+    "events": "USA site near 37.1\u00b0N 116.1\u00b0W, air (105 tests, 1951-1963)",
+    "kind": "air",
+    "null_mean": 8.15,
+    "observed": 8,
+    "p_value": 0.5527,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 1053,
+    "site": "USA site near 37.1\u00b0N 116.1\u00b0W",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 253,
+    "covered_days_null": 239.4,
+    "dataset": "hatch",
+    "events": "USA site near 37.1\u00b0N 116.1\u00b0W, air (105 tests, 1951-1963)",
+    "kind": "air",
+    "null_mean": 22.05,
+    "observed": 19,
+    "p_value": 0.7576,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 1053,
+    "site": "USA site near 37.1\u00b0N 116.1\u00b0W",
+    "window_days": 2
+   },
+   {
+    "country": "USA",
+    "covered_days": 94,
+    "covered_days_null": 92.3,
+    "dataset": "nicap",
+    "events": "USA site near 37.1\u00b0N 116.1\u00b0W, air (105 tests, 1951-1963)",
+    "kind": "air",
+    "null_mean": 28.19,
+    "observed": 36,
+    "p_value": 0.0895,
+    "q_value": 0.9044,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USA site near 37.1\u00b0N 116.1\u00b0W",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 253,
+    "covered_days_null": 239.4,
+    "dataset": "nicap",
+    "events": "USA site near 37.1\u00b0N 116.1\u00b0W, air (105 tests, 1951-1963)",
+    "kind": "air",
+    "null_mean": 77.87,
+    "observed": 83,
+    "p_value": 0.2649,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USA site near 37.1\u00b0N 116.1\u00b0W",
+    "window_days": 2
+   },
+   {
+    "country": "USA",
+    "covered_days": 94,
+    "covered_days_null": 92.3,
+    "dataset": "bluebook-unknowns",
+    "events": "USA site near 37.1\u00b0N 116.1\u00b0W, air (105 tests, 1951-1963)",
+    "kind": "air",
+    "null_mean": 7.83,
+    "observed": 12,
+    "p_value": 0.1159,
+    "q_value": 0.925,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USA site near 37.1\u00b0N 116.1\u00b0W",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 253,
+    "covered_days_null": 239.4,
+    "dataset": "bluebook-unknowns",
+    "events": "USA site near 37.1\u00b0N 116.1\u00b0W, air (105 tests, 1951-1963)",
+    "kind": "air",
+    "null_mean": 22.79,
+    "observed": 26,
+    "p_value": 0.2699,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USA site near 37.1\u00b0N 116.1\u00b0W",
+    "window_days": 2
+   },
+   {
+    "country": "USA",
+    "covered_days": 732,
+    "covered_days_null": 714.0,
+    "dataset": "hatch",
+    "events": "USA site near 37.1\u00b0N 116.1\u00b0W, underground (828 tests, 1951-1992)",
+    "kind": "underground",
+    "null_mean": 600.95,
+    "observed": 604,
+    "p_value": 0.4568,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USA site near 37.1\u00b0N 116.1\u00b0W",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 2043,
+    "covered_days_null": 1907.7,
+    "dataset": "hatch",
+    "events": "USA site near 37.1\u00b0N 116.1\u00b0W, underground (828 tests, 1951-1992)",
+    "kind": "underground",
+    "null_mean": 1674.03,
+    "observed": 1670,
+    "p_value": 0.5277,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USA site near 37.1\u00b0N 116.1\u00b0W",
+    "window_days": 2
+   },
+   {
+    "country": "USA",
+    "covered_days": 732,
+    "covered_days_null": 714.0,
+    "dataset": "hatch",
+    "events": "USA site near 37.1\u00b0N 116.1\u00b0W, underground (828 tests, 1951-1992)",
+    "kind": "underground",
+    "null_mean": 25.64,
+    "observed": 27,
+    "p_value": 0.3753,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 1053,
+    "site": "USA site near 37.1\u00b0N 116.1\u00b0W",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 2043,
+    "covered_days_null": 1907.7,
+    "dataset": "hatch",
+    "events": "USA site near 37.1\u00b0N 116.1\u00b0W, underground (828 tests, 1951-1992)",
+    "kind": "underground",
+    "null_mean": 72.16,
+    "observed": 73,
+    "p_value": 0.4598,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 1053,
+    "site": "USA site near 37.1\u00b0N 116.1\u00b0W",
+    "window_days": 2
+   },
+   {
+    "country": "USA",
+    "covered_days": 732,
+    "covered_days_null": 714.0,
+    "dataset": "nicap",
+    "events": "USA site near 37.1\u00b0N 116.1\u00b0W, underground (828 tests, 1951-1992)",
+    "kind": "underground",
+    "null_mean": 170.21,
+    "observed": 176,
+    "p_value": 0.3768,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USA site near 37.1\u00b0N 116.1\u00b0W",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 2043,
+    "covered_days_null": 1907.7,
+    "dataset": "nicap",
+    "events": "USA site near 37.1\u00b0N 116.1\u00b0W, underground (828 tests, 1951-1992)",
+    "kind": "underground",
+    "null_mean": 451.18,
+    "observed": 431,
+    "p_value": 0.7191,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USA site near 37.1\u00b0N 116.1\u00b0W",
+    "window_days": 2
+   },
+   {
+    "country": "USA",
+    "covered_days": 732,
+    "covered_days_null": 714.0,
+    "dataset": "bluebook-unknowns",
+    "events": "USA site near 37.1\u00b0N 116.1\u00b0W, underground (828 tests, 1951-1992)",
+    "kind": "underground",
+    "null_mean": 12.67,
+    "observed": 11,
+    "p_value": 0.6892,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USA site near 37.1\u00b0N 116.1\u00b0W",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 2043,
+    "covered_days_null": 1907.7,
+    "dataset": "bluebook-unknowns",
+    "events": "USA site near 37.1\u00b0N 116.1\u00b0W, underground (828 tests, 1951-1992)",
+    "kind": "underground",
+    "null_mean": 33.15,
+    "observed": 31,
+    "p_value": 0.6507,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USA site near 37.1\u00b0N 116.1\u00b0W",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 111,
+    "covered_days_null": 107.8,
+    "dataset": "hatch",
+    "events": "USSR site near 50.0\u00b0N 78.2\u00b0E, air (116 tests, 1949-1962)",
+    "kind": "air",
+    "null_mean": 144.46,
+    "observed": 176,
+    "p_value": 0.1819,
+    "q_value": 0.925,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USSR site near 50.0\u00b0N 78.2\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 263,
+    "covered_days_null": 246.9,
+    "dataset": "hatch",
+    "events": "USSR site near 50.0\u00b0N 78.2\u00b0E, air (116 tests, 1949-1962)",
+    "kind": "air",
+    "null_mean": 372.54,
+    "observed": 445,
+    "p_value": 0.1889,
+    "q_value": 0.925,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USSR site near 50.0\u00b0N 78.2\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 111,
+    "covered_days_null": 107.8,
+    "dataset": "hatch",
+    "events": "USSR site near 50.0\u00b0N 78.2\u00b0E, air (116 tests, 1949-1962)",
+    "kind": "air",
+    "null_mean": 0.02,
+    "observed": 1,
+    "p_value": 0.0195,
+    "q_value": 0.9044,
+    "radius_km": 600.0,
+    "sightings": 3,
+    "site": "USSR site near 50.0\u00b0N 78.2\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 263,
+    "covered_days_null": 246.9,
+    "dataset": "hatch",
+    "events": "USSR site near 50.0\u00b0N 78.2\u00b0E, air (116 tests, 1949-1962)",
+    "kind": "air",
+    "null_mean": 0.05,
+    "observed": 1,
+    "p_value": 0.0485,
+    "q_value": 0.9044,
+    "radius_km": 600.0,
+    "sightings": 3,
+    "site": "USSR site near 50.0\u00b0N 78.2\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 111,
+    "covered_days_null": 107.8,
+    "dataset": "nicap",
+    "events": "USSR site near 50.0\u00b0N 78.2\u00b0E, air (116 tests, 1949-1962)",
+    "kind": "air",
+    "null_mean": 19.6,
+    "observed": 23,
+    "p_value": 0.2489,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USSR site near 50.0\u00b0N 78.2\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 263,
+    "covered_days_null": 246.9,
+    "dataset": "nicap",
+    "events": "USSR site near 50.0\u00b0N 78.2\u00b0E, air (116 tests, 1949-1962)",
+    "kind": "air",
+    "null_mean": 48.64,
+    "observed": 38,
+    "p_value": 0.909,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USSR site near 50.0\u00b0N 78.2\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 111,
+    "covered_days_null": 107.8,
+    "dataset": "bluebook-unknowns",
+    "events": "USSR site near 50.0\u00b0N 78.2\u00b0E, air (116 tests, 1949-1962)",
+    "kind": "air",
+    "null_mean": 3.45,
+    "observed": 4,
+    "p_value": 0.4293,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USSR site near 50.0\u00b0N 78.2\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 263,
+    "covered_days_null": 246.9,
+    "dataset": "bluebook-unknowns",
+    "events": "USSR site near 50.0\u00b0N 78.2\u00b0E, air (116 tests, 1949-1962)",
+    "kind": "air",
+    "null_mean": 8.63,
+    "observed": 5,
+    "p_value": 0.9275,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USSR site near 50.0\u00b0N 78.2\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 321,
+    "covered_days_null": 316.9,
+    "dataset": "hatch",
+    "events": "USSR site near 50.0\u00b0N 78.2\u00b0E, underground (340 tests, 1961-1989)",
+    "kind": "underground",
+    "null_mean": 276.36,
+    "observed": 269,
+    "p_value": 0.6462,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USSR site near 50.0\u00b0N 78.2\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 952,
+    "covered_days_null": 916.8,
+    "dataset": "hatch",
+    "events": "USSR site near 50.0\u00b0N 78.2\u00b0E, underground (340 tests, 1961-1989)",
+    "kind": "underground",
+    "null_mean": 824.26,
+    "observed": 822,
+    "p_value": 0.5097,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USSR site near 50.0\u00b0N 78.2\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 321,
+    "covered_days_null": 316.9,
+    "dataset": "hatch",
+    "events": "USSR site near 50.0\u00b0N 78.2\u00b0E, underground (340 tests, 1961-1989)",
+    "kind": "underground",
+    "null_mean": 0.08,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 3,
+    "site": "USSR site near 50.0\u00b0N 78.2\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 952,
+    "covered_days_null": 916.8,
+    "dataset": "hatch",
+    "events": "USSR site near 50.0\u00b0N 78.2\u00b0E, underground (340 tests, 1961-1989)",
+    "kind": "underground",
+    "null_mean": 0.25,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 3,
+    "site": "USSR site near 50.0\u00b0N 78.2\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 321,
+    "covered_days_null": 316.9,
+    "dataset": "nicap",
+    "events": "USSR site near 50.0\u00b0N 78.2\u00b0E, underground (340 tests, 1961-1989)",
+    "kind": "underground",
+    "null_mean": 66.56,
+    "observed": 70,
+    "p_value": 0.3538,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USSR site near 50.0\u00b0N 78.2\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 952,
+    "covered_days_null": 916.8,
+    "dataset": "nicap",
+    "events": "USSR site near 50.0\u00b0N 78.2\u00b0E, underground (340 tests, 1961-1989)",
+    "kind": "underground",
+    "null_mean": 197.95,
+    "observed": 174,
+    "p_value": 0.8526,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USSR site near 50.0\u00b0N 78.2\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 321,
+    "covered_days_null": 316.9,
+    "dataset": "bluebook-unknowns",
+    "events": "USSR site near 50.0\u00b0N 78.2\u00b0E, underground (340 tests, 1961-1989)",
+    "kind": "underground",
+    "null_mean": 2.86,
+    "observed": 5,
+    "p_value": 0.1669,
+    "q_value": 0.925,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USSR site near 50.0\u00b0N 78.2\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 952,
+    "covered_days_null": 916.8,
+    "dataset": "bluebook-unknowns",
+    "events": "USSR site near 50.0\u00b0N 78.2\u00b0E, underground (340 tests, 1961-1989)",
+    "kind": "underground",
+    "null_mean": 8.51,
+    "observed": 13,
+    "p_value": 0.066,
+    "q_value": 0.9044,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USSR site near 50.0\u00b0N 78.2\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "France",
+    "covered_days": 40,
+    "covered_days_null": 39.5,
+    "dataset": "hatch",
+    "events": "France site near 21.9\u00b0S 138.9\u00b0W, air (40 tests, 1966-1974)",
+    "kind": "air",
+    "null_mean": 47.3,
+    "observed": 51,
+    "p_value": 0.3268,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "France site near 21.9\u00b0S 138.9\u00b0W",
+    "window_days": 0
+   },
+   {
+    "country": "France",
+    "covered_days": 120,
+    "covered_days_null": 115.6,
+    "dataset": "hatch",
+    "events": "France site near 21.9\u00b0S 138.9\u00b0W, air (40 tests, 1966-1974)",
+    "kind": "air",
+    "null_mean": 142.08,
+    "observed": 135,
+    "p_value": 0.6697,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "France site near 21.9\u00b0S 138.9\u00b0W",
+    "window_days": 2
+   },
+   {
+    "country": "France",
+    "covered_days": 40,
+    "covered_days_null": 39.5,
+    "dataset": "nicap",
+    "events": "France site near 21.9\u00b0S 138.9\u00b0W, air (40 tests, 1966-1974)",
+    "kind": "air",
+    "null_mean": 8.81,
+    "observed": 6,
+    "p_value": 0.8536,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "France site near 21.9\u00b0S 138.9\u00b0W",
+    "window_days": 0
+   },
+   {
+    "country": "France",
+    "covered_days": 120,
+    "covered_days_null": 115.6,
+    "dataset": "nicap",
+    "events": "France site near 21.9\u00b0S 138.9\u00b0W, air (40 tests, 1966-1974)",
+    "kind": "air",
+    "null_mean": 26.78,
+    "observed": 24,
+    "p_value": 0.6932,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "France site near 21.9\u00b0S 138.9\u00b0W",
+    "window_days": 2
+   },
+   {
+    "country": "France",
+    "covered_days": 40,
+    "covered_days_null": 39.5,
+    "dataset": "bluebook-unknowns",
+    "events": "France site near 21.9\u00b0S 138.9\u00b0W, air (40 tests, 1966-1974)",
+    "kind": "air",
+    "null_mean": 0.72,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "France site near 21.9\u00b0S 138.9\u00b0W",
+    "window_days": 0
+   },
+   {
+    "country": "France",
+    "covered_days": 120,
+    "covered_days_null": 115.6,
+    "dataset": "bluebook-unknowns",
+    "events": "France site near 21.9\u00b0S 138.9\u00b0W, air (40 tests, 1966-1974)",
+    "kind": "air",
+    "null_mean": 2.23,
+    "observed": 3,
+    "p_value": 0.3578,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "France site near 21.9\u00b0S 138.9\u00b0W",
+    "window_days": 2
+   },
+   {
+    "country": "France",
+    "covered_days": 140,
+    "covered_days_null": 138.6,
+    "dataset": "hatch",
+    "events": "France site near 21.9\u00b0S 138.9\u00b0W, underground (140 tests, 1975-1996)",
+    "kind": "underground",
+    "null_mean": 88.19,
+    "observed": 110,
+    "p_value": 0.0565,
+    "q_value": 0.9044,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "France site near 21.9\u00b0S 138.9\u00b0W",
+    "window_days": 0
+   },
+   {
+    "country": "France",
+    "covered_days": 416,
+    "covered_days_null": 403.3,
+    "dataset": "hatch",
+    "events": "France site near 21.9\u00b0S 138.9\u00b0W, underground (140 tests, 1975-1996)",
+    "kind": "underground",
+    "null_mean": 261.18,
+    "observed": 286,
+    "p_value": 0.1309,
+    "q_value": 0.925,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "France site near 21.9\u00b0S 138.9\u00b0W",
+    "window_days": 2
+   },
+   {
+    "country": "France",
+    "covered_days": 140,
+    "covered_days_null": 138.6,
+    "dataset": "nicap",
+    "events": "France site near 21.9\u00b0S 138.9\u00b0W, underground (140 tests, 1975-1996)",
+    "kind": "underground",
+    "null_mean": 11.57,
+    "observed": 11,
+    "p_value": 0.5782,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "France site near 21.9\u00b0S 138.9\u00b0W",
+    "window_days": 0
+   },
+   {
+    "country": "France",
+    "covered_days": 416,
+    "covered_days_null": 403.3,
+    "dataset": "nicap",
+    "events": "France site near 21.9\u00b0S 138.9\u00b0W, underground (140 tests, 1975-1996)",
+    "kind": "underground",
+    "null_mean": 34.49,
+    "observed": 33,
+    "p_value": 0.5812,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "France site near 21.9\u00b0S 138.9\u00b0W",
+    "window_days": 2
+   },
+   {
+    "country": "France",
+    "covered_days": 140,
+    "covered_days_null": 138.6,
+    "dataset": "bluebook-unknowns",
+    "events": "France site near 21.9\u00b0S 138.9\u00b0W, underground (140 tests, 1975-1996)",
+    "kind": "underground",
+    "null_mean": 0.0,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "France site near 21.9\u00b0S 138.9\u00b0W",
+    "window_days": 0
+   },
+   {
+    "country": "France",
+    "covered_days": 416,
+    "covered_days_null": 403.3,
+    "dataset": "bluebook-unknowns",
+    "events": "France site near 21.9\u00b0S 138.9\u00b0W, underground (140 tests, 1975-1996)",
+    "kind": "underground",
+    "null_mean": 0.0,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "France site near 21.9\u00b0S 138.9\u00b0W",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 57,
+    "covered_days_null": 55.7,
+    "dataset": "hatch",
+    "events": "USSR site near 73.6\u00b0N 54.7\u00b0E, air (72 tests, 1957-1962)",
+    "kind": "air",
+    "null_mean": 32.73,
+    "observed": 31,
+    "p_value": 0.5977,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USSR site near 73.6\u00b0N 54.7\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 129,
+    "covered_days_null": 121.1,
+    "dataset": "hatch",
+    "events": "USSR site near 73.6\u00b0N 54.7\u00b0E, air (72 tests, 1957-1962)",
+    "kind": "air",
+    "null_mean": 76.79,
+    "observed": 86,
+    "p_value": 0.1414,
+    "q_value": 0.925,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USSR site near 73.6\u00b0N 54.7\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 57,
+    "covered_days_null": 55.7,
+    "dataset": "nicap",
+    "events": "USSR site near 73.6\u00b0N 54.7\u00b0E, air (72 tests, 1957-1962)",
+    "kind": "air",
+    "null_mean": 10.21,
+    "observed": 12,
+    "p_value": 0.2904,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USSR site near 73.6\u00b0N 54.7\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 129,
+    "covered_days_null": 121.1,
+    "dataset": "nicap",
+    "events": "USSR site near 73.6\u00b0N 54.7\u00b0E, air (72 tests, 1957-1962)",
+    "kind": "air",
+    "null_mean": 24.08,
+    "observed": 31,
+    "p_value": 0.097,
+    "q_value": 0.9044,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USSR site near 73.6\u00b0N 54.7\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 57,
+    "covered_days_null": 55.7,
+    "dataset": "bluebook-unknowns",
+    "events": "USSR site near 73.6\u00b0N 54.7\u00b0E, air (72 tests, 1957-1962)",
+    "kind": "air",
+    "null_mean": 1.34,
+    "observed": 2,
+    "p_value": 0.3678,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USSR site near 73.6\u00b0N 54.7\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 129,
+    "covered_days_null": 121.1,
+    "dataset": "bluebook-unknowns",
+    "events": "USSR site near 73.6\u00b0N 54.7\u00b0E, air (72 tests, 1957-1962)",
+    "kind": "air",
+    "null_mean": 3.0,
+    "observed": 5,
+    "p_value": 0.1019,
+    "q_value": 0.9044,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USSR site near 73.6\u00b0N 54.7\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 34,
+    "covered_days_null": 33.9,
+    "dataset": "hatch",
+    "events": "USSR site near 73.6\u00b0N 54.7\u00b0E, underground (35 tests, 1964-1990)",
+    "kind": "underground",
+    "null_mean": 34.83,
+    "observed": 34,
+    "p_value": 0.5372,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USSR site near 73.6\u00b0N 54.7\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 102,
+    "covered_days_null": 101.5,
+    "dataset": "hatch",
+    "events": "USSR site near 73.6\u00b0N 54.7\u00b0E, underground (35 tests, 1964-1990)",
+    "kind": "underground",
+    "null_mean": 105.05,
+    "observed": 95,
+    "p_value": 0.7526,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USSR site near 73.6\u00b0N 54.7\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 34,
+    "covered_days_null": 33.9,
+    "dataset": "nicap",
+    "events": "USSR site near 73.6\u00b0N 54.7\u00b0E, underground (35 tests, 1964-1990)",
+    "kind": "underground",
+    "null_mean": 5.59,
+    "observed": 4,
+    "p_value": 0.7761,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USSR site near 73.6\u00b0N 54.7\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 102,
+    "covered_days_null": 101.5,
+    "dataset": "nicap",
+    "events": "USSR site near 73.6\u00b0N 54.7\u00b0E, underground (35 tests, 1964-1990)",
+    "kind": "underground",
+    "null_mean": 16.85,
+    "observed": 15,
+    "p_value": 0.6722,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USSR site near 73.6\u00b0N 54.7\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 34,
+    "covered_days_null": 33.9,
+    "dataset": "bluebook-unknowns",
+    "events": "USSR site near 73.6\u00b0N 54.7\u00b0E, underground (35 tests, 1964-1990)",
+    "kind": "underground",
+    "null_mean": 0.14,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USSR site near 73.6\u00b0N 54.7\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 102,
+    "covered_days_null": 101.5,
+    "dataset": "bluebook-unknowns",
+    "events": "USSR site near 73.6\u00b0N 54.7\u00b0E, underground (35 tests, 1964-1990)",
+    "kind": "underground",
+    "null_mean": 0.43,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USSR site near 73.6\u00b0N 54.7\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USA",
+    "covered_days": 41,
+    "covered_days_null": 39.6,
+    "dataset": "hatch",
+    "events": "USA site near 11.5\u00b0N 162.2\u00b0E, air (42 tests, 1948-1958)",
+    "kind": "air",
+    "null_mean": 26.82,
+    "observed": 36,
+    "p_value": 0.0565,
+    "q_value": 0.9044,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USA site near 11.5\u00b0N 162.2\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 115,
+    "covered_days_null": 105.4,
+    "dataset": "hatch",
+    "events": "USA site near 11.5\u00b0N 162.2\u00b0E, air (42 tests, 1948-1958)",
+    "kind": "air",
+    "null_mean": 78.02,
+    "observed": 80,
+    "p_value": 0.4253,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USA site near 11.5\u00b0N 162.2\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USA",
+    "covered_days": 41,
+    "covered_days_null": 39.6,
+    "dataset": "hatch",
+    "events": "USA site near 11.5\u00b0N 162.2\u00b0E, air (42 tests, 1948-1958)",
+    "kind": "air",
+    "null_mean": 0.0,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 2,
+    "site": "USA site near 11.5\u00b0N 162.2\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 115,
+    "covered_days_null": 105.4,
+    "dataset": "hatch",
+    "events": "USA site near 11.5\u00b0N 162.2\u00b0E, air (42 tests, 1948-1958)",
+    "kind": "air",
+    "null_mean": 0.0,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 2,
+    "site": "USA site near 11.5\u00b0N 162.2\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USA",
+    "covered_days": 41,
+    "covered_days_null": 39.6,
+    "dataset": "nicap",
+    "events": "USA site near 11.5\u00b0N 162.2\u00b0E, air (42 tests, 1948-1958)",
+    "kind": "air",
+    "null_mean": 6.46,
+    "observed": 7,
+    "p_value": 0.4348,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USA site near 11.5\u00b0N 162.2\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 115,
+    "covered_days_null": 105.4,
+    "dataset": "nicap",
+    "events": "USA site near 11.5\u00b0N 162.2\u00b0E, air (42 tests, 1948-1958)",
+    "kind": "air",
+    "null_mean": 18.4,
+    "observed": 13,
+    "p_value": 0.8786,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USA site near 11.5\u00b0N 162.2\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USA",
+    "covered_days": 41,
+    "covered_days_null": 39.6,
+    "dataset": "bluebook-unknowns",
+    "events": "USA site near 11.5\u00b0N 162.2\u00b0E, air (42 tests, 1948-1958)",
+    "kind": "air",
+    "null_mean": 1.59,
+    "observed": 4,
+    "p_value": 0.07,
+    "q_value": 0.9044,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USA site near 11.5\u00b0N 162.2\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 115,
+    "covered_days_null": 105.4,
+    "dataset": "bluebook-unknowns",
+    "events": "USA site near 11.5\u00b0N 162.2\u00b0E, air (42 tests, 1948-1958)",
+    "kind": "air",
+    "null_mean": 4.5,
+    "observed": 5,
+    "p_value": 0.4068,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USA site near 11.5\u00b0N 162.2\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "China",
+    "covered_days": 15,
+    "covered_days_null": 15.0,
+    "dataset": "hatch",
+    "events": "China site near 41.6\u00b0N 88.6\u00b0E, air (15 tests, 1964-1978)",
+    "kind": "air",
+    "null_mean": 15.22,
+    "observed": 23,
+    "p_value": 0.0785,
+    "q_value": 0.9044,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "China site near 41.6\u00b0N 88.6\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "China",
+    "covered_days": 45,
+    "covered_days_null": 45.0,
+    "dataset": "hatch",
+    "events": "China site near 41.6\u00b0N 88.6\u00b0E, air (15 tests, 1964-1978)",
+    "kind": "air",
+    "null_mean": 45.73,
+    "observed": 49,
+    "p_value": 0.3498,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "China site near 41.6\u00b0N 88.6\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "China",
+    "covered_days": 15,
+    "covered_days_null": 15.0,
+    "dataset": "hatch",
+    "events": "China site near 41.6\u00b0N 88.6\u00b0E, air (15 tests, 1964-1978)",
+    "kind": "air",
+    "null_mean": 0.02,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 7,
+    "site": "China site near 41.6\u00b0N 88.6\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "China",
+    "covered_days": 45,
+    "covered_days_null": 45.0,
+    "dataset": "hatch",
+    "events": "China site near 41.6\u00b0N 88.6\u00b0E, air (15 tests, 1964-1978)",
+    "kind": "air",
+    "null_mean": 0.05,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 7,
+    "site": "China site near 41.6\u00b0N 88.6\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "China",
+    "covered_days": 15,
+    "covered_days_null": 15.0,
+    "dataset": "nicap",
+    "events": "China site near 41.6\u00b0N 88.6\u00b0E, air (15 tests, 1964-1978)",
+    "kind": "air",
+    "null_mean": 3.86,
+    "observed": 5,
+    "p_value": 0.3388,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "China site near 41.6\u00b0N 88.6\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "China",
+    "covered_days": 45,
+    "covered_days_null": 45.0,
+    "dataset": "nicap",
+    "events": "China site near 41.6\u00b0N 88.6\u00b0E, air (15 tests, 1964-1978)",
+    "kind": "air",
+    "null_mean": 11.51,
+    "observed": 10,
+    "p_value": 0.6192,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "China site near 41.6\u00b0N 88.6\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "China",
+    "covered_days": 15,
+    "covered_days_null": 15.0,
+    "dataset": "bluebook-unknowns",
+    "events": "China site near 41.6\u00b0N 88.6\u00b0E, air (15 tests, 1964-1978)",
+    "kind": "air",
+    "null_mean": 0.22,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "China site near 41.6\u00b0N 88.6\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "China",
+    "covered_days": 45,
+    "covered_days_null": 45.0,
+    "dataset": "bluebook-unknowns",
+    "events": "China site near 41.6\u00b0N 88.6\u00b0E, air (15 tests, 1964-1978)",
+    "kind": "air",
+    "null_mean": 0.62,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "China site near 41.6\u00b0N 88.6\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "China",
+    "covered_days": 23,
+    "covered_days_null": 23.0,
+    "dataset": "hatch",
+    "events": "China site near 41.6\u00b0N 88.6\u00b0E, underground (23 tests, 1969-1996)",
+    "kind": "underground",
+    "null_mean": 18.31,
+    "observed": 24,
+    "p_value": 0.1489,
+    "q_value": 0.925,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "China site near 41.6\u00b0N 88.6\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "China",
+    "covered_days": 69,
+    "covered_days_null": 69.0,
+    "dataset": "hatch",
+    "events": "China site near 41.6\u00b0N 88.6\u00b0E, underground (23 tests, 1969-1996)",
+    "kind": "underground",
+    "null_mean": 54.75,
+    "observed": 64,
+    "p_value": 0.1529,
+    "q_value": 0.925,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "China site near 41.6\u00b0N 88.6\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "China",
+    "covered_days": 23,
+    "covered_days_null": 23.0,
+    "dataset": "hatch",
+    "events": "China site near 41.6\u00b0N 88.6\u00b0E, underground (23 tests, 1969-1996)",
+    "kind": "underground",
+    "null_mean": 0.01,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 7,
+    "site": "China site near 41.6\u00b0N 88.6\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "China",
+    "covered_days": 69,
+    "covered_days_null": 69.0,
+    "dataset": "hatch",
+    "events": "China site near 41.6\u00b0N 88.6\u00b0E, underground (23 tests, 1969-1996)",
+    "kind": "underground",
+    "null_mean": 0.05,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 7,
+    "site": "China site near 41.6\u00b0N 88.6\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "China",
+    "covered_days": 23,
+    "covered_days_null": 23.0,
+    "dataset": "nicap",
+    "events": "China site near 41.6\u00b0N 88.6\u00b0E, underground (23 tests, 1969-1996)",
+    "kind": "underground",
+    "null_mean": 1.32,
+    "observed": 3,
+    "p_value": 0.1324,
+    "q_value": 0.925,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "China site near 41.6\u00b0N 88.6\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "China",
+    "covered_days": 69,
+    "covered_days_null": 69.0,
+    "dataset": "nicap",
+    "events": "China site near 41.6\u00b0N 88.6\u00b0E, underground (23 tests, 1969-1996)",
+    "kind": "underground",
+    "null_mean": 3.94,
+    "observed": 6,
+    "p_value": 0.2114,
+    "q_value": 0.9683,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "China site near 41.6\u00b0N 88.6\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "China",
+    "covered_days": 23,
+    "covered_days_null": 23.0,
+    "dataset": "bluebook-unknowns",
+    "events": "China site near 41.6\u00b0N 88.6\u00b0E, underground (23 tests, 1969-1996)",
+    "kind": "underground",
+    "null_mean": 0.0,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "China site near 41.6\u00b0N 88.6\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "China",
+    "covered_days": 69,
+    "covered_days_null": 69.0,
+    "dataset": "bluebook-unknowns",
+    "events": "China site near 41.6\u00b0N 88.6\u00b0E, underground (23 tests, 1969-1996)",
+    "kind": "underground",
+    "null_mean": 0.0,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "China site near 41.6\u00b0N 88.6\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USA",
+    "covered_days": 33,
+    "covered_days_null": 31.9,
+    "dataset": "hatch",
+    "events": "USA site near 1.9\u00b0N 157.1\u00b0W, air (33 tests, 1957-1962)",
+    "kind": "air",
+    "null_mean": 22.21,
+    "observed": 22,
+    "p_value": 0.4138,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USA site near 1.9\u00b0N 157.1\u00b0W",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 81,
+    "covered_days_null": 75.1,
+    "dataset": "hatch",
+    "events": "USA site near 1.9\u00b0N 157.1\u00b0W, air (33 tests, 1957-1962)",
+    "kind": "air",
+    "null_mean": 58.3,
+    "observed": 55,
+    "p_value": 0.4128,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USA site near 1.9\u00b0N 157.1\u00b0W",
+    "window_days": 2
+   },
+   {
+    "country": "USA",
+    "covered_days": 33,
+    "covered_days_null": 31.9,
+    "dataset": "hatch",
+    "events": "USA site near 1.9\u00b0N 157.1\u00b0W, air (33 tests, 1957-1962)",
+    "kind": "air",
+    "null_mean": 0.0,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 1,
+    "site": "USA site near 1.9\u00b0N 157.1\u00b0W",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 81,
+    "covered_days_null": 75.1,
+    "dataset": "hatch",
+    "events": "USA site near 1.9\u00b0N 157.1\u00b0W, air (33 tests, 1957-1962)",
+    "kind": "air",
+    "null_mean": 0.0,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 1,
+    "site": "USA site near 1.9\u00b0N 157.1\u00b0W",
+    "window_days": 2
+   },
+   {
+    "country": "USA",
+    "covered_days": 33,
+    "covered_days_null": 31.9,
+    "dataset": "nicap",
+    "events": "USA site near 1.9\u00b0N 157.1\u00b0W, air (33 tests, 1957-1962)",
+    "kind": "air",
+    "null_mean": 7.08,
+    "observed": 5,
+    "p_value": 0.7806,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USA site near 1.9\u00b0N 157.1\u00b0W",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 81,
+    "covered_days_null": 75.1,
+    "dataset": "nicap",
+    "events": "USA site near 1.9\u00b0N 157.1\u00b0W, air (33 tests, 1957-1962)",
+    "kind": "air",
+    "null_mean": 17.88,
+    "observed": 15,
+    "p_value": 0.6392,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USA site near 1.9\u00b0N 157.1\u00b0W",
+    "window_days": 2
+   },
+   {
+    "country": "USA",
+    "covered_days": 33,
+    "covered_days_null": 31.9,
+    "dataset": "bluebook-unknowns",
+    "events": "USA site near 1.9\u00b0N 157.1\u00b0W, air (33 tests, 1957-1962)",
+    "kind": "air",
+    "null_mean": 0.82,
+    "observed": 2,
+    "p_value": 0.1819,
+    "q_value": 0.925,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USA site near 1.9\u00b0N 157.1\u00b0W",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 81,
+    "covered_days_null": 75.1,
+    "dataset": "bluebook-unknowns",
+    "events": "USA site near 1.9\u00b0N 157.1\u00b0W, air (33 tests, 1957-1962)",
+    "kind": "air",
+    "null_mean": 2.11,
+    "observed": 3,
+    "p_value": 0.3163,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USA site near 1.9\u00b0N 157.1\u00b0W",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 22,
+    "covered_days_null": 21.9,
+    "dataset": "hatch",
+    "events": "USSR site near 47.4\u00b0N 48.1\u00b0E, underground (32 tests, 1966-1984)",
+    "kind": "underground",
+    "null_mean": 24.96,
+    "observed": 31,
+    "p_value": 0.1724,
+    "q_value": 0.925,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USSR site near 47.4\u00b0N 48.1\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 66,
+    "covered_days_null": 65.2,
+    "dataset": "hatch",
+    "events": "USSR site near 47.4\u00b0N 48.1\u00b0E, underground (32 tests, 1966-1984)",
+    "kind": "underground",
+    "null_mean": 73.99,
+    "observed": 94,
+    "p_value": 0.0585,
+    "q_value": 0.9044,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USSR site near 47.4\u00b0N 48.1\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 22,
+    "covered_days_null": 21.9,
+    "dataset": "hatch",
+    "events": "USSR site near 47.4\u00b0N 48.1\u00b0E, underground (32 tests, 1966-1984)",
+    "kind": "underground",
+    "null_mean": 0.0,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 20,
+    "site": "USSR site near 47.4\u00b0N 48.1\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 66,
+    "covered_days_null": 65.2,
+    "dataset": "hatch",
+    "events": "USSR site near 47.4\u00b0N 48.1\u00b0E, underground (32 tests, 1966-1984)",
+    "kind": "underground",
+    "null_mean": 0.0,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 20,
+    "site": "USSR site near 47.4\u00b0N 48.1\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 22,
+    "covered_days_null": 21.9,
+    "dataset": "nicap",
+    "events": "USSR site near 47.4\u00b0N 48.1\u00b0E, underground (32 tests, 1966-1984)",
+    "kind": "underground",
+    "null_mean": 4.48,
+    "observed": 11,
+    "p_value": 0.031,
+    "q_value": 0.9044,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USSR site near 47.4\u00b0N 48.1\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 66,
+    "covered_days_null": 65.2,
+    "dataset": "nicap",
+    "events": "USSR site near 47.4\u00b0N 48.1\u00b0E, underground (32 tests, 1966-1984)",
+    "kind": "underground",
+    "null_mean": 13.25,
+    "observed": 22,
+    "p_value": 0.078,
+    "q_value": 0.9044,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USSR site near 47.4\u00b0N 48.1\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 22,
+    "covered_days_null": 21.9,
+    "dataset": "bluebook-unknowns",
+    "events": "USSR site near 47.4\u00b0N 48.1\u00b0E, underground (32 tests, 1966-1984)",
+    "kind": "underground",
+    "null_mean": 0.11,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USSR site near 47.4\u00b0N 48.1\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 66,
+    "covered_days_null": 65.2,
+    "dataset": "bluebook-unknowns",
+    "events": "USSR site near 47.4\u00b0N 48.1\u00b0E, underground (32 tests, 1966-1984)",
+    "kind": "underground",
+    "null_mean": 0.27,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USSR site near 47.4\u00b0N 48.1\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USA",
+    "covered_days": 21,
+    "covered_days_null": 20.6,
+    "dataset": "hatch",
+    "events": "USA site near 11.6\u00b0N 165.4\u00b0E, air (21 tests, 1946-1958)",
+    "kind": "air",
+    "null_mean": 15.6,
+    "observed": 12,
+    "p_value": 0.8256,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USA site near 11.6\u00b0N 165.4\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 63,
+    "covered_days_null": 59.0,
+    "dataset": "hatch",
+    "events": "USA site near 11.6\u00b0N 165.4\u00b0E, air (21 tests, 1946-1958)",
+    "kind": "air",
+    "null_mean": 47.62,
+    "observed": 55,
+    "p_value": 0.1674,
+    "q_value": 0.925,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USA site near 11.6\u00b0N 165.4\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USA",
+    "covered_days": 21,
+    "covered_days_null": 20.6,
+    "dataset": "hatch",
+    "events": "USA site near 11.6\u00b0N 165.4\u00b0E, air (21 tests, 1946-1958)",
+    "kind": "air",
+    "null_mean": 0.11,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 2,
+    "site": "USA site near 11.6\u00b0N 165.4\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 63,
+    "covered_days_null": 59.0,
+    "dataset": "hatch",
+    "events": "USA site near 11.6\u00b0N 165.4\u00b0E, air (21 tests, 1946-1958)",
+    "kind": "air",
+    "null_mean": 0.31,
+    "observed": 2,
+    "p_value": 0.0145,
+    "q_value": 0.9044,
+    "radius_km": 600.0,
+    "sightings": 2,
+    "site": "USA site near 11.6\u00b0N 165.4\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USA",
+    "covered_days": 21,
+    "covered_days_null": 20.6,
+    "dataset": "nicap",
+    "events": "USA site near 11.6\u00b0N 165.4\u00b0E, air (21 tests, 1946-1958)",
+    "kind": "air",
+    "null_mean": 3.32,
+    "observed": 1,
+    "p_value": 0.9415,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USA site near 11.6\u00b0N 165.4\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 63,
+    "covered_days_null": 59.0,
+    "dataset": "nicap",
+    "events": "USA site near 11.6\u00b0N 165.4\u00b0E, air (21 tests, 1946-1958)",
+    "kind": "air",
+    "null_mean": 10.07,
+    "observed": 8,
+    "p_value": 0.7191,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USA site near 11.6\u00b0N 165.4\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USA",
+    "covered_days": 21,
+    "covered_days_null": 20.6,
+    "dataset": "bluebook-unknowns",
+    "events": "USA site near 11.6\u00b0N 165.4\u00b0E, air (21 tests, 1946-1958)",
+    "kind": "air",
+    "null_mean": 0.79,
+    "observed": 1,
+    "p_value": 0.5767,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USA site near 11.6\u00b0N 165.4\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 63,
+    "covered_days_null": 59.0,
+    "dataset": "bluebook-unknowns",
+    "events": "USA site near 11.6\u00b0N 165.4\u00b0E, air (21 tests, 1946-1958)",
+    "kind": "air",
+    "null_mean": 2.43,
+    "observed": 4,
+    "p_value": 0.1844,
+    "q_value": 0.925,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USA site near 11.6\u00b0N 165.4\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "France",
+    "covered_days": 13,
+    "covered_days_null": 13.0,
+    "dataset": "hatch",
+    "events": "France site near 24.1\u00b0N 5.0\u00b0E, underground (13 tests, 1961-1966)",
+    "kind": "underground",
+    "null_mean": 6.52,
+    "observed": 8,
+    "p_value": 0.3318,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "France site near 24.1\u00b0N 5.0\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "France",
+    "covered_days": 39,
+    "covered_days_null": 38.9,
+    "dataset": "hatch",
+    "events": "France site near 24.1\u00b0N 5.0\u00b0E, underground (13 tests, 1961-1966)",
+    "kind": "underground",
+    "null_mean": 19.43,
+    "observed": 20,
+    "p_value": 0.4773,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "France site near 24.1\u00b0N 5.0\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "France",
+    "covered_days": 13,
+    "covered_days_null": 13.0,
+    "dataset": "hatch",
+    "events": "France site near 24.1\u00b0N 5.0\u00b0E, underground (13 tests, 1961-1966)",
+    "kind": "underground",
+    "null_mean": 0.0,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 5,
+    "site": "France site near 24.1\u00b0N 5.0\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "France",
+    "covered_days": 39,
+    "covered_days_null": 38.9,
+    "dataset": "hatch",
+    "events": "France site near 24.1\u00b0N 5.0\u00b0E, underground (13 tests, 1961-1966)",
+    "kind": "underground",
+    "null_mean": 0.0,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 5,
+    "site": "France site near 24.1\u00b0N 5.0\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "France",
+    "covered_days": 13,
+    "covered_days_null": 13.0,
+    "dataset": "nicap",
+    "events": "France site near 24.1\u00b0N 5.0\u00b0E, underground (13 tests, 1961-1966)",
+    "kind": "underground",
+    "null_mean": 1.83,
+    "observed": 3,
+    "p_value": 0.2829,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "France site near 24.1\u00b0N 5.0\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "France",
+    "covered_days": 39,
+    "covered_days_null": 38.9,
+    "dataset": "nicap",
+    "events": "France site near 24.1\u00b0N 5.0\u00b0E, underground (13 tests, 1961-1966)",
+    "kind": "underground",
+    "null_mean": 5.58,
+    "observed": 5,
+    "p_value": 0.5912,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "France site near 24.1\u00b0N 5.0\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "France",
+    "covered_days": 13,
+    "covered_days_null": 13.0,
+    "dataset": "bluebook-unknowns",
+    "events": "France site near 24.1\u00b0N 5.0\u00b0E, underground (13 tests, 1961-1966)",
+    "kind": "underground",
+    "null_mean": 0.35,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "France site near 24.1\u00b0N 5.0\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "France",
+    "covered_days": 39,
+    "covered_days_null": 38.9,
+    "dataset": "bluebook-unknowns",
+    "events": "France site near 24.1\u00b0N 5.0\u00b0E, underground (13 tests, 1961-1966)",
+    "kind": "underground",
+    "null_mean": 1.06,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "France site near 24.1\u00b0N 5.0\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USA",
+    "covered_days": 12,
+    "covered_days_null": 11.8,
+    "dataset": "hatch",
+    "events": "USA site near 16.9\u00b0N 169.1\u00b0W, air (12 tests, 1958-1962)",
+    "kind": "air",
+    "null_mean": 4.97,
+    "observed": 7,
+    "p_value": 0.2354,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USA site near 16.9\u00b0N 169.1\u00b0W",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 32,
+    "covered_days_null": 30.8,
+    "dataset": "hatch",
+    "events": "USA site near 16.9\u00b0N 169.1\u00b0W, air (12 tests, 1958-1962)",
+    "kind": "air",
+    "null_mean": 13.71,
+    "observed": 13,
+    "p_value": 0.6027,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USA site near 16.9\u00b0N 169.1\u00b0W",
+    "window_days": 2
+   },
+   {
+    "country": "USA",
+    "covered_days": 12,
+    "covered_days_null": 11.8,
+    "dataset": "hatch",
+    "events": "USA site near 16.9\u00b0N 169.1\u00b0W, air (12 tests, 1958-1962)",
+    "kind": "air",
+    "null_mean": 0.0,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 2,
+    "site": "USA site near 16.9\u00b0N 169.1\u00b0W",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 32,
+    "covered_days_null": 30.8,
+    "dataset": "hatch",
+    "events": "USA site near 16.9\u00b0N 169.1\u00b0W, air (12 tests, 1958-1962)",
+    "kind": "air",
+    "null_mean": 0.0,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 2,
+    "site": "USA site near 16.9\u00b0N 169.1\u00b0W",
+    "window_days": 2
+   },
+   {
+    "country": "USA",
+    "covered_days": 12,
+    "covered_days_null": 11.8,
+    "dataset": "nicap",
+    "events": "USA site near 16.9\u00b0N 169.1\u00b0W, air (12 tests, 1958-1962)",
+    "kind": "air",
+    "null_mean": 1.65,
+    "observed": 1,
+    "p_value": 0.7861,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USA site near 16.9\u00b0N 169.1\u00b0W",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 32,
+    "covered_days_null": 30.8,
+    "dataset": "nicap",
+    "events": "USA site near 16.9\u00b0N 169.1\u00b0W, air (12 tests, 1958-1962)",
+    "kind": "air",
+    "null_mean": 4.42,
+    "observed": 3,
+    "p_value": 0.6992,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USA site near 16.9\u00b0N 169.1\u00b0W",
+    "window_days": 2
+   },
+   {
+    "country": "USA",
+    "covered_days": 12,
+    "covered_days_null": 11.8,
+    "dataset": "bluebook-unknowns",
+    "events": "USA site near 16.9\u00b0N 169.1\u00b0W, air (12 tests, 1958-1962)",
+    "kind": "air",
+    "null_mean": 0.36,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USA site near 16.9\u00b0N 169.1\u00b0W",
+    "window_days": 0
+   },
+   {
+    "country": "USA",
+    "covered_days": 32,
+    "covered_days_null": 30.8,
+    "dataset": "bluebook-unknowns",
+    "events": "USA site near 16.9\u00b0N 169.1\u00b0W, air (12 tests, 1958-1962)",
+    "kind": "air",
+    "null_mean": 0.95,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USA site near 16.9\u00b0N 169.1\u00b0W",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 6,
+    "covered_days_null": 6.0,
+    "dataset": "hatch",
+    "events": "USSR site near 51.7\u00b0N 53.2\u00b0E, underground (10 tests, 1971-1984)",
+    "kind": "underground",
+    "null_mean": 7.5,
+    "observed": 4,
+    "p_value": 0.8826,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USSR site near 51.7\u00b0N 53.2\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 18,
+    "covered_days_null": 18.0,
+    "dataset": "hatch",
+    "events": "USSR site near 51.7\u00b0N 53.2\u00b0E, underground (10 tests, 1971-1984)",
+    "kind": "underground",
+    "null_mean": 22.45,
+    "observed": 22,
+    "p_value": 0.4278,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USSR site near 51.7\u00b0N 53.2\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 6,
+    "covered_days_null": 6.0,
+    "dataset": "hatch",
+    "events": "USSR site near 51.7\u00b0N 53.2\u00b0E, underground (10 tests, 1971-1984)",
+    "kind": "underground",
+    "null_mean": 0.0,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 17,
+    "site": "USSR site near 51.7\u00b0N 53.2\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 18,
+    "covered_days_null": 18.0,
+    "dataset": "hatch",
+    "events": "USSR site near 51.7\u00b0N 53.2\u00b0E, underground (10 tests, 1971-1984)",
+    "kind": "underground",
+    "null_mean": 0.0,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 17,
+    "site": "USSR site near 51.7\u00b0N 53.2\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 6,
+    "covered_days_null": 6.0,
+    "dataset": "nicap",
+    "events": "USSR site near 51.7\u00b0N 53.2\u00b0E, underground (10 tests, 1971-1984)",
+    "kind": "underground",
+    "null_mean": 2.25,
+    "observed": 2,
+    "p_value": 0.4518,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USSR site near 51.7\u00b0N 53.2\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 18,
+    "covered_days_null": 18.0,
+    "dataset": "nicap",
+    "events": "USSR site near 51.7\u00b0N 53.2\u00b0E, underground (10 tests, 1971-1984)",
+    "kind": "underground",
+    "null_mean": 6.87,
+    "observed": 5,
+    "p_value": 0.4718,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USSR site near 51.7\u00b0N 53.2\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 6,
+    "covered_days_null": 6.0,
+    "dataset": "bluebook-unknowns",
+    "events": "USSR site near 51.7\u00b0N 53.2\u00b0E, underground (10 tests, 1971-1984)",
+    "kind": "underground",
+    "null_mean": 0.0,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USSR site near 51.7\u00b0N 53.2\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 18,
+    "covered_days_null": 18.0,
+    "dataset": "bluebook-unknowns",
+    "events": "USSR site near 51.7\u00b0N 53.2\u00b0E, underground (10 tests, 1971-1984)",
+    "kind": "underground",
+    "null_mean": 0.0,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USSR site near 51.7\u00b0N 53.2\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 10,
+    "covered_days_null": 9.9,
+    "dataset": "hatch",
+    "events": "USSR site near 74.3\u00b0N 51.6\u00b0E, air (10 tests, 1961-1962)",
+    "kind": "air",
+    "null_mean": 4.3,
+    "observed": 5,
+    "p_value": 0.4193,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USSR site near 74.3\u00b0N 51.6\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 26,
+    "covered_days_null": 25.2,
+    "dataset": "hatch",
+    "events": "USSR site near 74.3\u00b0N 51.6\u00b0E, air (10 tests, 1961-1962)",
+    "kind": "air",
+    "null_mean": 11.2,
+    "observed": 16,
+    "p_value": 0.0765,
+    "q_value": 0.9044,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USSR site near 74.3\u00b0N 51.6\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 10,
+    "covered_days_null": 9.9,
+    "dataset": "nicap",
+    "events": "USSR site near 74.3\u00b0N 51.6\u00b0E, air (10 tests, 1961-1962)",
+    "kind": "air",
+    "null_mean": 1.57,
+    "observed": 1,
+    "p_value": 0.7526,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USSR site near 74.3\u00b0N 51.6\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 26,
+    "covered_days_null": 25.2,
+    "dataset": "nicap",
+    "events": "USSR site near 74.3\u00b0N 51.6\u00b0E, air (10 tests, 1961-1962)",
+    "kind": "air",
+    "null_mean": 4.09,
+    "observed": 6,
+    "p_value": 0.2554,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USSR site near 74.3\u00b0N 51.6\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 10,
+    "covered_days_null": 9.9,
+    "dataset": "bluebook-unknowns",
+    "events": "USSR site near 74.3\u00b0N 51.6\u00b0E, air (10 tests, 1961-1962)",
+    "kind": "air",
+    "null_mean": 0.05,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USSR site near 74.3\u00b0N 51.6\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 26,
+    "covered_days_null": 25.2,
+    "dataset": "bluebook-unknowns",
+    "events": "USSR site near 74.3\u00b0N 51.6\u00b0E, air (10 tests, 1961-1962)",
+    "kind": "air",
+    "null_mean": 0.14,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USSR site near 74.3\u00b0N 51.6\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 9,
+    "covered_days_null": 9.0,
+    "dataset": "hatch",
+    "events": "USSR site near 48.6\u00b0N 45.9\u00b0E, air (10 tests, 1957-1962)",
+    "kind": "air",
+    "null_mean": 4.7,
+    "observed": 6,
+    "p_value": 0.3298,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USSR site near 48.6\u00b0N 45.9\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 26,
+    "covered_days_null": 25.8,
+    "dataset": "hatch",
+    "events": "USSR site near 48.6\u00b0N 45.9\u00b0E, air (10 tests, 1957-1962)",
+    "kind": "air",
+    "null_mean": 13.24,
+    "observed": 16,
+    "p_value": 0.2434,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 16638,
+    "site": "USSR site near 48.6\u00b0N 45.9\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 9,
+    "covered_days_null": 9.0,
+    "dataset": "hatch",
+    "events": "USSR site near 48.6\u00b0N 45.9\u00b0E, air (10 tests, 1957-1962)",
+    "kind": "air",
+    "null_mean": 0.0,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 39,
+    "site": "USSR site near 48.6\u00b0N 45.9\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 26,
+    "covered_days_null": 25.8,
+    "dataset": "hatch",
+    "events": "USSR site near 48.6\u00b0N 45.9\u00b0E, air (10 tests, 1957-1962)",
+    "kind": "air",
+    "null_mean": 0.0,
+    "observed": 0,
+    "p_value": 1.0,
+    "q_value": 1.0,
+    "radius_km": 600.0,
+    "sightings": 39,
+    "site": "USSR site near 48.6\u00b0N 45.9\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 9,
+    "covered_days_null": 9.0,
+    "dataset": "nicap",
+    "events": "USSR site near 48.6\u00b0N 45.9\u00b0E, air (10 tests, 1957-1962)",
+    "kind": "air",
+    "null_mean": 1.3,
+    "observed": 1,
+    "p_value": 0.7116,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USSR site near 48.6\u00b0N 45.9\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 26,
+    "covered_days_null": 25.8,
+    "dataset": "nicap",
+    "events": "USSR site near 48.6\u00b0N 45.9\u00b0E, air (10 tests, 1957-1962)",
+    "kind": "air",
+    "null_mean": 3.62,
+    "observed": 5,
+    "p_value": 0.2934,
+    "q_value": 1.0,
+    "radius_km": null,
+    "sightings": 3548,
+    "site": "USSR site near 48.6\u00b0N 45.9\u00b0E",
+    "window_days": 2
+   },
+   {
+    "country": "USSR",
+    "covered_days": 9,
+    "covered_days_null": 9.0,
+    "dataset": "bluebook-unknowns",
+    "events": "USSR site near 48.6\u00b0N 45.9\u00b0E, air (10 tests, 1957-1962)",
+    "kind": "air",
+    "null_mean": 0.22,
+    "observed": 1,
+    "p_value": 0.2044,
+    "q_value": 0.9675,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USSR site near 48.6\u00b0N 45.9\u00b0E",
+    "window_days": 0
+   },
+   {
+    "country": "USSR",
+    "covered_days": 26,
+    "covered_days_null": 25.8,
+    "dataset": "bluebook-unknowns",
+    "events": "USSR site near 48.6\u00b0N 45.9\u00b0E, air (10 tests, 1957-1962)",
+    "kind": "air",
+    "null_mean": 0.6,
+    "observed": 2,
+    "p_value": 0.0965,
+    "q_value": 0.9044,
+    "radius_km": null,
+    "sightings": 475,
+    "site": "USSR site near 48.6\u00b0N 45.9\u00b0E",
+    "window_days": 2
+   }
+  ],
+  "sites": [
+   {
+    "country": "USA",
+    "id": "site0",
+    "label": "USA site near 37.1\u00b0N 116.1\u00b0W",
+    "lat": 37.087,
+    "lon": -116.071,
+    "tests": 933
+   },
+   {
+    "country": "USSR",
+    "id": "site1",
+    "label": "USSR site near 50.0\u00b0N 78.2\u00b0E",
+    "lat": 50.043,
+    "lon": 78.155,
+    "tests": 456
+   },
+   {
+    "country": "France",
+    "id": "site2",
+    "label": "France site near 21.9\u00b0S 138.9\u00b0W",
+    "lat": -21.939,
+    "lon": -138.94,
+    "tests": 180
+   },
+   {
+    "country": "USSR",
+    "id": "site3",
+    "label": "USSR site near 73.6\u00b0N 54.7\u00b0E",
+    "lat": 73.633,
+    "lon": 54.709,
+    "tests": 109
+   },
+   {
+    "country": "USA",
+    "id": "site6",
+    "label": "USA site near 11.5\u00b0N 162.2\u00b0E",
+    "lat": 11.477,
+    "lon": 162.232,
+    "tests": 44
+   },
+   {
+    "country": "China",
+    "id": "site5",
+    "label": "China site near 41.6\u00b0N 88.6\u00b0E",
+    "lat": 41.555,
+    "lon": 88.553,
+    "tests": 38
+   },
+   {
+    "country": "USA",
+    "id": "site4",
+    "label": "USA site near 1.9\u00b0N 157.1\u00b0W",
+    "lat": 1.91,
+    "lon": -157.068,
+    "tests": 33
+   },
+   {
+    "country": "USSR",
+    "id": "site7",
+    "label": "USSR site near 47.4\u00b0N 48.1\u00b0E",
+    "lat": 47.373,
+    "lon": 48.143,
+    "tests": 32
+   },
+   {
+    "country": "USA",
+    "id": "site10",
+    "label": "USA site near 11.6\u00b0N 165.4\u00b0E",
+    "lat": 11.632,
+    "lon": 165.364,
+    "tests": 22
+   },
+   {
+    "country": "France",
+    "id": "site14",
+    "label": "France site near 24.1\u00b0N 5.0\u00b0E",
+    "lat": 24.051,
+    "lon": 5.044,
+    "tests": 13
+   },
+   {
+    "country": "USA",
+    "id": "site8",
+    "label": "USA site near 16.9\u00b0N 169.1\u00b0W",
+    "lat": 16.925,
+    "lon": -169.089,
+    "tests": 12
+   },
+   {
+    "country": "USSR",
+    "id": "site12",
+    "label": "USSR site near 51.7\u00b0N 53.2\u00b0E",
+    "lat": 51.657,
+    "lon": 53.247,
+    "tests": 11
+   },
+   {
+    "country": "USSR",
+    "id": "site18",
+    "label": "USSR site near 70.8\u00b0N 54.1\u00b0E",
+    "lat": 70.776,
+    "lon": 54.139,
+    "tests": 11
+   },
+   {
+    "country": "USSR",
+    "id": "site84",
+    "label": "USSR site near 74.3\u00b0N 51.6\u00b0E",
+    "lat": 74.32,
+    "lon": 51.63,
+    "tests": 10
+   },
+   {
+    "country": "USSR",
+    "id": "site9",
+    "label": "USSR site near 48.6\u00b0N 45.9\u00b0E",
+    "lat": 48.57,
+    "lon": 45.903,
+    "tests": 10
+   },
+   {
+    "country": "Britain",
+    "id": "site11",
+    "label": "Britain site near 30.0\u00b0S 132.0\u00b0E",
+    "lat": -30.0,
+    "lon": 132.0,
+    "tests": 7
+   },
+   {
+    "country": "USSR",
+    "id": "site13",
+    "label": "USSR site near 61.5\u00b0N 112.9\u00b0E",
+    "lat": 61.544,
+    "lon": 112.873,
+    "tests": 7
+   },
+   {
+    "country": "USSR",
+    "id": "site16",
+    "label": "USSR site near 53.0\u00b0N 56.0\u00b0E",
+    "lat": 53.021,
+    "lon": 56.029,
+    "tests": 7
+   },
+   {
+    "country": "China",
+    "id": "site47",
+    "label": "China site near 40.7\u00b0N 89.7\u00b0E",
+    "lat": 40.674,
+    "lon": 89.682,
+    "tests": 7
+   },
+   {
+    "country": "USSR",
+    "id": "site64",
+    "label": "USSR site near 60.7\u00b0N 56.9\u00b0E",
+    "lat": 60.733,
+    "lon": 56.867,
+    "tests": 6
+   },
+   {
+    "country": "France",
+    "id": "site15",
+    "label": "France site near 27.0\u00b0N 0.0\u00b0E",
+    "lat": 27.0,
+    "lon": 0.0,
+    "tests": 4
+   },
+   {
+    "country": "Britain",
+    "id": "site17",
+    "label": "Britain site near 20.0\u00b0S 115.0\u00b0E",
+    "lat": -20.0,
+    "lon": 115.0,
+    "tests": 3
+   },
+   {
+    "country": "USSR",
+    "id": "site21",
+    "label": "USSR site near 43.9\u00b0N 54.8\u00b0E",
+    "lat": 43.914,
+    "lon": 54.844,
+    "tests": 3
+   },
+   {
+    "country": "USA",
+    "id": "site22",
+    "label": "USA site near 51.4\u00b0N 179.2\u00b0E",
+    "lat": 51.442,
+    "lon": 179.157,
+    "tests": 3
+   },
+   {
+    "country": "USSR",
+    "id": "site25",
+    "label": "USSR site near 64.0\u00b0N 98.9\u00b0E",
+    "lat": 64.006,
+    "lon": 98.89,
+    "tests": 3
+   },
+   {
+    "country": "USSR",
+    "id": "site65",
+    "label": "USSR site near 61.1\u00b0N 72.1\u00b0E",
+    "lat": 61.058,
+    "lon": 72.085,
+    "tests": 3
+   },
+   {
+    "country": "Britain",
+    "id": "site19",
+    "label": "Britain site near 28.0\u00b0S 135.0\u00b0E",
+    "lat": -28.0,
+    "lon": 135.0,
+    "tests": 2
+   },
+   {
+    "country": "USA",
+    "id": "site20",
+    "label": "USA site near 31.1\u00b0N 89.6\u00b0W",
+    "lat": 31.142,
+    "lon": -89.57,
+    "tests": 2
+   },
+   {
+    "country": "USSR",
+    "id": "site23",
+    "label": "USSR site near 57.2\u00b0N 55.4\u00b0E",
+    "lat": 57.22,
+    "lon": 55.405,
+    "tests": 2
+   },
+   {
+    "country": "USSR",
+    "id": "site24",
+    "label": "USSR site near 61.4\u00b0N 48.1\u00b0E",
+    "lat": 61.359,
+    "lon": 48.092,
+    "tests": 2
+   },
+   {
+    "country": "India",
+    "id": "site33",
+    "label": "India site near 27.1\u00b0N 71.7\u00b0E",
+    "lat": 27.087,
+    "lon": 71.736,
+    "tests": 2
+   },
+   {
+    "country": "Pakistan",
+    "id": "site34",
+    "label": "Pakistan site near 28.7\u00b0N 64.3\u00b0E",
+    "lat": 28.66,
+    "lon": 64.34,
+    "tests": 2
+   },
+   {
+    "country": "USSR",
+    "id": "site44",
+    "label": "USSR site near 38.9\u00b0N 64.8\u00b0E",
+    "lat": 38.943,
+    "lon": 64.774,
+    "tests": 2
+   },
+   {
+    "country": "USA",
+    "id": "site46",
+    "label": "USA site near 39.6\u00b0N 108.2\u00b0W",
+    "lat": 39.599,
+    "lon": -108.157,
+    "tests": 2
+   },
+   {
+    "country": "USSR",
+    "id": "site71",
+    "label": "USSR site near 64.6\u00b0N 55.2\u00b0E",
+    "lat": 64.608,
+    "lon": 55.184,
+    "tests": 2
+   },
+   {
+    "country": "USSR",
+    "id": "site73",
+    "label": "USSR site near 66.0\u00b0N 112.5\u00b0E",
+    "lat": 66.012,
+    "lon": 112.494,
+    "tests": 2
+   },
+   {
+    "country": "USSR",
+    "id": "site77",
+    "label": "USSR site near 67.2\u00b0N 63.0\u00b0E",
+    "lat": 67.184,
+    "lon": 63.046,
+    "tests": 2
+   },
+   {
+    "country": "USSR",
+    "id": "site78",
+    "label": "USSR site near 67.8\u00b0N 33.0\u00b0E",
+    "lat": 67.75,
+    "lon": 33.05,
+    "tests": 2
+   },
+   {
+    "country": "USSR",
+    "id": "site82",
+    "label": "USSR site near 69.6\u00b0N 90.4\u00b0E",
+    "lat": 69.577,
+    "lon": 90.356,
+    "tests": 2
+   },
+   {
+    "country": "USA",
+    "id": "site26",
+    "label": "USA site near 49.5\u00b0S 8.2\u00b0W",
+    "lat": -49.5,
+    "lon": -8.2,
+    "tests": 1
+   },
+   {
+    "country": "USA",
+    "id": "site27",
+    "label": "USA site near 48.5\u00b0S 9.7\u00b0W",
+    "lat": -48.5,
+    "lon": -9.7,
+    "tests": 1
+   },
+   {
+    "country": "Unknown",
+    "id": "site28",
+    "label": "Unknown site near 46.4\u00b0S 37.6\u00b0E",
+    "lat": -46.36,
+    "lon": 37.57,
+    "tests": 1
+   },
+   {
+    "country": "USA",
+    "id": "site29",
+    "label": "USA site near 38.5\u00b0S 11.5\u00b0W",
+    "lat": -38.5,
+    "lon": -11.5,
+    "tests": 1
+   },
+   {
+    "country": "France",
+    "id": "site30",
+    "label": "France site near 23.8\u00b0S 137.2\u00b0W",
+    "lat": -23.8,
+    "lon": -137.2,
+    "tests": 1
+   },
+   {
+    "country": "USA",
+    "id": "site31",
+    "label": "USA site near 4.8\u00b0N 149.4\u00b0W",
+    "lat": 4.833,
+    "lon": -149.417,
+    "tests": 1
+   },
+   {
+    "country": "USA",
+    "id": "site32",
+    "label": "USA site near 12.6\u00b0N 168.0\u00b0E",
+    "lat": 12.617,
+    "lon": 168.025,
+    "tests": 1
+   },
+   {
+    "country": "USA",
+    "id": "site35",
+    "label": "USA site near 28.7\u00b0N 126.3\u00b0W",
+    "lat": 28.733,
+    "lon": -126.267,
+    "tests": 1
+   },
+   {
+    "country": "USA",
+    "id": "site36",
+    "label": "USA site near 31.2\u00b0N 124.2\u00b0W",
+    "lat": 31.245,
+    "lon": -124.212,
+    "tests": 1
+   },
+   {
+    "country": "USA",
+    "id": "site37",
+    "label": "USA site near 32.3\u00b0N 103.9\u00b0W",
+    "lat": 32.264,
+    "lon": -103.866,
+    "tests": 1
+   },
+   {
+    "country": "USA",
+    "id": "site38",
+    "label": "USA site near 32.8\u00b0N 129.9\u00b0E",
+    "lat": 32.773,
+    "lon": 129.862,
+    "tests": 1
+   },
+   {
+    "country": "USA",
+    "id": "site39",
+    "label": "USA site near 33.7\u00b0N 106.5\u00b0W",
+    "lat": 33.675,
+    "lon": -106.475,
+    "tests": 1
+   },
+   {
+    "country": "USA",
+    "id": "site40",
+    "label": "USA site near 34.4\u00b0N 132.5\u00b0E",
+    "lat": 34.395,
+    "lon": 132.454,
+    "tests": 1
+   },
+   {
+    "country": "USA",
+    "id": "site41",
+    "label": "USA site near 36.7\u00b0N 107.2\u00b0W",
+    "lat": 36.678,
+    "lon": -107.208,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site42",
+    "label": "USSR site near 37.4\u00b0N 62.0\u00b0E",
+    "lat": 37.35,
+    "lon": 62.05,
+    "tests": 1
+   },
+   {
+    "country": "USA",
+    "id": "site43",
+    "label": "USA site near 38.6\u00b0N 116.2\u00b0W",
+    "lat": 38.634,
+    "lon": -116.215,
+    "tests": 1
+   },
+   {
+    "country": "USA",
+    "id": "site45",
+    "label": "USA site near 39.2\u00b0N 118.4\u00b0W",
+    "lat": 39.2,
+    "lon": -118.38,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site48",
+    "label": "USSR site near 42.8\u00b0N 67.4\u00b0E",
+    "lat": 42.775,
+    "lon": 67.408,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site49",
+    "label": "USSR site near 45.8\u00b0N 42.6\u00b0E",
+    "lat": 45.848,
+    "lon": 42.6,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site50",
+    "label": "USSR site near 45.8\u00b0N 67.8\u00b0E",
+    "lat": 45.758,
+    "lon": 67.825,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site51",
+    "label": "USSR site near 46.9\u00b0N 44.9\u00b0E",
+    "lat": 46.853,
+    "lon": 44.938,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site52",
+    "label": "USSR site near 47.6\u00b0N 56.2\u00b0E",
+    "lat": 47.6,
+    "lon": 56.2,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site53",
+    "label": "USSR site near 48.2\u00b0N 38.3\u00b0E",
+    "lat": 48.2,
+    "lon": 38.3,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site54",
+    "label": "USSR site near 49.4\u00b0N 48.1\u00b0E",
+    "lat": 49.4,
+    "lon": 48.142,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site55",
+    "label": "USSR site near 49.8\u00b0N 35.4\u00b0E",
+    "lat": 49.8,
+    "lon": 35.4,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site56",
+    "label": "USSR site near 50.5\u00b0N 68.3\u00b0E",
+    "lat": 50.527,
+    "lon": 68.323,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site57",
+    "label": "USSR site near 51.0\u00b0N 111.0\u00b0E",
+    "lat": 50.955,
+    "lon": 110.983,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site58",
+    "label": "USSR site near 51.8\u00b0N 64.2\u00b0E",
+    "lat": 51.842,
+    "lon": 64.21,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site59",
+    "label": "USSR site near 53.8\u00b0N 104.2\u00b0E",
+    "lat": 53.8,
+    "lon": 104.15,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site60",
+    "label": "USSR site near 55.8\u00b0N 87.5\u00b0E",
+    "lat": 55.834,
+    "lon": 87.526,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site61",
+    "label": "USSR site near 57.3\u00b0N 106.6\u00b0E",
+    "lat": 57.251,
+    "lon": 106.551,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site62",
+    "label": "USSR site near 57.5\u00b0N 42.6\u00b0E",
+    "lat": 57.508,
+    "lon": 42.643,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site63",
+    "label": "USSR site near 57.7\u00b0N 65.2\u00b0E",
+    "lat": 57.7,
+    "lon": 65.2,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site66",
+    "label": "USSR site near 60.8\u00b0N 97.5\u00b0E",
+    "lat": 60.8,
+    "lon": 97.55,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site67",
+    "label": "USSR site near 61.8\u00b0N 66.8\u00b0E",
+    "lat": 61.75,
+    "lon": 66.75,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site68",
+    "label": "USSR site near 61.8\u00b0N 122.4\u00b0E",
+    "lat": 61.803,
+    "lon": 122.43,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site69",
+    "label": "USSR site near 63.2\u00b0N 63.4\u00b0E",
+    "lat": 63.185,
+    "lon": 63.432,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site70",
+    "label": "USSR site near 63.7\u00b0N 125.5\u00b0E",
+    "lat": 63.678,
+    "lon": 125.522,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site72",
+    "label": "USSR site near 64.3\u00b0N 91.8\u00b0E",
+    "lat": 64.35,
+    "lon": 91.8,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site74",
+    "label": "USSR site near 66.0\u00b0N 41.0\u00b0E",
+    "lat": 65.994,
+    "lon": 41.038,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site75",
+    "label": "USSR site near 66.3\u00b0N 78.5\u00b0E",
+    "lat": 66.28,
+    "lon": 78.491,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site76",
+    "label": "USSR site near 66.6\u00b0N 86.2\u00b0E",
+    "lat": 66.598,
+    "lon": 86.21,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site79",
+    "label": "USSR site near 68.2\u00b0N 53.5\u00b0E",
+    "lat": 68.2,
+    "lon": 53.5,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site80",
+    "label": "USSR site near 68.9\u00b0N 75.8\u00b0E",
+    "lat": 68.903,
+    "lon": 75.823,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site81",
+    "label": "USSR site near 69.2\u00b0N 81.7\u00b0E",
+    "lat": 69.2,
+    "lon": 81.65,
+    "tests": 1
+   },
+   {
+    "country": "USSR",
+    "id": "site83",
+    "label": "USSR site near 70.8\u00b0N 127.0\u00b0E",
+    "lat": 70.763,
+    "lon": 126.953,
+    "tests": 1
+   }
+  ]
+ },
+ "programs": [
+  {
+   "dataset": "pursue",
+   "matches": 39,
+   "matches_sha256": "800f6d9f22a87b2b116393fb86ccb4afb4009828d05a3badd5f03154b2ec3ace",
+   "method": "state",
+   "null_mean": 80.86,
+   "observed": 39,
+   "p_value": 1.0,
+   "per_program": {
+    "f117": {
+     "null_mean": 0.02,
+     "observed": 0,
+     "p_value": 1.0
+    },
+    "moby-dick": {
+     "null_mean": 22.57,
+     "observed": 6,
+     "p_value": 1.0
+    },
+    "mogul": {
+     "null_mean": 56.72,
+     "observed": 33,
+     "p_value": 1.0
+    },
+    "oxcart": {
+     "null_mean": 0.96,
+     "observed": 0,
+     "p_value": 1.0
+    },
+    "u2": {
+     "null_mean": 1.54,
+     "observed": 0,
+     "p_value": 1.0
+    }
+   },
+   "radius_km": null,
+   "sightings": 800
+  },
+  {
+   "dataset": "pursue, one per document+state+year",
+   "matches": 20,
+   "matches_sha256": "0ab0f7f548b55f0a5696a9b2c2e1e02b5936651a5e30a57fb9e0027ca98506f1",
+   "method": "state",
+   "null_mean": 54.27,
+   "observed": 20,
+   "p_value": 1.0,
+   "per_program": {
+    "f117": {
+     "null_mean": 0.02,
+     "observed": 0,
+     "p_value": 1.0
+    },
+    "moby-dick": {
+     "null_mean": 18.07,
+     "observed": 6,
+     "p_value": 0.9999
+    },
+    "mogul": {
+     "null_mean": 35.41,
+     "observed": 14,
+     "p_value": 1.0
+    },
+    "oxcart": {
+     "null_mean": 0.43,
+     "observed": 0,
+     "p_value": 1.0
+    },
+    "u2": {
+     "null_mean": 0.75,
+     "observed": 0,
+     "p_value": 1.0
+    }
+   },
+   "radius_km": null,
+   "sightings": 527
+  },
+  {
+   "dataset": "hatch",
+   "matches": 184,
+   "matches_sha256": "0572bb7dfc216f0d984c9e6ab89f7a5168e6975a31bc6f924db9c5f7b0052bcb",
+   "method": "state",
+   "null_mean": 193.76,
+   "observed": 184,
+   "p_value": 0.8183,
+   "per_program": {
+    "f117": {
+     "null_mean": 8.84,
+     "observed": 2,
+     "p_value": 0.9987
+    },
+    "moby-dick": {
+     "null_mean": 106.92,
+     "observed": 109,
+     "p_value": 0.4268
+    },
+    "mogul": {
+     "null_mean": 43.83,
+     "observed": 44,
+     "p_value": 0.5113
+    },
+    "oxcart": {
+     "null_mean": 32.77,
+     "observed": 18,
+     "p_value": 1.0
+    },
+    "u2": {
+     "null_mean": 30.33,
+     "observed": 25,
+     "p_value": 0.9147
+    }
+   },
+   "radius_km": null,
+   "sightings": 7744
+  },
+  {
+   "dataset": "hatch",
+   "matches": 128,
+   "matches_sha256": "f93fa4310484819189584236081fb162d3509fbba3ecc561cb52abd661bc71f6",
+   "method": "distance",
+   "null_mean": 107.01,
+   "observed": 128,
+   "p_value": 0.0059,
+   "per_program": {
+    "f117": {
+     "null_mean": 13.79,
+     "observed": 10,
+     "p_value": 0.8967
+    },
+    "moby-dick": {
+     "null_mean": 36.98,
+     "observed": 54,
+     "p_value": 0.0018
+    },
+    "mogul": {
+     "null_mean": 15.35,
+     "observed": 26,
+     "p_value": 0.0045
+    },
+    "oxcart": {
+     "null_mean": 39.21,
+     "observed": 26,
+     "p_value": 0.9987
+    },
+    "u2": {
+     "null_mean": 36.24,
+     "observed": 35,
+     "p_value": 0.6518
+    }
+   },
+   "radius_km": 300.0,
+   "sightings": 7744
+  },
+  {
+   "dataset": "hatch, one per state+month",
+   "matches": 98,
+   "matches_sha256": "0f97b04bb9667b3468e9c424bf531a045d4dea739467cb7cff485c04b0e13a7e",
+   "method": "state",
+   "null_mean": 99.12,
+   "observed": 98,
+   "p_value": 0.5783,
+   "per_program": {
+    "f117": {
+     "null_mean": 8.2,
+     "observed": 2,
+     "p_value": 0.9981
+    },
+    "moby-dick": {
+     "null_mean": 51.56,
+     "observed": 57,
+     "p_value": 0.2141
+    },
+    "mogul": {
+     "null_mean": 11.1,
+     "observed": 14,
+     "p_value": 0.2178
+    },
+    "oxcart": {
+     "null_mean": 27.9,
+     "observed": 15,
+     "p_value": 0.9999
+    },
+    "u2": {
+     "null_mean": 24.67,
+     "observed": 23,
+     "p_value": 0.7145
+    }
+   },
+   "radius_km": null,
+   "sightings": 4645
+  },
+  {
+   "dataset": "hatch, one per state+month",
+   "matches": 62,
+   "matches_sha256": "fa7f0b6fb285d85852184751f94c5533376408a92b8ffa6dfc44451983b66dbc",
+   "method": "distance",
+   "null_mean": 62.04,
+   "observed": 62,
+   "p_value": 0.5323,
+   "per_program": {
+    "f117": {
+     "null_mean": 10.92,
+     "observed": 6,
+     "p_value": 0.9701
+    },
+    "moby-dick": {
+     "null_mean": 16.83,
+     "observed": 20,
+     "p_value": 0.2339
+    },
+    "mogul": {
+     "null_mean": 3.72,
+     "observed": 8,
+     "p_value": 0.0322
+    },
+    "oxcart": {
+     "null_mean": 30.21,
+     "observed": 20,
+     "p_value": 0.9962
+    },
+    "u2": {
+     "null_mean": 26.68,
+     "observed": 26,
+     "p_value": 0.6152
+    }
+   },
+   "radius_km": 300.0,
+   "sightings": 4645
+  },
+  {
+   "dataset": "hatch:BBK",
+   "matches": 73,
+   "matches_sha256": "14d79e4640f71a4a93713fbbbe9b91ce0e617bddc16ad2bda1357a7342f54eae",
+   "method": "state",
+   "null_mean": 77.94,
+   "observed": 73,
+   "p_value": 0.8218,
+   "per_program": {
+    "f117": {
+     "null_mean": 0.0,
+     "observed": 0,
+     "p_value": 1.0
+    },
+    "moby-dick": {
+     "null_mean": 64.39,
+     "observed": 57,
+     "p_value": 0.9304
+    },
+    "mogul": {
+     "null_mean": 7.61,
+     "observed": 8,
+     "p_value": 0.4994
+    },
+    "oxcart": {
+     "null_mean": 2.8,
+     "observed": 1,
+     "p_value": 0.955
+    },
+    "u2": {
+     "null_mean": 5.94,
+     "observed": 8,
+     "p_value": 0.2135
+    }
+   },
+   "radius_km": null,
+   "sightings": 1394
+  },
+  {
+   "dataset": "hatch:BBK",
+   "matches": 53,
+   "matches_sha256": "b5ec39f180cc7f99b1a2a6f5f44cd26bd1efe47bd5d8de368d61c1f5bdc9fc52",
+   "method": "distance",
+   "null_mean": 43.02,
+   "observed": 53,
+   "p_value": 0.0144,
+   "per_program": {
+    "f117": {
+     "null_mean": 0.0,
+     "observed": 0,
+     "p_value": 1.0
+    },
+    "moby-dick": {
+     "null_mean": 31.96,
+     "observed": 37,
+     "p_value": 0.1214
+    },
+    "mogul": {
+     "null_mean": 4.07,
+     "observed": 3,
+     "p_value": 0.7843
+    },
+    "oxcart": {
+     "null_mean": 3.29,
+     "observed": 4,
+     "p_value": 0.4277
+    },
+    "u2": {
+     "null_mean": 7.0,
+     "observed": 13,
+     "p_value": 0.0048
+    }
+   },
+   "radius_km": 300.0,
+   "sightings": 1394
+  },
+  {
+   "dataset": "hatch:BBK, one per state+month",
+   "matches": 44,
+   "matches_sha256": "e64bba6df550fd06331915b23709669bd3f728b919c48a270df25065aa935f54",
+   "method": "state",
+   "null_mean": 43.93,
+   "observed": 44,
+   "p_value": 0.5372,
+   "per_program": {
+    "f117": {
+     "null_mean": 0.0,
+     "observed": 0,
+     "p_value": 1.0
+    },
+    "moby-dick": {
+     "null_mean": 32.81,
+     "observed": 29,
+     "p_value": 0.8543
+    },
+    "mogul": {
+     "null_mean": 4.88,
+     "observed": 7,
+     "p_value": 0.2015
+    },
+    "oxcart": {
+     "null_mean": 3.03,
+     "observed": 1,
+     "p_value": 0.9683
+    },
+    "u2": {
+     "null_mean": 6.24,
+     "observed": 8,
+     "p_value": 0.2457
+    }
+   },
+   "radius_km": null,
+   "sightings": 985
+  },
+  {
+   "dataset": "hatch:BBK, one per state+month",
+   "matches": 28,
+   "matches_sha256": "c52d76c5c1449d67182bc854b323dec11cc71161d8620e9ae5345a4765b95810",
+   "method": "distance",
+   "null_mean": 22.86,
+   "observed": 28,
+   "p_value": 0.0915,
+   "per_program": {
+    "f117": {
+     "null_mean": 0.0,
+     "observed": 0,
+     "p_value": 1.0
+    },
+    "moby-dick": {
+     "null_mean": 13.42,
+     "observed": 13,
+     "p_value": 0.6303
+    },
+    "mogul": {
+     "null_mean": 2.34,
+     "observed": 3,
+     "p_value": 0.4174
+    },
+    "oxcart": {
+     "null_mean": 3.44,
+     "observed": 4,
+     "p_value": 0.4619
+    },
+    "u2": {
+     "null_mean": 7.09,
+     "observed": 12,
+     "p_value": 0.0162
+    }
+   },
+   "radius_km": 300.0,
+   "sightings": 985
+  },
+  {
+   "dataset": "nicap",
+   "matches": 150,
+   "matches_sha256": "ec003ee8bc4a1bb3c0d5a5a8c202ed8d8a91a8c1adf6d4b56b0c5b3f9b8b21f2",
+   "method": "state",
+   "null_mean": 102.39,
+   "observed": 150,
+   "p_value": 0.0001,
+   "per_program": {
+    "f117": {
+     "null_mean": 3.39,
+     "observed": 2,
+     "p_value": 0.8719
+    },
+    "moby-dick": {
+     "null_mean": 59.32,
+     "observed": 82,
+     "p_value": 0.0006
+    },
+    "mogul": {
+     "null_mean": 18.85,
+     "observed": 47,
+     "p_value": 0.0001
+    },
+    "oxcart": {
+     "null_mean": 19.54,
+     "observed": 9,
+     "p_value": 0.9998
+    },
+    "u2": {
+     "null_mean": 19.17,
+     "observed": 19,
+     "p_value": 0.592
+    }
+   },
+   "radius_km": null,
+   "sightings": 3669
+  },
+  {
+   "dataset": "nicap, one per state+month",
+   "matches": 79,
+   "matches_sha256": "93f8d6a908c1e2f8682b836eba142574ee15efeff921eefb005688ad37ade921",
+   "method": "state",
+   "null_mean": 62.12,
+   "observed": 79,
+   "p_value": 0.0042,
+   "per_program": {
+    "f117": {
+     "null_mean": 4.13,
+     "observed": 2,
+     "p_value": 0.9314
+    },
+    "moby-dick": {
+     "null_mean": 29.62,
+     "observed": 44,
+     "p_value": 0.0016
+    },
+    "mogul": {
+     "null_mean": 9.13,
+     "observed": 15,
+     "p_value": 0.0318
+    },
+    "oxcart": {
+     "null_mean": 18.14,
+     "observed": 8,
+     "p_value": 0.9999
+    },
+    "u2": {
+     "null_mean": 17.39,
+     "observed": 18,
+     "p_value": 0.4882
+    }
+   },
+   "radius_km": null,
+   "sightings": 2359
+  },
+  {
+   "dataset": "bluebook-unknowns",
+   "matches": 27,
+   "matches_sha256": "8c73f175296642c6f2dbd515f82e24d60d3ce45b178c850361cb4de1af65fa28",
+   "method": "state",
+   "null_mean": 27.97,
+   "observed": 27,
+   "p_value": 0.6708,
+   "per_program": {
+    "f117": {
+     "null_mean": 0.0,
+     "observed": 0,
+     "p_value": 1.0
+    },
+    "moby-dick": {
+     "null_mean": 25.26,
+     "observed": 26,
+     "p_value": 0.4679
+    },
+    "mogul": {
+     "null_mean": 1.67,
+     "observed": 1,
+     "p_value": 0.8327
+    },
+    "oxcart": {
+     "null_mean": 0.6,
+     "observed": 0,
+     "p_value": 1.0
+    },
+    "u2": {
+     "null_mean": 1.03,
+     "observed": 0,
+     "p_value": 1.0
+    }
+   },
+   "radius_km": null,
+   "sightings": 477
+  },
+  {
+   "dataset": "bluebook-unknowns, one per state+month",
+   "matches": 19,
+   "matches_sha256": "100aa7dfd9cf7bb43854f2d6d8fc8d5cbe7444b8f322a0d4b91b0b9bb7b2bc11",
+   "method": "state",
+   "null_mean": 20.28,
+   "observed": 19,
+   "p_value": 0.7162,
+   "per_program": {
+    "f117": {
+     "null_mean": 0.0,
+     "observed": 0,
+     "p_value": 1.0
+    },
+    "moby-dick": {
+     "null_mean": 18.02,
+     "observed": 18,
+     "p_value": 0.5763
+    },
+    "mogul": {
+     "null_mean": 1.04,
+     "observed": 1,
+     "p_value": 0.6656
+    },
+    "oxcart": {
+     "null_mean": 0.7,
+     "observed": 0,
+     "p_value": 1.0
+    },
+    "u2": {
+     "null_mean": 1.22,
+     "observed": 0,
+     "p_value": 1.0
+    }
+   },
+   "radius_km": null,
+   "sightings": 388
+  },
+  {
+   "dataset": "magonia",
+   "matches": 4,
+   "matches_sha256": "c9153a6617cc66dcedaf5a2131905625c28f969f9a012854e3482cb2f7abfc94",
+   "method": "state",
+   "null_mean": 4.56,
+   "observed": 4,
+   "p_value": 0.7497,
+   "per_program": {
+    "f117": {
+     "null_mean": 0.0,
+     "observed": 0,
+     "p_value": 1.0
+    },
+    "moby-dick": {
+     "null_mean": 1.56,
+     "observed": 2,
+     "p_value": 0.4766
+    },
+    "mogul": {
+     "null_mean": 0.65,
+     "observed": 0,
+     "p_value": 1.0
+    },
+    "oxcart": {
+     "null_mean": 1.69,
+     "observed": 0,
+     "p_value": 1.0
+    },
+    "u2": {
+     "null_mean": 2.35,
+     "observed": 2,
+     "p_value": 0.8803
+    }
+   },
+   "radius_km": null,
+   "sightings": 306
+  },
+  {
+   "dataset": "magonia, one per state+month",
+   "matches": 4,
+   "matches_sha256": "c9153a6617cc66dcedaf5a2131905625c28f969f9a012854e3482cb2f7abfc94",
+   "method": "state",
+   "null_mean": 4.09,
+   "observed": 4,
+   "p_value": 0.6533,
+   "per_program": {
+    "f117": {
+     "null_mean": 0.0,
+     "observed": 0,
+     "p_value": 1.0
+    },
+    "moby-dick": {
+     "null_mean": 1.3,
+     "observed": 2,
+     "p_value": 0.3842
+    },
+    "mogul": {
+     "null_mean": 0.42,
+     "observed": 0,
+     "p_value": 1.0
+    },
+    "oxcart": {
+     "null_mean": 1.67,
+     "observed": 0,
+     "p_value": 1.0
+    },
+    "u2": {
+     "null_mean": 2.37,
+     "observed": 2,
+     "p_value": 0.8898
+    }
+   },
+   "radius_km": null,
+   "sightings": 256
+  }
+ ]
+}
