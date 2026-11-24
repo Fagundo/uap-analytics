@@ -12,8 +12,8 @@ Each committed result rerun from the current code and data and compared value by
 | H-install-01 | explore | baseline | CHANGED | 4 | 0 | match | 1 | 3.3 |
 | H-launch-01 | confirm | baseline | same | 0 | 0 | match | 0 | 0.7 |
 | H-launch-01 | explore | baseline | same | 0 | 0 | match | 0 | 0.6 |
-| H-persist-01 | confirm | baseline | CHANGED | 8 | 0 | match | 1 | 1.2 |
-| H-persist-01 | explore | baseline | CHANGED | 1 | 0 | match | 1 | 1.2 |
+| H-persist-01 | confirm | baseline | CHANGED | 8 | 0 | match | 1 | 1.3 |
+| H-persist-01 | explore | baseline | CHANGED | 1 | 0 | match | 1 | 1.3 |
 | H-rockage-01 | confirm | baseline | CHANGED | 15 | 0 | match | 1 | 52.1 |
 | H-rockage-01 | explore | baseline | CHANGED | 13 | 0 | match | 1 | 5.5 |
 | H-rockage-01 | holdout | baseline | CHANGED | 14 | 0 | match | 1 | 5.5 |
@@ -47,19 +47,19 @@ Each committed result rerun from the current code and data and compared value by
 ## H-persist-01 confirm
 
 - raw input changed: data/raw/airports/airports.csv
-- tests.persistence.checks.local.rate_ratio: committed 1.1885280944967342, now 1.1885474837014762
-- tests.persistence.checks.reporting_propensity.rate_ratio: committed 1.1784903881520512, now 1.1785045876381623
-- tests.persistence.tiers.all.terms[0].ci_high: committed 1.2378057703662304, now 1.2378250643511675
-- tests.persistence.tiers.all.terms[0].ci_low: committed 1.1539140045947438, now 1.1539315780809527
-- tests.persistence.tiers.all.terms[0].rate_ratio: committed 1.19512401590537, now 1.19514243079848
-- tests.persistence.tiers.filtered.terms[0].ci_high: committed 1.2353260859213373, now 1.235344820793879
-- tests.persistence.tiers.filtered.terms[0].ci_low: committed 1.150535973120448, now 1.1505529075173722
-- tests.persistence.tiers.filtered.terms[0].rate_ratio: committed 1.1921774617843521, now 1.1921952756788312
+- tests.persistence.checks.local.rate_ratio: committed 1.1885280944967342, now 1.1885474837014667
+- tests.persistence.checks.reporting_propensity.rate_ratio: committed 1.1784903881520512, now 1.1785045876380997
+- tests.persistence.tiers.all.terms[0].ci_high: committed 1.2378057703662304, now 1.2378250643513227
+- tests.persistence.tiers.all.terms[0].ci_low: committed 1.1539140045947438, now 1.1539315780810622
+- tests.persistence.tiers.all.terms[0].rate_ratio: committed 1.19512401590537, now 1.1951424307986116
+- tests.persistence.tiers.filtered.terms[0].ci_high: committed 1.2353260859213373, now 1.2353448207947335
+- tests.persistence.tiers.filtered.terms[0].ci_low: committed 1.150535973120448, now 1.1505529075181444
+- tests.persistence.tiers.filtered.terms[0].rate_ratio: committed 1.1921774617843521, now 1.192195275679644
 
 ## H-persist-01 explore
 
 - raw input changed: data/raw/airports/airports.csv
-- tests.persistence.tiers.filtered.terms[0].ci_high: committed 1.185184003985318, now 1.1851959642245324
+- tests.persistence.tiers.filtered.terms[0].ci_high: committed 1.185184003985318, now 1.1851959642273904
 
 ## H-rockage-01 confirm
 
