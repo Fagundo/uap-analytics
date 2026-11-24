@@ -1,0 +1,4385 @@
+{
+ "topics": {
+  "method": {
+   "fdr": 0.1,
+   "fit_pages": 2219,
+   "k": 16,
+   "pages": 7640,
+   "permutations": 2000,
+   "stability": {
+    "10": 0.851,
+    "12": 0.875,
+    "14": 0.866,
+    "16": 0.887,
+    "18": 0.852,
+    "8": 0.875
+   }
+  },
+  "theme_prevalence": {
+   "by_agency": {
+    "CIA": {
+     "docs": 9,
+     "values": [
+      0.0133,
+      0.0055,
+      0.0075,
+      0.0067,
+      0.0002,
+      0.0002,
+      0.0063,
+      0.0023
+     ]
+    },
+    "CONGRESS": {
+     "docs": 1,
+     "values": [
+      0.0013,
+      0.0079,
+      0.0028,
+      0.0059,
+      0.0023,
+      0.0004,
+      0.0018,
+      0.0001
+     ]
+    },
+    "DIA": {
+     "docs": 19,
+     "values": [
+      0.0179,
+      0.0019,
+      0.0028,
+      0.0018,
+      0.0009,
+      0.0,
+      0.0179,
+      0.0318
+     ]
+    },
+    "DOE": {
+     "docs": 4,
+     "values": [
+      0.0038,
+      0.002,
+      0.0004,
+      0.002,
+      0.0001,
+      0.0005,
+      0.0046,
+      0.0002
+     ]
+    },
+    "DOS": {
+     "docs": 6,
+     "values": [
+      0.0018,
+      0.0155,
+      0.0003,
+      0.0073,
+      0.0002,
+      0.0002,
+      0.009,
+      0.0002
+     ]
+    },
+    "DOW": {
+     "docs": 163,
+     "values": [
+      0.0032,
+      0.0016,
+      0.0026,
+      0.0082,
+      0.0015,
+      0.0003,
+      0.0051,
+      0.0043
+     ]
+    },
+    "EOP": {
+     "docs": 2,
+     "values": [
+      0.006,
+      0.012,
+      0.0,
+      0.0,
+      0.0,
+      0.006,
+      0.0,
+      0.0
+     ]
+    },
+    "FAA": {
+     "docs": 231,
+     "values": [
+      0.0003,
+      0.0005,
+      0.0024,
+      0.0046,
+      0.0006,
+      0.0003,
+      0.0002,
+      0.0001
+     ]
+    },
+    "FBI": {
+     "docs": 30,
+     "values": [
+      0.0013,
+      0.0033,
+      0.0016,
+      0.005,
+      0.0007,
+      0.0006,
+      0.0014,
+      0.0002
+     ]
+    },
+    "LLE": {
+     "docs": 4,
+     "values": [
+      0.0182,
+      0.01,
+      0.0,
+      0.0216,
+      0.0,
+      0.0,
+      0.0091,
+      0.0
+     ]
+    },
+    "NARA": {
+     "docs": 2,
+     "values": [
+      0.0039,
+      0.0,
+      0.0,
+      0.004,
+      0.0,
+      0.0,
+      0.0078,
+      0.0
+     ]
+    },
+    "NASA": {
+     "docs": 8,
+     "values": [
+      0.0005,
+      0.0042,
+      0.0021,
+      0.0059,
+      0.0034,
+      0.0031,
+      0.0012,
+      0.0002
+     ]
+    },
+    "NAVY": {
+     "docs": 8,
+     "values": [
+      0.0024,
+      0.0036,
+      0.0008,
+      0.0067,
+      0.0005,
+      0.0001,
+      0.0008,
+      0.0001
+     ]
+    },
+    "NRC": {
+     "docs": 3,
+     "values": [
+      0.0175,
+      0.0013,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0315,
+      0.004
+     ]
+    },
+    "ODNI": {
+     "docs": 5,
+     "values": [
+      0.0067,
+      0.0022,
+      0.0046,
+      0.0122,
+      0.0038,
+      0.0032,
+      0.0149,
+      0.0008
+     ]
+    },
+    "OSD": {
+     "docs": 29,
+     "values": [
+      0.0082,
+      0.0076,
+      0.0034,
+      0.0143,
+      0.0007,
+      0.0023,
+      0.0095,
+      0.0011
+     ]
+    },
+    "UNK": {
+     "docs": 8,
+     "values": [
+      0.0012,
+      0.0024,
+      0.0017,
+      0.0017,
+      0.0,
+      0.0002,
+      0.0029,
+      0.004
+     ]
+    },
+    "USAF": {
+     "docs": 11,
+     "values": [
+      0.0024,
+      0.0267,
+      0.0022,
+      0.005,
+      0.0,
+      0.0003,
+      0.0014,
+      0.003
+     ]
+    },
+    "USG": {
+     "docs": 2,
+     "values": [
+      0.0039,
+      0.003,
+      0.0099,
+      0.0,
+      0.0007,
+      0.002,
+      0.0051,
+      0.0009
+     ]
+    }
+   },
+   "by_era": {
+    "1940s": {
+     "docs": 13,
+     "values": [
+      0.0012,
+      0.0022,
+      0.0097,
+      0.0031,
+      0.0001,
+      0.0006,
+      0.0018,
+      0.0013
+     ]
+    },
+    "1950s": {
+     "docs": 49,
+     "values": [
+      0.0034,
+      0.0025,
+      0.0026,
+      0.0061,
+      0.0008,
+      0.0001,
+      0.0042,
+      0.0006
+     ]
+    },
+    "1960s-70s": {
+     "docs": 19,
+     "values": [
+      0.0048,
+      0.0081,
+      0.0039,
+      0.0044,
+      0.0016,
+      0.0018,
+      0.0048,
+      0.0003
+     ]
+    },
+    "2000s-10s": {
+     "docs": 86,
+     "values": [
+      0.007,
+      0.0018,
+      0.0024,
+      0.0055,
+      0.0026,
+      0.0003,
+      0.0098,
+      0.0148
+     ]
+    },
+    "2016+": {
+     "docs": 60,
+     "values": [
+      0.004,
+      0.0017,
+      0.0008,
+      0.0122,
+      0.0002,
+      0.0003,
+      0.0031,
+      0.0
+     ]
+    },
+    "undated": {
+     "docs": 318,
+     "values": [
+      0.0015,
+      0.0025,
+      0.0024,
+      0.0057,
+      0.0007,
+      0.0005,
+      0.0019,
+      0.0005
+     ]
+    }
+   },
+   "differences": [
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DOW-UAP-D114",
+      "DOW-UAP-D115",
+      "DIA-AAWSAP-STATUS-2009-08"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0148,
+     "lift": 2.54,
+     "lift_without_top": 2.34,
+     "measure": 8,
+     "p": 0.0005,
+     "q": 0.004,
+     "rest_value": 0.0004,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D165",
+      "LLE-UAP-D004",
+      "LLE-UAP-D003"
+     ],
+     "group": "2016+",
+     "group_value": 0.0122,
+     "lift": 1.7,
+     "lift_without_top": 1.64,
+     "measure": 4,
+     "p": 0.0005,
+     "q": 0.004,
+     "rest_value": 0.0054,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 19,
+     "drivers": [
+      "DOS-UAP-D002",
+      "EOP-UAP-D002",
+      "DOS-UAP-D001"
+     ],
+     "group": "1960s-70s",
+     "group_value": 0.0081,
+     "lift": 3.29,
+     "lift_without_top": 2.32,
+     "measure": 2,
+     "p": 0.0005,
+     "q": 0.004,
+     "rest_value": 0.0019,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-AATIP-IM-2010-DRAFT",
+      "DOW-UAP-D186",
+      "DIA-AAWSAP-REID-MTG-2009-01"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0098,
+     "lift": 1.65,
+     "lift_without_top": 1.54,
+     "measure": 7,
+     "p": 0.0005,
+     "q": 0.004,
+     "rest_value": 0.0036,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DOW-UAP-D128",
+      "DOW-UAP-D119",
+      "DOW-UAP-D136"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0026,
+     "lift": 1.92,
+     "lift_without_top": 1.64,
+     "measure": 5,
+     "p": 0.0005,
+     "q": 0.004,
+     "rest_value": 0.0006,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 19,
+     "drivers": [
+      "EOP-UAP-D002",
+      "NASA-UAP-D6",
+      "NASA-UAP-D2"
+     ],
+     "group": "1960s-70s",
+     "group_value": 0.0018,
+     "lift": 4.41,
+     "lift_without_top": 3.05,
+     "measure": 6,
+     "p": 0.001,
+     "q": 0.0067,
+     "rest_value": 0.0003,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D042",
+      "DOW-UAP-D089",
+      "DOW-UAP-D090"
+     ],
+     "group": "2016+",
+     "group_value": 0.0,
+     "lift": 0.0,
+     "lift_without_top": 0.0,
+     "measure": 8,
+     "p": 0.002,
+     "q": 0.0114,
+     "rest_value": 0.0079,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 13,
+     "drivers": [
+      "DOW-UAP-D099",
+      "DOW-UAP-D093",
+      "DOW-UAP-D094"
+     ],
+     "group": "1940s",
+     "group_value": 0.0097,
+     "lift": 3.73,
+     "lift_without_top": 1.97,
+     "measure": 3,
+     "p": 0.005,
+     "q": 0.02,
+     "rest_value": 0.0022,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D042",
+      "DOW-UAP-D089",
+      "DOW-UAP-D090"
+     ],
+     "group": "2016+",
+     "group_value": 0.0031,
+     "lift": 0.52,
+     "lift_without_top": 0.53,
+     "measure": 7,
+     "p": 0.0045,
+     "q": 0.02,
+     "rest_value": 0.0069,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D042",
+      "DOW-UAP-D089",
+      "DOW-UAP-D090"
+     ],
+     "group": "2016+",
+     "group_value": 0.0002,
+     "lift": 0.12,
+     "lift_without_top": 0.12,
+     "measure": 5,
+     "p": 0.0045,
+     "q": 0.02,
+     "rest_value": 0.0017,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-OUSDI-IM-AATIP",
+      "DIA-AAWSAP-SOW-2008",
+      "DIA-AAWSAP-SAP-REVIEW-2009"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.007,
+     "lift": 1.42,
+     "lift_without_top": 1.3,
+     "measure": 1,
+     "p": 0.0065,
+     "q": 0.0236,
+     "rest_value": 0.0037,
+     "robust": false
+    },
+    {
+     "axis": "era",
+     "docs": 49,
+     "drivers": [
+      "CIA-UAP-D026",
+      "CIA-UAP-D027",
+      "CIA-UAP-D029"
+     ],
+     "group": "1950s",
+     "group_value": 0.0006,
+     "lift": 0.1,
+     "lift_without_top": 0.1,
+     "measure": 8,
+     "p": 0.009,
+     "q": 0.03,
+     "rest_value": 0.0073,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-CONTRACT-FY10",
+      "DIA-AAWSAP-DELIVERABLES-REVIEW-2009",
+      "DIA-AAWSAP-ORDER-2008"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0055,
+     "lift": 0.77,
+     "lift_without_top": 0.78,
+     "measure": 4,
+     "p": 0.0125,
+     "q": 0.0384,
+     "rest_value": 0.0082,
+     "robust": false
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D042",
+      "DOW-UAP-D089",
+      "DOW-UAP-D090"
+     ],
+     "group": "2016+",
+     "group_value": 0.0008,
+     "lift": 0.32,
+     "lift_without_top": 0.33,
+     "measure": 3,
+     "p": 0.014,
+     "q": 0.04,
+     "rest_value": 0.0032,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 49,
+     "drivers": [
+      "CIA-UAP-D024",
+      "CIA-UAP-D025",
+      "CIA-UAP-D026"
+     ],
+     "group": "1950s",
+     "group_value": 0.0001,
+     "lift": 0.22,
+     "lift_without_top": 0.23,
+     "measure": 6,
+     "p": 0.036,
+     "q": 0.096,
+     "rest_value": 0.0005,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 19,
+     "drivers": [
+      "DIA-AAWSAP-STATUS-2009-08",
+      "DIA-AAWSAP-DI-BRIEF-2009",
+      "DIA-AAWSAP-REID-BRIEF-2009-05"
+     ],
+     "group": "DIA",
+     "group_value": 0.0318,
+     "lift": 11.72,
+     "lift_without_top": 10.81,
+     "measure": 8,
+     "p": 0.0005,
+     "q": 0.006,
+     "rest_value": 0.0017,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 11,
+     "drivers": [
+      "NARA-595542",
+      "NARA-37294296-37294296",
+      "NARA-68875395-68875395"
+     ],
+     "group": "USAF",
+     "group_value": 0.0267,
+     "lift": 10.75,
+     "lift_without_top": 3.78,
+     "measure": 2,
+     "p": 0.0005,
+     "q": 0.006,
+     "rest_value": 0.002,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 19,
+     "drivers": [
+      "DIA-AAWSAP-OUSDI-IM-AATIP",
+      "DIA-AAWSAP-SOW-2008",
+      "DIA-AAWSAP-SAP-REVIEW-2009"
+     ],
+     "group": "DIA",
+     "group_value": 0.0179,
+     "lift": 6.12,
+     "lift_without_top": 5.38,
+     "measure": 1,
+     "p": 0.0005,
+     "q": 0.006,
+     "rest_value": 0.0024,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 19,
+     "drivers": [
+      "DIA-AAWSAP-AATIP-IM-2010-DRAFT",
+      "DIA-AAWSAP-REID-MTG-2009-01",
+      "DIA-AAWSAP-REID-MTG-2009-05"
+     ],
+     "group": "DIA",
+     "group_value": 0.0179,
+     "lift": 4.99,
+     "lift_without_top": 4.31,
+     "measure": 7,
+     "p": 0.0005,
+     "q": 0.006,
+     "rest_value": 0.0031,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 29,
+     "drivers": [
+      "NARA-493468580-030-SASC-Brief-2023",
+      "NARA-493468580-017-Atmospheric-Wakes",
+      "NARA-493468580-11-AARO-Presentation-for-NASA"
+     ],
+     "group": "OSD",
+     "group_value": 0.0143,
+     "lift": 2.27,
+     "lift_without_top": 2.04,
+     "measure": 4,
+     "p": 0.0005,
+     "q": 0.006,
+     "rest_value": 0.0059,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 29,
+     "drivers": [
+      "NARA-493468580-24-UAP-Reporting-Trends",
+      "NARA-493468580-11-AARO-Presentation-for-NASA",
+      "NARA-493468580-07-2024-Annual-Report"
+     ],
+     "group": "OSD",
+     "group_value": 0.0095,
+     "lift": 2.63,
+     "lift_without_top": 2.1,
+     "measure": 7,
+     "p": 0.0005,
+     "q": 0.006,
+     "rest_value": 0.0033,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00010"
+     ],
+     "group": "FAA",
+     "group_value": 0.0002,
+     "lift": 0.06,
+     "lift_without_top": 0.06,
+     "measure": 7,
+     "p": 0.0005,
+     "q": 0.006,
+     "rest_value": 0.0061,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00010"
+     ],
+     "group": "FAA",
+     "group_value": 0.0003,
+     "lift": 0.1,
+     "lift_without_top": 0.1,
+     "measure": 1,
+     "p": 0.0005,
+     "q": 0.006,
+     "rest_value": 0.0049,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00010"
+     ],
+     "group": "FAA",
+     "group_value": 0.0001,
+     "lift": 0.05,
+     "lift_without_top": 0.05,
+     "measure": 8,
+     "p": 0.0005,
+     "q": 0.006,
+     "rest_value": 0.0046,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00010"
+     ],
+     "group": "FAA",
+     "group_value": 0.0005,
+     "lift": 0.2,
+     "lift_without_top": 0.2,
+     "measure": 2,
+     "p": 0.0005,
+     "q": 0.006,
+     "rest_value": 0.0039,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 3,
+     "drivers": [
+      "NARA-488808322-ML24234A061",
+      "NARA-488808322-UAP-BLUF-attachment-release-in-full",
+      "NARA-488808322-Klukan-Oct-2015-Emails-re-Pilgrim-Drone-Spotting"
+     ],
+     "group": "NRC",
+     "group_value": 0.0315,
+     "lift": 8.75,
+     "lift_without_top": 3.58,
+     "measure": 7,
+     "p": 0.0015,
+     "q": 0.015,
+     "rest_value": 0.0034,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 29,
+     "drivers": [
+      "NARA-493468580-24-UAP-Reporting-Trends",
+      "NARA-493468580-28-Open-Hearing-Brief",
+      "NARA-493468580-014-Phillips-Timothy-Bio-DEC-2023"
+     ],
+     "group": "OSD",
+     "group_value": 0.0082,
+     "lift": 2.82,
+     "lift_without_top": 2.15,
+     "measure": 1,
+     "p": 0.0015,
+     "q": 0.015,
+     "rest_value": 0.0026,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 9,
+     "drivers": [
+      "CIA-UAP-D022",
+      "CIA-UAP-D028",
+      "CIA-UAP-D001"
+     ],
+     "group": "CIA",
+     "group_value": 0.0133,
+     "lift": 4.56,
+     "lift_without_top": 3.51,
+     "measure": 1,
+     "p": 0.002,
+     "q": 0.0171,
+     "rest_value": 0.0027,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00012",
+      "NARA-493468575-237UAP00013"
+     ],
+     "group": "FAA",
+     "group_value": 0.0046,
+     "lift": 0.73,
+     "lift_without_top": 0.73,
+     "measure": 4,
+     "p": 0.002,
+     "q": 0.0171,
+     "rest_value": 0.0076,
+     "robust": false
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D186",
+      "DOW-UAP-D187",
+      "DOW-UAP-D185"
+     ],
+     "group": "DOW",
+     "group_value": 0.0051,
+     "lift": 1.43,
+     "lift_without_top": 1.33,
+     "measure": 7,
+     "p": 0.005,
+     "q": 0.04,
+     "rest_value": 0.0029,
+     "robust": false
+    },
+    {
+     "axis": "agency",
+     "docs": 4,
+     "drivers": [
+      "LLE-UAP-D003",
+      "LLE-UAP-D001",
+      "LLE-UAP-D004"
+     ],
+     "group": "LLE",
+     "group_value": 0.0182,
+     "lift": 6.24,
+     "lift_without_top": 5.53,
+     "measure": 1,
+     "p": 0.006,
+     "q": 0.045,
+     "rest_value": 0.0028,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 29,
+     "drivers": [
+      "NARA-493468580-017-Atmospheric-Wakes",
+      "NARA-493468580-030-SASC-Brief-2023",
+      "NARA-493468580-05-AARO-Historical-Record-Report"
+     ],
+     "group": "OSD",
+     "group_value": 0.0023,
+     "lift": 4.61,
+     "lift_without_top": 3.3,
+     "measure": 6,
+     "p": 0.0065,
+     "q": 0.0459,
+     "rest_value": 0.0004,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D165",
+      "DOW-UAP-D205",
+      "DOW-UAP-D102"
+     ],
+     "group": "DOW",
+     "group_value": 0.0082,
+     "lift": 1.3,
+     "lift_without_top": 1.27,
+     "measure": 4,
+     "p": 0.0105,
+     "q": 0.07,
+     "rest_value": 0.0055,
+     "robust": false
+    },
+    {
+     "axis": "agency",
+     "docs": 6,
+     "drivers": [
+      "DOS-UAP-D002",
+      "R01-59-64634-711-5612-7-2852",
+      "DOS-UAP-D001"
+     ],
+     "group": "DOS",
+     "group_value": 0.0155,
+     "lift": 6.26,
+     "lift_without_top": 3.4,
+     "measure": 2,
+     "p": 0.013,
+     "q": 0.0821,
+     "rest_value": 0.0023,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 4,
+     "drivers": [
+      "LLE-UAP-D004",
+      "LLE-UAP-D003",
+      "LLE-UAP-D001"
+     ],
+     "group": "LLE",
+     "group_value": 0.0216,
+     "lift": 3.43,
+     "lift_without_top": 3.24,
+     "measure": 4,
+     "p": 0.014,
+     "q": 0.084,
+     "rest_value": 0.0062,
+     "robust": true
+    }
+   ]
+  },
+  "themes": [
+   {
+    "id": 1,
+    "name": "secrecy and security",
+    "words": [
+     "security",
+     "access",
+     "cover",
+     "sensitive",
+     "secure",
+     "disseminated",
+     "clearance",
+     "dissemination",
+     "sensitivity",
+     "secrecy",
+     "secured",
+     "declassification"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "public relations and the press",
+    "words": [
+     "public",
+     "press",
+     "newspaper",
+     "media",
+     "magazine",
+     "publication",
+     "reporter",
+     "publicity",
+     "newspapers",
+     "education",
+     "publicly",
+     "publications"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "Soviet and foreign technology",
+    "words": [
+     "missile",
+     "rocket",
+     "foreign",
+     "satellite",
+     "missiles",
+     "satellites",
+     "rockets",
+     "soviet",
+     "russian",
+     "german",
+     "russia",
+     "germany"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "instruments and physical evidence",
+    "words": [
+     "radar",
+     "photographs",
+     "film",
+     "sensor",
+     "camera",
+     "thermal",
+     "measured",
+     "sensors",
+     "sample",
+     "infrared",
+     "measure",
+     "samples"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "human effects and medicine",
+    "words": [
+     "radiation",
+     "blood",
+     "medical",
+     "physiological",
+     "biological",
+     "health",
+     "burn",
+     "burned",
+     "burning",
+     "doctor",
+     "injuries",
+     "burns"
+    ]
+   },
+   {
+    "id": 6,
+    "name": "fragments and recovery",
+    "words": [
+     "fragments",
+     "recovered",
+     "hardware",
+     "debris",
+     "crashed",
+     "recovery",
+     "crash",
+     "artifacts",
+     "fragment",
+     "recover",
+     "artifact",
+     "wreckage"
+    ]
+   },
+   {
+    "id": 7,
+    "name": "threat and defense",
+    "words": [
+     "defense",
+     "nuclear",
+     "weapons",
+     "atomic",
+     "threat",
+     "weapon",
+     "intercept",
+     "threats",
+     "attack",
+     "hostile",
+     "interception",
+     "interceptor"
+    ]
+   },
+   {
+    "id": 8,
+    "name": "contracts and funding",
+    "words": [
+     "cost",
+     "contract",
+     "costs",
+     "proposal",
+     "funding",
+     "fundamental",
+     "contractor",
+     "purchase",
+     "funds",
+     "contracts",
+     "budget",
+     "contractors"
+    ]
+   }
+  ],
+  "topic_prevalence": {
+   "by_agency": {
+    "CIA": {
+     "docs": 9,
+     "values": [
+      0.0264,
+      0.0691,
+      0.0614,
+      0.0095,
+      0.2956,
+      0.0339,
+      0.1081,
+      0.0752,
+      0.008,
+      0.1202,
+      0.0189,
+      0.0358,
+      0.0238,
+      0.034,
+      0.0602,
+      0.0201
+     ]
+    },
+    "CONGRESS": {
+     "docs": 1,
+     "values": [
+      0.0037,
+      0.0342,
+      0.3534,
+      0.0043,
+      0.1343,
+      0.0236,
+      0.0634,
+      0.0299,
+      0.0098,
+      0.0427,
+      0.0054,
+      0.2028,
+      0.0226,
+      0.0123,
+      0.0425,
+      0.0151
+     ]
+    },
+    "DIA": {
+     "docs": 19,
+     "values": [
+      0.0053,
+      0.0176,
+      0.0069,
+      0.0077,
+      0.026,
+      0.0148,
+      0.0389,
+      0.6075,
+      0.0179,
+      0.0015,
+      0.0339,
+      0.0356,
+      0.021,
+      0.1136,
+      0.0439,
+      0.0078
+     ]
+    },
+    "DOE": {
+     "docs": 4,
+     "values": [
+      0.0586,
+      0.0546,
+      0.2838,
+      0.0495,
+      0.1489,
+      0.0212,
+      0.0102,
+      0.0461,
+      0.0135,
+      0.0761,
+      0.0121,
+      0.0344,
+      0.0066,
+      0.0812,
+      0.044,
+      0.0592
+     ]
+    },
+    "DOS": {
+     "docs": 6,
+     "values": [
+      0.0281,
+      0.0741,
+      0.1195,
+      0.0331,
+      0.2794,
+      0.0158,
+      0.1024,
+      0.0212,
+      0.0055,
+      0.1767,
+      0.0137,
+      0.0137,
+      0.0032,
+      0.0248,
+      0.0494,
+      0.0394
+     ]
+    },
+    "DOW": {
+     "docs": 163,
+     "values": [
+      0.0146,
+      0.1384,
+      0.053,
+      0.0323,
+      0.1181,
+      0.0639,
+      0.0353,
+      0.0769,
+      0.0159,
+      0.1183,
+      0.0735,
+      0.0484,
+      0.0634,
+      0.0397,
+      0.0346,
+      0.0737
+     ]
+    },
+    "EOP": {
+     "docs": 2,
+     "values": [
+      0.0411,
+      0.0511,
+      0.243,
+      0.0046,
+      0.0487,
+      0.0,
+      0.0118,
+      0.0499,
+      0.0,
+      0.0103,
+      0.035,
+      0.2099,
+      0.0122,
+      0.1247,
+      0.1577,
+      0.0
+     ]
+    },
+    "FAA": {
+     "docs": 231,
+     "values": [
+      0.7305,
+      0.0043,
+      0.0264,
+      0.0211,
+      0.0121,
+      0.0127,
+      0.0149,
+      0.0017,
+      0.0053,
+      0.1073,
+      0.0058,
+      0.0155,
+      0.0127,
+      0.0048,
+      0.0095,
+      0.0153
+     ]
+    },
+    "FBI": {
+     "docs": 30,
+     "values": [
+      0.0159,
+      0.0246,
+      0.2618,
+      0.0165,
+      0.2402,
+      0.0212,
+      0.0137,
+      0.0192,
+      0.0165,
+      0.1689,
+      0.0212,
+      0.0707,
+      0.0126,
+      0.0167,
+      0.0498,
+      0.0305
+     ]
+    },
+    "LLE": {
+     "docs": 4,
+     "values": [
+      0.0896,
+      0.0027,
+      0.191,
+      0.0012,
+      0.1421,
+      0.0,
+      0.1302,
+      0.0969,
+      0.0223,
+      0.0854,
+      0.0,
+      0.0206,
+      0.009,
+      0.0,
+      0.0862,
+      0.1228
+     ]
+    },
+    "NARA": {
+     "docs": 2,
+     "values": [
+      0.0099,
+      0.0,
+      0.2012,
+      0.0058,
+      0.2124,
+      0.0607,
+      0.0126,
+      0.0006,
+      0.0056,
+      0.2997,
+      0.0236,
+      0.0664,
+      0.0218,
+      0.0059,
+      0.0057,
+      0.0682
+     ]
+    },
+    "NASA": {
+     "docs": 8,
+     "values": [
+      0.0184,
+      0.0873,
+      0.3863,
+      0.0182,
+      0.0462,
+      0.0183,
+      0.0309,
+      0.0226,
+      0.027,
+      0.1054,
+      0.0109,
+      0.1184,
+      0.0081,
+      0.0304,
+      0.0579,
+      0.0136
+     ]
+    },
+    "NAVY": {
+     "docs": 8,
+     "values": [
+      0.0116,
+      0.0068,
+      0.0849,
+      0.2558,
+      0.0532,
+      0.0122,
+      0.0269,
+      0.0134,
+      0.1098,
+      0.2193,
+      0.033,
+      0.0634,
+      0.0082,
+      0.0101,
+      0.0236,
+      0.068
+     ]
+    },
+    "NRC": {
+     "docs": 3,
+     "values": [
+      0.0629,
+      0.0114,
+      0.1471,
+      0.0171,
+      0.0991,
+      0.0233,
+      0.2818,
+      0.0868,
+      0.0165,
+      0.0355,
+      0.0034,
+      0.0076,
+      0.0146,
+      0.0309,
+      0.0931,
+      0.0688
+     ]
+    },
+    "ODNI": {
+     "docs": 5,
+     "values": [
+      0.0233,
+      0.0329,
+      0.0617,
+      0.0188,
+      0.0418,
+      0.0269,
+      0.4622,
+      0.0614,
+      0.0115,
+      0.0821,
+      0.0141,
+      0.0033,
+      0.0135,
+      0.0174,
+      0.079,
+      0.0501
+     ]
+    },
+    "OSD": {
+     "docs": 29,
+     "values": [
+      0.0077,
+      0.099,
+      0.028,
+      0.0182,
+      0.042,
+      0.0185,
+      0.5021,
+      0.0277,
+      0.0096,
+      0.0905,
+      0.0213,
+      0.0318,
+      0.0126,
+      0.0256,
+      0.0294,
+      0.0359
+     ]
+    },
+    "UNK": {
+     "docs": 8,
+     "values": [
+      0.0304,
+      0.0368,
+      0.2906,
+      0.0219,
+      0.0864,
+      0.0197,
+      0.0506,
+      0.0501,
+      0.0143,
+      0.1578,
+      0.0213,
+      0.0393,
+      0.0251,
+      0.0082,
+      0.1249,
+      0.0228
+     ]
+    },
+    "USAF": {
+     "docs": 11,
+     "values": [
+      0.024,
+      0.0341,
+      0.0864,
+      0.0133,
+      0.3852,
+      0.0217,
+      0.0488,
+      0.0362,
+      0.0071,
+      0.0981,
+      0.0361,
+      0.0583,
+      0.0216,
+      0.0102,
+      0.0721,
+      0.0469
+     ]
+    },
+    "USG": {
+     "docs": 2,
+     "values": [
+      0.0057,
+      0.033,
+      0.1602,
+      0.0042,
+      0.1714,
+      0.0081,
+      0.0178,
+      0.0233,
+      0.01,
+      0.1203,
+      0.0371,
+      0.0131,
+      0.0149,
+      0.0092,
+      0.3485,
+      0.0235
+     ]
+    }
+   },
+   "by_era": {
+    "1940s": {
+     "docs": 13,
+     "values": [
+      0.0038,
+      0.0513,
+      0.0902,
+      0.0129,
+      0.3208,
+      0.0128,
+      0.0451,
+      0.0128,
+      0.0118,
+      0.2175,
+      0.0413,
+      0.0366,
+      0.0326,
+      0.0137,
+      0.0271,
+      0.0699
+     ]
+    },
+    "1950s": {
+     "docs": 49,
+     "values": [
+      0.0102,
+      0.0323,
+      0.0855,
+      0.0143,
+      0.3045,
+      0.0296,
+      0.0337,
+      0.028,
+      0.0079,
+      0.2567,
+      0.026,
+      0.0467,
+      0.0322,
+      0.009,
+      0.0528,
+      0.0305
+     ]
+    },
+    "1960s-70s": {
+     "docs": 19,
+     "values": [
+      0.0172,
+      0.0601,
+      0.2331,
+      0.0148,
+      0.1458,
+      0.0199,
+      0.0439,
+      0.0321,
+      0.0132,
+      0.0658,
+      0.0186,
+      0.158,
+      0.0156,
+      0.0367,
+      0.1041,
+      0.0211
+     ]
+    },
+    "2000s-10s": {
+     "docs": 86,
+     "values": [
+      0.0107,
+      0.2411,
+      0.0628,
+      0.0151,
+      0.0444,
+      0.0187,
+      0.0457,
+      0.2593,
+      0.0169,
+      0.0349,
+      0.0262,
+      0.0349,
+      0.0225,
+      0.0957,
+      0.0409,
+      0.0303
+     ]
+    },
+    "2016+": {
+     "docs": 60,
+     "values": [
+      0.026,
+      0.0135,
+      0.0556,
+      0.0847,
+      0.041,
+      0.1321,
+      0.033,
+      0.0206,
+      0.0229,
+      0.096,
+      0.1525,
+      0.0402,
+      0.1159,
+      0.0022,
+      0.0297,
+      0.134
+     ]
+    },
+    "undated": {
+     "docs": 318,
+     "values": [
+      0.5369,
+      0.0179,
+      0.0551,
+      0.0219,
+      0.0489,
+      0.015,
+      0.0717,
+      0.0106,
+      0.0094,
+      0.1117,
+      0.0099,
+      0.0248,
+      0.0135,
+      0.0097,
+      0.0199,
+      0.0231
+     ]
+    }
+   },
+   "differences": [
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DOW-UAP-D187",
+      "DIA-AAWSAP-AATIP-IM-2010-DRAFT",
+      "DIA-AAWSAP-SAP-REVIEW-2009"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.2593,
+     "lift": 2.29,
+     "lift_without_top": 2.22,
+     "measure": 8,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.024,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 49,
+     "drivers": [
+      "DOW-UAP-D105",
+      "DOW-UAP-D159",
+      "DOW-UAP-D096"
+     ],
+     "group": "1950s",
+     "group_value": 0.3045,
+     "lift": 2.46,
+     "lift_without_top": 2.39,
+     "measure": 5,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0743,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DOW-UAP-D126",
+      "DOW-UAP-D153",
+      "DOW-UAP-D121"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.2411,
+     "lift": 2.19,
+     "lift_without_top": 2.15,
+     "measure": 2,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0298,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 13,
+     "drivers": [
+      "R01-18-6369445-General-1948-Vol-1",
+      "DOW-UAP-D100",
+      "R01-18-100754-General-1946-7-Vol-2"
+     ],
+     "group": "1940s",
+     "group_value": 0.3208,
+     "lift": 2.59,
+     "lift_without_top": 2.3,
+     "measure": 5,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.112,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 49,
+     "drivers": [
+      "DOW-UAP-D210",
+      "DOW-UAP-D207",
+      "DOW-UAP-D209"
+     ],
+     "group": "1950s",
+     "group_value": 0.2567,
+     "lift": 2.29,
+     "lift_without_top": 2.19,
+     "measure": 10,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0721,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 19,
+     "drivers": [
+      "NASA-UAP-D1",
+      "NASA-UAP-D2",
+      "NASA-UAP-D5"
+     ],
+     "group": "1960s-70s",
+     "group_value": 0.2331,
+     "lift": 2.86,
+     "lift_without_top": 2.63,
+     "measure": 3,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0678,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D10",
+      "DOW-UAP-D106",
+      "DOW-UAP-D12"
+     ],
+     "group": "2016+",
+     "group_value": 0.0135,
+     "lift": 0.12,
+     "lift_without_top": 0.12,
+     "measure": 2,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.1445,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-REID-MTG-2009-01",
+      "DIA-AAWSAP-REID-MTG-2009-05",
+      "DIA-AAWSAP-REID-MTG-2009-11"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0444,
+     "lift": 0.36,
+     "lift_without_top": 0.36,
+     "measure": 5,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.1725,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D3",
+      "DOW-UAP-D20",
+      "DOW-UAP-D12"
+     ],
+     "group": "2016+",
+     "group_value": 0.1525,
+     "lift": 2.55,
+     "lift_without_top": 2.48,
+     "measure": 11,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0265,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D042",
+      "DOW-UAP-D089",
+      "DOW-UAP-D090"
+     ],
+     "group": "2016+",
+     "group_value": 0.0206,
+     "lift": 0.18,
+     "lift_without_top": 0.19,
+     "measure": 8,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.1464,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-AATIP-IM-2010-DRAFT",
+      "DIA-AAWSAP-DI-BRIEF-2008",
+      "DIA-AAWSAP-ORDER-2008"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0349,
+     "lift": 0.31,
+     "lift_without_top": 0.32,
+     "measure": 10,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.159,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 19,
+     "drivers": [
+      "DOW-UAP-D212",
+      "DOW-UAP-D208",
+      "EOP-UAP-D001"
+     ],
+     "group": "1960s-70s",
+     "group_value": 0.158,
+     "lift": 3.21,
+     "lift_without_top": 2.6,
+     "measure": 12,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0393,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D109",
+      "DOW-UAP-D165",
+      "DOW-UAP-D20"
+     ],
+     "group": "2016+",
+     "group_value": 0.041,
+     "lift": 0.33,
+     "lift_without_top": 0.34,
+     "measure": 5,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.1538,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D32",
+      "DOW-UAP-D74",
+      "DOW-UAP-D65"
+     ],
+     "group": "2016+",
+     "group_value": 0.1321,
+     "lift": 2.6,
+     "lift_without_top": 2.52,
+     "measure": 6,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0216,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D7",
+      "DOW-UAP-D8",
+      "DOW-UAP-D50"
+     ],
+     "group": "2016+",
+     "group_value": 0.134,
+     "lift": 2.26,
+     "lift_without_top": 2.18,
+     "measure": 16,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0324,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D19",
+      "DOW-UAP-D20",
+      "DOW-UAP-D63"
+     ],
+     "group": "2016+",
+     "group_value": 0.1159,
+     "lift": 2.35,
+     "lift_without_top": 2.26,
+     "measure": 13,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0254,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DOW-UAP-D188",
+      "DIA-AAWSAP-DELIVERABLES-REVIEW-2009",
+      "DIA-AAWSAP-STATUS-BRIEFING-2009"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0957,
+     "lift": 2.24,
+     "lift_without_top": 2.1,
+     "measure": 14,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0103,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "NAVY-RF-2019",
+      "NAVY-RF-2020",
+      "DOW-UAP-D091"
+     ],
+     "group": "2016+",
+     "group_value": 0.0847,
+     "lift": 2.55,
+     "lift_without_top": 2.2,
+     "measure": 4,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0147,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D042",
+      "DOW-UAP-D089",
+      "DOW-UAP-D090"
+     ],
+     "group": "2016+",
+     "group_value": 0.0022,
+     "lift": 0.05,
+     "lift_without_top": 0.05,
+     "measure": 14,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0572,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-AATIP-IM-2010-DRAFT",
+      "DIA-AAWSAP-DI-BRIEF-2008",
+      "DIA-AAWSAP-OUSDI-IM-AATIP"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0262,
+     "lift": 0.44,
+     "lift_without_top": 0.44,
+     "measure": 11,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0803,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-AATIP-IM-2010",
+      "DIA-AAWSAP-DI-BRIEF-2008",
+      "DIA-AAWSAP-DI-BRIEF-2009"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0187,
+     "lift": 0.37,
+     "lift_without_top": 0.37,
+     "measure": 6,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0703,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-OUSDI-IM-AATIP",
+      "DIA-AAWSAP-REID-MTG-2009-01",
+      "DIA-AAWSAP-SAP-REVIEW-2009"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0303,
+     "lift": 0.51,
+     "lift_without_top": 0.52,
+     "measure": 16,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0769,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-AATIP-IM-2010-DRAFT",
+      "DIA-AAWSAP-OUSDI-IM-AATIP",
+      "DIA-AAWSAP-REID-MTG-2009-01"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0225,
+     "lift": 0.46,
+     "lift_without_top": 0.46,
+     "measure": 13,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0656,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D7",
+      "DOW-UAP-D8",
+      "LLE-UAP-D001"
+     ],
+     "group": "2016+",
+     "group_value": 0.026,
+     "lift": 1.76,
+     "lift_without_top": 1.59,
+     "measure": 1,
+     "p": 0.0005,
+     "q": 0.0017,
+     "rest_value": 0.0108,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 49,
+     "drivers": [
+      "DOW-UAP-D155",
+      "DOW-UAP-D159",
+      "DOW-UAP-D160"
+     ],
+     "group": "1950s",
+     "group_value": 0.0323,
+     "lift": 0.29,
+     "lift_without_top": 0.3,
+     "measure": 2,
+     "p": 0.001,
+     "q": 0.0031,
+     "rest_value": 0.1312,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 19,
+     "drivers": [
+      "USG-UAP-D002",
+      "EOP-UAP-D002",
+      "CIA-UAP-D022"
+     ],
+     "group": "1960s-70s",
+     "group_value": 0.1041,
+     "lift": 2.31,
+     "lift_without_top": 1.59,
+     "measure": 15,
+     "p": 0.001,
+     "q": 0.0031,
+     "rest_value": 0.0396,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 49,
+     "drivers": [
+      "DOW-UAP-D103",
+      "DOW-UAP-D159",
+      "DOW-UAP-D164"
+     ],
+     "group": "1950s",
+     "group_value": 0.028,
+     "lift": 0.25,
+     "lift_without_top": 0.25,
+     "measure": 8,
+     "p": 0.0025,
+     "q": 0.0074,
+     "rest_value": 0.1366,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 49,
+     "drivers": [
+      "CIA-UAP-D026",
+      "DOW-UAP-D159",
+      "DOW-UAP-D199"
+     ],
+     "group": "1950s",
+     "group_value": 0.0305,
+     "lift": 0.52,
+     "lift_without_top": 0.53,
+     "measure": 16,
+     "p": 0.003,
+     "q": 0.0086,
+     "rest_value": 0.0672,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 49,
+     "drivers": [
+      "CIA-UAP-D025",
+      "CIA-UAP-D026",
+      "DOW-UAP-D103"
+     ],
+     "group": "1950s",
+     "group_value": 0.009,
+     "lift": 0.21,
+     "lift_without_top": 0.21,
+     "measure": 14,
+     "p": 0.0035,
+     "q": 0.0097,
+     "rest_value": 0.0519,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 49,
+     "drivers": [
+      "CIA-UAP-D024",
+      "CIA-UAP-D028",
+      "CIA-UAP-D029"
+     ],
+     "group": "1950s",
+     "group_value": 0.026,
+     "lift": 0.44,
+     "lift_without_top": 0.44,
+     "measure": 11,
+     "p": 0.004,
+     "q": 0.0107,
+     "rest_value": 0.0691,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 49,
+     "drivers": [
+      "CIA-UAP-D028",
+      "DOW-UAP-D103",
+      "DOW-UAP-D156"
+     ],
+     "group": "1950s",
+     "group_value": 0.0079,
+     "lift": 0.5,
+     "lift_without_top": 0.51,
+     "measure": 9,
+     "p": 0.008,
+     "q": 0.02,
+     "rest_value": 0.0181,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D44",
+      "DOW-UAP-D38",
+      "DOW-UAP-D57"
+     ],
+     "group": "2016+",
+     "group_value": 0.0229,
+     "lift": 1.43,
+     "lift_without_top": 1.29,
+     "measure": 9,
+     "p": 0.008,
+     "q": 0.02,
+     "rest_value": 0.0135,
+     "robust": false
+    },
+    {
+     "axis": "era",
+     "docs": 19,
+     "drivers": [
+      "EOP-UAP-D001",
+      "EOP-UAP-D002",
+      "NASA-UAP-D1"
+     ],
+     "group": "1960s-70s",
+     "group_value": 0.0211,
+     "lift": 0.36,
+     "lift_without_top": 0.38,
+     "measure": 16,
+     "p": 0.013,
+     "q": 0.0315,
+     "rest_value": 0.0627,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-AATIP-IM-2010",
+      "DIA-AAWSAP-REID-MTG-2009-01",
+      "DIA-AAWSAP-REID-MTG-2009-11"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0151,
+     "lift": 0.45,
+     "lift_without_top": 0.46,
+     "measure": 4,
+     "p": 0.014,
+     "q": 0.0329,
+     "rest_value": 0.0442,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 13,
+     "drivers": [
+      "DOW-UAP-D097",
+      "R01-342-HS1-416511228-box186-319-1-Flying-Discs-1949",
+      "DOW-UAP-D093"
+     ],
+     "group": "1940s",
+     "group_value": 0.2175,
+     "lift": 1.94,
+     "lift_without_top": 1.76,
+     "measure": 10,
+     "p": 0.0155,
+     "q": 0.0354,
+     "rest_value": 0.1056,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 60,
+     "drivers": [
+      "DOW-UAP-D106",
+      "DOW-UAP-D109",
+      "DOW-UAP-D12"
+     ],
+     "group": "2016+",
+     "group_value": 0.0297,
+     "lift": 0.66,
+     "lift_without_top": 0.67,
+     "measure": 15,
+     "p": 0.0285,
+     "q": 0.0633,
+     "rest_value": 0.0505,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-AATIP-IM-2010-DRAFT",
+      "DIA-AAWSAP-DI-BRIEF-2009",
+      "DIA-AAWSAP-REID-BRIEF-2009-05"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0349,
+     "lift": 0.71,
+     "lift_without_top": 0.72,
+     "measure": 12,
+     "p": 0.0335,
+     "q": 0.0724,
+     "rest_value": 0.058,
+     "robust": false
+    },
+    {
+     "axis": "era",
+     "docs": 19,
+     "drivers": [
+      "DOS-UAP-D002",
+      "EOP-UAP-D002",
+      "NASA-UAP-D5"
+     ],
+     "group": "1960s-70s",
+     "group_value": 0.0186,
+     "lift": 0.31,
+     "lift_without_top": 0.33,
+     "measure": 11,
+     "p": 0.042,
+     "q": 0.0839,
+     "rest_value": 0.0635,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 19,
+     "drivers": [
+      "EOP-UAP-D001",
+      "NASA-UAP-D5",
+      "DOS-UAP-D002"
+     ],
+     "group": "1960s-70s",
+     "group_value": 0.0156,
+     "lift": 0.32,
+     "lift_without_top": 0.33,
+     "measure": 13,
+     "p": 0.043,
+     "q": 0.0839,
+     "rest_value": 0.0524,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 49,
+     "drivers": [
+      "DOW-UAP-D103",
+      "DOW-UAP-D177",
+      "DOW-UAP-D178"
+     ],
+     "group": "1950s",
+     "group_value": 0.0296,
+     "lift": 0.58,
+     "lift_without_top": 0.6,
+     "measure": 6,
+     "p": 0.041,
+     "q": 0.0839,
+     "rest_value": 0.0566,
+     "robust": true
+    },
+    {
+     "axis": "era",
+     "docs": 86,
+     "drivers": [
+      "DIA-AAWSAP-DI-BRIEF-2008",
+      "DIA-AAWSAP-DI-BRIEF-2009",
+      "DIA-AAWSAP-OUSDI-IM-AATIP"
+     ],
+     "group": "2000s-10s",
+     "group_value": 0.0107,
+     "lift": 0.72,
+     "lift_without_top": 0.73,
+     "measure": 1,
+     "p": 0.0415,
+     "q": 0.0839,
+     "rest_value": 0.0173,
+     "robust": false
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00537",
+      "NARA-493468575-237UAP00624",
+      "NARA-493468575-237UAP00565"
+     ],
+     "group": "FAA",
+     "group_value": 0.7305,
+     "lift": 2.29,
+     "lift_without_top": 2.28,
+     "measure": 1,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.017,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 19,
+     "drivers": [
+      "DIA-AAWSAP-AATIP-IM-2010-DRAFT",
+      "DIA-AAWSAP-SAP-REVIEW-2009",
+      "DIA-AAWSAP-REID-MTG-2009-01"
+     ],
+     "group": "DIA",
+     "group_value": 0.6075,
+     "lift": 11.39,
+     "lift_without_top": 11.03,
+     "measure": 8,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0333,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 29,
+     "drivers": [
+      "NARA-493468580-24-UAP-Reporting-Trends",
+      "NARA-493468580-04-AARO-Trifold-2024",
+      "NARA-493468580-029-2023-UAP-Mission-Slides"
+     ],
+     "group": "OSD",
+     "group_value": 0.5021,
+     "lift": 8.61,
+     "lift_without_top": 8.35,
+     "measure": 7,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0334,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D042",
+      "DOW-UAP-D089",
+      "DOW-UAP-D090"
+     ],
+     "group": "DOW",
+     "group_value": 0.0146,
+     "lift": 0.05,
+     "lift_without_top": 0.05,
+     "measure": 1,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.4495,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 5,
+     "drivers": [
+      "NARA-493468579-576UAP0021",
+      "NARA-493468579-576UAP0026",
+      "NARA-493468579-576UAP0007"
+     ],
+     "group": "ODNI",
+     "group_value": 0.4622,
+     "lift": 7.93,
+     "lift_without_top": 6.89,
+     "measure": 7,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0546,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 29,
+     "drivers": [
+      "NARA-493468580-017-Atmospheric-Wakes",
+      "NARA-493468580-020-Western-US",
+      "NARA-493468580-021-AARO-Trifold-Jan2025"
+     ],
+     "group": "OSD",
+     "group_value": 0.0077,
+     "lift": 0.02,
+     "lift_without_top": 0.03,
+     "measure": 1,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.3369,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 8,
+     "drivers": [
+      "NASA-UAP-D1",
+      "NASA-UAP-D2",
+      "NASA-UAP-D5"
+     ],
+     "group": "NASA",
+     "group_value": 0.3863,
+     "lift": 5.84,
+     "lift_without_top": 5.45,
+     "measure": 3,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0614,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 30,
+     "drivers": [
+      "FBI-UAP-D014",
+      "FBI-UAP-D032",
+      "FBI-UAP-D033"
+     ],
+     "group": "FBI",
+     "group_value": 0.0159,
+     "lift": 0.05,
+     "lift_without_top": 0.05,
+     "measure": 1,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.3371,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 11,
+     "drivers": [
+      "R01-18-6369445-General-1948-Vol-1",
+      "R01-18-100754-General-1946-7-Vol-2",
+      "R01-341-110677-Numerical-File-5-2500"
+     ],
+     "group": "USAF",
+     "group_value": 0.3852,
+     "lift": 4.81,
+     "lift_without_top": 4.36,
+     "measure": 5,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0739,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 8,
+     "drivers": [
+      "NAVY-RF-2019",
+      "NAVY-RF-2020",
+      "NAVY-RF-2023-01"
+     ],
+     "group": "NAVY",
+     "group_value": 0.2558,
+     "lift": 9.62,
+     "lift_without_top": 6.84,
+     "measure": 4,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0232,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 8,
+     "drivers": [
+      "R01-Western-US-Event-Slides-5-08-2026",
+      "R01-Serial-5-Redacted-Redacted",
+      "R01-Serial-4-Redacted-Redacted"
+     ],
+     "group": "UNK",
+     "group_value": 0.2906,
+     "lift": 4.39,
+     "lift_without_top": 4.08,
+     "measure": 3,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0628,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 30,
+     "drivers": [
+      "R01-65-HS1-834228961-62-HQ-83894-Serial-153",
+      "R01-65-HS1-834228961-62-HQ-83894-Serial-438",
+      "FBI-UAP-D024"
+     ],
+     "group": "FBI",
+     "group_value": 0.2618,
+     "lift": 3.96,
+     "lift_without_top": 3.76,
+     "measure": 3,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0548,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 30,
+     "drivers": [
+      "R01-65-HS1-101634279-100-DE-18221-Serial-844",
+      "R01-65-HS1-834228961-62-HQ-83894-Section-9",
+      "FBI-UAP-D014"
+     ],
+     "group": "FBI",
+     "group_value": 0.2402,
+     "lift": 3.0,
+     "lift_without_top": 2.86,
+     "measure": 5,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0708,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00013"
+     ],
+     "group": "FAA",
+     "group_value": 0.0121,
+     "lift": 0.15,
+     "lift_without_top": 0.15,
+     "measure": 5,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.1302,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D126",
+      "DOW-UAP-D153",
+      "DOW-UAP-D121"
+     ],
+     "group": "DOW",
+     "group_value": 0.1384,
+     "lift": 2.46,
+     "lift_without_top": 2.4,
+     "measure": 2,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0211,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 19,
+     "drivers": [
+      "DIA-AAWSAP-DELIVERABLES-REVIEW-2009",
+      "DIA-AAWSAP-STATUS-BRIEFING-2009",
+      "DIA-AAWSAP-STATUS-2009-08"
+     ],
+     "group": "DIA",
+     "group_value": 0.1136,
+     "lift": 4.85,
+     "lift_without_top": 3.63,
+     "measure": 14,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0201,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00013"
+     ],
+     "group": "FAA",
+     "group_value": 0.0043,
+     "lift": 0.08,
+     "lift_without_top": 0.08,
+     "measure": 2,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0944,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00010",
+      "NARA-493468575-237UAP00012"
+     ],
+     "group": "FAA",
+     "group_value": 0.0017,
+     "lift": 0.03,
+     "lift_without_top": 0.03,
+     "measure": 8,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0913,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00013"
+     ],
+     "group": "FAA",
+     "group_value": 0.0149,
+     "lift": 0.26,
+     "lift_without_top": 0.26,
+     "measure": 7,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0902,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00031",
+      "NARA-493468575-237UAP00086"
+     ],
+     "group": "FAA",
+     "group_value": 0.0264,
+     "lift": 0.4,
+     "lift_without_top": 0.4,
+     "measure": 3,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0954,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D3",
+      "DOW-UAP-D20",
+      "DOW-UAP-D12"
+     ],
+     "group": "DOW",
+     "group_value": 0.0735,
+     "lift": 2.4,
+     "lift_without_top": 2.33,
+     "measure": 11,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0124,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D100",
+      "DOW-UAP-D105",
+      "DOW-UAP-D159"
+     ],
+     "group": "DOW",
+     "group_value": 0.1181,
+     "lift": 1.47,
+     "lift_without_top": 1.43,
+     "measure": 5,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.064,
+     "robust": false
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D54",
+      "DOW-UAP-D7",
+      "DOW-UAP-D8"
+     ],
+     "group": "DOW",
+     "group_value": 0.0737,
+     "lift": 1.93,
+     "lift_without_top": 1.86,
+     "measure": 16,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.023,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D19",
+      "DOW-UAP-D20",
+      "DOW-UAP-D63"
+     ],
+     "group": "DOW",
+     "group_value": 0.0634,
+     "lift": 2.23,
+     "lift_without_top": 2.16,
+     "measure": 13,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0135,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D32",
+      "DOW-UAP-D74",
+      "DOW-UAP-D65"
+     ],
+     "group": "DOW",
+     "group_value": 0.0639,
+     "lift": 2.14,
+     "lift_without_top": 2.07,
+     "measure": 6,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0154,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00010"
+     ],
+     "group": "FAA",
+     "group_value": 0.0058,
+     "lift": 0.19,
+     "lift_without_top": 0.19,
+     "measure": 11,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.049,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00012"
+     ],
+     "group": "FAA",
+     "group_value": 0.0153,
+     "lift": 0.4,
+     "lift_without_top": 0.4,
+     "measure": 16,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.055,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00013",
+      "NARA-493468575-237UAP00015",
+      "NARA-493468575-237UAP00017"
+     ],
+     "group": "FAA",
+     "group_value": 0.0095,
+     "lift": 0.31,
+     "lift_without_top": 0.31,
+     "measure": 15,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0457,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00010",
+      "NARA-493468575-237UAP00013"
+     ],
+     "group": "FAA",
+     "group_value": 0.0155,
+     "lift": 0.44,
+     "lift_without_top": 0.45,
+     "measure": 12,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0493,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00010"
+     ],
+     "group": "FAA",
+     "group_value": 0.0048,
+     "lift": 0.21,
+     "lift_without_top": 0.21,
+     "measure": 14,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0371,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00010"
+     ],
+     "group": "FAA",
+     "group_value": 0.0127,
+     "lift": 0.43,
+     "lift_without_top": 0.43,
+     "measure": 6,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0426,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00012",
+      "NARA-493468575-237UAP00013"
+     ],
+     "group": "FAA",
+     "group_value": 0.0127,
+     "lift": 0.45,
+     "lift_without_top": 0.45,
+     "measure": 13,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.04,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D188",
+      "DOW-UAP-D135",
+      "DOW-UAP-D129"
+     ],
+     "group": "DOW",
+     "group_value": 0.0397,
+     "lift": 1.7,
+     "lift_without_top": 1.54,
+     "measure": 14,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0164,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 231,
+     "drivers": [
+      "NARA-493468575-237UAP00004",
+      "NARA-493468575-237UAP00007",
+      "NARA-493468575-237UAP00012"
+     ],
+     "group": "FAA",
+     "group_value": 0.0053,
+     "lift": 0.43,
+     "lift_without_top": 0.44,
+     "measure": 9,
+     "p": 0.0005,
+     "q": 0.0035,
+     "rest_value": 0.0171,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 9,
+     "drivers": [
+      "CIA-UAP-D026",
+      "CIA-UAP-D028",
+      "CIA-UAP-D029"
+     ],
+     "group": "CIA",
+     "group_value": 0.2956,
+     "lift": 3.69,
+     "lift_without_top": 3.28,
+     "measure": 5,
+     "p": 0.001,
+     "q": 0.0065,
+     "rest_value": 0.0765,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 8,
+     "drivers": [
+      "NAVY-RF-2023-12",
+      "NAVY-RF-FOIA-LETTER",
+      "NAVY-RF-2023-01"
+     ],
+     "group": "NAVY",
+     "group_value": 0.1098,
+     "lift": 9.07,
+     "lift_without_top": 2.34,
+     "measure": 9,
+     "p": 0.001,
+     "q": 0.0065,
+     "rest_value": 0.0107,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D212",
+      "DOW-UAP-D208",
+      "DOW-UAP-D103"
+     ],
+     "group": "DOW",
+     "group_value": 0.0484,
+     "lift": 1.39,
+     "lift_without_top": 1.27,
+     "measure": 12,
+     "p": 0.001,
+     "q": 0.0065,
+     "rest_value": 0.0292,
+     "robust": false
+    },
+    {
+     "axis": "agency",
+     "docs": 19,
+     "drivers": [
+      "DIA-AAWSAP-DI-BRIEF-2008",
+      "DIA-AAWSAP-DI-BRIEF-2009",
+      "DIA-AAWSAP-OUSDI-IM-AATIP"
+     ],
+     "group": "DIA",
+     "group_value": 0.0053,
+     "lift": 0.02,
+     "lift_without_top": 0.02,
+     "measure": 1,
+     "p": 0.0015,
+     "q": 0.0095,
+     "rest_value": 0.3308,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 6,
+     "drivers": [
+      "R01-59-64634-711-5612-7-2852",
+      "DOS-UAP-D002",
+      "DOS-UAP-D2"
+     ],
+     "group": "DOS",
+     "group_value": 0.2794,
+     "lift": 3.49,
+     "lift_without_top": 3.13,
+     "measure": 5,
+     "p": 0.002,
+     "q": 0.012,
+     "rest_value": 0.0779,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 8,
+     "drivers": [
+      "R01-Serial-4-Redacted-Redacted",
+      "R01-Serial-5-Redacted-Redacted",
+      "R01-Serial-3-Redacted"
+     ],
+     "group": "UNK",
+     "group_value": 0.1249,
+     "lift": 4.12,
+     "lift_without_top": 3.62,
+     "measure": 15,
+     "p": 0.002,
+     "q": 0.012,
+     "rest_value": 0.0289,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 19,
+     "drivers": [
+      "DIA-AAWSAP-AATIP-IM-2010-DRAFT",
+      "DIA-AAWSAP-DI-BRIEF-2008",
+      "DIA-AAWSAP-ORDER-2008"
+     ],
+     "group": "DIA",
+     "group_value": 0.0015,
+     "lift": 0.01,
+     "lift_without_top": 0.01,
+     "measure": 10,
+     "p": 0.0025,
+     "q": 0.0146,
+     "rest_value": 0.1158,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 4,
+     "drivers": [
+      "DOE-UAP-D003",
+      "DOE-UAP-D004",
+      "DOE-UAP-D002"
+     ],
+     "group": "DOE",
+     "group_value": 0.2838,
+     "lift": 4.29,
+     "lift_without_top": 3.2,
+     "measure": 3,
+     "p": 0.005,
+     "q": 0.0286,
+     "rest_value": 0.0646,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 30,
+     "drivers": [
+      "R01-65-HS1-834228961-62-HQ-83894-Serial-403",
+      "R01-65-HS1-834228961-62-HQ-83894-Serial-153",
+      "FBI-UAP-D032"
+     ],
+     "group": "FBI",
+     "group_value": 0.0707,
+     "lift": 2.02,
+     "lift_without_top": 1.91,
+     "measure": 12,
+     "p": 0.006,
+     "q": 0.0335,
+     "rest_value": 0.0329,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 8,
+     "drivers": [
+      "NASA-UAP-D2",
+      "NASA-UAP-D1",
+      "NASA-UAP-D5"
+     ],
+     "group": "NASA",
+     "group_value": 0.1184,
+     "lift": 3.39,
+     "lift_without_top": 2.93,
+     "measure": 12,
+     "p": 0.01,
+     "q": 0.0545,
+     "rest_value": 0.0337,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D187",
+      "DOW-UAP-D186",
+      "DOW-UAP-D184"
+     ],
+     "group": "DOW",
+     "group_value": 0.0769,
+     "lift": 1.44,
+     "lift_without_top": 1.34,
+     "measure": 8,
+     "p": 0.011,
+     "q": 0.0586,
+     "rest_value": 0.0433,
+     "robust": false
+    },
+    {
+     "axis": "agency",
+     "docs": 11,
+     "drivers": [
+      "R01-341-110448-Records-Relating-to-the-Collection-and-Dissemination-of-Intellige",
+      "NARA-596293",
+      "R01-18-100754-General-1946-7-Vol-2"
+     ],
+     "group": "USAF",
+     "group_value": 0.024,
+     "lift": 0.08,
+     "lift_without_top": 0.08,
+     "measure": 1,
+     "p": 0.0135,
+     "q": 0.0689,
+     "rest_value": 0.3255,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 163,
+     "drivers": [
+      "DOW-UAP-D091",
+      "DOW-UAP-D114",
+      "DOW-UAP-D115"
+     ],
+     "group": "DOW",
+     "group_value": 0.0353,
+     "lift": 0.61,
+     "lift_without_top": 0.61,
+     "measure": 7,
+     "p": 0.0135,
+     "q": 0.0689,
+     "rest_value": 0.0681,
+     "robust": true
+    },
+    {
+     "axis": "agency",
+     "docs": 4,
+     "drivers": [
+      "LLE-UAP-D001",
+      "LLE-UAP-D003",
+      "LLE-UAP-D004"
+     ],
+     "group": "LLE",
+     "group_value": 0.1228,
+     "lift": 3.22,
+     "lift_without_top": 2.88,
+     "measure": 16,
+     "p": 0.0195,
+     "q": 0.0975,
+     "rest_value": 0.0376,
+     "robust": true
+    }
+   ]
+  },
+  "topics": [
+   {
+    "id": 1,
+    "label": "FAA UAP reports",
+    "typical": [
+     [
+      "NARA-493468575-237UAP00537",
+      1,
+      1.0
+     ],
+     [
+      "NARA-493468575-237UAP00624",
+      1,
+      1.0
+     ],
+     [
+      "NARA-493468575-237UAP00565",
+      1,
+      1.0
+     ],
+     [
+      "NARA-493468575-237UAP00479",
+      1,
+      1.0
+     ],
+     [
+      "NARA-493468575-237UAP00586",
+      1,
+      1.0
+     ],
+     [
+      "NARA-493468575-237UAP00561",
+      1,
+      1.0
+     ]
+    ],
+    "weights": [
+     1.1809,
+     1.1777,
+     1.0755,
+     1.0041,
+     0.7257,
+     0.6931,
+     0.6867,
+     0.6804,
+     0.6577,
+     0.6541,
+     0.6346,
+     0.6305,
+     0.6113,
+     0.5887,
+     0.4534
+    ],
+    "words": [
+     "latitude",
+     "uap",
+     "ufo",
+     "activity",
+     "prelim",
+     "faa",
+     "info",
+     "title",
+     "advised",
+     "washington",
+     "operations",
+     "description",
+     "center",
+     "evasive",
+     "notification"
+    ]
+   },
+   {
+    "id": 2,
+    "label": null,
+    "typical": [
+     [
+      "DOW-UAP-D153",
+      40,
+      1.0
+     ],
+     [
+      "DOW-UAP-D146",
+      9,
+      1.0
+     ],
+     [
+      "DOW-UAP-D153",
+      4,
+      1.0
+     ],
+     [
+      "DOW-UAP-D142",
+      25,
+      1.0
+     ],
+     [
+      "DOW-UAP-D126",
+      4,
+      0.995
+     ],
+     [
+      "DOW-UAP-D145",
+      27,
+      0.993
+     ]
+    ],
+    "weights": [
+     0.2989,
+     0.297,
+     0.2942,
+     0.2908,
+     0.2802,
+     0.2779,
+     0.2717,
+     0.2639,
+     0.2599,
+     0.2597,
+     0.2556,
+     0.2507,
+     0.2449,
+     0.2423,
+     0.2384
+    ],
+    "words": [
+     "system",
+     "used",
+     "using",
+     "density",
+     "shown",
+     "well",
+     "large",
+     "design",
+     "many",
+     "systems",
+     "figure",
+     "based",
+     "fields",
+     "mass",
+     "small"
+    ]
+   },
+   {
+    "id": 3,
+    "label": "Witness narratives",
+    "typical": [
+     [
+      "CONGRESS-HASC-1966",
+      76,
+      0.948
+     ],
+     [
+      "DOW-UAP-D174",
+      43,
+      0.942
+     ],
+     [
+      "DOW-UAP-D173",
+      68,
+      0.904
+     ],
+     [
+      "DOW-UAP-D170",
+      22,
+      0.903
+     ],
+     [
+      "DOW-UAP-D171",
+      73,
+      0.889
+     ],
+     [
+      "DOW-UAP-D171",
+      79,
+      0.884
+     ]
+    ],
+    "weights": [
+     0.4129,
+     0.3702,
+     0.3452,
+     0.2926,
+     0.2804,
+     0.2786,
+     0.2752,
+     0.2752,
+     0.2356,
+     0.2207,
+     0.1996,
+     0.1993,
+     0.1977,
+     0.1954,
+     0.1915
+    ],
+    "words": [
+     "saw",
+     "like",
+     "lights",
+     "back",
+     "night",
+     "people",
+     "light",
+     "seen",
+     "car",
+     "time",
+     "around",
+     "witness",
+     "look",
+     "anything",
+     "away"
+    ]
+   },
+   {
+    "id": 4,
+    "label": "Navy range-fouler debriefs",
+    "typical": [
+     [
+      "NAVY-RF-2019",
+      12,
+      1.0
+     ],
+     [
+      "NAVY-RF-2020",
+      10,
+      0.975
+     ],
+     [
+      "NAVY-RF-2020",
+      20,
+      0.969
+     ],
+     [
+      "NAVY-RF-2019",
+      4,
+      0.966
+     ],
+     [
+      "NAVY-RF-2023-01",
+      7,
+      0.661
+     ],
+     [
+      "NAVY-RF-2023-01",
+      19,
+      0.653
+     ]
+    ],
+    "weights": [
+     0.5897,
+     0.5111,
+     0.5062,
+     0.4849,
+     0.4445,
+     0.4334,
+     0.4207,
+     0.4104,
+     0.4095,
+     0.3999,
+     0.3973,
+     0.3452,
+     0.3297,
+     0.3259,
+     0.3235
+    ],
+    "words": [
+     "troubleshooting",
+     "reflective",
+     "ddmmss",
+     "working",
+     "parts",
+     "reference",
+     "debrief",
+     "bullseye",
+     "metallic",
+     "crew",
+     "sipr",
+     "attitude",
+     "initial",
+     "side",
+     "latitute"
+    ]
+   },
+   {
+    "id": 5,
+    "label": "Air Force intelligence correspondence",
+    "typical": [
+     [
+      "DOW-UAP-D100",
+      226,
+      1.0
+     ],
+     [
+      "DOW-UAP-D105",
+      185,
+      1.0
+     ],
+     [
+      "DOW-UAP-D105",
+      109,
+      1.0
+     ],
+     [
+      "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+      74,
+      1.0
+     ],
+     [
+      "R01-65-HS1-834228961-62-HQ-83894-Section-3",
+      8,
+      1.0
+     ],
+     [
+      "DOW-UAP-D180",
+      92,
+      0.999
+     ]
+    ],
+    "weights": [
+     0.7058,
+     0.4992,
+     0.407,
+     0.4054,
+     0.3291,
+     0.2978,
+     0.2698,
+     0.2566,
+     0.2413,
+     0.217,
+     0.2046,
+     0.2005,
+     0.2004,
+     0.1994,
+     0.1994
+    ],
+    "words": [
+     "air",
+     "force",
+     "usaf",
+     "flying",
+     "information",
+     "intelligence",
+     "chief",
+     "colonel",
+     "general",
+     "director",
+     "headquarters",
+     "united",
+     "unidentified",
+     "project",
+     "base"
+    ]
+   },
+   {
+    "id": 6,
+    "label": null,
+    "typical": [
+     [
+      "DOW-UAP-D64",
+      5,
+      0.998
+     ],
+     [
+      "DOW-UAP-D106",
+      5,
+      0.996
+     ],
+     [
+      "DOW-UAP-D60",
+      6,
+      0.994
+     ],
+     [
+      "DOW-UAP-D108",
+      5,
+      0.989
+     ],
+     [
+      "DOW-UAP-D12",
+      5,
+      0.989
+     ],
+     [
+      "DOW-UAP-D35",
+      5,
+      0.984
+     ]
+    ],
+    "weights": [
+     0.5355,
+     0.5238,
+     0.5172,
+     0.4767,
+     0.4174,
+     0.3868,
+     0.3826,
+     0.3651,
+     0.3645,
+     0.3635,
+     0.2977,
+     0.2893,
+     0.2774,
+     0.2726,
+     0.2721
+    ],
+    "words": [
+     "station",
+     "tasking",
+     "precoord",
+     "supported",
+     "eeis",
+     "weather",
+     "ntisr",
+     "effectiveness",
+     "operation",
+     "gentext",
+     "time",
+     "observed",
+     "satisfactory",
+     "jtar",
+     "utilization"
+    ]
+   },
+   {
+    "id": 7,
+    "label": null,
+    "typical": [
+     [
+      "NARA-493468580-04-AARO-Trifold-2024",
+      2,
+      1.0
+     ],
+     [
+      "NARA-493468580-03-2024-DGI-Mission-Brief",
+      3,
+      1.0
+     ],
+     [
+      "NARA-493468580-029-2023-UAP-Mission-Slides",
+      2,
+      0.986
+     ],
+     [
+      "NARA-493468580-029-2023-UAP-Mission-Slides",
+      4,
+      0.98
+     ],
+     [
+      "NARA-493468580-026-DGI-Briefing",
+      2,
+      0.971
+     ],
+     [
+      "NARA-493468580-03-2024-DGI-Mission-Brief",
+      2,
+      0.956
+     ]
+    ],
+    "weights": [
+     0.3375,
+     0.3007,
+     0.2552,
+     0.2485,
+     0.2443,
+     0.2375,
+     0.2352,
+     0.2272,
+     0.2229,
+     0.2028,
+     0.1968,
+     0.1954,
+     0.195,
+     0.1874,
+     0.1845
+    ],
+    "words": [
+     "anomalous",
+     "domain",
+     "cases",
+     "phenomena",
+     "resolution",
+     "objects",
+     "security",
+     "reporting",
+     "intelligence",
+     "case",
+     "scientific",
+     "department",
+     "anomaly",
+     "unidentified",
+     "analytic"
+    ]
+   },
+   {
+    "id": 8,
+    "label": "AAWSAP/BAASS program and contracting",
+    "typical": [
+     [
+      "DIA-AAWSAP-DEPSECDEF-PACKET",
+      10,
+      0.999
+     ],
+     [
+      "DOW-UAP-D188",
+      2,
+      0.999
+     ],
+     [
+      "DIA-AAWSAP-REID-BRIEF-2009-05",
+      3,
+      0.994
+     ],
+     [
+      "DIA-AAWSAP-REID-SAP-LETTER-2009",
+      5,
+      0.992
+     ],
+     [
+      "DIA-AAWSAP-DEPSECDEF-PACKET",
+      3,
+      0.974
+     ],
+     [
+      "DIA-AAWSAP-DELIVERABLES-REVIEW-2009",
+      3,
+      0.971
+     ]
+    ],
+    "weights": [
+     0.4964,
+     0.4143,
+     0.4061,
+     0.3937,
+     0.3839,
+     0.37,
+     0.3415,
+     0.3095,
+     0.2947,
+     0.2703,
+     0.2612,
+     0.2328,
+     0.231,
+     0.2173,
+     0.2027
+    ],
+    "words": [
+     "aerospace",
+     "advanced",
+     "program",
+     "contract",
+     "baass",
+     "dia",
+     "reid",
+     "senator",
+     "defense",
+     "studies",
+     "weapon",
+     "agency",
+     "threat",
+     "technical",
+     "areas"
+    ]
+   },
+   {
+    "id": 9,
+    "label": "Reporting-form instructions and personnel orders (mixed)",
+    "typical": [
+     [
+      "NAVY-RF-2023-12",
+      92,
+      0.992
+     ],
+     [
+      "NAVY-RF-2023-12",
+      107,
+      0.99
+     ],
+     [
+      "R01-65-HS1-834228961-62-HQ-83894-Section-10",
+      69,
+      0.513
+     ],
+     [
+      "DOW-UAP-D150",
+      39,
+      0.38
+     ],
+     [
+      "R01-65-HS1-834228961-62-HQ-83894-Section-10",
+      66,
+      0.373
+     ],
+     [
+      "DOW-UAP-D180",
+      122,
+      0.364
+     ]
+    ],
+    "weights": [
+     0.6446,
+     0.5272,
+     0.5167,
+     0.5164,
+     0.4898,
+     0.4833,
+     0.461,
+     0.4276,
+     0.4097,
+     0.388,
+     0.374,
+     0.3651,
+     0.363,
+     0.3556,
+     0.3527
+    ],
+    "words": [
+     "tile",
+     "treat",
+     "inputs",
+     "uaptf",
+     "tapes",
+     "happened",
+     "internal",
+     "recognize",
+     "signed",
+     "bullseye",
+     "located",
+     "sipr",
+     "confidentiality",
+     "addressees",
+     "government"
+    ]
+   },
+   {
+    "id": 10,
+    "label": null,
+    "typical": [
+     [
+      "DOW-UAP-D097",
+      27,
+      0.999
+     ],
+     [
+      "DOW-UAP-D097",
+      26,
+      0.995
+     ],
+     [
+      "DOW-UAP-D210",
+      16,
+      0.977
+     ],
+     [
+      "R01-65-HS1-834228961-62-HQ-83894-Section-6",
+      53,
+      0.874
+     ],
+     [
+      "DOW-UAP-D178",
+      4,
+      0.873
+     ],
+     [
+      "DOW-UAP-D017",
+      55,
+      0.861
+     ]
+    ],
+    "weights": [
+     0.9358,
+     0.4827,
+     0.4484,
+     0.4099,
+     0.402,
+     0.3559,
+     0.3455,
+     0.3432,
+     0.3403,
+     0.3353,
+     0.325,
+     0.3158,
+     0.2898,
+     0.2721,
+     0.2716
+    ],
+    "words": [
+     "object",
+     "appeared",
+     "feet",
+     "miles",
+     "approximately",
+     "observed",
+     "speed",
+     "aircraft",
+     "altitude",
+     "unknown",
+     "light",
+     "sighting",
+     "observation",
+     "objects",
+     "north"
+    ]
+   },
+   {
+    "id": 11,
+    "label": null,
+    "typical": [
+     [
+      "DOW-UAP-D35",
+      2,
+      1.0
+     ],
+     [
+      "DOW-UAP-D109",
+      2,
+      1.0
+     ],
+     [
+      "DOW-UAP-D16",
+      2,
+      1.0
+     ],
+     [
+      "DOW-UAP-D25",
+      2,
+      1.0
+     ],
+     [
+      "DOW-UAP-D33",
+      2,
+      0.999
+     ],
+     [
+      "DOW-UAP-D20",
+      2,
+      0.997
+     ]
+    ],
+    "weights": [
+     0.5501,
+     0.5446,
+     0.5175,
+     0.4652,
+     0.4561,
+     0.4478,
+     0.3862,
+     0.3551,
+     0.3357,
+     0.315,
+     0.3052,
+     0.27,
+     0.2641,
+     0.2387,
+     0.2326
+    ],
+    "words": [
+     "wing",
+     "email",
+     "service",
+     "rank",
+     "phone",
+     "unit",
+     "full",
+     "tasked",
+     "operations",
+     "center",
+     "force",
+     "misrep",
+     "caoc",
+     "unavailable",
+     "msnid"
+    ]
+   },
+   {
+    "id": 12,
+    "label": null,
+    "typical": [
+     [
+      "DOW-UAP-D212",
+      4,
+      1.0
+     ],
+     [
+      "DOW-UAP-D208",
+      9,
+      0.999
+     ],
+     [
+      "CONGRESS-HASC-1966",
+      45,
+      0.994
+     ],
+     [
+      "CONGRESS-HASC-1966",
+      37,
+      0.992
+     ],
+     [
+      "DOW-UAP-D212",
+      32,
+      0.982
+     ],
+     [
+      "DOW-UAP-D208",
+      11,
+      0.969
+     ]
+    ],
+    "weights": [
+     0.6513,
+     0.3075,
+     0.299,
+     0.2968,
+     0.2841,
+     0.2565,
+     0.243,
+     0.2374,
+     0.2219,
+     0.2181,
+     0.2136,
+     0.2124,
+     0.2077,
+     0.1944,
+     0.1793
+    ],
+    "words": [
+     "circle",
+     "show",
+     "answered",
+     "give",
+     "know",
+     "please",
+     "place",
+     "picture",
+     "remember",
+     "saw",
+     "name",
+     "sketch",
+     "city",
+     "direction",
+     "tell"
+    ]
+   },
+   {
+    "id": 13,
+    "label": null,
+    "typical": [
+     [
+      "DOW-UAP-D32",
+      4,
+      1.0
+     ],
+     [
+      "DOW-UAP-D10",
+      4,
+      0.996
+     ],
+     [
+      "DOW-UAP-D107",
+      4,
+      0.992
+     ],
+     [
+      "DOW-UAP-D25",
+      4,
+      0.992
+     ],
+     [
+      "DOW-UAP-D35",
+      4,
+      0.992
+     ],
+     [
+      "DOW-UAP-D108",
+      4,
+      0.975
+     ]
+    ],
+    "weights": [
+     0.6045,
+     0.5314,
+     0.4843,
+     0.4779,
+     0.443,
+     0.4428,
+     0.439,
+     0.4023,
+     0.3945,
+     0.3592,
+     0.3437,
+     0.3264,
+     0.3163,
+     0.304,
+     0.3006
+    ],
+    "words": [
+     "takeoff",
+     "designator",
+     "additional",
+     "station",
+     "details",
+     "icao",
+     "guided",
+     "callsign",
+     "code",
+     "location",
+     "gun",
+     "time",
+     "gentext",
+     "land",
+     "last"
+    ]
+   },
+   {
+    "id": 14,
+    "label": null,
+    "typical": [
+     [
+      "DIA-AAWSAP-STATUS-BRIEFING-2009",
+      6,
+      0.998
+     ],
+     [
+      "DIA-AAWSAP-DELIVERABLES-REVIEW-2009",
+      4,
+      0.995
+     ],
+     [
+      "DIA-AAWSAP-DEPSECDEF-PACKET",
+      11,
+      0.994
+     ],
+     [
+      "DIA-AAWSAP-STATUS-2009-08",
+      4,
+      0.991
+     ],
+     [
+      "DOW-UAP-D188",
+      3,
+      0.988
+     ],
+     [
+      "DIA-AAWSAP-STATUS-BRIEFING-2009",
+      7,
+      0.986
+     ]
+    ],
+    "weights": [
+     0.3667,
+     0.3268,
+     0.2992,
+     0.2963,
+     0.2701,
+     0.2537,
+     0.2532,
+     0.2502,
+     0.2486,
+     0.2409,
+     0.2336,
+     0.227,
+     0.2217,
+     0.216,
+     0.2071
+    ],
+    "words": [
+     "energy",
+     "gravity",
+     "invisibility",
+     "space",
+     "cloaking",
+     "metallic",
+     "applications",
+     "biosensors",
+     "review",
+     "biomems",
+     "propulsion",
+     "metamaterials",
+     "glasses",
+     "quantum",
+     "interfaces"
+    ]
+   },
+   {
+    "id": 15,
+    "label": "Space-vehicle fragments policy",
+    "typical": [
+     [
+      "USG-UAP-D002",
+      37,
+      1.0
+     ],
+     [
+      "USG-UAP-D002",
+      49,
+      1.0
+     ],
+     [
+      "DOW-UAP-D48",
+      121,
+      0.647
+     ],
+     [
+      "DOW-UAP-D48",
+      120,
+      0.64
+     ],
+     [
+      "DOW-UAP-D124",
+      49,
+      0.606
+     ],
+     [
+      "DOW-UAP-D49",
+      100,
+      0.534
+     ]
+    ],
+    "weights": [
+     0.4235,
+     0.3715,
+     0.3054,
+     0.2868,
+     0.2706,
+     0.2628,
+     0.2627,
+     0.2371,
+     0.2369,
+     0.2301,
+     0.2213,
+     0.2196,
+     0.2186,
+     0.2156,
+     0.2116
+    ],
+    "words": [
+     "vehicles",
+     "dod",
+     "launched",
+     "foreign",
+     "suspected",
+     "disposition",
+     "countries",
+     "responsible",
+     "responsibility",
+     "retained",
+     "government",
+     "agencies",
+     "administration",
+     "arrangements",
+     "designated"
+    ]
+   },
+   {
+    "id": 16,
+    "label": null,
+    "typical": [
+     [
+      "DOW-UAP-D23",
+      8,
+      0.996
+     ],
+     [
+      "DOW-UAP-D74",
+      9,
+      0.97
+     ],
+     [
+      "DOW-UAP-D107",
+      7,
+      0.965
+     ],
+     [
+      "DOW-UAP-D25",
+      6,
+      0.958
+     ],
+     [
+      "DOW-UAP-D35",
+      6,
+      0.958
+     ],
+     [
+      "DOW-UAP-D23",
+      9,
+      0.951
+     ]
+    ],
+    "weights": [
+     0.5285,
+     0.4324,
+     0.3301,
+     0.3221,
+     0.3025,
+     0.2985,
+     0.2876,
+     0.2821,
+     0.2577,
+     0.2541,
+     0.2457,
+     0.2406,
+     0.2405,
+     0.2303,
+     0.2184
+    ],
+    "words": [
+     "uap",
+     "friendly",
+     "depth",
+     "describe",
+     "observer",
+     "altitude",
+     "none",
+     "trajectory",
+     "kinetic",
+     "event",
+     "effects",
+     "accuracy",
+     "location",
+     "range",
+     "observation"
+    ]
+   }
+  ]
+ }
+}
