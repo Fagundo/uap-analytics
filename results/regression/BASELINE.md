@@ -37,3 +37,21 @@ baselines used, with every value identical. The cause: GitHub caches cannot be o
 could not replace the older pinned cache. Rebaselines now save under a new key each time
 (`regression-raw-<H>-v2-<run id>`) and runs restore the newest. A changed raw file is listed in the report as a
 warning ("same, raw differs"); a split fails only when a value, the input fingerprint or the run itself does.
+
+## Raw inputs pinned in a release (2026-11-27)
+
+The Phase 6 export pin (export-6aba5848d2595d65) reran every split with identical inputs (sighting fingerprints
+matched), but H-persist-01, H-install-01 and H-rockage-01 changed by up to 1e-4 relative: their pinned raw-data
+caches had expired, and `data/raw/airports/airports.csv` (OurAirports, updated daily) was downloaded again.
+H-persist-01 on the old export gave the same values (run 45294080574), so the export was not the cause.
+
+Caches are not a durable pin. Every live raw file a baseline uses (airports, earthquakes, GCAT launch lists,
+Kp, the Smithsonian volcano list, Census estimate files) is now stored once, named by its SHA-256, in release
+`pinned-raw-inputs-v2`, and each rerun first seeds `data/raw` from it (`uap-geo regression seed --only H`); a
+rebaseline uploads the files its new baselines used (`uap-geo regression pin`). Sighting data is never stored
+there. Stable files (Census TIGER, Natural Earth, the SGMC geodatabase, NLCD) keep the shared download cache.
+
+The baselines were rewritten once on run 46062509961, against today's raw files. Compared with the registered
+results, the differences are the airports-file drift above (H-persist-01, H-install-01, H-volcano-01,
+H-rockage-01; at most 1e-4 relative on rate ratios, 6e-4 on power, no verdict changed); the other five
+hypotheses matched their registered results exactly.
