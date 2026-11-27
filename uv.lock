@@ -3637,7 +3637,7 @@ wheels = [
 ]
 
 [[package]]
-name = "uap-geo"
+name = "uap-analytics"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
