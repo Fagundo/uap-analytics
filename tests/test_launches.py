@@ -1,9 +1,9 @@
 import numpy as np
 import pandas as pd
 
-from uap_geo.events.sun import lighting_class, solar_altitude
-from uap_geo.hypotheses.designs.conditional_poisson import ConditionalPoissonTest
-from uap_geo.hypotheses.designs.launch_exposure import LaunchExposure, LaunchSettings
+from uap_analytics.events.sun import lighting_class, solar_altitude
+from uap_analytics.hypotheses.designs.conditional_poisson import ConditionalPoissonTest
+from uap_analytics.hypotheses.designs.launch_exposure import LaunchExposure, LaunchSettings
 
 LAUNCH_TSV = (
     "#Launch_Tag\tLaunch_JD\tLaunch_Date\tLV_Type\tVariant\tFairing\tFlight_ID\tFlight\tMission\tFlightCode\tPlatform\t"

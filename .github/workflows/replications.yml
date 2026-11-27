@@ -36,7 +36,7 @@ jobs:
           NAMES: ${{ inputs.names }}
         run: |
           read -r -a names <<< "$NAMES"
-          uv run uap-geo replicate "${names[@]}" --check
+          uv run uap-analytics replicate "${names[@]}" --check
       - name: Commit results
         if: always()
         run: |
@@ -52,7 +52,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          tag="replications-$(python3 -c "import yaml; print(yaml.safe_load(open('configs/pursue_export.yaml'))['tag'])")"
+          tag="replications-$(python3 -c "import yaml; print(yaml.safe_load(open('configs/data_export.yaml'))['tag'])")"
           cd outputs/replications
           files=$(ls networks.json topics.json claims.json 2>/dev/null || true)
           [ -n "$files" ] || { echo "no document-analysis outputs to publish"; exit 0; }

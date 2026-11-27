@@ -5,13 +5,13 @@ from datetime import date
 import pandas as pd
 import pytest
 
-from uap_geo.replications.common.dates import Precision, Span
-from uap_geo.replications.common.places import StatePlacer
-from uap_geo.replications.inputs import ReplicationInputs
-from uap_geo.replications.parity import compare
-from uap_geo.replications.programs.catalog import Program, Site
-from uap_geo.replications.programs.shuffle import CoincidenceTest, ProximityTest
-from uap_geo.replications.programs.sightings import Sighting, one_per
+from uap_analytics.replications.common.dates import Precision, Span
+from uap_analytics.replications.common.places import StatePlacer
+from uap_analytics.replications.inputs import ReplicationInputs
+from uap_analytics.replications.parity import compare
+from uap_analytics.replications.programs.catalog import Program, Site
+from uap_analytics.replications.programs.shuffle import CoincidenceTest, ProximityTest
+from uap_analytics.replications.programs.sightings import Sighting, one_per
 
 COLS = ["sighting_id", "source", "date_start", "date_end", "date_precision", "lat", "lon", "coord_precision",
         "country", "state", "place_text", "flags", "links", "source_order"]
@@ -113,7 +113,7 @@ def test_parity_finds_differences():
                       "null_mean": 2.5, "ratio": 1.2, "p_value": 0.3, "per_program": {"u2": {"name": "U-2", "observed": 3,
                       "null_mean": 2.5, "p_value": 0.3}}, "matches": [{"id": "hatch:1"}, {"id": "hatch:2"}, {"id": "hatch:3"}]}],
            "local_share_by_year": {}}
-    from uap_geo.replications.parity import reduce
+    from uap_analytics.replications.parity import reduce
     ref = reduce("programs", out)
     assert compare("programs", ref, out).ok
     out["tests"][0]["observed"] = 4
@@ -123,8 +123,8 @@ def test_parity_finds_differences():
 
 
 def test_network_corpus_routing_and_claims_from_export():
-    from uap_geo.replications.inputs import EntityInputs
-    from uap_geo.replications.networks.routing import RoutingAnalyzer
+    from uap_analytics.replications.inputs import EntityInputs
+    from uap_analytics.replications.networks.routing import RoutingAnalyzer
 
     ent = {
         "documents": pd.DataFrame([{"doc_id": "D1", "agency": "FBI", "doc_date": "1952-07-29", "release": "r1"}]),
@@ -155,15 +155,15 @@ def test_network_corpus_routing_and_claims_from_export():
 
 
 def test_partial_dates_as_the_original():
-    from uap_geo.replications.common.partial_dates import PartialDate, Precision as P
+    from uap_analytics.replications.common.partial_dates import PartialDate, Precision as P
     d = PartialDate.parse("1949-03-06/07")
     assert (d.start, d.end, d.precision) == (date(1949, 3, 6), date(1949, 3, 7), P.DAY)
     assert PartialDate.parse("1947-11").gap_days(PartialDate.parse("1947-12-03")) == 3
 
 
 def test_share_shift_regional_vs_national():
-    from uap_geo.replications.bluebook.index import IndexRow
-    from uap_geo.replications.bluebook.shift import PREDICATES, ShareShiftTest
+    from uap_analytics.replications.bluebook.index import IndexRow
+    from uap_analytics.replications.bluebook.shift import PREDICATES, ShareShiftTest
 
     def row(y, m, state, cat):
         return IndexRow(y, m, state, "USA" if state else None, cat, None)

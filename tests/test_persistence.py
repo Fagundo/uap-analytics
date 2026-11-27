@@ -1,9 +1,9 @@
 import numpy as np
 import pandas as pd
 
-from uap_geo.evaluation.power import nb_regression_power
-from uap_geo.hypotheses.persistence import neighbour_mean, shrunken_log_excess
-from uap_geo.training.models import ModelSpec, NegBinRateModel
+from uap_analytics.evaluation.power import nb_regression_power
+from uap_analytics.hypotheses.persistence import neighbour_mean, shrunken_log_excess
+from uap_analytics.training.models import ModelSpec, NegBinRateModel
 
 
 def test_shrinkage_pulls_small_counts_toward_zero():
@@ -47,7 +47,7 @@ def test_persistence_recovered_by_two_period_design():
 
 
 def test_acs_table_reads_county_rows_only():
-    from uap_geo.data.scraping.acs import read_acs_counties
+    from uap_analytics.data.scraping.acs import read_acs_counties
 
     text = ("GEO_ID|B25004_E006|B25004_M006\n0100000US|5092152|40323\n0400000US53|90000|1000\n"
             "0500000US53055|7000|300\n0500000US37055|30000|900\n")

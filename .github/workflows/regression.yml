@@ -1,7 +1,7 @@
 name: regression
 
 # Reruns every committed hypothesis result from the current code and data and compares it value by value.
-# A gate for the PURSUE refactor: nothing registered may move. One job per hypothesis, then a summary.
+# A gate for the data refactor: nothing registered may move. One job per hypothesis, then a summary.
 
 on:
   workflow_dispatch:
@@ -28,7 +28,7 @@ jobs:
   rerun:
     runs-on: ubuntu-latest
     env:
-      PURSUE_EXPORT_TOKEN: ${{ secrets.PURSUE_EXPORT_TOKEN }}   # when configs/pursue_export.yaml has use: true
+      PURSUE_EXPORT_TOKEN: ${{ secrets.PURSUE_EXPORT_TOKEN }}   # when configs/data_export.yaml has use: true
     timeout-minutes: 150
     strategy:
       fail-fast: false
@@ -73,7 +73,7 @@ jobs:
         if: steps.pick.outputs.run == 'true' && !inputs.rebaseline
         env:
           H: ${{ matrix.hypothesis }}
-        run: uv run uap-geo regression seed --only "$H"
+        run: uv run uap-analytics regression seed --only "$H"
       - name: Rerun and compare
         if: steps.pick.outputs.run == 'true'
         env:
@@ -84,7 +84,7 @@ jobs:
           flags=""
           if [ "$RECORD" = "true" ]; then flags="$flags --record"; fi
           if [ "$REBASELINE" = "true" ]; then flags="$flags --rebaseline"; fi
-          uv run uap-geo regression run --only "$H" $flags
+          uv run uap-analytics regression run --only "$H" $flags
       - name: Pin the live raw files the new baselines used
         # always(): a rebaseline reports its differences from the registered result and exits 1, but the new
         # baselines are written and their raw files must be pinned
@@ -92,7 +92,7 @@ jobs:
         env:
           H: ${{ matrix.hypothesis }}
           GH_TOKEN: ${{ github.token }}
-        run: uv run uap-geo regression pin --only "$H"
+        run: uv run uap-analytics regression pin --only "$H"
       - uses: actions/cache/save@v4
         if: always() && steps.pick.outputs.run == 'true' && inputs.rebaseline
         with:
@@ -128,7 +128,7 @@ jobs:
         id: sum
         run: |
           set +e
-          uv run uap-geo regression summarize
+          uv run uap-analytics regression summarize
           echo "status=$?" >> "$GITHUB_OUTPUT"
           cat results/regression/report.md >> "$GITHUB_STEP_SUMMARY"
       - name: Commit report and fingerprints

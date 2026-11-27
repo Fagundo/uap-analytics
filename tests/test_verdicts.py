@@ -1,7 +1,7 @@
 import pandas as pd
 
-from uap_geo.hypotheses.base import EventStudy, TestOutcome
-from uap_geo.hypotheses.designs.conditional_poisson import TestResult
+from uap_analytics.hypotheses.base import EventStudy, TestOutcome
+from uap_analytics.hypotheses.designs.conditional_poisson import TestResult
 
 POWER = {"rate_ratio": 1.10, "alpha": 0.05, "underpowered_below": 0.50, "refute_requires": 0.80}
 

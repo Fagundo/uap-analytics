@@ -1,6 +1,6 @@
 import json
 
-from uap_geo.common.manifest import RunManifest, sha256_file
+from uap_analytics.common.manifest import RunManifest, sha256_file
 
 
 def test_manifest_records_specs_and_inputs(tmp_path):

@@ -1,6 +1,6 @@
 import pandas as pd
 
-from uap_geo.events.dedup import DedupSettings, ReportDeduplicator
+from uap_analytics.events.dedup import DedupSettings, ReportDeduplicator
 
 
 def _reports(rows):

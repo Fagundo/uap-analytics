@@ -3,10 +3,10 @@ from types import SimpleNamespace
 
 import pandas as pd
 
-from uap_geo.llm.extractor import FeatureExtractor
-from uap_geo.llm.schema import TOOL
-from uap_geo.llm.strangeness import feature_table, score
-from uap_geo.llm.validation import group_masks, stratified_sample
+from uap_analytics.llm.extractor import FeatureExtractor
+from uap_analytics.llm.schema import TOOL
+from uap_analytics.llm.strangeness import feature_table, score
+from uap_analytics.llm.validation import group_masks, stratified_sample
 
 FEATURES = {"object_count": 1, "shapes": ["disc"], "colours": ["white"], "light_pattern": "steady",
             "motions": ["hovered_then_moved", "sudden_acceleration"], "speed": "extremely_fast", "sound": "silent",

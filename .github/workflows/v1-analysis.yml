@@ -66,7 +66,7 @@ jobs:
         run: |
           read -r -a stages <<< "$STAGES"
           read -r -a extra <<< "$EXTRA_ARGS"
-          uv run uap-geo run --config configs/v1.yaml --stage "${stages[@]}" \
+          uv run uap-analytics run --config configs/v1.yaml --stage "${stages[@]}" \
             --permutations "$PERMUTATIONS" "${extra[@]}"
 
       - name: Print results to the log
@@ -81,7 +81,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: uap-geo-v1-${{ github.run_number }}
+          name: uap-analytics-v1-${{ github.run_number }}
           path: |
             outputs/
             data/interim/cleaning.json

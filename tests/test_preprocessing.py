@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from uap_geo.data.preprocessing.geocode import GazetteerGeocoder, normalize_place_name
+from uap_analytics.data.preprocessing.geocode import GazetteerGeocoder, normalize_place_name
 
 
 def _raw(rows):

@@ -2,7 +2,7 @@ import json
 
 import pytest
 
-from uap_geo.regression.raw_pins import PinnedFile, RawPins
+from uap_analytics.regression.raw_pins import PinnedFile, RawPins
 
 
 def _baseline(root, h, split, inputs):

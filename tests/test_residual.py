@@ -1,6 +1,6 @@
 import pandas as pd
 
-from uap_geo.residual.checks import LaunchWindowCheck, strip_notes
+from uap_analytics.residual.checks import LaunchWindowCheck, strip_notes
 
 
 def _reports(rows):
@@ -31,7 +31,7 @@ def test_launch_window_uses_time_and_distance():
 def test_reasons_from_pursue_labels():
     import pytest
     pytest.importorskip("geopandas")
-    from uap_geo.residual.builder import ResidualSetBuilder
+    from uap_analytics.residual.builder import ResidualSetBuilder
     labels = ["rule:aircraft_helicopter:medium", "rule:meteor_fireball:high", "rule:nuforc_note:high",
               "check:holiday_night:possible", "check:starlink_train:high"]
     assert ResidualSetBuilder.reasons(labels) == ["meteor_fireball", "holiday_night", "starlink_train"]
@@ -41,7 +41,7 @@ def test_reasons_from_pursue_labels():
 def test_reasons_from_pursue_labels():
     import pytest
     pytest.importorskip("geopandas")
-    from uap_geo.residual.builder import ResidualSetBuilder
+    from uap_analytics.residual.builder import ResidualSetBuilder
     labels = ["rule:aircraft_helicopter:medium", "rule:meteor_fireball:high", "rule:nuforc_note:high",
               "check:holiday_night:possible", "check:starlink_train:high"]
     assert ResidualSetBuilder.reasons(labels) == ["meteor_fireball", "holiday_night", "starlink_train"]

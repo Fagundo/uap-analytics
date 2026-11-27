@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from uap_geo.data.scraping.census_history import (
+from uap_analytics.data.scraping.census_history import (
     mean_population,
     parse_cencounts,
     to_current_counties,
@@ -48,7 +48,7 @@ def _rows():
 
 def test_record_selection_and_tiers():
     pytest.importorskip("geopandas")
-    from uap_geo.hypotheses.hatch_paleozoic import select_records
+    from uap_analytics.hypotheses.hatch_paleozoic import select_records
 
     records, steps = select_records(_rows(), (1950, 1999), 8)
     assert records["sighting_id"].tolist() == ["hatch:1", "hatch:2", "hatch:9"]
@@ -69,7 +69,7 @@ def test_spec_is_marked_post_hoc():
 
 def test_combined_selection_and_panel():
     pytest.importorskip("geopandas")
-    from uap_geo.hypotheses.diagnostics_combined import (
+    from uap_analytics.hypotheses.diagnostics_combined import (
         CombinedPanelDiagnostics,
         one_per_group,
         select,
@@ -93,7 +93,7 @@ def test_combined_selection_and_panel():
 
 def test_stacked_dedup_stack_and_meta():
     pytest.importorskip("geopandas")
-    from uap_geo.hypotheses import diagnostics_stacked as ds
+    from uap_analytics.hypotheses import diagnostics_stacked as ds
 
     rows = pd.DataFrame({"sighting_id": ["hatch:1", "nicap:1", "nuforc:1", "nuforc:2"],
                          "source": ["hatch", "nicap", "nuforc", "nuforc"],
@@ -121,7 +121,7 @@ def test_stacked_dedup_stack_and_meta():
 
 def test_stack_by_filing():
     pytest.importorskip("geopandas")
-    from uap_geo.hypotheses import diagnostics_stacked as ds
+    from uap_analytics.hypotheses import diagnostics_stacked as ds
 
     table = pd.DataFrame({"state_fips": ["42", "36"], "x": [0.1, 0.9]}, index=pd.Index(["42001", "36001"], name="geoid"))
     pop = pd.DataFrame({d: [1e5, 2e5] for d in range(1950, 2030, 10)}, index=table.index)

@@ -4,11 +4,11 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from types import SimpleNamespace
 
-from uap_geo.replications.claims.checks import check
-from uap_geo.replications.claims.model import Case, Claim, Observation, Place, Verdict
-from uap_geo.replications.claims.report import find_incidents
-from uap_geo.replications.claims.sky import elongation, position, radec
-from uap_geo.replications.common.geo import bearing_deg, elevation_angle_deg, height_for_angle_m, line_of_sight_km
+from uap_analytics.replications.claims.checks import check
+from uap_analytics.replications.claims.model import Case, Claim, Observation, Place, Verdict
+from uap_analytics.replications.claims.report import find_incidents
+from uap_analytics.replications.claims.sky import elongation, position, radec
+from uap_analytics.replications.common.geo import bearing_deg, elevation_angle_deg, height_for_angle_m, line_of_sight_km
 
 UTC = timezone.utc
 T = datetime(1960, 6, 1, 12, 0, tzinfo=UTC)

@@ -3,10 +3,10 @@ import math
 
 import pandas as pd
 
-from uap_geo.common.geo import COUNTY_ID
-from uap_geo.regression.compare import ResultComparer
-from uap_geo.regression.fingerprint import InputFingerprint
-from uap_geo.regression.runner import RegressionRunner, summary_markdown
+from uap_analytics.common.geo import COUNTY_ID
+from uap_analytics.regression.compare import ResultComparer
+from uap_analytics.regression.fingerprint import InputFingerprint
+from uap_analytics.regression.runner import RegressionRunner, summary_markdown
 
 
 def test_comparer_tolerates_float_noise_and_ignores_manifest():
@@ -64,7 +64,7 @@ def test_summary_marks_changes():
 
 
 def test_changed_raw_file_alone_is_a_warning():
-    from uap_geo.regression.runner import RunCheck, summary_markdown
+    from uap_analytics.regression.runner import RunCheck, summary_markdown
     check = RunCheck("H-x", "confirm", fingerprint="match", inputs_changed=["data/raw/a.csv"])
     assert check.ok
     md = summary_markdown([check.as_dict()])
@@ -72,7 +72,7 @@ def test_changed_raw_file_alone_is_a_warning():
 
 
 def test_tolerance_absorbs_refit_noise():
-    from uap_geo.regression.compare import ResultComparer
+    from uap_analytics.regression.compare import ResultComparer
     assert ResultComparer().compare({"p": 4.878239931526553e-07}, {"p": 4.878253435809939e-07}) == []
     assert ResultComparer().compare({"p": 1.0}, {"p": 1.0001})
 

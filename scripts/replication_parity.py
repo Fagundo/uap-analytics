@@ -15,10 +15,10 @@ import json
 import sys
 from pathlib import Path
 
-from uap_geo.data.scraping.pursue_export import ExportTables, LocalExport
-from uap_geo.replications.inputs import ReplicationInputs
-from uap_geo.replications.parity import compare
-from uap_geo.replications.studies import REPLICATIONS
+from uap_analytics.data.scraping.data_export import ExportTables, LocalExport
+from uap_analytics.replications.inputs import ReplicationInputs
+from uap_analytics.replications.parity import compare
+from uap_analytics.replications.studies import REPLICATIONS
 
 
 def main() -> None:

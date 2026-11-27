@@ -2,8 +2,8 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from uap_geo.data.scraping.parsers import parse_nid
-from uap_geo.evaluation.stats_utils import benjamini_hochberg, variance_inflation
+from uap_analytics.data.scraping.parsers import parse_nid
+from uap_analytics.evaluation.stats_utils import benjamini_hochberg, variance_inflation
 
 
 def test_benjamini_hochberg_matches_hand_calculation():
@@ -39,7 +39,7 @@ def test_parse_nid_finds_header_and_filters_small_dams(csv):
 
 
 def test_select_sciencebase_files_prefers_tif_and_skips_uncertainty():
-    from uap_geo.data.scraping.parsers import select_sciencebase_files
+    from uap_analytics.data.scraping.parsers import select_sciencebase_files
 
     items = [
         {"files": [
@@ -61,7 +61,7 @@ def test_select_sciencebase_files_prefers_tif_and_skips_uncertainty():
 
 
 def test_parse_place_population_keeps_incorporated_places():
-    from uap_geo.data.scraping.parsers import parse_place_population
+    from uap_analytics.data.scraping.parsers import parse_place_population
 
     csv = (
         "SUMLEV,STATE,COUNTY,PLACE,COUSUB,NAME,ESTIMATESBASE2020,POPESTIMATE2020\n"
@@ -78,7 +78,7 @@ def test_parse_place_population_keeps_incorporated_places():
 
 
 def test_select_sciencebase_file_groups_collects_all_regions():
-    from uap_geo.data.scraping.parsers import select_sciencebase_file_groups
+    from uap_analytics.data.scraping.parsers import select_sciencebase_file_groups
 
     items = [{"files": [{"name": f"Predictions_{v}_{r}.csv", "url": f"{v}/{r}"}
                         for v in ("eU", "eTh", "K") for r in ("WesternUS", "EasternUS")]
@@ -99,6 +99,6 @@ def test_select_sciencebase_file_groups_collects_all_regions():
     ],
 )
 def test_detect_point_columns(columns, expected):
-    from uap_geo.data.scraping.parsers import detect_point_columns
+    from uap_analytics.data.scraping.parsers import detect_point_columns
 
     assert detect_point_columns(columns) == expected

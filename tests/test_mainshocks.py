@@ -1,6 +1,6 @@
 import pandas as pd
 
-from uap_geo.data.preprocessing.mainshocks import MainshockFilter, haversine_km
+from uap_analytics.data.preprocessing.mainshocks import MainshockFilter, haversine_km
 
 
 def _q(rows):

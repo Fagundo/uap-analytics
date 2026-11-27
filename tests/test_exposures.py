@@ -1,9 +1,9 @@
 import numpy as np
 import pandas as pd
 
-from uap_geo.evaluation.power import conditional_poisson_power
-from uap_geo.events.moon import nightly_illumination, illumination
-from uap_geo.hypotheses.designs.exposures import QuakeExposure, QuakeSettings, StormExposure
+from uap_analytics.evaluation.power import conditional_poisson_power
+from uap_analytics.events.moon import nightly_illumination, illumination
+from uap_analytics.hypotheses.designs.exposures import QuakeExposure, QuakeSettings, StormExposure
 
 
 def test_moon_illumination_full_and_new():
@@ -58,7 +58,7 @@ def test_power_grows_with_events():
 
 
 def test_quake_local_night_uses_longitude_and_morning_rollover():
-    from uap_geo.hypotheses.designs.exposures import quake_local_night
+    from uap_analytics.hypotheses.designs.exposures import quake_local_night
     # 04:00 UTC at 120 W is 20:00 local solar the previous day -> that day's night.
     # 15:00 UTC at 120 W is 07:00 local -> that day's night (after the 06:00 rollover).
     times = pd.Series(pd.to_datetime(["2015-03-18 04:00", "2015-03-18 15:00"]))

@@ -1,8 +1,8 @@
 import json
 from pathlib import Path
 
-from uap_geo.common.config import Config
-from uap_geo.common.download import filename_from_url
+from uap_analytics.common.config import Config
+from uap_analytics.common.download import filename_from_url
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -18,7 +18,7 @@ def test_config_loads_and_marks_unconfigured_rasters_inactive():
 
 
 def test_parse_population_csv_and_api_json():
-    from uap_geo.data.scraping.parsers import parse_population
+    from uap_analytics.data.scraping.parsers import parse_population
 
     csv = (
         "﻿SUMLEV,STATE,COUNTY,STNAME,CTYNAME,ESTIMATESBASE2020,POPESTIMATE2020\n"
@@ -35,7 +35,7 @@ def test_parse_population_csv_and_api_json():
 def test_parse_population_rejects_html():
     import pytest
 
-    from uap_geo.data.scraping.parsers import parse_population
+    from uap_analytics.data.scraping.parsers import parse_population
 
     with pytest.raises(ValueError, match="Unrecognised"):
         parse_population(b"<html>Invalid key</html>")
@@ -47,7 +47,7 @@ def test_filename_from_url():
 
 
 def test_auth_headers_only_for_huggingface_with_token(monkeypatch):
-    from uap_geo.common.download import auth_headers
+    from uap_analytics.common.download import auth_headers
 
     monkeypatch.delenv("HF_TOKEN", raising=False)
     assert auth_headers("https://huggingface.co/x") == {}
@@ -59,7 +59,7 @@ def test_auth_headers_only_for_huggingface_with_token(monkeypatch):
 def test_cli_overrides_years_tag_and_shift_settings():
     import argparse
 
-    from uap_geo.cli import apply_overrides
+    from uap_analytics.cli import apply_overrides
 
     config = Config.from_yaml(ROOT / "configs" / "v1.yaml", root=ROOT)
     args = argparse.Namespace(

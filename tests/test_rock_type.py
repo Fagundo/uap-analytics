@@ -3,8 +3,8 @@ import numpy as np
 import pandas as pd
 from shapely.geometry import box
 
-from uap_geo.features.rock_age import MISSING
-from uap_geo.features.rock_type import CLASSES, CountyTypeSummary, UnitGrid, build_unit_grid, lith_class, unit_class_weights
+from uap_analytics.features.rock_age import MISSING
+from uap_analytics.features.rock_type import CLASSES, CountyTypeSummary, UnitGrid, build_unit_grid, lith_class, unit_class_weights
 
 
 def test_lith_class():
@@ -67,7 +67,7 @@ def test_build_unit_grid():
 
 
 def test_era_type_weights():
-    from uap_geo.hypotheses.rock_era import era_type_weights
+    from uap_analytics.hypotheses.rock_era import era_type_weights
 
     types = pd.DataFrame(0.0, index=["a", "b", "c"], columns=list(CLASSES))
     types.loc["a", ["carbonate", "clastic"]] = 0.5
@@ -88,7 +88,7 @@ def test_summary_accepts_any_class_set():
 
 
 def test_state_slope_columns_and_rescaling():
-    from uap_geo.hypotheses.diagnostics_era import per_national_sd, slope_columns
+    from uap_analytics.hypotheses.diagnostics_era import per_national_sd, slope_columns
 
     t = pd.DataFrame({"state_fips": ["04", "04", "35", "06"], "share_paleozoic": [0.0, 1.0, 0.5, 0.25]})
     out, cols = slope_columns(t, "share_paleozoic", ["04", "35"])
@@ -101,7 +101,7 @@ def test_state_slope_columns_and_rescaling():
 
 
 def test_land_cover_group_shares():
-    from uap_geo.features.land_cover import group_shares
+    from uap_analytics.features.land_cover import group_shares
 
     codes = np.array([82, 82, 41, 11, 21, 0, 81])
     owner = np.array([0, 0, 0, 0, 1, 1, -1])

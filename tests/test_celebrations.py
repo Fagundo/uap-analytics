@@ -1,9 +1,9 @@
 import numpy as np
 import pandas as pd
 
-from uap_geo.classify.wording import lantern_like
-from uap_geo.hypotheses.designs.conditional_poisson import ConditionalPoissonTest
-from uap_geo.hypotheses.designs.night_exposure import NightExposure, NightSettings, in_window
+from uap_analytics.classify.wording import lantern_like
+from uap_analytics.hypotheses.designs.conditional_poisson import ConditionalPoissonTest
+from uap_analytics.hypotheses.designs.night_exposure import NightExposure, NightSettings, in_window
 
 FILTERS = {"rules": {
     "sky_lantern": {"text_all_groups": [["orange", "red"], ["orb", "orbs", "ball", "balls"],

@@ -3,9 +3,9 @@ import numpy as np
 import pandas as pd
 from shapely.geometry import box
 
-from uap_geo.data.scraping.sgmc import unit_ages
-from uap_geo.features.rock_age import MISSING, AgeGrid, CountyAgeSummary, build_age_grid, era_codes
-from uap_geo.hypotheses.rock_age import two_sided_shift_p
+from uap_analytics.data.scraping.sgmc import unit_ages
+from uap_analytics.features.rock_age import MISSING, AgeGrid, CountyAgeSummary, build_age_grid, era_codes
+from uap_analytics.hypotheses.rock_age import two_sided_shift_p
 
 
 def test_unit_ages_takes_widest_range_and_drops_undated():

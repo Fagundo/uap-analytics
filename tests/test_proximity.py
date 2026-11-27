@@ -2,8 +2,8 @@ import geopandas as gpd
 import numpy as np
 from shapely.geometry import Point, box
 
-from uap_geo.data.scraping.volcanoes import conus_volcanoes, parse_holocene_volcanoes
-from uap_geo.hypotheses.proximity import closeness, nearest_km
+from uap_analytics.data.scraping.volcanoes import conus_volcanoes, parse_holocene_volcanoes
+from uap_analytics.hypotheses.proximity import closeness, nearest_km
 
 
 def test_nearest_km_and_closeness():

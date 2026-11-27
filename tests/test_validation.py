@@ -1,6 +1,6 @@
 import pandas as pd
 
-from uap_geo.classify.validation import FilterSample, FilterValidation, report_ids
+from uap_analytics.classify.validation import FilterSample, FilterValidation, report_ids
 
 
 def _reports(n=10):

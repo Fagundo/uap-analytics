@@ -2,8 +2,8 @@ import pandas as pd
 import yaml
 from pathlib import Path
 
-from uap_geo.classify.rules import RuleContext, build_rules
-from uap_geo.classify.tiers import OutcomeTiers
+from uap_analytics.classify.rules import RuleContext, build_rules
+from uap_analytics.classify.tiers import OutcomeTiers
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = yaml.safe_load((ROOT / "configs" / "filters.yaml").read_text())

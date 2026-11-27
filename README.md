@@ -20,12 +20,12 @@ Sightings (NUFORC, Hatch, NICAP, Blue Book, Magonia and incidents from the relea
 their enrichment (explanation flags, sky and launch context), context layers (rocket launches, Kp,
 earthquakes, holidays, flight programs, nuclear tests) and the document entity graph all come from the data
 repository's **combined export**, a versioned release pinned in
-[`configs/pursue_export.yaml`](configs/pursue_export.yaml) by tag and SHA-256 (format:
-[`docs/PURSUE_EXPORT.md`](docs/PURSUE_EXPORT.md)). Reading it needs the `PURSUE_EXPORT_TOKEN` secret.
+[`configs/data_export.yaml`](configs/data_export.yaml) by tag and SHA-256 (format:
+[`docs/DATA_EXPORT.md`](docs/DATA_EXPORT.md)). Reading it needs the `PURSUE_EXPORT_TOKEN` secret.
 
 The export has two tiers. NUFORC records and narrative text from copyrighted catalogs are **restricted**:
 analyses may use them, but only aggregates are committed or published here (`tests/test_licence_leak.py`
-checks). `src/uap_geo/data/scraping/pursue_export.py` is the only reader of sighting data, and an
+checks). `src/uap_analytics/data/scraping/data_export.py` is the only reader of sighting data, and an
 import-boundary test keeps this repository from importing the data repository's code.
 
 County map layers (geology, land cover, census population, light pollution, terrain, airports, ...) are
@@ -51,7 +51,7 @@ rather than the years of the events). Rules and specs: [`hypotheses/`](hypothese
 
 ## Replications
 
-`src/uap_geo/replications/` holds the analyses first run in the data repository, ported unchanged and read from
+`src/uap_analytics/replications/` holds the analyses first run in the data repository, ported unchanged and read from
 the export:
 
 | Name | Question |
@@ -86,16 +86,16 @@ Locally (needs the export token for sighting data):
 ```bash
 uv sync --group dev
 uv run pytest
-uv run uap-geo hypothesis run H-rocktype-01 --split explore
-uv run uap-geo hypothesis diagnose H-hatchpal-01 --diagnostic stacked
-uv run uap-geo replicate programs nuclear bluebook
-uv run uap-geo regression run --only H-persist-01
+uv run uap-analytics hypothesis run H-rocktype-01 --split explore
+uv run uap-analytics hypothesis diagnose H-hatchpal-01 --diagnostic stacked
+uv run uap-analytics replicate programs nuclear bluebook
+uv run uap-analytics regression run --only H-persist-01
 ```
 
 ## Layout
 
 ```
-src/uap_geo/
+src/uap_analytics/
 ├── common/          config, downloads, CRS constants, base classes
 ├── data/
 │   ├── scraping/    pursue_export.py (the one reader of sighting data), map-layer sources, SourceRegistry
@@ -108,7 +108,7 @@ src/uap_geo/
 ├── residual/, llm/, audit/, classify/, events/, cube/   residual set, LLM features, sensitivity checks
 ├── training/, evaluation/, reporting/   negative binomial models, shift tests, Gi*, Moran's I, report writers
 ├── pipeline.py      the v1 county study
-└── cli.py           `uap-geo`
+└── cli.py           `uap-analytics`
 hypotheses/          specs (YAML), registry with spec/implementation/filter hashes
 results/             one folder per hypothesis and split; regression; replications
 configs/             sources, filters, the export pin

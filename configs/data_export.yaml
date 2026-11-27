@@ -1,0 +1,15 @@
+# The PURSUE combined export uap-analytics reads (data refactor, Phase 4). A release of the private Fagundo/uap-data
+# repository; assets checked by SHA-256. Changing the pin changes uap-analytics's inputs: rerun the regression
+# workflow and explain any difference in results/regression/BASELINE.md.
+#
+# use: true since the export check passed (results/regression/export_check.json); the regression workflow
+# on export input is the second half of the Phase 4 gate.
+#
+# 2026-11-23: export-6aba5848d2595d65 (Phase 6: file order for every source, catalog coordinates marked, the
+# source's own state kept, page text, affiliation organizations, datasets). Regression rerun before pinning.
+repo: Fagundo/uap-data
+tag: export-6aba5848d2595d65
+use: true
+sha256:
+  export_public.tar.gz: 0749d4e4813156ac32100da067d5ba56248da11c6aac12ed23909c99e2d8ef2d
+  export_restricted.tar.gz: 35c7b5339676f9296d35afd7c38acd988df8a49cf1674a5b236c25a4419f5716

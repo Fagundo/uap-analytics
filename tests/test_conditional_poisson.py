@@ -6,7 +6,7 @@ import pytest
 
 pytest.importorskip("statsmodels")
 
-from uap_geo.hypotheses.designs.conditional_poisson import ConditionalPoissonTest  # noqa: E402
+from uap_analytics.hypotheses.designs.conditional_poisson import ConditionalPoissonTest  # noqa: E402
 
 
 def _simulate(rate_ratio: float, n_strata: int = 3000, seed: int = 0) -> pd.DataFrame:
@@ -60,7 +60,7 @@ def test_dispersion_near_one_for_poisson_and_above_for_overdispersed():
     import numpy as np
     import pandas as pd
 
-    from uap_geo.hypotheses.designs.conditional_poisson import ConditionalPoissonTest
+    from uap_analytics.hypotheses.designs.conditional_poisson import ConditionalPoissonTest
 
     rng = np.random.default_rng(0)
     n, k = 3000, 9

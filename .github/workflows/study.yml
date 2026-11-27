@@ -39,7 +39,7 @@ jobs:
           ARGS: ${{ inputs.args }}   # passed via env, never interpolated into the script
         run: |
           read -r -a argv <<< "$ARGS"
-          uv run uap-geo "${argv[@]}"
+          uv run uap-analytics "${argv[@]}"
       - name: Commit results
         if: success()
         run: |

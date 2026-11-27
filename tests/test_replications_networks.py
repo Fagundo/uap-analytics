@@ -1,10 +1,10 @@
 """Networks replication: routing, the page re-deal null, community ties (ported with the code)."""
 import random
 
-from uap_geo.replications.networks.communities import CommunityAnalyzer, PageShuffleNull
-from uap_geo.replications.networks.corpus import DocumentInfo, EntityCorpus, MentionRow, NodeInfo
-from uap_geo.replications.networks.report import NetworkReport
-from uap_geo.replications.networks.routing import RoutingAnalyzer
+from uap_analytics.replications.networks.communities import CommunityAnalyzer, PageShuffleNull
+from uap_analytics.replications.networks.corpus import DocumentInfo, EntityCorpus, MentionRow, NodeInfo
+from uap_analytics.replications.networks.report import NetworkReport
+from uap_analytics.replications.networks.routing import RoutingAnalyzer
 
 PEOPLE = [NodeInfo("person:1", "person", 1, "John A. Samford", affiliation_org="org:1"),
           NodeInfo("person:2", "person", 2, "Joseph A. Bloomer", affiliation_org="org:2"),

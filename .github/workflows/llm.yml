@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       args:
-        description: "Arguments after 'uap-geo llm', e.g. 'extract --name sample --limit 20'"
+        description: "Arguments after 'uap-analytics llm', e.g. 'extract --name sample --limit 20'"
         required: true
 
 permissions:
@@ -30,7 +30,7 @@ jobs:
         run: |
           if [ -z "$ANTHROPIC_API_KEY" ]; then echo "ANTHROPIC_API_KEY secret is not set"; exit 1; fi
           read -r -a argv <<< "$ARGS"
-          uv run uap-geo llm "${argv[@]}"
+          uv run uap-analytics llm "${argv[@]}"
       - name: Commit results
         if: always()
         run: |

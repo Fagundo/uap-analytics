@@ -11,7 +11,7 @@ import sys
 
 import requests
 
-HEADERS = {"User-Agent": "uap-geo-research/0.1 (+https://github.com/Fagundo/uap-analytics)"}
+HEADERS = {"User-Agent": "uap-analytics-research/0.1 (+https://github.com/Fagundo/uap-analytics)"}
 
 for url in sys.argv[1:]:
     print(f"==> {url}")

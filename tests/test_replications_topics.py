@@ -3,11 +3,11 @@ import unittest
 
 import numpy as np
 
-from uap_geo.replications.topics.text import PageCleaner, strip_watermark
-from uap_geo.replications.topics.themes import Theme, ThemeScorer
-from uap_geo.replications.topics.report import TopicLabeler
-from uap_geo.replications.topics.model import PrevalenceAnalyzer, Topic, benjamini_hochberg
-from uap_geo.replications.networks.corpus import PageText
+from uap_analytics.replications.topics.text import PageCleaner, strip_watermark
+from uap_analytics.replications.topics.themes import Theme, ThemeScorer
+from uap_analytics.replications.topics.report import TopicLabeler
+from uap_analytics.replications.topics.model import PrevalenceAnalyzer, Topic, benjamini_hochberg
+from uap_analytics.replications.networks.corpus import PageText
 
 
 def _page(doc, n, text):
@@ -68,7 +68,7 @@ class ThemeTest(unittest.TestCase):
         self.assertFalse(th.matches("pressure"))
 
     def test_score_is_share_of_words(self):
-        from uap_geo.replications.topics.text import CleanPage
+        from uap_analytics.replications.topics.text import CleanPage
         p = CleanPage("D", 1, ("radar", "film", "lights", "night"), "")
         m = ThemeScorer((Theme("instruments", ("radar", "film")),)).score([p])
         self.assertEqual(m.tolist(), [[0.5]])
