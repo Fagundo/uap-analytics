@@ -1,133 +1,123 @@
-# uap-geo
+# uap-analytics
 
-Do UAP reports in the contiguous US cluster around geologic or environmental features (faults,
-earthquakes, rivers, lakes, terrain, natural radiation, nuclear sites) **beyond** what observer
-opportunity explains (population, dark skies, air traffic, military activity)?
+Statistical tests of UAP reports: where and when people report, what explains the reports, and whether
+anything is left once the ordinary explanations are taken out. Every test here reads one versioned data
+export; nothing in this repository fetches or cleans sighting records itself.
 
-The design extends the county-level model of
-[Medina, Brewer & Kirkpatrick (2023), *Scientific Reports*](https://doi.org/10.1038/s41598-023-49527-x).
+- **Pre-registered hypotheses.** Each test is written down and committed before it sees its confirmation
+  years, with explore / confirm / holdout splits; post-hoc analyses are labelled as such and give no verdicts.
+- **Replications.** Analyses first run in the data repository (flight programs, nuclear tests, Blue Book,
+  document networks, topics, claim checks), ported here and checked number for number against the originals.
+- **The v1 county study.** Do reports cluster around geologic or environmental features beyond observer
+  opportunity? It extends [Medina, Brewer & Kirkpatrick (2023), *Scientific Reports*](https://doi.org/10.1038/s41598-023-49527-x).
 
-**Current answer (v1, Nov 2026):** no geologic or radiation factor holds up. Only observer effects
-replicate on held-out years: fewer reports under bright skies, more near airports and in high-relief
-terrain. A river signal is unconfirmed. See [docs/RESULTS.md](docs/RESULTS.md) and
-[docs/ROBUSTNESS.md](docs/ROBUSTNESS.md).
+Results so far: [`docs/RESULTS.md`](docs/RESULTS.md) (v1), [`hypotheses/README.md`](hypotheses/README.md)
+(every registered and post-hoc test), [`results/`](results/) (one folder per hypothesis and split).
 
-## Pipeline
+## Where the data comes from
 
-1. **Ingest:** NUFORC reports from the
-   [TidyTuesday 2023-06-20 extract](https://github.com/rfordatascience/tidytuesday/tree/main/data/2023/2023-06-20)
-   (city coordinates from geonames.org), filtered to the study years and the lower 48, deduplicated.
-   Reports without coordinates are geocoded offline against the Census Gazetteer.
-2. **Build:** one row per county with the report count, population, and every covariate.
-3. **Analyze:**
-   - Getis-Ord Gi* hotspots on reports per 10,000 people (k = 8 nearest neighbours).
-   - Negative binomial rate models with a log(population) offset. Continuous covariates are
-     z-scored (rate ratio per SD); 0/1 band indicators are not. All models are fit on the same counties.
-   - Moran's I on residuals.
-   - **Shift tests:** a whole layer (rivers, lakes, reservoirs) is rotated and shifted many times
-     and the model refit; the real coefficient is compared against the shifted ones
-     (Benjamini–Hochberg adjusted across layers).
-   - **Town-level test:** within each county, are Census places with reports closer to rivers,
-     lakes, coast, roads or rail than places without? Conditional logit, sized by land area and by population.
-   - Collinearity (VIF) for the widest model.
+Sightings (NUFORC, Hatch, NICAP, Blue Book, Magonia and incidents from the released government documents),
+their enrichment (explanation flags, sky and launch context), context layers (rocket launches, Kp,
+earthquakes, holidays, flight programs, nuclear tests) and the document entity graph all come from the data
+repository's **combined export**, a versioned release pinned in
+[`configs/pursue_export.yaml`](configs/pursue_export.yaml) by tag and SHA-256 (format:
+[`docs/PURSUE_EXPORT.md`](docs/PURSUE_EXPORT.md)). Reading it needs the `PURSUE_EXPORT_TOKEN` secret.
 
-### Models
+The export has two tiers. NUFORC records and narrative text from copyrighted catalogs are **restricted**:
+analyses may use them, but only aggregates are committed or published here (`tests/test_licence_leak.py`
+checks). `src/uap_geo/data/scraping/pursue_export.py` is the only reader of sighting data, and an
+import-boundary test keeps this repository from importing the data repository's code.
 
-| Model | Adds | Role |
+County map layers (geology, land cover, census population, light pollution, terrain, airports, ...) are
+built here from their public sources ([`configs/v1.yaml`](configs/v1.yaml)).
+
+## Pre-registered hypotheses
+
+| ID | Test | Verdict (confirm period) |
 | --- | --- | --- |
-| A | Light pollution, cloud cover, airports, military area, population density | Replicates the paper |
-| B | Fault length, earthquake count, river length | Geology, national |
-| C | State fixed effects | Geology within states |
-| D | Town density, primary roads, rail | Settlement and corridor controls |
-| E | Lakes, reservoirs, coast distance, elevation relief | Other water and terrain |
-| F | Gamma-ray uranium/thorium/potassium, nuclear plant within 50 km, weapons site within 100 km | Radiation |
-| R | Light, airports, town density, roads, rail, relief, coast, rivers + state FE | Lean, pre-specified **confirmatory** model |
+| H-launch-01 | Rocket launches seen at twilight (positive control) | Confirmed: 2.18 (1.90–2.49) |
+| H-celebrate-01 | Fourth of July and New Year's Eve nights | Confirmed: 2.48 and 1.80 |
+| H-persist-01 | County hotspots persist from one decade to the next | Confirmed: 1.19 per SD |
+| H-rocktype-01 | Carbonate (limestone, dolostone) surface rock, 1 of 7 classes | Confirmed: 1.062 per SD |
+| H-geo-01 | Geomagnetic storms; earthquakes | Storms refuted; quakes underpowered |
+| H-install-01 | Closeness to military installations | Inconclusive |
+| H-volcano-01 | Closeness to young volcanoes | Underpowered |
+| H-rockage-01 | Geologic age of surface rock | Refuted |
+| H-anomaly-01 | Structure in high-strangeness residual reports | Not run: its known-cause gate failed |
 
-Models A–F are exploratory. Only model R evaluated on held-out data counts as confirmation.
+Post hoc (no verdicts): H-rockera-01 (Paleozoic terrain, 1.106 per SD, beats all shifted maps) and
+H-hatchpal-01 (the same across catalogs, 1950–2023: the association follows modern reporting through NUFORC
+rather than the years of the events). Rules and specs: [`hypotheses/`](hypotheses/).
 
-## Covariates
+## Replications
 
-| Column | Source | Status |
-| --- | --- | --- |
-| `light_pollution` | Falchi et al. (2016) World Atlas of artificial sky brightness (GFZ) | on |
-| `cloud_cover` | EarthEnv MODIS mean annual cloud frequency | on |
-| `airports_per_km2` | OurAirports (airports, heliports, seaplane bases, balloonports) | on |
-| `military_area_share` | Census TIGER 2019 military installations | on |
-| `log_pop_density` | Census 2020 county population / area | on |
-| `places_per_km2` | Census Gazetteer places | on |
-| `primary_road_length_per_km2`, `rail_length_per_km2` | Census TIGER 2020 primary roads, rail | on |
-| `fault_length_per_km2` | USGS Quaternary Fault and Fold Database | on |
-| `log_quake_count`, `log_seismic_moment` | USGS ComCat, M ≥ 2.5, study years | on |
-| `river_length_per_km2` | Natural Earth 1:10m rivers (major rivers only) | on |
-| `lake_area_share`, `dist_to_lake_km` | Natural Earth 1:10m lakes + North America supplement | on |
-| `reservoirs_per_km2` | USACE National Inventory of Dams (normal storage ≥ 1,000 acre-ft) | on |
-| `dist_to_coast_km` | Natural Earth 1:10m coastline | on |
-| `elevation_relief_m` | EarthEnv 1 km GMTED2010 elevation, max − min per county | on |
-| `gamma_uranium`, `gamma_thorium`, `gamma_potassium` | USGS Bayesian NURE predictions (regional point CSVs, ScienceBase) | on |
-| `nuclear_power_within_50km` | US commercial reactor sites (michaelminn.net GeoJSON) | on |
-| `weapons_site_within_100km` | 19 weapons-complex sites listed in `configs/v1.yaml` | on |
-| `tree_canopy` | NLCD/USFS Tree Canopy Cover | off: multi-GB 30 m tiles |
-| `magnetic_anomaly` | USGS / NAMAG magnetic grid | off: no direct GeoTIFF link |
+`src/uap_geo/replications/` holds the analyses first run in the data repository, ported unchanged and read from
+the export:
 
-A source that fails to download is logged and its columns are dropped; the run continues.
+| Name | Question |
+| --- | --- |
+| `programs` | Do sightings cluster near classified flight programs in space and time? (shuffle tests) |
+| `nuclear` | Do reports rise in the days after nuclear tests, at each test site? |
+| `bluebook` | Did Blue Book's conclusions shift when the spy planes began flying, and where? |
+| `networks` | Who writes to whom in the released documents; which names cluster beyond chance? |
+| `topics` | Topics and themes in the documents, and how they differ by era and agency |
+| `claims` | Do the explanations offered for famous cases fit their own stated facts? |
+
+Each was checked against the original outputs before the code left the data repository
+([`tests/parity/`](tests/parity/); 0 differences across about 14,800 values). Aggregates are committed under
+`results/replications/`; the full outputs of the document analyses (networks, topics, claims: government
+documents only) are published as release `replications-<export tag>`, which the data repository's explorer
+and event dossier read.
 
 ## Run it
 
-**GitHub Actions (recommended):** Actions → *v1 analysis* → *Run workflow*. Inputs:
+GitHub Actions (the data and caches live there):
 
-- `stages`: `ingest build analyze` (default)
-- `permutations`: shifted copies per layer; `0` skips shift tests. Per-layer overrides (rivers: 1,000)
-  are in the config.
-- `extra_args`: anything the CLI accepts, e.g. the holdout run below.
+- **study**: `hypothesis run|diagnose <ID> ...` for one hypothesis.
+- **regression**: reruns every committed result and compares it value by value with its baseline (relative
+  tolerance 1e-5). Live raw inputs (airports, earthquakes, launches, Kp, volcanoes, Census estimates) are
+  seeded from release `pinned-raw-inputs-v2` so upstream changes cannot move a result; see
+  [`results/regression/BASELINE.md`](results/regression/BASELINE.md).
+- **replications**: runs the replications, checks parity, publishes the document-analysis outputs.
+- **v1 analysis**: the original county study (`ingest build analyze`).
 
-Results are printed in the job log, written to the job summary, and uploaded as the
-`uap-geo-v1-<n>` artifact. Raw downloads are cached between runs.
-
-**Holdout run** (model R on years the exploration never used):
-
-```
---start-year 2021 --end-year 2023 --tag holdout --shift-models R_confirmatory
-```
-
-`--tag` writes interim, processed and output files to a sub-folder so a holdout never overwrites the main run.
-
-**Locally:**
+Locally (needs the export token for sighting data):
 
 ```bash
 uv sync --group dev
 uv run pytest
-uv run uap-geo run --config configs/v1.yaml                         # all stages, 2001–2020
-uv run uap-geo run --stage analyze --permutations 0                  # rerun analysis only
-uv run uap-geo run --start-year 2021 --end-year 2023 --tag holdout   # holdout
+uv run uap-geo hypothesis run H-rocktype-01 --split explore
+uv run uap-geo hypothesis diagnose H-hatchpal-01 --diagnostic stacked
+uv run uap-geo replicate programs nuclear bluebook
+uv run uap-geo regression run --only H-persist-01
 ```
 
 ## Layout
 
 ```
 src/uap_geo/
-├── common/              # config, downloads, CRS constants, abstract base classes
+├── common/          config, downloads, CRS constants, base classes
 ├── data/
-│   ├── scraping/        # one DataSource per dataset, SourceRegistry, pure-pandas parsers
-│   ├── io/              # Parquet / GeoParquet TableStore
-│   └── preprocessing/   # report cleaning, offline geocoding (pandas only)
-├── features/            # CovariateBuilder subclasses, CovariateRegistry, county table assembly
-├── training/            # NegBinRateModel (robust NB fitting), ModelSpec
-├── evaluation/          # Gi*, Moran's I, shift tests, town-level test, BH/VIF helpers, report writer
-├── pipeline.py          # V1Pipeline: ingest → build → analyze
-└── cli.py               # overrides: years, tag, shift models, per-layer permutations
-docs/
-├── RESULTS.md           # findings so far
-└── ROBUSTNESS.md        # threats to validity and planned fixes
+│   ├── scraping/    pursue_export.py (the one reader of sighting data), map-layer sources, SourceRegistry
+│   ├── io/          Parquet / GeoParquet table store
+│   └── preprocessing/
+├── features/        county covariates (CovariateBuilder subclasses)
+├── hypotheses/      one study class per hypothesis, designs, diagnostics
+├── replications/    programs, nuclear, bluebook, networks, topics, claims; inputs.py reads the export
+├── regression/      rerun-and-compare, input fingerprints, pinned raw inputs
+├── residual/, llm/, audit/, classify/, events/, cube/   residual set, LLM features, sensitivity checks
+├── training/, evaluation/, reporting/   negative binomial models, shift tests, Gi*, Moran's I, report writers
+├── pipeline.py      the v1 county study
+└── cli.py           `uap-geo`
+hypotheses/          specs (YAML), registry with spec/implementation/filter hashes
+results/             one folder per hypothesis and split; regression; replications
+configs/             sources, filters, the export pin
 ```
-
-To add a covariate: write a `DataSource` (if new data) and a `CovariateBuilder`, register them in
-`data/scraping/registry.py` and `features/registry.py`, and list the column under `models` in the config.
-To shift-test a layer, add it to `ShiftLayer` factories in `pipeline.py` and to `study.shift_layers`.
 
 ## Limitations
 
-- NUFORC is self-reported and unverified; results describe **reporting**, not phenomena.
-- The TidyTuesday extract holds 71% of the reports the paper used for 2001–2020, and few after 2020.
-- City-level geocoding makes the county the finest honest grain for rate models.
-- Residual spatial clustering remains, so ordinary p-values are optimistic; rely on shift tests and holdouts.
-- Dependencies are not yet pinned with a lockfile. See [docs/ROBUSTNESS.md](docs/ROBUSTNESS.md) for the full list.
+- Reports are self-selected and unverified: results describe **reporting**, not phenomena.
+- NUFORC's public extract stops in 2023 and holds about 71% of the reports the 2023 paper used for 2001–2020.
+- Coordinates are town-level at best, so the county is the finest honest grain for rate models.
+- Residual spatial clustering remains, so ordinary p-values are optimistic; shift tests and held-out years
+  carry the conclusions. See [`docs/ROBUSTNESS.md`](docs/ROBUSTNESS.md).

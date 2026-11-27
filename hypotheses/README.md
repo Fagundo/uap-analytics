@@ -13,7 +13,18 @@ Rules:
 
 | ID | Title | Status |
 | --- | --- | --- |
-| H-geo-01 | Geophysical triggers (Persinger) | registered 2026-11-10 |
+| H-geo-01 | Geophysical triggers (Persinger) | registered 2026-11-11 |
+| H-launch-01 | Rocket launches seen at twilight | registered 2026-11-11 |
+| H-celebrate-01 | Celebration nights | registered 2026-11-11 |
+| H-persist-01 | Persistent county hotspots | registered 2026-11-11 |
+| H-install-01 | Proximity to military installations | registered 2026-11-11 |
+| H-volcano-01 | Proximity to young volcanoes | registered 2026-11-11 |
+| H-rockage-01 | Geologic age of surface rock | registered 2026-11-19 |
+| H-rocktype-01 | Rock type at the surface (screen of seven classes) | registered 2026-11-19 |
+| H-anomaly-01 | Structure in high-strangeness residual reports | draft; not run (known-cause gate failed) |
+
+Registration dates are those in `registry.yaml` (the commit that recorded the spec, implementation and filter
+hashes).
 
 Post-hoc analyses (not registered; descriptive):
 
