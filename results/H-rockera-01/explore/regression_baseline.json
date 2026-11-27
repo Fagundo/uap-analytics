@@ -7,9 +7,9 @@
    2023
   ],
   "manifest": {
-   "run_id": "H-rockera-01-explore-20261121T012839Z",
-   "started_utc": "2026-11-21T01:28:39+00:00",
-   "git_commit": "68856e02f585990847ad460a3ce35752a5700980",
+   "run_id": "H-rockera-01-explore-20261127T201715Z",
+   "started_utc": "2026-11-27T20:17:15+00:00",
+   "git_commit": "8cb63e86333ec37467662254eebb6f1b9671db66",
    "git_dirty": false,
    "python": "3.12.16",
    "specs": {
@@ -39,6 +39,54 @@
     "data/raw/place_population/place_population_0.csv": "e3508f5201465913476d4ddf91740f191f7977c9f2614a2a7e30b5fd22027934",
     "data/raw/population/population_0": "38dd59c70ef8067a3d476b6f5039e60f288e2d492015525ba9711faffd12c418",
     "data/raw/primary_roads/tl_2020_us_primaryroads.zip": "30ba1c46cc5a40305a8896a057f4f14dee7aec08f7dacea3e0fb68fec1cc172f",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/.sha256": "42c366b3526ee3c5a792fe0c6554818d2f3293efeafbdf9281791f87d0376aea",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/datasets/case_claims.json": "4da8ec7c9fc6dfb40afac735320922b97b06f9bf8790e811910165bdf19c6d03",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/datasets/topic_labels.json": "3f54e1d186ac6b91e5fef2711c73058b4dd63ed22de753d7128a6588f640e0ff",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/document_sources.csv": "e2766935f6a596fcf0a9fc03319bef1688abd67ae999caeb06c02353fbe09298",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/document_sources.parquet": "344e947c9bdbad20781ed84d3ba44c00e3401b6f5889248d1ad8e50b870604f0",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/documents.csv": "0b6a8800e3fcbdc9315252c2dcdc1cd408f002fa6f29537436394882fbb585ce",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/documents.parquet": "db235a58465e38c881aaaa6ff298f4b6ab5f185ad70eeb243aff1e28950006fa",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/events.csv": "5ae60c1c1194b2896709988e1994ee5b7a233570f898712252495b90c1dc95fd",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/events.parquet": "7bf6eba57e0899531b9bb06494e82bda83ebf71d5cf61005d21820074a36f2fa",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/incidents.csv": "1ff1e0c2648d99183b020627aa58410d176db9247aea7a4e73b975c1afd1bfdf",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/incidents.parquet": "163d4c124fc694e21bfa72aa03632064da9d2e290dd8e5e6e156ff9062bd968c",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/links.csv": "fc6d07d390da1d3fa06cb4d313468c756be0c3b884c134528c0f3cc6c6726e86",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/links.parquet": "17fb43992efa875d5a9c59e768dca6ee15d1b89ea25605ee3b566ba5a281171e",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/locations.csv": "a0776e51c92a97bc6da4df23e211b158686b39c3628ca1054dbf70c161cbd624",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/locations.parquet": "939fdaba75f2a62585de738b0acbda8a42d687b6d33cacd30d807a09e5dcb84d",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/mentions.csv": "764498e24ebecfc969c903b2814301a478238ffe62f7b8238f680bbd52ea141f",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/mentions.parquet": "ac6758b7151b0ce300fdfd6144feadb089050665f723b16619bb72bb96b4473a",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/observations.csv": "f66f5bb4aef313f6fdd94c38d9c0ba06d2f892eb588a21296056fd2adaa97479",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/observations.parquet": "c28d7a2f21ccd89505af460af03194cc9cbb25b0dfd4d87524534607296606c7",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/organizations.csv": "6c216619ccfda7be18c8cca1bfb6f35050e5e9bb3699b76860edf75a7d655211",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/organizations.parquet": "d7fdaba30d5636db388e2fb98f11985d353c3d5f33cb3fb9dfced15b852307c3",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/page_text.csv": "9b6135be03249f733971550a91f2f7a872379af91020c1a4761fa1d23cb692ee",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/page_text.parquet": "c5c435eb73a200a23562b164af9b67efb720962b8186905a4569f5bdf6487b9c",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/pages.csv": "bcabd3e0f66a4955f280738b1bcfa4a68a88debcf82fe4afc87cb62d4f4c9eaf",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/pages.parquet": "12ed75167b7133ef5f8d14e721737221f7a7d329ed1e6672a75b46841363b202",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/people.csv": "daa3538a00494e4eba44fc09563052b37ee654dc1319038c089bab8ceb940203",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/people.parquet": "70dca4e5d990962db3c99e915e3176a3093f186d7626873f7291bf0542792f3f",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/redactions.csv": "01b159bd22cd1e7dc57253d4df60bddc21b9e46a70085053845693e611721eca",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/redactions.parquet": "6252cbbd65e5be0f375ac4c097be8c5562f91c0637600b892be536c96d50b1bb",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/flight_programs.csv": "9bec60c13b00059f8765dd911128c8b56eb8f13a777feccec3b225ec39067764",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/flight_programs.parquet": "41e5bc39166432f3f6972efc7cf4e808ab865a8ff705603101ea2b2a8d6733cb",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/holidays.csv": "4cb75390ad3bc27369be9754abec955e1c272cf87edb725c29c37c4a0130076a",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/holidays.parquet": "fd6d3ef69d36dca10b3f8e956c044a8dfa6153d03c9e2d4e97a40a9f913dd3d3",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/kp.csv": "21bcdd8a2742c8ffb8587f9439f8c12c3016a8263fe2416dd992c8bdd35b8ded",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/kp.parquet": "0b31efb962ce38cf9cdf37826cbd80ad4f394ef11cd12d3a2e1e28d08d264f45",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/launches.csv": "fc8e409436f5b9660378003d08fa7e58381a553049cd6374a750b75419826ea7",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/launches.parquet": "398e861bcfad83d16a8bfacf2960e1d130dbfdf4f7127e25bbb449f751540dbb",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/nuclear_tests.csv": "80bf06276cbf2c8a8369dc041434ebc27e5431cb77b03e81b9b6116a3b835d97",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/nuclear_tests.parquet": "825d4aca4fb651fe5cfa20371f378e5a7ad585be6273ffc74a7be4277998b222",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/quakes.csv": "b9ff095c801180e64eb6b1c51998d8b04d278bd40800c973e0bf6b03208ea83f",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/quakes.parquet": "c60f850aa4fad9d3977e5fc828b8deb2b8c144448c60f26cd7c98e4eba86ed48",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/manifest.json": "b8d3a3da1da6c7d94b6350155c641f9eda55b15255cac8604bcca16477369781",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/schema.json": "cf1a408d1d09e2e24ede087f464d5723c5be9c04191430b5d14e3a49854f9323",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/sightings.csv": "0197a143deb3488d232cba106daeeb1e2454f772f9cd41b597b3050b7c0bed71",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/sightings.parquet": "4c441d4cb619b7c8639e7e8bf5cf7f0db8941f22473beecf9e574e970294ba33",
+    "data/raw/pursue_export/export-6aba5848d2595d65/restricted/.sha256": "d43e7dcb2ab54ab2dc4763c7165e94ebb406244aa728891c07bb4f96e6eeaa3e",
+    "data/raw/pursue_export/export-6aba5848d2595d65/restricted/sightings_restricted.csv": "549b12e5bd88560cea0713def36931f43b003efee26b1b2186a7c7c4978395c1",
+    "data/raw/pursue_export/export-6aba5848d2595d65/restricted/sightings_restricted.parquet": "39f4879757c8e21d4bfbcb96b7da5d99c5e3f497e70109ae3abb4569f704d3fc",
     "data/raw/rail/tl_2020_us_rails.zip": "86f1fed01c866ee6e2595e8f0f43288c11e45200e487841227ede8422b874521",
     "data/raw/rivers/ne_10m_rivers_lake_centerlines.zip": "ded71b01870855ccfe19b51f2ec14c9bb48fae23c0e9f3c11974d426433b5c38",
     "data/raw/rivers/ne_10m_rivers_north_america.zip": "7fbe85a2acbf1f3ef4361a16bb39677ad1ea86f888be1689f7a4caeafc7529e8",
@@ -71,10 +119,10 @@
    "cenozoic": {
     "verdict": "post hoc (no verdict)",
     "power": NaN,
-    "p_bh": 0.8714234277905731,
+    "p_bh": 0.8714234277770915,
     "checks": {
      "shift_test": {
-      "rate_ratio": 0.9941378517689947,
+      "rate_ratio": 0.9941378517683838,
       "p_value": 0.9154228855721394,
       "n_events": 200,
       "holds": false
@@ -85,10 +133,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9898482775873036,
-        "ci_low": 0.9204518939075307,
-        "ci_high": 1.0644767196719822,
-        "p_value": 0.7832128095710947
+        "rate_ratio": 0.9898482775858796,
+        "ci_low": 0.9204518939061921,
+        "ci_high": 1.0644767196704674,
+        "p_value": 0.7832128095413364
        }
       ],
       "n_strata": 3100,
@@ -100,10 +148,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9941378517689947,
-        "ci_low": 0.9258184091298207,
-        "ci_high": 1.0674988297638055,
-        "p_value": 0.871423427790573
+        "rate_ratio": 0.9941378517683838,
+        "ci_low": 0.9258184091293336,
+        "ci_high": 1.0674988297630552,
+        "p_value": 0.8714234277770914
        }
       ],
       "n_strata": 3100,
@@ -115,10 +163,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9883607849756418,
-        "ci_low": 0.9269976037091123,
-        "ci_high": 1.0537859400812435,
-        "p_value": 0.7203482140697703
+        "rate_ratio": 0.9883607849761031,
+        "ci_low": 0.9269976037095348,
+        "ci_high": 1.053785940081747,
+        "p_value": 0.720348214080498
        }
       ],
       "n_strata": 3100,
@@ -131,10 +179,10 @@
    "mesozoic": {
     "verdict": "post hoc (no verdict)",
     "power": NaN,
-    "p_bh": 0.45622531498256774,
+    "p_bh": 0.45622531499248103,
     "checks": {
      "shift_test": {
-      "rate_ratio": 0.9671816032276661,
+      "rate_ratio": 0.9671816032272229,
       "p_value": 0.2537313432835821,
       "n_events": 200,
       "holds": false
@@ -145,10 +193,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9688228506080329,
-        "ci_low": 0.9007490306447182,
-        "ci_high": 1.0420413277474767,
-        "p_value": 0.3941655598088646
+        "rate_ratio": 0.9688228506080484,
+        "ci_low": 0.9007490306447613,
+        "ci_high": 1.0420413277474603,
+        "p_value": 0.3941655598088981
        }
       ],
       "n_strata": 3100,
@@ -160,10 +208,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9671816032276661,
-        "ci_low": 0.8996690381181691,
-        "ci_high": 1.0397604163178626,
-        "p_value": 0.3660744358797109
+        "rate_ratio": 0.9671816032272229,
+        "ci_low": 0.8996690381175655,
+        "ci_high": 1.0397604163176073,
+        "p_value": 0.36607443587453725
        }
       ],
       "n_strata": 3100,
@@ -175,10 +223,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9600537897112271,
-        "ci_low": 0.9016947929349488,
-        "ci_high": 1.0221898655295705,
-        "p_value": 0.2026454255844744
+        "rate_ratio": 0.9600537897114738,
+        "ci_low": 0.9016947929360932,
+        "ci_high": 1.0221898655287982,
+        "p_value": 0.2026454255800305
        }
       ],
       "n_strata": 3100,
@@ -191,10 +239,10 @@
    "paleozoic": {
     "verdict": "post hoc (no verdict)",
     "power": NaN,
-    "p_bh": 0.005058306088520028,
+    "p_bh": 0.005058306088939672,
     "checks": {
      "shift_test": {
-      "rate_ratio": 1.1056349697513623,
+      "rate_ratio": 1.105634969750895,
       "p_value": 0.004975124378109453,
       "n_events": 200,
       "holds": true
@@ -205,10 +253,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.107174618332407,
-        "ci_low": 1.0435668430210032,
-        "ci_high": 1.1746594323856256,
-        "p_value": 0.0007446010643513864
+        "rate_ratio": 1.107174618331464,
+        "ci_low": 1.0435668430200604,
+        "ci_high": 1.174659432384686,
+        "p_value": 0.0007446010644356565
        }
       ],
       "n_strata": 3100,
@@ -220,10 +268,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.1056349697513623,
-        "ci_low": 1.04561371322029,
-        "ci_high": 1.169101620303209,
-        "p_value": 0.000421525507376669
+        "rate_ratio": 1.105634969750895,
+        "ci_low": 1.04561371321973,
+        "ci_high": 1.1691016203028466,
+        "p_value": 0.00042152550741163936
        }
       ],
       "n_strata": 3100,
@@ -235,10 +283,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.1172423175114248,
-        "ci_low": 1.0582280778479851,
-        "ci_high": 1.1795476061991317,
-        "p_value": 6.227515382461794e-05
+        "rate_ratio": 1.1172423175111723,
+        "ci_low": 1.0582280778478121,
+        "ci_high": 1.1795476061987917,
+        "p_value": 6.227515382555372e-05
        }
       ],
       "n_strata": 3100,
@@ -251,10 +299,10 @@
    "precambrian": {
     "verdict": "post hoc (no verdict)",
     "power": NaN,
-    "p_bh": 0.2324908178421674,
+    "p_bh": 0.23249081781933467,
     "checks": {
      "shift_test": {
-      "rate_ratio": 0.9619848358670202,
+      "rate_ratio": 0.9619848358657848,
       "p_value": 0.0845771144278607,
       "n_events": 200,
       "holds": false
@@ -265,10 +313,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9634431520552601,
-        "ci_low": 0.9241960903867242,
-        "ci_high": 1.004356885835522,
-        "p_value": 0.0792449106272123
+        "rate_ratio": 0.9634431520540374,
+        "ci_low": 0.9241960903854042,
+        "ci_high": 1.0043568858344074,
+        "p_value": 0.07924491061813303
        }
       ],
       "n_strata": 3100,
@@ -280,10 +328,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9619848358670202,
-        "ci_low": 0.9214704356891622,
-        "ci_high": 1.0042805374933008,
-        "p_value": 0.07749693928072247
+        "rate_ratio": 0.9619848358657848,
+        "ci_low": 0.9214704356876826,
+        "ci_high": 1.0042805374923336,
+        "p_value": 0.07749693927311156
        }
       ],
       "n_strata": 3100,
@@ -295,10 +343,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9697110298064524,
-        "ci_low": 0.9243259442873744,
-        "ci_high": 1.0173245564942592,
-        "p_value": 0.2085218464713775
+        "rate_ratio": 0.9697110298058105,
+        "ci_low": 0.9243259442866273,
+        "ci_high": 1.0173245564937345,
+        "p_value": 0.208521846462971
        }
       ],
       "n_strata": 3100,
@@ -311,10 +359,10 @@
    "cenozoic_unconsolidated": {
     "verdict": "post hoc (no verdict)",
     "power": NaN,
-    "p_bh": 0.45622531498256774,
+    "p_bh": 0.45622531499248103,
     "checks": {
      "shift_test": {
-      "rate_ratio": 0.9750710393108716,
+      "rate_ratio": 0.9750710393113042,
       "p_value": 0.5472636815920398,
       "n_events": 200,
       "holds": false
@@ -325,10 +373,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9705069624217728,
-        "ci_low": 0.9155936864802003,
-        "ci_high": 1.0287136947503455,
-        "p_value": 0.3137594587970146
+        "rate_ratio": 0.9705069624218015,
+        "ci_low": 0.9155936864802351,
+        "ci_high": 1.0287136947503672,
+        "p_value": 0.3137594587974226
        }
       ],
       "n_strata": 3100,
@@ -340,10 +388,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9750710393108716,
-        "ci_low": 0.9216144995258111,
-        "ci_high": 1.0316282265437122,
-        "p_value": 0.38018776248547315
+        "rate_ratio": 0.9750710393113042,
+        "ci_low": 0.9216144995262321,
+        "ci_high": 1.0316282265441563,
+        "p_value": 0.3801877624937342
        }
       ],
       "n_strata": 3100,
@@ -355,10 +403,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9668470469950082,
-        "ci_low": 0.911809550866997,
-        "ci_high": 1.0252066469298513,
-        "p_value": 0.2595434852924551
+        "rate_ratio": 0.9668470469930535,
+        "ci_low": 0.9118095508651165,
+        "ci_high": 1.0252066469278203,
+        "p_value": 0.25954348526421456
        }
       ],
       "n_strata": 3100,
@@ -371,10 +419,10 @@
    "cenozoic_clastic": {
     "verdict": "post hoc (no verdict)",
     "power": NaN,
-    "p_bh": 0.8714234277905731,
+    "p_bh": 0.8714234277770915,
     "checks": {
      "shift_test": {
-      "rate_ratio": 1.0059679848462102,
+      "rate_ratio": 1.0059679848461713,
       "p_value": 0.845771144278607,
       "n_events": 200,
       "holds": false
@@ -385,10 +433,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.0053632604186955,
-        "ci_low": 0.9541302722084702,
-        "ci_high": 1.0593472556532275,
-        "p_value": 0.8411380242404073
+        "rate_ratio": 1.0053632604186424,
+        "ci_low": 0.9541302722084537,
+        "ci_high": 1.0593472556531338,
+        "p_value": 0.8411380242418491
        }
       ],
       "n_strata": 3100,
@@ -400,10 +448,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.0059679848462102,
-        "ci_low": 0.953318085039408,
-        "ci_high": 1.0615256360039709,
-        "p_value": 0.8282515287868084
+        "rate_ratio": 1.0059679848461713,
+        "ci_low": 0.9533180850394083,
+        "ci_high": 1.0615256360038883,
+        "p_value": 0.8282515287877859
        }
       ],
       "n_strata": 3100,
@@ -415,10 +463,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.0107051959986129,
-        "ci_low": 0.9688228375152855,
-        "ci_high": 1.0543981352034109,
-        "p_value": 0.6219185656426581
+        "rate_ratio": 1.0107051959975701,
+        "ci_low": 0.9688228375145526,
+        "ci_high": 1.054398135202033,
+        "p_value": 0.6219185656741505
        }
       ],
       "n_strata": 3100,
@@ -431,10 +479,10 @@
    "cenozoic_volcanic": {
     "verdict": "post hoc (no verdict)",
     "power": NaN,
-    "p_bh": 0.45622531498256774,
+    "p_bh": 0.45622531499248103,
     "checks": {
      "shift_test": {
-      "rate_ratio": 1.026876783612498,
+      "rate_ratio": 1.0268767836125132,
       "p_value": 0.4129353233830846,
       "n_events": 200,
       "holds": false
@@ -445,10 +493,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.0294271878898995,
-        "ci_low": 0.9778371033446964,
-        "ci_high": 1.0837391335858788,
-        "p_value": 0.26890139524954026
+        "rate_ratio": 1.0294271878901389,
+        "ci_low": 0.9778371033448898,
+        "ci_high": 1.0837391335861681,
+        "p_value": 0.2689013952460252
        }
       ],
       "n_strata": 3100,
@@ -460,10 +508,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.026876783612498,
-        "ci_low": 0.9739309430158323,
-        "ci_high": 1.082700920721447,
-        "p_value": 0.32611754676438454
+        "rate_ratio": 1.0268767836125132,
+        "ci_low": 0.9739309430158435,
+        "ci_high": 1.082700920721467,
+        "p_value": 0.3261175467641432
        }
       ],
       "n_strata": 3100,
@@ -475,10 +523,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.0380391508198454,
-        "ci_low": 0.9798759474601932,
-        "ci_high": 1.099654789392164,
-        "p_value": 0.20445205007151335
+        "rate_ratio": 1.0380391508191926,
+        "ci_low": 0.9798759474595266,
+        "ci_high": 1.0996547893915292,
+        "p_value": 0.20445205007954093
        }
       ],
       "n_strata": 3100,
@@ -491,10 +539,10 @@
    "mesozoic_unconsolidated": {
     "verdict": "post hoc (no verdict)",
     "power": NaN,
-    "p_bh": 0.008548525853495262,
+    "p_bh": 0.008548525853126559,
     "checks": {
      "shift_test": {
-      "rate_ratio": 0.9690482483428083,
+      "rate_ratio": 0.9690482483427102,
       "p_value": 0.05970149253731343,
       "n_events": 200,
       "holds": false
@@ -505,10 +553,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9681354819154447,
-        "ci_low": 0.9495031473675652,
-        "ci_high": 0.9871334433616307,
-        "p_value": 0.001090549218081004
+        "rate_ratio": 0.9681354819154689,
+        "ci_low": 0.949503147367582,
+        "ci_high": 0.9871334433616625,
+        "p_value": 0.0010905492180954585
        }
       ],
       "n_strata": 3100,
@@ -520,10 +568,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9690482483428083,
-        "ci_low": 0.9497938144944142,
-        "ci_high": 0.9886930124051548,
-        "p_value": 0.0021371314633738155
+        "rate_ratio": 0.9690482483427102,
+        "ci_low": 0.9497938144943364,
+        "ci_high": 0.9886930124050354,
+        "p_value": 0.0021371314632816396
        }
       ],
       "n_strata": 3100,
@@ -535,10 +583,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9694632013221468,
-        "ci_low": 0.950432695928853,
-        "ci_high": 0.9888747543551897,
-        "p_value": 0.0021694579096643426
+        "rate_ratio": 0.969463201320748,
+        "ci_low": 0.9504326959276574,
+        "ci_high": 0.9888747543535802,
+        "p_value": 0.002169457908422004
        }
       ],
       "n_strata": 3100,
@@ -551,10 +599,10 @@
    "mesozoic_clastic": {
     "verdict": "post hoc (no verdict)",
     "power": NaN,
-    "p_bh": 0.2935214186050476,
+    "p_bh": 0.29352141860700376,
     "checks": {
      "shift_test": {
-      "rate_ratio": 0.9611634287900764,
+      "rate_ratio": 0.9611634287901841,
       "p_value": 0.25870646766169153,
       "n_events": 200,
       "holds": false
@@ -565,10 +613,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9631834668888275,
-        "ci_low": 0.9113238016991376,
-        "ci_high": 1.0179942509547855,
-        "p_value": 0.18404728410264948
+        "rate_ratio": 0.9631834668848674,
+        "ci_low": 0.9113238016951197,
+        "ci_high": 1.0179942509509028,
+        "p_value": 0.18404728405693183
        }
       ],
       "n_strata": 3100,
@@ -580,10 +628,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9611634287900764,
-        "ci_low": 0.9081460763056611,
-        "ci_high": 1.017275921734594,
-        "p_value": 0.1712208275196111
+        "rate_ratio": 0.9611634287901841,
+        "ci_low": 0.9081460763057713,
+        "ci_high": 1.0172759217346985,
+        "p_value": 0.17122082752075218
        }
       ],
       "n_strata": 3100,
@@ -595,10 +643,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9701988198076427,
-        "ci_low": 0.910592002603458,
-        "ci_high": 1.0337074642264907,
-        "p_value": 0.34968609924826777
+        "rate_ratio": 0.970198819807633,
+        "ci_low": 0.9105920026034455,
+        "ci_high": 1.0337074642264843,
+        "p_value": 0.34968609924813643
        }
       ],
       "n_strata": 3100,
@@ -611,10 +659,10 @@
    "paleozoic_clastic": {
     "verdict": "post hoc (no verdict)",
     "power": NaN,
-    "p_bh": 0.2935214186050476,
+    "p_bh": 0.29352141860700376,
     "checks": {
      "shift_test": {
-      "rate_ratio": 1.0334140531129143,
+      "rate_ratio": 1.0334140531169898,
       "p_value": 0.21890547263681592,
       "n_events": 200,
       "holds": false
@@ -625,10 +673,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.0361499943107386,
-        "ci_low": 0.9912673497851235,
-        "ci_high": 1.0830648370925045,
-        "p_value": 0.11600645697028374
+        "rate_ratio": 1.0361499943109338,
+        "ci_low": 0.9912673497852755,
+        "ci_high": 1.0830648370927467,
+        "p_value": 0.11600645696863794
        }
       ],
       "n_strata": 3100,
@@ -640,10 +688,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.0334140531129143,
-        "ci_low": 0.9904386418019954,
-        "ci_high": 1.0782541796110179,
-        "p_value": 0.12935619969426132
+        "rate_ratio": 1.0334140531169898,
+        "ci_low": 0.9904386418053869,
+        "ci_high": 1.0782541796158303,
+        "p_value": 0.1293561996529776
        }
       ],
       "n_strata": 3100,
@@ -655,10 +703,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.0194738001315953,
-        "ci_low": 0.9785099008495939,
-        "ci_high": 1.0621525937063665,
-        "p_value": 0.35666931468294805
+        "rate_ratio": 1.0194738001312282,
+        "ci_low": 0.9785099008492373,
+        "ci_high": 1.062152593705989,
+        "p_value": 0.3566693146919768
        }
       ],
       "n_strata": 3100,
@@ -671,10 +719,10 @@
    "paleozoic_carbonate": {
     "verdict": "post hoc (no verdict)",
     "power": NaN,
-    "p_bh": 0.005223810921704147,
+    "p_bh": 0.005223810929121907,
     "checks": {
      "shift_test": {
-      "rate_ratio": 1.0358656766178873,
+      "rate_ratio": 1.0358656766132774,
       "p_value": 0.12437810945273632,
       "n_events": 200,
       "holds": false
@@ -685,10 +733,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.033890434012849,
-        "ci_low": 1.0124807286186794,
-        "ci_high": 1.055752864552405,
-        "p_value": 0.00179789999149219
+        "rate_ratio": 1.0338904340122204,
+        "ci_low": 1.0124807286180069,
+        "ci_high": 1.0557528645518228,
+        "p_value": 0.0017978999918913906
        }
       ],
       "n_strata": 3100,
@@ -700,10 +748,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.0358656766178873,
-        "ci_low": 1.0145986774939664,
-        "ci_high": 1.0575784532317354,
-        "p_value": 0.0008706351536173578
+        "rate_ratio": 1.0358656766132774,
+        "ci_low": 1.0145986774896094,
+        "ci_high": 1.0575784532268644,
+        "p_value": 0.0008706351548536512
        }
       ],
       "n_strata": 3100,
@@ -715,10 +763,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.0495885702085919,
-        "ci_low": 1.013892133416392,
-        "ci_high": 1.086541783296477,
-        "p_value": 0.006116909658757548
+        "rate_ratio": 1.0495885702083534,
+        "ci_low": 1.0138921334160236,
+        "ci_high": 1.086541783296378,
+        "p_value": 0.006116909659197862
        }
       ],
       "n_strata": 3100,
@@ -731,10 +779,10 @@
    "precambrian_crystalline_metamorphic": {
     "verdict": "post hoc (no verdict)",
     "power": NaN,
-    "p_bh": 0.2935214186050476,
+    "p_bh": 0.29352141860700376,
     "checks": {
      "shift_test": {
-      "rate_ratio": 0.9621083680999042,
+      "rate_ratio": 0.9621083680995972,
       "p_value": 0.13930348258706468,
       "n_events": 200,
       "holds": false
@@ -745,10 +793,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9632729170402026,
-        "ci_low": 0.9150860839018283,
-        "ci_high": 1.0139971845563405,
-        "p_value": 0.15297850314418573
+        "rate_ratio": 0.9632729170401398,
+        "ci_low": 0.9150860839017438,
+        "ci_high": 1.0139971845563018,
+        "p_value": 0.15297850314368766
        }
       ],
       "n_strata": 3100,
@@ -760,10 +808,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9621083680999042,
-        "ci_low": 0.912908719453199,
-        "ci_high": 1.0139595473710612,
-        "p_value": 0.14920808579484035
+        "rate_ratio": 0.9621083680995972,
+        "ci_low": 0.9129087194527231,
+        "ci_high": 1.0139595473709426,
+        "p_value": 0.14920808579304803
        }
       ],
       "n_strata": 3100,
@@ -775,10 +823,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9671311073709241,
-        "ci_low": 0.9120455193114367,
-        "ci_high": 1.025543746490484,
-        "p_value": 0.26400281832933026
+        "rate_ratio": 0.967131107371968,
+        "ci_low": 0.9120455193129092,
+        "ci_high": 1.0255437464910422,
+        "p_value": 0.26400281834039685
        }
       ],
       "n_strata": 3100,
@@ -833,6 +881,54 @@
   "data/raw/place_population/place_population_0.csv": "e3508f5201465913476d4ddf91740f191f7977c9f2614a2a7e30b5fd22027934",
   "data/raw/population/population_0": "38dd59c70ef8067a3d476b6f5039e60f288e2d492015525ba9711faffd12c418",
   "data/raw/primary_roads/tl_2020_us_primaryroads.zip": "30ba1c46cc5a40305a8896a057f4f14dee7aec08f7dacea3e0fb68fec1cc172f",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/.sha256": "42c366b3526ee3c5a792fe0c6554818d2f3293efeafbdf9281791f87d0376aea",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/datasets/case_claims.json": "4da8ec7c9fc6dfb40afac735320922b97b06f9bf8790e811910165bdf19c6d03",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/datasets/topic_labels.json": "3f54e1d186ac6b91e5fef2711c73058b4dd63ed22de753d7128a6588f640e0ff",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/document_sources.csv": "e2766935f6a596fcf0a9fc03319bef1688abd67ae999caeb06c02353fbe09298",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/document_sources.parquet": "344e947c9bdbad20781ed84d3ba44c00e3401b6f5889248d1ad8e50b870604f0",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/documents.csv": "0b6a8800e3fcbdc9315252c2dcdc1cd408f002fa6f29537436394882fbb585ce",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/documents.parquet": "db235a58465e38c881aaaa6ff298f4b6ab5f185ad70eeb243aff1e28950006fa",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/events.csv": "5ae60c1c1194b2896709988e1994ee5b7a233570f898712252495b90c1dc95fd",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/events.parquet": "7bf6eba57e0899531b9bb06494e82bda83ebf71d5cf61005d21820074a36f2fa",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/incidents.csv": "1ff1e0c2648d99183b020627aa58410d176db9247aea7a4e73b975c1afd1bfdf",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/incidents.parquet": "163d4c124fc694e21bfa72aa03632064da9d2e290dd8e5e6e156ff9062bd968c",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/links.csv": "fc6d07d390da1d3fa06cb4d313468c756be0c3b884c134528c0f3cc6c6726e86",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/links.parquet": "17fb43992efa875d5a9c59e768dca6ee15d1b89ea25605ee3b566ba5a281171e",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/locations.csv": "a0776e51c92a97bc6da4df23e211b158686b39c3628ca1054dbf70c161cbd624",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/locations.parquet": "939fdaba75f2a62585de738b0acbda8a42d687b6d33cacd30d807a09e5dcb84d",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/mentions.csv": "764498e24ebecfc969c903b2814301a478238ffe62f7b8238f680bbd52ea141f",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/mentions.parquet": "ac6758b7151b0ce300fdfd6144feadb089050665f723b16619bb72bb96b4473a",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/observations.csv": "f66f5bb4aef313f6fdd94c38d9c0ba06d2f892eb588a21296056fd2adaa97479",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/observations.parquet": "c28d7a2f21ccd89505af460af03194cc9cbb25b0dfd4d87524534607296606c7",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/organizations.csv": "6c216619ccfda7be18c8cca1bfb6f35050e5e9bb3699b76860edf75a7d655211",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/organizations.parquet": "d7fdaba30d5636db388e2fb98f11985d353c3d5f33cb3fb9dfced15b852307c3",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/page_text.csv": "9b6135be03249f733971550a91f2f7a872379af91020c1a4761fa1d23cb692ee",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/page_text.parquet": "c5c435eb73a200a23562b164af9b67efb720962b8186905a4569f5bdf6487b9c",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/pages.csv": "bcabd3e0f66a4955f280738b1bcfa4a68a88debcf82fe4afc87cb62d4f4c9eaf",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/pages.parquet": "12ed75167b7133ef5f8d14e721737221f7a7d329ed1e6672a75b46841363b202",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/people.csv": "daa3538a00494e4eba44fc09563052b37ee654dc1319038c089bab8ceb940203",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/people.parquet": "70dca4e5d990962db3c99e915e3176a3093f186d7626873f7291bf0542792f3f",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/redactions.csv": "01b159bd22cd1e7dc57253d4df60bddc21b9e46a70085053845693e611721eca",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/redactions.parquet": "6252cbbd65e5be0f375ac4c097be8c5562f91c0637600b892be536c96d50b1bb",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/flight_programs.csv": "9bec60c13b00059f8765dd911128c8b56eb8f13a777feccec3b225ec39067764",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/flight_programs.parquet": "41e5bc39166432f3f6972efc7cf4e808ab865a8ff705603101ea2b2a8d6733cb",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/holidays.csv": "4cb75390ad3bc27369be9754abec955e1c272cf87edb725c29c37c4a0130076a",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/holidays.parquet": "fd6d3ef69d36dca10b3f8e956c044a8dfa6153d03c9e2d4e97a40a9f913dd3d3",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/kp.csv": "21bcdd8a2742c8ffb8587f9439f8c12c3016a8263fe2416dd992c8bdd35b8ded",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/kp.parquet": "0b31efb962ce38cf9cdf37826cbd80ad4f394ef11cd12d3a2e1e28d08d264f45",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/launches.csv": "fc8e409436f5b9660378003d08fa7e58381a553049cd6374a750b75419826ea7",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/launches.parquet": "398e861bcfad83d16a8bfacf2960e1d130dbfdf4f7127e25bbb449f751540dbb",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/nuclear_tests.csv": "80bf06276cbf2c8a8369dc041434ebc27e5431cb77b03e81b9b6116a3b835d97",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/nuclear_tests.parquet": "825d4aca4fb651fe5cfa20371f378e5a7ad585be6273ffc74a7be4277998b222",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/quakes.csv": "b9ff095c801180e64eb6b1c51998d8b04d278bd40800c973e0bf6b03208ea83f",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/quakes.parquet": "c60f850aa4fad9d3977e5fc828b8deb2b8c144448c60f26cd7c98e4eba86ed48",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/manifest.json": "b8d3a3da1da6c7d94b6350155c641f9eda55b15255cac8604bcca16477369781",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/schema.json": "cf1a408d1d09e2e24ede087f464d5723c5be9c04191430b5d14e3a49854f9323",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/sightings.csv": "0197a143deb3488d232cba106daeeb1e2454f772f9cd41b597b3050b7c0bed71",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/sightings.parquet": "4c441d4cb619b7c8639e7e8bf5cf7f0db8941f22473beecf9e574e970294ba33",
+  "data/raw/pursue_export/export-6aba5848d2595d65/restricted/.sha256": "d43e7dcb2ab54ab2dc4763c7165e94ebb406244aa728891c07bb4f96e6eeaa3e",
+  "data/raw/pursue_export/export-6aba5848d2595d65/restricted/sightings_restricted.csv": "549b12e5bd88560cea0713def36931f43b003efee26b1b2186a7c7c4978395c1",
+  "data/raw/pursue_export/export-6aba5848d2595d65/restricted/sightings_restricted.parquet": "39f4879757c8e21d4bfbcb96b7da5d99c5e3f497e70109ae3abb4569f704d3fc",
   "data/raw/rail/tl_2020_us_rails.zip": "86f1fed01c866ee6e2595e8f0f43288c11e45200e487841227ede8422b874521",
   "data/raw/rivers/ne_10m_rivers_lake_centerlines.zip": "ded71b01870855ccfe19b51f2ec14c9bb48fae23c0e9f3c11974d426433b5c38",
   "data/raw/rivers/ne_10m_rivers_north_america.zip": "7fbe85a2acbf1f3ef4361a16bb39677ad1ea86f888be1689f7a4caeafc7529e8",

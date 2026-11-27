@@ -7,9 +7,9 @@
    2010
   ],
   "manifest": {
-   "run_id": "H-persist-01-explore-20261127T201028Z",
-   "started_utc": "2026-11-27T20:10:28+00:00",
-   "git_commit": "7a2ae5b1caea6aca07485fa6476b6c73c599900f",
+   "run_id": "H-persist-01-explore-20261127T201835Z",
+   "started_utc": "2026-11-27T20:18:35+00:00",
+   "git_commit": "8cb63e86333ec37467662254eebb6f1b9671db66",
    "git_dirty": true,
    "python": "3.12.16",
    "specs": {

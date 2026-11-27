@@ -7,9 +7,9 @@
    null
   ],
   "manifest": {
-   "run_id": "H-rocktype-01-holdout-20261121T015932Z",
-   "started_utc": "2026-11-21T01:59:32+00:00",
-   "git_commit": "68856e02f585990847ad460a3ce35752a5700980",
+   "run_id": "H-rocktype-01-holdout-20261127T204514Z",
+   "started_utc": "2026-11-27T20:45:14+00:00",
+   "git_commit": "8cb63e86333ec37467662254eebb6f1b9671db66",
    "git_dirty": true,
    "python": "3.12.16",
    "specs": {
@@ -39,6 +39,54 @@
     "data/raw/place_population/place_population_0.csv": "e3508f5201465913476d4ddf91740f191f7977c9f2614a2a7e30b5fd22027934",
     "data/raw/population/population_0": "38dd59c70ef8067a3d476b6f5039e60f288e2d492015525ba9711faffd12c418",
     "data/raw/primary_roads/tl_2020_us_primaryroads.zip": "30ba1c46cc5a40305a8896a057f4f14dee7aec08f7dacea3e0fb68fec1cc172f",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/.sha256": "42c366b3526ee3c5a792fe0c6554818d2f3293efeafbdf9281791f87d0376aea",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/datasets/case_claims.json": "4da8ec7c9fc6dfb40afac735320922b97b06f9bf8790e811910165bdf19c6d03",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/datasets/topic_labels.json": "3f54e1d186ac6b91e5fef2711c73058b4dd63ed22de753d7128a6588f640e0ff",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/document_sources.csv": "e2766935f6a596fcf0a9fc03319bef1688abd67ae999caeb06c02353fbe09298",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/document_sources.parquet": "344e947c9bdbad20781ed84d3ba44c00e3401b6f5889248d1ad8e50b870604f0",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/documents.csv": "0b6a8800e3fcbdc9315252c2dcdc1cd408f002fa6f29537436394882fbb585ce",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/documents.parquet": "db235a58465e38c881aaaa6ff298f4b6ab5f185ad70eeb243aff1e28950006fa",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/events.csv": "5ae60c1c1194b2896709988e1994ee5b7a233570f898712252495b90c1dc95fd",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/events.parquet": "7bf6eba57e0899531b9bb06494e82bda83ebf71d5cf61005d21820074a36f2fa",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/incidents.csv": "1ff1e0c2648d99183b020627aa58410d176db9247aea7a4e73b975c1afd1bfdf",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/incidents.parquet": "163d4c124fc694e21bfa72aa03632064da9d2e290dd8e5e6e156ff9062bd968c",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/links.csv": "fc6d07d390da1d3fa06cb4d313468c756be0c3b884c134528c0f3cc6c6726e86",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/links.parquet": "17fb43992efa875d5a9c59e768dca6ee15d1b89ea25605ee3b566ba5a281171e",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/locations.csv": "a0776e51c92a97bc6da4df23e211b158686b39c3628ca1054dbf70c161cbd624",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/locations.parquet": "939fdaba75f2a62585de738b0acbda8a42d687b6d33cacd30d807a09e5dcb84d",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/mentions.csv": "764498e24ebecfc969c903b2814301a478238ffe62f7b8238f680bbd52ea141f",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/mentions.parquet": "ac6758b7151b0ce300fdfd6144feadb089050665f723b16619bb72bb96b4473a",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/observations.csv": "f66f5bb4aef313f6fdd94c38d9c0ba06d2f892eb588a21296056fd2adaa97479",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/observations.parquet": "c28d7a2f21ccd89505af460af03194cc9cbb25b0dfd4d87524534607296606c7",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/organizations.csv": "6c216619ccfda7be18c8cca1bfb6f35050e5e9bb3699b76860edf75a7d655211",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/organizations.parquet": "d7fdaba30d5636db388e2fb98f11985d353c3d5f33cb3fb9dfced15b852307c3",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/page_text.csv": "9b6135be03249f733971550a91f2f7a872379af91020c1a4761fa1d23cb692ee",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/page_text.parquet": "c5c435eb73a200a23562b164af9b67efb720962b8186905a4569f5bdf6487b9c",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/pages.csv": "bcabd3e0f66a4955f280738b1bcfa4a68a88debcf82fe4afc87cb62d4f4c9eaf",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/pages.parquet": "12ed75167b7133ef5f8d14e721737221f7a7d329ed1e6672a75b46841363b202",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/people.csv": "daa3538a00494e4eba44fc09563052b37ee654dc1319038c089bab8ceb940203",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/people.parquet": "70dca4e5d990962db3c99e915e3176a3093f186d7626873f7291bf0542792f3f",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/redactions.csv": "01b159bd22cd1e7dc57253d4df60bddc21b9e46a70085053845693e611721eca",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/redactions.parquet": "6252cbbd65e5be0f375ac4c097be8c5562f91c0637600b892be536c96d50b1bb",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/flight_programs.csv": "9bec60c13b00059f8765dd911128c8b56eb8f13a777feccec3b225ec39067764",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/flight_programs.parquet": "41e5bc39166432f3f6972efc7cf4e808ab865a8ff705603101ea2b2a8d6733cb",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/holidays.csv": "4cb75390ad3bc27369be9754abec955e1c272cf87edb725c29c37c4a0130076a",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/holidays.parquet": "fd6d3ef69d36dca10b3f8e956c044a8dfa6153d03c9e2d4e97a40a9f913dd3d3",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/kp.csv": "21bcdd8a2742c8ffb8587f9439f8c12c3016a8263fe2416dd992c8bdd35b8ded",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/kp.parquet": "0b31efb962ce38cf9cdf37826cbd80ad4f394ef11cd12d3a2e1e28d08d264f45",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/launches.csv": "fc8e409436f5b9660378003d08fa7e58381a553049cd6374a750b75419826ea7",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/launches.parquet": "398e861bcfad83d16a8bfacf2960e1d130dbfdf4f7127e25bbb449f751540dbb",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/nuclear_tests.csv": "80bf06276cbf2c8a8369dc041434ebc27e5431cb77b03e81b9b6116a3b835d97",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/nuclear_tests.parquet": "825d4aca4fb651fe5cfa20371f378e5a7ad585be6273ffc74a7be4277998b222",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/quakes.csv": "b9ff095c801180e64eb6b1c51998d8b04d278bd40800c973e0bf6b03208ea83f",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/quakes.parquet": "c60f850aa4fad9d3977e5fc828b8deb2b8c144448c60f26cd7c98e4eba86ed48",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/manifest.json": "b8d3a3da1da6c7d94b6350155c641f9eda55b15255cac8604bcca16477369781",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/schema.json": "cf1a408d1d09e2e24ede087f464d5723c5be9c04191430b5d14e3a49854f9323",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/sightings.csv": "0197a143deb3488d232cba106daeeb1e2454f772f9cd41b597b3050b7c0bed71",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/sightings.parquet": "4c441d4cb619b7c8639e7e8bf5cf7f0db8941f22473beecf9e574e970294ba33",
+    "data/raw/pursue_export/export-6aba5848d2595d65/restricted/.sha256": "d43e7dcb2ab54ab2dc4763c7165e94ebb406244aa728891c07bb4f96e6eeaa3e",
+    "data/raw/pursue_export/export-6aba5848d2595d65/restricted/sightings_restricted.csv": "549b12e5bd88560cea0713def36931f43b003efee26b1b2186a7c7c4978395c1",
+    "data/raw/pursue_export/export-6aba5848d2595d65/restricted/sightings_restricted.parquet": "39f4879757c8e21d4bfbcb96b7da5d99c5e3f497e70109ae3abb4569f704d3fc",
     "data/raw/rail/tl_2020_us_rails.zip": "86f1fed01c866ee6e2595e8f0f43288c11e45200e487841227ede8422b874521",
     "data/raw/rivers/ne_10m_rivers_lake_centerlines.zip": "ded71b01870855ccfe19b51f2ec14c9bb48fae23c0e9f3c11974d426433b5c38",
     "data/raw/rivers/ne_10m_rivers_north_america.zip": "7fbe85a2acbf1f3ef4361a16bb39677ad1ea86f888be1689f7a4caeafc7529e8",
@@ -70,11 +118,11 @@
   "tests": {
    "unconsolidated": {
     "verdict": "inconclusive",
-    "power": 0.7731409191622265,
-    "p_bh": 0.6067097482592638,
+    "power": 0.7731409191644183,
+    "p_bh": 0.6067097482576764,
     "checks": {
      "shift_test": {
-      "rate_ratio": 0.9505111697538496,
+      "rate_ratio": 0.9505111697533821,
       "p_value": 0.4228855721393035,
       "n_events": 200,
       "holds": false
@@ -85,10 +133,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9491131815650966,
-        "ci_low": 0.8870642057139881,
-        "ci_high": 1.015502401763087,
-        "p_value": 0.13002249553598869
+        "rate_ratio": 0.9491131815620633,
+        "ci_low": 0.8870642057106781,
+        "ci_high": 1.0155024017603853,
+        "p_value": 0.13002249551553277
        }
       ],
       "n_strata": 3100,
@@ -100,10 +148,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9505111697538496,
-        "ci_low": 0.8887334518522971,
-        "ci_high": 1.0165831858177696,
-        "p_value": 0.1387981606754508
+        "rate_ratio": 0.9505111697533821,
+        "ci_low": 0.8887334518518658,
+        "ci_high": 1.016583185817263,
+        "p_value": 0.13879816067158593
        }
       ],
       "n_strata": 3100,
@@ -115,10 +163,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.8914740950990605,
-        "ci_low": 0.8035102790173099,
-        "ci_high": 0.9890676983057838,
-        "p_value": 0.030207946249272987
+        "rate_ratio": 0.8914740951701584,
+        "ci_low": 0.8035102790877277,
+        "ci_high": 0.9890676983768667,
+        "p_value": 0.030207946351382475
        }
       ],
       "n_strata": 3100,
@@ -130,11 +178,11 @@
    },
    "clastic": {
     "verdict": "refuted",
-    "power": 0.9733489132920483,
-    "p_bh": 0.8929936794592697,
+    "power": 0.9733489132918962,
+    "p_bh": 0.8929936794325115,
     "checks": {
      "shift_test": {
-      "rate_ratio": 1.0088211816648087,
+      "rate_ratio": 1.0088211816482258,
       "p_value": 0.835820895522388,
       "n_events": 200,
       "holds": false
@@ -145,10 +193,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.0154059096845816,
-        "ci_low": 0.9520611539209288,
-        "ci_high": 1.0829652666492513,
-        "p_value": 0.6417971822417257
+        "rate_ratio": 1.015405909686305,
+        "ci_low": 0.9520611539225013,
+        "ci_high": 1.082965266651139,
+        "p_value": 0.6417971822049799
        }
       ],
       "n_strata": 3100,
@@ -160,10 +208,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.0088211816648087,
-        "ci_low": 0.9455676675153091,
-        "ci_high": 1.0763060239251505,
-        "p_value": 0.790366843099048
+        "rate_ratio": 1.0088211816482258,
+        "ci_low": 0.9455676674996145,
+        "ci_high": 1.0763060239076305,
+        "p_value": 0.7903668434827626
        }
       ],
       "n_strata": 3100,
@@ -175,10 +223,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.045322112590257,
-        "ci_low": 0.9512585398283748,
-        "ci_high": 1.1486870007677425,
-        "p_value": 0.3568824039202042
+        "rate_ratio": 1.0453221125692942,
+        "ci_low": 0.951258539810853,
+        "ci_high": 1.1486870007428294,
+        "p_value": 0.3568824041294306
        }
       ],
       "n_strata": 3100,
@@ -190,11 +238,11 @@
    },
    "carbonate": {
     "verdict": "inconclusive",
-    "power": 0.9992495136934757,
-    "p_bh": 0.6067097482592638,
+    "power": 0.9992495136934769,
+    "p_bh": 0.6067097482576764,
     "checks": {
      "shift_test": {
-      "rate_ratio": 1.058007457456567,
+      "rate_ratio": 1.058007457456494,
       "p_value": 0.11442786069651742,
       "n_events": 200,
       "holds": false
@@ -205,10 +253,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.0581510632332864,
-        "ci_low": 0.9751400145471906,
-        "ci_high": 1.1482286193964293,
-        "p_value": 0.1750926015319777
+        "rate_ratio": 1.0581510632393363,
+        "ci_low": 0.9751400145530366,
+        "ci_high": 1.1482286194026754,
+        "p_value": 0.175092601486871
        }
       ],
       "n_strata": 3100,
@@ -220,10 +268,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.058007457456567,
-        "ci_low": 0.9755207396189212,
-        "ci_high": 1.1474689717729483,
-        "p_value": 0.17334564235978966
+        "rate_ratio": 1.058007457456494,
+        "ci_low": 0.9755207396190343,
+        "ci_high": 1.147468971772657,
+        "p_value": 0.17334564235933614
        }
       ],
       "n_strata": 3100,
@@ -235,10 +283,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.039049020938531,
-        "ci_low": 0.9430565172123571,
-        "ci_high": 1.144812477522183,
-        "p_value": 0.43862269986749414
+        "rate_ratio": 1.0390490209366299,
+        "ci_low": 0.9430565172112522,
+        "ci_high": 1.1448124775193351,
+        "p_value": 0.4386226998862537
        }
       ],
       "n_strata": 3100,
@@ -250,11 +298,11 @@
    },
    "volcanic": {
     "verdict": "inconclusive",
-    "power": 0.6223702647325888,
-    "p_bh": 0.8172274531709479,
+    "power": 0.6223702647332225,
+    "p_bh": 0.8172274531703277,
     "checks": {
      "shift_test": {
-      "rate_ratio": 1.0375550817104937,
+      "rate_ratio": 1.0375550817105568,
       "p_value": 0.39303482587064675,
       "n_events": 200,
       "holds": false
@@ -265,10 +313,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.0403569807850672,
-        "ci_low": 0.940609045258692,
-        "ci_high": 1.15068279741085,
-        "p_value": 0.4416866637501753
+        "rate_ratio": 1.0403569807859698,
+        "ci_low": 0.9406090452592467,
+        "ci_high": 1.1506827974121685,
+        "p_value": 0.44168666374142096
        }
       ],
       "n_strata": 3100,
@@ -280,10 +328,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.0375550817104937,
-        "ci_low": 0.939439521551274,
-        "ci_high": 1.1459178828304315,
-        "p_value": 0.4669871160976845
+        "rate_ratio": 1.0375550817105568,
+        "ci_low": 0.9394395215512513,
+        "ci_high": 1.1459178828305985,
+        "p_value": 0.4669871160973301
        }
       ],
       "n_strata": 3100,
@@ -295,10 +343,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.043184022963965,
-        "ci_low": 0.9483097103298875,
-        "ci_high": 1.1475501030024464,
-        "p_value": 0.38483614527617294
+        "rate_ratio": 1.0431840229688476,
+        "ci_low": 0.9483097103336021,
+        "ci_high": 1.1475501030086934,
+        "p_value": 0.384836145227358
        }
       ],
       "n_strata": 3100,
@@ -311,10 +359,10 @@
    "plutonic": {
     "verdict": "refuted",
     "power": 0.9999999574355847,
-    "p_bh": 0.8929936794592697,
+    "p_bh": 0.8929936794325115,
     "checks": {
      "shift_test": {
-      "rate_ratio": 0.9897616019303462,
+      "rate_ratio": 0.989761601930678,
       "p_value": 0.7313432835820896,
       "n_events": 200,
       "holds": false
@@ -325,10 +373,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9890601382553883,
-        "ci_low": 0.9434617437931763,
-        "ci_high": 1.0368623460584274,
-        "p_value": 0.647826488639424
+        "rate_ratio": 0.9890601382579061,
+        "ci_low": 0.9434617437949641,
+        "ci_high": 1.0368623460617417,
+        "p_value": 0.6478264887199379
        }
       ],
       "n_strata": 3100,
@@ -340,10 +388,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9897616019303462,
-        "ci_low": 0.9438984077506799,
-        "ci_high": 1.0378532484128131,
-        "p_value": 0.6707451239403838
+        "rate_ratio": 0.989761601930678,
+        "ci_low": 0.9438984077508913,
+        "ci_high": 1.0378532484132765,
+        "p_value": 0.6707451239512048
        }
       ],
       "n_strata": 3100,
@@ -355,10 +403,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.012674857320641,
-        "ci_low": 0.9474222221583708,
-        "ci_high": 1.082421694007887,
-        "p_value": 0.7109120323289095
+        "rate_ratio": 1.01267485732209,
+        "ci_low": 0.9474222221596211,
+        "ci_high": 1.0824216940095566,
+        "p_value": 0.7109120322980031
        }
       ],
       "n_strata": 3100,
@@ -370,11 +418,11 @@
    },
    "metasedimentary": {
     "verdict": "refuted",
-    "power": 0.9544135151790067,
-    "p_bh": 0.8929936794592697,
+    "power": 0.9544135151791517,
+    "p_bh": 0.8929936794325115,
     "checks": {
      "shift_test": {
-      "rate_ratio": 0.9959834182508646,
+      "rate_ratio": 0.9959834182498603,
       "p_value": 0.900497512437811,
       "n_events": 200,
       "holds": false
@@ -385,10 +433,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9942883834576681,
-        "ci_low": 0.9396953069202173,
-        "ci_high": 1.052053130624817,
-        "p_value": 0.8424178259984266
+        "rate_ratio": 0.9942883834575069,
+        "ci_low": 0.9396953069200814,
+        "ci_high": 1.0520531306246281,
+        "p_value": 0.8424178259939779
        }
       ],
       "n_strata": 3100,
@@ -400,10 +448,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9959834182508646,
-        "ci_low": 0.9392575133664758,
-        "ci_high": 1.0561352507846575,
-        "p_value": 0.8929936794592697
+        "rate_ratio": 0.9959834182498603,
+        "ci_low": 0.9392575133655848,
+        "ci_high": 1.0561352507835293,
+        "p_value": 0.8929936794325115
        }
       ],
       "n_strata": 3100,
@@ -415,10 +463,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9777546357649476,
-        "ci_low": 0.8859526731559791,
-        "ci_high": 1.0790690707600956,
-        "p_value": 0.6547263138240433
+        "rate_ratio": 0.9777546357624025,
+        "ci_low": 0.8859526731522772,
+        "ci_high": 1.0790690707589872,
+        "p_value": 0.6547263137918476
        }
       ],
       "n_strata": 3100,
@@ -430,11 +478,11 @@
    },
    "crystalline_metamorphic": {
     "verdict": "refuted",
-    "power": 0.989203093450279,
-    "p_bh": 0.8172274531709479,
+    "power": 0.9892030934503836,
+    "p_bh": 0.8172274531703277,
     "checks": {
      "shift_test": {
-      "rate_ratio": 0.9781611247965484,
+      "rate_ratio": 0.9781611247968994,
       "p_value": 0.6268656716417911,
       "n_events": 200,
       "holds": false
@@ -445,10 +493,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9717455368126321,
-        "ci_low": 0.9176739293893744,
-        "ci_high": 1.0290031764807857,
-        "p_value": 0.3264974934607813
+        "rate_ratio": 0.9717455368108876,
+        "ci_low": 0.9176739293878948,
+        "ci_high": 1.0290031764787504,
+        "p_value": 0.32649749342893664
        }
       ],
       "n_strata": 3100,
@@ -460,10 +508,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9781611247965484,
-        "ci_low": 0.9227734223420853,
-        "ci_high": 1.0368733677166415,
-        "p_value": 0.4578168110850219
+        "rate_ratio": 0.9781611247968994,
+        "ci_low": 0.9227734223422176,
+        "ci_high": 1.036873367717237,
+        "p_value": 0.45781681109399164
        }
       ],
       "n_strata": 3100,
@@ -475,10 +523,10 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 1.022025696238698,
-        "ci_low": 0.9453408179664595,
-        "ci_high": 1.1049311570181828,
-        "p_value": 0.5840529559957253
+        "rate_ratio": 1.0220256962369383,
+        "ci_low": 0.945340817963226,
+        "ci_high": 1.104931157018157,
+        "p_value": 0.5840529560336316
        }
       ],
       "n_strata": 3100,
@@ -533,6 +581,54 @@
   "data/raw/place_population/place_population_0.csv": "e3508f5201465913476d4ddf91740f191f7977c9f2614a2a7e30b5fd22027934",
   "data/raw/population/population_0": "38dd59c70ef8067a3d476b6f5039e60f288e2d492015525ba9711faffd12c418",
   "data/raw/primary_roads/tl_2020_us_primaryroads.zip": "30ba1c46cc5a40305a8896a057f4f14dee7aec08f7dacea3e0fb68fec1cc172f",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/.sha256": "42c366b3526ee3c5a792fe0c6554818d2f3293efeafbdf9281791f87d0376aea",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/datasets/case_claims.json": "4da8ec7c9fc6dfb40afac735320922b97b06f9bf8790e811910165bdf19c6d03",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/datasets/topic_labels.json": "3f54e1d186ac6b91e5fef2711c73058b4dd63ed22de753d7128a6588f640e0ff",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/document_sources.csv": "e2766935f6a596fcf0a9fc03319bef1688abd67ae999caeb06c02353fbe09298",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/document_sources.parquet": "344e947c9bdbad20781ed84d3ba44c00e3401b6f5889248d1ad8e50b870604f0",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/documents.csv": "0b6a8800e3fcbdc9315252c2dcdc1cd408f002fa6f29537436394882fbb585ce",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/documents.parquet": "db235a58465e38c881aaaa6ff298f4b6ab5f185ad70eeb243aff1e28950006fa",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/events.csv": "5ae60c1c1194b2896709988e1994ee5b7a233570f898712252495b90c1dc95fd",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/events.parquet": "7bf6eba57e0899531b9bb06494e82bda83ebf71d5cf61005d21820074a36f2fa",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/incidents.csv": "1ff1e0c2648d99183b020627aa58410d176db9247aea7a4e73b975c1afd1bfdf",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/incidents.parquet": "163d4c124fc694e21bfa72aa03632064da9d2e290dd8e5e6e156ff9062bd968c",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/links.csv": "fc6d07d390da1d3fa06cb4d313468c756be0c3b884c134528c0f3cc6c6726e86",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/links.parquet": "17fb43992efa875d5a9c59e768dca6ee15d1b89ea25605ee3b566ba5a281171e",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/locations.csv": "a0776e51c92a97bc6da4df23e211b158686b39c3628ca1054dbf70c161cbd624",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/locations.parquet": "939fdaba75f2a62585de738b0acbda8a42d687b6d33cacd30d807a09e5dcb84d",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/mentions.csv": "764498e24ebecfc969c903b2814301a478238ffe62f7b8238f680bbd52ea141f",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/mentions.parquet": "ac6758b7151b0ce300fdfd6144feadb089050665f723b16619bb72bb96b4473a",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/observations.csv": "f66f5bb4aef313f6fdd94c38d9c0ba06d2f892eb588a21296056fd2adaa97479",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/observations.parquet": "c28d7a2f21ccd89505af460af03194cc9cbb25b0dfd4d87524534607296606c7",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/organizations.csv": "6c216619ccfda7be18c8cca1bfb6f35050e5e9bb3699b76860edf75a7d655211",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/organizations.parquet": "d7fdaba30d5636db388e2fb98f11985d353c3d5f33cb3fb9dfced15b852307c3",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/page_text.csv": "9b6135be03249f733971550a91f2f7a872379af91020c1a4761fa1d23cb692ee",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/page_text.parquet": "c5c435eb73a200a23562b164af9b67efb720962b8186905a4569f5bdf6487b9c",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/pages.csv": "bcabd3e0f66a4955f280738b1bcfa4a68a88debcf82fe4afc87cb62d4f4c9eaf",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/pages.parquet": "12ed75167b7133ef5f8d14e721737221f7a7d329ed1e6672a75b46841363b202",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/people.csv": "daa3538a00494e4eba44fc09563052b37ee654dc1319038c089bab8ceb940203",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/people.parquet": "70dca4e5d990962db3c99e915e3176a3093f186d7626873f7291bf0542792f3f",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/redactions.csv": "01b159bd22cd1e7dc57253d4df60bddc21b9e46a70085053845693e611721eca",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/redactions.parquet": "6252cbbd65e5be0f375ac4c097be8c5562f91c0637600b892be536c96d50b1bb",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/flight_programs.csv": "9bec60c13b00059f8765dd911128c8b56eb8f13a777feccec3b225ec39067764",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/flight_programs.parquet": "41e5bc39166432f3f6972efc7cf4e808ab865a8ff705603101ea2b2a8d6733cb",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/holidays.csv": "4cb75390ad3bc27369be9754abec955e1c272cf87edb725c29c37c4a0130076a",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/holidays.parquet": "fd6d3ef69d36dca10b3f8e956c044a8dfa6153d03c9e2d4e97a40a9f913dd3d3",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/kp.csv": "21bcdd8a2742c8ffb8587f9439f8c12c3016a8263fe2416dd992c8bdd35b8ded",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/kp.parquet": "0b31efb962ce38cf9cdf37826cbd80ad4f394ef11cd12d3a2e1e28d08d264f45",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/launches.csv": "fc8e409436f5b9660378003d08fa7e58381a553049cd6374a750b75419826ea7",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/launches.parquet": "398e861bcfad83d16a8bfacf2960e1d130dbfdf4f7127e25bbb449f751540dbb",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/nuclear_tests.csv": "80bf06276cbf2c8a8369dc041434ebc27e5431cb77b03e81b9b6116a3b835d97",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/nuclear_tests.parquet": "825d4aca4fb651fe5cfa20371f378e5a7ad585be6273ffc74a7be4277998b222",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/quakes.csv": "b9ff095c801180e64eb6b1c51998d8b04d278bd40800c973e0bf6b03208ea83f",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/quakes.parquet": "c60f850aa4fad9d3977e5fc828b8deb2b8c144448c60f26cd7c98e4eba86ed48",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/manifest.json": "b8d3a3da1da6c7d94b6350155c641f9eda55b15255cac8604bcca16477369781",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/schema.json": "cf1a408d1d09e2e24ede087f464d5723c5be9c04191430b5d14e3a49854f9323",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/sightings.csv": "0197a143deb3488d232cba106daeeb1e2454f772f9cd41b597b3050b7c0bed71",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/sightings.parquet": "4c441d4cb619b7c8639e7e8bf5cf7f0db8941f22473beecf9e574e970294ba33",
+  "data/raw/pursue_export/export-6aba5848d2595d65/restricted/.sha256": "d43e7dcb2ab54ab2dc4763c7165e94ebb406244aa728891c07bb4f96e6eeaa3e",
+  "data/raw/pursue_export/export-6aba5848d2595d65/restricted/sightings_restricted.csv": "549b12e5bd88560cea0713def36931f43b003efee26b1b2186a7c7c4978395c1",
+  "data/raw/pursue_export/export-6aba5848d2595d65/restricted/sightings_restricted.parquet": "39f4879757c8e21d4bfbcb96b7da5d99c5e3f497e70109ae3abb4569f704d3fc",
   "data/raw/rail/tl_2020_us_rails.zip": "86f1fed01c866ee6e2595e8f0f43288c11e45200e487841227ede8422b874521",
   "data/raw/rivers/ne_10m_rivers_lake_centerlines.zip": "ded71b01870855ccfe19b51f2ec14c9bb48fae23c0e9f3c11974d426433b5c38",
   "data/raw/rivers/ne_10m_rivers_north_america.zip": "7fbe85a2acbf1f3ef4361a16bb39677ad1ea86f888be1689f7a4caeafc7529e8",

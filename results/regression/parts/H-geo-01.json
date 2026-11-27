@@ -4,7 +4,7 @@
     "split": "confirm",
     "ok": true,
     "error": null,
-    "seconds": 16.7,
+    "seconds": 13.7,
     "fingerprint": "recorded",
     "against": "registered result",
     "added": [
@@ -26,7 +26,7 @@
     "split": "explore",
     "ok": true,
     "error": null,
-    "seconds": 12.9,
+    "seconds": 11.2,
     "fingerprint": "recorded",
     "against": "registered result",
     "added": [

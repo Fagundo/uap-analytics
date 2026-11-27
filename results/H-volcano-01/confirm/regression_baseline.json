@@ -7,9 +7,9 @@
    null
   ],
   "manifest": {
-   "run_id": "H-volcano-01-confirm-20261127T200916Z",
-   "started_utc": "2026-11-27T20:09:16+00:00",
-   "git_commit": "7a2ae5b1caea6aca07485fa6476b6c73c599900f",
+   "run_id": "H-volcano-01-confirm-20261127T201729Z",
+   "started_utc": "2026-11-27T20:17:29+00:00",
+   "git_commit": "8cb63e86333ec37467662254eebb6f1b9671db66",
    "git_dirty": false,
    "python": "3.12.16",
    "specs": {

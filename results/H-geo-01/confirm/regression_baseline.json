@@ -7,9 +7,9 @@
    2020
   ],
   "manifest": {
-   "run_id": "H-geo-01-confirm-20261127T200849Z",
-   "started_utc": "2026-11-27T20:08:49+00:00",
-   "git_commit": "7a2ae5b1caea6aca07485fa6476b6c73c599900f",
+   "run_id": "H-geo-01-confirm-20261127T201655Z",
+   "started_utc": "2026-11-27T20:16:55+00:00",
+   "git_commit": "8cb63e86333ec37467662254eebb6f1b9671db66",
    "git_dirty": false,
    "python": "3.12.16",
    "specs": {
