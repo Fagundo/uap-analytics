@@ -2,52 +2,31 @@
   {
     "hypothesis": "H-install-01",
     "split": "confirm",
-    "ok": false,
+    "ok": true,
     "error": null,
     "seconds": 253.9,
-    "fingerprint": "recorded",
-    "against": "registered result",
-    "added": [
-      "tests.proximity.tiers.all.dispersion",
-      "tests.proximity.tiers.filtered.dispersion",
-      "tests.proximity.tiers.high_quality.dispersion"
-    ],
-    "n_added": 3,
+    "fingerprint": "match",
+    "against": "baseline",
+    "added": [],
+    "n_added": 0,
     "inputs_changed": [],
-    "differences": [
-      "tests.proximity.p_bh: committed 0.3839458194398284, now 0.38415441289243724",
-      "tests.proximity.tiers.all.terms[0].ci_high: committed 1.0650496457949827, now 1.065036937439474",
-      "tests.proximity.tiers.all.terms[0].p_value: committed 0.44100477079611233, now 0.44122506151081375",
-      "tests.proximity.tiers.filtered.terms[0].ci_high: committed 1.0655833568920374, now 1.0655699059240367",
-      "tests.proximity.tiers.filtered.terms[0].p_value: committed 0.3839458194398284, now 0.38415441289243724",
-      "tests.proximity.tiers.high_quality.terms[0].p_value: committed 0.35426416921872694, now 0.3541470643893295"
-    ],
-    "n_differences": 6,
+    "differences": [],
+    "n_differences": 0,
     "fingerprint_differences": []
   },
   {
     "hypothesis": "H-install-01",
     "split": "explore",
-    "ok": false,
+    "ok": true,
     "error": null,
-    "seconds": 245.9,
-    "fingerprint": "recorded",
-    "against": "registered result",
-    "added": [
-      "tests.proximity.tiers.all.dispersion",
-      "tests.proximity.tiers.filtered.dispersion",
-      "tests.proximity.tiers.high_quality.dispersion"
-    ],
-    "n_added": 3,
+    "seconds": 245.8,
+    "fingerprint": "match",
+    "against": "baseline",
+    "added": [],
+    "n_added": 0,
     "inputs_changed": [],
-    "differences": [
-      "tests.proximity.p_bh: committed 0.7332010934171647, now 0.7331937269333964",
-      "tests.proximity.power: committed 0.9999999999999982, now 0.9994565943666491",
-      "tests.proximity.tiers.all.terms[0].p_value: committed 0.7575003564446698, now 0.7575292332949036",
-      "tests.proximity.tiers.filtered.terms[0].p_value: committed 0.7332010934171647, now 0.7331937269333964",
-      "tests.proximity.tiers.high_quality.terms[0].p_value: committed 0.5589545044968873, now 0.5587895480377594"
-    ],
-    "n_differences": 5,
+    "differences": [],
+    "n_differences": 0,
     "fingerprint_differences": []
   }
 ]
