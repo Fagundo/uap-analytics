@@ -101,7 +101,8 @@ def main(argv: list[str] | None = None) -> None:
     aud.add_argument("--split", choices=["explore", "confirm", "holdout"], default="confirm")
     aud.add_argument("--config", type=Path, default=Path("configs/v1.yaml"))
     reg = sub.add_parser("regression", help="Rerun committed hypothesis results and compare")
-    reg.add_argument("action", choices=["run", "summarize"])
+    reg.add_argument("action", choices=["run", "summarize", "seed", "pin"],
+                     help="run | summarize | seed (pinned live raw files into data/raw) | pin (upload them)")
     reg.add_argument("--only", default=None, help="One hypothesis id")
     reg.add_argument("--split", default=None)
     reg.add_argument("--record", action="store_true", help="Write missing input fingerprints when results match")
@@ -151,6 +152,15 @@ def _regression(args) -> None:
 
     from uap_geo.regression.runner import RegressionRunner, summary_markdown
 
+    if args.action in ("seed", "pin"):
+        from uap_geo.regression.raw_pins import RawPins
+        if not args.only:
+            raise SystemExit("seed and pin need --only <hypothesis>")
+        pins = RawPins(Path.cwd())
+        done = pins.seed(args.only) if args.action == "seed" else pins.record(args.only)
+        for path, state in done.items():
+            print(f"{state:8} {path}")
+        return
     if args.action == "run":
         runner = RegressionRunner(Path.cwd(), Config.from_yaml(args.config), STUDIES)
         targets = runner.targets(args.only, args.split)

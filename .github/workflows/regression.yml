@@ -69,6 +69,11 @@ jobs:
           path: data/raw/sgmc/*.npz
           key: sgmc-grids-v1-none
           restore-keys: sgmc-grids-v1-
+      - name: Seed pinned live raw files (release pinned-raw-inputs-v2)
+        if: steps.pick.outputs.run == 'true' && !inputs.rebaseline
+        env:
+          H: ${{ matrix.hypothesis }}
+        run: uv run uap-geo regression seed --only "$H"
       - name: Rerun and compare
         if: steps.pick.outputs.run == 'true'
         env:
@@ -80,6 +85,12 @@ jobs:
           if [ "$RECORD" = "true" ]; then flags="$flags --record"; fi
           if [ "$REBASELINE" = "true" ]; then flags="$flags --rebaseline"; fi
           uv run uap-geo regression run --only "$H" $flags
+      - name: Pin the live raw files the new baselines used
+        if: success() && steps.pick.outputs.run == 'true' && inputs.rebaseline
+        env:
+          H: ${{ matrix.hypothesis }}
+          GH_TOKEN: ${{ github.token }}
+        run: uv run uap-geo regression pin --only "$H"
       - uses: actions/cache/save@v4
         if: always() && steps.pick.outputs.run == 'true' && inputs.rebaseline
         with:
