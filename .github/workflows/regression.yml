@@ -86,7 +86,9 @@ jobs:
           if [ "$REBASELINE" = "true" ]; then flags="$flags --rebaseline"; fi
           uv run uap-geo regression run --only "$H" $flags
       - name: Pin the live raw files the new baselines used
-        if: success() && steps.pick.outputs.run == 'true' && inputs.rebaseline
+        # always(): a rebaseline reports its differences from the registered result and exits 1, but the new
+        # baselines are written and their raw files must be pinned
+        if: always() && steps.pick.outputs.run == 'true' && inputs.rebaseline
         env:
           H: ${{ matrix.hypothesis }}
           GH_TOKEN: ${{ github.token }}
