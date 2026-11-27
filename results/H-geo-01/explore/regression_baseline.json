@@ -7,9 +7,9 @@
    2010
   ],
   "manifest": {
-   "run_id": "H-geo-01-explore-20261121T012904Z",
-   "started_utc": "2026-11-21T01:29:04+00:00",
-   "git_commit": "68856e02f585990847ad460a3ce35752a5700980",
+   "run_id": "H-geo-01-explore-20261127T200905Z",
+   "started_utc": "2026-11-27T20:09:05+00:00",
+   "git_commit": "7a2ae5b1caea6aca07485fa6476b6c73c599900f",
    "git_dirty": true,
    "python": "3.12.16",
    "specs": {
@@ -48,7 +48,56 @@
     "data/raw/earthquakes/quakes_2026_m3.csv": "f002e4403382ff9681e8bed06b4094492f86e8d7d50688abad2f1660afbd3c1a",
     "data/raw/kp/Kp_ap_since_1932.txt": "991ab38e20a5c8f1e06e41269cf5efcb00f953850cd6566443754453e7eddd24",
     "data/raw/nuforc/places.csv": "6fe1aff91fc019e29e0f0c6e88d66ca9b74df01550ed38e56ff2507ca79f80bf",
-    "data/raw/nuforc/ufo_sightings.csv": "ad72ebc6cd34001144e8bea85524d34390f8e12d13b352b184ed57557a980647"
+    "data/raw/nuforc/ufo_sightings.csv": "ad72ebc6cd34001144e8bea85524d34390f8e12d13b352b184ed57557a980647",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/.sha256": "42c366b3526ee3c5a792fe0c6554818d2f3293efeafbdf9281791f87d0376aea",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/datasets/case_claims.json": "4da8ec7c9fc6dfb40afac735320922b97b06f9bf8790e811910165bdf19c6d03",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/datasets/topic_labels.json": "3f54e1d186ac6b91e5fef2711c73058b4dd63ed22de753d7128a6588f640e0ff",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/document_sources.csv": "e2766935f6a596fcf0a9fc03319bef1688abd67ae999caeb06c02353fbe09298",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/document_sources.parquet": "344e947c9bdbad20781ed84d3ba44c00e3401b6f5889248d1ad8e50b870604f0",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/documents.csv": "0b6a8800e3fcbdc9315252c2dcdc1cd408f002fa6f29537436394882fbb585ce",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/documents.parquet": "db235a58465e38c881aaaa6ff298f4b6ab5f185ad70eeb243aff1e28950006fa",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/events.csv": "5ae60c1c1194b2896709988e1994ee5b7a233570f898712252495b90c1dc95fd",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/events.parquet": "7bf6eba57e0899531b9bb06494e82bda83ebf71d5cf61005d21820074a36f2fa",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/incidents.csv": "1ff1e0c2648d99183b020627aa58410d176db9247aea7a4e73b975c1afd1bfdf",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/incidents.parquet": "163d4c124fc694e21bfa72aa03632064da9d2e290dd8e5e6e156ff9062bd968c",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/links.csv": "fc6d07d390da1d3fa06cb4d313468c756be0c3b884c134528c0f3cc6c6726e86",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/links.parquet": "17fb43992efa875d5a9c59e768dca6ee15d1b89ea25605ee3b566ba5a281171e",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/locations.csv": "a0776e51c92a97bc6da4df23e211b158686b39c3628ca1054dbf70c161cbd624",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/locations.parquet": "939fdaba75f2a62585de738b0acbda8a42d687b6d33cacd30d807a09e5dcb84d",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/mentions.csv": "764498e24ebecfc969c903b2814301a478238ffe62f7b8238f680bbd52ea141f",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/mentions.parquet": "ac6758b7151b0ce300fdfd6144feadb089050665f723b16619bb72bb96b4473a",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/observations.csv": "f66f5bb4aef313f6fdd94c38d9c0ba06d2f892eb588a21296056fd2adaa97479",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/observations.parquet": "c28d7a2f21ccd89505af460af03194cc9cbb25b0dfd4d87524534607296606c7",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/organizations.csv": "6c216619ccfda7be18c8cca1bfb6f35050e5e9bb3699b76860edf75a7d655211",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/organizations.parquet": "d7fdaba30d5636db388e2fb98f11985d353c3d5f33cb3fb9dfced15b852307c3",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/page_text.csv": "9b6135be03249f733971550a91f2f7a872379af91020c1a4761fa1d23cb692ee",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/page_text.parquet": "c5c435eb73a200a23562b164af9b67efb720962b8186905a4569f5bdf6487b9c",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/pages.csv": "bcabd3e0f66a4955f280738b1bcfa4a68a88debcf82fe4afc87cb62d4f4c9eaf",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/pages.parquet": "12ed75167b7133ef5f8d14e721737221f7a7d329ed1e6672a75b46841363b202",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/people.csv": "daa3538a00494e4eba44fc09563052b37ee654dc1319038c089bab8ceb940203",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/people.parquet": "70dca4e5d990962db3c99e915e3176a3093f186d7626873f7291bf0542792f3f",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/redactions.csv": "01b159bd22cd1e7dc57253d4df60bddc21b9e46a70085053845693e611721eca",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/redactions.parquet": "6252cbbd65e5be0f375ac4c097be8c5562f91c0637600b892be536c96d50b1bb",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/flight_programs.csv": "9bec60c13b00059f8765dd911128c8b56eb8f13a777feccec3b225ec39067764",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/flight_programs.parquet": "41e5bc39166432f3f6972efc7cf4e808ab865a8ff705603101ea2b2a8d6733cb",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/holidays.csv": "4cb75390ad3bc27369be9754abec955e1c272cf87edb725c29c37c4a0130076a",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/holidays.parquet": "fd6d3ef69d36dca10b3f8e956c044a8dfa6153d03c9e2d4e97a40a9f913dd3d3",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/kp.csv": "21bcdd8a2742c8ffb8587f9439f8c12c3016a8263fe2416dd992c8bdd35b8ded",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/kp.parquet": "0b31efb962ce38cf9cdf37826cbd80ad4f394ef11cd12d3a2e1e28d08d264f45",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/launches.csv": "fc8e409436f5b9660378003d08fa7e58381a553049cd6374a750b75419826ea7",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/launches.parquet": "398e861bcfad83d16a8bfacf2960e1d130dbfdf4f7127e25bbb449f751540dbb",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/nuclear_tests.csv": "80bf06276cbf2c8a8369dc041434ebc27e5431cb77b03e81b9b6116a3b835d97",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/nuclear_tests.parquet": "825d4aca4fb651fe5cfa20371f378e5a7ad585be6273ffc74a7be4277998b222",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/quakes.csv": "b9ff095c801180e64eb6b1c51998d8b04d278bd40800c973e0bf6b03208ea83f",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/quakes.parquet": "c60f850aa4fad9d3977e5fc828b8deb2b8c144448c60f26cd7c98e4eba86ed48",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/manifest.json": "b8d3a3da1da6c7d94b6350155c641f9eda55b15255cac8604bcca16477369781",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/schema.json": "cf1a408d1d09e2e24ede087f464d5723c5be9c04191430b5d14e3a49854f9323",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/sightings.csv": "0197a143deb3488d232cba106daeeb1e2454f772f9cd41b597b3050b7c0bed71",
+    "data/raw/pursue_export/export-6aba5848d2595d65/public/sightings.parquet": "4c441d4cb619b7c8639e7e8bf5cf7f0db8941f22473beecf9e574e970294ba33",
+    "data/raw/pursue_export/export-6aba5848d2595d65/restricted/.sha256": "d43e7dcb2ab54ab2dc4763c7165e94ebb406244aa728891c07bb4f96e6eeaa3e",
+    "data/raw/pursue_export/export-6aba5848d2595d65/restricted/sightings_restricted.csv": "549b12e5bd88560cea0713def36931f43b003efee26b1b2186a7c7c4978395c1",
+    "data/raw/pursue_export/export-6aba5848d2595d65/restricted/sightings_restricted.parquet": "39f4879757c8e21d4bfbcb96b7da5d99c5e3f497e70109ae3abb4569f704d3fc",
+    "data/raw/sgmc/unit_grid_v1_1km_3108.npz": "a8087920e5f0adb82db54f3fe97d118beff049ea72db889f0d7b307691cf1de6"
    },
    "settings": {}
   },
@@ -75,19 +124,19 @@
    "storm": {
     "verdict": "exploration (no verdict)",
     "power": 0.9196380074094646,
-    "p_bh": 0.06732776162475365,
+    "p_bh": 0.06732776128240386,
     "checks": {
      "south_of_37N": {
-      "rate_ratio": 0.9586020800799262,
-      "p_value": 0.35259663131449137,
+      "rate_ratio": 0.9586020800799263,
+      "p_value": 0.3525966467184678,
       "n_events": 4258,
       "holds": false
      },
      "kp8_vs_kp6_7": {
-      "strong_rate_ratio": 0.9081966168673661,
-      "strong_p": 0.14094348279852803,
+      "strong_rate_ratio": 0.908196616867366,
+      "strong_p": 0.14094346790328935,
       "weak_rate_ratio": 0.948394641387996,
-      "weak_p": 0.10146767202505642,
+      "weak_p": 0.10146766739125676,
       "holds": false
      }
     },
@@ -97,16 +146,16 @@
        {
         "term": "exposed",
         "rate_ratio": 0.9607998670786543,
-        "ci_low": 0.9092045766029383,
-        "ci_high": 1.0153230728638376,
-        "p_value": 0.15561318036362912
+        "ci_low": 0.909204576532092,
+        "ci_high": 1.0153230729429528,
+        "p_value": 0.15561318094724386
        },
        {
         "term": "moon",
-        "rate_ratio": 0.8716988832938173,
-        "ci_low": 0.8265762464708348,
-        "ci_high": 0.9192847561008386,
-        "p_value": 4.120139895547427e-07
+        "rate_ratio": 0.8716988832938174,
+        "ci_low": 0.8265762430328369,
+        "ci_high": 0.9192847599244414,
+        "p_value": 4.1201484625180135e-07
        }
       ],
       "n_strata": 95,
@@ -119,16 +168,16 @@
        {
         "term": "exposed",
         "rate_ratio": 0.9402550993600342,
-        "ci_low": 0.8882976105725104,
-        "ci_high": 0.9952516379085561,
-        "p_value": 0.033663880812376826
+        "ci_low": 0.8882976106211824,
+        "ci_high": 0.9952516378540239,
+        "p_value": 0.03366388064120193
        },
        {
         "term": "moon",
         "rate_ratio": 0.8624394187724856,
-        "ci_low": 0.8167863195874789,
-        "ci_high": 0.9106442324208892,
-        "p_value": 9.652651807462796e-08
+        "ci_low": 0.8167863186601788,
+        "ci_high": 0.9106442334547464,
+        "p_value": 9.652657727742966e-08
        }
       ],
       "n_strata": 95,
@@ -141,16 +190,16 @@
        {
         "term": "exposed",
         "rate_ratio": 0.9387852500097466,
-        "ci_low": 0.8621434618838311,
-        "ci_high": 1.0222402472439267,
-        "p_value": 0.14601783851813271
+        "ci_low": 0.8621434629670256,
+        "ci_high": 1.022240245959587,
+        "p_value": 0.1460178325699912
        },
        {
         "term": "moon",
-        "rate_ratio": 0.8689276555897854,
-        "ci_low": 0.8009878168502127,
-        "ci_high": 0.9426301558715902,
-        "p_value": 0.0007188509841921959
+        "rate_ratio": 0.8689276555897855,
+        "ci_low": 0.8009878186496,
+        "ci_high": 0.942630153754009,
+        "p_value": 0.0007188507399533833
        }
       ],
       "n_strata": 95,
@@ -163,13 +212,13 @@
    "quake": {
     "verdict": "exploration (no verdict)",
     "power": 0.21217939932455587,
-    "p_bh": 0.06955830241225225,
+    "p_bh": 0.06955830476854244,
     "checks": {
      "m5_vs_m4_5": {
-      "strong_rate_ratio": 1.2616068622812673,
-      "strong_p": 0.46373620525166004,
-      "weak_rate_ratio": 0.8174083865331419,
-      "weak_p": 0.03643898252504764,
+      "strong_rate_ratio": 1.261606862283073,
+      "strong_p": 0.46373620913850266,
+      "weak_rate_ratio": 0.8174083865331012,
+      "weak_p": 0.036438980705423805,
       "holds": false
      }
     },
@@ -179,38 +228,38 @@
        {
         "term": "exposed",
         "rate_ratio": 0.8564780082689003,
-        "ci_low": 0.7201212289945095,
-        "ci_high": 1.0186542891847663,
-        "p_value": 0.07993463702808187
+        "ci_low": 0.7201212272818354,
+        "ci_high": 1.018654291607446,
+        "p_value": 0.07993464116442323
        },
        {
         "term": "moon",
-        "rate_ratio": 0.6903174114123042,
-        "ci_low": 0.2966542696708249,
-        "ci_high": 1.6063754249273512,
-        "p_value": 0.3897709654663575
+        "rate_ratio": 0.6903174114123057,
+        "ci_low": 0.29665427268269934,
+        "ci_high": 1.606375408618134,
+        "p_value": 0.38977095976755294
        }
       ],
       "n_strata": 350,
       "n_events": 775,
       "exposed_share": 0.2854757929883139,
-      "dispersion": 1.001717014966465
+      "dispersion": 1.0017170149664651
      },
      "filtered": {
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.846265540544797,
-        "ci_low": 0.7066650640385266,
-        "ci_high": 1.0134438527649257,
-        "p_value": 0.06955830241225225
+        "rate_ratio": 0.8462655405447966,
+        "ci_low": 0.7066650629626219,
+        "ci_high": 1.0134438543079034,
+        "p_value": 0.06955830476854244
        },
        {
         "term": "moon",
-        "rate_ratio": 0.8135525476731075,
-        "ci_low": 0.3364532920598994,
-        "ci_high": 1.9671905831956324,
-        "p_value": 0.6469226160713104
+        "rate_ratio": 0.8135525476731158,
+        "ci_low": 0.3364534386365907,
+        "ci_high": 1.9671897261847056,
+        "p_value": 0.6469224537070446
        }
       ],
       "n_strata": 337,
@@ -222,17 +271,17 @@
       "terms": [
        {
         "term": "exposed",
-        "rate_ratio": 0.9948797139359574,
-        "ci_low": 0.7772522157161804,
-        "ci_high": 1.2734420374592026,
-        "p_value": 0.9674889464168964
+        "rate_ratio": 0.9948797139359551,
+        "ci_low": 0.7772522153642211,
+        "ci_high": 1.273442038035843,
+        "p_value": 0.9674889464764853
        },
        {
         "term": "moon",
-        "rate_ratio": 0.5422713306453182,
-        "ci_low": 0.15696704830277386,
-        "ci_high": 1.8733753308059595,
-        "p_value": 0.333279369768139
+        "rate_ratio": 0.5422713306453305,
+        "ci_low": 0.15696704525477737,
+        "ci_high": 1.8733753671833713,
+        "p_value": 0.33327937734012936
        }
       ],
       "n_strata": 209,
@@ -296,6 +345,55 @@
   "data/raw/earthquakes/quakes_2026_m3.csv": "f002e4403382ff9681e8bed06b4094492f86e8d7d50688abad2f1660afbd3c1a",
   "data/raw/kp/Kp_ap_since_1932.txt": "991ab38e20a5c8f1e06e41269cf5efcb00f953850cd6566443754453e7eddd24",
   "data/raw/nuforc/places.csv": "6fe1aff91fc019e29e0f0c6e88d66ca9b74df01550ed38e56ff2507ca79f80bf",
-  "data/raw/nuforc/ufo_sightings.csv": "ad72ebc6cd34001144e8bea85524d34390f8e12d13b352b184ed57557a980647"
+  "data/raw/nuforc/ufo_sightings.csv": "ad72ebc6cd34001144e8bea85524d34390f8e12d13b352b184ed57557a980647",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/.sha256": "42c366b3526ee3c5a792fe0c6554818d2f3293efeafbdf9281791f87d0376aea",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/datasets/case_claims.json": "4da8ec7c9fc6dfb40afac735320922b97b06f9bf8790e811910165bdf19c6d03",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/datasets/topic_labels.json": "3f54e1d186ac6b91e5fef2711c73058b4dd63ed22de753d7128a6588f640e0ff",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/document_sources.csv": "e2766935f6a596fcf0a9fc03319bef1688abd67ae999caeb06c02353fbe09298",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/document_sources.parquet": "344e947c9bdbad20781ed84d3ba44c00e3401b6f5889248d1ad8e50b870604f0",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/documents.csv": "0b6a8800e3fcbdc9315252c2dcdc1cd408f002fa6f29537436394882fbb585ce",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/documents.parquet": "db235a58465e38c881aaaa6ff298f4b6ab5f185ad70eeb243aff1e28950006fa",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/events.csv": "5ae60c1c1194b2896709988e1994ee5b7a233570f898712252495b90c1dc95fd",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/events.parquet": "7bf6eba57e0899531b9bb06494e82bda83ebf71d5cf61005d21820074a36f2fa",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/incidents.csv": "1ff1e0c2648d99183b020627aa58410d176db9247aea7a4e73b975c1afd1bfdf",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/incidents.parquet": "163d4c124fc694e21bfa72aa03632064da9d2e290dd8e5e6e156ff9062bd968c",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/links.csv": "fc6d07d390da1d3fa06cb4d313468c756be0c3b884c134528c0f3cc6c6726e86",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/links.parquet": "17fb43992efa875d5a9c59e768dca6ee15d1b89ea25605ee3b566ba5a281171e",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/locations.csv": "a0776e51c92a97bc6da4df23e211b158686b39c3628ca1054dbf70c161cbd624",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/locations.parquet": "939fdaba75f2a62585de738b0acbda8a42d687b6d33cacd30d807a09e5dcb84d",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/mentions.csv": "764498e24ebecfc969c903b2814301a478238ffe62f7b8238f680bbd52ea141f",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/mentions.parquet": "ac6758b7151b0ce300fdfd6144feadb089050665f723b16619bb72bb96b4473a",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/observations.csv": "f66f5bb4aef313f6fdd94c38d9c0ba06d2f892eb588a21296056fd2adaa97479",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/observations.parquet": "c28d7a2f21ccd89505af460af03194cc9cbb25b0dfd4d87524534607296606c7",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/organizations.csv": "6c216619ccfda7be18c8cca1bfb6f35050e5e9bb3699b76860edf75a7d655211",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/organizations.parquet": "d7fdaba30d5636db388e2fb98f11985d353c3d5f33cb3fb9dfced15b852307c3",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/page_text.csv": "9b6135be03249f733971550a91f2f7a872379af91020c1a4761fa1d23cb692ee",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/page_text.parquet": "c5c435eb73a200a23562b164af9b67efb720962b8186905a4569f5bdf6487b9c",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/pages.csv": "bcabd3e0f66a4955f280738b1bcfa4a68a88debcf82fe4afc87cb62d4f4c9eaf",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/pages.parquet": "12ed75167b7133ef5f8d14e721737221f7a7d329ed1e6672a75b46841363b202",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/people.csv": "daa3538a00494e4eba44fc09563052b37ee654dc1319038c089bab8ceb940203",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/people.parquet": "70dca4e5d990962db3c99e915e3176a3093f186d7626873f7291bf0542792f3f",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/redactions.csv": "01b159bd22cd1e7dc57253d4df60bddc21b9e46a70085053845693e611721eca",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/entities/redactions.parquet": "6252cbbd65e5be0f375ac4c097be8c5562f91c0637600b892be536c96d50b1bb",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/flight_programs.csv": "9bec60c13b00059f8765dd911128c8b56eb8f13a777feccec3b225ec39067764",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/flight_programs.parquet": "41e5bc39166432f3f6972efc7cf4e808ab865a8ff705603101ea2b2a8d6733cb",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/holidays.csv": "4cb75390ad3bc27369be9754abec955e1c272cf87edb725c29c37c4a0130076a",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/holidays.parquet": "fd6d3ef69d36dca10b3f8e956c044a8dfa6153d03c9e2d4e97a40a9f913dd3d3",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/kp.csv": "21bcdd8a2742c8ffb8587f9439f8c12c3016a8263fe2416dd992c8bdd35b8ded",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/kp.parquet": "0b31efb962ce38cf9cdf37826cbd80ad4f394ef11cd12d3a2e1e28d08d264f45",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/launches.csv": "fc8e409436f5b9660378003d08fa7e58381a553049cd6374a750b75419826ea7",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/launches.parquet": "398e861bcfad83d16a8bfacf2960e1d130dbfdf4f7127e25bbb449f751540dbb",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/nuclear_tests.csv": "80bf06276cbf2c8a8369dc041434ebc27e5431cb77b03e81b9b6116a3b835d97",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/nuclear_tests.parquet": "825d4aca4fb651fe5cfa20371f378e5a7ad585be6273ffc74a7be4277998b222",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/quakes.csv": "b9ff095c801180e64eb6b1c51998d8b04d278bd40800c973e0bf6b03208ea83f",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/layers/quakes.parquet": "c60f850aa4fad9d3977e5fc828b8deb2b8c144448c60f26cd7c98e4eba86ed48",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/manifest.json": "b8d3a3da1da6c7d94b6350155c641f9eda55b15255cac8604bcca16477369781",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/schema.json": "cf1a408d1d09e2e24ede087f464d5723c5be9c04191430b5d14e3a49854f9323",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/sightings.csv": "0197a143deb3488d232cba106daeeb1e2454f772f9cd41b597b3050b7c0bed71",
+  "data/raw/pursue_export/export-6aba5848d2595d65/public/sightings.parquet": "4c441d4cb619b7c8639e7e8bf5cf7f0db8941f22473beecf9e574e970294ba33",
+  "data/raw/pursue_export/export-6aba5848d2595d65/restricted/.sha256": "d43e7dcb2ab54ab2dc4763c7165e94ebb406244aa728891c07bb4f96e6eeaa3e",
+  "data/raw/pursue_export/export-6aba5848d2595d65/restricted/sightings_restricted.csv": "549b12e5bd88560cea0713def36931f43b003efee26b1b2186a7c7c4978395c1",
+  "data/raw/pursue_export/export-6aba5848d2595d65/restricted/sightings_restricted.parquet": "39f4879757c8e21d4bfbcb96b7da5d99c5e3f497e70109ae3abb4569f704d3fc",
+  "data/raw/sgmc/unit_grid_v1_1km_3108.npz": "a8087920e5f0adb82db54f3fe97d118beff049ea72db889f0d7b307691cf1de6"
  }
 }

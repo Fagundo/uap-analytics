@@ -4,23 +4,25 @@
     "split": "confirm",
     "ok": false,
     "error": null,
-    "seconds": 55.9,
-    "fingerprint": "match",
-    "against": "baseline",
-    "added": [],
-    "n_added": 0,
-    "inputs_changed": [
-      "data/raw/airports/airports.csv"
+    "seconds": 66.8,
+    "fingerprint": "recorded",
+    "against": "registered result",
+    "added": [
+      "tests.persistence.tiers.all.dispersion",
+      "tests.persistence.tiers.filtered.dispersion",
+      "tests.persistence.tiers.high_quality.dispersion"
     ],
+    "n_added": 3,
+    "inputs_changed": [],
     "differences": [
-      "tests.persistence.checks.local.rate_ratio: committed 1.1885280944967342, now 1.1885474837014762",
-      "tests.persistence.checks.reporting_propensity.rate_ratio: committed 1.1784903881520512, now 1.1785045876381623",
-      "tests.persistence.tiers.all.terms[0].ci_high: committed 1.2378057703662304, now 1.2378250643511675",
-      "tests.persistence.tiers.all.terms[0].ci_low: committed 1.1539140045947438, now 1.1539315780809527",
-      "tests.persistence.tiers.all.terms[0].rate_ratio: committed 1.19512401590537, now 1.19514243079848",
-      "tests.persistence.tiers.filtered.terms[0].ci_high: committed 1.2353260859213373, now 1.235344820793879",
-      "tests.persistence.tiers.filtered.terms[0].ci_low: committed 1.150535973120448, now 1.1505529075173722",
-      "tests.persistence.tiers.filtered.terms[0].rate_ratio: committed 1.1921774617843521, now 1.1921952756788312"
+      "tests.persistence.checks.local.rate_ratio: committed 1.1885296921712045, now 1.1885474837014762",
+      "tests.persistence.checks.reporting_propensity.rate_ratio: committed 1.178491732101133, now 1.1785045876381623",
+      "tests.persistence.tiers.all.terms[0].ci_high: committed 1.2378075733838139, now 1.2378250643511675",
+      "tests.persistence.tiers.all.terms[0].ci_low: committed 1.1539155489847723, now 1.1539315780809527",
+      "tests.persistence.tiers.all.terms[0].rate_ratio: committed 1.1951256861011281, now 1.19514243079848",
+      "tests.persistence.tiers.filtered.terms[0].ci_high: committed 1.23532778970787, now 1.235344820793879",
+      "tests.persistence.tiers.filtered.terms[0].ci_low: committed 1.1505372767972954, now 1.1505529075173722",
+      "tests.persistence.tiers.filtered.terms[0].rate_ratio: committed 1.1921789593523762, now 1.1921952756788312"
     ],
     "n_differences": 8,
     "fingerprint_differences": []
@@ -28,20 +30,20 @@
   {
     "hypothesis": "H-persist-01",
     "split": "explore",
-    "ok": false,
+    "ok": true,
     "error": null,
-    "seconds": 52.4,
-    "fingerprint": "match",
-    "against": "baseline",
-    "added": [],
-    "n_added": 0,
-    "inputs_changed": [
-      "data/raw/airports/airports.csv"
+    "seconds": 64.5,
+    "fingerprint": "recorded",
+    "against": "registered result",
+    "added": [
+      "tests.persistence.tiers.all.dispersion",
+      "tests.persistence.tiers.filtered.dispersion",
+      "tests.persistence.tiers.high_quality.dispersion"
     ],
-    "differences": [
-      "tests.persistence.tiers.filtered.terms[0].ci_high: committed 1.185184003985318, now 1.1851959642245324"
-    ],
-    "n_differences": 1,
+    "n_added": 3,
+    "inputs_changed": [],
+    "differences": [],
+    "n_differences": 0,
     "fingerprint_differences": []
   }
 ]
