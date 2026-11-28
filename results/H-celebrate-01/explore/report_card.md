@@ -1,9 +1,9 @@
 # H-celebrate-01 report card: Celebration nights
 
 **Split:** explore (2001–2010)  
-**Run:** H-celebrate-01-explore-20261111T115351Z  
-**Code:** `d903b462f592`  
-**Spec / impl / filters SHA-256:** `25d526fdc80a` / `99e4e849525f` / `8b2d4002b6f7`
+**Run:** H-celebrate-01-explore-20261128T020017Z  
+**Code:** `b20d9129d5d8`  
+**Spec / impl / filters SHA-256:** `b770deec65f8` / `99e4e849525f` / `8b2d4002b6f7`
 
 ## Question
 
