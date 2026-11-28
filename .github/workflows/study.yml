@@ -39,6 +39,11 @@ jobs:
           ARGS: ${{ inputs.args }}   # passed via env, never interpolated into the script
         run: |
           read -r -a argv <<< "$ARGS"
+          # a hypothesis run or diagnostic first seeds the live raw files its regression baselines use
+          # (release pinned-raw-inputs-v2), so reruns read the same airports, quakes, launches, ... files
+          if [ "${argv[0]}" = "hypothesis" ] && [ -n "${argv[2]:-}" ] && ls results/"${argv[2]}"/*/regression_baseline.json >/dev/null 2>&1; then
+            uv run uap-analytics regression seed --only "${argv[2]}"
+          fi
           uv run uap-analytics "${argv[@]}"
       - name: Commit results
         if: success()
