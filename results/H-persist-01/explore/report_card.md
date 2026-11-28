@@ -1,8 +1,8 @@
 # H-persist-01 report card: Persistent county hotspots
 
 **Split:** explore (2006–2010)  
-**Run:** H-persist-01-explore-20261128T020026Z  
-**Code:** `b20d9129d5d8`  
+**Run:** H-persist-01-explore-20261128T020704Z  
+**Code:** `a55caf88d38b`  
 **Spec / impl / filters SHA-256:** `7947b086955f` / `5c15a169c5c1` / `8b2d4002b6f7`
 
 ## Question
@@ -36,11 +36,11 @@ Prior period 2001–2005; outcome period 2006–2010. Holiday nights (07-03, 07-
 
 | Version | Persistence rate ratio per SD | 95% CI | p |
 | --- | --- | --- | --- |
-| with removals (primary) | 1.147 | 1.111–1.185 | 1.09e-16 |
-| no removals | 1.149 | 1.114–1.186 | 5.54e-18 |
+| with removals (primary) | 1.147 | 1.111–1.185 | 1.1e-16 |
+| no removals | 1.149 | 1.114–1.186 | 5.6e-18 |
 | + prior explained-report rate | 1.133 | 1.100–1.167 | 1.4e-16 |
-| + neighbours' prior excess | 1.147 | 1.109–1.187 | 1.2e-15 |
-| (prior explained-report rate itself) | 1.036 | 1.013–1.059 | 0.00186 |
+| + neighbours' prior excess | 1.147 | 1.109–1.187 | 1.21e-15 |
+| (prior explained-report rate itself) | 1.036 | 1.013–1.059 | 0.00185 |
 | (neighbours' prior excess itself) | 1.019 | 0.990–1.049 | 0.205 |
 
 ## Counties with the largest combined excess (both periods, primary tier, removals applied)

@@ -1,12 +1,12 @@
 {
-  "git_commit": "b20d9129d5d8bf8bfd66a068ad2d7efd2c04a3fc",
+  "git_commit": "a55caf88d38b0f96d9f3fb26c64f47b96ac4a2d8",
   "git_dirty": false,
   "inputs": {
     "data/raw/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "data/raw/acs_college/acsdt5y2021-b14001.dat": "1035e1fcc6216e374c71c1c4a9fb6e22f78010d86beabd9f2a09ae0c3906a34c",
     "data/raw/acs_housing/acsdt5y2021-b25001.dat": "ddc83069353064aee56b4fb58df7bdc04ea9c01307def64028d2aeb9424dcf75",
     "data/raw/acs_housing/acsdt5y2021-b25004.dat": "0a6ebcf71d078820e3883ad3b480db4c15ab868e797fa677e1a1645169b91589",
-    "data/raw/airports/airports.csv": "b6ae8329691c9fc7b89d840e386fe65a9986e125c808cf885ae73e1ecb18aea8",
+    "data/raw/airports/airports.csv": "60259f22797bf86a11e7ad2e074a91c97cf0e9b5e3ae899f4796ecc15a96e1ee",
     "data/raw/coastline/ne_10m_coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017",
     "data/raw/counties/cb_2020_us_county_500k.zip": "1a45c87a5a0c322514c9d5c9ebcba5eb9df313bd38962f6db56107ba0ccacc6f",
     "data/raw/elevation/elevation_1KMmd_GMTEDmd.tif": "95fed346b8bb25ca67c59b9d8c8e110f4856eb51401e5cc0011b73cba7e3e02b",
@@ -71,12 +71,12 @@
     "data/raw/rivers/ne_10m_rivers_north_america.zip": "7fbe85a2acbf1f3ef4361a16bb39677ad1ea86f888be1689f7a4caeafc7529e8"
   },
   "python": "3.12.16",
-  "run_id": "H-persist-01-explore-20261128T020026Z",
+  "run_id": "H-persist-01-explore-20261128T020704Z",
   "settings": {},
   "specs": {
     "filters": "8b2d4002b6f7fc9b75bc09a2f2b7179b72d7d7a42239921c5ddd2d694f6eeae9",
     "impl": "5c15a169c5c1cecc1536f28ab31a058f8d4dee9d8e70500bfd89e1b3cb8ad344",
     "spec": "7947b086955fb56636c2a0c28cf35d1452dd94dd7e741e6f80e29ec681a1f658"
   },
-  "started_utc": "2026-11-28T02:00:26+00:00"
+  "started_utc": "2026-11-28T02:07:04+00:00"
 }
