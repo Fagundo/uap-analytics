@@ -1,8 +1,8 @@
 # H-launch-01 report card: Rocket launches seen at twilight
 
 **Split:** explore (2001–2010)  
-**Run:** H-launch-01-explore-20261111T114934Z  
-**Code:** `df6b6be61655`  
+**Run:** H-launch-01-explore-20261128T020016Z  
+**Code:** `b20d9129d5d8`  
 **Spec / impl / filters SHA-256:** `0e6fe26b4d6a` / `e2a5c5165395` / `8b2d4002b6f7`
 
 ## Question
